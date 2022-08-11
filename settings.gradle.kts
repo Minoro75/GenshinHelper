@@ -13,4 +13,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "Genshin Helper"
-include ':app'
+include (":app")
