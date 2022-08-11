@@ -1,10 +1,6 @@
-object Dependencies{
+object Dependencies {
 
-    object Pligins{
-
-    }
-
-    object Compose{
+    object Compose {
         const val version = "1.2.0"
         const val material3Version = "1.0.0-alpha14"
 
@@ -15,7 +11,7 @@ object Dependencies{
         const val foundation = "androidx.compose.foundation:foundation:$version"
         const val animation = "androidx.compose.animation:animation:$version"
 
-        const val uiTooling ="androidx.compose.ui:ui-tooling:$version"
+        const val uiTooling = "androidx.compose.ui:ui-tooling:$version"
         const val uiTestManifest = "androidx.compose.ui:ui-test-manifest:$version"
     }
 }
