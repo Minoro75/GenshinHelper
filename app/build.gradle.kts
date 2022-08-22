@@ -2,7 +2,7 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("com.google.dagger.hilt.android") version Dependencies.Hilt.daggerHiltVersion
-    id("org.jetbrains.kotlin.kapt") version "1.7.20-Beta"
+    id("org.jetbrains.kotlin.kapt") version "1.7.0"
 }
 
 @Suppress("UnstableApiUsage")
@@ -71,6 +71,7 @@ dependencies {
     implementation(Dependencies.Hilt.hiltViewModel)
 
     kapt(Dependencies.Other.moshiCodegen)
+    implementation(Dependencies.Other.coil)
 
     implementation("androidx.core:core-ktx:1.8.0")
     implementation("androidx.compose.ui:ui-tooling-preview:1.2.1")
