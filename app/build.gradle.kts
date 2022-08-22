@@ -1,8 +1,11 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("com.google.dagger.hilt.android") version Dependencies.Hilt.daggerHiltVersion
+    id("org.jetbrains.kotlin.kapt") version "1.7.20-Beta"
 }
 
+@Suppress("UnstableApiUsage")
 android {
     compileSdk = Config.compileSdk
 
@@ -22,7 +25,10 @@ android {
     buildTypes {
         release {
             isMinifyEnabled = false
-            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
         }
     }
     compileOptions {
@@ -32,6 +38,10 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    kapt {
+        correctErrorTypes = true
+    }
+
     buildFeatures {
         compose = true
     }
@@ -54,6 +64,13 @@ dependencies {
     implementation(Dependencies.Compose.foundation)
     implementation(Dependencies.Compose.animation)
     implementation(Dependencies.Compose.runtime)
+
+    implementation(Dependencies.Hilt.hilt)
+    kapt(Dependencies.Hilt.kaptHilt)
+    implementation(Dependencies.Hilt.hiltNavCompose)
+    implementation(Dependencies.Hilt.hiltViewModel)
+
+    kapt(Dependencies.Other.moshiCodegen)
 
     implementation("androidx.core:core-ktx:1.8.0")
     implementation("androidx.compose.ui:ui-tooling-preview:1.2.1")
