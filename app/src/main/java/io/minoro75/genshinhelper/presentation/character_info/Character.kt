@@ -44,6 +44,7 @@ fun CharacterItem(modifier: Modifier = Modifier) {
             placeholder = painterResource(id = R.drawable.placeholder),
             contentScale = ContentScale.FillBounds,
             background = R.drawable.item_4_star,
+            elementImage = R.drawable.anemo,
             modifier = modifier
                 .fillMaxWidth()
                 .height(150.dp)
@@ -54,8 +55,9 @@ fun CharacterItem(modifier: Modifier = Modifier) {
             color = TextColor,
             maxLines = 1,
             overflow = TextOverflow.Ellipsis,
-        modifier = Modifier.align(alignment = Alignment.CenterHorizontally)
-            .padding(top = 5.dp, start = 8.dp, end = 8.dp))
+        modifier = Modifier
+            .align(alignment = Alignment.CenterHorizontally)
+            .padding(top = 10.dp, start = 8.dp, end = 8.dp))
     }
 }
 
@@ -66,6 +68,7 @@ fun AsyncImageWithBackground(
     placeholder: Painter?,
     contentScale: ContentScale,
     @DrawableRes background: Int,
+    @DrawableRes elementImage: Int,
     modifier: Modifier = Modifier
 ) {
     Box(modifier = modifier) {
@@ -81,6 +84,13 @@ fun AsyncImageWithBackground(
             contentScale = contentScale,
             modifier = modifier.matchParentSize()
         )
+
+        Image(painter = painterResource(id = elementImage),
+            contentDescription = null,
+        modifier = Modifier
+            .padding(3.dp)
+            .size(30.dp)
+            .align(Alignment.TopStart))
     }
 }
 
