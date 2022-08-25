@@ -23,7 +23,6 @@ object Dependencies {
         const val hilt = "com.google.dagger:hilt-android:$daggerHiltVersion"
         const val kaptHilt = "com.google.dagger:hilt-compiler:$daggerHiltVersion"
         const val hiltNavCompose = "androidx.hilt:hilt-navigation-compose:1.0.0"
-        const val hiltViewModel = "androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03"
 
     }
 
@@ -32,6 +31,7 @@ object Dependencies {
         const val coilVersion = "2.2.0"
 
         const val coil = "io.coil-kt:coil-compose:$coilVersion"
+        const val moshi = "com.squareup.moshi:moshi-kotlin:$moshiVersion"
         const val moshiCodegen = "com.squareup.moshi:moshi-kotlin-codegen:$moshiVersion"
     }
 }

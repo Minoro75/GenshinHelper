@@ -68,8 +68,8 @@ dependencies {
     implementation(Dependencies.Hilt.hilt)
     kapt(Dependencies.Hilt.kaptHilt)
     implementation(Dependencies.Hilt.hiltNavCompose)
-    implementation(Dependencies.Hilt.hiltViewModel)
 
+    implementation(Dependencies.Other.moshi)
     kapt(Dependencies.Other.moshiCodegen)
     implementation(Dependencies.Other.coil)
 

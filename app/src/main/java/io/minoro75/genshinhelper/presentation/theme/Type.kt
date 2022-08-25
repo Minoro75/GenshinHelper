@@ -44,7 +44,7 @@ val GenshinTypography = androidx.compose.material3.Typography(
     bodyLarge = TextStyle(
         fontFamily = Genshin,
         fontWeight = FontWeight.Bold,
-        fontSize = 20.sp
+        fontSize = 18.sp
     )
 )
 

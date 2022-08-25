@@ -1,4 +1,4 @@
-package io.minoro75.genshinhelper.presentation.character_info
+package io.minoro75.genshinhelper.presentation.character_card
 
 import androidx.annotation.DrawableRes
 import androidx.compose.foundation.Image
@@ -20,16 +20,19 @@ import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
 import coil.request.ImageRequest
 import io.minoro75.genshinhelper.R
+import io.minoro75.genshinhelper.domain.model.CharacterModel
 import io.minoro75.genshinhelper.presentation.theme.*
 
 
 @Composable
-fun CharacterItem(modifier: Modifier = Modifier) {
+fun CharacterItem(
+    character: CharacterModel, modifier: Modifier = Modifier
+) {
 
     Column(
         modifier = modifier
             .width(150.dp)
-            .height(200.dp)
+            .height(170.dp)
             .clip(RoundedCornerShape(10.dp))
             .background(ItemBackground)
 
@@ -37,27 +40,42 @@ fun CharacterItem(modifier: Modifier = Modifier) {
 
         AsyncImageWithBackground(
             model = ImageRequest.Builder(LocalContext.current)
-                .data("https://paimon.moe/images/characters/lisa.png")
+                .data(character.imageUrl)
                 .crossfade(true)
                 .build(),
-            contentDescription = "Lisa",
+            contentDescription = character.name,
             placeholder = painterResource(id = R.drawable.placeholder),
             contentScale = ContentScale.FillBounds,
-            background = R.drawable.item_4_star,
-            elementImage = R.drawable.anemo,
+            background = when (character.rarity) {
+                4 -> R.drawable.item_4_star
+                5 -> R.drawable.item_5_star
+                else -> throw IllegalArgumentException("No such rarity")
+            },
+            elementImage = when (character.element) {
+                "anemo" -> R.drawable.anemo
+                "pyro" -> R.drawable.pyro
+                "hydro" -> R.drawable.hydro
+                "electro" -> R.drawable.electro
+                "geo" -> R.drawable.geo
+                "cryo" -> R.drawable.cryo
+                else -> throw IllegalArgumentException("No such element")
+
+            },
             modifier = modifier
                 .fillMaxWidth()
-                .height(150.dp)
+                .height(130.dp)
                 .clip(RightCornerShape)
         )
 
-        Text(text = "Sangonomiya Kokomi", style = GenshinTypography.bodyLarge,
+        Text(
+            text = character.name, style = GenshinTypography.bodyLarge,
             color = TextColor,
             maxLines = 1,
             overflow = TextOverflow.Ellipsis,
-        modifier = Modifier
-            .align(alignment = Alignment.CenterHorizontally)
-            .padding(top = 10.dp, start = 8.dp, end = 8.dp))
+            modifier = Modifier
+                .align(alignment = Alignment.CenterHorizontally)
+                .padding(top = 5.dp, start = 8.dp, end = 8.dp)
+        )
     }
 }
 
@@ -75,7 +93,9 @@ fun AsyncImageWithBackground(
         Image(
             painter = painterResource(id = background),
             contentDescription = null,
+            contentScale = ContentScale.FillBounds,
             modifier = modifier.matchParentSize()
+
         )
         AsyncImage(
             model = model,
@@ -85,12 +105,14 @@ fun AsyncImageWithBackground(
             modifier = modifier.matchParentSize()
         )
 
-        Image(painter = painterResource(id = elementImage),
+        Image(
+            painter = painterResource(id = elementImage),
             contentDescription = null,
-        modifier = Modifier
-            .padding(3.dp)
-            .size(30.dp)
-            .align(Alignment.TopStart))
+            modifier = Modifier
+                .padding(3.dp)
+                .size(30.dp)
+                .align(Alignment.TopStart)
+        )
     }
 }
 
@@ -98,6 +120,11 @@ fun AsyncImageWithBackground(
 @Composable
 fun ItemPreview() {
     GenshinHelperTheme {
-        CharacterItem()
+        CharacterItem(
+            CharacterModel(
+                "Animeshka", 4, "anemo",
+                "bow", "https://paimon.moe/images/characters/lisa.png"
+            )
+        )
     }
 }
