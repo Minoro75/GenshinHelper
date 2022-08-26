@@ -58,6 +58,7 @@ fun CharacterItem(
                 "electro" -> R.drawable.electro
                 "geo" -> R.drawable.geo
                 "cryo" -> R.drawable.cryo
+                "dendro" -> R.drawable.dendro
                 else -> throw IllegalArgumentException("No such element")
 
             },

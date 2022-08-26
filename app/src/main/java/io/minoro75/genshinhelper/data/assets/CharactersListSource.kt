@@ -3,9 +3,15 @@ package io.minoro75.genshinhelper.data.assets
 import org.intellij.lang.annotations.Language
 
 object CharactersListSource {
+    /**
+     * here we define our JSON instead of reading from assets **/
+
+    // for internal use only
+    const val version = "3.0 1st part"
+
     @Language("JSON")
     val charactersList = """
-        [
+       [
     {
       "name": "Albedo",
       "rarity": 5,
@@ -61,6 +67,13 @@ object CharactersListSource {
       "element": "cryo",
       "weapon": "claymore",
       "image_url": "https://paimon.moe/images/characters/chongyun.png"
+    },
+   {
+      "name": "Collei",
+      "rarity": 4,
+      "element": "dendro",
+      "weapon": "bow",
+      "image_url": "https://paimon.moe/images/characters/collei.png"
     },
     {
       "name": "Diluc",
@@ -279,24 +292,39 @@ object CharactersListSource {
       "weapon": "polearm",
       "image_url": "https://paimon.moe/images/characters/thoma.png"
     },
+   {
+      "name": "Tighnari",
+      "rarity": 5,
+      "element": "dendro",
+      "weapon": "bow",
+      "image_url": "https://paimon.moe/images/characters/tighnari.png"
+    },
     {
-      "name": "Traveler (Anemo)",
+      "name": "Traveler   (Anemo)",
       "rarity": 5,
       "element": "anemo",
       "weapon": "sword",
       "image_url": "https://paimon.moe/images/characters/traveler_anemo.png"
     },
     {
-      "name": "Traveler (Electro)",
+      "name": "Traveler   (Electro)",
       "rarity": 5,
       "element": "electro",
       "weapon": "sword",
       "image_url": "https://paimon.moe/images/characters/traveler_anemo.png"
     },
     {
-      "name": "Traveler (Geo)",
+      "name": "Traveler   (Geo)",
       "rarity": 5,
       "element": "geo",
+      "weapon": "sword",
+      "image_url": "https://paimon.moe/images/characters/traveler_anemo.png"
+    },
+
+   {
+      "name": "Traveler   (Denro)",
+      "rarity": 5,
+      "element": "dendro",
       "weapon": "sword",
       "image_url": "https://paimon.moe/images/characters/traveler_anemo.png"
     },
