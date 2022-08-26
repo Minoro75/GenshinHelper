@@ -1,4 +1,4 @@
-package io.minoro75.genshinhelper.presentation.characters_list_screen
+package io.minoro75.genshinhelper.presentation.characters_list_screen.composables
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
@@ -16,7 +16,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import io.minoro75.genshinhelper.R
-import io.minoro75.genshinhelper.presentation.character_screen.CharacterItem
+import io.minoro75.genshinhelper.presentation.characters_list_screen.CharactersListViewModel
+import io.minoro75.genshinhelper.presentation.common.GenshinBottomNavigation
 import io.minoro75.genshinhelper.presentation.theme.GenshinTypography
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -34,9 +35,10 @@ fun CharactersListScreen(
     Scaffold(
         modifier = Modifier.nestedScroll(scrollBehavior.nestedScrollConnection),
         topBar = {
-            CenterAlignedTopAppBar(title = { TopBar()}
+            CenterAlignedTopAppBar(title = { TopBar() }
                 , scrollBehavior = scrollBehavior)
         },
+        bottomBar = { GenshinBottomNavigation()},
         content = {
             LazyVerticalGrid(
                 columns = GridCells.Fixed(3),

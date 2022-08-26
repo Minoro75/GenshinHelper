@@ -1,7 +1,5 @@
-package io.minoro75.genshinhelper.presentation.character_screen
+package io.minoro75.genshinhelper.presentation.characters_list_screen.composables
 
-import androidx.annotation.DrawableRes
-import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -10,19 +8,17 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import coil.compose.AsyncImage
 import coil.request.ImageRequest
 import io.minoro75.genshinhelper.R
 import io.minoro75.genshinhelper.domain.model.CharacterModel
+import io.minoro75.genshinhelper.presentation.common.AsyncImageWithBackground
 import io.minoro75.genshinhelper.presentation.theme.*
-
 
 @Composable
 fun CharacterItem(
@@ -76,43 +72,6 @@ fun CharacterItem(
             modifier = Modifier
                 .align(alignment = Alignment.CenterHorizontally)
                 .padding(top = 5.dp, start = 8.dp, end = 8.dp)
-        )
-    }
-}
-
-@Composable
-fun AsyncImageWithBackground(
-    model: Any?,
-    contentDescription: String?,
-    placeholder: Painter?,
-    contentScale: ContentScale,
-    @DrawableRes background: Int,
-    @DrawableRes elementImage: Int,
-    modifier: Modifier = Modifier
-) {
-    Box(modifier = modifier) {
-        Image(
-            painter = painterResource(id = background),
-            contentDescription = null,
-            contentScale = ContentScale.FillBounds,
-            modifier = modifier.matchParentSize()
-
-        )
-        AsyncImage(
-            model = model,
-            contentDescription = contentDescription,
-            placeholder = placeholder,
-            contentScale = contentScale,
-            modifier = modifier.matchParentSize()
-        )
-
-        Image(
-            painter = painterResource(id = elementImage),
-            contentDescription = null,
-            modifier = Modifier
-                .padding(3.dp)
-                .size(30.dp)
-                .align(Alignment.TopStart)
         )
     }
 }
