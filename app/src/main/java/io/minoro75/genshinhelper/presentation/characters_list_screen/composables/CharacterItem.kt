@@ -1,4 +1,4 @@
-package io.minoro75.genshinhelper.presentation.character_card
+package io.minoro75.genshinhelper.presentation.character_screen
 
 import androidx.annotation.DrawableRes
 import androidx.compose.foundation.Image

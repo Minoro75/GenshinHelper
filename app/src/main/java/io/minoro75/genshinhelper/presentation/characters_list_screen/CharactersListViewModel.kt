@@ -1,4 +1,4 @@
-package io.minoro75.genshinhelper.presentation.characters_list
+package io.minoro75.genshinhelper.presentation.characters_list_screen
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -8,6 +8,8 @@ import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
 import io.minoro75.genshinhelper.common.Resource
 import io.minoro75.genshinhelper.domain.repository.CharactersRepository
+import io.minoro75.genshinhelper.presentation.characters_list_screen.state.CharactersListEvent
+import io.minoro75.genshinhelper.presentation.characters_list_screen.state.CharactersListState
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
