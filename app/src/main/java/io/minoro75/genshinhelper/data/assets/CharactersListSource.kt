@@ -3,8 +3,7 @@ package io.minoro75.genshinhelper.data.assets
 import org.intellij.lang.annotations.Language
 
 object CharactersListSource {
-    /**
-     * here we define our JSON instead of reading from assets **/
+    /** here we define our JSON instead of reading from assets **/
 
     // for internal use only
     const val version = "3.0 1st part"
