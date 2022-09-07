@@ -64,7 +64,7 @@ fun CharactersListScreen(
 @Preview
 @Composable
 fun TopBar() {
-    var imageState = remember {
+    val imageState = remember {
         mutableStateOf(0)
     }
 
