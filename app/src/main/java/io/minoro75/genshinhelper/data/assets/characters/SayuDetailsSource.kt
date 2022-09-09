@@ -38,23 +38,23 @@ object SayuDetailsSource {
           "weapon_best": {
             "weapon_name": "Wolf's Gravestone",
             "weapon_url": "https://paimon.moe/images/weapons/wolfs_gravestone.png",
-            "weapon rarity": 5
+            "weapon_rarity": 5
           },
           "weapons_replacements": [
             {
               "weapon_name": "Skyward Pride",
               "weapon_url": "https://paimon.moe/images/weapons/skyward_pride.png",
-              "weapon rarity": 5
+              "weapon_rarity": 5
             },
             {
               "weapon_name": "Favonius Greatsword",
               "weapon_url": "https://paimon.moe/images/weapons/favonius_greatsword.png",
-              "weapon rarity": 4
+              "weapon_rarity": 4
             },
             {
               "weapon_name": "Katsuragikiri Nagamasa",
               "weapon_url": "https://paimon.moe/images/weapons/katsuragikiri_nagamasa.png",
-              "weapon rarity": 4
+              "weapon_rarity": 4
             }
           ]
         }

@@ -38,23 +38,23 @@ object BeidouDetailsSource {
               "weapon_best": {
                 "weapon_name": "Wolf's Gravestone",
                 "weapon_url": "https://paimon.moe/images/weapons/wolfs_gravestone.png",
-                "weapon rarity": 5
+                "weapon_rarity": 5
               },
               "weapons_replacements": [
                 {
                   "weapon_name": "Akuoumaru",
                   "weapon_url": "https://paimon.moe/images/weapons/akuoumaru.png",
-                  "weapon rarity": 4
+                  "weapon_rarity": 4
                 },
                 {
                   "weapon_name": "Serpent Spine",
                   "weapon_url": "https://paimon.moe/images/weapons/serpent_spine.png",
-                  "weapon rarity": 4
+                  "weapon_rarity": 4
                 },
                 {
                   "weapon_name": "Katsuragikiri Nagamasa",
                   "weapon_url": "https://paimon.moe/images/weapons/katsuragikiri_nagamasa.png",
-                  "weapon rarity": 4
+                  "weapon_rarity": 4
                 }
               ]
             }

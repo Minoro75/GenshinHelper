@@ -38,23 +38,23 @@ object MonaDetailsSource {
           "weapon_best": {
              "weapon_name": "Skyward Atlas",
               "weapon_url": "https://paimon.moe/images/weapons/skyward_atlas.png",
-              "weapon rarity": 5
+              "weapon_rarity": 5
           },
           "weapons_replacements": [
             {
               "weapon_name": "Memory of Dust",
             "weapon_url": "https://paimon.moe/images/weapons/memory_of_dust.png",
-            "weapon rarity": 5
+            "weapon_rarity": 5
             },
             {
               "weapon_name": "The Widsith",
               "weapon_url": "https://paimon.moe/images/weapons/the_widsith.png",
-              "weapon rarity": 4
+              "weapon_rarity": 4
             },
             {
               "weapon_name": "Mappa Mare",
               "weapon_url": "https://paimon.moe/images/weapons/mappa_mare.png",
-              "weapon rarity": 4
+              "weapon_rarity": 4
             }
           ]
         }

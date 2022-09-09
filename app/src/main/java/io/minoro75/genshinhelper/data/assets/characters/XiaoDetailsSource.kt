@@ -38,23 +38,23 @@ object XiaoDetailsSource {
           "weapon_best": {
             "weapon_name": "Primordial Jade Winged-Spear",
             "weapon_url": "https://paimon.moe/images/weapons/primordial_jade_winged-spear.png",
-            "weapon rarity": 5
+            "weapon_rarity": 5
           },
           "weapons_replacements": [
             {
               "weapon_name": "Staff of Homa",
               "weapon_url": "https://paimon.moe/images/weapons/staff_of_homa.png",
-              "weapon rarity": 5
+              "weapon_rarity": 5
             },
             {
               "weapon_name": "Deathmatch",
               "weapon_url": "https://paimon.moe/images/weapons/deathmatch.png",
-              "weapon rarity": 4
+              "weapon_rarity": 4
             },
             {
              "weapon_name": "Favonius Lance",
               "weapon_url": "https://paimon.moe/images/weapons/favonius_lance.png",
-              "weapon rarity": 4
+              "weapon_rarity": 4
             }
           ]
         }

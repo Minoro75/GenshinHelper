@@ -38,23 +38,23 @@ object YanfeiDetailsSource {
           "weapon_best": {
             "weapon_name": "Lost Prayer to the Sacred Winds",
             "weapon_url": "https://paimon.moe/images/weapons/lost_prayer_to_the_sacred_winds.png",
-            "weapon rarity": 5
+            "weapon_rarity": 5
           },
           "weapons_replacements": [
             {
               "weapon_name": "Skyward Atlas",
               "weapon_url": "https://paimon.moe/images/weapons/skyward_atlas.png",
-              "weapon rarity": 5
+              "weapon_rarity": 5
             },
             {
               "weapon_name": "The Widsith",
               "weapon_url": "https://paimon.moe/images/weapons/the_widsith.png",
-              "weapon rarity": 4
+              "weapon_rarity": 4
             },
             {
              "weapon_name": "Frostbearer",
               "weapon_url": "https://paimon.moe/images/weapons/frostbearer.png",
-              "weapon rarity": 4
+              "weapon_rarity": 4
             }
           ]
         }

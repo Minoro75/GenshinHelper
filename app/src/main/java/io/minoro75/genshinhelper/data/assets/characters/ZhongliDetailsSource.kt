@@ -38,23 +38,23 @@ object ZhongliDetailsSource {
           "weapon_best": {
             "weapon_name": "Black Tassel",
             "weapon_url": "https://paimon.moe/images/weapons/black_tassel.png",
-            "weapon rarity": 3
+            "weapon_rarity": 3
           },
           "weapons_replacements": [
             {
               "weapon_name": "Staff of Homa",
               "weapon_url": "https://paimon.moe/images/weapons/staff_of_homa.png",
-              "weapon rarity": 5
+              "weapon_rarity": 5
             },
             {
               "weapon_name": "Favonius Lance",
               "weapon_url": "https://paimon.moe/images/weapons/favonius_lance.png",
-              "weapon rarity": 4
+              "weapon_rarity": 4
             },
             {
               "weapon_name": "Black Tassel",
               "weapon_url": "https://paimon.moe/images/weapons/black_tassel.png",
-              "weapon rarity": 3
+              "weapon_rarity": 3
             }
           ]
         }

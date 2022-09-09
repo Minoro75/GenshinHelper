@@ -38,23 +38,23 @@ object SangonomiyaKokomiDetailsSource {
           "weapon_best": {
             "weapon_name": "Thrilling Tales of Dragon Slayers",
             "weapon_url": "https://paimon.moe/images/weapons/thrilling_tales_of_dragon_slayers.png",
-            "weapon rarity": 3
+            "weapon_rarity": 3
           },
           "weapons_replacements": [
             {
               "weapon_name": "Prototype Amber",
               "weapon_url": "https://paimon.moe/images/weapons/prototype_amber.png",
-              "weapon rarity": 4
+              "weapon_rarity": 4
             },
             {
               "weapon_name": "Everlasting Moonglow",
               "weapon_url": "https://paimon.moe/images/weapons/everlasting_moonglow.png",
-              "weapon rarity": 5
+              "weapon_rarity": 5
             },
             {
               "weapon_name": "Hakushin Ring",
               "weapon_url": "https://paimon.moe/images/weapons/hakushin_ring.png",
-              "weapon rarity": 4
+              "weapon_rarity": 4
             }
           ]
         }

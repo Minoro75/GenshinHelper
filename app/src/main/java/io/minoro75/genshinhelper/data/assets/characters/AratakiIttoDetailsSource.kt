@@ -38,23 +38,23 @@ object AratakiIttoDetailsSource {
               "weapon_best": {
                 "weapon_name": "Redhorn Stonethresher",
                 "weapon_url": "https://paimon.moe/images/weapons/redhorn_stonethresher.png",
-                "weapon rarity": 5
+                "weapon_rarity": 5
               },
               "weapons_replacements": [
                 {
                   "weapon_name": "Skyward Pride",
                   "weapon_url": "https://paimon.moe/images/weapons/skyward_pride.png",
-                  "weapon rarity": 5
+                  "weapon_rarity": 5
                 },
                 {
                   "weapon_name": "Serpent Spine",
                   "weapon_url": "https://paimon.moe/images/weapons/serpent_spine.png",
-                  "weapon rarity": 4
+                  "weapon_rarity": 4
                 },
                 {
                   "weapon_name": "Whiteblind",
                   "weapon_url": "https://paimon.moe/images/weapons/whiteblind.png",
-                  "weapon rarity": 4
+                  "weapon_rarity": 4
                 }
               ]
             }

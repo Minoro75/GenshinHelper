@@ -38,23 +38,23 @@ object KujouSaraDetailsSource {
           "weapon_best": {
              "weapon_name": "Skyward Harp",
               "weapon_url": "https://paimon.moe/images/weapons/skyward_harp.png",
-              "weapon rarity": 5
+              "weapon_rarity": 5
           },
           "weapons_replacements": [
             {
-              "weapon_name": "Elegy for the End",
+            "weapon_name": "Elegy for the End",
             "weapon_url": "https://paimon.moe/images/weapons/elegy_for_the_end.png",
-            "weapon rarity": 5
+            "weapon_rarity": 5
             },
             {
               "weapon_name": "Sacrificial Bow",
               "weapon_url": "https://paimon.moe/images/weapons/sacrificial_bow.png",
-              "weapon rarity": 4
+              "weapon_rarity": 4
             },
             {
               "weapon_name": "Favonius Warbow",
               "weapon_url": "https://paimon.moe/images/weapons/favonius_warbow.png",
-              "weapon rarity": 4
+              "weapon_rarity": 4
             }
           ]
         }

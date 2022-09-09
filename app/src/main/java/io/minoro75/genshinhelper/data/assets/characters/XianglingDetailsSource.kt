@@ -38,23 +38,23 @@ object XianglingDetailsSource {
           "weapon_best": {
             "weapon_name": "Engulfing Lightning",
             "weapon_url": "https://paimon.moe/images/weapons/engulfing_lightning.png",
-            "weapon rarity": 5
+            "weapon_rarity": 5
           },
           "weapons_replacements": [
             {
               "weapon_name": "Staff of Homa",
               "weapon_url": "https://paimon.moe/images/weapons/staff_of_homa.png",
-              "weapon rarity": 5
+              "weapon_rarity": 5
             },
             {
               "weapon_name": "The Catch",
               "weapon_url": "https://paimon.moe/images/weapons/the_catch.png",
-              "weapon rarity": 4
+              "weapon_rarity": 4
             },
             {
              "weapon_name": "The Catch",
               "weapon_url": "https://paimon.moe/images/weapons/the_catch.png",
-              "weapon rarity": 4
+              "weapon_rarity": 4
             }
           ]
         }

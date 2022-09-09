@@ -38,23 +38,23 @@ object KaedeharaKazuhaDetailsSource {
           "weapon_best": {
             "weapon_name": "Freedom-Sworn",
             "weapon_url": "https://paimon.moe/images/weapons/freedom-sworn.png",
-            "weapon rarity": 5
+            "weapon_rarity": 5
           },
           "weapons_replacements": [
             {
               "weapon_name": "Haran Geppaku Futsu",
               "weapon_url": "https://paimon.moe/images/weapons/haran_geppaku_futsu.png",
-              "weapon rarity": 5
+              "weapon_rarity": 5
             },
             {
               "weapon_name": "Favonius Sword",
               "weapon_url": "https://paimon.moe/images/weapons/favonius_sword.png",
-              "weapon rarity": 4
+              "weapon_rarity": 4
             },
             {
               "weapon_name": "Sacrificial Sword",
               "weapon_url": "https://paimon.moe/images/weapons/sacrificial_sword.png",
-              "weapon rarity": 4
+              "weapon_rarity": 4
             }
           ]
         }

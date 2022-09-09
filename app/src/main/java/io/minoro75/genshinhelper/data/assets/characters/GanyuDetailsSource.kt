@@ -38,23 +38,23 @@ object GanyuDetailsSource {
           "weapon_best": {
             "weapon_name": "Amos' Bow",
             "weapon_url": "https://paimon.moe/images/weapons/amos_bow.png",
-            "weapon rarity": 5
+            "weapon_rarity": 5
           },
           "weapons_replacements": [
             {
               "weapon_name": "Aqua Simulacra",
               "weapon_url": "https://paimon.moe/images/weapons/aqua_simulacra.png",
-              "weapon rarity": 5
+              "weapon_rarity": 5
             },
             {
               "weapon_name": "Prototype Crescent",
               "weapon_url": "https://paimon.moe/images/weapons/prototype_crescent.png",
-              "weapon rarity": 4
+              "weapon_rarity": 4
             },
             {
               "weapon_name": "Hamayumi",
               "weapon_url": "https://paimon.moe/images/weapons/hamayumi.png",
-              "weapon rarity": 4
+              "weapon_rarity": 4
             }
           ]
         }

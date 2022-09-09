@@ -41,23 +41,23 @@ object AlbedoDetailsSource {
           "weapon_best": {
             "weapon_name": "Cinnabar Spindle",
             "weapon_url": "https://paimon.moe/images/weapons/cinnabar_spindle.png",
-            "weapon rarity": 4
+            "weapon_rarity": 4
           },
           "weapons_replacements": [
             {
               "weapon_name": "Harbinger of Dawn",
               "weapon_url": "https://paimon.moe/images/weapons/harbinger_of_dawn.png",
-              "weapon rarity": 3
+              "weapon_rarity": 3
             },
             {
               "weapon_name": "Primordial Jade Cutter",
               "weapon_url": "https://paimon.moe/images/weapons/primordial_jade_cutter.png",
-              "weapon rarity": 5
+              "weapon_rarity": 5
             },
             {
               "weapon_name": "Harbinger of Dawn",
               "weapon_url": "https://paimon.moe/images/weapons/harbinger_of_dawn.png",
-              "weapon rarity": 3
+              "weapon_rarity": 3
             }
           ]
         }

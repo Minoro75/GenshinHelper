@@ -38,23 +38,23 @@ object BennettDetailsSource {
               "weapon_best": {
                 "weapon_name": "Skyward Blade",
                 "weapon_url": "https://paimon.moe/images/weapons/skyward_blade.png",
-                "weapon rarity": 5
+                "weapon_rarity": 5
               },
               "weapons_replacements": [
                 {
                   "weapon_name": "The Alley Flash",
                   "weapon_url": "https://paimon.moe/images/weapons/the_alley_flash.png",
-                  "weapon rarity": 4
+                  "weapon_rarity": 4
                 },
                 {
                   "weapon_name": "Sacrificial Sword",
                   "weapon_url": "https://paimon.moe/images/weapons/sacrificial_sword.png",
-                  "weapon rarity": 4
+                  "weapon_rarity": 4
                 },
                 {
                   "weapon_name": "Prototype Rancour",
                   "weapon_url": "https://paimon.moe/images/weapons/prototype_rancour.png",
-                  "weapon rarity": 4
+                  "weapon_rarity": 4
                 }
               ]
             }

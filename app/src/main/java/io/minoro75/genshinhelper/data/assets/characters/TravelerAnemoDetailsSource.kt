@@ -38,23 +38,23 @@ object TravelerAnemoDetailsSource {
           "weapon_best": {
             "weapon_name": "Primordial Jade Cutter",
             "weapon_url": "https://paimon.moe/images/weapons/primordial_jade_cutter.png",
-            "weapon rarity": 5
+            "weapon_rarity": 5
           },
           "weapons_replacements": [
             {
               "weapon_name": "Skyward Blade",
               "weapon_url": "https://paimon.moe/images/weapons/skyward_blade.png",
-              "weapon rarity": 5
+              "weapon_rarity": 5
             },
             {
               "weapon_name": "Sacrificial Sword",
               "weapon_url": "https://paimon.moe/images/weapons/sacrificial_sword.png",
-              "weapon rarity": 4
+              "weapon_rarity": 4
             },
             {
               "weapon_name": "Iron Sting",
               "weapon_url": "https://paimon.moe/images/weapons/iron_sting.png",
-              "weapon rarity": 4
+              "weapon_rarity": 4
             }
           ]
         }

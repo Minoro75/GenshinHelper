@@ -38,23 +38,23 @@ object TravelerGeoDetailsSource {
           "weapon_best": {
             "weapon_name": "Primordial Jade Cutter",
             "weapon_url": "https://paimon.moe/images/weapons/primordial_jade_cutter.png",
-            "weapon rarity": 5
+            "weapon_rarity": 5
           },
           "weapons_replacements": [
             {
               "weapon_name": "Summit Shaper",
               "weapon_url": "https://paimon.moe/images/weapons/summit_shaper.png",
-              "weapon rarity": 5
+              "weapon_rarity": 5
             },
             {
               "weapon_name": "Festering Desire",
               "weapon_url": "https://paimon.moe/images/weapons/festering_desire.png",
-              "weapon rarity": 4
+              "weapon_rarity": 4
             },
             {
               "weapon_name": "Amenoma Kageuchi",
               "weapon_url": "https://paimon.moe/images/weapons/amenoma_kageuchi.png",
-              "weapon rarity": 4
+              "weapon_rarity": 4
             }
           ]
         }

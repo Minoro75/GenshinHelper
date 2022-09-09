@@ -38,23 +38,23 @@ object TravelerDendroDetailsSource {
           "weapon_best": {
             "weapon_name": "Freedom-Sworn",
             "weapon_url": "https://paimon.moe/images/weapons/freedom-sworn.png",
-            "weapon rarity": 5
+            "weapon_rarity": 5
           },
           "weapons_replacements": [
             {
               "weapon_name": "Sacrificial Sword",
               "weapon_url": "https://paimon.moe/images/weapons/sacrificial_sword.png",
-              "weapon rarity": 4
+              "weapon_rarity": 4
             },
             {
               "weapon_name": "Favonius Sword",
               "weapon_url": "https://paimon.moe/images/weapons/favonius_sword.png",
-              "weapon rarity": 4
+              "weapon_rarity": 4
             },
             {
               "weapon_name": "Iron Sting",
               "weapon_url": "https://paimon.moe/images/weapons/iron_sting.png",
-              "weapon rarity": 4
+              "weapon_rarity": 4
             }
           ]
         }

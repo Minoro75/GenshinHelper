@@ -38,23 +38,23 @@ object SucroseDetailsSource {
           "weapon_best": {
             "weapon_name": "Sacrificial Fragments",
             "weapon_url": "https://paimon.moe/images/weapons/sacrificial_fragments.png",
-            "weapon rarity": 5
+            "weapon_rarity": 5
           },
           "weapons_replacements": [
             {
               "weapon_name": "Thrilling Tales of Dragon Slayers",
               "weapon_url": "https://paimon.moe/images/weapons/thrilling_tales_of_dragon_slayers.png",
-              "weapon rarity": 3
+              "weapon_rarity": 3
             },
             {
               "weapon_name": "Hakushin Ring",
               "weapon_url": "https://paimon.moe/images/weapons/hakushin_ring.png",
-              "weapon rarity": 4
+              "weapon_rarity": 4
             },
             {
               "weapon_name": "Mappa Mare",
               "weapon_url": "https://paimon.moe/images/weapons/mappa_mare.png",
-              "weapon rarity": 4
+              "weapon_rarity": 4
             }
           ]
         }

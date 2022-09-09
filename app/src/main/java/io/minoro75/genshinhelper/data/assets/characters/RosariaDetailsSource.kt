@@ -38,23 +38,23 @@ object RosariaDetailsSource {
           "weapon_best": {
             "weapon_name": "Primordial Jade Winged-Spear",
             "weapon_url": "https://paimon.moe/images/weapons/primordial_jade_winged-spear.png",
-            "weapon rarity": 5
+            "weapon_rarity": 5
           },
           "weapons_replacements": [
             {
               "weapon_name": "Skyward Spine",
               "weapon_url": "https://paimon.moe/images/weapons/skyward_spine.png",
-              "weapon rarity": 5
+              "weapon_rarity": 5
             },
             {
               "weapon_name": "Favonius Lance",
               "weapon_url": "https://paimon.moe/images/weapons/favonius_lance.png",
-              "weapon rarity": 4
+              "weapon_rarity": 4
             },
             {
               "weapon_name": "Deathmatch",
               "weapon_url": "https://paimon.moe/images/weapons/deathmatch.png",
-              "weapon rarity": 4
+              "weapon_rarity": 4
             }
           ]
         }

@@ -38,23 +38,23 @@ object KukiShinobuDetailsSource {
           "weapon_best": {
              "weapon_name": "Freedom-Sworn",
               "weapon_url": "https://paimon.moe/images/weapons/freedom-sworn.png",
-              "weapon rarity": 5
+              "weapon_rarity": 5
           },
           "weapons_replacements": [
             {
-              "weapon_name": "Primordial Jade Cutter",
+            "weapon_name": "Primordial Jade Cutter",
             "weapon_url": "https://paimon.moe/images/weapons/primordial_jade_cutter.png",
-            "weapon rarity": 5
+            "weapon_rarity": 5
             },
             {
               "weapon_name": "Iron Sting",
               "weapon_url": "https://paimon.moe/images/weapons/iron_sting.png",
-              "weapon rarity": 4
+              "weapon_rarity": 4
             },
             {
               "weapon_name": "Festering Desire",
               "weapon_url": "https://paimon.moe/images/weapons/festering_desire.png",
-              "weapon rarity": 4
+              "weapon_rarity": 4
             }
           ]
         }

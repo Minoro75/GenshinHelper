@@ -38,23 +38,23 @@ object HuTaoDetailsSource {
           "weapon_best": {
             "weapon_name": "Staff of Homa",
             "weapon_url": "https://paimon.moe/images/weapons/staff_of_homa.png",
-            "weapon rarity": 5
+            "weapon_rarity": 5
           },
           "weapons_replacements": [
             {
               "weapon_name": "Primordial Jade Winged-Spear",
               "weapon_url": "https://paimon.moe/images/weapons/primordial_jade_winged-spear.png",
-              "weapon rarity": 5
+              "weapon_rarity": 5
             },
             {
               "weapon_name": "Dragon's Bane",
               "weapon_url": "https://paimon.moe/images/weapons/dragons_bane.png",
-              "weapon rarity": 4
+              "weapon_rarity": 4
             },
             {
               "weapon_name": "Deathmatch",
               "weapon_url": "https://paimon.moe/images/weapons/deathmatch.png",
-              "weapon rarity": 4
+              "weapon_rarity": 4
             }
           ]
         }

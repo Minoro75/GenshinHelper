@@ -38,23 +38,23 @@ object KaeyaDetailsSource {
           "weapon_best": {
             "weapon_name": "Mistsplitter Reforged",
             "weapon_url": "https://paimon.moe/images/weapons/mistsplitter_reforged.png",
-            "weapon rarity": 5
+            "weapon_rarity": 5
           },
           "weapons_replacements": [
             {
               "weapon_name": "Skyward Blade",
               "weapon_url": "https://paimon.moe/images/weapons/skyward_blade.png",
-              "weapon rarity": 5
+              "weapon_rarity": 5
             },
             {
               "weapon_name": "Sacrificial Sword",
               "weapon_url": "https://paimon.moe/images/weapons/sacrificial_sword.png",
-              "weapon rarity": 4
+              "weapon_rarity": 4
             },
             {
               "weapon_name": "Amenoma Kageuchi",
               "weapon_url": "https://paimon.moe/images/weapons/amenoma_kageuchi.png",
-              "weapon rarity": 4
+              "weapon_rarity": 4
             }
           ]
         }

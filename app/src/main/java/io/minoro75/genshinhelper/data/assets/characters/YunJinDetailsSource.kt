@@ -38,23 +38,23 @@ object YunJinDetailsSource {
           "weapon_best": {
             "weapon_name": "Engulfing Lightning",
             "weapon_url": "https://paimon.moe/images/weapons/engulfing_lightning.png",
-            "weapon rarity": 5
+            "weapon_rarity": 5
           },
           "weapons_replacements": [
             {
               "weapon_name": "Favonius Lance",
             "weapon_url": "https://paimon.moe/images/weapons/favonius_lance.png",
-            "weapon rarity": 4
+            "weapon_rarity": 4
             },
             {
               "weapon_name": "The Catch",
               "weapon_url": "https://paimon.moe/images/weapons/the_catch.png",
-              "weapon rarity": 4
+              "weapon_rarity": 4
             },
             {
               "weapon_name": "Prototype Starglitter",
               "weapon_url": "https://paimon.moe/images/weapons/prototype_starglitter.png",
-              "weapon rarity": 4
+              "weapon_rarity": 4
             }
           ]
         }

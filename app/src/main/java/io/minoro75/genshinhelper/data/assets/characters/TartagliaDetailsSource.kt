@@ -38,23 +38,23 @@ object TartagliaDetailsSource {
           "weapon_best": {
             "weapon_name": "Polar Star",
             "weapon_url": "https://paimon.moe/images/weapons/polar_star.png",
-            "weapon rarity": 5
+            "weapon_rarity": 5
           },
           "weapons_replacements": [
             {
               "weapon_name": "Thundering Pulse",
               "weapon_url": "https://paimon.moe/images/weapons/thundering_pulse.png",
-              "weapon rarity": 5
+              "weapon_rarity": 5
             },
             {
               "weapon_name": "The Viridescent Hunt",
               "weapon_url": "https://paimon.moe/images/weapons/the_viridescent_hunt.png",
-              "weapon rarity": 4
+              "weapon_rarity": 4
             },
             {
               "weapon_name": "Hamayumi",
               "weapon_url": "https://paimon.moe/images/weapons/hamayumi.png",
-              "weapon rarity": 4
+              "weapon_rarity": 4
             }
           ]
         }

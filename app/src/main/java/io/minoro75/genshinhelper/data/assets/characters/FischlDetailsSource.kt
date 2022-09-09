@@ -46,23 +46,23 @@ object FischlDetailsSource {
           "weapon_best": {
             "weapon_name": "Skyward Harp",
             "weapon_url": "https://paimon.moe/images/weapons/skyward_harp.png",
-            "weapon rarity": 5
+            "weapon_rarity": 5
           },
           "weapons_replacements": [
             {
               "weapon_name": "The Stringless",
               "weapon_url": "https://paimon.moe/images/weapons/the_stringless.png",
-              "weapon rarity": 4
+              "weapon_rarity": 4
             },
             {
               "weapon_name": "Fading Twilight",
               "weapon_url": "https://paimon.moe/images/weapons/fading_twilight.png",
-              "weapon rarity": 4
+              "weapon_rarity": 4
             },
             {
               "weapon_name": "Hamayumi",
               "weapon_url": "https://paimon.moe/images/weapons/hamayumi.png",
-              "weapon rarity": 4
+              "weapon_rarity": 4
             }
           ]
         }

@@ -38,23 +38,23 @@ object EulaDetailsSource {
           "weapon_best": {
             "weapon_name": "Song of Broken Pines",
             "weapon_url": "https://paimon.moe/images/weapons/song_of_broken_pines.png",
-            "weapon rarity": 5
+            "weapon_rarity": 5
           },
           "weapons_replacements": [
             {
               "weapon_name": "Wolf's Gravestone",
               "weapon_url": "https://paimon.moe/images/weapons/wolfs_gravestone.png",
-              "weapon rarity": 5
+              "weapon_rarity": 5
             },
             {
               "weapon_name": "Serpent Spine",
               "weapon_url": "https://paimon.moe/images/weapons/serpent_spine.png",
-              "weapon rarity": 4
+              "weapon_rarity": 4
             },
             {
               "weapon_name": "Snow-Tombed Starsilver",
               "weapon_url": "https://paimon.moe/images/weapons/snow-tombed_starsilver.png",
-              "weapon rarity": 4
+              "weapon_rarity": 4
             }
           ]
         }

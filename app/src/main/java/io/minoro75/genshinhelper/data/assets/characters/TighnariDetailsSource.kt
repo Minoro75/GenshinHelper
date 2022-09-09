@@ -38,23 +38,23 @@ object TighnariDetailsSource {
           "weapon_best": {
             "weapon_name": "Hunter's Path",
             "weapon_url": "https://paimon.moe/images/weapons/hunters_path.png",
-            "weapon rarity": 5
+            "weapon_rarity": 5
           },
           "weapons_replacements": [
             {
               "weapon_name": "Aqua Simulacra",
               "weapon_url": "https://paimon.moe/images/weapons/aqua_simulacra.png",
-              "weapon rarity": 5
+              "weapon_rarity": 5
             },
             {
               "weapon_name": "The Viridescent Hunt",
               "weapon_url": "https://paimon.moe/images/weapons/the_viridescent_hunt.png",
-              "weapon rarity": 4
+              "weapon_rarity": 4
             },
             {
               "weapon_name": "Prototype Crescent",
               "weapon_url": "https://paimon.moe/images/weapons/prototype_crescent.png",
-              "weapon rarity": 4
+              "weapon_rarity": 4
             }
           ]
         }
