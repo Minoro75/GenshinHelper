@@ -1,6 +1,10 @@
 package io.minoro75.genshinhelper.domain.model
 
+import com.squareup.moshi.Json
+
 data class WeeklyBossItem(
-    val boss_item_name: String,
-    val boss_item_url: String
+    @Json(name = "boss_item_name")
+    val bossItemName: String,
+    @Json(name = "boss_item_url")
+    val bossItemUrl: String
 )

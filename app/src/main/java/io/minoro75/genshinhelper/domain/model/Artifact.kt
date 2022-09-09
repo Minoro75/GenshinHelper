@@ -1,10 +1,18 @@
 package io.minoro75.genshinhelper.domain.model
 
+import com.squareup.moshi.Json
+
 data class Artifact(
-    val artifact_amount: Int,
-    val artifact_circlet: String,
-    val artifact_gobelet: String,
-    val artifact_name: String,
-    val artifact_sands: String,
-    val artifact_url: String
+    @Json(name = "artifact_amount")
+    val artifactAmount: Int,
+    @Json(name = "artifact_circlet")
+    val artifactCirclet: String,
+    @Json(name = "artifact_gobelet")
+    val artifactGobelet: String,
+    @Json(name = "artifact_name")
+    val artifactName: String,
+    @Json(name = "artifact_sands")
+    val artifactSands: String,
+    @Json(name = "artifact_url")
+    val artifactUrl: String
 )

@@ -1,7 +1,12 @@
 package io.minoro75.genshinhelper.domain.model
 
+import com.squareup.moshi.Json
+
 data class TalentsBooks(
-    val book_days: String,
-    val book_name: String,
-    val book_url: String
+    @Json(name = "book_days")
+    val bookDays: String,
+    @Json(name = "book_name")
+    val bookName: String,
+    @Json(name = "book_url")
+    val bookUrl: String
 )

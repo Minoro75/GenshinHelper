@@ -1,7 +1,12 @@
 package io.minoro75.genshinhelper.domain.model
 
+import com.squareup.moshi.Json
+
 data class WeaponBest(
-    val weapon_rarity: Int,
-    val weapon_name: String,
-    val weapon_url: String
+    @Json(name = "weapon_rarity")
+    val weaponRarity: Int,
+    @Json(name = "weapon_name")
+    val weaponName: String,
+    @Json(name = "weapon_url")
+    val weaponUrl: String
 )
