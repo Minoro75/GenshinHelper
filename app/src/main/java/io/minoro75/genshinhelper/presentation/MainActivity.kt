@@ -10,7 +10,9 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.squareup.moshi.adapter
 import dagger.hilt.android.AndroidEntryPoint
+import io.minoro75.genshinhelper.domain.model.CharacterModel
 import io.minoro75.genshinhelper.presentation.characters_list_screen.composables.CharactersListScreen
 import io.minoro75.genshinhelper.presentation.theme.GenshinHelperTheme
 
