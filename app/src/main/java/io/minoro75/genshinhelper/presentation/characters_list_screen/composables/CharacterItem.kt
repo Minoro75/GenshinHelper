@@ -3,7 +3,6 @@ package io.minoro75.genshinhelper.presentation.characters_list_screen.composable
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -44,8 +43,8 @@ fun CharacterItem(
             placeholder = painterResource(id = R.drawable.placeholder),
             contentScale = ContentScale.FillBounds,
             background = when (character.rarity) {
-                4 -> R.drawable.item_4_star
-                5 -> R.drawable.item_5_star
+                4 -> R.drawable.background_rarity_4_star
+                5 -> R.drawable.background_rarity_5_star
                 else -> throw IllegalArgumentException("No such rarity")
             },
             elementImage = when (character.element) {

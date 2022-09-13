@@ -1,6 +1,7 @@
 package io.minoro75.genshinhelper.domain.repository
 
 import io.minoro75.genshinhelper.common.Resource
+import io.minoro75.genshinhelper.domain.model.CharacterDetails
 import io.minoro75.genshinhelper.domain.model.CharacterModel
 import kotlinx.coroutines.flow.Flow
 
@@ -11,4 +12,5 @@ import kotlinx.coroutines.flow.Flow
 
 interface CharactersRepository {
     suspend fun getCharacters(): Flow<Resource<List<CharacterModel>>>
+    suspend fun getCharacterDetails(name:String): Flow<Resource<CharacterDetails>>
 }

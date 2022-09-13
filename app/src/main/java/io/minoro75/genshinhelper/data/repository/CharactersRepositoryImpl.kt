@@ -2,6 +2,7 @@ package io.minoro75.genshinhelper.data.repository
 
 import io.minoro75.genshinhelper.common.Resource
 import io.minoro75.genshinhelper.data.assets.AssetsDataSource
+import io.minoro75.genshinhelper.domain.model.CharacterDetails
 import io.minoro75.genshinhelper.domain.model.CharacterModel
 import io.minoro75.genshinhelper.domain.repository.CharactersRepository
 import kotlinx.coroutines.flow.Flow
@@ -21,6 +22,20 @@ class CharactersRepositoryImpl @Inject constructor(
                 emit(Resource.Error("Empty or null list"))
             } else {
                 emit(Resource.Success(list))
+                emit(Resource.Loading(isLoading = false))
+            }
+        }
+    }
+
+    override suspend fun getCharacterDetails(name: String): Flow<Resource<CharacterDetails>> {
+        return flow {
+            emit(Resource.Loading(isLoading = true))
+            val details = assetsDataSource.getCharacterDetails(name)
+            if (details == null){
+                emit(Resource.Error("null details"))
+            }
+            else{
+                emit(Resource.Success(details))
                 emit(Resource.Loading(isLoading = false))
             }
         }
