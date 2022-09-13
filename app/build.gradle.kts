@@ -64,6 +64,7 @@ dependencies {
     implementation(Dependencies.Compose.foundation)
     implementation(Dependencies.Compose.animation)
     implementation(Dependencies.Compose.runtime)
+    implementation(Dependencies.Compose.navigation)
 
     implementation(Dependencies.Hilt.hilt)
     kapt(Dependencies.Hilt.kaptHilt)
