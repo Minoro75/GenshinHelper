@@ -29,11 +29,7 @@ fun GenshinBottomNavigation(navController: NavController) {
             label = { Text(text = stringResource(id = NavigationItem.Characters.title)) },
             onClick = {
                 navController.navigate(NavigationItem.Characters.route) {
-                    navController.graph.startDestinationRoute?.let {
-                        popUpTo(it) { saveState = true }
-                    }
                     launchSingleTop = true
-                    restoreState = true
                 }
             })
 

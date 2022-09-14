@@ -3,7 +3,6 @@ package io.minoro75.genshinhelper.presentation
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Scaffold
@@ -37,15 +36,14 @@ fun MainScreen() {
     val navController = rememberNavController()
     Scaffold(
         bottomBar = { GenshinBottomNavigation(navController) }) { paddingValues ->
-        Box(modifier = Modifier.padding(paddingValues)) {
-            NavHost(
-                navController = navController,
-                startDestination = NavigationItem.Characters.route
-            ) {
-                composable(NavigationItem.Home.route) {}
-                composable(NavigationItem.Characters.route) { CharactersListScreen() }
-                composable(NavigationItem.Info.route) {}
-            }
+        NavHost(
+            modifier = Modifier.padding(paddingValues),
+            navController = navController,
+            startDestination = NavigationItem.Characters.route
+        ) {
+            composable(NavigationItem.Home.route) {}
+            composable(NavigationItem.Characters.route) { CharactersListScreen() }
+            composable(NavigationItem.Info.route) {}
         }
 
     }
