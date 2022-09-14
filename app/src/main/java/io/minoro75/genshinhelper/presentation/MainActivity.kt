@@ -3,17 +3,19 @@ package io.minoro75.genshinhelper.presentation
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.squareup.moshi.adapter
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
 import dagger.hilt.android.AndroidEntryPoint
-import io.minoro75.genshinhelper.domain.model.CharacterModel
 import io.minoro75.genshinhelper.presentation.characters_list_screen.composables.CharactersListScreen
+import io.minoro75.genshinhelper.presentation.common.GenshinBottomNavigation
+import io.minoro75.genshinhelper.presentation.common.NavigationItem
 import io.minoro75.genshinhelper.presentation.theme.GenshinHelperTheme
 
 @AndroidEntryPoint
@@ -21,27 +23,30 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-
         setContent {
             GenshinHelperTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
-                    CharactersListScreen()
-                }
+                MainScreen()
             }
         }
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun Greeting(name: String) {
-    Text(text = "Hello $name!")
-}
+fun MainScreen() {
+    val navController = rememberNavController()
+    Scaffold(
+        bottomBar = { GenshinBottomNavigation(navController) }) { paddingValues ->
+        Box(modifier = Modifier.padding(paddingValues)) {
+            NavHost(
+                navController = navController,
+                startDestination = NavigationItem.Characters.route
+            ) {
+                composable(NavigationItem.Home.route) {}
+                composable(NavigationItem.Characters.route) { CharactersListScreen() }
+                composable(NavigationItem.Info.route) {}
+            }
+        }
 
-@Preview(showBackground = true)
-@Composable
-fun DefaultPreview() {
-    GenshinHelperTheme {
-        Greeting("Android")
     }
 }

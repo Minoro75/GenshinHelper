@@ -57,7 +57,6 @@ android {
 
 dependencies {
 
-
     implementation(Dependencies.Compose.ui)
     implementation(Dependencies.Compose.material)
     implementation(Dependencies.Compose.materialWindowSize)

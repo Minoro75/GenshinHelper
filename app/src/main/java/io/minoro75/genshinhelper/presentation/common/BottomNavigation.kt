@@ -1,35 +1,49 @@
 package io.minoro75.genshinhelper.presentation.common
 
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Home
-import androidx.compose.material.icons.filled.Menu
-import androidx.compose.material.icons.filled.Person
-import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.tooling.preview.Preview
-import io.minoro75.genshinhelper.R
+import androidx.compose.runtime.getValue
+import androidx.compose.ui.res.stringResource
+import androidx.navigation.NavController
+import androidx.navigation.compose.currentBackStackEntryAsState
 
-@Preview
 @Composable
-fun GenshinBottomNavigation(){
+fun GenshinBottomNavigation(navController: NavController) {
+    val navBackStackEntry by navController.currentBackStackEntryAsState()
+    val currentRoute = navBackStackEntry?.destination?.route
+
     NavigationBar(containerColor = MaterialTheme.colorScheme.background) {
-        NavigationBarItem(selected = true,
+        NavigationBarItem(selected = currentRoute == NavigationItem.Home.route,
             icon = {
-                Icon(imageVector =Icons.Default.Home , contentDescription = "")
-                },
-            label = { Text(text = "Main")},
-            onClick = { /*TODO*/ })
+                Icon(imageVector = NavigationItem.Home.icon, contentDescription = "")
+            },
+            label = { Text(text = stringResource(id = NavigationItem.Home.title)) },
+            onClick = {
+                navController.navigate(NavigationItem.Home.route) {
+                    launchSingleTop = true
+                }
+            })
 
-        NavigationBarItem(selected = false,
-            icon = { Icon(imageVector = Icons.Default.Person, contentDescription = "" )},
-            label = { Text(text = "Characters")},
-            onClick = { /*TODO*/ })
+        NavigationBarItem(selected = currentRoute == NavigationItem.Characters.route,
+            icon = { Icon(imageVector = NavigationItem.Characters.icon, contentDescription = "") },
+            label = { Text(text = stringResource(id = NavigationItem.Characters.title)) },
+            onClick = {
+                navController.navigate(NavigationItem.Characters.route) {
+                    navController.graph.startDestinationRoute?.let {
+                        popUpTo(it) { saveState = true }
+                    }
+                    launchSingleTop = true
+                    restoreState = true
+                }
+            })
 
-        NavigationBarItem(selected = false,
-            icon = { Icon(imageVector = Icons.Default.Settings, contentDescription = "" )},
-            label = { Text(text = "Settings")},
-            onClick = { /*TODO*/ })
+        NavigationBarItem(selected = currentRoute == NavigationItem.Info.route,
+            icon = { Icon(imageVector = NavigationItem.Info.icon, contentDescription = "") },
+            label = { Text(text = stringResource(id = NavigationItem.Info.title)) },
+            onClick = {
+                navController.navigate(NavigationItem.Info.route) {
+                    launchSingleTop = true
+                }
+            })
     }
 }
