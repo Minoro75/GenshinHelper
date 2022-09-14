@@ -64,6 +64,6 @@ val md_theme_dark_surfaceTint = Color(0xFFFFB782)
 val seed = Color(0xFF9C5E2C)
 
 val Rarity4 = Color(0xFF7C5B90)
-val Rarity5 = Color(0xFF7D5260)
+val Rarity5 = Color(0xFFF8CA56)
 val ItemBackground = Color(0xFFECE5D9)
 val TextColor = Color(0xFF696B75)
