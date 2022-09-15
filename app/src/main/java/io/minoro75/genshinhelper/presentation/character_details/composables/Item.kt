@@ -1,4 +1,4 @@
-package io.minoro75.genshinhelper.presentation.characters_list_screen.composables
+package io.minoro75.genshinhelper.presentation.character_details.composables
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -11,65 +11,58 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import coil.request.ImageRequest
 import io.minoro75.genshinhelper.R
-import io.minoro75.genshinhelper.domain.model.CharacterModel
 import io.minoro75.genshinhelper.presentation.common.AsyncImageWithBackground
-import io.minoro75.genshinhelper.presentation.theme.*
+import io.minoro75.genshinhelper.presentation.theme.GenshinTypography
+import io.minoro75.genshinhelper.presentation.theme.ItemBackground
+import io.minoro75.genshinhelper.presentation.theme.RightCornerShape
+import io.minoro75.genshinhelper.presentation.theme.TextColor
 
 @Composable
-fun CharacterItem(
-    character: CharacterModel,
+fun Item(
+    url: String,
+    loadingPlaceholder: Int,
+    errorPlaceholder: Int,
+    name: String,
+    rarity: Int,
     modifier: Modifier = Modifier
 ) {
+
     Column(
         modifier = modifier
-            .width(130.dp)
+            .width(100.dp)
             .wrapContentHeight()
             .clip(RoundedCornerShape(10.dp))
             .background(ItemBackground)
-
     ) {
         AsyncImageWithBackground(
             model = ImageRequest.Builder(LocalContext.current)
-                .data(character.imageUrl)
+                .data(url)
                 .crossfade(true)
                 .build(),
-            contentDescription = character.name,
-            placeholder = painterResource(id = R.drawable.placeholder_loading),
-            error = painterResource(id = R.drawable.placeholder_no_internet),
+            contentDescription = name,
+            placeholder = painterResource(id = loadingPlaceholder),
+            error = painterResource(id = errorPlaceholder),
             contentScale = ContentScale.FillBounds,
-            background = when (character.rarity) {
+            background = when (rarity) {
+                3 -> R.drawable.background_rarity_3_star
                 4 -> R.drawable.background_rarity_4_star
                 5 -> R.drawable.background_rarity_5_star
                 else -> throw IllegalArgumentException("No such rarity")
             },
-            elementImage = when (character.element) {
-                "anemo" -> R.drawable.anemo
-                "pyro" -> R.drawable.pyro
-                "hydro" -> R.drawable.hydro
-                "electro" -> R.drawable.electro
-                "geo" -> R.drawable.geo
-                "cryo" -> R.drawable.cryo
-                "dendro" -> R.drawable.dendro
-                else -> throw IllegalArgumentException("No such element")
-
-            },
+            elementImage = null,
             modifier = modifier
                 .fillMaxWidth()
-                .height(130.dp)
+                .height(100.dp)
                 .clip(RightCornerShape)
         )
-
         Spacer(modifier = Modifier.height(4.dp))
         Text(
-            text = character.name, style = GenshinTypography.bodyLarge,
+            text = name, style = GenshinTypography.bodyMedium,
             color = TextColor,
-            maxLines = 1,
-            overflow = TextOverflow.Ellipsis,
             modifier = Modifier
                 .align(alignment = Alignment.CenterHorizontally)
                 .padding(start = 8.dp, end = 8.dp)
@@ -80,13 +73,12 @@ fun CharacterItem(
 
 @Preview
 @Composable
-fun CharaterItemPreview() {
-    GenshinHelperTheme {
-        CharacterItem(
-            CharacterModel(
-                "Animeshka", 4, "anemo",
-                "bow", "https://paimon.moe/images/characters/lisa.png"
-            )
-        )
-    }
+fun ItemPreview() {
+    Item(
+        url = "",
+        loadingPlaceholder = R.drawable.books_loading,
+        errorPlaceholder = R.drawable.books_no_internet,
+        name = "Praxis",
+        rarity = 3
+    )
 }

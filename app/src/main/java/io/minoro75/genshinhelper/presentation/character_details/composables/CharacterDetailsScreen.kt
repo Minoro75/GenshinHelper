@@ -69,7 +69,7 @@ fun CharacterPreview() {
             Row {
                 Column(horizontalAlignment = Alignment.CenterHorizontally) {
                     Image(
-                        painter = painterResource(id = R.drawable.placeholder),
+                        painter = painterResource(id = R.drawable.placeholder_loading),
                         contentDescription = "",
                         modifier = Modifier
                             .size(130.dp)

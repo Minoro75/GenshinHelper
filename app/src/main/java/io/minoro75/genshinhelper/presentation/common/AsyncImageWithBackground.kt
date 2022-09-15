@@ -22,7 +22,7 @@ fun AsyncImageWithBackground(
     error: Painter?,
     contentScale: ContentScale,
     @DrawableRes background: Int,
-    @DrawableRes elementImage: Int,
+    @DrawableRes elementImage: Int?,
     modifier: Modifier = Modifier
 ) {
     Box(modifier = modifier) {
@@ -42,13 +42,15 @@ fun AsyncImageWithBackground(
             modifier = modifier.matchParentSize()
         )
 
-        Image(
-            painter = painterResource(id = elementImage),
-            contentDescription = null,
-            modifier = Modifier
-                .padding(3.dp)
-                .size(30.dp)
-                .align(Alignment.TopStart)
-        )
+        if (elementImage != null) {
+            Image(
+                painter = painterResource(id = elementImage),
+                contentDescription = null,
+                modifier = Modifier
+                    .padding(3.dp)
+                    .size(30.dp)
+                    .align(Alignment.TopStart)
+            )
+        }
     }
 }
