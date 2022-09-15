@@ -19,6 +19,7 @@ fun AsyncImageWithBackground(
     model: Any?,
     contentDescription: String?,
     placeholder: Painter?,
+    error: Painter?,
     contentScale: ContentScale,
     @DrawableRes background: Int,
     @DrawableRes elementImage: Int,
@@ -36,6 +37,7 @@ fun AsyncImageWithBackground(
             model = model,
             contentDescription = contentDescription,
             placeholder = placeholder,
+            error = error,
             contentScale = contentScale,
             modifier = modifier.matchParentSize()
         )
