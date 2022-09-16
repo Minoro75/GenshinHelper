@@ -50,6 +50,11 @@ val GenshinTypography = Typography(
         fontFamily = Genshin,
         fontWeight = FontWeight.Bold,
         fontSize = 16.sp
+    ),
+    bodySmall = TextStyle(
+        fontFamily = Genshin,
+        fontWeight = FontWeight.Bold,
+        fontSize = 10.sp
     )
 )
 

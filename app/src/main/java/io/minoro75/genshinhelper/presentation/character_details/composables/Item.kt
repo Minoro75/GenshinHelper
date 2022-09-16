@@ -33,7 +33,7 @@ fun Item(
 
     Column(
         modifier = modifier
-            .width(100.dp)
+            .width(65.dp)
             .wrapContentHeight()
             .clip(RoundedCornerShape(10.dp))
             .background(ItemBackground)
@@ -56,12 +56,12 @@ fun Item(
             elementImage = null,
             modifier = modifier
                 .fillMaxWidth()
-                .height(100.dp)
+                .height(65.dp)
                 .clip(RightCornerShape)
         )
         Spacer(modifier = Modifier.height(4.dp))
         Text(
-            text = name, style = GenshinTypography.bodyMedium,
+            text = name, style = GenshinTypography.bodySmall,
             color = TextColor,
             modifier = Modifier
                 .align(alignment = Alignment.CenterHorizontally)
