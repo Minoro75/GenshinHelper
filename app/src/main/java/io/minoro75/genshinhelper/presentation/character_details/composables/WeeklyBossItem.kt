@@ -16,6 +16,7 @@ import androidx.compose.ui.unit.dp
 import io.minoro75.genshinhelper.R
 import io.minoro75.genshinhelper.presentation.common.AsyncImageWithBackground
 import io.minoro75.genshinhelper.presentation.theme.GenshinHelperTheme
+import io.minoro75.genshinhelper.presentation.theme.GenshinTypography
 
 @Composable
 fun WeeklyBossItem(
@@ -25,12 +26,6 @@ fun WeeklyBossItem(
     modifier: Modifier = Modifier
 ) {
     Column(modifier = modifier) {
-     /*   Text(
-            text = "Weekly Boss Item",
-            color = textColor,
-            modifier = Modifier.align(Alignment.CenterHorizontally)
-        )
-        Spacer(modifier = Modifier.height(8.dp))*/
         Row(verticalAlignment = Alignment.CenterVertically) {
             AsyncImageWithBackground(
                 model = url,
@@ -48,6 +43,7 @@ fun WeeklyBossItem(
             Text(
                 text = name,
                 color = textColor,
+                style = GenshinTypography.bodyMedium
             )
         }
     }
