@@ -67,7 +67,6 @@ fun CharacterPreview() {
                     16.dp
                 )
         ) {
-
             CharacterInfoView(
                 imageUrl = "https://paimon.moe/images/characters/ganyu.png",
                 rarity = 5,
@@ -81,7 +80,6 @@ fun CharacterPreview() {
                 )
             )
             Spacer(modifier = Modifier.height(8.dp))
-
             TalentsPriorityView(
                 priority = listOf(
                     "Burst",
@@ -89,16 +87,12 @@ fun CharacterPreview() {
                     "Attack"
                 )
             )
-
             Spacer(modifier = Modifier.height(8.dp))
-
             WeeklyBossItemView(
                 name = "Dvalin's Sigh",
                 url = "https://paimon.moe/images/items/dvalins_sigh.png"
             )
-
             Spacer(Modifier.height(16.dp))
-
         }
     }
 }

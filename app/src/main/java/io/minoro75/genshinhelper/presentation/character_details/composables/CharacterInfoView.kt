@@ -2,8 +2,6 @@ package io.minoro75.genshinhelper.presentation.character_details.composables
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.background
-import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.*
@@ -20,11 +18,9 @@ import coil.compose.AsyncImage
 import coil.request.ImageRequest
 import io.minoro75.genshinhelper.R
 import io.minoro75.genshinhelper.domain.model.TalentsBooks
-import io.minoro75.genshinhelper.presentation.common.Rarity
 import io.minoro75.genshinhelper.presentation.theme.GenshinHelperTheme
 import io.minoro75.genshinhelper.presentation.theme.GenshinTypography
 
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun CharacterInfoView(
     imageUrl: String,
@@ -120,6 +116,17 @@ fun ImageRarityElement(
             border = BorderStroke(2.dp, SolidColor(MaterialTheme.colorScheme.primary))
         ) {
             Box {
+                Image(
+                    painter = when (rarity) {
+                        4 -> painterResource(id = R.drawable.background_rarity_4_star)
+                        5 -> painterResource(id = R.drawable.background_rarity_5_star)
+                        else -> throw IllegalArgumentException("no such rarity")
+                    },
+                    contentDescription = "background image",
+                    modifier = Modifier
+                        .size(130.dp)
+                        .clip(RoundedCornerShape(10.dp))
+                )
                 AsyncImage(
                     model = ImageRequest.Builder(LocalContext.current)
                         .data(imageUrl)
@@ -130,12 +137,7 @@ fun ImageRarityElement(
                     contentDescription = "Character Image",
                     modifier = Modifier
                         .size(130.dp)
-                        .clip(RoundedCornerShape(10.dp))
-                        .background(MaterialTheme.colorScheme.primaryContainer)
-                        .border(
-                            BorderStroke(2.dp, SolidColor(MaterialTheme.colorScheme.primary)),
-                            RoundedCornerShape(10.dp)
-                        ),
+                        .clip(RoundedCornerShape(10.dp)),
                 )
                 Image(
                     painter = when (element) {
@@ -148,12 +150,10 @@ fun ImageRarityElement(
                         "dendro" -> painterResource(id = R.drawable.dendro)
                         else -> throw IllegalArgumentException("No such element")
                     }, contentDescription = element,
-                    Modifier.padding(start = 4.dp,top = 4.dp)
+                    Modifier.padding(start = 4.dp, top = 4.dp)
                 )
             }
 
         }
-        Spacer(modifier = Modifier.height(4.dp))
-        Rarity(rarity = rarity, modifier = Modifier)
     }
 }

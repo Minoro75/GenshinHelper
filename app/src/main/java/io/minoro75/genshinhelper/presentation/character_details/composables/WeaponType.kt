@@ -1,6 +1,9 @@
 package io.minoro75.genshinhelper.presentation.character_details.composables
 
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -12,6 +15,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import io.minoro75.genshinhelper.R
 import io.minoro75.genshinhelper.presentation.theme.GenshinHelperTheme
+import io.minoro75.genshinhelper.presentation.theme.GenshinTypography
 
 @Composable
 fun WeaponType(
@@ -31,7 +35,11 @@ fun WeaponType(
                     tint = MaterialTheme.colorScheme.onPrimaryContainer
                 )
                 Spacer(modifier = Modifier.width(4.dp))
-                Text(text = "Catalyst", color = MaterialTheme.colorScheme.onPrimaryContainer)
+                Text(
+                    text = "Catalyst",
+                    color = MaterialTheme.colorScheme.onPrimaryContainer,
+                    style = GenshinTypography.bodyMedium
+                )
             }
             "sword" -> {
                 Icon(
@@ -41,7 +49,11 @@ fun WeaponType(
                     tint = MaterialTheme.colorScheme.onPrimaryContainer
                 )
                 Spacer(modifier = Modifier.width(4.dp))
-                Text(text = "Sword", color = MaterialTheme.colorScheme.onPrimaryContainer)
+                Text(
+                    text = "Sword",
+                    color = MaterialTheme.colorScheme.onPrimaryContainer,
+                    style = GenshinTypography.bodyMedium
+                )
             }
             "claymore" -> {
                 Icon(
@@ -51,7 +63,11 @@ fun WeaponType(
                     tint = MaterialTheme.colorScheme.onPrimaryContainer
                 )
                 Spacer(modifier = Modifier.width(4.dp))
-                Text(text = "Claymore", color = MaterialTheme.colorScheme.onPrimaryContainer)
+                Text(
+                    text = "Claymore",
+                    color = MaterialTheme.colorScheme.onPrimaryContainer,
+                    style = GenshinTypography.bodyMedium
+                )
             }
             "bow" -> {
                 Icon(
@@ -60,7 +76,11 @@ fun WeaponType(
                     tint = MaterialTheme.colorScheme.onPrimaryContainer
                 )
                 Spacer(modifier = Modifier.width(4.dp))
-                Text(text = "Bow", color = MaterialTheme.colorScheme.onPrimaryContainer)
+                Text(
+                    text = "Bow",
+                    color = MaterialTheme.colorScheme.onPrimaryContainer,
+                    style = GenshinTypography.bodyMedium
+                )
             }
             "polearm" -> {
                 Icon(
@@ -70,7 +90,11 @@ fun WeaponType(
                     tint = MaterialTheme.colorScheme.onPrimaryContainer
                 )
                 Spacer(modifier = Modifier.width(4.dp))
-                Text(text = "Polearm", color = MaterialTheme.colorScheme.onPrimaryContainer)
+                Text(
+                    text = "Polearm",
+                    color = MaterialTheme.colorScheme.onPrimaryContainer,
+                    style = GenshinTypography.bodyMedium
+                )
             }
         }
 

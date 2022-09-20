@@ -14,6 +14,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import io.minoro75.genshinhelper.R
 import io.minoro75.genshinhelper.presentation.theme.GenshinHelperTheme
+import io.minoro75.genshinhelper.presentation.theme.GenshinTypography
 import java.util.*
 
 @Composable
@@ -35,13 +36,29 @@ fun BooksView(
         val daysList = daysAvailable.split("/")
         Spacer(modifier = Modifier.width(8.dp))
         Column(horizontalAlignment = Alignment.CenterHorizontally) {
-            Text(text = "Availalbe at:", color = textColor)
-            Text(text = daysList[0].lowercase(Locale.getDefault())
-                .replaceFirstChar { if (it.isLowerCase()) it.titlecase(Locale.getDefault()) else it.toString() }, color = textColor)
-            Text(text = daysList[1].lowercase(Locale.getDefault())
-                .replaceFirstChar { if (it.isLowerCase()) it.titlecase(Locale.getDefault()) else it.toString() }, color = textColor)
-            Text(text = daysList[2].lowercase(Locale.getDefault())
-                .replaceFirstChar { if (it.isLowerCase()) it.titlecase(Locale.getDefault()) else it.toString() }, color = textColor)
+            Text(
+                text = "Availalbe at:",
+                color = textColor,
+                style = GenshinTypography.bodyMedium
+            )
+            Text(
+                text = daysList[0].lowercase(Locale.getDefault())
+                    .replaceFirstChar { if (it.isLowerCase()) it.titlecase(Locale.getDefault()) else it.toString() },
+                color = textColor,
+                style = GenshinTypography.bodyMedium
+            )
+            Text(
+                text = daysList[1].lowercase(Locale.getDefault())
+                    .replaceFirstChar { if (it.isLowerCase()) it.titlecase(Locale.getDefault()) else it.toString() },
+                color = textColor,
+                style = GenshinTypography.bodyMedium
+            )
+            Text(
+                text = daysList[2].lowercase(Locale.getDefault())
+                    .replaceFirstChar { if (it.isLowerCase()) it.titlecase(Locale.getDefault()) else it.toString() },
+                color = textColor,
+                style = GenshinTypography.bodyMedium
+            )
         }
 
     }
