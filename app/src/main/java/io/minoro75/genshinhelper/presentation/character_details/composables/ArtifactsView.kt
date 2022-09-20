@@ -55,6 +55,7 @@ fun ArtifactsView(artifacts: List<Artifact>) {
         )
         Spacer(modifier = Modifier.height(4.dp))
         ArtifactsStats(artifact = artifacts[0])
+        Spacer(modifier = Modifier.height(8.dp))
 
     }
 }
