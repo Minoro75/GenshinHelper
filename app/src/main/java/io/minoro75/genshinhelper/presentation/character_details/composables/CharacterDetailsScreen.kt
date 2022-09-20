@@ -19,6 +19,7 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import coil.compose.AsyncImage
 import coil.request.ImageRequest
 import io.minoro75.genshinhelper.R
+import io.minoro75.genshinhelper.domain.model.Artifact
 import io.minoro75.genshinhelper.domain.model.TalentsBooks
 import io.minoro75.genshinhelper.presentation.character_details.CharacterDetailsScreenViewModel
 import io.minoro75.genshinhelper.presentation.common.Rarity
@@ -93,6 +94,16 @@ fun CharacterPreview() {
                 url = "https://paimon.moe/images/items/dvalins_sigh.png"
             )
             Spacer(Modifier.height(16.dp))
+            ArtifactsView(artifacts = listOf(
+                Artifact(
+                    artifactAmount = 4,
+                    artifactCirclet = "HP%",
+                    artifactGobelet = "Electro DPS",
+                    artifactName = "Shadow Burner of Amity",
+                    artifactSands = "Crit rate / crit DPS",
+                    artifactUrl = "https://paimon.moe/images/artifacts/emblem_of_severed_fate_flower.png"
+                )
+            ))
         }
     }
 }

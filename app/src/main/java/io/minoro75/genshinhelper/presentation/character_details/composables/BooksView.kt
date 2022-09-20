@@ -1,9 +1,6 @@
 package io.minoro75.genshinhelper.presentation.character_details.composables
 
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.*
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -31,7 +28,11 @@ fun BooksView(
             loadingPlaceholder = R.drawable.books_loading,
             errorPlaceholder = R.drawable.books_no_internet,
             name = name,
-            rarity = 4
+            rarity = 4,
+            textWidth = 65.dp,
+            textStyle = GenshinTypography.bodySmall,
+            modifier = Modifier.width(65.dp).height(65.dp)
+
         )
         val daysList = daysAvailable.split("/")
         Spacer(modifier = Modifier.width(8.dp))

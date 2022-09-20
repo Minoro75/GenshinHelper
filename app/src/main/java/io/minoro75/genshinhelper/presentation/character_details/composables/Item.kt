@@ -11,15 +11,14 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import coil.request.ImageRequest
 import io.minoro75.genshinhelper.R
 import io.minoro75.genshinhelper.presentation.common.AsyncImageWithBackground
-import io.minoro75.genshinhelper.presentation.theme.GenshinTypography
-import io.minoro75.genshinhelper.presentation.theme.ItemBackground
-import io.minoro75.genshinhelper.presentation.theme.RightCornerShape
-import io.minoro75.genshinhelper.presentation.theme.TextColor
+import io.minoro75.genshinhelper.presentation.theme.*
 
 @Composable
 fun Item(
@@ -28,12 +27,14 @@ fun Item(
     errorPlaceholder: Int,
     name: String,
     rarity: Int,
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
+    textWidth: Dp,
+    textStyle: TextStyle
 ) {
 
     Column(
-        modifier = modifier
-            .width(65.dp)
+        modifier = Modifier
+            .wrapContentWidth()
             .wrapContentHeight()
             .clip(RoundedCornerShape(10.dp))
             .background(ItemBackground)
@@ -55,15 +56,17 @@ fun Item(
             },
             elementImage = null,
             modifier = modifier
-                .fillMaxWidth()
+                .width(65.dp)
                 .height(65.dp)
-                .clip(RightCornerShape)
+                .clip(SmallRightCornerShape)
         )
         Spacer(modifier = Modifier.height(4.dp))
         Text(
-            text = name, style = GenshinTypography.bodySmall,
+            text = name,
+            style = textStyle,
             color = TextColor,
             modifier = Modifier
+                .width(textWidth)
                 .align(alignment = Alignment.CenterHorizontally)
                 .padding(start = 8.dp, end = 8.dp)
         )
@@ -78,7 +81,11 @@ fun ItemPreview() {
         url = "",
         loadingPlaceholder = R.drawable.books_loading,
         errorPlaceholder = R.drawable.books_no_internet,
-        name = "Praxis",
-        rarity = 3
+        name = "Praxis  odosdodoododod",
+        rarity = 3,
+        textWidth = 65.dp,
+        textStyle = GenshinTypography.bodySmall,
+        modifier = Modifier.width(65.dp)
+            .height(65.dp)
     )
 }

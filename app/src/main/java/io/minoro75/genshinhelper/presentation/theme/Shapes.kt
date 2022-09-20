@@ -9,3 +9,11 @@ val TopCornersShape =
 val RightCornerShape =
     RoundedCornerShape(topStart = 0.dp, topEnd = 0.dp,
     bottomStart = 0.dp, bottomEnd = 30.dp)
+
+val SmallRightCornerShape =
+    RoundedCornerShape(topStart = 0.dp, topEnd = 0.dp,
+        bottomStart = 0.dp, bottomEnd = 15.dp)
+
+val ArtifactCornerShape =
+    RoundedCornerShape(topStart = 0.dp, topEnd = 10.dp,
+        bottomStart = 5.dp, bottomEnd = 0.dp)
