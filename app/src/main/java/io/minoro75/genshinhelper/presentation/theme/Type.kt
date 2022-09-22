@@ -55,6 +55,11 @@ val GenshinTypography = Typography(
         fontFamily = Genshin,
         fontWeight = FontWeight.Bold,
         fontSize = 10.sp
+    ),
+    headlineLarge = TextStyle(
+        fontFamily = Genshin,
+        fontWeight = FontWeight.Bold,
+        fontSize = 16.sp
     )
 )
 

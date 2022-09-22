@@ -66,7 +66,7 @@ fun CharacterItem(
 
         Spacer(modifier = Modifier.height(4.dp))
         Text(
-            text = character.name, style = GenshinTypography.bodyLarge,
+            text = character.name, style = GenshinTypography.headlineLarge,
             color = TextColor,
             maxLines = 1,
             overflow = TextOverflow.Ellipsis,

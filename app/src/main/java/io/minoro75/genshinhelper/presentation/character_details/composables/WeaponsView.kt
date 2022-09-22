@@ -2,9 +2,21 @@ package io.minoro75.genshinhelper.presentation.character_details.composables
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.horizontalScroll
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.wrapContentHeight
 import androidx.compose.foundation.rememberScrollState
-import androidx.compose.material3.*
+import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedCard
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -28,12 +40,14 @@ fun WeaponsView(
         colors = CardDefaults.outlinedCardColors(
             containerColor = MaterialTheme.colorScheme.primaryContainer
         ),
-        modifier = Modifier.fillMaxWidth(),
+        modifier = Modifier
+            .fillMaxWidth()
+            .wrapContentHeight(),
         border = BorderStroke(2.dp, SolidColor(MaterialTheme.colorScheme.primary))
     ) {
         Row(
             Modifier
-                .height(IntrinsicSize.Min)
+                .wrapContentHeight()
                 .padding(8.dp)
                 .horizontalScroll(rememberScrollState())
         ) {
@@ -43,7 +57,7 @@ fun WeaponsView(
                 url = bis.weaponUrl,
                 title = "BiS"
             )
-            Spacer(Modifier.width(8.dp).height(50.dp))
+            Spacer(Modifier.width(16.dp))
             Column(horizontalAlignment = Alignment.CenterHorizontally) {
                 Text(text = "Alternatives", style = GenshinTypography.bodyLarge)
                 Spacer(modifier = Modifier.height(8.dp))
@@ -54,24 +68,24 @@ fun WeaponsView(
                         errorPlaceholder = R.drawable.weapon_no_internet,
                         name = replacements[0].weaponName,
                         rarity = replacements[0].weaponRarity,
-                        textWidth = 100.dp,
+                        textWidth = 110.dp,
                         textStyle = GenshinTypography.bodyMedium,
-                        modifier = Modifier.size(100.dp)
+                        modifier = Modifier.size(110.dp)
                     )
-                    Spacer(modifier = Modifier.width(8.dp).height(50.dp))
+                    Spacer(modifier = Modifier.width(16.dp))
                     Item(
                         url = replacements[1].weaponUrl,
                         loadingPlaceholder = R.drawable.weapon_loading,
                         errorPlaceholder = R.drawable.weapon_no_internet,
                         name = replacements[1].weaponName,
                         rarity = replacements[1].weaponRarity,
-                        textWidth = 100.dp,
+                        textWidth = 110.dp,
                         textStyle = GenshinTypography.bodyMedium,
-                        modifier = Modifier.size(100.dp)
+                        modifier = Modifier.size(110.dp)
                     )
                 }
             }
-            Spacer(Modifier.width(8.dp).height(50.dp))
+            Spacer(Modifier.width(16.dp))
             WeaponWithTitle(
                 rarity = replacements[2].weaponRarity,
                 name = replacements[2].weaponName, url = replacements[2].weaponUrl, title = "F2P"
@@ -92,8 +106,8 @@ fun WeaponWithTitle(rarity: Int, name: String, url: String, title: String) {
             errorPlaceholder = R.drawable.weapon_no_internet,
             name = name,
             rarity = rarity,
-            modifier = Modifier.size(100.dp),
-            textWidth = 100.dp,
+            modifier = Modifier.size(110.dp),
+            textWidth = 110.dp,
             textStyle = GenshinTypography.bodyMedium
         )
     }

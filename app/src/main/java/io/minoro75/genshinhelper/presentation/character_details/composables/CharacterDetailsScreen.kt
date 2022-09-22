@@ -72,11 +72,11 @@ fun CharacterScreen(
                             talentsBooks = character.talentBooks,
                             onBackPressed = onBackPressed
                         )
-                        Spacer(modifier = Modifier.height(8.dp))
+                        Spacer(modifier = Modifier.height(16.dp))
                         TalentsPriorityView(
                             priority = character.talentsPriority
                         )
-                        Spacer(modifier = Modifier.height(8.dp))
+                        Spacer(modifier = Modifier.height(16.dp))
                         WeeklyBossItemView(
                             name = character.weeklyBossItem.bossItemName,
                             url = character.weeklyBossItem.bossItemUrl
