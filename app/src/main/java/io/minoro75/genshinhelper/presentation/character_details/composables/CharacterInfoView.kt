@@ -2,9 +2,25 @@ package io.minoro75.genshinhelper.presentation.character_details.composables
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material3.*
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.outlined.ArrowBack
+import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.FilledIconButton
+import androidx.compose.material3.Icon
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedCard
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -28,13 +44,15 @@ fun CharacterInfoView(
     rarity: Int,
     name: String,
     weapon: String,
-    talentsBooks: TalentsBooks
+    talentsBooks: TalentsBooks,
+    onBackPressed: () -> Unit
 ) {
     Row {
         ImageRarityElement(
             imageUrl = imageUrl,
             element = element,
-            rarity = rarity
+            rarity = rarity,
+            onBackPressed = onBackPressed
         )
         Spacer(modifier = Modifier.width(8.dp))
         NameWeaponBooks(
@@ -59,7 +77,8 @@ fun PreviewCharacterInfo() {
                 bookUrl = "https://paimon.moe/images/items/philosophies_of_freedom.png",
                 bookName = "Freedom",
                 bookDays = "MON/THU/SUN"
-            )
+            ),
+            onBackPressed = {}
         )
     }
 }
@@ -105,9 +124,21 @@ fun NameWeaponBooks(
 fun ImageRarityElement(
     imageUrl: String,
     element: String,
-    rarity: Int
+    rarity: Int,
+    onBackPressed: () -> Unit
 ) {
     Column(horizontalAlignment = Alignment.CenterHorizontally) {
+
+        FilledIconButton(
+            onClick = onBackPressed,
+            shape = RoundedCornerShape(10.dp),
+            modifier = Modifier.align(Alignment.Start)
+        ) {
+            Icon(imageVector = Icons.Outlined.ArrowBack, contentDescription = "")
+
+        }
+        Spacer(modifier = Modifier.height(8.dp))
+
         OutlinedCard(
             elevation = CardDefaults.cardElevation(defaultElevation = 8.dp),
             colors = CardDefaults.outlinedCardColors(

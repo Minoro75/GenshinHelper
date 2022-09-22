@@ -3,15 +3,20 @@ package io.minoro75.genshinhelper.presentation
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import androidx.navigation.navArgument
 import dagger.hilt.android.AndroidEntryPoint
+import io.minoro75.genshinhelper.presentation.character_details.composables.CharacterScreen
 import io.minoro75.genshinhelper.presentation.characters_list_screen.composables.CharactersListScreen
 import io.minoro75.genshinhelper.presentation.common.GenshinBottomNavigation
 import io.minoro75.genshinhelper.presentation.common.NavigationItem
@@ -42,8 +47,16 @@ fun MainScreen() {
             startDestination = NavigationItem.Characters.route
         ) {
             composable(NavigationItem.Home.route) {}
-            composable(NavigationItem.Characters.route) { CharactersListScreen() }
+            composable(NavigationItem.Characters.route) { CharactersListScreen(navController) }
             composable(NavigationItem.Info.route) {}
+            composable(
+                route = "profile/{name}",
+                arguments = listOf(navArgument("name") { type = NavType.StringType })
+            ) {
+                CharacterScreen(
+                    name = it.arguments?.getString("name"),
+                    onBackPressed = { navController.popBackStack() })
+            }
         }
 
     }
