@@ -1,9 +1,7 @@
 package io.minoro75.genshinhelper.presentation.character_details.composables
 
 import android.content.res.Configuration.UI_MODE_NIGHT_NO
-import androidx.compose.foundation.BorderStroke
-import androidx.compose.foundation.background
-import androidx.compose.foundation.border
+import androidx.compose.foundation.*
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.*
@@ -21,6 +19,8 @@ import coil.request.ImageRequest
 import io.minoro75.genshinhelper.R
 import io.minoro75.genshinhelper.domain.model.Artifact
 import io.minoro75.genshinhelper.domain.model.TalentsBooks
+import io.minoro75.genshinhelper.domain.model.WeaponBest
+import io.minoro75.genshinhelper.domain.model.WeaponsReplacement
 import io.minoro75.genshinhelper.presentation.character_details.CharacterDetailsScreenViewModel
 import io.minoro75.genshinhelper.presentation.common.Rarity
 import io.minoro75.genshinhelper.presentation.theme.GenshinHelperTheme
@@ -62,6 +62,7 @@ fun CharacterPreview() {
         Column(
             modifier =
             Modifier
+                .verticalScroll(rememberScrollState())
                 .fillMaxSize()
                 .background(MaterialTheme.colorScheme.surfaceVariant)
                 .padding(
@@ -104,6 +105,31 @@ fun CharacterPreview() {
                     artifactUrl = "https://paimon.moe/images/artifacts/emblem_of_severed_fate_flower.png"
                 )
             ))
+            Spacer(Modifier.height(16.dp))
+            WeaponsView(
+                bis = WeaponBest(
+                    weaponRarity = 5,
+                    weaponName = "Lost Prayer to the Sacred Winds",
+                    weaponUrl = "https://paimon.moe/images/weapons/amos_bow.png"
+                ),
+                replacements = listOf(
+                    WeaponsReplacement(
+                        weaponRarity = 5,
+                        weaponName = "Aqua Simulacra",
+                        weaponUrl = "https://paimon.moe/images/weapons/aqua_simulacra.png"
+                    ),
+                    WeaponsReplacement(
+                        weaponRarity = 4,
+                        weaponName = "Prototype Crescent",
+                        weaponUrl = "https://paimon.moe/images/weapons/prototype_crescent.png"
+                    ),
+                    WeaponsReplacement(
+                        weaponRarity = 4,
+                        weaponName = "Hamayumi",
+                        weaponUrl = "https://paimon.moe/images/weapons/hamayumi.png"
+                    )
+                )
+            )
         }
     }
 }
