@@ -3,25 +3,40 @@ package io.minoro75.genshinhelper.presentation.character_details.composables
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.wrapContentHeight
+import androidx.compose.foundation.layout.wrapContentWidth
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material3.*
+import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedCard
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Alignment.Companion.CenterHorizontally
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.layout.ContentScale
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import coil.request.ImageRequest
 import io.minoro75.genshinhelper.R
 import io.minoro75.genshinhelper.domain.model.Artifact
-import io.minoro75.genshinhelper.presentation.common.AsyncImageWithBackground
-import io.minoro75.genshinhelper.presentation.theme.*
+import io.minoro75.genshinhelper.presentation.theme.ArtifactCornerShape
+import io.minoro75.genshinhelper.presentation.theme.GenshinHelperTheme
+import io.minoro75.genshinhelper.presentation.theme.GenshinTypography
+import io.minoro75.genshinhelper.presentation.theme.ItemBackground
+import io.minoro75.genshinhelper.presentation.theme.TextColor
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -62,12 +77,14 @@ fun ArtifactsView(artifacts: List<Artifact>) {
 
 @Composable
 fun ArtifactsStats(artifact: Artifact) {
-    Row(modifier = Modifier.fillMaxWidth(),
-    verticalAlignment = Alignment.CenterVertically,
-    horizontalArrangement = Arrangement.SpaceEvenly) {
-        ArtifactStatsItem(artifact.artifactCirclet)
-        ArtifactStatsItem(artifact.artifactGobelet)
-        ArtifactStatsItem(artifact.artifactSands)
+    Row(
+        modifier = Modifier.fillMaxWidth(),
+        verticalAlignment = Alignment.Top,
+        horizontalArrangement = Arrangement.SpaceEvenly
+    ) {
+        ArtifactStatsItem(artifact.artifactCirclet, R.drawable.circlet)
+        ArtifactStatsItem(artifact.artifactGobelet, R.drawable.goblet)
+        ArtifactStatsItem(artifact.artifactSands, R.drawable.sands)
     }
 }
 
@@ -122,7 +139,10 @@ fun ArtifactItem(artifact: Artifact) {
 }
 
 @Composable
-fun ArtifactStatsItem(stat:String) {
+fun ArtifactStatsItem(
+    stat: String,
+    image: Int
+) {
     Column(
         modifier = Modifier
             .wrapContentWidth()
@@ -130,9 +150,11 @@ fun ArtifactStatsItem(stat:String) {
             .clip(RoundedCornerShape(10.dp))
             .background(ItemBackground)
     ) {
-        Image(painter = painterResource(id =R.drawable.flower_loading),
+        Image(
+            painter = painterResource(id = image),
             contentDescription = "circlet",
-        modifier = Modifier.size(90.dp))
+            modifier = Modifier.size(90.dp)
+        )
         Spacer(modifier = Modifier.height(4.dp))
         Text(
             text = stat,
@@ -145,8 +167,9 @@ fun ArtifactStatsItem(stat:String) {
         )
         Spacer(modifier = Modifier.height(4.dp))
     }
-    
+
 }
+
 @Preview
 @Composable
 fun Preview4Artifacts() {
