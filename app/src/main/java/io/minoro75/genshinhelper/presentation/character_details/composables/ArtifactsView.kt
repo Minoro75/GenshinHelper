@@ -119,11 +119,11 @@ fun ArtifactItem(artifact: Artifact) {
             errorPlaceholder = R.drawable.flower_no_internet,
             name = artifact.artifactName,
             rarity = 5,
-            textWidth = 100.dp,
+            textWidth = 110.dp,
             textStyle = GenshinTypography.bodyMedium,
             modifier = Modifier
-                .width(100.dp)
-                .height(100.dp)
+                .width(110.dp)
+                .height(110.dp)
         )
         Text(
             text = artifact.artifactAmount.toString(),
@@ -199,7 +199,7 @@ fun Preview2Artifacts() {
                     artifactAmount = 2,
                     artifactCirclet = "ATK%",
                     artifactGobelet = "Electro DPS",
-                    artifactName = "Blizzard Strayer",
+                    artifactName = "Viridescent Venerer",
                     artifactSands = "CRIT Rate / CRIT DMG",
                     artifactUrl = "https://paimon.moe/images/artifacts/emblem_of_severed_fate_flower.png"
                 ),
@@ -207,7 +207,7 @@ fun Preview2Artifacts() {
                     artifactAmount = 2,
                     artifactCirclet = "HP%",
                     artifactGobelet = "Electro DPS",
-                    artifactName = "Shadow Burner of Amity",
+                    artifactName = "Thundering Fury",
                     artifactSands = "Crit rate / crit DPS",
                     artifactUrl = "https://paimon.moe/images/artifacts/emblem_of_severed_fate_flower.png"
                 )
