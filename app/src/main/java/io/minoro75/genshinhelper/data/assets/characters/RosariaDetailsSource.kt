@@ -52,8 +52,8 @@ object RosariaDetailsSource {
               "weapon_rarity": 4
             },
             {
-              "weapon_name": "Deathmatch",
-              "weapon_url": "https://paimon.moe/images/weapons/deathmatch.png",
+              "weapon_name": "Favonius Lance",
+              "weapon_url": "https://paimon.moe/images/weapons/favonius_lance.png",
               "weapon_rarity": 4
             }
           ]
