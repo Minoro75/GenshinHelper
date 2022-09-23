@@ -38,7 +38,7 @@ object SucroseDetailsSource {
           "weapon_best": {
             "weapon_name": "Sacrificial Fragments",
             "weapon_url": "https://paimon.moe/images/weapons/sacrificial_fragments.png",
-            "weapon_rarity": 5
+            "weapon_rarity": 4
           },
           "weapons_replacements": [
             {
