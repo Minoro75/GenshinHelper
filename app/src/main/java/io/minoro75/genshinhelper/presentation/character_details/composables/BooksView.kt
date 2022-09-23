@@ -29,9 +29,9 @@ fun BooksView(
             errorPlaceholder = R.drawable.books_no_internet,
             name = name,
             rarity = 4,
-            textWidth = 65.dp,
+            textWidth = 75.dp,
             textStyle = GenshinTypography.bodySmall,
-            modifier = Modifier.width(65.dp).height(65.dp)
+            modifier = Modifier.size(75.dp)
 
         )
         val daysList = daysAvailable.split("/")
@@ -73,7 +73,7 @@ fun PreviewBooks() {
     GenshinHelperTheme {
         BooksView(
             url = "https://paimon.moe/images/items/philosophies_of_freedom.png",
-            name = "Freedom",
+            name = "Resistance",
             daysAvailable = "MON/THU/SUN",
             textColor = MaterialTheme.colorScheme.onPrimaryContainer
         )

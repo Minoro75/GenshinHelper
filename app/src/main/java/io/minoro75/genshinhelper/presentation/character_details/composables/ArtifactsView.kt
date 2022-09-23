@@ -28,6 +28,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import io.minoro75.genshinhelper.R
@@ -153,15 +154,16 @@ fun ArtifactStatsItem(
         Image(
             painter = painterResource(id = image),
             contentDescription = "circlet",
-            modifier = Modifier.size(90.dp)
+            modifier = Modifier.size(100.dp)
         )
         Spacer(modifier = Modifier.height(4.dp))
         Text(
+            textAlign = TextAlign.Center,
             text = stat,
             style = GenshinTypography.bodyMedium,
             color = TextColor,
             modifier = Modifier
-                .width(90.dp)
+                .width(100.dp)
                 .align(alignment = CenterHorizontally)
                 .padding(start = 8.dp, end = 8.dp)
         )
@@ -181,7 +183,7 @@ fun Preview4Artifacts() {
                     artifactCirclet = "HP%",
                     artifactGobelet = "Electro DPS",
                     artifactName = "Shadow Burner of Amity",
-                    artifactSands = "Crit rate / crit DPS",
+                    artifactSands = "Anemo DPS / Elemental Mastery",
                     artifactUrl = "https://paimon.moe/images/artifacts/emblem_of_severed_fate_flower.png"
                 )
             )
