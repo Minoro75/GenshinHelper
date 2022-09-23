@@ -52,8 +52,8 @@ object KukiShinobuDetailsSource {
               "weapon_rarity": 4
             },
             {
-              "weapon_name": "Festering Desire",
-              "weapon_url": "https://paimon.moe/images/weapons/festering_desire.png",
+              "weapon_name": "Iron Sting",
+              "weapon_url": "https://paimon.moe/images/weapons/iron_sting.png",
               "weapon_rarity": 4
             }
           ]
