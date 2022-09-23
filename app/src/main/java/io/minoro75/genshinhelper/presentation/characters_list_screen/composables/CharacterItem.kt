@@ -27,7 +27,7 @@ fun CharacterItem(
 ) {
     Column(
         modifier = modifier
-            .width(130.dp)
+            .wrapContentWidth()
             .wrapContentHeight()
             .clip(RoundedCornerShape(10.dp))
             .background(ItemBackground)
@@ -59,7 +59,7 @@ fun CharacterItem(
 
             },
             modifier = modifier
-                .fillMaxWidth()
+                .width(130.dp)
                 .height(130.dp)
                 .clip(RightCornerShape)
         )

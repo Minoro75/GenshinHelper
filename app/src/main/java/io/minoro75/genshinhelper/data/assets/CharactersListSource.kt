@@ -394,14 +394,14 @@ object CharactersListSource {
       "name": "Yun Jin",
       "rarity": 4,
       "element": "geo",
-      "weapon": "polaerm",
+      "weapon": "polearm",
       "image_url": "https://paimon.moe/images/characters/yun_jin.png"
     },
     {
       "name": "Zhongli",
       "rarity": 5,
       "element": "geo",
-      "weapon": "pole",
+      "weapon": "polearm",
       "image_url": "https://paimon.moe/images/characters/zhongli.png"
     }
   ]

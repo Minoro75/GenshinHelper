@@ -17,7 +17,6 @@ import androidx.navigation.NavHostController
 import io.minoro75.genshinhelper.presentation.characters_list_screen.CharactersListViewModel
 import io.minoro75.genshinhelper.presentation.common.NavigationItem
 
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun CharactersListScreen(
     navHostController: NavHostController,
