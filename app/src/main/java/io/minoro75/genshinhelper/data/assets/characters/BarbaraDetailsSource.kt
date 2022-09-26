@@ -28,7 +28,7 @@ object BarbaraDetailsSource {
               "artifacts": [
                 {
                   "artifact_name": "Ocean-Hued Clam",
-                  "artifact_url": "https://paimon.moe/images/artifacts/husk_of_opulent_dreams_flower.png",
+                  "artifact_url": "https://paimon.moe/images/artifacts/ocean-hued_clam_flower.png",
                   "artifact_amount": 4,
                   "artifact_gobelet": "HP",
                   "artifact_circlet": "HP / Healing Bonus",

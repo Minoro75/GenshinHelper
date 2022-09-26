@@ -120,11 +120,10 @@ fun ArtifactItem(artifact: Artifact) {
             errorPlaceholder = R.drawable.flower_no_internet,
             name = artifact.artifactName,
             rarity = 5,
-            textWidth = 110.dp,
+            textWidth = 120.dp,
             textStyle = GenshinTypography.bodyMedium,
             modifier = Modifier
-                .width(110.dp)
-                .height(110.dp)
+                .size(120.dp)
         )
         Text(
             text = artifact.artifactAmount.toString(),
@@ -201,7 +200,7 @@ fun Preview2Artifacts() {
                     artifactAmount = 2,
                     artifactCirclet = "ATK%",
                     artifactGobelet = "Electro DPS",
-                    artifactName = "Viridescent Venerer",
+                    artifactName = "Bloodstained Chivalry",
                     artifactSands = "CRIT Rate / CRIT DMG",
                     artifactUrl = "https://paimon.moe/images/artifacts/emblem_of_severed_fate_flower.png"
                 ),
@@ -209,7 +208,7 @@ fun Preview2Artifacts() {
                     artifactAmount = 2,
                     artifactCirclet = "HP%",
                     artifactGobelet = "Electro DPS",
-                    artifactName = "Thundering Fury",
+                    artifactName = "Shimenawa's Reminiscence",
                     artifactSands = "Crit rate / crit DPS",
                     artifactUrl = "https://paimon.moe/images/artifacts/emblem_of_severed_fate_flower.png"
                 )
