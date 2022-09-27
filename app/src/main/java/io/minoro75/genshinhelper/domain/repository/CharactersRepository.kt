@@ -3,7 +3,10 @@ package io.minoro75.genshinhelper.domain.repository
 import io.minoro75.genshinhelper.common.Resource
 import io.minoro75.genshinhelper.domain.model.CharacterDetails
 import io.minoro75.genshinhelper.domain.model.CharacterModel
+import io.minoro75.genshinhelper.domain.model.TodayBooks
+import io.minoro75.genshinhelper.domain.model.TodayWeaponResources
 import kotlinx.coroutines.flow.Flow
+import java.time.DayOfWeek
 
 /**
  * This repo may be omitted because of the size of the app,
@@ -12,5 +15,7 @@ import kotlinx.coroutines.flow.Flow
 
 interface CharactersRepository {
     suspend fun getCharacters(): Flow<Resource<List<CharacterModel>>>
-    suspend fun getCharacterDetails(name:String): Flow<Resource<CharacterDetails>>
+    suspend fun getCharacterDetails(name: String): Flow<Resource<CharacterDetails>>
+    suspend fun getTodayBooks(dayOfWeek: DayOfWeek): Flow<Resource<List<TodayBooks>>>
+    suspend fun getTodayWeaponResources(dayOfWeek: DayOfWeek): Flow<Resource<List<TodayWeaponResources>>>
 }

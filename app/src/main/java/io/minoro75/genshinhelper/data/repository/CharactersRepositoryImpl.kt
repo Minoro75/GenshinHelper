@@ -4,9 +4,12 @@ import io.minoro75.genshinhelper.common.Resource
 import io.minoro75.genshinhelper.data.assets.AssetsDataSource
 import io.minoro75.genshinhelper.domain.model.CharacterDetails
 import io.minoro75.genshinhelper.domain.model.CharacterModel
+import io.minoro75.genshinhelper.domain.model.TodayBooks
+import io.minoro75.genshinhelper.domain.model.TodayWeaponResources
 import io.minoro75.genshinhelper.domain.repository.CharactersRepository
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
+import java.time.DayOfWeek
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -31,12 +34,149 @@ class CharactersRepositoryImpl @Inject constructor(
         return flow {
             emit(Resource.Loading(isLoading = true))
             val details = assetsDataSource.getCharacterDetails(name)
-            if (details == null){
+            if (details == null) {
                 emit(Resource.Error("null details"))
-            }
-            else{
+            } else {
                 emit(Resource.Success(details))
                 emit(Resource.Loading(isLoading = false))
+            }
+        }
+    }
+
+    override suspend fun getTodayBooks(dayOfWeek: DayOfWeek): Flow<Resource<List<TodayBooks>>> {
+        return flow {
+            when (dayOfWeek) {
+                DayOfWeek.MONDAY -> {
+                    val books = assetsDataSource.getMonThuBooks()
+                    if (books == null) {
+                        emit(Resource.Error("null books"))
+                    } else {
+                        emit(Resource.Success(books))
+                    }
+                }
+
+                DayOfWeek.TUESDAY -> {
+                    val books = assetsDataSource.getTueFriBooks()
+                    if (books == null) {
+                        emit(Resource.Error("null books"))
+                    } else {
+                        emit(Resource.Success(books))
+                    }
+                }
+
+                DayOfWeek.WEDNESDAY -> {
+                    val books = assetsDataSource.getWedSatBooks()
+                    if (books == null) {
+                        emit(Resource.Error("null books"))
+                    } else {
+                        emit(Resource.Success(books))
+                    }
+                }
+
+                DayOfWeek.THURSDAY -> {
+                    val books = assetsDataSource.getMonThuBooks()
+                    if (books == null) {
+                        emit(Resource.Error("null books"))
+                    } else {
+                        emit(Resource.Success(books))
+                    }
+                }
+
+                DayOfWeek.FRIDAY -> {
+                    val books = assetsDataSource.getTueFriBooks()
+                    if (books == null) {
+                        emit(Resource.Error("null books"))
+                    } else {
+                        emit(Resource.Success(books))
+                    }
+                }
+
+                DayOfWeek.SATURDAY -> {
+                    val books = assetsDataSource.getWedSatBooks()
+                    if (books == null) {
+                        emit(Resource.Error("null books"))
+                    } else {
+                        emit(Resource.Success(books))
+                    }
+                }
+
+                DayOfWeek.SUNDAY -> {
+                    val books = assetsDataSource.getSundayBooks()
+                    if (books == null) {
+                        emit(Resource.Error("null books"))
+                    } else {
+                        emit(Resource.Success(books))
+                    }
+                }
+            }
+        }
+    }
+
+    override suspend fun getTodayWeaponResources(dayOfWeek: DayOfWeek): Flow<Resource<List<TodayWeaponResources>>> {
+        return flow {
+            when (dayOfWeek) {
+                DayOfWeek.MONDAY -> {
+                    val weaponRes = assetsDataSource.getMonThuWeaponResources()
+                    if (weaponRes == null) {
+                        emit(Resource.Error("null weapons"))
+                    } else {
+                        emit(Resource.Success(weaponRes))
+                    }
+                }
+
+                DayOfWeek.TUESDAY -> {
+                    val weaponRes = assetsDataSource.getTueFriWeaponResources()
+                    if (weaponRes == null) {
+                        emit(Resource.Error("null weapons"))
+                    } else {
+                        emit(Resource.Success(weaponRes))
+                    }
+                }
+
+                DayOfWeek.WEDNESDAY -> {
+                    val weaponRes = assetsDataSource.getWedSatWeaponResources()
+                    if (weaponRes == null) {
+                        emit(Resource.Error("null weapons"))
+                    } else {
+                        emit(Resource.Success(weaponRes))
+                    }
+                }
+
+                DayOfWeek.THURSDAY -> {
+                    val weaponRes = assetsDataSource.getMonThuWeaponResources()
+                    if (weaponRes == null) {
+                        emit(Resource.Error("null weapons"))
+                    } else {
+                        emit(Resource.Success(weaponRes))
+                    }
+                }
+
+                DayOfWeek.FRIDAY -> {
+                    val weaponRes = assetsDataSource.getTueFriWeaponResources()
+                    if (weaponRes == null) {
+                        emit(Resource.Error("null weapons"))
+                    } else {
+                        emit(Resource.Success(weaponRes))
+                    }
+                }
+
+                DayOfWeek.SATURDAY -> {
+                    val weaponRes = assetsDataSource.getWedSatWeaponResources()
+                    if (weaponRes == null) {
+                        emit(Resource.Error("null weapons"))
+                    } else {
+                        emit(Resource.Success(weaponRes))
+                    }
+                }
+
+                DayOfWeek.SUNDAY -> {
+                    val weaponRes = assetsDataSource.getSundayWeaponResources()
+                    if (weaponRes == null) {
+                        emit(Resource.Error("null weapons"))
+                    } else {
+                        emit(Resource.Success(weaponRes))
+                    }
+                }
             }
         }
     }

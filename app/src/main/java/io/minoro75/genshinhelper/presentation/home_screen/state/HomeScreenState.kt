@@ -4,8 +4,8 @@ import io.minoro75.genshinhelper.domain.model.TodayBooks
 import io.minoro75.genshinhelper.domain.model.TodayWeaponResources
 
 data class HomeScreenState(
-    val todayBooks: TodayBooks? = null,
-    val todayWeaponResources: TodayWeaponResources? = null,
+    val todayBooks: List<TodayBooks>? = null,
+    val todayWeaponResources: List<TodayWeaponResources>? = null,
     val isLoading: Boolean = false,
     val errorMessage: String? = null
 )
