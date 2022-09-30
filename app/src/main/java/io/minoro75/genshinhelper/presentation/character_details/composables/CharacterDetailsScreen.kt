@@ -29,7 +29,6 @@ import io.minoro75.genshinhelper.domain.model.WeaponsReplacement
 import io.minoro75.genshinhelper.presentation.character_details.CharacterDetailsScreenViewModel
 import io.minoro75.genshinhelper.presentation.theme.GenshinHelperTheme
 
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun CharacterScreen(
     name: String?,
@@ -43,13 +42,6 @@ fun CharacterScreen(
         if (state.isLoading) {
             CircularProgressIndicator(modifier = Modifier.size(20.dp))
         } else if (state.errorMessage == null) {
-            Column(
-                modifier =
-                Modifier
-                    .fillMaxSize()
-                    .background(MaterialTheme.colorScheme.background)
-
-            ) {
 
                 state.characterDetails?.let { character ->
 
@@ -96,7 +88,6 @@ fun CharacterScreen(
             }
         }
     }
-}
 
 @Preview(uiMode = UI_MODE_NIGHT_NO)
 @Composable

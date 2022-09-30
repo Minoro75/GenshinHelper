@@ -20,6 +20,7 @@ import io.minoro75.genshinhelper.presentation.character_details.composables.Char
 import io.minoro75.genshinhelper.presentation.characters_list_screen.composables.CharactersListScreen
 import io.minoro75.genshinhelper.presentation.common.GenshinBottomNavigation
 import io.minoro75.genshinhelper.presentation.common.NavigationItem
+import io.minoro75.genshinhelper.presentation.home_screen.composables.HomeScreen
 import io.minoro75.genshinhelper.presentation.theme.GenshinHelperTheme
 
 @AndroidEntryPoint
@@ -46,7 +47,9 @@ fun MainScreen() {
             navController = navController,
             startDestination = NavigationItem.Characters.route
         ) {
-            composable(NavigationItem.Home.route) {}
+            composable(NavigationItem.Home.route) {
+                HomeScreen()
+            }
             composable(NavigationItem.Characters.route) { CharactersListScreen(navController) }
             composable(NavigationItem.Info.route) {}
             composable(

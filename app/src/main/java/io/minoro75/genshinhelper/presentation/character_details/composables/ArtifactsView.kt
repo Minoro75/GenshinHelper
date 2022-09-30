@@ -138,18 +138,22 @@ fun ArtifactItem(artifact: Artifact) {
 
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun ArtifactStatsItem(
     stat: String,
     image: Int
 ) {
-    Column(
-        modifier = Modifier
-            .wrapContentWidth()
-            .wrapContentHeight()
-            .clip(RoundedCornerShape(10.dp))
-            .background(ItemBackground)
-    ) {
+    OutlinedCard(
+        elevation = CardDefaults.cardElevation(defaultElevation = 8.dp),
+        colors = CardDefaults.outlinedCardColors(
+            containerColor = ItemBackground
+        ),
+        border = BorderStroke(
+            2.dp,
+            SolidColor(MaterialTheme.colorScheme.primary)
+        )
+    )  {
         Image(
             painter = painterResource(id = image),
             contentDescription = "circlet",

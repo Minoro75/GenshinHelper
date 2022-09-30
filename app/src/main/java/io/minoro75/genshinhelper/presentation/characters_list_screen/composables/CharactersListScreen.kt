@@ -32,7 +32,7 @@ fun CharactersListScreen(
         verticalArrangement = Arrangement.spacedBy(8.dp),
         modifier = Modifier
             .fillMaxSize()
-            .background(MaterialTheme.colorScheme.background)
+            .background(MaterialTheme.colorScheme.surfaceVariant)
     ) {
         items(state.characters.size) { index ->
             val character = state.characters[index]

@@ -5,6 +5,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import dagger.hilt.android.lifecycle.HiltViewModel
 import io.minoro75.genshinhelper.common.Resource
 import io.minoro75.genshinhelper.domain.repository.CharactersRepository
 import io.minoro75.genshinhelper.presentation.home_screen.state.HomeScreenState
@@ -13,6 +14,7 @@ import kotlinx.coroutines.launch
 import java.time.LocalDateTime
 import javax.inject.Inject
 
+@HiltViewModel
 class HomeScreenViewModel @Inject constructor(
     private val repository: CharactersRepository
 ) : ViewModel() {

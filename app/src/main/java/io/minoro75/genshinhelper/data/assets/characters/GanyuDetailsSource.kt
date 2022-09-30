@@ -27,8 +27,8 @@ object GanyuDetailsSource {
           ],
           "artifacts": [
             {
-              "artifact_name": "Blizzard Strayer",
-              "artifact_url": "https://paimon.moe/images/artifacts/blizzard_strayer_flower.png",
+              "artifact_name": "Wanderer's Troupe",
+              "artifact_url": "https://paimon.moe/images/artifacts/wanderers_troupe_flower.png",
               "artifact_amount": 4,
               "artifact_gobelet": "Cryo DPS",
               "artifact_circlet": "CRIT Rate / CRIT DMG",

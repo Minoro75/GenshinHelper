@@ -53,7 +53,7 @@ object DionaDetailsSource {
             },
             {
               "weapon_name": "Recurve Bow",
-              "weapon_url": "https://paimon.moe/images/weapons/prototype_archaic.png",
+              "weapon_url": "https://paimon.moe/images/weapons/recurve_bow.png",
               "weapon_rarity": 3
             }
           ]

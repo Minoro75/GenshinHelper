@@ -13,7 +13,7 @@ object ThomaDetailsSource {
           "image_url": "https://paimon.moe/images/characters/thoma.png",
           "talents_books": {
             "book_name": "Transience",
-            "book_url": "https://paimon.moe/images/items/philosophies_of_freedom.png",
+            "book_url": "https://paimon.moe/images/items/philosophies_of_transience.png",
             "book_days": "MON/THU/SUN"
           },
           "weekly_boss_item": {
