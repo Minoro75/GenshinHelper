@@ -1,6 +1,7 @@
 package io.minoro75.genshinhelper.presentation.home_screen.composables
 
 import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -34,7 +35,10 @@ import io.minoro75.genshinhelper.presentation.theme.GenshinTypography
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun TodayBooks(books: List<TodayBooks>) {
+fun TodayBooksView(
+    books: List<TodayBooks>,
+    onClick: (String) -> Unit
+) {
     GenshinHelperTheme {
         OutlinedCard(
             elevation = CardDefaults.cardElevation(defaultElevation = 8.dp),
@@ -47,32 +51,35 @@ fun TodayBooks(books: List<TodayBooks>) {
             border = BorderStroke(2.dp, SolidColor(MaterialTheme.colorScheme.primary))
         ) {
             Column(Modifier.padding(16.dp)) {
-                BookItem(item = books[0])
+                BookItem(item = books[0], onClick)
                 Divider(
                     Modifier.padding(vertical = 8.dp),
                     thickness = 1.dp,
                     color = MaterialTheme.colorScheme.onPrimaryContainer
                 )
-                BookItem(item = books[1])
+                BookItem(item = books[1], onClick)
                 Divider(
                     Modifier.padding(vertical = 8.dp),
                     thickness = 1.dp,
                     color = MaterialTheme.colorScheme.onPrimaryContainer
                 )
-                BookItem(item = books[2])
+                BookItem(item = books[2], onClick)
                 Divider(
                     Modifier.padding(vertical = 8.dp),
                     thickness = 1.dp,
                     color = MaterialTheme.colorScheme.onPrimaryContainer
                 )
-                BookItem(item = books[3])
+                BookItem(item = books[3], onClick)
             }
         }
     }
 }
 
 @Composable
-fun BookItem(item: TodayBooks) {
+fun BookItem(
+    item: TodayBooks,
+    onClick: (String) -> Unit
+) {
     Row {
         Item(
             url = item.bookUrl,
@@ -86,14 +93,20 @@ fun BookItem(item: TodayBooks) {
         )
         Spacer(Modifier.width(16.dp))
 
-        GridCharacters(list = item.characters)
+        GridCharacters(
+            list = item.characters,
+            onClick = onClick
+        )
 
     }
 }
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun GridCharacters(list: List<Character>) {
+fun GridCharacters(
+    list: List<Character>,
+    onClick: (String) -> Unit
+) {
     val firstColumn = 0..3
     val secondColumn = 4..7
     //currently there is no more then 8 elements
@@ -125,6 +138,7 @@ fun GridCharacters(list: List<Character>) {
                             },
                             elementImage = null,
                             modifier = Modifier
+                                .clickable { onClick.invoke(list[i].name) }
                                 .size(50.dp)
                                 .clip(RoundedCornerShape(10.dp))
                         )
@@ -165,6 +179,7 @@ fun GridCharacters(list: List<Character>) {
                                 },
                                 elementImage = null,
                                 modifier = Modifier
+                                    .clickable { onClick.invoke(list[i].name) }
                                     .size(50.dp)
                                     .clip(RoundedCornerShape(10.dp))
                             )
@@ -206,6 +221,7 @@ fun GridCharacters(list: List<Character>) {
                                 },
                                 elementImage = null,
                                 modifier = Modifier
+                                    .clickable { onClick.invoke(list[i].name) }
                                     .size(50.dp)
                                     .clip(RoundedCornerShape(10.dp))
                             )
@@ -222,7 +238,7 @@ fun GridCharacters(list: List<Character>) {
 @Composable
 fun PreviewTodayBooks() {
     GenshinHelperTheme {
-        TodayBooks(
+        TodayBooksView(
             books = listOf(
                 TodayBooks(
                     "Prosperity",
@@ -452,7 +468,8 @@ fun PreviewTodayBooks() {
                         )
                     )
                 )
-            )
+            ),
+            { "Dori" }
         )
     }
 }

@@ -36,7 +36,8 @@ import io.minoro75.genshinhelper.presentation.theme.GenshinTypography
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun HomeScreen(
-    viewModel: HomeScreenViewModel = hiltViewModel()
+    viewModel: HomeScreenViewModel = hiltViewModel(),
+    onClick: (String) -> Unit
 ) {
     GenshinHelperTheme {
         val state = viewModel.state
@@ -77,7 +78,7 @@ fun HomeScreen(
                 Spacer(modifier = Modifier.height(16.dp))
 
                 state.todayBooks?.let {
-                    TodayBooks(it)
+                    TodayBooksView(it, onClick)
                 }
 
                 Spacer(modifier = Modifier.height(16.dp))
@@ -127,7 +128,7 @@ fun PreviewHomeScreen() {
 
             Spacer(modifier = Modifier.height(16.dp))
 
-            TodayBooks(
+            TodayBooksView(
                 books = listOf(
                     io.minoro75.genshinhelper.domain.model.TodayBooks(
                         "Prosperity",
@@ -417,7 +418,8 @@ fun PreviewHomeScreen() {
                             )
                         )
                     )
-                )
+                ),
+                { "Dori" }
             )
 
             Spacer(modifier = Modifier.height(16.dp))
