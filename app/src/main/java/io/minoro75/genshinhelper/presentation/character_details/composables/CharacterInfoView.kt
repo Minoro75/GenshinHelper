@@ -76,7 +76,7 @@ fun PreviewCharacterInfo() {
             weapon = "catalyst",
             talentsBooks = TalentsBooks(
                 bookUrl = "https://paimon.moe/images/items/philosophies_of_freedom.png",
-                bookName = "Freedom",
+                bookName = "Admonition",
                 bookDays = "MON/THU/SUN"
             ),
             onBackPressed = {}

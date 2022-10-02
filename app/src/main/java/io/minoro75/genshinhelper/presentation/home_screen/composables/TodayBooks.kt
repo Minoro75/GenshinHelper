@@ -70,6 +70,17 @@ fun TodayBooksView(
                     color = MaterialTheme.colorScheme.onPrimaryContainer
                 )
                 BookItem(item = books[3], onClick)
+                for (i in 4..11){
+                    if (books.elementAtOrNull(i)!= null){
+                        Divider(
+                            Modifier.padding(vertical = 8.dp),
+                            thickness = 1.dp,
+                            color = MaterialTheme.colorScheme.onPrimaryContainer
+                        )
+                        BookItem(item = books[i], onClick = onClick)
+                    }
+                }
+
             }
         }
     }

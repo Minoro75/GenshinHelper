@@ -14,7 +14,7 @@ object EulaDetailsSource {
           "talents_books": {
             "book_name": "Resistance",
             "book_url": "https://paimon.moe/images/items/philosophies_of_resistance.png",
-            "book_days": "MON/THU/SUN"
+            "book_days": "TUE/FRI/SUN"
           },
           "weekly_boss_item": {
             "boss_item_name": "Dragon Lord's Crown",

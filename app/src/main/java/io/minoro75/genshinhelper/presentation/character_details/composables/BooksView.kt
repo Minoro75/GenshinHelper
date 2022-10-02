@@ -29,9 +29,9 @@ fun BooksView(
             errorPlaceholder = R.drawable.books_no_internet,
             name = name,
             rarity = 4,
-            textWidth = 75.dp,
+            textWidth = 80.dp,
             textStyle = GenshinTypography.bodySmall,
-            modifier = Modifier.size(75.dp)
+            modifier = Modifier.size(80.dp)
 
         )
         val daysList = daysAvailable.split("/")
