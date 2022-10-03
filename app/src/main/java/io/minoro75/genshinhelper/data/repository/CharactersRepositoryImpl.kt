@@ -7,8 +7,10 @@ import io.minoro75.genshinhelper.domain.model.CharacterModel
 import io.minoro75.genshinhelper.domain.model.TodayBooks
 import io.minoro75.genshinhelper.domain.model.TodayWeaponResources
 import io.minoro75.genshinhelper.domain.repository.CharactersRepository
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
+import kotlinx.coroutines.flow.flowOn
 import java.time.DayOfWeek
 import javax.inject.Inject
 import javax.inject.Singleton
@@ -27,7 +29,7 @@ class CharactersRepositoryImpl @Inject constructor(
                 emit(Resource.Success(list))
                 emit(Resource.Loading(isLoading = false))
             }
-        }
+        }.flowOn(Dispatchers.IO)
     }
 
     override suspend fun getCharacterDetails(name: String): Flow<Resource<CharacterDetails>> {
@@ -40,7 +42,7 @@ class CharactersRepositoryImpl @Inject constructor(
                 emit(Resource.Success(details))
                 emit(Resource.Loading(isLoading = false))
             }
-        }
+        }.flowOn(Dispatchers.IO)
     }
 
     override suspend fun getTodayBooks(dayOfWeek: DayOfWeek): Flow<Resource<List<TodayBooks>>> {
@@ -109,7 +111,7 @@ class CharactersRepositoryImpl @Inject constructor(
                     }
                 }
             }
-        }
+        }.flowOn(Dispatchers.IO)
     }
 
     override suspend fun getTodayWeaponResources(dayOfWeek: DayOfWeek): Flow<Resource<List<TodayWeaponResources>>> {
@@ -178,7 +180,7 @@ class CharactersRepositoryImpl @Inject constructor(
                     }
                 }
             }
-        }
+        }.flowOn(Dispatchers.IO)
     }
 
 }
