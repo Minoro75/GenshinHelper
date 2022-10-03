@@ -51,7 +51,7 @@ fun TodayWeapons(list: List<TodayWeaponResources>) {
                     for (i in firstColumn) {
                         if (list.elementAtOrNull(i) != null) {
                             if (i != firstColumn.first) {
-                                Spacer(Modifier.width(8.dp))
+                                Spacer(Modifier.width(6.dp))
                             }
                             OutlinedCard(
                                 elevation = CardDefaults.cardElevation(defaultElevation = 8.dp),
@@ -69,9 +69,9 @@ fun TodayWeapons(list: List<TodayWeaponResources>) {
                                     errorPlaceholder = R.drawable.boss_no_internet,
                                     name = list[i].name,
                                     rarity = 5,
-                                    textWidth = 75.dp,
+                                    textWidth = 77.dp,
                                     textStyle = GenshinTypography.bodySmall,
-                                    modifier = Modifier.size(75.dp)
+                                    modifier = Modifier.size(77.dp)
                                 )
                             }
 

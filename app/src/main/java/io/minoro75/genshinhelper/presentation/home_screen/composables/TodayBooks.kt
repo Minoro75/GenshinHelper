@@ -159,7 +159,7 @@ fun GridCharacters(
             }
         }
         // before we create 2nd column we need to check if it's required ( element 6 exists)
-        if (list.elementAtOrNull(5) != null) {
+        if (list.elementAtOrNull(4) != null) {
             Spacer(modifier = Modifier.height(4.dp))
             Row {
                 for (i in secondColumn) {
@@ -201,7 +201,7 @@ fun GridCharacters(
             }
         }
 
-        if (list.elementAtOrNull(10) != null) {
+        if (list.elementAtOrNull(8) != null) {
             Spacer(modifier = Modifier.height(4.dp))
             Row {
                 for (i in thirdColumn) {
