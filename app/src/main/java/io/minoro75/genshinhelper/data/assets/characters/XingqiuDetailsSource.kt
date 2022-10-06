@@ -49,7 +49,7 @@ object XingqiuDetailsSource {
             {
               "weapon_name": "Mistsplitter Reforged",
               "weapon_url": "https://paimon.moe/images/weapons/mistsplitter_reforged.png",
-              "weapon_rarity": 4
+              "weapon_rarity": 5
             },
             {
              "weapon_name": "Amenoma Kageuchi",

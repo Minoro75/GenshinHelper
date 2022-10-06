@@ -15,6 +15,11 @@ object SpiritLocketOfBoreasDataSource {
             "name": "Spirit Locket of Boreas",
             "domain_name": "Lupus Boreas, Dominator of Wolves",
             "description": "You can collect Spirit Locket of Boreas as a random reward from the Lupus Boreas located in Wolvendom."
+          },
+          {
+            "name": "Spirit Locket of Boreas",
+            "domain_name": "Convert: Spirit Locket of Boreas",
+            "description": "Go to a Crafting table and use the Convert section to convert one item to another."
           }
         ]
     """.trimIndent()

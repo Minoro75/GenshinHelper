@@ -15,6 +15,11 @@ object DvalinsPlumeDataSource {
             "name": "Dvalin's Plume",
             "domain_name": "Confront Stormterror",
             "description": "You can collect Dvalin's Plume as a random reward from the Stormterror domain located in Stormterror's Lair."
+          },
+          {
+            "name": "Dvalin's Plume",
+            "domain_name": "Convert: Dvalin's Plume",
+            "description": "Go to a Crafting table and use the Convert section to convert one item to another."
           }
         ]
     """.trimIndent()

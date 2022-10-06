@@ -15,6 +15,11 @@ object ThundersootherDataSource {
             "name": "Thundersoother",
             "domain_name": "Midsummer Courtyard",
             "description": "Domain reward"
+          },
+          {
+            "name": "Thundersoother",
+            "domain_name": "Artifact Strongbox: Thundersoother",
+            "description": "Go to a Crafting table and use the Artifact Strongbox: Thundersoother to convert at least 3 Artifacts into one brand new artifact."
           }
         ]
     """.trimIndent()

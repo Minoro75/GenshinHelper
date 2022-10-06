@@ -15,6 +15,11 @@ object DvalinsSighDataSource {
             "name": "Dvalin's Sigh",
             "domain_name": "Confront Stormterror",
             "description": "You can collect Dvalin's Sigh as a random reward from the Stormterror domain located in Stormterror's Lair."
+          },
+          {
+            "name": "Dvalin's Sigh",
+            "domain_name": "Convert: Dvalin's Sigh",
+            "description": "Go to a Crafting table and use the Convert section to convert one item to another."
           }
         ]
     """.trimIndent()

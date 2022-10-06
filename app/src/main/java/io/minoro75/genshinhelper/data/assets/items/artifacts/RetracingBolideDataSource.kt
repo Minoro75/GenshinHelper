@@ -15,6 +15,11 @@ object RetracingBolideDataSource {
             "name": "Retracing Bolide",
             "domain_name": "Domain of Guyun",
             "description": "Domain reward"
+          },
+          {
+            "name": "Retracing Bolide",
+            "domain_name": "Artifact Strongbox: Retracing Bolide",
+            "description": "Go to a Crafting table and use the Artifact Strongbox: Retracing Bolide to convert at least 3 Artifacts into one brand new artifact."
           }
         ]
     """.trimIndent()

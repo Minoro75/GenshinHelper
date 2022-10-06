@@ -15,6 +15,11 @@ object LavawalkerDataSource {
             "name": "Lavawalker",
             "domain_name": "Hidden Palace of Zhou Formula",
             "description": "Domain reward"
+          },
+          {
+            "name": "Lavawalker",
+            "domain_name": "Artifact Strongbox: Lavawalker",
+            "description": "Go to a Crafting table and use the Artifact Strongbox: Lavawalker to convert at least 3 Artifacts into one brand new artifact."
           }
         ]
     """.trimIndent()

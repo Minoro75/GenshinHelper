@@ -15,6 +15,11 @@ object DvalinsClawDataSource {
             "name": "Dvalin's Claw",
             "domain_name": "Confront Stormterror",
             "description": "You can collect Dvalin's Claw as a random reward from the Stormterror domain located in Stormterror's Lair."
+          },
+          {
+            "name": "Dvalin's Claw",
+            "domain_name": "Convert: Dvalin's Claw",
+            "description": "Go to a Crafting table and use the Convert section to convert one item to another."
           }
         ]
     """.trimIndent()

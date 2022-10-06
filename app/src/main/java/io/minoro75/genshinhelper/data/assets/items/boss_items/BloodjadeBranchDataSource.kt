@@ -15,6 +15,11 @@ object BloodjadeBranchDataSource {
             "name": "Bloodjade Branch",
             "domain_name": "Beneath the Dragon-Queller",
             "description": "You can collect Bloodjade Branch as a random reward from the Azhdaha domain located near Mt. Hulao."
+          },
+          {
+            "name": "Bloodjade Branch",
+            "domain_name": "Convert: Bloodjade Branch",
+            "description": "Go to a Crafting table and use the Convert section to convert one item to another."
           }
         ]
     """.trimIndent()

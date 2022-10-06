@@ -15,6 +15,11 @@ object ViridescentVenererDataSource {
             "name": "Viridescent Venerer",
             "domain_name": "Valley of Remembrance",
             "description": "Domain reward"
+          },
+          {
+            "name": "Viridescent Venerer",
+            "domain_name": "Artifact Strongbox: Viridescent Venerer",
+            "description": "Go to a Crafting table and use the Artifact Strongbox: Viridescent Venerer to convert at least 3 Artifacts into one brand new artifact."
           }
         ]
     """.trimIndent()

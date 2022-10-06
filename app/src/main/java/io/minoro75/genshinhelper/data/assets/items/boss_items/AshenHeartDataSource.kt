@@ -15,6 +15,11 @@ object AshenHeartDataSource {
             "name": "Ashen Heart",
             "domain_name": "Narukami Island: Tenshukaku",
             "description": "You can collect Ashen Heart as a random reward from the Signora domain located in Inazuma City"
+          },
+          {
+            "name": "Ashen Heart",
+            "domain_name": "Convert: Ashen Heart",
+            "description": "Go to a Crafting table and use the Convert section to convert one item to another."
           }
         ]
     """.trimIndent()

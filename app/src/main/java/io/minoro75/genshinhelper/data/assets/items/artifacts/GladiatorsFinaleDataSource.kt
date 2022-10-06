@@ -18,7 +18,7 @@ object GladiatorsFinaleDataSource {
           },
           {
             "name": "Gladiator's Finale",
-            "domain_name": "Artifact Strongbox",
+            "domain_name": "Artifact Strongbox: Gladiator's Finale",
             "description": "Go to a Crafting table and use the Artifact Strongbox: Gladiator's Finale to convert at least 3 Artifacts into one brand new artifact."
           }
         ]

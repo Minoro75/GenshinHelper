@@ -15,6 +15,11 @@ object TearsOfTheCalamitiousGodDataSource {
             "name": "Tears of the Calamitous God",
             "domain_name": "End of the Oneiric Euthymia",
             "description": "You can collect the Tears of the Calamitous God as a random reward from the Raiden Shogun Trounce Domain located under the Grand Narukami Shrine."
+          },
+           {
+            "name": "Tears of the Calamitous God",
+            "domain_name": "Convert: Tears of the Calamitous God",
+            "description": "Go to a Crafting table and use the Convert section to convert one item to another."
           }
         ]
     """.trimIndent()

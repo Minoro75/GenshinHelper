@@ -18,7 +18,7 @@ object WanderersTroupeDataSource {
           },
           {
             "name": "Wanderer's Troupe",
-            "domain_name": "Artifact Strongbox",
+            "domain_name": "Artifact Strongbox: Wanderer's Troupe",
             "description": "Go to a Crafting table and use the Artifact Strongbox: Wanderer's Troupe to convert at least 3 Artifacts into one brand new artifact."
           }
         ]

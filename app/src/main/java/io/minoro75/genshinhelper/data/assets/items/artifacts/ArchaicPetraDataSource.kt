@@ -15,6 +15,11 @@ object ArchaicPetraDataSource {
             "name": "Archaic Petra",
             "domain_name": "Domain of Guyun",
             "description": "Domain reward"
+          },
+          {
+            "name": "Archaic Petra",
+            "domain_name": "Artifact Strongbox: Archaic Petra",
+            "description": "Go to a Crafting table and use the Artifact Strongbox: Archaic Petra to convert at least 3 Artifacts into one brand new artifact."
           }
         ]
     """.trimIndent()

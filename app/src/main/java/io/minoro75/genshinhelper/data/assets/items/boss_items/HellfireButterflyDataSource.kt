@@ -15,6 +15,11 @@ object HellfireButterflyDataSource {
             "name": "Hellfire Butterfly",
             "domain_name": "Narukami Island: Tenshukaku",
             "description": "You can collect Hellfire Butterfly as a random reward from the Signora domain located in Inazuma City"
+          },
+          {
+            "name": "Hellfire Butterfly",
+            "domain_name": "Convert: Hellfire Butterfly",
+            "description": "Go to a Crafting table and use the Convert section to convert one item to another."
           }
         ]
     """.trimIndent()

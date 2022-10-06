@@ -15,6 +15,11 @@ object BlizzardStrayerDataSource {
             "name": "Blizzard Strayer",
             "domain_name": "Peak of Vindagnyr",
             "description": "Domain reward"
+          },
+          {
+            "name": "Blizzard Strayer",
+            "domain_name": "Artifact Strongbox: Blizzard Strayer",
+            "description": "Go to a Crafting table and use the Artifact Strongbox: Blizzard Strayer to convert at least 3 Artifacts into one brand new artifact."
           }
         ]
     """.trimIndent()

@@ -15,6 +15,11 @@ object CrimsonWitchOfFlamesDataSource {
             "name": "Crimson Witch of Flames",
             "domain_name": "Hidden Palace of Zhou Formula",
             "description": "Domain reward"
+          },
+          {
+            "name": "Crimson Witch of Flames",
+            "domain_name": "Artifact Strongbox: Crimson Witch of Flames",
+            "description": "Go to a Crafting table and use the Artifact Strongbox: Crimson Witch of Flames to convert at least 3 Artifacts into one brand new artifact."
           }
         ]
     """.trimIndent()

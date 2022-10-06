@@ -12,8 +12,8 @@ object ShimenavasReminiscenceDataSource {
     val sourcesList = """
         [
           {
-            "name": "Emblem of Severed Fate",
-            "domain_name": "Shimenawa's Reminiscence",
+            "name": "Shimenawa's Reminiscence",
+            "domain_name": "Momiji-Dyed Court",
             "description": "Domain reward"
           }
         ]
