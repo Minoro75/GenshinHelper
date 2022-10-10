@@ -4,6 +4,7 @@ import io.minoro75.genshinhelper.common.Resource
 import io.minoro75.genshinhelper.data.assets.AssetsDataSource
 import io.minoro75.genshinhelper.domain.model.CharacterDetails
 import io.minoro75.genshinhelper.domain.model.CharacterModel
+import io.minoro75.genshinhelper.domain.model.HowToObtainItem
 import io.minoro75.genshinhelper.domain.model.TodayBooks
 import io.minoro75.genshinhelper.domain.model.TodayWeaponResources
 import io.minoro75.genshinhelper.domain.repository.CharactersRepository
@@ -179,6 +180,19 @@ class CharactersRepositoryImpl @Inject constructor(
                         emit(Resource.Success(weaponRes))
                     }
                 }
+            }
+        }.flowOn(Dispatchers.IO)
+    }
+
+    override suspend fun getItemLocation(itemName: String): Flow<Resource<List<HowToObtainItem>>> {
+        return flow {
+            emit(Resource.Loading(isLoading = true))
+            val details = assetsDataSource.getItemLocation(itemName)
+            if (details == null) {
+                emit(Resource.Error("null details"))
+            } else {
+                emit(Resource.Success(details))
+                emit(Resource.Loading(isLoading = false))
             }
         }.flowOn(Dispatchers.IO)
     }

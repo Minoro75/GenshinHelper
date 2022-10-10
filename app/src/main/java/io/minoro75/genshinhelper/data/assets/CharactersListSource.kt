@@ -6,7 +6,7 @@ object CharactersListSource {
     /** here we define our JSON instead of reading from assets **/
 
     // for internal use only
-    const val version = "3.0 1st part"
+    const val version = "3.1 1st part"
 
     @Language("JSON")
     val charactersList = """
@@ -61,6 +61,13 @@ object CharactersListSource {
       "image_url": "https://paimon.moe/images/characters/bennett.png"
     },
     {
+      "name": "Candace",
+      "rarity": 4,
+      "element": "hydro",
+      "weapon": "polearm",
+      "image_url": "https://paimon.moe/images/characters/candace.png"
+    },
+    {
       "name": "Chongyun",
       "rarity": 4,
       "element": "cryo",
@@ -75,6 +82,13 @@ object CharactersListSource {
       "image_url": "https://paimon.moe/images/characters/collei.png"
     },
     {
+      "name": "Cyno",
+      "rarity": 5,
+      "element": "electro",
+      "weapon": "polearm",
+      "image_url": "https://paimon.moe/images/characters/cyno.png"
+    },
+    {
       "name": "Diluc",
       "rarity": 5,
       "element": "pyro",
@@ -87,6 +101,13 @@ object CharactersListSource {
       "element": "cryo",
       "weapon": "bow",
       "image_url": "https://paimon.moe/images/characters/diona.png"
+    },
+    {
+      "name": "Dori",
+      "rarity": 4,
+      "element": "electro",
+      "weapon": "claymore",
+      "image_url": "https://paimon.moe/images/characters/dori.png"
     },
     {
       "name": "Eula",

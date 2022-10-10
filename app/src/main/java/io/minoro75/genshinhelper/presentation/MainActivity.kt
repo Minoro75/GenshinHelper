@@ -1,6 +1,7 @@
 package io.minoro75.genshinhelper.presentation
 
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.padding
@@ -46,8 +47,8 @@ fun MainScreen() {
             startDestination = NavigationItem.Home.route
         ) {
             composable(NavigationItem.Home.route) {
-                HomeScreen(onClick = {clickedCharacterName ->
-                    navController.navigate("profile/$clickedCharacterName"){
+                HomeScreen(onClick = { clickedCharacterName ->
+                    navController.navigate("profile/$clickedCharacterName") {
                         launchSingleTop = true
                     }
                 })

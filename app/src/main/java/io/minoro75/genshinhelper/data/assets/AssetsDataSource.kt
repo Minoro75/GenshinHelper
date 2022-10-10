@@ -13,10 +13,13 @@ import io.minoro75.genshinhelper.data.assets.characters.AratakiIttoDetailsSource
 import io.minoro75.genshinhelper.data.assets.characters.BarbaraDetailsSource
 import io.minoro75.genshinhelper.data.assets.characters.BeidouDetailsSource
 import io.minoro75.genshinhelper.data.assets.characters.BennettDetailsSource
+import io.minoro75.genshinhelper.data.assets.characters.CandaceDetailsSource
 import io.minoro75.genshinhelper.data.assets.characters.ChongyunDetailsSource
 import io.minoro75.genshinhelper.data.assets.characters.ColleiDetailsSource
+import io.minoro75.genshinhelper.data.assets.characters.CynoDetailsSource
 import io.minoro75.genshinhelper.data.assets.characters.DilucDetailsSource
 import io.minoro75.genshinhelper.data.assets.characters.DionaDetailsSource
+import io.minoro75.genshinhelper.data.assets.characters.DoriDetailsSource
 import io.minoro75.genshinhelper.data.assets.characters.EulaDetailsSource
 import io.minoro75.genshinhelper.data.assets.characters.FischlDetailsSource
 import io.minoro75.genshinhelper.data.assets.characters.GanyuDetailsSource
@@ -62,12 +65,55 @@ import io.minoro75.genshinhelper.data.assets.characters.YelanDetailsSource
 import io.minoro75.genshinhelper.data.assets.characters.YoimiyaDetailsSource
 import io.minoro75.genshinhelper.data.assets.characters.YunJinDetailsSource
 import io.minoro75.genshinhelper.data.assets.characters.ZhongliDetailsSource
+import io.minoro75.genshinhelper.data.assets.items.artifacts.ArchaicPetraDataSource
+import io.minoro75.genshinhelper.data.assets.items.artifacts.BlizzardStrayerDataSource
+import io.minoro75.genshinhelper.data.assets.items.artifacts.BloodstainedChivalryDataSource
+import io.minoro75.genshinhelper.data.assets.items.artifacts.CrimsonWitchOfFlamesDataSource
+import io.minoro75.genshinhelper.data.assets.items.artifacts.DeepwoodMemoriesDataSource
+import io.minoro75.genshinhelper.data.assets.items.artifacts.EchoesOfTheOfferingDataSource
+import io.minoro75.genshinhelper.data.assets.items.artifacts.EmblemOfSeveredFateDataSource
+import io.minoro75.genshinhelper.data.assets.items.artifacts.GildedDreamsDataSource
+import io.minoro75.genshinhelper.data.assets.items.artifacts.GladiatorsFinaleDataSource
+import io.minoro75.genshinhelper.data.assets.items.artifacts.HeartOfDepthDataSource
+import io.minoro75.genshinhelper.data.assets.items.artifacts.HuskOfOpulentDreamsDataSource
+import io.minoro75.genshinhelper.data.assets.items.artifacts.LavawalkerDataSource
+import io.minoro75.genshinhelper.data.assets.items.artifacts.MaidenBelovedDataSource
+import io.minoro75.genshinhelper.data.assets.items.artifacts.NoblesseObligeDataSource
+import io.minoro75.genshinhelper.data.assets.items.artifacts.OceanHuedClamDataSource
+import io.minoro75.genshinhelper.data.assets.items.artifacts.PaleFlameDataSource
+import io.minoro75.genshinhelper.data.assets.items.artifacts.RetracingBolideDataSource
+import io.minoro75.genshinhelper.data.assets.items.artifacts.ShimenavasReminiscenceDataSource
+import io.minoro75.genshinhelper.data.assets.items.artifacts.TenacityOfTheMillelithDataSource
+import io.minoro75.genshinhelper.data.assets.items.artifacts.ThunderingFuryDataSource
+import io.minoro75.genshinhelper.data.assets.items.artifacts.ThundersootherDataSource
+import io.minoro75.genshinhelper.data.assets.items.artifacts.VermilionHereafterDataSource
+import io.minoro75.genshinhelper.data.assets.items.artifacts.ViridescentVenererDataSource
+import io.minoro75.genshinhelper.data.assets.items.artifacts.WanderersTroupeDataSource
+import io.minoro75.genshinhelper.data.assets.items.boss_items.AshenHeartDataSource
+import io.minoro75.genshinhelper.data.assets.items.boss_items.BloodjadeBranchDataSource
+import io.minoro75.genshinhelper.data.assets.items.boss_items.DragonLordsCrownDataSource
+import io.minoro75.genshinhelper.data.assets.items.boss_items.DvalinsClawDataSource
+import io.minoro75.genshinhelper.data.assets.items.boss_items.DvalinsPlumeDataSource
+import io.minoro75.genshinhelper.data.assets.items.boss_items.DvalinsSighDataSource
+import io.minoro75.genshinhelper.data.assets.items.boss_items.GildedScaleDataSource
+import io.minoro75.genshinhelper.data.assets.items.boss_items.HellfireButterflyDataSource
+import io.minoro75.genshinhelper.data.assets.items.boss_items.MoltenMomentDataSource
+import io.minoro75.genshinhelper.data.assets.items.boss_items.MudraOfTheMaleficGeneralDataSource
+import io.minoro75.genshinhelper.data.assets.items.boss_items.RingOfBoreasDataSource
+import io.minoro75.genshinhelper.data.assets.items.boss_items.ShadowOfTheWarriorDataSource
+import io.minoro75.genshinhelper.data.assets.items.boss_items.ShardOfFoulLegacyDataSource
+import io.minoro75.genshinhelper.data.assets.items.boss_items.SpiritLocketOfBoreasDataSource
+import io.minoro75.genshinhelper.data.assets.items.boss_items.TailOfBoreasDataSource
+import io.minoro75.genshinhelper.data.assets.items.boss_items.TearsOfTheCalamitiousGodDataSource
+import io.minoro75.genshinhelper.data.assets.items.boss_items.TheMeaningOfAeonsDataSource
+import io.minoro75.genshinhelper.data.assets.items.boss_items.TuskOfMonocerosCaeliDataSource
 import io.minoro75.genshinhelper.data.assets.weapons_resources.MonThuWeaponsResSource
 import io.minoro75.genshinhelper.data.assets.weapons_resources.SundayWeaponsResSource
 import io.minoro75.genshinhelper.data.assets.weapons_resources.TueFriWeaponsResSource
 import io.minoro75.genshinhelper.data.assets.weapons_resources.WedSatWeaponsResSource
 import io.minoro75.genshinhelper.domain.model.CharacterDetails
 import io.minoro75.genshinhelper.domain.model.CharacterModel
+import io.minoro75.genshinhelper.domain.model.HowToObtainItem
 import io.minoro75.genshinhelper.domain.model.TodayBooks
 import io.minoro75.genshinhelper.domain.model.TodayWeaponResources
 import kotlinx.coroutines.Dispatchers
@@ -87,6 +133,7 @@ class AssetsDataSource @Inject constructor(
     private val characterAdapter = moshi.adapter<List<CharacterModel>>()
     private val characterDetailsAdapter = moshi.adapter(CharacterDetails::class.java)
     private val booksAdapter = moshi.adapter<List<TodayBooks>>()
+    private val itemLocationAdapter = moshi.adapter<List<HowToObtainItem>>()
     private val weaponsAdapter = moshi.adapter<List<TodayWeaponResources>>()
 
     suspend fun getCharactersList() =
@@ -134,6 +181,139 @@ class AssetsDataSource @Inject constructor(
             booksAdapter.fromJson(SundayBooksSource.booksList)
         }
 
+    suspend fun getItemLocation(itemName: String): List<HowToObtainItem>? {
+        return when(itemName){
+            "Archaic Petra" -> withContext(Dispatchers.IO){
+                itemLocationAdapter.fromJson(ArchaicPetraDataSource.sourcesList)
+            }
+            "Blizzard Strayer" -> withContext(Dispatchers.IO){
+                itemLocationAdapter.fromJson(BlizzardStrayerDataSource.sourcesList)
+            }
+            "Bloodstained Chivalry" -> withContext(Dispatchers.IO){
+                itemLocationAdapter.fromJson(BloodstainedChivalryDataSource.sourcesList)
+            }
+            "Crimson Witch of Flames" -> withContext(Dispatchers.IO){
+                itemLocationAdapter.fromJson(CrimsonWitchOfFlamesDataSource.sourcesList)
+            }
+            "Deepwood Memories" -> withContext(Dispatchers.IO){
+                itemLocationAdapter.fromJson(DeepwoodMemoriesDataSource.sourcesList)
+            }
+            "Echoes of An Offering" -> withContext(Dispatchers.IO){
+                itemLocationAdapter.fromJson(EchoesOfTheOfferingDataSource.sourcesList)
+            }
+            "Emblem of Severed Fate" -> withContext(Dispatchers.IO){
+                itemLocationAdapter.fromJson(EmblemOfSeveredFateDataSource.sourcesList)
+            }
+            "Gilded Dreams" -> withContext(Dispatchers.IO){
+                itemLocationAdapter.fromJson(GildedDreamsDataSource.sourcesList)
+            }
+            "Gladiator's Finale" -> withContext(Dispatchers.IO){
+                itemLocationAdapter.fromJson(GladiatorsFinaleDataSource.sourcesList)
+            }
+            "Heart of Depth" -> withContext(Dispatchers.IO){
+                itemLocationAdapter.fromJson(HeartOfDepthDataSource.sourcesList)
+            }
+            "Husk of Opulent Dreams" -> withContext(Dispatchers.IO){
+                itemLocationAdapter.fromJson(HuskOfOpulentDreamsDataSource.sourcesList)
+            }
+            "Lavawalker" -> withContext(Dispatchers.IO){
+                itemLocationAdapter.fromJson(LavawalkerDataSource.sourcesList)
+            }
+            "Maiden Beloved" -> withContext(Dispatchers.IO){
+                itemLocationAdapter.fromJson(MaidenBelovedDataSource.sourcesList)
+            }
+            "Noblesse Oblige" -> withContext(Dispatchers.IO){
+                itemLocationAdapter.fromJson(NoblesseObligeDataSource.sourcesList)
+            }
+            "Ocean-Hued Clam" -> withContext(Dispatchers.IO){
+                itemLocationAdapter.fromJson(OceanHuedClamDataSource.sourcesList)
+            }
+            "Pale Flame" -> withContext(Dispatchers.IO){
+                itemLocationAdapter.fromJson(PaleFlameDataSource.sourcesList)
+            }
+            "Retracing Bolide" -> withContext(Dispatchers.IO){
+                itemLocationAdapter.fromJson(RetracingBolideDataSource.sourcesList)
+            }
+            "Shimenawa's Reminiscence" -> withContext(Dispatchers.IO){
+                itemLocationAdapter.fromJson(ShimenavasReminiscenceDataSource.sourcesList)
+            }
+            "Tenacity of the Millelith" -> withContext(Dispatchers.IO){
+                itemLocationAdapter.fromJson(TenacityOfTheMillelithDataSource.sourcesList)
+            }
+            "Thundering Fury" -> withContext(Dispatchers.IO){
+                itemLocationAdapter.fromJson(ThunderingFuryDataSource.sourcesList)
+            }
+            "Thundersoother" -> withContext(Dispatchers.IO){
+                itemLocationAdapter.fromJson(ThundersootherDataSource.sourcesList)
+            }
+            "Vermillion Hereafter" -> withContext(Dispatchers.IO){
+                itemLocationAdapter.fromJson(VermilionHereafterDataSource.sourcesList)
+            }
+            "Viridescent Venerer" -> withContext(Dispatchers.IO){
+                itemLocationAdapter.fromJson(ViridescentVenererDataSource.sourcesList)
+            }
+            "Wanderer's Troupe" -> withContext(Dispatchers.IO){
+                itemLocationAdapter.fromJson(WanderersTroupeDataSource.sourcesList)
+            }
+            // Boss items
+            "Ashen Heart" -> withContext(Dispatchers.IO){
+                itemLocationAdapter.fromJson(AshenHeartDataSource.sourcesList)
+            }
+            "Bloodjade Branch" -> withContext(Dispatchers.IO){
+                itemLocationAdapter.fromJson(BloodjadeBranchDataSource.sourcesList)
+            }
+            "Dragon Lord's Crown" -> withContext(Dispatchers.IO){
+                itemLocationAdapter.fromJson(DragonLordsCrownDataSource.sourcesList)
+            }
+            "Dvalin's Claw" -> withContext(Dispatchers.IO){
+                itemLocationAdapter.fromJson(DvalinsClawDataSource.sourcesList)
+            }
+            "Dvalin's Plume" -> withContext(Dispatchers.IO){
+                itemLocationAdapter.fromJson(DvalinsPlumeDataSource.sourcesList)
+            }
+            "Dvalin's Sigh" -> withContext(Dispatchers.IO){
+                itemLocationAdapter.fromJson(DvalinsSighDataSource.sourcesList)
+            }
+            "Gilded Scale" -> withContext(Dispatchers.IO){
+                itemLocationAdapter.fromJson(GildedScaleDataSource.sourcesList)
+            }
+            "Hellfire Butterfly" -> withContext(Dispatchers.IO){
+                itemLocationAdapter.fromJson(HellfireButterflyDataSource.sourcesList)
+            }
+            "Molten Moment" -> withContext(Dispatchers.IO){
+                itemLocationAdapter.fromJson(MoltenMomentDataSource.sourcesList)
+            }
+            "Mudra of the Malefic General" -> withContext(Dispatchers.IO){
+                itemLocationAdapter.fromJson(MudraOfTheMaleficGeneralDataSource.sourcesList)
+            }
+            "Ring of Boreas" -> withContext(Dispatchers.IO){
+                itemLocationAdapter.fromJson(RingOfBoreasDataSource.sourcesList)
+            }
+            "Shadow of the Warrior" -> withContext(Dispatchers.IO){
+                itemLocationAdapter.fromJson(ShadowOfTheWarriorDataSource.sourcesList)
+            }
+            "Shard of Foul Legacy" -> withContext(Dispatchers.IO){
+                itemLocationAdapter.fromJson(ShardOfFoulLegacyDataSource.sourcesList)
+            }
+            "Spirit Locket of Boreas" -> withContext(Dispatchers.IO){
+                itemLocationAdapter.fromJson(SpiritLocketOfBoreasDataSource.sourcesList)
+            }
+            "Tail of Boreas" -> withContext(Dispatchers.IO){
+                itemLocationAdapter.fromJson(TailOfBoreasDataSource.sourcesList)
+            }
+            "Tears of the Calamitous God" -> withContext(Dispatchers.IO){
+                itemLocationAdapter.fromJson(TearsOfTheCalamitiousGodDataSource.sourcesList)
+            }
+            "The Meaning of Aeons" -> withContext(Dispatchers.IO){
+                itemLocationAdapter.fromJson(TheMeaningOfAeonsDataSource.sourcesList)
+            }
+            "Tusk of Monoceros Caeli" -> withContext(Dispatchers.IO){
+                itemLocationAdapter.fromJson(TuskOfMonocerosCaeliDataSource.sourcesList)
+            }
+            else -> throw IllegalArgumentException("there is no artifact with name $itemName")
+        }
+    }
+
     suspend fun getCharacterDetails(characterName: String): CharacterDetails? {
         // for testing purposes we may inject context as param, but maybe later
         return when (characterName) {
@@ -165,6 +345,10 @@ class AssetsDataSource @Inject constructor(
                 characterDetailsAdapter.fromJson(BennettDetailsSource.details)
             }
 
+            "Candace" -> withContext(Dispatchers.IO){
+                characterDetailsAdapter.fromJson(CandaceDetailsSource.details)
+            }
+
             "Chongyun" -> withContext(Dispatchers.IO) {
                 characterDetailsAdapter.fromJson(ChongyunDetailsSource.details)
             }
@@ -173,12 +357,20 @@ class AssetsDataSource @Inject constructor(
                 characterDetailsAdapter.fromJson(ColleiDetailsSource.details)
             }
 
+            "Cyno" -> withContext(Dispatchers.IO){
+                characterDetailsAdapter.fromJson(CynoDetailsSource.details)
+            }
+
             "Diluc" -> withContext(Dispatchers.IO) {
                 characterDetailsAdapter.fromJson(DilucDetailsSource.details)
             }
 
             "Diona" -> withContext(Dispatchers.IO) {
                 characterDetailsAdapter.fromJson(DionaDetailsSource.details)
+            }
+
+            "Dori" -> withContext(Dispatchers.IO){
+                characterDetailsAdapter.fromJson(DoriDetailsSource.details)
             }
 
             "Eula" -> withContext(Dispatchers.IO) {
