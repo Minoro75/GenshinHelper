@@ -6,7 +6,7 @@ object TueFriBooksSource {
     /** here we define our JSON instead of reading from assets **/
 
     // for internal use only
-    const val version = "3.0 2st part"
+    const val version = "3.1 1st part"
 
     @Language("JSON")
     val booksList = """

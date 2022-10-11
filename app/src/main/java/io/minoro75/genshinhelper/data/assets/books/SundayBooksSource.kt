@@ -153,6 +153,18 @@ object SundayBooksSource {
             "book_name": "Admonition",
             "book_url": "https://paimon.moe/images/items/philosophies_of_admonition.png",
             "characters": [
+            {
+                "name": "Candace",
+                "rarity": 4,
+                "element": "hydro",
+                "image_url": "https://paimon.moe/images/characters/candace.png"
+              },
+              {
+                "name": "Cyno",
+                "rarity": 5,
+                "element": "electro",
+                "image_url": "https://paimon.moe/images/characters/cyno.png"
+              },
               {
                 "name": "Tighnari",
                 "rarity": 5,

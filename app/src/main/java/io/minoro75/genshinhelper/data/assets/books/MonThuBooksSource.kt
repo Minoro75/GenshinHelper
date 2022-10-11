@@ -6,7 +6,7 @@ object MonThuBooksSource {
     /** here we define our JSON instead of reading from assets **/
 
     // for internal use only
-    const val version = "3.0 2st part"
+    const val version = "3.1 1st part"
 
     @Language("JSON")
     val booksList = """
@@ -153,6 +153,18 @@ object MonThuBooksSource {
             "book_name": "Admonition",
             "book_url": "https://paimon.moe/images/items/philosophies_of_admonition.png",
             "characters": [
+            {
+                "name": "Candace",
+                "rarity": 4,
+                "element": "hydro",
+                "image_url": "https://paimon.moe/images/characters/candace.png"
+              },
+              {
+                "name": "Cyno",
+                "rarity": 5,
+                "element": "electro",
+                "image_url": "https://paimon.moe/images/characters/cyno.png"
+              },
               {
                 "name": "Tighnari",
                 "rarity": 5,
