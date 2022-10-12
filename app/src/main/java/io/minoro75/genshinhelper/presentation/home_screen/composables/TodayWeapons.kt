@@ -68,7 +68,7 @@ fun TodayWeapons(list: List<TodayWeaponResources>) {
                                     loadingPlaceholder = R.drawable.boss_loading,
                                     errorPlaceholder = R.drawable.boss_no_internet,
                                     name = list[i].name,
-                                    rarity = 5,
+                                    rarity = 4,
                                     textWidth = 77.dp,
                                     textStyle = GenshinTypography.bodySmall,
                                     modifier = Modifier.size(77.dp)
@@ -102,7 +102,7 @@ fun TodayWeapons(list: List<TodayWeaponResources>) {
                                         loadingPlaceholder = R.drawable.boss_loading,
                                         errorPlaceholder = R.drawable.boss_no_internet,
                                         name = list[i].name,
-                                        rarity = 5,
+                                        rarity = 4,
                                         textWidth = 75.dp,
                                         textStyle = GenshinTypography.bodySmall,
                                         modifier = Modifier.size(75.dp)
@@ -137,7 +137,7 @@ fun TodayWeapons(list: List<TodayWeaponResources>) {
                                         loadingPlaceholder = R.drawable.boss_loading,
                                         errorPlaceholder = R.drawable.boss_no_internet,
                                         name = list[i].name,
-                                        rarity = 5,
+                                        rarity = 4,
                                         textWidth = 75.dp,
                                         textStyle = GenshinTypography.bodySmall,
                                         modifier = Modifier.size(75.dp)

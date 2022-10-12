@@ -13,7 +13,7 @@ object SundayBooksSource {
         [
         {
             "book_name": "Freedom",
-            "book_url": "https://paimon.moe/images/items/philosophies_of_freedom.png",
+            "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/Item_Philosophies_of_Freedom.png",
             "characters": [
               {
                 "name": "Aloy",
@@ -67,7 +67,7 @@ object SundayBooksSource {
           },
           {
             "book_name": "Prosperity",
-            "book_url": "https://paimon.moe/images/items/philosophies_of_prosperity.png",
+            "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/bd/Item_Philosophies_of_Prosperity.png",
             "characters": [
               {
                 "name": "Keqing",
@@ -115,7 +115,7 @@ object SundayBooksSource {
           },
           {
             "book_name": "Transience",
-            "book_url": "https://paimon.moe/images/items/philosophies_of_transience.png",
+            "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/27/Item_Philosophies_of_Transience.png",
             "characters": [
               {
                 "name": "Sangonomiya Kokomi",
@@ -151,7 +151,7 @@ object SundayBooksSource {
           },
           {
             "book_name": "Admonition",
-            "book_url": "https://paimon.moe/images/items/philosophies_of_admonition.png",
+            "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9b/Item_Philosophies_of_Admonition.png",
             "characters": [
             {
                 "name": "Candace",
@@ -181,7 +181,7 @@ object SundayBooksSource {
           },
           {
             "book_name": "Resistance",
-            "book_url": "https://paimon.moe/images/items/philosophies_of_resistance.png",
+            "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/0b/Item_Philosophies_of_Resistance.png",
             "characters": [
               {
                 "name": "Bennett",
@@ -235,7 +235,7 @@ object SundayBooksSource {
           },
           {
             "book_name": "Diligence",
-            "book_url": "https://paimon.moe/images/items/philosophies_of_diligence.png",
+            "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c2/Item_Philosophies_of_Diligence.png",
             "characters": [
               {
                 "name": "Chongyun",
@@ -283,7 +283,7 @@ object SundayBooksSource {
           },
           {
             "book_name": "Elegance",
-            "book_url": "https://paimon.moe/images/items/philosophies_of_elegance.png",
+            "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/6/6f/Item_Philosophies_of_Elegance.png",
             "characters": [
               {
                 "name": "Arataki Itto",
@@ -325,7 +325,7 @@ object SundayBooksSource {
           },
           {
             "book_name": "Ingenuity",
-            "book_url": "https://paimon.moe/images/items/philosophies_of_ingenuity.png",
+            "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f7/Item_Philosophies_of_Ingenuity.png",
             "characters": [
               {
                 "name": "Dori",
@@ -343,7 +343,7 @@ object SundayBooksSource {
           },
           {
             "book_name": "Ballad",
-            "book_url": "https://paimon.moe/images/items/philosophies_of_ballad.png",
+            "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/7e/Item_Philosophies_of_Ballad.png",
             "characters": [
               {
                 "name": "Albedo",
@@ -391,7 +391,7 @@ object SundayBooksSource {
           },
           {
             "book_name": "Gold",
-            "book_url": "https://paimon.moe/images/items/philosophies_of_gold.png",
+            "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/01/Item_Philosophies_of_Gold.png",
             "characters": [
               {
                 "name": "Beidou",
@@ -433,7 +433,7 @@ object SundayBooksSource {
           },
           {
             "book_name": "Light",
-            "book_url": "https://paimon.moe/images/items/philosophies_of_light.png",
+            "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/95/Item_Philosophies_of_Light.png",
             "characters": [
               {
                 "name": "Gorou",
@@ -469,7 +469,7 @@ object SundayBooksSource {
           },
           {
             "book_name": "Praxis",
-            "book_url": "https://paimon.moe/images/items/philosophies_of_praxis.png",
+            "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/82/Item_Philosophies_of_Praxis.png",
             "characters": [
               {
                 "name": "Collei",

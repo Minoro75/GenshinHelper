@@ -13,19 +13,19 @@ object TueFriWeaponsResSource {
         [
           {
             "name": "Boreal Wolf",
-            "url": "https://paimon.moe/images/items/boreal_wolfs_nostalgia.png"
+            "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/98/Item_Boreal_Wolf%27s_Broken_Fang.png"
           },
           {
             "name": "Mist Veiled Elixir",
-            "url": "https://paimon.moe/images/items/mist_veiled_primo_elixir.png"
+            "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9b/Item_Mist_Veiled_Gold_Elixir.png"
           },
           {
             "name": "Narukami",
-            "url": "https://paimon.moe/images/items/narukamis_valor.png"
+            "url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f5/Item_Narukami%27s_Affection.png"
           },
           {
             "name": "Oasis Garden",
-            "url": "https://paimon.moe/images/items/oasis_gardens_truth.png"
+            "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/23/Item_Oasis_Garden%27s_Mourning.png"
           }
         ]
     """.trimIndent()

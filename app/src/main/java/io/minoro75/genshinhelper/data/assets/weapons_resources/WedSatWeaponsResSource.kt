@@ -13,19 +13,19 @@ object WedSatWeaponsResSource {
         [
           {
             "name": "Dandelion Gladiator",
-            "url": "https://paimon.moe/images/items/dream_of_the_dandelion_gladiator.png"
+            "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/40/Item_Shackles_of_the_Dandelion_Gladiator.png"
           },
           {
             "name": "Aerosiderite",
-            "url": "https://paimon.moe/images/items/chunk_of_aerosiderite.png"
+            "url": "https://static.wikia.nocookie.net/gensin-impact/images/1/17/Item_Bit_of_Aerosiderite.png"
           },
           {
             "name": "Mask",
-            "url": "https://paimon.moe/images/items/mask_of_the_kijin.png"
+            "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a9/Item_Mask_of_the_One-Horned.png"
           },
           {
             "name": "Scorching Might",
-            "url": "https://paimon.moe/images/items/olden_days_of_scorching_might.png"
+            "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/af/Item_Dream_of_Scorching_Might.png"
           }
         ]
     """.trimIndent()

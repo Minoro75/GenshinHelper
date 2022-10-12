@@ -13,7 +13,7 @@ object WedSatBooksSource {
         [
           {
             "book_name": "Ballad",
-            "book_url": "https://paimon.moe/images/items/philosophies_of_ballad.png",
+            "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/7e/Item_Philosophies_of_Ballad.png",
             "characters": [
               {
                 "name": "Albedo",
@@ -61,7 +61,7 @@ object WedSatBooksSource {
           },
           {
             "book_name": "Gold",
-            "book_url": "https://paimon.moe/images/items/philosophies_of_gold.png",
+            "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/01/Item_Philosophies_of_Gold.png",
             "characters": [
               {
                 "name": "Beidou",
@@ -103,7 +103,7 @@ object WedSatBooksSource {
           },
           {
             "book_name": "Light",
-            "book_url": "https://paimon.moe/images/items/philosophies_of_light.png",
+            "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/95/Item_Philosophies_of_Light.png",
             "characters": [
               {
                 "name": "Gorou",
@@ -139,7 +139,7 @@ object WedSatBooksSource {
           },
           {
             "book_name": "Praxis",
-            "book_url": "https://paimon.moe/images/items/philosophies_of_praxis.png",
+            "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/82/Item_Philosophies_of_Praxis.png",
             "characters": [
               {
                 "name": "Collei",

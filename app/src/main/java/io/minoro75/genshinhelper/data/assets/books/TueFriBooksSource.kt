@@ -13,7 +13,7 @@ object TueFriBooksSource {
         [
           {
             "book_name": "Resistance",
-            "book_url": "https://paimon.moe/images/items/philosophies_of_resistance.png",
+            "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/0b/Item_Philosophies_of_Resistance.png",
             "characters": [
               {
                 "name": "Bennett",
@@ -67,7 +67,7 @@ object TueFriBooksSource {
           },
           {
             "book_name": "Diligence",
-            "book_url": "https://paimon.moe/images/items/philosophies_of_diligence.png",
+            "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c2/Item_Philosophies_of_Diligence.png",
             "characters": [
               {
                 "name": "Chongyun",
@@ -115,7 +115,7 @@ object TueFriBooksSource {
           },
           {
             "book_name": "Elegance",
-            "book_url": "https://paimon.moe/images/items/philosophies_of_elegance.png",
+            "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/6/6f/Item_Philosophies_of_Elegance.png",
             "characters": [
               {
                 "name": "Arataki Itto",
@@ -157,7 +157,7 @@ object TueFriBooksSource {
           },
           {
             "book_name": "Ingenuity",
-            "book_url": "https://paimon.moe/images/items/philosophies_of_ingenuity.png",
+            "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f7/Item_Philosophies_of_Ingenuity.png",
             "characters": [
               {
                 "name": "Dori",

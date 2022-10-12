@@ -13,7 +13,7 @@ object MonThuBooksSource {
         [
           {
             "book_name": "Freedom",
-            "book_url": "https://paimon.moe/images/items/philosophies_of_freedom.png",
+            "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/Item_Philosophies_of_Freedom.png",
             "characters": [
               {
                 "name": "Aloy",
@@ -67,7 +67,7 @@ object MonThuBooksSource {
           },
           {
             "book_name": "Prosperity",
-            "book_url": "https://paimon.moe/images/items/philosophies_of_prosperity.png",
+            "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/bd/Item_Philosophies_of_Prosperity.png",
             "characters": [
               {
                 "name": "Keqing",
@@ -115,7 +115,7 @@ object MonThuBooksSource {
           },
           {
             "book_name": "Transience",
-            "book_url": "https://paimon.moe/images/items/philosophies_of_transience.png",
+            "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/27/Item_Philosophies_of_Transience.png",
             "characters": [
               {
                 "name": "Sangonomiya Kokomi",
@@ -151,7 +151,7 @@ object MonThuBooksSource {
           },
           {
             "book_name": "Admonition",
-            "book_url": "https://paimon.moe/images/items/philosophies_of_admonition.png",
+            "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9b/Item_Philosophies_of_Admonition.png",
             "characters": [
             {
                 "name": "Candace",
