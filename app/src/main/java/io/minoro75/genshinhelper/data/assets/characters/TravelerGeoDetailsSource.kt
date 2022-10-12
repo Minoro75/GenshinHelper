@@ -18,7 +18,7 @@ object TravelerGeoDetailsSource {
           },
           "weekly_boss_item": {
             "boss_item_name": "Tail of Boreas",
-            "boss_item_url": "https://paimon.moe/images/items/tail_of_boreas.png"
+            "boss_item_url": "https://static.wikia.nocookie.net/gensin-impact/images/6/66/Item_Tail_of_Boreas.png"
           },
           "talents_priority": [
             "Skill",

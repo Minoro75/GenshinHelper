@@ -18,7 +18,7 @@ object YanfeiDetailsSource {
           },
           "weekly_boss_item": {
             "boss_item_name": "Bloodjade Branch",
-            "boss_item_url": "https://paimon.moe/images/items/bloodjade_branch.png"
+            "boss_item_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b1/Item_Bloodjade_Branch.png"
           },
           "talents_priority": [
             "Attack",

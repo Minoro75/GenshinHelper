@@ -18,7 +18,7 @@ object YaeMikoDetailsSource {
           },
           "weekly_boss_item": {
             "boss_item_name": "The Meaning of Aeons",
-            "boss_item_url": "https://paimon.moe/images/items/the_meaning_of_aeons.png"
+            "boss_item_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c9/Item_The_Meaning_of_Aeons.png"
           },
           "talents_priority": [
             "Skill",

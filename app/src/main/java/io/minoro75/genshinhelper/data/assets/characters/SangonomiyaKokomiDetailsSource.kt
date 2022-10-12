@@ -18,7 +18,7 @@ object SangonomiyaKokomiDetailsSource {
           },
           "weekly_boss_item": {
             "boss_item_name": "Hellfire Butterfly",
-            "boss_item_url": "https://paimon.moe/images/items/hellfire_butterfly.png"
+            "boss_item_url": "https://static.wikia.nocookie.net/gensin-impact/images/1/16/Item_Hellfire_Butterfly.png"
           },
           "talents_priority": [
             "Skill",

@@ -51,7 +51,7 @@ fun PreviewWeeklyBossItemView() {
     GenshinHelperTheme {
         WeeklyBossItemView(
             name = "Dvalin's Sigh",
-            url = "https://paimon.moe/images/items/dvalins_sigh.png"
+            url = "https://static.wikia.nocookie.net/gensin-impact/images/0/07/Item_Dvalin%27s_Sigh.png"
         )
     }
 }

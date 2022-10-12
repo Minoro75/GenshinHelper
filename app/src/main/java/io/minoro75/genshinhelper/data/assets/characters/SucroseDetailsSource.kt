@@ -18,7 +18,7 @@ object SucroseDetailsSource {
           },
           "weekly_boss_item": {
             "boss_item_name": "Spirit Locket of Boreas",
-            "boss_item_url": "https://paimon.moe/images/items/spirit_locket_of_boreas.png"
+            "boss_item_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/81/Item_Spirit_Locket_of_Boreas.png"
           },
           "talents_priority": [
             "Skill",

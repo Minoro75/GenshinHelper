@@ -18,7 +18,7 @@ object AmberDetailsSource {
               },
               "weekly_boss_item": {
                 "boss_item_name": "Dvalin's Sigh",
-                "boss_item_url": "https://paimon.moe/images/items/dvalins_sigh.png"
+                "boss_item_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/07/Item_Dvalin%27s_Sigh.png"
               },
               "talents_priority": [
                 "Burst",

@@ -18,7 +18,7 @@ object DilucDetailsSource {
           },
           "weekly_boss_item": {
             "boss_item_name": "Dvalin's Plume",
-            "boss_item_url": "https://paimon.moe/images/items/dvalins_plume.png"
+            "boss_item_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/bf/Item_Dvalin%27s_Plume.png"
           },
           "talents_priority": [
             "Skill",

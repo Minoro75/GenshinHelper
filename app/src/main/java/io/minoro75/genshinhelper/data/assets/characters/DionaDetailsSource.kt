@@ -18,7 +18,7 @@ object DionaDetailsSource {
           },
           "weekly_boss_item": {
             "boss_item_name": "Shard of a Foul Legacy",
-            "boss_item_url": "https://paimon.moe/images/items/shard_of_a_foul_legacy.png"
+            "boss_item_url": "https://static.wikia.nocookie.net/gensin-impact/images/4/48/Item_Shard_of_a_Foul_Legacy.png"
           },
           "talents_priority": [
             "Burst",

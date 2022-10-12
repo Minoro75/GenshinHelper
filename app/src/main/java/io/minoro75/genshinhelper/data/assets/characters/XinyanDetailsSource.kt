@@ -18,7 +18,7 @@ object XinyanDetailsSource {
           },
           "weekly_boss_item": {
             "boss_item_name": "Tusk of Monoceros Caeli",
-            "boss_item_url": "https://paimon.moe/images/items/tusk_of_monoceros_caeli.png"
+            "boss_item_url": "https://static.wikia.nocookie.net/gensin-impact/images/1/1c/Item_Tusk_of_Monoceros_Caeli.png"
           },
           "talents_priority": [
             "Attack",

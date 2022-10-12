@@ -18,7 +18,7 @@ object LisaDetailsSource {
           },
           "weekly_boss_item": {
             "boss_item_name": "Dvalin's Claw",
-            "boss_item_url": "https://paimon.moe/images/items/dvalins_claw.png"
+            "boss_item_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a8/Item_Dvalin%27s_Claw.png"
           },
           "talents_priority": [
             "Burst",

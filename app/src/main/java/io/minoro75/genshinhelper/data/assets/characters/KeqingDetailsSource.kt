@@ -18,7 +18,7 @@ object KeqingDetailsSource {
           },
           "weekly_boss_item": {
             "boss_item_name": "Ring of Boreas",
-            "boss_item_url": "https://paimon.moe/images/items/ring_of_boreas.png"
+            "boss_item_url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d6/Item_Ring_of_Boreas.png"
           },
           "talents_priority": [
             "Burst",
