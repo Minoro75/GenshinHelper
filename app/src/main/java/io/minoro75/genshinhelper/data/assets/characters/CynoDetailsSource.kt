@@ -10,7 +10,7 @@ object CynoDetailsSource {
               "rarity": 5,
               "element": "electro",
               "weapon": "polearm",
-              "image_url": "https://paimon.moe/images/characters/cyno.png",
+              "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d1/Character_Cyno_Thumb.png",
               "talents_books": {
                 "book_name": "Admonition",
                 "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9b/Item_Philosophies_of_Admonition.png",

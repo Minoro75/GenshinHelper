@@ -10,7 +10,7 @@ object XinyanDetailsSource {
           "rarity": 4,
           "element": "pyro",
           "weapon": "claymore",
-          "image_url": "https://paimon.moe/images/characters/xinyan.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9d/Character_Xinyan_Thumb.png",
           "talents_books": {
             "book_name": "Gold",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/01/Item_Philosophies_of_Gold.png",

@@ -10,7 +10,7 @@ object DoriDetailsSource {
               "rarity": 4,
               "element": "electro",
               "weapon": "claymore",
-              "image_url": "https://paimon.moe/images/characters/dori.png",
+              "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/90/Character_Dori_Thumb.png",
               "talents_books": {
                 "book_name": "Ingenuity",
                 "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f7/Item_Philosophies_of_Ingenuity.png",

@@ -10,7 +10,7 @@ object MonaDetailsSource {
           "rarity": 5,
           "element": "hydro",
           "weapon": "catalyst",
-          "image_url": "https://paimon.moe/images/characters/mona.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a0/Character_Mona_Thumb.png",
           "talents_books": {
             "book_name": "Resistance",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/0b/Item_Philosophies_of_Resistance.png",

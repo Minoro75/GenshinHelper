@@ -69,7 +69,7 @@ fun CharacterInfoView(
 fun PreviewCharacterInfo() {
     GenshinHelperTheme {
         CharacterInfoView(
-            imageUrl = "https://paimon.moe/images/characters/ganyu.png",
+            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/0/0a/Character_Ganyu_Thumb.png",
             rarity = 5,
             element = "cryo",
             name = "Sangonomiya Kokomi",

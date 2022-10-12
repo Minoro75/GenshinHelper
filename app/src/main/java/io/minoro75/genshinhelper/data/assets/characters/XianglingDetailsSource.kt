@@ -10,7 +10,7 @@ object XianglingDetailsSource {
           "rarity": 4,
           "element": "pyro",
           "weapon": "polearm",
-          "image_url": "https://paimon.moe/images/characters/xiangling.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a0/Character_Xiangling_Thumb.png",
           "talents_books": {
             "book_name": "Diligence",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c2/Item_Philosophies_of_Diligence.png",

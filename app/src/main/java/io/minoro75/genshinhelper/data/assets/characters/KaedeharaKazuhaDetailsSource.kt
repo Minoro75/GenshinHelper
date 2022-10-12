@@ -10,7 +10,7 @@ object KaedeharaKazuhaDetailsSource {
           "rarity": 5,
           "element": "anemo",
           "weapon": "sword",
-          "image_url": "https://paimon.moe/images/characters/kaedehara_kazuha.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f0/Character_Kaedehara_Kazuha_Thumb.png",
           "talents_books": {
             "book_name": "Diligence",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c2/Item_Philosophies_of_Diligence.png",

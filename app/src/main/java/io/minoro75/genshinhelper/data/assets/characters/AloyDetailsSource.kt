@@ -10,7 +10,7 @@ object AloyDetailsSource {
           "rarity": 5,
           "element": "cryo",
           "weapon": "bow",
-          "image_url": "https://paimon.moe/images/characters/aloy.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png",
           "talents_books": {
             "book_name": "Freedom",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/Item_Philosophies_of_Freedom.png",

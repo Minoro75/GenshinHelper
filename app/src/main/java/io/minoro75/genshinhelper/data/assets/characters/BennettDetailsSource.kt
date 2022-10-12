@@ -10,7 +10,7 @@ object BennettDetailsSource {
               "rarity": 4,
               "element": "pyro",
               "weapon": "sword",
-              "image_url": "https://paimon.moe/images/characters/bennett.png",
+              "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/7b/Character_Bennett_Thumb.png",
               "talents_books": {
                 "book_name": "Resistance",
                 "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/0b/Item_Philosophies_of_Resistance.png",

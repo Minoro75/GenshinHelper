@@ -10,7 +10,7 @@ object JeanDetailsSource {
           "rarity": 5,
           "element": "anemo",
           "weapon": "sword",
-          "image_url": "https://paimon.moe/images/characters/jean.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/89/Character_Jean_Thumb.png",
           "talents_books": {
             "book_name": "Resistance",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/0b/Item_Philosophies_of_Resistance.png",

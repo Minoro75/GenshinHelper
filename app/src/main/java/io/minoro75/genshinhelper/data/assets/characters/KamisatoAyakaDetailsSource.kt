@@ -10,7 +10,7 @@ object KamisatoAyakaDetailsSource {
           "rarity": 5,
           "element": "cryo",
           "weapon": "sword",
-          "image_url": "https://paimon.moe/images/characters/kamisato_ayaka.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/fd/Character_Kamisato_Ayaka_Thumb.png",
           "talents_books": {
             "book_name": "Elegance",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/6/6f/Item_Philosophies_of_Elegance.png",

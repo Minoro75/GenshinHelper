@@ -10,7 +10,7 @@ object YanfeiDetailsSource {
           "rarity": 4,
           "element": "pyro",
           "weapon": "catalyst",
-          "image_url": "https://paimon.moe/images/characters/yanfei.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/1/1f/Character_Yanfei_Thumb.png",
           "talents_books": {
             "book_name": "Gold",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/01/Item_Philosophies_of_Gold.png",

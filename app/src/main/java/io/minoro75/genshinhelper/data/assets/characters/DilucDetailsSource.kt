@@ -10,7 +10,7 @@ object DilucDetailsSource {
           "rarity": 5,
           "element": "pyro",
           "weapon": "claymore",
-          "image_url": "https://paimon.moe/images/characters/diluc.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/02/Character_Diluc_Thumb.png",
           "talents_books": {
             "book_name": "Resistance",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/0b/Item_Philosophies_of_Resistance.png",

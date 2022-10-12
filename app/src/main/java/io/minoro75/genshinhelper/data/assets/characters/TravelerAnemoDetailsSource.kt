@@ -10,7 +10,7 @@ object TravelerAnemoDetailsSource {
           "rarity": 5,
           "element": "anemo",
           "weapon": "sword",
-          "image_url": "https://paimon.moe/images/characters/traveler_anemo.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/71/Character_Traveler_Thumb.png",
           "talents_books": {
             "book_name": "Freedom",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/Item_Philosophies_of_Freedom.png",

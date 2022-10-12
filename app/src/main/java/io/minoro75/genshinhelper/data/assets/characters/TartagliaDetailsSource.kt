@@ -10,7 +10,7 @@ object TartagliaDetailsSource {
           "rarity": 5,
           "element": "hydro",
           "weapon": "bow",
-          "image_url": "https://paimon.moe/images/characters/tartaglia.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/53/Character_Tartaglia_Thumb.png",
           "talents_books": {
             "book_name": "Freedom",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/Item_Philosophies_of_Freedom.png",

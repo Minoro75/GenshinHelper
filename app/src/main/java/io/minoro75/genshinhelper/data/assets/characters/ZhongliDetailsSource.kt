@@ -10,7 +10,7 @@ object ZhongliDetailsSource {
           "rarity": 5,
           "element": "geo",
           "weapon": "polearm",
-          "image_url": "https://paimon.moe/images/characters/zhongli.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c2/Character_Zhongli_Thumb.png",
           "talents_books": {
             "book_name": "Gold",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/01/Item_Philosophies_of_Gold.png",

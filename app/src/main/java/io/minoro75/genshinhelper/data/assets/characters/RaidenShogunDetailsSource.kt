@@ -10,7 +10,7 @@ object RaidenShogunDetailsSource {
           "rarity": 5,
           "element": "electro",
           "weapon": "polearm",
-          "image_url": "https://paimon.moe/images/characters/raiden_shogun.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/52/Character_Raiden_Shogun_Thumb.png",
           "talents_books": {
             "book_name": "Light",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/95/Item_Philosophies_of_Light.png",

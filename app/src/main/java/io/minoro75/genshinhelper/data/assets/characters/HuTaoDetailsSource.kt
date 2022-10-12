@@ -10,7 +10,7 @@ object HuTaoDetailsSource {
           "rarity": 5,
           "element": "pyro",
           "weapon": "polearm",
-          "image_url": "https://paimon.moe/images/characters/hu_tao.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a4/Character_Hu_Tao_Thumb.png",
           "talents_books": {
             "book_name": "Diligence",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c2/Item_Philosophies_of_Diligence.png",

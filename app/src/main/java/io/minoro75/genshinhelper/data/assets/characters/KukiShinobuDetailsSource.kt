@@ -10,7 +10,7 @@ object KukiShinobuDetailsSource {
           "rarity": 4,
           "element": "electro",
           "weapon": "sword",
-          "image_url": "https://paimon.moe/images/characters/kuki_shinobu.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/37/Character_Kuki_Shinobu_Thumb.png",
           "talents_books": {
             "book_name": "Elegance",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/6/6f/Item_Philosophies_of_Elegance.png",

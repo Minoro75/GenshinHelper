@@ -10,7 +10,7 @@ object SangonomiyaKokomiDetailsSource {
           "rarity": 5,
           "element": "hydro",
           "weapon": "catalyst",
-          "image_url": "https://paimon.moe/images/characters/sangonomiya_kokomi.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/cc/Character_Sangonomiya_Kokomi_Thumb.png",
           "talents_books": {
             "book_name": "Transience",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/27/Item_Philosophies_of_Transience.png",

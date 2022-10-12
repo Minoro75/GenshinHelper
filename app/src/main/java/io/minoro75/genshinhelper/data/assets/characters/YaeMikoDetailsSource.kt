@@ -10,7 +10,7 @@ object YaeMikoDetailsSource {
           "rarity": 5,
           "element": "electro",
           "weapon": "catalyst",
-          "image_url": "https://paimon.moe/images/characters/yae_miko.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/57/Character_Yae_Miko_Thumb.png",
           "talents_books": {
             "book_name": "Light",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/95/Item_Philosophies_of_Light.png",

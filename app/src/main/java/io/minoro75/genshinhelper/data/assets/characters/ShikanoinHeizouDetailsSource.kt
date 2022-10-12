@@ -10,7 +10,7 @@ object ShikanoinHeizouDetailsSource {
           "rarity": 4,
           "element": "anemo",
           "weapon": "catalyst",
-          "image_url": "https://paimon.moe/images/characters/shikanoin_heizou.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e4/Character_Shikanoin_Heizou_Thumb.png",
           "talents_books": {
             "book_name": "Transience",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/27/Item_Philosophies_of_Transience.png",

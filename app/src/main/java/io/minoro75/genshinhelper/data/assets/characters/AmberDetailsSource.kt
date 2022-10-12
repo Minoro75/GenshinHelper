@@ -10,7 +10,7 @@ object AmberDetailsSource {
               "rarity": 4,
               "element": "pyro",
               "weapon": "bow",
-              "image_url": "https://paimon.moe/images/characters/amber.png",
+              "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c6/Character_Amber_Thumb.png",
               "talents_books": {
                 "book_name": "Freedom",
                 "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/Item_Philosophies_of_Freedom.png",

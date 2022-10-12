@@ -19,49 +19,49 @@ object MonThuBooksSource {
                 "name": "Aloy",
                 "rarity": 5,
                 "element": "cryo",
-                "image_url": "https://paimon.moe/images/characters/aloy.png"
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
               },
               {
                 "name": "Amber",
                 "rarity": 4,
                 "element": "pyro",
-                "image_url": "https://paimon.moe/images/characters/amber.png"
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c6/Character_Amber_Thumb.png"
               },
               {
                 "name": "Barbara",
                 "rarity": 4,
                 "element": "hydro",
-                "image_url": "https://paimon.moe/images/characters/barbara.png"
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/72/Character_Barbara_Thumb.png"
               },
               {
                 "name": "Diona",
                 "rarity": 4,
                 "element": "cryo",
-                "image_url": "https://paimon.moe/images/characters/diona.png"
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Character_Diona_Thumb.png"
               },
               {
                 "name": "Klee",
                 "rarity": 5,
                 "element": "pyro",
-                "image_url": "https://paimon.moe/images/characters/klee.png"
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c3/Character_Klee_Thumb.png"
               },
               {
                 "name": "Sucrose",
                 "rarity": 4,
                 "element": "anemo",
-                "image_url": "https://paimon.moe/images/characters/sucrose.png"
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/6/61/Character_Sucrose_Thumb.png"
               },
               {
                 "name": "Tartaglia",
                 "rarity": 5,
                 "element": "hydro",
-                "image_url": "https://paimon.moe/images/characters/tartaglia.png"
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/53/Character_Tartaglia_Thumb.png"
               },
               {
                 "name": "Traveler   (Anemo)",
                 "rarity": 5,
                 "element": "anemo",
-                "image_url": "https://paimon.moe/images/characters/traveler_anemo.png"
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/71/Character_Traveler_Thumb.png"
               }
             ]
           },
@@ -73,43 +73,43 @@ object MonThuBooksSource {
                 "name": "Keqing",
                 "rarity": 5,
                 "element": "electro",
-                "image_url": "https://paimon.moe/images/characters/keqing.png"
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/06/Character_Keqing_Thumb.png"
               },
               {
                 "name": "Ningguang",
                 "rarity": 4,
                 "element": "geo",
-                "image_url": "https://paimon.moe/images/characters/ningguang.png"
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/2b/Character_Ningguang_Thumb.png"
               },
               {
                 "name": "Qiqi",
                 "rarity": 5,
                 "element": "cryo",
-                "image_url": "https://paimon.moe/images/characters/qiqi.png"
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d5/Character_Qiqi_Thumb.png"
               },
               {
                 "name": "Shenhe",
                 "rarity": 5,
                 "element": "cryo",
-                "image_url": "https://paimon.moe/images/characters/shenhe.png"
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/58/Character_Shenhe_Thumb.png"
               },
               {
                 "name": "Traveler   (Geo)",
                 "rarity": 5,
                 "element": "geo",
-                "image_url": "https://paimon.moe/images/characters/traveler_anemo.png"
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/71/Character_Traveler_Thumb.png"
               },
               {
                 "name": "Xiao",
                 "rarity": 5,
                 "element": "anemo",
-                "image_url": "https://paimon.moe/images/characters/xiao.png"
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Character_Xiao_Thumb.png"
               },
               {
                 "name": "Yelan",
                 "rarity": 5,
                 "element": "hydro",
-                "image_url": "https://paimon.moe/images/characters/yelan.png"
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a8/Character_Yelan_Thumb.png"
               }
             ]
           },
@@ -121,31 +121,31 @@ object MonThuBooksSource {
                 "name": "Sangonomiya Kokomi",
                 "rarity": 5,
                 "element": "hydro",
-                "image_url": "https://paimon.moe/images/characters/sangonomiya_kokomi.png"
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/cc/Character_Sangonomiya_Kokomi_Thumb.png"
               },
               {
                 "name": "Shikanoin Heizou",
                 "rarity": 4,
                 "element": "anemo",
-                "image_url": "https://paimon.moe/images/characters/shikanoin_heizou.png"
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e4/Character_Shikanoin_Heizou_Thumb.png"
               },
               {
                 "name": "Thoma",
                 "rarity": 4,
                 "element": "pyro",
-                "image_url": "https://paimon.moe/images/characters/thoma.png"
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/8a/Character_Thoma_Thumb.png"
               },
               {
                 "name": "Traveler   (Electro)",
                 "rarity": 5,
                 "element": "electro",
-                "image_url": "https://paimon.moe/images/characters/traveler_anemo.png"
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/71/Character_Traveler_Thumb.png"
               },
               {
                 "name": "Yoimiya",
                 "rarity": 5,
                 "element": "pyro",
-                "image_url": "https://paimon.moe/images/characters/yoimiya.png"
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/05/Character_Yoimiya_Thumb.png"
               }
             ]
           },
@@ -157,25 +157,25 @@ object MonThuBooksSource {
                 "name": "Candace",
                 "rarity": 4,
                 "element": "hydro",
-                "image_url": "https://paimon.moe/images/characters/candace.png"
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/bf/Character_Candace_Thumb.png"
               },
               {
                 "name": "Cyno",
                 "rarity": 5,
                 "element": "electro",
-                "image_url": "https://paimon.moe/images/characters/cyno.png"
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d1/Character_Cyno_Thumb.png"
               },
               {
                 "name": "Tighnari",
                 "rarity": 5,
                 "element": "dendro",
-                "image_url": "https://paimon.moe/images/characters/tighnari.png"
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/91/Character_Tighnari_Thumb.png"
               },
               {
                 "name": "Traveler   (Denro)",
                 "rarity": 5,
                 "element": "dendro",
-                "image_url": "https://paimon.moe/images/characters/traveler_anemo.png"
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/71/Character_Traveler_Thumb.png"
               }
             ]
           }

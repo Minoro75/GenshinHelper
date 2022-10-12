@@ -10,7 +10,7 @@ object XingqiuDetailsSource {
           "rarity": 4,
           "element": "hydro",
           "weapon": "sword",
-          "image_url": "https://paimon.moe/images/characters/xingqiu.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/4/4a/Character_Xingqiu_Thumb.png",
           "talents_books": {
             "book_name": "Gold",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/01/Item_Philosophies_of_Gold.png",
