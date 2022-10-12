@@ -13,7 +13,7 @@ object RaidenShogunDetailsSource {
           "image_url": "https://paimon.moe/images/characters/raiden_shogun.png",
           "talents_books": {
             "book_name": "Light",
-            "book_url": "https://paimon.moe/images/items/philosophies_of_light.png",
+            "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/95/Item_Philosophies_of_Light.png",
             "book_days": "WED/SAT/SUN"
           },
           "weekly_boss_item": {

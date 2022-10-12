@@ -13,7 +13,7 @@ object NoelleDetailsSource {
           "image_url": "https://paimon.moe/images/characters/noelle.png",
           "talents_books": {
             "book_name": "Resistance",
-            "book_url": "https://paimon.moe/images/items/philosophies_of_resistance.png",
+            "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/0b/Item_Philosophies_of_Resistance.png",
             "book_days": "TUE/FRI/SUN"
           },
           "weekly_boss_item": {

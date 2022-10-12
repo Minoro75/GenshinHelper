@@ -13,7 +13,7 @@ object ColleiDetailsSource {
               "image_url": "https://paimon.moe/images/characters/collei.png",
               "talents_books": {
                 "book_name": "Praxis",
-                "book_url": "https://paimon.moe/images/items/philosophies_of_praxis.png",
+                "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/82/Item_Philosophies_of_Praxis.png",
                 "book_days": "WED/SAT/SUN"
               },
               "weekly_boss_item": {

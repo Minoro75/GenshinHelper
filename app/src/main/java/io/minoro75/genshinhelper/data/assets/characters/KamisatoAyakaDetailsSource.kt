@@ -13,7 +13,7 @@ object KamisatoAyakaDetailsSource {
           "image_url": "https://paimon.moe/images/characters/kamisato_ayaka.png",
           "talents_books": {
             "book_name": "Elegance",
-            "book_url": "https://paimon.moe/images/items/philosophies_of_elegance.png",
+            "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/6/6f/Item_Philosophies_of_Elegance.png",
             "book_days": "TUE/FRI/SUN"
           },
           "weekly_boss_item": {

@@ -253,7 +253,7 @@ fun PreviewTodayBooks() {
             books = listOf(
                 TodayBooks(
                     "Prosperity",
-                    "https://paimon.moe/images/items/philosophies_of_freedom.png",
+                    "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/Item_Philosophies_of_Freedom.png",
                     listOf(
                         Character(
                             element = "cryo",
@@ -325,7 +325,7 @@ fun PreviewTodayBooks() {
                 ),
                 TodayBooks(
                     "Prosperity",
-                    "https://paimon.moe/images/items/philosophies_of_freedom.png",
+                    "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/Item_Philosophies_of_Freedom.png",
                     listOf(
                         Character(
                             element = "cryo",
@@ -349,7 +349,7 @@ fun PreviewTodayBooks() {
                 ),
                 TodayBooks(
                     "Prosperity",
-                    "https://paimon.moe/images/items/philosophies_of_freedom.png",
+                    "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/Item_Philosophies_of_Freedom.png",
                     listOf(
                         Character(
                             element = "cryo",
@@ -409,7 +409,7 @@ fun PreviewTodayBooks() {
                 ),
                 TodayBooks(
                     "Prosperity",
-                    "https://paimon.moe/images/items/philosophies_of_freedom.png",
+                    "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/Item_Philosophies_of_Freedom.png",
                     listOf(
                         Character(
                             element = "cryo",

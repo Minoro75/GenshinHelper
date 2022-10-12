@@ -13,7 +13,7 @@ object SucroseDetailsSource {
           "image_url": "https://paimon.moe/images/characters/sucrose.png",
           "talents_books": {
             "book_name": "Freedom",
-            "book_url": "https://paimon.moe/images/items/philosophies_of_freedom.png",
+            "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/Item_Philosophies_of_Freedom.png",
             "book_days": "MON/THU/SUN"
           },
           "weekly_boss_item": {

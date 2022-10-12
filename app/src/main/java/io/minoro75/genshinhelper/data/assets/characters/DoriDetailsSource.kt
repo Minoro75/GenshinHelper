@@ -13,7 +13,7 @@ object DoriDetailsSource {
               "image_url": "https://paimon.moe/images/characters/dori.png",
               "talents_books": {
                 "book_name": "Ingenuity",
-                "book_url": "https://paimon.moe/images/items/philosophies_of_admonition.png",
+                "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f7/Item_Philosophies_of_Ingenuity.png",
                 "book_days": "TUE/FRI/SUN"
               },
               "weekly_boss_item": {

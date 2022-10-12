@@ -13,7 +13,7 @@ object VentiDetailsSource {
           "image_url": "https://paimon.moe/images/characters/venti.png",
           "talents_books": {
             "book_name": "Ballad",
-            "book_url": "https://paimon.moe/images/items/philosophies_of_ballad.png",
+            "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/7e/Item_Philosophies_of_Ballad.png",
             "book_days": "WED/SAT/SUN"
           },
           "weekly_boss_item": {

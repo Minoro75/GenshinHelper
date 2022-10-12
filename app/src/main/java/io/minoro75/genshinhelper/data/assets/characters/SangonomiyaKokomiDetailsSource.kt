@@ -13,7 +13,7 @@ object SangonomiyaKokomiDetailsSource {
           "image_url": "https://paimon.moe/images/characters/sangonomiya_kokomi.png",
           "talents_books": {
             "book_name": "Transience",
-            "book_url": "https://paimon.moe/images/items/philosophies_of_transience.png",
+            "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/27/Item_Philosophies_of_Transience.png",
             "book_days": "MON/THU/SUN"
           },
           "weekly_boss_item": {

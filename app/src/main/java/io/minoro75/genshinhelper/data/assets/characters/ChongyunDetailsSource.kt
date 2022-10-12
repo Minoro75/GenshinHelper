@@ -13,7 +13,7 @@ object ChongyunDetailsSource {
               "image_url": "https://paimon.moe/images/characters/chongyun.png",
               "talents_books": {
                 "book_name": "Diligence",
-                "book_url": "https://paimon.moe/images/items/philosophies_of_diligence.png",
+                "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c2/Item_Philosophies_of_Diligence.png",
                 "book_days": "TUE/FRI/SUN"
               },
               "weekly_boss_item": {

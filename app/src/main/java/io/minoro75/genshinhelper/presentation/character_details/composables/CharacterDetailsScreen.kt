@@ -110,7 +110,7 @@ fun CharacterPreview() {
                 name = "Sangonomiya Kokomi",
                 weapon = "catalyst",
                 talentsBooks = TalentsBooks(
-                    bookUrl = "https://paimon.moe/images/items/philosophies_of_freedom.png",
+                    bookUrl = "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/Item_Philosophies_of_Freedom.png",
                     bookName = "Resistance",
                     bookDays = "MON/THU/SUN"
                 ),

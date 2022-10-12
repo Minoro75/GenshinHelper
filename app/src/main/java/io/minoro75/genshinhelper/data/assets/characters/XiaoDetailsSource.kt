@@ -13,7 +13,7 @@ object XiaoDetailsSource {
           "image_url": "https://paimon.moe/images/characters/xiao.png",
           "talents_books": {
             "book_name": "Prosperity",
-            "book_url": "https://paimon.moe/images/items/philosophies_of_prosperity.png",
+            "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/bd/Item_Philosophies_of_Prosperity.png",
             "book_days": "MON/THU/SUN"
           },
           "weekly_boss_item": {
