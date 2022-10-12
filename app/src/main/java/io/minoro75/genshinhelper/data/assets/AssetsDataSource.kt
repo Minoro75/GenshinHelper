@@ -292,7 +292,7 @@ class AssetsDataSource @Inject constructor(
             "Shadow of the Warrior" -> withContext(Dispatchers.IO){
                 itemLocationAdapter.fromJson(ShadowOfTheWarriorDataSource.sourcesList)
             }
-            "Shard of Foul Legacy" -> withContext(Dispatchers.IO){
+            "Shard of a Foul Legacy" -> withContext(Dispatchers.IO){
                 itemLocationAdapter.fromJson(ShardOfFoulLegacyDataSource.sourcesList)
             }
             "Spirit Locket of Boreas" -> withContext(Dispatchers.IO){

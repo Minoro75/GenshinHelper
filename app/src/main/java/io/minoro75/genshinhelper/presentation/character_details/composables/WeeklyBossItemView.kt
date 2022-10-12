@@ -1,6 +1,7 @@
 package io.minoro75.genshinhelper.presentation.character_details.composables
 
 import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.*
@@ -17,14 +18,16 @@ import io.minoro75.genshinhelper.presentation.theme.GenshinTypography
 @Composable
 fun WeeklyBossItemView(
     name: String,
-    url: String
+    url: String,
+    onItemClicked: (String) -> Unit
 ) {
     OutlinedCard(
         elevation = CardDefaults.cardElevation(defaultElevation = 8.dp),
         colors = CardDefaults.outlinedCardColors(
             containerColor = MaterialTheme.colorScheme.primaryContainer
         ),
-        modifier = Modifier.fillMaxWidth(),
+        modifier = Modifier.fillMaxWidth()
+            .clickable { onItemClicked.invoke(name) },
         border = BorderStroke(2.dp, SolidColor(MaterialTheme.colorScheme.primary))
     ) {
         Text(
@@ -51,7 +54,8 @@ fun PreviewWeeklyBossItemView() {
     GenshinHelperTheme {
         WeeklyBossItemView(
             name = "Dvalin's Sigh",
-            url = "https://static.wikia.nocookie.net/gensin-impact/images/0/07/Item_Dvalin%27s_Sigh.png"
+            url = "https://static.wikia.nocookie.net/gensin-impact/images/0/07/Item_Dvalin%27s_Sigh.png",
+            {}
         )
     }
 }

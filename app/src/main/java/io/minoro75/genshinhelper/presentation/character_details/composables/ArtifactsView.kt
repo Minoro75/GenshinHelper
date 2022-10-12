@@ -3,6 +3,7 @@ package io.minoro75.genshinhelper.presentation.character_details.composables
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -13,9 +14,6 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
-import androidx.compose.foundation.layout.wrapContentHeight
-import androidx.compose.foundation.layout.wrapContentWidth
-import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
@@ -25,7 +23,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Alignment.Companion.CenterHorizontally
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextAlign
@@ -41,7 +38,10 @@ import io.minoro75.genshinhelper.presentation.theme.TextColor
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun ArtifactsView(artifacts: List<Artifact>) {
+fun ArtifactsView(
+    artifacts: List<Artifact>,
+    onItemClicked: (String) -> Unit
+) {
     OutlinedCard(
         elevation = CardDefaults.cardElevation(defaultElevation = 8.dp),
         colors = CardDefaults.outlinedCardColors(
@@ -60,6 +60,7 @@ fun ArtifactsView(artifacts: List<Artifact>) {
         Spacer(modifier = Modifier.height(4.dp))
         Artifacts(
             artifacts = artifacts,
+            onItemClicked = onItemClicked,
             modifier = Modifier.align(CenterHorizontally)
         )
         Spacer(modifier = Modifier.height(8.dp))
@@ -90,10 +91,17 @@ fun ArtifactsStats(artifact: Artifact) {
 }
 
 @Composable
-fun Artifacts(artifacts: List<Artifact>, modifier: Modifier = Modifier) {
+fun Artifacts(
+    artifacts: List<Artifact>,
+    onItemClicked: (String) -> Unit,
+    modifier: Modifier = Modifier
+) {
     Column(modifier = modifier) {
         if (artifacts.size == 1) {
-            ArtifactItem(artifact = artifacts[0])
+            ArtifactItem(
+                artifact = artifacts[0],
+                onItemClicked = onItemClicked
+            )
         } else {
             Row(
                 verticalAlignment = Alignment.CenterVertically,
@@ -102,9 +110,15 @@ fun Artifacts(artifacts: List<Artifact>, modifier: Modifier = Modifier) {
                     .fillMaxWidth()
                     .padding(16.dp)
             ) {
-                ArtifactItem(artifact = artifacts[0])
+                ArtifactItem(
+                    artifact = artifacts[0],
+                    onItemClicked = onItemClicked
+                )
                 Spacer(modifier = Modifier.width(16.dp))
-                ArtifactItem(artifact = artifacts[1])
+                ArtifactItem(
+                    artifact = artifacts[1],
+                    onItemClicked = onItemClicked
+                )
             }
         }
     }
@@ -112,7 +126,10 @@ fun Artifacts(artifacts: List<Artifact>, modifier: Modifier = Modifier) {
 }
 
 @Composable
-fun ArtifactItem(artifact: Artifact) {
+fun ArtifactItem(
+    artifact: Artifact,
+    onItemClicked: (String) -> Unit
+) {
     Box {
         Item(
             url = artifact.artifactUrl,
@@ -124,6 +141,7 @@ fun ArtifactItem(artifact: Artifact) {
             textStyle = GenshinTypography.bodyMedium,
             modifier = Modifier
                 .size(120.dp)
+                .clickable { onItemClicked.invoke(artifact.artifactName) }
         )
         Text(
             text = artifact.artifactAmount.toString(),
@@ -153,7 +171,7 @@ fun ArtifactStatsItem(
             2.dp,
             SolidColor(MaterialTheme.colorScheme.primary)
         )
-    )  {
+    ) {
         Image(
             painter = painterResource(id = image),
             contentDescription = "circlet",
@@ -189,7 +207,7 @@ fun Preview4Artifacts() {
                     artifactSands = "Anemo DPS / Elemental Mastery",
                     artifactUrl = "https://paimon.moe/images/artifacts/emblem_of_severed_fate_flower.png"
                 )
-            )
+            ), {}
         )
     }
 }
@@ -216,7 +234,6 @@ fun Preview2Artifacts() {
                     artifactSands = "Crit rate / crit DPS",
                     artifactUrl = "https://paimon.moe/images/artifacts/emblem_of_severed_fate_flower.png"
                 )
-            )
-        )
+            ), {})
     }
 }

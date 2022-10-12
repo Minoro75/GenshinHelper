@@ -1,7 +1,6 @@
 package io.minoro75.genshinhelper.presentation
 
 import android.os.Bundle
-import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.padding
@@ -20,6 +19,7 @@ import io.minoro75.genshinhelper.presentation.characters_list_screen.composables
 import io.minoro75.genshinhelper.presentation.common.GenshinBottomNavigation
 import io.minoro75.genshinhelper.presentation.common.NavigationItem
 import io.minoro75.genshinhelper.presentation.home_screen.composables.HomeScreen
+import io.minoro75.genshinhelper.presentation.item_location.composables.ItemLocationScreen
 import io.minoro75.genshinhelper.presentation.theme.GenshinHelperTheme
 
 @AndroidEntryPoint
@@ -62,8 +62,19 @@ fun MainScreen() {
                 arguments = listOf(navArgument("name") { type = NavType.StringType })
             ) {
                 CharacterScreen(
-                    name = it.arguments?.getString("name"),
-                    onBackPressed = { navController.popBackStack() })
+                    onBackPressed = { navController.popBackStack() },
+                    onItemClicked = {itemName ->
+                        navController.navigate("item/$itemName"){
+                            launchSingleTop = true
+                        }
+                    }
+                )
+            }
+            composable(
+                route = "item/{itemName}",
+                arguments = listOf(navArgument("itemName") { type = NavType.StringType })
+            ) {
+                ItemLocationScreen(onBackPressed = { navController.popBackStack() })
             }
         }
 
