@@ -89,6 +89,18 @@ import io.minoro75.genshinhelper.data.assets.items.artifacts.ThundersootherDataS
 import io.minoro75.genshinhelper.data.assets.items.artifacts.VermilionHereafterDataSource
 import io.minoro75.genshinhelper.data.assets.items.artifacts.ViridescentVenererDataSource
 import io.minoro75.genshinhelper.data.assets.items.artifacts.WanderersTroupeDataSource
+import io.minoro75.genshinhelper.data.assets.items.books.AdmonitionDataSource
+import io.minoro75.genshinhelper.data.assets.items.books.BalladDataSource
+import io.minoro75.genshinhelper.data.assets.items.books.DiligenceDataSource
+import io.minoro75.genshinhelper.data.assets.items.books.EleganceDataSource
+import io.minoro75.genshinhelper.data.assets.items.books.FreedomDataSource
+import io.minoro75.genshinhelper.data.assets.items.books.GoldDataSource
+import io.minoro75.genshinhelper.data.assets.items.books.IngenuityDataSource
+import io.minoro75.genshinhelper.data.assets.items.books.LightDataSource
+import io.minoro75.genshinhelper.data.assets.items.books.PraxisDataSource
+import io.minoro75.genshinhelper.data.assets.items.books.ProsperityDataSource
+import io.minoro75.genshinhelper.data.assets.items.books.ResistanceDataSource
+import io.minoro75.genshinhelper.data.assets.items.books.TransienceDataSource
 import io.minoro75.genshinhelper.data.assets.items.boss_items.AshenHeartDataSource
 import io.minoro75.genshinhelper.data.assets.items.boss_items.BloodjadeBranchDataSource
 import io.minoro75.genshinhelper.data.assets.items.boss_items.DragonLordsCrownDataSource
@@ -183,6 +195,7 @@ class AssetsDataSource @Inject constructor(
 
     suspend fun getItemLocation(itemName: String): List<HowToObtainItem>? {
         return when(itemName){
+            // Artifacts
             "Archaic Petra" -> withContext(Dispatchers.IO){
                 itemLocationAdapter.fromJson(ArchaicPetraDataSource.sourcesList)
             }
@@ -309,6 +322,43 @@ class AssetsDataSource @Inject constructor(
             }
             "Tusk of Monoceros Caeli" -> withContext(Dispatchers.IO){
                 itemLocationAdapter.fromJson(TuskOfMonocerosCaeliDataSource.sourcesList)
+            }
+            // Books
+            "Admonition" -> withContext(Dispatchers.IO){
+                itemLocationAdapter.fromJson(AdmonitionDataSource.sourcesList)
+            }
+            "Ballad" -> withContext(Dispatchers.IO){
+                itemLocationAdapter.fromJson(BalladDataSource.sourcesList)
+            }
+            "Diligence" -> withContext(Dispatchers.IO){
+                itemLocationAdapter.fromJson(DiligenceDataSource.sourcesList)
+            }
+            "Elegance" -> withContext(Dispatchers.IO){
+                itemLocationAdapter.fromJson(EleganceDataSource.sourcesList)
+            }
+            "Freedom" -> withContext(Dispatchers.IO){
+                itemLocationAdapter.fromJson(FreedomDataSource.sourcesList)
+            }
+            "Gold" -> withContext(Dispatchers.IO){
+                itemLocationAdapter.fromJson(GoldDataSource.sourcesList)
+            }
+            "Ingenuity" -> withContext(Dispatchers.IO){
+                itemLocationAdapter.fromJson(IngenuityDataSource.sourcesList)
+            }
+            "Light" -> withContext(Dispatchers.IO) {
+                itemLocationAdapter.fromJson(LightDataSource.sourcesList)
+            }
+            "Praxis" -> withContext(Dispatchers.IO){
+                itemLocationAdapter.fromJson(PraxisDataSource.sourcesList)
+            }
+            "Prosperity" -> withContext(Dispatchers.IO){
+                itemLocationAdapter.fromJson(ProsperityDataSource.sourcesList)
+            }
+            "Resistance" -> withContext(Dispatchers.IO){
+                itemLocationAdapter.fromJson(ResistanceDataSource.sourcesList)
+            }
+            "Transience" -> withContext(Dispatchers.IO){
+                itemLocationAdapter.fromJson(TransienceDataSource.sourcesList)
             }
             else -> throw IllegalArgumentException("there is no artifact with name $itemName")
         }

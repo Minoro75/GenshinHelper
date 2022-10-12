@@ -37,7 +37,8 @@ import io.minoro75.genshinhelper.presentation.theme.GenshinTypography
 @Composable
 fun TodayBooksView(
     books: List<TodayBooks>,
-    onClick: (String) -> Unit
+    onCharacterClick: (String) -> Unit,
+    onItemClick: (String) -> Unit
 ) {
     GenshinHelperTheme {
         OutlinedCard(
@@ -51,33 +52,53 @@ fun TodayBooksView(
             border = BorderStroke(2.dp, SolidColor(MaterialTheme.colorScheme.primary))
         ) {
             Column(Modifier.padding(16.dp)) {
-                BookItem(item = books[0], onClick)
+                BookItem(
+                    item = books[0],
+                    onCharacterClick = onCharacterClick,
+                    onItemClick = onItemClick
+                )
                 Divider(
                     Modifier.padding(vertical = 8.dp),
                     thickness = 1.dp,
                     color = MaterialTheme.colorScheme.onPrimaryContainer
                 )
-                BookItem(item = books[1], onClick)
+                BookItem(
+                    item = books[1],
+                    onCharacterClick = onCharacterClick,
+                    onItemClick = onItemClick
+                )
                 Divider(
                     Modifier.padding(vertical = 8.dp),
                     thickness = 1.dp,
                     color = MaterialTheme.colorScheme.onPrimaryContainer
                 )
-                BookItem(item = books[2], onClick)
+                BookItem(
+                    item = books[2],
+                    onCharacterClick = onCharacterClick,
+                    onItemClick = onItemClick
+                )
                 Divider(
                     Modifier.padding(vertical = 8.dp),
                     thickness = 1.dp,
                     color = MaterialTheme.colorScheme.onPrimaryContainer
                 )
-                BookItem(item = books[3], onClick)
-                for (i in 4..11){
-                    if (books.elementAtOrNull(i)!= null){
+                BookItem(
+                    item = books[3],
+                    onCharacterClick = onCharacterClick,
+                    onItemClick = onItemClick
+                )
+                for (i in 4..11) {
+                    if (books.elementAtOrNull(i) != null) {
                         Divider(
                             Modifier.padding(vertical = 8.dp),
                             thickness = 1.dp,
                             color = MaterialTheme.colorScheme.onPrimaryContainer
                         )
-                        BookItem(item = books[i], onClick = onClick)
+                        BookItem(
+                            item = books[i],
+                            onCharacterClick = onCharacterClick,
+                            onItemClick = onItemClick
+                        )
                     }
                 }
 
@@ -89,7 +110,8 @@ fun TodayBooksView(
 @Composable
 fun BookItem(
     item: TodayBooks,
-    onClick: (String) -> Unit
+    onCharacterClick: (String) -> Unit,
+    onItemClick: (String) -> Unit
 ) {
     Row {
         Item(
@@ -98,7 +120,9 @@ fun BookItem(
             errorPlaceholder = R.drawable.books_no_internet,
             name = item.bookName,
             rarity = 4,
-            modifier = Modifier.size(80.dp),
+            modifier = Modifier
+                .size(80.dp)
+                .clickable { onItemClick.invoke(item.bookName) },
             textWidth = 80.dp,
             textStyle = GenshinTypography.bodySmall
         )
@@ -106,7 +130,7 @@ fun BookItem(
 
         GridCharacters(
             list = item.characters,
-            onClick = onClick
+            onClick = onCharacterClick
         )
 
     }
@@ -480,7 +504,8 @@ fun PreviewTodayBooks() {
                     )
                 )
             ),
-            { "Dori" }
+            { "Dori" },
+            {}
         )
     }
 }

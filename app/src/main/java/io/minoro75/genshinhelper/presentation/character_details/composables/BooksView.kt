@@ -1,5 +1,6 @@
 package io.minoro75.genshinhelper.presentation.character_details.composables
 
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -20,6 +21,7 @@ fun BooksView(
     name: String,
     daysAvailable: String,
     textColor: Color,
+    onItemClicked: (String) -> Unit,
     modifier: Modifier = Modifier
 ) {
     Row(modifier = modifier) {
@@ -32,6 +34,7 @@ fun BooksView(
             textWidth = 80.dp,
             textStyle = GenshinTypography.bodySmall,
             modifier = Modifier.size(80.dp)
+                .clickable { onItemClicked.invoke(name) }
 
         )
         val daysList = daysAvailable.split("/")
@@ -75,7 +78,8 @@ fun PreviewBooks() {
             url = "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/Item_Philosophies_of_Freedom.png",
             name = "Resistance",
             daysAvailable = "MON/THU/SUN",
-            textColor = MaterialTheme.colorScheme.onPrimaryContainer
+            textColor = MaterialTheme.colorScheme.onPrimaryContainer,
+            onItemClicked = {}
         )
     }
 }

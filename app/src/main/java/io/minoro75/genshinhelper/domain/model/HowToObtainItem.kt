@@ -67,6 +67,12 @@ data class HowToObtainItem(
             "Convert: Tears of the Calamitous God" -> R.drawable.ic_tears
             "Convert: The Meaning of Aeons" -> R.drawable.ic_meaning
             "Convert: Tusk of Monoceros Caeli" -> R.drawable.ic_tusk
+            // Books
+            "Steeple of Ignorance" -> R.drawable.steeple_of_ignorance
+            "Forsaken Rift" -> R.drawable.forsaken_rift
+            "Violet Court" -> R.drawable.violet_court
+            "Taishan Mansion" -> R.drawable.taishan_mansion
+            // Weapon Resources
             else -> throw IllegalArgumentException("No such dungeon")
         }
     }

@@ -57,7 +57,8 @@ fun CharacterScreen(
                         name = character.name,
                         weapon = character.weapon,
                         talentsBooks = character.talentBooks,
-                        onBackPressed = onBackPressed
+                        onBackPressed = onBackPressed,
+                        onItemClicked = onItemClicked
                     )
                     Spacer(modifier = Modifier.height(16.dp))
                     TalentsPriorityView(
@@ -111,7 +112,8 @@ fun CharacterPreview() {
                     bookName = "Resistance",
                     bookDays = "MON/THU/SUN"
                 ),
-                onBackPressed = {}
+                onBackPressed = {},
+                onItemClicked = {}
             )
             Spacer(modifier = Modifier.height(8.dp))
             TalentsPriorityView(

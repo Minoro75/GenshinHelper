@@ -47,11 +47,17 @@ fun MainScreen() {
             startDestination = NavigationItem.Home.route
         ) {
             composable(NavigationItem.Home.route) {
-                HomeScreen(onClick = { clickedCharacterName ->
-                    navController.navigate("profile/$clickedCharacterName") {
-                        launchSingleTop = true
-                    }
-                })
+                HomeScreen(
+                    onCharacterClick = { clickedCharacterName ->
+                        navController.navigate("profile/$clickedCharacterName") {
+                            launchSingleTop = true
+                        }
+                    },
+                    onItemClick = { itemName ->
+                        navController.navigate("item/$itemName") {
+                            launchSingleTop = true
+                        }
+                    })
             }
             composable(NavigationItem.Characters.route) {
                 CharactersListScreen(onCharacterClicked = { characterName ->

@@ -46,7 +46,8 @@ fun CharacterInfoView(
     name: String,
     weapon: String,
     talentsBooks: TalentsBooks,
-    onBackPressed: () -> Unit
+    onBackPressed: () -> Unit,
+    onItemClicked: (String) -> Unit,
 ) {
     Row {
         ImageRarityElement(
@@ -59,7 +60,8 @@ fun CharacterInfoView(
         NameWeaponBooks(
             name = name,
             weapon = weapon,
-            talentsBooks = talentsBooks
+            talentsBooks = talentsBooks,
+            onItemClicked = onItemClicked
         )
     }
 }
@@ -79,7 +81,8 @@ fun PreviewCharacterInfo() {
                 bookName = "Admonition",
                 bookDays = "MON/THU/SUN"
             ),
-            onBackPressed = {}
+            onBackPressed = {},
+            onItemClicked = {}
         )
     }
 }
@@ -89,7 +92,8 @@ fun PreviewCharacterInfo() {
 fun NameWeaponBooks(
     name: String,
     weapon: String,
-    talentsBooks: TalentsBooks
+    talentsBooks: TalentsBooks,
+    onItemClicked: (String) -> Unit,
 ) {
     OutlinedCard(
         elevation = CardDefaults.cardElevation(defaultElevation = 8.dp),
@@ -114,7 +118,8 @@ fun NameWeaponBooks(
                 url = talentsBooks.bookUrl,
                 name = talentsBooks.bookName,
                 daysAvailable = talentsBooks.bookDays,
-                textColor = MaterialTheme.colorScheme.onPrimaryContainer
+                textColor = MaterialTheme.colorScheme.onPrimaryContainer,
+                onItemClicked = onItemClicked
             )
         }
     }
