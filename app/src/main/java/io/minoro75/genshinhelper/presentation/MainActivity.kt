@@ -54,7 +54,12 @@ fun MainScreen() {
                 })
             }
             composable(NavigationItem.Characters.route) {
-                CharactersListScreen(navController)
+                CharactersListScreen(onCharacterClicked = { characterName ->
+                    navController.navigate("profile/$characterName") {
+                        popUpTo(NavigationItem.Characters.route)
+                        launchSingleTop = true
+                    }
+                })
             }
             composable(NavigationItem.Info.route) {}
             composable(
@@ -63,8 +68,8 @@ fun MainScreen() {
             ) {
                 CharacterScreen(
                     onBackPressed = { navController.popBackStack() },
-                    onItemClicked = {itemName ->
-                        navController.navigate("item/$itemName"){
+                    onItemClicked = { itemName ->
+                        navController.navigate("item/$itemName") {
                             launchSingleTop = true
                         }
                     }

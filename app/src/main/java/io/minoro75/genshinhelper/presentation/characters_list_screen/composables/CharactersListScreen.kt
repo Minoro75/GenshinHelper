@@ -7,19 +7,16 @@ import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
-import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import androidx.navigation.NavHostController
 import io.minoro75.genshinhelper.presentation.characters_list_screen.CharactersListViewModel
-import io.minoro75.genshinhelper.presentation.common.NavigationItem
 
 @Composable
 fun CharactersListScreen(
-    navHostController: NavHostController,
+    onCharacterClicked: (String) -> Unit,
     viewModel: CharactersListViewModel = hiltViewModel()
 
 ) {
@@ -39,10 +36,7 @@ fun CharactersListScreen(
             CharacterItem(state.characters[index],
                 modifier = Modifier
                     .clickable {
-                        navHostController.navigate("profile/${character.name}") {
-                            popUpTo(NavigationItem.Characters.route)
-                            launchSingleTop = true
-                        }
+                        onCharacterClicked.invoke(character.name)
                     }
             )
         }
