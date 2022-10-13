@@ -504,7 +504,7 @@ fun PreviewTodayBooks() {
                     )
                 )
             ),
-            { "Dori" },
+            {},
             {}
         )
     }

@@ -19,6 +19,7 @@ import io.minoro75.genshinhelper.presentation.characters_list_screen.composables
 import io.minoro75.genshinhelper.presentation.common.GenshinBottomNavigation
 import io.minoro75.genshinhelper.presentation.common.NavigationItem
 import io.minoro75.genshinhelper.presentation.home_screen.composables.HomeScreen
+import io.minoro75.genshinhelper.presentation.info.composables.InfoScreen
 import io.minoro75.genshinhelper.presentation.item_location.composables.ItemLocationScreen
 import io.minoro75.genshinhelper.presentation.theme.GenshinHelperTheme
 
@@ -67,7 +68,9 @@ fun MainScreen() {
                     }
                 })
             }
-            composable(NavigationItem.Info.route) {}
+            composable(NavigationItem.Info.route) {
+                InfoScreen()
+            }
             composable(
                 route = "profile/{name}",
                 arguments = listOf(navArgument("name") { type = NavType.StringType })

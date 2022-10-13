@@ -85,7 +85,7 @@ fun HomeScreen(
                 Spacer(modifier = Modifier.height(16.dp))
 
                 state.todayWeaponResources?.let {
-                    TodayWeapons(it)
+                    TodayWeapons(it,onItemClick)
                 }
             }
 
@@ -420,7 +420,7 @@ fun PreviewHomeScreen() {
                         )
                     )
                 ),
-                { "Dori" },
+                {},
                 {}
             )
 
@@ -452,7 +452,8 @@ fun PreviewHomeScreen() {
                         "Dandelion Gladiator",
                         "https://paimon.moe/images/items/dream_of_the_dandelion_gladiator.png"
                     ),
-                )
+                ),
+                {}
             )
         }
     }

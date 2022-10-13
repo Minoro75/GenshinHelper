@@ -1,6 +1,7 @@
 package io.minoro75.genshinhelper.presentation.home_screen.composables
 
 import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -27,7 +28,10 @@ import io.minoro75.genshinhelper.presentation.theme.GenshinTypography
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun TodayWeapons(list: List<TodayWeaponResources>) {
+fun TodayWeapons(
+    list: List<TodayWeaponResources>,
+    onItemClick: (String) -> Unit
+) {
     GenshinHelperTheme {
         OutlinedCard(
             elevation = CardDefaults.cardElevation(defaultElevation = 8.dp),
@@ -72,6 +76,7 @@ fun TodayWeapons(list: List<TodayWeaponResources>) {
                                     textWidth = 77.dp,
                                     textStyle = GenshinTypography.bodySmall,
                                     modifier = Modifier.size(77.dp)
+                                        .clickable { onItemClick.invoke(list[i].name) }
                                 )
                             }
 
@@ -185,7 +190,8 @@ fun PreviewTodayWeapons(
                     "Dandelion Gladiator",
                     "https://paimon.moe/images/items/dream_of_the_dandelion_gladiator.png"
                 ),
-            )
+            ),
+            {}
         )
     }
 

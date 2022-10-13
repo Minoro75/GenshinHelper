@@ -73,6 +73,10 @@ data class HowToObtainItem(
             "Violet Court" -> R.drawable.violet_court
             "Taishan Mansion" -> R.drawable.taishan_mansion
             // Weapon Resources
+            "Hidden Palace of Lianshan Formula" -> R.drawable.hidden_palace_of_lianshan_formula
+            "Cecilia Garden" -> R.drawable.cecilia_garden
+            "Court of Flowing Sand" -> R.drawable.court_of_flowing_sand
+            "Tower of Abject Pride" -> R.drawable.tower_of_abject_pride
             else -> throw IllegalArgumentException("No such dungeon")
         }
     }
