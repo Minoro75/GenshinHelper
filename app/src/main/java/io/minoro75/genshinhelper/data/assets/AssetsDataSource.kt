@@ -36,6 +36,7 @@ import io.minoro75.genshinhelper.data.assets.characters.KujouSaraDetailsSource
 import io.minoro75.genshinhelper.data.assets.characters.KukiShinobuDetailsSource
 import io.minoro75.genshinhelper.data.assets.characters.LisaDetailsSource
 import io.minoro75.genshinhelper.data.assets.characters.MonaDetailsSource
+import io.minoro75.genshinhelper.data.assets.characters.NilouDetailsSource
 import io.minoro75.genshinhelper.data.assets.characters.NingguangDetailsSource
 import io.minoro75.genshinhelper.data.assets.characters.NoelleDetailsSource
 import io.minoro75.genshinhelper.data.assets.characters.QiqiDetailsSource
@@ -597,6 +598,10 @@ class AssetsDataSource @Inject constructor(
 
             "Mona" -> withContext(Dispatchers.IO) {
                 characterDetailsAdapter.fromJson(MonaDetailsSource.details)
+            }
+
+            "Nilou" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(NilouDetailsSource.details)
             }
 
             "Ningguang" -> withContext(Dispatchers.IO) {

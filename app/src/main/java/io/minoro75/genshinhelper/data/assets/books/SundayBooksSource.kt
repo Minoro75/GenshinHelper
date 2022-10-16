@@ -478,6 +478,12 @@ object SundayBooksSource {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9e/Character_Collei_Thumb.png"
               },
               {
+                "name": "Nilou",
+                "rarity": 5,
+                "element": "hydro",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a5/Character_Nilou_Thumb.png"
+              },
+              {
                 "name": "Traveler   (Denro)",
                 "rarity": 5,
                 "element": "dendro",

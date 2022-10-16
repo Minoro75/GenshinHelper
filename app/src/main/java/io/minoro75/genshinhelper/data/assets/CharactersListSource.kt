@@ -222,6 +222,13 @@ object CharactersListSource {
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a0/Character_Mona_Thumb.png"
     },
     {
+      "name": "Nilou",
+      "rarity": 5,
+      "element": "hydro",
+      "weapon": "sword",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a5/Character_Nilou_Thumb.png"
+    },
+    {
       "name": "Ningguang",
       "rarity": 4,
       "element": "geo",
