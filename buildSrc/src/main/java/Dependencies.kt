@@ -30,8 +30,10 @@ object Dependencies {
     object Other {
         const val moshiVersion = "1.13.0"
         const val coilVersion = "2.2.0"
+        const val chromeTabVersion = "1.4.0"
 
         const val coil = "io.coil-kt:coil-compose:$coilVersion"
+        const val chromeTabs = "androidx.browser:browser:$chromeTabVersion"
         const val moshi = "com.squareup.moshi:moshi-kotlin:$moshiVersion"
         const val moshiCodegen = "com.squareup.moshi:moshi-kotlin-codegen:$moshiVersion"
     }

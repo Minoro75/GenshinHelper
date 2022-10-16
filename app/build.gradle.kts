@@ -72,6 +72,7 @@ dependencies {
     implementation(Dependencies.Other.moshi)
     kapt(Dependencies.Other.moshiCodegen)
     implementation(Dependencies.Other.coil)
+    implementation(Dependencies.Other.chromeTabs)
 
     implementation("androidx.core:core-ktx:1.8.0")
     implementation("androidx.compose.ui:ui-tooling-preview:1.2.1")
