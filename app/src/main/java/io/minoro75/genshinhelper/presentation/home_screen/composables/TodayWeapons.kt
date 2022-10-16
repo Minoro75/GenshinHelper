@@ -111,6 +111,7 @@ fun TodayWeapons(
                                         textWidth = 75.dp,
                                         textStyle = GenshinTypography.bodySmall,
                                         modifier = Modifier.size(75.dp)
+                                            .clickable { onItemClick.invoke(list[i].name) }
                                     )
                                 }
 
@@ -146,6 +147,7 @@ fun TodayWeapons(
                                         textWidth = 75.dp,
                                         textStyle = GenshinTypography.bodySmall,
                                         modifier = Modifier.size(75.dp)
+                                            .clickable { onItemClick.invoke(list[i].name) }
                                     )
                                 }
 

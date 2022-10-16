@@ -456,7 +456,7 @@ class AssetsDataSource @Inject constructor(
                 itemLocationAdapter.fromJson(MaskDataSource.sourcesList)
             }
 
-            "Mist Veiled" -> withContext(Dispatchers.IO) {
+            "Mist Veiled Elixir" -> withContext(Dispatchers.IO) {
                 itemLocationAdapter.fromJson(MistVeiledDataSource.sourcesList)
             }
 
