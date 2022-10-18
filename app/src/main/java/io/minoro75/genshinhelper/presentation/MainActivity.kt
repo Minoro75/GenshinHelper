@@ -52,11 +52,13 @@ fun MainScreen() {
                     onCharacterClick = { clickedCharacterName ->
                         navController.navigate("profile/$clickedCharacterName") {
                             launchSingleTop = true
+                            popUpTo(NavigationItem.Home.route)
                         }
                     },
                     onItemClick = { itemName ->
                         navController.navigate("item/$itemName") {
                             launchSingleTop = true
+                            popUpTo(NavigationItem.Home.route)
                         }
                     })
             }

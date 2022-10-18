@@ -4,6 +4,7 @@ package io.minoro75.genshinhelper.presentation.home_screen.composables
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
@@ -12,6 +13,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.wrapContentHeight
+import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.CardDefaults
@@ -21,9 +23,11 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedCard
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.tooling.preview.Devices
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
@@ -43,7 +47,15 @@ fun HomeScreen(
     GenshinHelperTheme {
         val state = viewModel.state
         if (state.isLoading) {
-            CircularProgressIndicator(modifier = Modifier.size(20.dp))
+            Column(
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.Center,
+                modifier = Modifier.fillMaxSize()
+            ) {
+
+                CircularProgressIndicator(modifier = Modifier.size(80.dp))
+
+            }
         } else if (state.errorMessage == null) {
 
             Column(
@@ -95,7 +107,7 @@ fun HomeScreen(
 
 
 @OptIn(ExperimentalMaterial3Api::class)
-@Preview
+@Preview(device = Devices.NEXUS_5)
 @Composable
 fun PreviewHomeScreen() {
     GenshinHelperTheme {
@@ -146,49 +158,13 @@ fun PreviewHomeScreen() {
                                 name = "Raiden Miku",
                                 rarity = 4,
                                 imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
-                            ),
-                            Character(
-                                element = "cryo",
-                                name = "Raiden Miku",
-                                rarity = 5,
-                                imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
-                            ),
-                            Character(
-                                element = "cryo",
-                                name = "Raiden Miku",
-                                rarity = 5,
-                                imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
-                            ),
-                            Character(
-                                element = "cryo",
-                                name = "Raiden Miku",
-                                rarity = 4,
-                                imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
-                            ),
-                            Character(
-                                element = "cryo",
-                                name = "Raiden Miku",
-                                rarity = 5,
-                                imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
-                            ),
-                            Character(
-                                element = "cryo",
-                                name = "Raiden Miku",
-                                rarity = 5,
-                                imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
-                            ),
-                            Character(
-                                element = "cryo",
-                                name = "Raiden Miku",
-                                rarity = 5,
-                                imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
-                            ),
-                            Character(
-                                element = "cryo",
-                                name = "Raiden Miku",
-                                rarity = 5,
-                                imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
-                            ),
+                            )
+                        )
+                    ),
+                    io.minoro75.genshinhelper.domain.model.TodayBooks(
+                        "Prosperity",
+                        "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/Item_Philosophies_of_Freedom.png",
+                        listOf(
                             Character(
                                 element = "cryo",
                                 name = "Raiden Miku",
@@ -224,54 +200,6 @@ fun PreviewHomeScreen() {
                                 name = "Raiden Miku",
                                 rarity = 5,
                                 imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
-                            ),
-                            Character(
-                                element = "cryo",
-                                name = "Raiden Miku",
-                                rarity = 5,
-                                imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
-                            ),
-                            Character(
-                                element = "cryo",
-                                name = "Raiden Miku",
-                                rarity = 4,
-                                imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
-                            ),
-                            Character(
-                                element = "cryo",
-                                name = "Raiden Miku",
-                                rarity = 5,
-                                imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
-                            ),
-                            Character(
-                                element = "cryo",
-                                name = "Raiden Miku",
-                                rarity = 5,
-                                imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
-                            ),
-                            Character(
-                                element = "cryo",
-                                name = "Raiden Miku",
-                                rarity = 5,
-                                imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
-                            ),
-                            Character(
-                                element = "cryo",
-                                name = "Raiden Miku",
-                                rarity = 5,
-                                imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
-                            ),
-                            Character(
-                                element = "cryo",
-                                name = "Raiden Miku",
-                                rarity = 5,
-                                imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
-                            ),
-                            Character(
-                                element = "cryo",
-                                name = "Raiden Miku",
-                                rarity = 4,
-                                imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
                             )
                         )
                     ),
@@ -301,120 +229,6 @@ fun PreviewHomeScreen() {
                                 element = "cryo",
                                 name = "Raiden Miku",
                                 rarity = 5,
-                                imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
-                            ),
-                            Character(
-                                element = "cryo",
-                                name = "Raiden Miku",
-                                rarity = 4,
-                                imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
-                            ),
-                            Character(
-                                element = "cryo",
-                                name = "Raiden Miku",
-                                rarity = 5,
-                                imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
-                            ),
-                            Character(
-                                element = "cryo",
-                                name = "Raiden Miku",
-                                rarity = 5,
-                                imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
-                            ),
-                            Character(
-                                element = "cryo",
-                                name = "Raiden Miku",
-                                rarity = 5,
-                                imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
-                            ),
-                            Character(
-                                element = "cryo",
-                                name = "Raiden Miku",
-                                rarity = 5,
-                                imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
-                            ),
-                            Character(
-                                element = "cryo",
-                                name = "Raiden Miku",
-                                rarity = 5,
-                                imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
-                            ),
-                            Character(
-                                element = "cryo",
-                                name = "Raiden Miku",
-                                rarity = 4,
-                                imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
-                            )
-                        )
-                    ),
-                    io.minoro75.genshinhelper.domain.model.TodayBooks(
-                        "Prosperity",
-                        "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/Item_Philosophies_of_Freedom.png",
-                        listOf(
-                            Character(
-                                element = "cryo",
-                                name = "Raiden Miku",
-                                rarity = 5,
-                                imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
-                            ),
-                            Character(
-                                element = "cryo",
-                                name = "Raiden Miku",
-                                rarity = 4,
-                                imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
-                            ),
-                            Character(
-                                element = "cryo",
-                                name = "Raiden Miku",
-                                rarity = 5,
-                                imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
-                            ),
-                            Character(
-                                element = "cryo",
-                                name = "Raiden Miku",
-                                rarity = 5,
-                                imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
-                            ),
-                            Character(
-                                element = "cryo",
-                                name = "Raiden Miku",
-                                rarity = 4,
-                                imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
-                            ),
-                            Character(
-                                element = "cryo",
-                                name = "Raiden Miku",
-                                rarity = 5,
-                                imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
-                            ),
-                            Character(
-                                element = "cryo",
-                                name = "Raiden Miku",
-                                rarity = 5,
-                                imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
-                            ),
-                            Character(
-                                element = "cryo",
-                                name = "Raiden Miku",
-                                rarity = 5,
-                                imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
-                            ),
-                            Character(
-                                element = "cryo",
-                                name = "Raiden Miku",
-                                rarity = 5,
-                                imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
-                            ),
-                            Character(
-                                element = "cryo",
-                                name = "Raiden Miku",
-                                rarity = 5,
-                                imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
-                            ),
-                            Character(
-                                element = "cryo",
-                                name = "Raiden Miku",
-                                rarity = 4,
                                 imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
                             )
                         )
@@ -452,6 +266,18 @@ fun PreviewHomeScreen() {
                         "Dandelion Gladiator",
                         "https://paimon.moe/images/items/dream_of_the_dandelion_gladiator.png"
                     ),
+                    TodayWeaponResources(
+                        "Dandelion Gladiator",
+                        "https://paimon.moe/images/items/dream_of_the_dandelion_gladiator.png"
+                    ),
+                    TodayWeaponResources(
+                        "Dandelion Gladiator",
+                        "https://paimon.moe/images/items/dream_of_the_dandelion_gladiator.png"
+                    ),
+                    TodayWeaponResources(
+                        "Dandelion Gladiator",
+                        "https://paimon.moe/images/items/dream_of_the_dandelion_gladiator.png"
+                    )
                 ),
                 {}
             )

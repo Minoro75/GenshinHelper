@@ -13,12 +13,11 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.outlined.ArrowBack
+import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.FilledIconButton
+import androidx.compose.material3.ExtendedFloatingActionButton
 import androidx.compose.material3.Icon
-import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedCard
 import androidx.compose.material3.Text
@@ -135,14 +134,20 @@ fun ImageRarityElement(
 ) {
     Column(horizontalAlignment = Alignment.CenterHorizontally) {
 
-        FilledIconButton(
-            onClick = onBackPressed,
-            shape = RoundedCornerShape(10.dp),
-            modifier = Modifier.align(Alignment.Start)
-        ) {
-            Icon(imageVector = Icons.Outlined.ArrowBack, contentDescription = "")
+        Spacer(modifier = Modifier.height(8.dp))
 
-        }
+        ExtendedFloatingActionButton(
+            modifier = Modifier.align(Alignment.Start),
+            text = { Text(text = "Go Back") },
+            icon = {
+                Icon(
+                    imageVector = Icons.Filled.ArrowBack,
+                    contentDescription = "Back"
+                )
+            },
+            onClick = onBackPressed
+        )
+
         Spacer(modifier = Modifier.height(8.dp))
 
         OutlinedCard(
@@ -187,7 +192,9 @@ fun ImageRarityElement(
                         "dendro" -> painterResource(id = R.drawable.dendro)
                         else -> throw IllegalArgumentException("No such element")
                     }, contentDescription = element,
-                    Modifier.padding(start = 4.dp, top = 4.dp)
+                    Modifier
+                        .size(35.dp)
+                        .padding(start = 4.dp, top = 4.dp)
                 )
             }
 

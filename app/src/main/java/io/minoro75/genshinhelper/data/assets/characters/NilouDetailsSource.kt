@@ -17,7 +17,7 @@ object NilouDetailsSource {
             "book_days": "WED/SAT/SUN"
           },
           "weekly_boss_item": {
-            "boss_item_name": "Tears Of the Calamitous God",
+            "boss_item_name": "Tears of the Calamitous God",
             "boss_item_url": "https://static.wikia.nocookie.net/gensin-impact/images/e/ef/Item_Tears_of_the_Calamitous_God.png"
           },
           "talents_priority": [

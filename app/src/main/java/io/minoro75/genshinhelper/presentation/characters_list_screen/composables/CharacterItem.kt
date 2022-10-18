@@ -68,8 +68,8 @@ fun CharacterItem(
 
             },
             modifier = modifier
-                .width(130.dp)
-                .height(130.dp)
+                .fillMaxWidth()
+                .height(120.dp)
                 .clip(RightCornerShape)
         )
 

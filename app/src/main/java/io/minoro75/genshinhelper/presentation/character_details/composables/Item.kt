@@ -1,9 +1,11 @@
 package io.minoro75.genshinhelper.presentation.character_details.composables
 
 import androidx.compose.foundation.BorderStroke
-import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
@@ -25,7 +27,10 @@ import androidx.compose.ui.unit.dp
 import coil.request.ImageRequest
 import io.minoro75.genshinhelper.R
 import io.minoro75.genshinhelper.presentation.common.AsyncImageWithBackground
-import io.minoro75.genshinhelper.presentation.theme.*
+import io.minoro75.genshinhelper.presentation.theme.GenshinTypography
+import io.minoro75.genshinhelper.presentation.theme.ItemBackground
+import io.minoro75.genshinhelper.presentation.theme.SmallRightCornerShape
+import io.minoro75.genshinhelper.presentation.theme.TextColor
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -94,7 +99,8 @@ fun ItemPreview() {
         rarity = 3,
         textWidth = 65.dp,
         textStyle = GenshinTypography.bodySmall,
-        modifier = Modifier.width(65.dp)
+        modifier = Modifier
+            .width(65.dp)
             .height(65.dp)
     )
 }
