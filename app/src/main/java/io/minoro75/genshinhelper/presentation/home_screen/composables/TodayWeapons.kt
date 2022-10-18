@@ -37,7 +37,7 @@ import io.minoro75.genshinhelper.presentation.character_details.composables.Item
 import io.minoro75.genshinhelper.presentation.theme.GenshinHelperTheme
 import io.minoro75.genshinhelper.presentation.theme.GenshinTypography
 
-@OptIn(ExperimentalMaterial3Api::class, ExperimentalFoundationApi::class)
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun TodayWeapons(
     list: List<TodayWeaponResources>,
@@ -104,7 +104,7 @@ fun TodayWeapons(
                             for (i in secondColumn) {
                                 if (list.elementAtOrNull(i) != null) {
                                     if (i != secondColumn.first) {
-                                        Spacer(Modifier.width(8.dp))
+                                        Spacer(Modifier.width(6.dp))
                                     }
                                     OutlinedCard(
                                         elevation = CardDefaults.cardElevation(defaultElevation = 8.dp),
@@ -140,7 +140,7 @@ fun TodayWeapons(
                             for (i in thirdColumn) {
                                 if (list.elementAtOrNull(i) != null) {
                                     if (i != thirdColumn.first) {
-                                        Spacer(Modifier.width(8.dp))
+                                        Spacer(Modifier.width(6.dp))
                                     }
                                     OutlinedCard(
                                         elevation = CardDefaults.cardElevation(defaultElevation = 8.dp),
@@ -207,6 +207,18 @@ fun PreviewTodayWeapons(
                     "Dandelion Gladiator",
                     "https://paimon.moe/images/items/dream_of_the_dandelion_gladiator.png"
                 ),
+                TodayWeaponResources(
+                    "Dandelion Gladiator",
+                    "https://paimon.moe/images/items/dream_of_the_dandelion_gladiator.png"
+                ),
+                TodayWeaponResources(
+                    "Dandelion Gladiator",
+                    "https://paimon.moe/images/items/dream_of_the_dandelion_gladiator.png"
+                ),
+                TodayWeaponResources(
+                    "Dandelion Gladiator",
+                    "https://paimon.moe/images/items/dream_of_the_dandelion_gladiator.png"
+                )
             ),
             {}
         )
