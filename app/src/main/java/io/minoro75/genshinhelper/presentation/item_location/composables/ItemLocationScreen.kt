@@ -22,6 +22,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import io.minoro75.genshinhelper.domain.model.HowToObtainItem
+import io.minoro75.genshinhelper.presentation.common.LoadingScreen
 import io.minoro75.genshinhelper.presentation.item_location.ItemLocationViewModel
 import io.minoro75.genshinhelper.presentation.theme.GenshinHelperTheme
 
@@ -34,7 +35,7 @@ fun ItemLocationScreen(
 
     GenshinHelperTheme {
         if (state.isLoading) {
-            CircularProgressIndicator(modifier = Modifier.size(20.dp))
+            LoadingScreen()
         } else if (state.errorMessage == null) {
 
             state.locations?.let {

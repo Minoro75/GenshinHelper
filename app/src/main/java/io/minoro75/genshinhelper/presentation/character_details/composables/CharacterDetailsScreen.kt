@@ -22,6 +22,7 @@ import io.minoro75.genshinhelper.domain.model.TalentsBooks
 import io.minoro75.genshinhelper.domain.model.WeaponBest
 import io.minoro75.genshinhelper.domain.model.WeaponsReplacement
 import io.minoro75.genshinhelper.presentation.character_details.CharacterDetailsScreenViewModel
+import io.minoro75.genshinhelper.presentation.common.LoadingScreen
 import io.minoro75.genshinhelper.presentation.theme.GenshinHelperTheme
 
 @Composable
@@ -35,7 +36,7 @@ fun CharacterScreen(
     GenshinHelperTheme {
 
         if (state.isLoading) {
-            CircularProgressIndicator(modifier = Modifier.size(20.dp))
+            LoadingScreen()
         } else if (state.errorMessage == null) {
 
             state.characterDetails?.let { character ->

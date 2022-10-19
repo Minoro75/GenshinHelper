@@ -26,13 +26,20 @@ class CharactersListViewModel @Inject constructor(
 
     private fun fetchCharacters() {
         viewModelScope.launch {
+            state = state.copy(isLoading = true)
             repository.getCharacters().collect {
                 when (it) {
-                    is Resource.Error -> Unit
-                    is Resource.Loading -> state = state.copy(isLoading = it.isLoading)
-                    is Resource.Success -> it.data?.let { list ->
-                        state = state.copy(characters = list)
+                    is Resource.Error -> {
+                        state = state.copy(errorMessage = it.message,
+                        isLoading = false,
+                        characters = null)
                     }
+                    is Resource.Success -> it.data?.let { list ->
+                        state = state.copy(characters = list,
+                        isLoading = false,
+                        errorMessage = null)
+                    }
+                    else -> Unit
                 }
             }
         }

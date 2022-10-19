@@ -14,6 +14,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import io.minoro75.genshinhelper.presentation.characters_list_screen.CharactersListViewModel
+import io.minoro75.genshinhelper.presentation.common.LoadingScreen
 
 @Composable
 fun CharactersListScreen(
@@ -23,23 +24,30 @@ fun CharactersListScreen(
 ) {
     val state = viewModel.state
 
-    LazyVerticalGrid(
-        columns = GridCells.Adaptive(100.dp),
-        contentPadding = PaddingValues(8.dp),
-        horizontalArrangement = Arrangement.spacedBy(8.dp),
-        verticalArrangement = Arrangement.spacedBy(8.dp),
-        modifier = Modifier
-            .fillMaxSize()
-            .background(MaterialTheme.colorScheme.surfaceVariant)
-    ) {
-        items(state.characters) { character ->
-            CharacterItem(character,
-                modifier = Modifier
-                    .clickable {
-                        onCharacterClicked.invoke(character.name)
-                    }
-            )
-        }
-    }
+    if (state.isLoading) {
+        LoadingScreen()
+    } else if (state.errorMessage == null) {
 
+        state.characters?.let {
+            LazyVerticalGrid(
+                columns = GridCells.Adaptive(100.dp),
+                contentPadding = PaddingValues(8.dp),
+                horizontalArrangement = Arrangement.spacedBy(8.dp),
+                verticalArrangement = Arrangement.spacedBy(8.dp),
+                modifier = Modifier
+                    .fillMaxSize()
+                    .background(MaterialTheme.colorScheme.surfaceVariant)
+            ) {
+                items(state.characters) { character ->
+                    CharacterItem(character,
+                        modifier = Modifier
+                            .clickable {
+                                onCharacterClicked.invoke(character.name)
+                            }
+                    )
+                }
+            }
+        }
+
+    }
 }
