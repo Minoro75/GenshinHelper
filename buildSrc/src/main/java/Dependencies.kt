@@ -32,6 +32,9 @@ object Dependencies {
         const val coilVersion = "2.2.0"
         const val chromeTabVersion = "1.4.0"
 
+        const val firebaseCrashlytics = "com.google.firebase:firebase-crashlytics-ktx:18.2.13"
+        const val firebaseAnalytics = "com.google.firebase:firebase-analytics-ktx:20.1.2"
+
         const val coil = "io.coil-kt:coil-compose:$coilVersion"
         const val chromeTabs = "androidx.browser:browser:$chromeTabVersion"
         const val moshi = "com.squareup.moshi:moshi-kotlin:$moshiVersion"

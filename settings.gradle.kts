@@ -15,6 +15,8 @@ pluginManagement {
                 "com.android.library" -> useVersion("7.2.1")
                 "org.jetbrains.kotlin.android" -> useVersion("1.7.0")
                 "com.google.dagger:hilt-android-gradle-plugin" -> useVersion("2.43.2")
+                "com.google.firebase:firebase-crashlytics-gradle" -> useVersion("2.9.2")
+                "com.google.gms:google-services" -> useVersion("4.3.14")
             }
         }
     }

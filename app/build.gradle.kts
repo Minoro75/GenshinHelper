@@ -1,6 +1,8 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("com.google.firebase.crashlytics") version "2.9.2"
+    id("com.google.gms.google-services") version "4.3.14"
     id("com.google.dagger.hilt.android") version Dependencies.Hilt.daggerHiltVersion
     id("org.jetbrains.kotlin.kapt") version "1.7.0"
 }
@@ -73,6 +75,8 @@ dependencies {
     kapt(Dependencies.Other.moshiCodegen)
     implementation(Dependencies.Other.coil)
     implementation(Dependencies.Other.chromeTabs)
+    implementation(Dependencies.Other.firebaseCrashlytics)
+    implementation(Dependencies.Other.firebaseAnalytics)
 
     implementation("androidx.core:core-ktx:1.8.0")
     implementation("androidx.compose.ui:ui-tooling-preview:1.2.1")
