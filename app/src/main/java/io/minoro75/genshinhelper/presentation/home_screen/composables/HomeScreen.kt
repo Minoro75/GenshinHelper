@@ -58,8 +58,8 @@ fun HomeScreen(
             Column(
                 modifier =
                 Modifier
-                    .verticalScroll(rememberScrollState())
                     .fillMaxSize()
+                    .verticalScroll(rememberScrollState())
                     .background(MaterialTheme.colorScheme.surfaceVariant)
                     .padding(
                         16.dp

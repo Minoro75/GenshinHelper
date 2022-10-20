@@ -14,17 +14,17 @@ data class HowToObtainItem(
     fun getImageResource():Int{
         return when(domainName){
             // Artifacts
-            "Domain of Guyun" -> R.drawable.domain_of_guyun
-            "Peak of Vindagnyr" -> R.drawable.peak_of_vyndagnyr
-            "Clear Pool and Mountain Cavern" -> R.drawable.clear_pool_and_mountain_cavern
-            "Hidden Palace of Zhou Formula" -> R.drawable.hidden_palace_of_zhou_formula
-            "Spire of Solitary Enlightenment" -> R.drawable.spire_of_solitary_enlightenment
-            "The Lost Valley" -> R.drawable.the_lost_valley
-            "Momiji-Dyed Court" -> R.drawable.momiji_dyed_court
-            "Slumbering Court" -> R.drawable.slumbering_court
-            "Valley of Remembrance" -> R.drawable.valley_of_remembrance
-            "Ridge Watch" -> R.drawable.ridge_watch
-            "Midsummer Courtyard" -> R.drawable.midsummer_courtyard
+            "Domain of Guyun" -> R.drawable.dg_domain_of_guyun
+            "Peak of Vindagnyr" -> R.drawable.dg_peak_of_vyndagnyr
+            "Clear Pool and Mountain Cavern" -> R.drawable.dg_clear_pool_and_mountain_cavern
+            "Hidden Palace of Zhou Formula" -> R.drawable.dg_hidden_palace_of_zhou_formula
+            "Spire of Solitary Enlightenment" -> R.drawable.dg_spire_of_solitary_enlightenment
+            "The Lost Valley" -> R.drawable.dg_the_lost_valley
+            "Momiji-Dyed Court" -> R.drawable.dg_momiji_dyed_court
+            "Slumbering Court" -> R.drawable.dg_slumbering_court
+            "Valley of Remembrance" -> R.drawable.dg_valley_of_remembrance
+            "Ridge Watch" -> R.drawable.dg_ridge_watch
+            "Midsummer Courtyard" -> R.drawable.dg_midsummer_courtyard
             "Bosses" -> R.drawable.bosses
             // Artifacts Alchemy
             "Artifact Strongbox: Archaic Petra" -> R.drawable.as_archaic
@@ -42,12 +42,12 @@ data class HowToObtainItem(
             "Artifact Strongbox: Wanderer's Troupe" -> R.drawable.as_wanderers
             "Artifact Strongbox: Heart of Depth" -> R.drawable.as_heart_of_depth
             // Boss items
-            "Narukami Island: Tenshukaku" -> R.drawable.signora_domain
-            "Beneath the Dragon-Queller" -> R.drawable.azhdaha_domain
-            "Confront Stormterror" -> R.drawable.dvalin_domain
-            "End of the Oneiric Euthymia" -> R.drawable.raiden_domain
-            "Lupus Boreas, Dominator of Wolves" -> R.drawable.wolf_domain
-            "Enter the Golden House" -> R.drawable.childe_domain
+            "Narukami Island: Tenshukaku" -> R.drawable.dg_signora_domain
+            "Beneath the Dragon-Queller" -> R.drawable.dg_azhdaha_domain
+            "Confront Stormterror" -> R.drawable.dg_dvalin_domain
+            "End of the Oneiric Euthymia" -> R.drawable.dg_raiden_domain
+            "Lupus Boreas, Dominator of Wolves" -> R.drawable.dg_wolf_domain
+            "Enter the Golden House" -> R.drawable.dg_childe_domain
             // Boss items Alchemy
             "Convert: Ashen Heart" -> R.drawable.ic_ashen
             "Convert: Bloodjade Branch" -> R.drawable.ic_bloodjade
@@ -68,15 +68,15 @@ data class HowToObtainItem(
             "Convert: The Meaning of Aeons" -> R.drawable.ic_meaning
             "Convert: Tusk of Monoceros Caeli" -> R.drawable.ic_tusk
             // Books
-            "Steeple of Ignorance" -> R.drawable.steeple_of_ignorance
-            "Forsaken Rift" -> R.drawable.forsaken_rift
-            "Violet Court" -> R.drawable.violet_court
-            "Taishan Mansion" -> R.drawable.taishan_mansion
+            "Steeple of Ignorance" -> R.drawable.dg_steeple_of_ignorance
+            "Forsaken Rift" -> R.drawable.dg_forsaken_rift
+            "Violet Court" -> R.drawable.dg_violet_court
+            "Taishan Mansion" -> R.drawable.dg_taishan_mansion
             // Weapon Resources
-            "Hidden Palace of Lianshan Formula" -> R.drawable.hidden_palace_of_lianshan_formula
-            "Cecilia Garden" -> R.drawable.cecilia_garden
-            "Court of Flowing Sand" -> R.drawable.court_of_flowing_sand
-            "Tower of Abject Pride" -> R.drawable.tower_of_abject_pride
+            "Hidden Palace of Lianshan Formula" -> R.drawable.dg_hidden_palace_of_lianshan_formula
+            "Cecilia Garden" -> R.drawable.dg_cecilia_garden
+            "Court of Flowing Sand" -> R.drawable.dg_court_of_flowing_sand
+            "Tower of Abject Pride" -> R.drawable.dg_tower_of_abject_pride
             else -> throw IllegalArgumentException("No such dungeon")
         }
     }
