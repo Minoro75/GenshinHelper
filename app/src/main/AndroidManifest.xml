@@ -3,18 +3,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="io.minoro75.genshinhelper">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
+        android:name=".presentation.BaseApp"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_launcher_5"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_launcher_5_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GenshinHelper"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".presentation.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.GenshinHelper">
