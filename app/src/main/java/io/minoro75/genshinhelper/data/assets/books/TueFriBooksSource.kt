@@ -6,7 +6,7 @@ object TueFriBooksSource {
     /** here we define our JSON instead of reading from assets **/
 
     // for internal use only
-    const val version = "3.1 1st part"
+    const val version = "3.2 1st part"
 
     @Language("JSON")
     val booksList = """
@@ -164,6 +164,12 @@ object TueFriBooksSource {
                 "rarity": 4,
                 "element": "electro",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/90/Character_Dori_Thumb.png"
+              },
+              {
+                "name": "Nahida",
+                "rarity": 5,
+                "element": "dendro",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/cf/Character_Nahida_Thumb.png"
               },
               {
                 "name": "Traveler   (Denro)",

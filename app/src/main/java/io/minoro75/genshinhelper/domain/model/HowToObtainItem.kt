@@ -48,6 +48,7 @@ data class HowToObtainItem(
             "End of the Oneiric Euthymia" -> R.drawable.dg_raiden_domain
             "Lupus Boreas, Dominator of Wolves" -> R.drawable.dg_wolf_domain
             "Enter the Golden House" -> R.drawable.dg_childe_domain
+            "Joururi Workshop" -> R.drawable.dg_scaramouche
             // Boss items Alchemy
             "Convert: Ashen Heart" -> R.drawable.ic_ashen
             "Convert: Bloodjade Branch" -> R.drawable.ic_bloodjade
@@ -67,6 +68,7 @@ data class HowToObtainItem(
             "Convert: Tears of the Calamitous God" -> R.drawable.ic_tears
             "Convert: The Meaning of Aeons" -> R.drawable.ic_meaning
             "Convert: Tusk of Monoceros Caeli" -> R.drawable.ic_tusk
+            "Convert: Puppet Strings" -> R.drawable.ic_puppet
             // Books
             "Steeple of Ignorance" -> R.drawable.dg_steeple_of_ignorance
             "Forsaken Rift" -> R.drawable.dg_forsaken_rift

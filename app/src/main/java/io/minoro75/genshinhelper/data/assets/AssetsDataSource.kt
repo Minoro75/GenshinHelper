@@ -36,6 +36,7 @@ import io.minoro75.genshinhelper.data.assets.characters.KujouSaraDetailsSource
 import io.minoro75.genshinhelper.data.assets.characters.KukiShinobuDetailsSource
 import io.minoro75.genshinhelper.data.assets.characters.LisaDetailsSource
 import io.minoro75.genshinhelper.data.assets.characters.MonaDetailsSource
+import io.minoro75.genshinhelper.data.assets.characters.NahidaDetailsSource
 import io.minoro75.genshinhelper.data.assets.characters.NilouDetailsSource
 import io.minoro75.genshinhelper.data.assets.characters.NingguangDetailsSource
 import io.minoro75.genshinhelper.data.assets.characters.NoelleDetailsSource
@@ -112,6 +113,7 @@ import io.minoro75.genshinhelper.data.assets.items.boss_items.GildedScaleDataSou
 import io.minoro75.genshinhelper.data.assets.items.boss_items.HellfireButterflyDataSource
 import io.minoro75.genshinhelper.data.assets.items.boss_items.MoltenMomentDataSource
 import io.minoro75.genshinhelper.data.assets.items.boss_items.MudraOfTheMaleficGeneralDataSource
+import io.minoro75.genshinhelper.data.assets.items.boss_items.PuppetStringsDataSource
 import io.minoro75.genshinhelper.data.assets.items.boss_items.RingOfBoreasDataSource
 import io.minoro75.genshinhelper.data.assets.items.boss_items.ShadowOfTheWarriorDataSource
 import io.minoro75.genshinhelper.data.assets.items.boss_items.ShardOfFoulLegacyDataSource
@@ -376,6 +378,10 @@ class AssetsDataSource @Inject constructor(
             "Tusk of Monoceros Caeli" -> withContext(Dispatchers.IO) {
                 itemLocationAdapter.fromJson(TuskOfMonocerosCaeliDataSource.sourcesList)
             }
+
+            "Puppet Strings" -> withContext(Dispatchers.IO){
+                itemLocationAdapter.fromJson(PuppetStringsDataSource.sourcesList)
+            }
             // Books
             "Admonition" -> withContext(Dispatchers.IO) {
                 itemLocationAdapter.fromJson(AdmonitionDataSource.sourcesList)
@@ -598,6 +604,10 @@ class AssetsDataSource @Inject constructor(
 
             "Mona" -> withContext(Dispatchers.IO) {
                 characterDetailsAdapter.fromJson(MonaDetailsSource.details)
+            }
+
+            "Nahida" -> withContext(Dispatchers.IO){
+                characterDetailsAdapter.fromJson(NahidaDetailsSource.details)
             }
 
             "Nilou" -> withContext(Dispatchers.IO) {

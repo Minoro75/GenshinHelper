@@ -6,7 +6,7 @@ object CharactersListSource {
     /** here we define our JSON instead of reading from assets **/
 
     // for internal use only
-    const val version = "3.1 1st part"
+    const val version = "3.2 1st part"
 
     @Language("JSON")
     val charactersList = """
@@ -220,6 +220,13 @@ object CharactersListSource {
       "element": "hydro",
       "weapon": "catalyst",
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a0/Character_Mona_Thumb.png"
+    },
+    {
+      "name": "Nahida",
+      "rarity": 5,
+      "element": "dendro",
+      "weapon": "catalyst",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/cf/Character_Nahida_Thumb.png"
     },
     {
       "name": "Nilou",
