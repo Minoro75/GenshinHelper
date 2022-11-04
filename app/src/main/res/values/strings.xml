@@ -9,5 +9,13 @@
     <string name="catalyst">Catalyst</string>
     <string name="polearm">Polearm</string>
     <string name="available_at">Available at:</string>
+    <string name="talents_priority">Talents Priority</string>
+    <string name="weekly_boss">Weekly Boss Item</string>
+    <string name="artifacts">Artifacts</string>
+    <string name="artifacts_stats">Artifacts stats</string>
+    <string name="bis">BiS</string>
+    <string name="alternatives">Alternatives</string>
+    <string name="f2p">F2P</string>
+    <string name="go_back">Go back</string>
 
 </resources>

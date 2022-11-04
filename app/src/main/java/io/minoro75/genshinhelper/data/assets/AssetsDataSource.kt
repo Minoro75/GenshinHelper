@@ -503,55 +503,55 @@ class AssetsDataSource @Inject constructor(
             }
 
             "Элой" -> withContext(Dispatchers.IO) {
-                characterDetailsAdapter.fromJson(AloyDetailsSource.details)
+                characterDetailsAdapter.fromJson(AloyDetailsSource.detailsRu)
             }
 
             "Эмбер" -> withContext(Dispatchers.IO) {
-                characterDetailsAdapter.fromJson(AmberDetailsSource.details)
+                characterDetailsAdapter.fromJson(AmberDetailsSource.detailsRu)
             }
 
-            "Итто" -> withContext(Dispatchers.IO) {
-                characterDetailsAdapter.fromJson(AratakiIttoDetailsSource.details)
+            "Аратаки Итто" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(AratakiIttoDetailsSource.detailsRu)
             }
 
             "Барбара" -> withContext(Dispatchers.IO) {
-                characterDetailsAdapter.fromJson(BarbaraDetailsSource.details)
+                characterDetailsAdapter.fromJson(BarbaraDetailsSource.detailsRu)
             }
 
             "Бэй Доу" -> withContext(Dispatchers.IO) {
-                characterDetailsAdapter.fromJson(BeidouDetailsSource.details)
+                characterDetailsAdapter.fromJson(BeidouDetailsSource.detailsRu)
             }
 
             "Беннет" -> withContext(Dispatchers.IO) {
-                characterDetailsAdapter.fromJson(BennettDetailsSource.details)
+                characterDetailsAdapter.fromJson(BennettDetailsSource.detailsRu)
             }
 
             "Кандакия" -> withContext(Dispatchers.IO) {
-                characterDetailsAdapter.fromJson(CandaceDetailsSource.details)
+                characterDetailsAdapter.fromJson(CandaceDetailsSource.detailsRu)
             }
 
             "Чун Юнь" -> withContext(Dispatchers.IO) {
-                characterDetailsAdapter.fromJson(ChongyunDetailsSource.details)
+                characterDetailsAdapter.fromJson(ChongyunDetailsSource.detailsRu)
             }
 
             "Коллеи" -> withContext(Dispatchers.IO) {
-                characterDetailsAdapter.fromJson(ColleiDetailsSource.details)
+                characterDetailsAdapter.fromJson(ColleiDetailsSource.detailsRu)
             }
 
             "Сайно" -> withContext(Dispatchers.IO) {
-                characterDetailsAdapter.fromJson(CynoDetailsSource.details)
+                characterDetailsAdapter.fromJson(CynoDetailsSource.detailsRu)
             }
 
             "Дилюк" -> withContext(Dispatchers.IO) {
-                characterDetailsAdapter.fromJson(DilucDetailsSource.details)
+                characterDetailsAdapter.fromJson(DilucDetailsSource.detailsRu)
             }
 
             "Диона" -> withContext(Dispatchers.IO) {
-                characterDetailsAdapter.fromJson(DionaDetailsSource.details)
+                characterDetailsAdapter.fromJson(DionaDetailsSource.detailsRu)
             }
 
             "Дори" -> withContext(Dispatchers.IO) {
-                characterDetailsAdapter.fromJson(DoriDetailsSource.details)
+                characterDetailsAdapter.fromJson(DoriDetailsSource.detailsRu)
             }
 
             "Эола" -> withContext(Dispatchers.IO) {
@@ -602,11 +602,11 @@ class AssetsDataSource @Inject constructor(
                 characterDetailsAdapter.fromJson(KleeDetailsSource.details)
             }
 
-            "Сара" -> withContext(Dispatchers.IO) {
+            "Кудзё Сара" -> withContext(Dispatchers.IO) {
                 characterDetailsAdapter.fromJson(KujouSaraDetailsSource.details)
             }
 
-            "Синобу" -> withContext(Dispatchers.IO) {
+            "Куки Синобу" -> withContext(Dispatchers.IO) {
                 characterDetailsAdapter.fromJson(KukiShinobuDetailsSource.details)
             }
 
@@ -650,7 +650,7 @@ class AssetsDataSource @Inject constructor(
                 characterDetailsAdapter.fromJson(RosariaDetailsSource.details)
             }
 
-            "Кокоми" -> withContext(Dispatchers.IO) {
+            "Сангономия Кокоми" -> withContext(Dispatchers.IO) {
                 characterDetailsAdapter.fromJson(SangonomiyaKokomiDetailsSource.details)
             }
 

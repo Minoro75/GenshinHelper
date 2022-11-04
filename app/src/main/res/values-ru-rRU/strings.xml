@@ -10,4 +10,12 @@
     <string name="catalyst">Катализатор</string>
     <string name="polearm">Древковое</string>
     <string name="available_at">Доступно в:</string>
+    <string name="talents_priority">Приоритет прокачки</string>
+    <string name="weekly_boss">Предмет с босса</string>
+    <string name="artifacts">Артефакты</string>
+    <string name="artifacts_stats">Характеристики артефактов</string>
+    <string name="bis">БиС</string>
+    <string name="alternatives">Альтернативные</string>
+    <string name="f2p">Ф2П</string>
+    <string name="go_back">Назад</string>
 </resources>

@@ -25,6 +25,7 @@ import androidx.compose.ui.Alignment.Companion.CenterHorizontally
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -52,7 +53,7 @@ fun ArtifactsView(
     ) {
         Spacer(modifier = Modifier.height(8.dp))
         Text(
-            text = "Artifacts",
+            text = stringResource(id = R.string.artifacts),
             style = GenshinTypography.bodyLarge,
             color = MaterialTheme.colorScheme.onPrimaryContainer,
             modifier = Modifier.align(CenterHorizontally)
@@ -65,7 +66,7 @@ fun ArtifactsView(
         )
         Spacer(modifier = Modifier.height(8.dp))
         Text(
-            text = "Artifacts Stats",
+            text = stringResource(id = R.string.artifacts_stats),
             style = GenshinTypography.bodyLarge,
             color = MaterialTheme.colorScheme.onPrimaryContainer,
             modifier = Modifier.align(CenterHorizontally)

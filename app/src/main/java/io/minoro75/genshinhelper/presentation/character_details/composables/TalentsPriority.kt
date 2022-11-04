@@ -7,8 +7,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import io.minoro75.genshinhelper.R
 import io.minoro75.genshinhelper.presentation.theme.GenshinHelperTheme
 import io.minoro75.genshinhelper.presentation.theme.GenshinTypography
 
@@ -21,7 +23,7 @@ fun TalentsPriority(priority: List<String>, textColor: Color, modifier: Modifier
     ) {
 
         Text(
-            text = "Talents Priority",
+            text = stringResource(id = R.string.talents_priority),
             style = GenshinTypography.bodyLarge,
             color = textColor
         )
