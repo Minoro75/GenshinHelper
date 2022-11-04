@@ -441,4 +441,18 @@ object CharactersListSource {
     }
   ]
         """.trimIndent()
+
+
+    @Language("JSON")
+    val charactersListRu = """
+        [
+    {
+      "name": "Альбедо",
+      "rarity": 5,
+      "element": "geo",
+      "weapon": "sword",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/00/Character_Albedo_Thumb.png"
+    }
+    ]
+    """.trimIndent()
 }

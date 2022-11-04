@@ -1,5 +1,6 @@
 package io.minoro75.genshinhelper.data.assets
 
+import android.util.Log
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.adapter
 import io.minoro75.genshinhelper.data.assets.books.MonThuBooksSource
@@ -145,6 +146,7 @@ import io.minoro75.genshinhelper.domain.model.TodayBooks
 import io.minoro75.genshinhelper.domain.model.TodayWeaponResources
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
+import java.util.Locale
 import javax.inject.Inject
 
 /**
@@ -165,7 +167,11 @@ class AssetsDataSource @Inject constructor(
 
     suspend fun getCharactersList() =
         withContext(Dispatchers.IO) {
-            characterAdapter.fromJson(CharactersListSource.charactersList)
+            Log.d("lang", Locale.getDefault().displayLanguage)
+            when (Locale.getDefault().displayLanguage) {
+                "русский" -> characterAdapter.fromJson(CharactersListSource.charactersListRu)
+                else -> characterAdapter.fromJson(CharactersListSource.charactersList)
+            }
         }
 
     suspend fun getMonThuWeaponResources() =
@@ -379,7 +385,7 @@ class AssetsDataSource @Inject constructor(
                 itemLocationAdapter.fromJson(TuskOfMonocerosCaeliDataSource.sourcesList)
             }
 
-            "Puppet Strings" -> withContext(Dispatchers.IO){
+            "Puppet Strings" -> withContext(Dispatchers.IO) {
                 itemLocationAdapter.fromJson(PuppetStringsDataSource.sourcesList)
             }
             // Books
@@ -483,7 +489,264 @@ class AssetsDataSource @Inject constructor(
         }
     }
 
-    suspend fun getCharacterDetails(characterName: String): CharacterDetails? {
+    suspend fun getCharacterDetails(name: String): CharacterDetails? {
+       return when (Locale.getDefault().displayLanguage) {
+            "русский" -> getCharacterDetailsRu(name)
+            else -> getCharacterDetailsEn(name)
+        }
+    }
+
+    suspend fun getCharacterDetailsRu(characterName: String): CharacterDetails? {
+        return when (characterName) {
+            "Альбедо" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(AlbedoDetailsSource.detailsRu)
+            }
+
+            "Элой" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(AloyDetailsSource.details)
+            }
+
+            "Эмбер" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(AmberDetailsSource.details)
+            }
+
+            "Итто" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(AratakiIttoDetailsSource.details)
+            }
+
+            "Барбара" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(BarbaraDetailsSource.details)
+            }
+
+            "Бэй Доу" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(BeidouDetailsSource.details)
+            }
+
+            "Беннет" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(BennettDetailsSource.details)
+            }
+
+            "Кандакия" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(CandaceDetailsSource.details)
+            }
+
+            "Чун Юнь" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(ChongyunDetailsSource.details)
+            }
+
+            "Коллеи" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(ColleiDetailsSource.details)
+            }
+
+            "Сайно" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(CynoDetailsSource.details)
+            }
+
+            "Дилюк" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(DilucDetailsSource.details)
+            }
+
+            "Диона" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(DionaDetailsSource.details)
+            }
+
+            "Дори" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(DoriDetailsSource.details)
+            }
+
+            "Эола" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(EulaDetailsSource.details)
+            }
+
+            "Фишль" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(FischlDetailsSource.details)
+            }
+
+            "Гань Юй" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(GanyuDetailsSource.details)
+            }
+
+            "Горо" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(GorouDetailsSource.details)
+            }
+
+            "Ху Тао" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(HuTaoDetailsSource.details)
+            }
+
+            "Джинн" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(JeanDetailsSource.details)
+            }
+
+            "Кадзуха" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(KaedeharaKazuhaDetailsSource.details)
+            }
+
+            "Кэйа" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(KaeyaDetailsSource.details)
+            }
+
+            "Аяка" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(KamisatoAyakaDetailsSource.details)
+            }
+
+            "Аято" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(KamisatoAyatoDetailsSource.details)
+            }
+
+            "Кэ Цин" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(KeqingDetailsSource.details)
+            }
+
+            "Кли" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(KleeDetailsSource.details)
+            }
+
+            "Сара" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(KujouSaraDetailsSource.details)
+            }
+
+            "Синобу" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(KukiShinobuDetailsSource.details)
+            }
+
+            "Лиза" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(LisaDetailsSource.details)
+            }
+
+            "Мона" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(MonaDetailsSource.details)
+            }
+
+            "Нахида" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(NahidaDetailsSource.details)
+            }
+
+            "Нилу" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(NilouDetailsSource.details)
+            }
+
+            "Нин Гуан" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(NingguangDetailsSource.details)
+            }
+
+            "Ноэлль" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(NoelleDetailsSource.details)
+            }
+
+            "Ци Ци" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(QiqiDetailsSource.details)
+            }
+
+            "Райдэн" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(RaidenShogunDetailsSource.details)
+            }
+
+            "Рэйзор" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(RazorDetailsSource.details)
+            }
+
+            "Розария" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(RosariaDetailsSource.details)
+            }
+
+            "Кокоми" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(SangonomiyaKokomiDetailsSource.details)
+            }
+
+            "Саю" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(SayuDetailsSource.details)
+            }
+
+            "Шэнь Хэ" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(ShenheDetailsSource.details)
+            }
+
+            "Хэйдзо" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(ShikanoinHeizouDetailsSource.details)
+            }
+
+            "Сахароза" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(SucroseDetailsSource.details)
+            }
+
+            "Тарталья" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(TartagliaDetailsSource.details)
+            }
+
+            "Тома" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(ThomaDetailsSource.details)
+            }
+
+            "Тигнари" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(TighnariDetailsSource.details)
+            }
+
+            "Путешественник   (Анемо)" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(TravelerAnemoDetailsSource.details)
+            }
+
+            "Путешественник   (Електро)" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(TravelerElectroDetailsSource.details)
+            }
+
+            "Путешественник   (Гео)" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(TravelerGeoDetailsSource.details)
+            }
+
+            "Путешественник   (Дендро)" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(TravelerDendroDetailsSource.details)
+            }
+
+            "Венти" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(VentiDetailsSource.details)
+            }
+
+            "Сян Лин" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(XianglingDetailsSource.details)
+            }
+
+            "Сяо" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(XiaoDetailsSource.details)
+            }
+
+            "Син Цю" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(XingqiuDetailsSource.details)
+            }
+
+            "Синь Янь" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(XinyanDetailsSource.details)
+            }
+
+            "Яэ Мико" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(YaeMikoDetailsSource.details)
+            }
+
+            "Янь Фэй" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(YanfeiDetailsSource.details)
+            }
+
+            "Е Лань" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(YelanDetailsSource.details)
+            }
+
+            "Ëимия" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(YoimiyaDetailsSource.details)
+            }
+
+            "Юнь Цзинь" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(YunJinDetailsSource.details)
+            }
+
+            "Чжун Ли" -> withContext(Dispatchers.IO) {
+                characterDetailsAdapter.fromJson(ZhongliDetailsSource.details)
+            }
+
+            else -> throw IllegalArgumentException("There is no character with name : $characterName")
+        }
+    }
+
+    suspend fun getCharacterDetailsEn(characterName: String): CharacterDetails? {
         // for testing purposes we may inject context as param, but maybe later
         return when (characterName) {
             "Albedo" -> withContext(Dispatchers.IO) {
@@ -606,7 +869,7 @@ class AssetsDataSource @Inject constructor(
                 characterDetailsAdapter.fromJson(MonaDetailsSource.details)
             }
 
-            "Nahida" -> withContext(Dispatchers.IO){
+            "Nahida" -> withContext(Dispatchers.IO) {
                 characterDetailsAdapter.fromJson(NahidaDetailsSource.details)
             }
 
