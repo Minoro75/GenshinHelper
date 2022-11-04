@@ -3,4 +3,11 @@
     <string name="home">Home</string>
     <string name="characters">Characters</string>
     <string name="info">Info</string>
+    <string name="sword">Sword</string>
+    <string name="claymore">Claymore</string>
+    <string name="bow">Bow</string>
+    <string name="catalyst">Catalyst</string>
+    <string name="polearm">Polearm</string>
+    <string name="available_at">Available at:</string>
+
 </resources>

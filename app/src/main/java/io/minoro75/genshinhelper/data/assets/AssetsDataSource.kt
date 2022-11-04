@@ -496,7 +496,7 @@ class AssetsDataSource @Inject constructor(
         }
     }
 
-    suspend fun getCharacterDetailsRu(characterName: String): CharacterDetails? {
+    private suspend fun getCharacterDetailsRu(characterName: String): CharacterDetails? {
         return when (characterName) {
             "Альбедо" -> withContext(Dispatchers.IO) {
                 characterDetailsAdapter.fromJson(AlbedoDetailsSource.detailsRu)
@@ -746,7 +746,7 @@ class AssetsDataSource @Inject constructor(
         }
     }
 
-    suspend fun getCharacterDetailsEn(characterName: String): CharacterDetails? {
+    private suspend fun getCharacterDetailsEn(characterName: String): CharacterDetails? {
         // for testing purposes we may inject context as param, but maybe later
         return when (characterName) {
             "Albedo" -> withContext(Dispatchers.IO) {

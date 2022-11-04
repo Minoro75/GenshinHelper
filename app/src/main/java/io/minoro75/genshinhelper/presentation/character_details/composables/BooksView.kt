@@ -8,6 +8,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import io.minoro75.genshinhelper.R
@@ -33,7 +34,8 @@ fun BooksView(
             rarity = 4,
             textWidth = 80.dp,
             textStyle = GenshinTypography.bodySmall,
-            modifier = Modifier.size(80.dp)
+            modifier = Modifier
+                .size(80.dp)
                 .clickable { onItemClicked.invoke(name) }
 
         )
@@ -41,7 +43,7 @@ fun BooksView(
         Spacer(modifier = Modifier.width(8.dp))
         Column(horizontalAlignment = Alignment.CenterHorizontally) {
             Text(
-                text = "Availalbe at:",
+                text = stringResource(id = R.string.available_at),
                 color = textColor,
                 style = GenshinTypography.bodyMedium
             )
