@@ -7,40 +7,45 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
-import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
+import androidx.lifecycle.compose.ExperimentalLifecycleComposeApi
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import io.minoro75.genshinhelper.domain.model.Artifact
 import io.minoro75.genshinhelper.domain.model.TalentsBooks
 import io.minoro75.genshinhelper.domain.model.WeaponBest
 import io.minoro75.genshinhelper.domain.model.WeaponsReplacement
 import io.minoro75.genshinhelper.presentation.character_details.CharacterDetailsScreenViewModel
+import io.minoro75.genshinhelper.presentation.character_details.state.CharacterDetailsState
 import io.minoro75.genshinhelper.presentation.common.LoadingScreen
 import io.minoro75.genshinhelper.presentation.theme.GenshinHelperTheme
 
+@OptIn(ExperimentalLifecycleComposeApi::class)
 @Composable
 fun CharacterScreen(
     onBackPressed: () -> Unit,
     onItemClicked: (String) -> Unit,
     viewModel: CharacterDetailsScreenViewModel = hiltViewModel()
 ) {
-    val state = viewModel.state
+    val state by viewModel.uiState.collectAsStateWithLifecycle()
 
     GenshinHelperTheme {
 
-        if (state.isLoading) {
-            LoadingScreen()
-        } else if (state.errorMessage == null) {
+        when (state) {
+            CharacterDetailsState.Loading -> {
+                LoadingScreen()
+            }
 
-            state.characterDetails?.let { character ->
+            is CharacterDetailsState.Success -> {
 
+                val details = (state as CharacterDetailsState.Success).charactersDetails
                 Column(
                     modifier =
                     Modifier
@@ -52,38 +57,37 @@ fun CharacterScreen(
                         )
                 ) {
                     CharacterInfoView(
-                        imageUrl = character.imageUrl,
-                        rarity = character.rarity,
-                        element = character.element,
-                        name = character.name,
-                        weapon = character.weapon,
-                        talentsBooks = character.talentBooks,
+                        imageUrl = details.imageUrl,
+                        rarity = details.rarity,
+                        element = details.element,
+                        name = details.name,
+                        weapon = details.weapon,
+                        talentsBooks = details.talentBooks,
                         onBackPressed = onBackPressed,
                         onItemClicked = onItemClicked
                     )
                     Spacer(modifier = Modifier.height(16.dp))
                     TalentsPriorityView(
-                        priority = character.talentsPriority
+                        priority = details.talentsPriority
                     )
                     Spacer(modifier = Modifier.height(16.dp))
                     WeeklyBossItemView(
-                        name = character.weeklyBossItem.bossItemName,
-                        url = character.weeklyBossItem.bossItemUrl,
+                        name = details.weeklyBossItem.bossItemName,
+                        url = details.weeklyBossItem.bossItemUrl,
                         onItemClicked = onItemClicked
                     )
                     Spacer(Modifier.height(16.dp))
                     ArtifactsView(
-                        artifacts = character.artifacts,
+                        artifacts = details.artifacts,
                         onItemClicked = onItemClicked
                     )
                     Spacer(Modifier.height(16.dp))
                     WeaponsView(
-                        bis = character.weaponBest,
-                        replacements = character.weaponsReplacements
+                        bis = details.weaponBest,
+                        replacements = details.weaponsReplacements
                     )
                 }
             }
-
         }
     }
 }

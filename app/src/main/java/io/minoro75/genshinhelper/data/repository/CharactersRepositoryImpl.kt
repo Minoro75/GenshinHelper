@@ -20,31 +20,11 @@ import javax.inject.Singleton
 class CharactersRepositoryImpl @Inject constructor(
     private val assetsDataSource: AssetsDataSource
 ) : CharactersRepository {
-    override suspend fun getCharacters(): Flow<Resource<List<CharacterModel>>> {
-        return flow {
-            emit(Resource.Loading(isLoading = true))
-            val list = assetsDataSource.getCharactersList()
-            if (list.isNullOrEmpty()) {
-                emit(Resource.Error("Empty or null list"))
-            } else {
-                emit(Resource.Success(list))
-                emit(Resource.Loading(isLoading = false))
-            }
-        }.flowOn(Dispatchers.IO)
-    }
+    override fun getCharacters(): Flow<List<CharacterModel>?> =
+        assetsDataSource.getCharactersList()
 
-    override suspend fun getCharacterDetails(name: String): Flow<Resource<CharacterDetails>> {
-        return flow {
-            emit(Resource.Loading(isLoading = true))
-            val details = assetsDataSource.getCharacterDetails(name)
-            if (details == null) {
-                emit(Resource.Error("null details"))
-            } else {
-                emit(Resource.Success(details))
-                emit(Resource.Loading(isLoading = false))
-            }
-        }.flowOn(Dispatchers.IO)
-    }
+    override fun getCharacterDetails(name: String): Flow<CharacterDetails?> =
+        assetsDataSource.getCharacterDetails(name)
 
     override suspend fun getTodayBooks(dayOfWeek: DayOfWeek): Flow<Resource<List<TodayBooks>>> {
         return flow {

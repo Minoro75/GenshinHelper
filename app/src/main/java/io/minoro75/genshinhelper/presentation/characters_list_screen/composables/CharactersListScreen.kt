@@ -10,25 +10,30 @@ import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
+import androidx.lifecycle.compose.ExperimentalLifecycleComposeApi
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import io.minoro75.genshinhelper.presentation.characters_list_screen.CharactersListViewModel
+import io.minoro75.genshinhelper.presentation.characters_list_screen.state.CharacterListState
 import io.minoro75.genshinhelper.presentation.common.LoadingScreen
 
+@OptIn(ExperimentalLifecycleComposeApi::class)
 @Composable
 fun CharactersListScreen(
     onCharacterClicked: (String) -> Unit,
     viewModel: CharactersListViewModel = hiltViewModel()
 
 ) {
-    val state = viewModel.state
+    val uiState by viewModel.uiState.collectAsStateWithLifecycle()
 
-    if (state.isLoading) {
-        LoadingScreen()
-    } else if (state.errorMessage == null) {
-
-        state.characters?.let {
+    when (uiState) {
+        CharacterListState.Loading -> {
+            LoadingScreen()
+        }
+        is CharacterListState.Success -> {
             LazyVerticalGrid(
                 columns = GridCells.Adaptive(100.dp),
                 contentPadding = PaddingValues(8.dp),
@@ -38,7 +43,7 @@ fun CharactersListScreen(
                     .fillMaxSize()
                     .background(MaterialTheme.colorScheme.surfaceVariant)
             ) {
-                items(state.characters) { character ->
+                items((uiState as CharacterListState.Success).charactersList) { character ->
                     CharacterItem(character,
                         modifier = Modifier
                             .clickable {
@@ -48,6 +53,5 @@ fun CharactersListScreen(
                 }
             }
         }
-
     }
 }
