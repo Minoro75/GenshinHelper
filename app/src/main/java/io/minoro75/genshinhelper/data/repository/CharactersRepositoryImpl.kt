@@ -1,7 +1,8 @@
 package io.minoro75.genshinhelper.data.repository
 
 import io.minoro75.genshinhelper.common.Resource
-import io.minoro75.genshinhelper.data.assets.AssetsDataSource
+import io.minoro75.genshinhelper.data.assets.en.AssetsDataSource
+import io.minoro75.genshinhelper.data.assets.ru.AssetsDataSourceRu
 import io.minoro75.genshinhelper.domain.model.CharacterDetails
 import io.minoro75.genshinhelper.domain.model.CharacterModel
 import io.minoro75.genshinhelper.domain.model.HowToObtainItem
@@ -13,155 +14,79 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
 import java.time.DayOfWeek
+import java.util.Locale
 import javax.inject.Inject
 import javax.inject.Singleton
 
 @Singleton
 class CharactersRepositoryImpl @Inject constructor(
-    private val assetsDataSource: AssetsDataSource
+    private val assetsDataSource: AssetsDataSource,
+    private val assetsDataSourceRu: AssetsDataSourceRu
 ) : CharactersRepository {
-    override fun getCharacters(): Flow<List<CharacterModel>?> =
-        assetsDataSource.getCharactersList()
-
-    override fun getCharacterDetails(name: String): Flow<CharacterDetails?> =
-        assetsDataSource.getCharacterDetails(name)
-
-    override suspend fun getTodayBooks(dayOfWeek: DayOfWeek): Flow<Resource<List<TodayBooks>>> {
-        return flow {
-            when (dayOfWeek) {
-                DayOfWeek.MONDAY -> {
-                    val books = assetsDataSource.getMonThuBooks()
-                    if (books == null) {
-                        emit(Resource.Error("null books"))
-                    } else {
-                        emit(Resource.Success(books))
-                    }
-                }
-
-                DayOfWeek.TUESDAY -> {
-                    val books = assetsDataSource.getTueFriBooks()
-                    if (books == null) {
-                        emit(Resource.Error("null books"))
-                    } else {
-                        emit(Resource.Success(books))
-                    }
-                }
-
-                DayOfWeek.WEDNESDAY -> {
-                    val books = assetsDataSource.getWedSatBooks()
-                    if (books == null) {
-                        emit(Resource.Error("null books"))
-                    } else {
-                        emit(Resource.Success(books))
-                    }
-                }
-
-                DayOfWeek.THURSDAY -> {
-                    val books = assetsDataSource.getMonThuBooks()
-                    if (books == null) {
-                        emit(Resource.Error("null books"))
-                    } else {
-                        emit(Resource.Success(books))
-                    }
-                }
-
-                DayOfWeek.FRIDAY -> {
-                    val books = assetsDataSource.getTueFriBooks()
-                    if (books == null) {
-                        emit(Resource.Error("null books"))
-                    } else {
-                        emit(Resource.Success(books))
-                    }
-                }
-
-                DayOfWeek.SATURDAY -> {
-                    val books = assetsDataSource.getWedSatBooks()
-                    if (books == null) {
-                        emit(Resource.Error("null books"))
-                    } else {
-                        emit(Resource.Success(books))
-                    }
-                }
-
-                DayOfWeek.SUNDAY -> {
-                    val books = assetsDataSource.getSundayBooks()
-                    if (books == null) {
-                        emit(Resource.Error("null books"))
-                    } else {
-                        emit(Resource.Success(books))
-                    }
-                }
-            }
-        }.flowOn(Dispatchers.IO)
+    override fun getCharacters(): Flow<List<CharacterModel>?> {
+        return when (Locale.getDefault().displayLanguage) {
+            "русский" -> assetsDataSourceRu.getCharactersListRu()
+            else -> assetsDataSource.getCharactersList()
+        }
     }
 
-    override suspend fun getTodayWeaponResources(dayOfWeek: DayOfWeek): Flow<Resource<List<TodayWeaponResources>>> {
-        return flow {
-            when (dayOfWeek) {
-                DayOfWeek.MONDAY -> {
-                    val weaponRes = assetsDataSource.getMonThuWeaponResources()
-                    if (weaponRes == null) {
-                        emit(Resource.Error("null weapons"))
-                    } else {
-                        emit(Resource.Success(weaponRes))
-                    }
-                }
 
-                DayOfWeek.TUESDAY -> {
-                    val weaponRes = assetsDataSource.getTueFriWeaponResources()
-                    if (weaponRes == null) {
-                        emit(Resource.Error("null weapons"))
-                    } else {
-                        emit(Resource.Success(weaponRes))
-                    }
-                }
+    override fun getCharacterDetails(name: String): Flow<CharacterDetails?> {
+        return when (Locale.getDefault().displayLanguage) {
+            "русский" -> assetsDataSourceRu.getCharacterDetails(name)
+            else -> assetsDataSource.getCharacterDetailsEn(name)
+        }
+    }
 
-                DayOfWeek.WEDNESDAY -> {
-                    val weaponRes = assetsDataSource.getWedSatWeaponResources()
-                    if (weaponRes == null) {
-                        emit(Resource.Error("null weapons"))
-                    } else {
-                        emit(Resource.Success(weaponRes))
-                    }
-                }
 
-                DayOfWeek.THURSDAY -> {
-                    val weaponRes = assetsDataSource.getMonThuWeaponResources()
-                    if (weaponRes == null) {
-                        emit(Resource.Error("null weapons"))
-                    } else {
-                        emit(Resource.Success(weaponRes))
-                    }
-                }
-
-                DayOfWeek.FRIDAY -> {
-                    val weaponRes = assetsDataSource.getTueFriWeaponResources()
-                    if (weaponRes == null) {
-                        emit(Resource.Error("null weapons"))
-                    } else {
-                        emit(Resource.Success(weaponRes))
-                    }
-                }
-
-                DayOfWeek.SATURDAY -> {
-                    val weaponRes = assetsDataSource.getWedSatWeaponResources()
-                    if (weaponRes == null) {
-                        emit(Resource.Error("null weapons"))
-                    } else {
-                        emit(Resource.Success(weaponRes))
-                    }
-                }
-
-                DayOfWeek.SUNDAY -> {
-                    val weaponRes = assetsDataSource.getSundayWeaponResources()
-                    if (weaponRes == null) {
-                        emit(Resource.Error("null weapons"))
-                    } else {
-                        emit(Resource.Success(weaponRes))
-                    }
-                }
+    override fun getTodayBooks(dayOfWeek: DayOfWeek): Flow<List<TodayBooks>?> {
+        return when (Locale.getDefault().displayLanguage) {
+            "русский" -> when (dayOfWeek) {
+                DayOfWeek.MONDAY -> assetsDataSourceRu.getMonThuBooksRu()
+                DayOfWeek.TUESDAY -> assetsDataSourceRu.getTueFriBooksRu()
+                DayOfWeek.WEDNESDAY -> assetsDataSourceRu.getWedSatBooksRu()
+                DayOfWeek.THURSDAY -> assetsDataSourceRu.getMonThuBooksRu()
+                DayOfWeek.FRIDAY -> assetsDataSourceRu.getTueFriBooksRu()
+                DayOfWeek.SATURDAY -> assetsDataSourceRu.getWedSatBooksRu()
+                DayOfWeek.SUNDAY -> assetsDataSourceRu.getSundayBooksRu()
             }
-        }.flowOn(Dispatchers.IO)
+
+            else -> when (dayOfWeek) {
+                DayOfWeek.MONDAY -> assetsDataSource.getMonThuBooks()
+                DayOfWeek.TUESDAY -> assetsDataSource.getTueFriBooks()
+                DayOfWeek.WEDNESDAY -> assetsDataSource.getWedSatBooks()
+                DayOfWeek.THURSDAY -> assetsDataSource.getMonThuBooks()
+                DayOfWeek.FRIDAY -> assetsDataSource.getTueFriBooks()
+                DayOfWeek.SATURDAY -> assetsDataSource.getWedSatBooks()
+                DayOfWeek.SUNDAY -> assetsDataSource.getSundayBooks()
+            }
+        }
+    }
+
+    override fun getTodayWeaponResources(dayOfWeek: DayOfWeek): Flow<List<TodayWeaponResources>?> {
+        return when (Locale.getDefault().displayLanguage) {
+            "русский" -> when (dayOfWeek) {
+                // TODO: change to ru data source
+                DayOfWeek.MONDAY -> assetsDataSource.getMonThuWeaponResources()
+                DayOfWeek.TUESDAY -> assetsDataSource.getTueFriWeaponResources()
+                DayOfWeek.WEDNESDAY -> assetsDataSource.getWedSatWeaponResources()
+                DayOfWeek.THURSDAY -> assetsDataSource.getMonThuWeaponResources()
+                DayOfWeek.FRIDAY -> assetsDataSource.getTueFriWeaponResources()
+                DayOfWeek.SATURDAY -> assetsDataSource.getWedSatWeaponResources()
+                DayOfWeek.SUNDAY -> assetsDataSource.getSundayWeaponResources()
+            }
+
+            else -> when (dayOfWeek) {
+                DayOfWeek.MONDAY -> assetsDataSource.getMonThuWeaponResources()
+                DayOfWeek.TUESDAY -> assetsDataSource.getTueFriWeaponResources()
+                DayOfWeek.WEDNESDAY -> assetsDataSource.getWedSatWeaponResources()
+                DayOfWeek.THURSDAY -> assetsDataSource.getMonThuWeaponResources()
+                DayOfWeek.FRIDAY -> assetsDataSource.getTueFriWeaponResources()
+                DayOfWeek.SATURDAY -> assetsDataSource.getWedSatWeaponResources()
+                DayOfWeek.SUNDAY -> assetsDataSource.getSundayWeaponResources()
+            }
+        }
+
     }
 
     override suspend fun getItemLocation(itemName: String): Flow<Resource<List<HowToObtainItem>>> {

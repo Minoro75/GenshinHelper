@@ -6,77 +6,43 @@ import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
-import io.minoro75.genshinhelper.common.Resource
 import io.minoro75.genshinhelper.domain.repository.CharactersRepository
+import io.minoro75.genshinhelper.presentation.home_screen.state.HomeScreenBooksState
 import io.minoro75.genshinhelper.presentation.home_screen.state.HomeScreenState
-import kotlinx.coroutines.async
-import kotlinx.coroutines.launch
+import io.minoro75.genshinhelper.presentation.home_screen.state.HomeScreenWeaponsState
+import kotlinx.coroutines.flow.SharingStarted
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.map
+import kotlinx.coroutines.flow.stateIn
 import java.time.LocalDateTime
 import javax.inject.Inject
 
 @HiltViewModel
 class HomeScreenViewModel @Inject constructor(
-    private val repository: CharactersRepository
+    repository: CharactersRepository
 ) : ViewModel() {
 
     var state by mutableStateOf(HomeScreenState())
         private set
 
-    init {
-        fetchDailyActivities()
-    }
+    private val today = LocalDateTime.now().dayOfWeek
 
-    private fun fetchDailyActivities() {
-        val today = LocalDateTime.now().dayOfWeek
-        viewModelScope.launch {
-            state = state.copy(isLoading = true)
-            val books = async { repository.getTodayBooks(today) }
-            val weapons = async { repository.getTodayWeaponResources(today) }
-
-            books.await().collect {
-                when (it) {
-                    is Resource.Success -> {
-                        state = state.copy(
-                            todayBooks = it.data,
-                            isLoading = false,
-                            errorMessage = null
-                        )
-                    }
-
-                    is Resource.Error -> {
-                        state = state.copy(
-                            todayBooks = null,
-                            errorMessage = it.message,
-                            isLoading = false
-                        )
-                    }
-
-                    else -> Unit
-                }
-            }
-
-            weapons.await().collect {
-                when (it) {
-                    is Resource.Success -> {
-                        state = state.copy(
-                            todayWeaponResources = it.data,
-                            isLoading = false,
-                            errorMessage = null
-                        )
-                    }
-
-                    is Resource.Error -> {
-                        state = state.copy(
-                            todayWeaponResources = null,
-                            errorMessage = it.message,
-                            isLoading = false
-                        )
-                    }
-
-                    else -> Unit
-                }
-            }
-
+    val uiBooksState: StateFlow<HomeScreenBooksState> =
+        repository.getTodayBooks(today).map {
+            HomeScreenBooksState.Success(it!!)
         }
-    }
+            .stateIn(
+                viewModelScope,
+                SharingStarted.WhileSubscribed(5_000),
+                HomeScreenBooksState.Loading
+            )
+
+    val uiWeaponsState: StateFlow<HomeScreenWeaponsState> =
+        repository.getTodayWeaponResources(today).map {
+            HomeScreenWeaponsState.Success(it!!)
+        }
+            .stateIn(
+                viewModelScope, SharingStarted.WhileSubscribed(5_000),
+                HomeScreenWeaponsState.Loading
+            )
 }
