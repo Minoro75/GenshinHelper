@@ -4,11 +4,12 @@ plugins {
     id("com.google.firebase.crashlytics") version "2.9.2"
     id("com.google.gms.google-services") version "4.3.14"
     id("com.google.dagger.hilt.android") version Dependencies.Hilt.daggerHiltVersion
-    id("org.jetbrains.kotlin.kapt") version "1.7.0"
+    id("org.jetbrains.kotlin.kapt") version Dependencies.kotlinVersion
 }
 
 @Suppress("UnstableApiUsage")
 android {
+    namespace = "io.minoro75.genshinhelper"
     compileSdk = Config.compileSdk
 
     defaultConfig {

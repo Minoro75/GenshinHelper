@@ -137,6 +137,34 @@ import io.minoro75.genshinhelper.data.assets.ru.characters_ru.YelanDetailsSource
 import io.minoro75.genshinhelper.data.assets.ru.characters_ru.YoimiyaDetailsSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.characters_ru.YunJinDetailsSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.characters_ru.ZhongliDetailsSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.artifacts_ru.ArchaicPetraDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.artifacts_ru.BlizzardStrayerDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.artifacts_ru.BloodstainedChivalryDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.artifacts_ru.CrimsonWitchOfFlamesDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.artifacts_ru.DeepwoodMemoriesDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.artifacts_ru.EchoesOfTheOfferingDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.artifacts_ru.EmblemOfSeveredFateDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.artifacts_ru.GildedDreamsDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.artifacts_ru.GladiatorsFinaleDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.artifacts_ru.HeartOfDepthDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.artifacts_ru.HuskOfOpulentDreamsDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.artifacts_ru.LavawalkerDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.artifacts_ru.MaidenBelovedDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.artifacts_ru.NoblesseObligeDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.artifacts_ru.OceanHuedClamDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.artifacts_ru.PaleFlameDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.artifacts_ru.RetracingBolideDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.artifacts_ru.ShimenavasReminiscenceDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.artifacts_ru.TenacityOfTheMillelithDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.artifacts_ru.ThunderingFuryDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.artifacts_ru.ThundersootherDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.artifacts_ru.VermilionHereafterDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.artifacts_ru.ViridescentVenererDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.artifacts_ru.WanderersTroupeDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.weapon_resources_ru.MonThuWeaponsResSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.weapon_resources_ru.SundayWeaponsResSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.weapon_resources_ru.TueFriWeaponsResSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.weapon_resources_ru.WedSatWeaponsResSourceRu
 import io.minoro75.genshinhelper.domain.model.CharacterDetails
 import io.minoro75.genshinhelper.domain.model.CharacterModel
 import io.minoro75.genshinhelper.domain.model.HowToObtainItem
@@ -164,22 +192,22 @@ class AssetsDataSourceRu @Inject constructor(
 
     fun getMonThuWeaponResourcesRu() =
         flow {
-            emit(weaponsAdapter.fromJson(MonThuWeaponsResSource.resourcesList))
+            emit(weaponsAdapter.fromJson(MonThuWeaponsResSourceRu.resourcesList))
         }.flowOn(Dispatchers.IO)
 
     fun getTueFriWeaponResourcesRu() =
         flow {
-            emit(weaponsAdapter.fromJson(TueFriWeaponsResSource.resourcesList))
+            emit(weaponsAdapter.fromJson(TueFriWeaponsResSourceRu.resourcesList))
         }.flowOn(Dispatchers.IO)
 
     fun getWedSatWeaponResourcesRu() =
         flow {
-            emit(weaponsAdapter.fromJson(WedSatWeaponsResSource.resourcesList))
+            emit(weaponsAdapter.fromJson(WedSatWeaponsResSourceRu.resourcesList))
         }.flowOn(Dispatchers.IO)
 
     fun getSundayWeaponResourcesRu() =
         flow {
-            emit(weaponsAdapter.fromJson(SundayWeaponsResSource.resourcesList))
+            emit(weaponsAdapter.fromJson(SundayWeaponsResSourceRu.resourcesList))
         }.flowOn(Dispatchers.IO)
 
     fun getMonThuBooksRu() = flow {
@@ -202,89 +230,90 @@ class AssetsDataSourceRu @Inject constructor(
         return flow {
             when (itemName) {
                 // Artifacts
-                "Archaic Petra" -> emit(itemLocationAdapter.fromJson(io.minoro75.genshinhelper.data.assets.en.items.artifacts.ArchaicPetraDataSource.sourcesList))
+                "Архаичный камень" -> emit(itemLocationAdapter.fromJson(ArchaicPetraDataSourceRu.sourcesList))
 
-                "Blizzard Strayer" -> emit(itemLocationAdapter.fromJson(BlizzardStrayerDataSource.sourcesList))
+                "Заблудший в метели" -> emit(itemLocationAdapter.fromJson(
+                    BlizzardStrayerDataSourceRu.sourcesList))
 
-                "Bloodstained Chivalry" -> emit(
+                "Рыцарь крови" -> emit(
                     itemLocationAdapter.fromJson(
-                        BloodstainedChivalryDataSource.sourcesList
+                        BloodstainedChivalryDataSourceRu.sourcesList
                     )
                 )
 
-                "Crimson Witch of Flames" -> emit(
+                "Горящая алая ведьма" -> emit(
                     itemLocationAdapter.fromJson(
-                        CrimsonWitchOfFlamesDataSource.sourcesList
+                        CrimsonWitchOfFlamesDataSourceRu.sourcesList
                     )
                 )
 
-                "Deepwood Memories" -> emit(itemLocationAdapter.fromJson(DeepwoodMemoriesDataSource.sourcesList))
+                "Воспоминания дремучего леса" -> emit(itemLocationAdapter.fromJson(DeepwoodMemoriesDataSourceRu.sourcesList))
 
-                "Echoes of An Offering" -> emit(
+                "Отголоски подношения" -> emit(
                     itemLocationAdapter.fromJson(
-                        EchoesOfTheOfferingDataSource.sourcesList
+                        EchoesOfTheOfferingDataSourceRu.sourcesList
                     )
                 )
 
-                "Emblem of Severed Fate" -> emit(
+                "Эмблема рассечённой судьбы" -> emit(
                     itemLocationAdapter.fromJson(
-                        EmblemOfSeveredFateDataSource.sourcesList
+                        EmblemOfSeveredFateDataSourceRu.sourcesList
                     )
                 )
 
-                "Gilded Dreams" -> emit(itemLocationAdapter.fromJson(GildedDreamsDataSource.sourcesList))
+                "Позолоченные сны" -> emit(itemLocationAdapter.fromJson(GildedDreamsDataSourceRu.sourcesList))
 
-                "Gladiator's Finale" -> emit(itemLocationAdapter.fromJson(GladiatorsFinaleDataSource.sourcesList))
+                "Конец гладиатора" -> emit(itemLocationAdapter.fromJson(GladiatorsFinaleDataSourceRu.sourcesList))
 
-                "Heart of Depth" -> emit(itemLocationAdapter.fromJson(HeartOfDepthDataSource.sourcesList))
+                "Сердце глубин" -> emit(itemLocationAdapter.fromJson(HeartOfDepthDataSourceRu.sourcesList))
 
-                "Husk of Opulent Dreams" -> emit(
+                "Кокон сладких грёз" -> emit(
                     itemLocationAdapter.fromJson(
-                        HuskOfOpulentDreamsDataSource.sourcesList
+                        HuskOfOpulentDreamsDataSourceRu.sourcesList
                     )
                 )
 
-                "Lavawalker" -> emit(itemLocationAdapter.fromJson(LavawalkerDataSource.sourcesList))
+                "Ступающий по лаве" -> emit(itemLocationAdapter.fromJson(LavawalkerDataSourceRu.sourcesList))
 
-                "Maiden Beloved" -> emit(itemLocationAdapter.fromJson(MaidenBelovedDataSource.sourcesList))
+                "Возлюбленная юная дева" -> emit(itemLocationAdapter.fromJson(MaidenBelovedDataSourceRu.sourcesList))
 
-                "Noblesse Oblige" -> emit(itemLocationAdapter.fromJson(NoblesseObligeDataSource.sourcesList))
+                "Церемония древней знати" -> emit(itemLocationAdapter.fromJson(NoblesseObligeDataSourceRu.sourcesList))
 
-                "Ocean-Hued Clam" -> emit(itemLocationAdapter.fromJson(OceanHuedClamDataSource.sourcesList))
+                "Моллюск морских красок" -> emit(itemLocationAdapter.fromJson(OceanHuedClamDataSourceRu.sourcesList))
 
-                "Pale Flame" -> emit(itemLocationAdapter.fromJson(PaleFlameDataSource.sourcesList))
+                "Бледный огонь" -> emit(itemLocationAdapter.fromJson(PaleFlameDataSourceRu.sourcesList))
 
-                "Retracing Bolide" -> emit(itemLocationAdapter.fromJson(RetracingBolideDataSource.sourcesList))
+                "Встречная комета" -> emit(itemLocationAdapter.fromJson(RetracingBolideDataSourceRu.sourcesList))
 
-                "Shimenawa's Reminiscence" -> emit(
+                "Воспоминания Симэнавы" -> emit(
                     itemLocationAdapter.fromJson(
-                        ShimenavasReminiscenceDataSource.sourcesList
+                        ShimenavasReminiscenceDataSourceRu.sourcesList
                     )
                 )
 
-                "Tenacity of the Millelith" -> emit(
+                "Стойкость Миллелита" -> emit(
                     itemLocationAdapter.fromJson(
-                        TenacityOfTheMillelithDataSource.sourcesList
+                        TenacityOfTheMillelithDataSourceRu.sourcesList
                     )
                 )
 
-                "Thundering Fury" -> emit(itemLocationAdapter.fromJson(ThunderingFuryDataSource.sourcesList))
+                "Громогласный рёв ярости" -> emit(itemLocationAdapter.fromJson(ThunderingFuryDataSourceRu.sourcesList))
 
-                "Thundersoother" -> emit(itemLocationAdapter.fromJson(ThundersootherDataSource.sourcesList))
+                "Усмиряющий гром" -> emit(itemLocationAdapter.fromJson(ThundersootherDataSourceRu.sourcesList))
 
-                "Vermillion Hereafter" -> emit(
+                "Киноварное загробье" -> emit(
                     itemLocationAdapter.fromJson(
-                        VermilionHereafterDataSource.sourcesList
+                        VermilionHereafterDataSourceRu.sourcesList
                     )
                 )
 
-                "Viridescent Venerer" -> emit(
+                "Изумрудная тень" -> emit(
                     itemLocationAdapter.fromJson(
-                        ViridescentVenererDataSource.sourcesList
+                        ViridescentVenererDataSourceRu.sourcesList
                     )
                 )
 
-                "Wanderer's Troupe" -> emit(itemLocationAdapter.fromJson(WanderersTroupeDataSource.sourcesList))
+                "Странствующий ансамбль" -> emit(itemLocationAdapter.fromJson(WanderersTroupeDataSourceRu.sourcesList))
                 // Boss items
                 "Ashen Heart" -> emit(itemLocationAdapter.fromJson(AshenHeartDataSource.sourcesList))
 

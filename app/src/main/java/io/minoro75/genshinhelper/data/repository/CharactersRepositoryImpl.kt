@@ -1,6 +1,5 @@
 package io.minoro75.genshinhelper.data.repository
 
-import io.minoro75.genshinhelper.common.Resource
 import io.minoro75.genshinhelper.data.assets.en.AssetsDataSource
 import io.minoro75.genshinhelper.data.assets.ru.AssetsDataSourceRu
 import io.minoro75.genshinhelper.domain.model.CharacterDetails
@@ -9,10 +8,7 @@ import io.minoro75.genshinhelper.domain.model.HowToObtainItem
 import io.minoro75.genshinhelper.domain.model.TodayBooks
 import io.minoro75.genshinhelper.domain.model.TodayWeaponResources
 import io.minoro75.genshinhelper.domain.repository.CharactersRepository
-import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.flow
-import kotlinx.coroutines.flow.flowOn
 import java.time.DayOfWeek
 import java.util.Locale
 import javax.inject.Inject
@@ -66,14 +62,13 @@ class CharactersRepositoryImpl @Inject constructor(
     override fun getTodayWeaponResources(dayOfWeek: DayOfWeek): Flow<List<TodayWeaponResources>?> {
         return when (Locale.getDefault().displayLanguage) {
             "русский" -> when (dayOfWeek) {
-                // TODO: change to ru data source
-                DayOfWeek.MONDAY -> assetsDataSource.getMonThuWeaponResources()
-                DayOfWeek.TUESDAY -> assetsDataSource.getTueFriWeaponResources()
-                DayOfWeek.WEDNESDAY -> assetsDataSource.getWedSatWeaponResources()
-                DayOfWeek.THURSDAY -> assetsDataSource.getMonThuWeaponResources()
-                DayOfWeek.FRIDAY -> assetsDataSource.getTueFriWeaponResources()
-                DayOfWeek.SATURDAY -> assetsDataSource.getWedSatWeaponResources()
-                DayOfWeek.SUNDAY -> assetsDataSource.getSundayWeaponResources()
+                DayOfWeek.MONDAY -> assetsDataSourceRu.getMonThuWeaponResourcesRu()
+                DayOfWeek.TUESDAY -> assetsDataSourceRu.getTueFriWeaponResourcesRu()
+                DayOfWeek.WEDNESDAY -> assetsDataSourceRu.getWedSatWeaponResourcesRu()
+                DayOfWeek.THURSDAY -> assetsDataSourceRu.getMonThuWeaponResourcesRu()
+                DayOfWeek.FRIDAY -> assetsDataSourceRu.getTueFriWeaponResourcesRu()
+                DayOfWeek.SATURDAY -> assetsDataSourceRu.getWedSatWeaponResourcesRu()
+                DayOfWeek.SUNDAY -> assetsDataSourceRu.getSundayWeaponResourcesRu()
             }
 
             else -> when (dayOfWeek) {
@@ -86,20 +81,12 @@ class CharactersRepositoryImpl @Inject constructor(
                 DayOfWeek.SUNDAY -> assetsDataSource.getSundayWeaponResources()
             }
         }
-
     }
 
-    override suspend fun getItemLocation(itemName: String): Flow<Resource<List<HowToObtainItem>>> {
-        return flow {
-            emit(Resource.Loading(isLoading = true))
-            val details = assetsDataSource.getItemLocation(itemName)
-            if (details == null) {
-                emit(Resource.Error("null details"))
-            } else {
-                emit(Resource.Success(details))
-                emit(Resource.Loading(isLoading = false))
-            }
-        }.flowOn(Dispatchers.IO)
+    override fun getItemLocation(itemName: String): Flow<List<HowToObtainItem>?> {
+        return when (Locale.getDefault().displayLanguage) {
+            "русский" -> assetsDataSourceRu.getItemLocationRu(itemName)
+            else -> assetsDataSource.getItemLocation(itemName)
+        }
     }
-
 }

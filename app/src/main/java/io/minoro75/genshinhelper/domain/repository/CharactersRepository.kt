@@ -19,5 +19,5 @@ interface CharactersRepository {
     fun getCharacterDetails(name: String): Flow<CharacterDetails?>
     fun getTodayBooks(dayOfWeek: DayOfWeek): Flow<List<TodayBooks>?>
     fun getTodayWeaponResources(dayOfWeek: DayOfWeek): Flow<List<TodayWeaponResources>?>
-    suspend fun getItemLocation(itemName:String): Flow<Resource<List<HowToObtainItem>>>
+    fun getItemLocation(itemName:String): Flow<List<HowToObtainItem>?>
 }

@@ -1,10 +1,12 @@
 object Dependencies {
 
+    const val kotlinVersion = "1.7.10"
+
     object Compose {
-        const val version = "1.2.0"
-        const val material3Version = "1.0.0-alpha14"
+        const val version = "1.3.1"
+        const val material3Version = "1.1.0-alpha02"
         const val navigationVersion = "2.5.2"
-        const val lifecycle_version = "2.6.0-alpha01"
+        const val lifecycle_version = "2.6.0-alpha03"
 
         const val ui = "androidx.compose.ui:ui:$version"
         const val runtime = "androidx.compose.runtime:runtime:$version"
@@ -24,7 +26,7 @@ object Dependencies {
     }
 
     object Hilt {
-        const val daggerHiltVersion = "2.43.2"
+        const val daggerHiltVersion = "2.44"
 
         const val hilt = "com.google.dagger:hilt-android:$daggerHiltVersion"
         const val kaptHilt = "com.google.dagger:hilt-compiler:$daggerHiltVersion"

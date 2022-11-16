@@ -147,7 +147,6 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
-import kotlinx.coroutines.withContext
 import javax.inject.Inject
 
 /**
@@ -200,278 +199,222 @@ class AssetsDataSource @Inject constructor(
         emit(booksAdapter.fromJson(SundayBooksSource.booksList))
     }.flowOn(Dispatchers.IO)
 
-    suspend fun getItemLocation(itemName: String): List<HowToObtainItem>? {
-        return when (itemName) {
-            // Artifacts
-            "Archaic Petra" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(ArchaicPetraDataSource.sourcesList)
-            }
+    fun getItemLocation(itemName: String): Flow<List<HowToObtainItem>?> {
+        return flow {
+            when (itemName) {
+                // Artifacts
+                "Archaic Petra" -> emit(itemLocationAdapter.fromJson(ArchaicPetraDataSource.sourcesList))
 
-            "Blizzard Strayer" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(BlizzardStrayerDataSource.sourcesList)
-            }
+                "Blizzard Strayer" -> emit(itemLocationAdapter.fromJson(BlizzardStrayerDataSource.sourcesList))
 
-            "Bloodstained Chivalry" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(BloodstainedChivalryDataSource.sourcesList)
-            }
+                "Bloodstained Chivalry" -> emit(
+                    itemLocationAdapter.fromJson(
+                        BloodstainedChivalryDataSource.sourcesList
+                    )
+                )
 
-            "Crimson Witch of Flames" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(CrimsonWitchOfFlamesDataSource.sourcesList)
-            }
+                "Crimson Witch of Flames" -> emit(
+                    itemLocationAdapter.fromJson(
+                        CrimsonWitchOfFlamesDataSource.sourcesList
+                    )
+                )
 
-            "Deepwood Memories" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(DeepwoodMemoriesDataSource.sourcesList)
-            }
+                "Deepwood Memories" -> emit(itemLocationAdapter.fromJson(DeepwoodMemoriesDataSource.sourcesList))
 
-            "Echoes of An Offering" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(EchoesOfTheOfferingDataSource.sourcesList)
-            }
+                "Echoes of An Offering" -> emit(
+                    itemLocationAdapter.fromJson(
+                        EchoesOfTheOfferingDataSource.sourcesList
+                    )
+                )
 
-            "Emblem of Severed Fate" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(EmblemOfSeveredFateDataSource.sourcesList)
-            }
+                "Emblem of Severed Fate" -> emit(
+                    itemLocationAdapter.fromJson(
+                        EmblemOfSeveredFateDataSource.sourcesList
+                    )
+                )
 
-            "Gilded Dreams" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(GildedDreamsDataSource.sourcesList)
-            }
+                "Gilded Dreams" -> emit(itemLocationAdapter.fromJson(GildedDreamsDataSource.sourcesList))
 
-            "Gladiator's Finale" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(GladiatorsFinaleDataSource.sourcesList)
-            }
+                "Gladiator's Finale" -> emit(itemLocationAdapter.fromJson(GladiatorsFinaleDataSource.sourcesList))
 
-            "Heart of Depth" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(HeartOfDepthDataSource.sourcesList)
-            }
+                "Heart of Depth" -> emit(itemLocationAdapter.fromJson(HeartOfDepthDataSource.sourcesList))
 
-            "Husk of Opulent Dreams" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(HuskOfOpulentDreamsDataSource.sourcesList)
-            }
+                "Husk of Opulent Dreams" -> emit(
+                    itemLocationAdapter.fromJson(
+                        HuskOfOpulentDreamsDataSource.sourcesList
+                    )
+                )
 
-            "Lavawalker" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(LavawalkerDataSource.sourcesList)
-            }
+                "Lavawalker" -> emit(itemLocationAdapter.fromJson(LavawalkerDataSource.sourcesList))
 
-            "Maiden Beloved" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(MaidenBelovedDataSource.sourcesList)
-            }
+                "Maiden Beloved" -> emit(itemLocationAdapter.fromJson(MaidenBelovedDataSource.sourcesList))
 
-            "Noblesse Oblige" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(NoblesseObligeDataSource.sourcesList)
-            }
+                "Noblesse Oblige" -> emit(itemLocationAdapter.fromJson(NoblesseObligeDataSource.sourcesList))
 
-            "Ocean-Hued Clam" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(OceanHuedClamDataSource.sourcesList)
-            }
+                "Ocean-Hued Clam" -> emit(itemLocationAdapter.fromJson(OceanHuedClamDataSource.sourcesList))
 
-            "Pale Flame" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(PaleFlameDataSource.sourcesList)
-            }
+                "Pale Flame" -> emit(itemLocationAdapter.fromJson(PaleFlameDataSource.sourcesList))
 
-            "Retracing Bolide" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(RetracingBolideDataSource.sourcesList)
-            }
+                "Retracing Bolide" -> emit(itemLocationAdapter.fromJson(RetracingBolideDataSource.sourcesList))
 
-            "Shimenawa's Reminiscence" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(ShimenavasReminiscenceDataSource.sourcesList)
-            }
+                "Shimenawa's Reminiscence" -> emit(
+                    itemLocationAdapter.fromJson(
+                        ShimenavasReminiscenceDataSource.sourcesList
+                    )
+                )
 
-            "Tenacity of the Millelith" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(TenacityOfTheMillelithDataSource.sourcesList)
-            }
+                "Tenacity of the Millelith" -> emit(
+                    itemLocationAdapter.fromJson(
+                        TenacityOfTheMillelithDataSource.sourcesList
+                    )
+                )
 
-            "Thundering Fury" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(ThunderingFuryDataSource.sourcesList)
-            }
+                "Thundering Fury" -> emit(itemLocationAdapter.fromJson(ThunderingFuryDataSource.sourcesList))
 
-            "Thundersoother" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(ThundersootherDataSource.sourcesList)
-            }
+                "Thundersoother" -> emit(itemLocationAdapter.fromJson(ThundersootherDataSource.sourcesList))
 
-            "Vermillion Hereafter" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(VermilionHereafterDataSource.sourcesList)
-            }
+                "Vermillion Hereafter" -> emit(
+                    itemLocationAdapter.fromJson(
+                        VermilionHereafterDataSource.sourcesList
+                    )
+                )
 
-            "Viridescent Venerer" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(ViridescentVenererDataSource.sourcesList)
-            }
+                "Viridescent Venerer" -> emit(
+                    itemLocationAdapter.fromJson(
+                        ViridescentVenererDataSource.sourcesList
+                    )
+                )
 
-            "Wanderer's Troupe" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(WanderersTroupeDataSource.sourcesList)
-            }
-            // Boss items
-            "Ashen Heart" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(AshenHeartDataSource.sourcesList)
-            }
+                "Wanderer's Troupe" -> emit(itemLocationAdapter.fromJson(WanderersTroupeDataSource.sourcesList))
+                // Boss items
+                "Ashen Heart" -> emit(itemLocationAdapter.fromJson(AshenHeartDataSource.sourcesList))
 
-            "Bloodjade Branch" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(BloodjadeBranchDataSource.sourcesList)
-            }
+                "Bloodjade Branch" -> emit(itemLocationAdapter.fromJson(BloodjadeBranchDataSource.sourcesList))
 
-            "Dragon Lord's Crown" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(DragonLordsCrownDataSource.sourcesList)
-            }
+                "Dragon Lord's Crown" -> emit(
+                    itemLocationAdapter.fromJson(
+                        DragonLordsCrownDataSource.sourcesList
+                    )
+                )
 
-            "Dvalin's Claw" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(DvalinsClawDataSource.sourcesList)
-            }
+                "Dvalin's Claw" -> emit(itemLocationAdapter.fromJson(DvalinsClawDataSource.sourcesList))
 
-            "Dvalin's Plume" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(DvalinsPlumeDataSource.sourcesList)
-            }
+                "Dvalin's Plume" -> emit(itemLocationAdapter.fromJson(DvalinsPlumeDataSource.sourcesList))
 
-            "Dvalin's Sigh" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(DvalinsSighDataSource.sourcesList)
-            }
+                "Dvalin's Sigh" -> emit(itemLocationAdapter.fromJson(DvalinsSighDataSource.sourcesList))
 
-            "Gilded Scale" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(GildedScaleDataSource.sourcesList)
-            }
+                "Gilded Scale" -> emit(itemLocationAdapter.fromJson(GildedScaleDataSource.sourcesList))
 
-            "Hellfire Butterfly" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(HellfireButterflyDataSource.sourcesList)
-            }
+                "Hellfire Butterfly" -> emit(
+                    itemLocationAdapter.fromJson(
+                        HellfireButterflyDataSource.sourcesList
+                    )
+                )
 
-            "Molten Moment" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(MoltenMomentDataSource.sourcesList)
-            }
+                "Molten Moment" -> emit(itemLocationAdapter.fromJson(MoltenMomentDataSource.sourcesList))
 
-            "Mudra of the Malefic General" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(MudraOfTheMaleficGeneralDataSource.sourcesList)
-            }
+                "Mudra of the Malefic General" -> emit(
+                    itemLocationAdapter.fromJson(
+                        MudraOfTheMaleficGeneralDataSource.sourcesList
+                    )
+                )
 
-            "Ring of Boreas" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(RingOfBoreasDataSource.sourcesList)
-            }
+                "Ring of Boreas" -> emit(itemLocationAdapter.fromJson(RingOfBoreasDataSource.sourcesList))
 
-            "Shadow of the Warrior" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(ShadowOfTheWarriorDataSource.sourcesList)
-            }
+                "Shadow of the Warrior" -> emit(
+                    itemLocationAdapter.fromJson(
+                        ShadowOfTheWarriorDataSource.sourcesList
+                    )
+                )
 
-            "Shard of a Foul Legacy" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(ShardOfFoulLegacyDataSource.sourcesList)
-            }
+                "Shard of a Foul Legacy" -> emit(
+                    itemLocationAdapter.fromJson(
+                        ShardOfFoulLegacyDataSource.sourcesList
+                    )
+                )
 
-            "Spirit Locket of Boreas" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(SpiritLocketOfBoreasDataSource.sourcesList)
-            }
+                "Spirit Locket of Boreas" -> emit(
+                    itemLocationAdapter.fromJson(
+                        SpiritLocketOfBoreasDataSource.sourcesList
+                    )
+                )
 
-            "Tail of Boreas" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(TailOfBoreasDataSource.sourcesList)
-            }
+                "Tail of Boreas" -> emit(itemLocationAdapter.fromJson(TailOfBoreasDataSource.sourcesList))
 
-            "Tears of the Calamitous God" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(TearsOfTheCalamitiousGodDataSource.sourcesList)
-            }
+                "Tears of the Calamitous God" -> emit(
+                    itemLocationAdapter.fromJson(
+                        TearsOfTheCalamitiousGodDataSource.sourcesList
+                    )
+                )
 
-            "The Meaning of Aeons" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(TheMeaningOfAeonsDataSource.sourcesList)
-            }
+                "The Meaning of Aeons" -> emit(
+                    itemLocationAdapter.fromJson(
+                        TheMeaningOfAeonsDataSource.sourcesList
+                    )
+                )
 
-            "Tusk of Monoceros Caeli" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(TuskOfMonocerosCaeliDataSource.sourcesList)
-            }
+                "Tusk of Monoceros Caeli" -> emit(
+                    itemLocationAdapter.fromJson(
+                        TuskOfMonocerosCaeliDataSource.sourcesList
+                    )
+                )
 
-            "Puppet Strings" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(PuppetStringsDataSource.sourcesList)
-            }
-            // Books
-            "Admonition" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(AdmonitionDataSource.sourcesList)
-            }
+                "Puppet Strings" -> emit(itemLocationAdapter.fromJson(PuppetStringsDataSource.sourcesList))
+                // Books
+                "Admonition" -> emit(itemLocationAdapter.fromJson(AdmonitionDataSource.sourcesList))
 
-            "Ballad" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(BalladDataSource.sourcesList)
-            }
+                "Ballad" -> emit(itemLocationAdapter.fromJson(BalladDataSource.sourcesList))
 
-            "Diligence" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(DiligenceDataSource.sourcesList)
-            }
+                "Diligence" -> emit(itemLocationAdapter.fromJson(DiligenceDataSource.sourcesList))
 
-            "Elegance" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(EleganceDataSource.sourcesList)
-            }
+                "Elegance" -> emit(itemLocationAdapter.fromJson(EleganceDataSource.sourcesList))
 
-            "Freedom" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(FreedomDataSource.sourcesList)
-            }
+                "Freedom" -> emit(itemLocationAdapter.fromJson(FreedomDataSource.sourcesList))
 
-            "Gold" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(GoldDataSource.sourcesList)
-            }
+                "Gold" -> emit(itemLocationAdapter.fromJson(GoldDataSource.sourcesList))
 
-            "Ingenuity" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(IngenuityDataSource.sourcesList)
-            }
+                "Ingenuity" -> emit(itemLocationAdapter.fromJson(IngenuityDataSource.sourcesList))
 
-            "Light" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(LightDataSource.sourcesList)
-            }
+                "Light" -> emit(itemLocationAdapter.fromJson(LightDataSource.sourcesList))
 
-            "Praxis" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(PraxisDataSource.sourcesList)
-            }
+                "Praxis" -> emit(itemLocationAdapter.fromJson(PraxisDataSource.sourcesList))
 
-            "Prosperity" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(ProsperityDataSource.sourcesList)
-            }
+                "Prosperity" -> emit(itemLocationAdapter.fromJson(ProsperityDataSource.sourcesList))
 
-            "Resistance" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(ResistanceDataSource.sourcesList)
-            }
+                "Resistance" -> emit(itemLocationAdapter.fromJson(ResistanceDataSource.sourcesList))
 
-            "Transience" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(TransienceDataSource.sourcesList)
-            }
-            // Weapon resources
-            "Aerosiderite" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(AerosideriteDataSource.sourcesList)
-            }
+                "Transience" -> emit(itemLocationAdapter.fromJson(TransienceDataSource.sourcesList))
+                // Weapon resources
+                "Aerosiderite" -> emit(itemLocationAdapter.fromJson(AerosideriteDataSource.sourcesList))
 
-            "Boreal Wolf" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(BorealWolfDataSource.sourcesList)
-            }
+                "Boreal Wolf" -> emit(itemLocationAdapter.fromJson(BorealWolfDataSource.sourcesList))
 
-            "Dandelion Gladiator" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(DandelionGladiatorDataSource.sourcesList)
-            }
+                "Dandelion Gladiator" -> emit(
+                    itemLocationAdapter.fromJson(
+                        DandelionGladiatorDataSource.sourcesList
+                    )
+                )
 
-            "Decarabian" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(DecarabianDataSource.sourcesList)
-            }
+                "Decarabian" -> emit(itemLocationAdapter.fromJson(DecarabianDataSource.sourcesList))
 
-            "Distant Sea" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(DistantSeaDataSource.sourcesList)
-            }
+                "Distant Sea" -> emit(itemLocationAdapter.fromJson(DistantSeaDataSource.sourcesList))
 
-            "Forest Dew" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(ForestDewDataSource.sourcesList)
-            }
+                "Forest Dew" -> emit(itemLocationAdapter.fromJson(ForestDewDataSource.sourcesList))
 
-            "Guyun" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(GuyunDataSource.sourcesList)
-            }
+                "Guyun" -> emit(itemLocationAdapter.fromJson(GuyunDataSource.sourcesList))
 
-            "Mask" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(MaskDataSource.sourcesList)
-            }
+                "Mask" -> emit(itemLocationAdapter.fromJson(MaskDataSource.sourcesList))
 
-            "Mist Veiled Elixir" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(MistVeiledDataSource.sourcesList)
-            }
+                "Mist Veiled Elixir" -> emit(itemLocationAdapter.fromJson(MistVeiledDataSource.sourcesList))
 
-            "Narukami" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(NarukamiDataSource.sourcesList)
-            }
+                "Narukami" -> emit(itemLocationAdapter.fromJson(NarukamiDataSource.sourcesList))
 
-            "Oasis Garden" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(OasisGardenDataSource.sourcesList)
-            }
+                "Oasis Garden" -> emit(itemLocationAdapter.fromJson(OasisGardenDataSource.sourcesList))
 
-            "Scorching Might" -> withContext(Dispatchers.IO) {
-                itemLocationAdapter.fromJson(ScorchingMightDataSource.sourcesList)
-            }
+                "Scorching Might" -> emit(itemLocationAdapter.fromJson(ScorchingMightDataSource.sourcesList))
 
-            else -> throw IllegalArgumentException("there is no artifact with name $itemName")
+                else -> throw IllegalArgumentException("there is no artifact with name $itemName")
+            }
         }
     }
 
@@ -627,6 +570,7 @@ class AssetsDataSource @Inject constructor(
 
                 else -> throw IllegalArgumentException("There is no character with name : $characterName")
             }
-        }.flowOn(Dispatchers.IO)
+        }
+
     }
 }

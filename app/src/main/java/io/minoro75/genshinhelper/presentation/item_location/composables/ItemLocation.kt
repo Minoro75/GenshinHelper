@@ -26,6 +26,7 @@ import androidx.compose.ui.unit.dp
 import io.minoro75.genshinhelper.domain.model.HowToObtainItem
 import io.minoro75.genshinhelper.presentation.theme.GenshinHelperTheme
 import io.minoro75.genshinhelper.presentation.theme.GenshinTypography
+import java.util.Locale
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -51,7 +52,10 @@ fun ItemLocation(
 
                 Spacer(modifier = Modifier.height(8.dp))
 
-                Image(painter = painterResource(id = item.getImageResource())
+                Image(painter = painterResource(id = when (Locale.getDefault().displayLanguage) {
+                    "русский" -> item.getImageResourceRu()
+                    else -> item.getImageResource()
+                })
                     , contentDescription = item.domainName,
                     alignment = Alignment.Center,
                 modifier = modifier
