@@ -114,7 +114,7 @@ object TueFriBooksSourceRu {
             ]
           },
           {
-            "book_name": "об Элегантности",
+            "book_name": "об Изяществе",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/6/6f/Item_Philosophies_of_Elegance.png",
             "characters": [
               {

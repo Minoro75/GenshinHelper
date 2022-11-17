@@ -154,7 +154,7 @@ object MonThuBooksSourceRu {
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9b/Item_Philosophies_of_Admonition.png",
             "characters": [
             {
-                "name": "Кандакья",
+                "name": "Кандакия",
                 "rarity": 4,
                 "element": "hydro",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/bf/Character_Candace_Thumb.png"

@@ -154,7 +154,7 @@ object SundayBooksSourceRu {
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9b/Item_Philosophies_of_Admonition.png",
             "characters": [
             {
-                "name": "Кандакья",
+                "name": "Кандакия",
                 "rarity": 4,
                 "element": "hydro",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/bf/Character_Candace_Thumb.png"
@@ -282,7 +282,7 @@ object SundayBooksSourceRu {
             ]
           },
           {
-            "book_name": "об Элегантности",
+            "book_name": "об Изяществе",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/6/6f/Item_Philosophies_of_Elegance.png",
             "characters": [
               {
@@ -348,7 +348,7 @@ object SundayBooksSourceRu {
             ]
           },
           {
-            "book_name": "о Балладах",
+            "book_name": "о Поэзии",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/7e/Item_Philosophies_of_Ballad.png",
             "characters": [
               {

@@ -13,7 +13,7 @@ object VentiDetailsSourceRu {
           "weapon": "bow",
           "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/8d/Character_Venti_Thumb.png",
           "talents_books": {
-            "book_name": "о Балладах",
+            "book_name": "о Поэзии",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/7e/Item_Philosophies_of_Ballad.png",
             "book_days": "Среда/Суббота/Воскресенье"
           },

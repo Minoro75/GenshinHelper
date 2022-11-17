@@ -13,7 +13,7 @@ object KujouSaraDetailsSourceRu {
           "weapon": "bow",
           "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/96/Character_Kujou_Sara_Thumb.png",
           "talents_books": {
-            "book_name": "об Элегантности",
+            "book_name": "об Изяществе",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/6/6f/Item_Philosophies_of_Elegance.png",
             "book_days": "Вторник/Пятница/Воскресенье"
           },

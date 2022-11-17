@@ -13,7 +13,7 @@ object KeqingDetailsSourceRu {
           "weapon": "sword",
           "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/06/Character_Keqing_Thumb.png",
           "talents_books": {
-            "book_name": "об Процветании",
+            "book_name": "о Процветании",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/bd/Item_Philosophies_of_Prosperity.png",
             "book_days": "Понедельник/Четверг/Воскресенье"
           },

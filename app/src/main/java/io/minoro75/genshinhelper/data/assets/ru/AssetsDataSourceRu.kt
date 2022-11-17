@@ -72,8 +72,18 @@ import io.minoro75.genshinhelper.data.assets.en.weapons_resources.MonThuWeaponsR
 import io.minoro75.genshinhelper.data.assets.en.weapons_resources.SundayWeaponsResSource
 import io.minoro75.genshinhelper.data.assets.en.weapons_resources.TueFriWeaponsResSource
 import io.minoro75.genshinhelper.data.assets.en.weapons_resources.WedSatWeaponsResSource
+import io.minoro75.genshinhelper.data.assets.ru.books_ru.DiligenceDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.books_ru.EleganceDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.books_ru.FreedomDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.books_ru.GoldDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.books_ru.IngenuityDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.books_ru.LightDataSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.books_ru.MonThuBooksSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.books_ru.PraxisDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.books_ru.ProsperityDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.books_ru.ResistanceDataSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.books_ru.SundayBooksSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.books_ru.TransienceDataSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.books_ru.TueFriBooksSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.books_ru.WedSatBooksSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.characters_ru.AlbedoDetailsSourceRu
@@ -161,6 +171,8 @@ import io.minoro75.genshinhelper.data.assets.ru.items_ru.artifacts_ru.Thundersoo
 import io.minoro75.genshinhelper.data.assets.ru.items_ru.artifacts_ru.VermilionHereafterDataSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.items_ru.artifacts_ru.ViridescentVenererDataSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.items_ru.artifacts_ru.WanderersTroupeDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.books_ru.AdmonitionDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.books_ru.BalladDataSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.weapon_resources_ru.MonThuWeaponsResSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.weapon_resources_ru.SundayWeaponsResSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.weapon_resources_ru.TueFriWeaponsResSourceRu
@@ -389,29 +401,29 @@ class AssetsDataSourceRu @Inject constructor(
 
                 "Puppet Strings" -> emit(itemLocationAdapter.fromJson(PuppetStringsDataSource.sourcesList))
                 // Books
-                "Admonition" -> emit(itemLocationAdapter.fromJson(AdmonitionDataSource.sourcesList))
+                "о Наставлениях" -> emit(itemLocationAdapter.fromJson(AdmonitionDataSourceRu.sourcesList))
 
-                "Ballad" -> emit(itemLocationAdapter.fromJson(BalladDataSource.sourcesList))
+                "о Поэзии" -> emit(itemLocationAdapter.fromJson(BalladDataSourceRu.sourcesList))
 
-                "Diligence" -> emit(itemLocationAdapter.fromJson(DiligenceDataSource.sourcesList))
+                "об Усердии" -> emit(itemLocationAdapter.fromJson(DiligenceDataSourceRu.sourcesList))
 
-                "Elegance" -> emit(itemLocationAdapter.fromJson(EleganceDataSource.sourcesList))
+                "об Изящности" -> emit(itemLocationAdapter.fromJson(EleganceDataSourceRu.sourcesList))
 
-                "Freedom" -> emit(itemLocationAdapter.fromJson(FreedomDataSource.sourcesList))
+                "о Свободе" -> emit(itemLocationAdapter.fromJson(FreedomDataSourceRu.sourcesList))
 
-                "Gold" -> emit(itemLocationAdapter.fromJson(GoldDataSource.sourcesList))
+                "о Золоте" -> emit(itemLocationAdapter.fromJson(GoldDataSourceRu.sourcesList))
 
-                "Ingenuity" -> emit(itemLocationAdapter.fromJson(IngenuityDataSource.sourcesList))
+                "об Остроумии" -> emit(itemLocationAdapter.fromJson(IngenuityDataSourceRu.sourcesList))
 
-                "Light" -> emit(itemLocationAdapter.fromJson(LightDataSource.sourcesList))
+                "о Свете" -> emit(itemLocationAdapter.fromJson(LightDataSourceRu.sourcesList))
 
-                "Praxis" -> emit(itemLocationAdapter.fromJson(PraxisDataSource.sourcesList))
+                "о Честности" -> emit(itemLocationAdapter.fromJson(PraxisDataSourceRu.sourcesList))
 
-                "Prosperity" -> emit(itemLocationAdapter.fromJson(ProsperityDataSource.sourcesList))
+                "о Процветании" -> emit(itemLocationAdapter.fromJson(ProsperityDataSourceRu.sourcesList))
 
-                "Resistance" -> emit(itemLocationAdapter.fromJson(ResistanceDataSource.sourcesList))
+                "о Борьбе" -> emit(itemLocationAdapter.fromJson(ResistanceDataSourceRu.sourcesList))
 
-                "Transience" -> emit(itemLocationAdapter.fromJson(TransienceDataSource.sourcesList))
+                "о Бренности" -> emit(itemLocationAdapter.fromJson(TransienceDataSourceRu.sourcesList))
                 // Weapon resources
                 "Aerosiderite" -> emit(itemLocationAdapter.fromJson(AerosideriteDataSource.sourcesList))
 
@@ -544,25 +556,25 @@ class AssetsDataSourceRu @Inject constructor(
 
                 "Тигнари" -> emit(characterDetailsAdapter.fromJson(TighnariDetailsSourceRu.detailsRu))
 
-                "Путешественник Анемо" -> emit(
+                "Путешественник (Анемо)" -> emit(
                     characterDetailsAdapter.fromJson(
                         TravelerAnemoDetailsSourceRu.detailsRu
                     )
                 )
 
-                "Путешественник Електро" -> emit(
+                "Путешественник (Електро)" -> emit(
                     characterDetailsAdapter.fromJson(
                         TravelerElectroDetailsSourceRu.detailsRu
                     )
                 )
 
-                "Путешественник Гео" -> emit(
+                "Путешественник (Гео)" -> emit(
                     characterDetailsAdapter.fromJson(
                         TravelerGeoDetailsSourceRu.detailsRu
                     )
                 )
 
-                "Путешественник Дендро" -> emit(
+                "Путешественник (Дендро)" -> emit(
                     characterDetailsAdapter.fromJson(
                         TravelerDendroDetailsSourceRu.detailsRu
                     )

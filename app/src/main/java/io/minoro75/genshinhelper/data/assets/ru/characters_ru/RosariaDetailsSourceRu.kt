@@ -13,7 +13,7 @@ object RosariaDetailsSourceRu {
           "weapon": "polearm",
           "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f6/Character_Rosaria_Thumb.png",
           "talents_books": {
-            "book_name": "о Балладах",
+            "book_name": "о Поэзии",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/7e/Item_Philosophies_of_Ballad.png",
             "book_days": "Среда/Суббота/Воскресенье"
           },

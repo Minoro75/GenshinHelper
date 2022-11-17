@@ -15,7 +15,7 @@ object AlbedoDetailsSourceRu {
           "weapon": "sword",
           "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/00/Character_Albedo_Thumb.png",
           "talents_books": {
-            "book_name": "Баллады",
+            "book_name": "о Поэзии",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/7e/Item_Philosophies_of_Ballad.png",
             "book_days": "СРЕ/СУБ/ВОС"
           },

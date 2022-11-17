@@ -12,7 +12,7 @@ object WedSatBooksSourceRu {
     val booksListRu = """
         [
           {
-            "book_name": "о Балладах",
+            "book_name": "о Поэзии",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/7e/Item_Philosophies_of_Ballad.png",
             "characters": [
               {
