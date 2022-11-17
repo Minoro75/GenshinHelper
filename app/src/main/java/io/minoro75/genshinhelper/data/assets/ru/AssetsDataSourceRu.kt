@@ -173,6 +173,18 @@ import io.minoro75.genshinhelper.data.assets.ru.items_ru.artifacts_ru.Viridescen
 import io.minoro75.genshinhelper.data.assets.ru.items_ru.artifacts_ru.WanderersTroupeDataSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.items_ru.books_ru.AdmonitionDataSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.items_ru.books_ru.BalladDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.weapon_resources_ru.AerosideriteDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.weapon_resources_ru.BorealWolfDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.weapon_resources_ru.DandelionGladiatorDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.weapon_resources_ru.DecarabianDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.weapon_resources_ru.DistantSeaDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.weapon_resources_ru.ForestDewDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.weapon_resources_ru.GuyunDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.weapon_resources_ru.MaskDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.weapon_resources_ru.MistVeiledDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.weapon_resources_ru.NarukamiDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.weapon_resources_ru.OasisGardenDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.weapon_resources_ru.ScorchingMightDataSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.weapon_resources_ru.MonThuWeaponsResSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.weapon_resources_ru.SundayWeaponsResSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.weapon_resources_ru.TueFriWeaponsResSourceRu
@@ -425,33 +437,33 @@ class AssetsDataSourceRu @Inject constructor(
 
                 "о Бренности" -> emit(itemLocationAdapter.fromJson(TransienceDataSourceRu.sourcesList))
                 // Weapon resources
-                "Aerosiderite" -> emit(itemLocationAdapter.fromJson(AerosideriteDataSource.sourcesList))
+                "Чёрный сидерит" -> emit(itemLocationAdapter.fromJson(AerosideriteDataSourceRu.sourcesList))
 
-                "Boreal Wolf" -> emit(itemLocationAdapter.fromJson(BorealWolfDataSource.sourcesList))
+                "Арктический волк" -> emit(itemLocationAdapter.fromJson(BorealWolfDataSourceRu.sourcesList))
 
-                "Dandelion Gladiator" -> emit(
+                "Львиный клык" -> emit(
                     itemLocationAdapter.fromJson(
-                        DandelionGladiatorDataSource.sourcesList
+                        DandelionGladiatorDataSourceRu.sourcesList
                     )
                 )
 
-                "Decarabian" -> emit(itemLocationAdapter.fromJson(DecarabianDataSource.sourcesList))
+                "Декарабиан" -> emit(itemLocationAdapter.fromJson(DecarabianDataSourceRu.sourcesList))
 
-                "Distant Sea" -> emit(itemLocationAdapter.fromJson(DistantSeaDataSource.sourcesList))
+                "Внешние моря" -> emit(itemLocationAdapter.fromJson(DistantSeaDataSourceRu.sourcesList))
 
-                "Forest Dew" -> emit(itemLocationAdapter.fromJson(ForestDewDataSource.sourcesList))
+                "Лесная роса" -> emit(itemLocationAdapter.fromJson(ForestDewDataSourceRu.sourcesList))
 
-                "Guyun" -> emit(itemLocationAdapter.fromJson(GuyunDataSource.sourcesList))
+                "Гуюнь" -> emit(itemLocationAdapter.fromJson(GuyunDataSourceRu.sourcesList))
 
-                "Mask" -> emit(itemLocationAdapter.fromJson(MaskDataSource.sourcesList))
+                "Маска" -> emit(itemLocationAdapter.fromJson(MaskDataSourceRu.sourcesList))
 
-                "Mist Veiled Elixir" -> emit(itemLocationAdapter.fromJson(MistVeiledDataSource.sourcesList))
+                "Заоблачное море" -> emit(itemLocationAdapter.fromJson(MistVeiledDataSourceRu.sourcesList))
 
-                "Narukami" -> emit(itemLocationAdapter.fromJson(NarukamiDataSource.sourcesList))
+                "Наруками" -> emit(itemLocationAdapter.fromJson(NarukamiDataSourceRu.sourcesList))
 
-                "Oasis Garden" -> emit(itemLocationAdapter.fromJson(OasisGardenDataSource.sourcesList))
+                "Цветущий оазис" -> emit(itemLocationAdapter.fromJson(OasisGardenDataSourceRu.sourcesList))
 
-                "Scorching Might" -> emit(itemLocationAdapter.fromJson(ScorchingMightDataSource.sourcesList))
+                "Пылающая мощь" -> emit(itemLocationAdapter.fromJson(ScorchingMightDataSourceRu.sourcesList))
 
                 else -> throw IllegalArgumentException("there is no artifact with name $itemName")
             }

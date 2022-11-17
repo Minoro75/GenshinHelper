@@ -22,6 +22,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.SolidColor
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Devices
 import androidx.compose.ui.tooling.preview.Preview
@@ -29,6 +30,7 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.ExperimentalLifecycleComposeApi
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import io.minoro75.genshinhelper.R
 import io.minoro75.genshinhelper.domain.model.Character
 import io.minoro75.genshinhelper.domain.model.TodayWeaponResources
 import io.minoro75.genshinhelper.presentation.common.LoadingScreen
@@ -79,7 +81,7 @@ fun HomeScreen(
                     border = BorderStroke(2.dp, SolidColor(MaterialTheme.colorScheme.primary))
                 ) {
                     Text(
-                        text = "Welcome, Traveler here is your daily adventures",
+                        text = stringResource(id = R.string.greeting),
                         style = GenshinTypography.bodyLarge,
                         textAlign = TextAlign.Center,
                         modifier = Modifier.padding(16.dp)

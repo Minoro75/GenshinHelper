@@ -18,4 +18,5 @@
     <string name="alternatives">Альтернативные</string>
     <string name="f2p">Ф2П</string>
     <string name="go_back">Назад</string>
+    <string name="greeting">Добро пожаловать, Путешественник, вот твой список дел на сегодня</string>
 </resources>
