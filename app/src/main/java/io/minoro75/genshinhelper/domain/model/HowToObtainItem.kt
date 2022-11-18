@@ -82,4 +82,76 @@ data class HowToObtainItem(
             else -> throw IllegalArgumentException("No such dungeon")
         }
     }
+
+    fun getImageResourceRu():Int{
+        return when(domainName){
+            // Artifacts
+            "Владения Гуюнь" -> R.drawable.dg_domain_of_guyun
+            "Пик Виндагнира" -> R.drawable.dg_peak_of_vyndagnyr
+            "Чистая вода и горная пещера" -> R.drawable.dg_clear_pool_and_mountain_cavern
+            "Скрытый дворец Уван" -> R.drawable.dg_hidden_palace_of_zhou_formula
+            "Шпиль одинокого просветления" -> R.drawable.dg_spire_of_solitary_enlightenment
+            "Затерянная долина" -> R.drawable.dg_the_lost_valley
+            "Кленовый зал" -> R.drawable.dg_momiji_dyed_court
+            "Дремлющий сад" -> R.drawable.dg_slumbering_court
+            "Долина воспоминаний" -> R.drawable.dg_valley_of_remembrance
+            "Горный дозор" -> R.drawable.dg_ridge_watch
+            "Июльские сады" -> R.drawable.dg_midsummer_courtyard
+            "Боссы" -> R.drawable.bosses
+            // Artifacts Alchemy
+            "Реликварий: Архаичный камень" -> R.drawable.as_archaic
+            "Реликварий: Заблудший в метели" -> R.drawable.as_blizzard
+            "Реликварий: Рыцарь крови" -> R.drawable.as_bloodstained
+            "Реликварий: Горящая алая ведьма" -> R.drawable.as_crimson
+            "Реликварий: Церемония древней знати" -> R.drawable.as_noblesse
+            "Реликварий: Громогласный рёв ярости" -> R.drawable.as_thundering
+            "Реликварий: Усмиряющий гром" -> R.drawable.as_thundersoother
+            "Реликварий: Изумрудная тень" -> R.drawable.as_viridescent
+            "Реликварий: Возлюбленная юная дева" -> R.drawable.as_maiden
+            "Реликварий: Встречная комета" -> R.drawable.as_retracing
+            "Реликварий: Ступающий по лаве" -> R.drawable.as_lavawalker
+            "Реликварий: Конец гладиатора" -> R.drawable.as_gladiators
+            "Реликварий: Странствующий ансамбль" -> R.drawable.as_wanderers
+            "Реликварий: Сердце глубин" -> R.drawable.as_heart_of_depth
+            // Boss items
+            "Остров Наруками: Тэнсюкаку" -> R.drawable.dg_signora_domain
+            "Под древом подавления" -> R.drawable.dg_azhdaha_domain
+            "Логово Ужаса Бури" -> R.drawable.dg_dvalin_domain
+            "Конец царства онейроса" -> R.drawable.dg_raiden_domain
+            "Испытание Волка Севера" -> R.drawable.dg_wolf_domain
+            "Золотая палата" -> R.drawable.dg_childe_domain
+            "Мастерская Дзёрури" -> R.drawable.dg_scaramouche
+            // Boss items Alchemy
+            "Создать: Пепельное сердце" -> R.drawable.ic_ashen
+            "Создать: Ветвь кровавой яшмы" -> R.drawable.ic_bloodjade
+            "Создать: Корона лорда драконов" -> R.drawable.ic_dragon_lord_crown
+            "Создать: Коготь Двалина" -> R.drawable.ic_dvalin_claw
+            "Создать: Перо из хвоста Двалина" -> R.drawable.ic_dvalin_plume
+            "Создать: Вздох Двалина" -> R.drawable.ic_dvalin_sigh
+            "Создать: Позолоченная чешуя" -> R.drawable.ic_gilded
+            "Создать: Бабочка адского пламени" -> R.drawable.ic_hellfire
+            "Создать: Расплавленный миг" -> R.drawable.ic_molten
+            "Создать: Мудра зловещего генерала" -> R.drawable.ic_mudra
+            "Создать: Кольцо Борея" -> R.drawable.ic_ring_of_boreas
+            "Создать: Тень воина" -> R.drawable.ic_shadow_warrior
+            "Создать: Осколок дьявольского меча" -> R.drawable.ic_shard_foul
+            "Создать: Шкатулка с духом Борея" -> R.drawable.ic_spirit_locket
+            "Создать: Хвост Борея" -> R.drawable.ic_tail_boreas
+            "Создать: Слёзы очищения божества бедствий" -> R.drawable.ic_tears
+            "Создать: Смысл эонов" -> R.drawable.ic_meaning
+            "Создать: Рог небесного кита" -> R.drawable.ic_tusk
+            "Создать: Нити марионетки" -> R.drawable.ic_puppet
+            // Books
+            "Башня невежества" -> R.drawable.dg_steeple_of_ignorance
+            "Забытый каньон" -> R.drawable.dg_forsaken_rift
+            "Фиалковый зал" -> R.drawable.dg_violet_court
+            "Тайшаньфу" -> R.drawable.dg_taishan_mansion
+            // Weapon Resources
+            "Лабиринт Ляншань" -> R.drawable.dg_hidden_palace_of_lianshan_formula
+            "Сад Сесилии" -> R.drawable.dg_cecilia_garden
+            "Зал текущего песка" -> R.drawable.dg_court_of_flowing_sand
+            "Башня презренной гордости" -> R.drawable.dg_tower_of_abject_pride
+            else -> throw IllegalArgumentException("No such dungeon $domainName")
+        }
+    }
 }

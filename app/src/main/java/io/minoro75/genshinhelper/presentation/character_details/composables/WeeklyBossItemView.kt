@@ -9,8 +9,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.SolidColor
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import io.minoro75.genshinhelper.R
 import io.minoro75.genshinhelper.presentation.theme.GenshinHelperTheme
 import io.minoro75.genshinhelper.presentation.theme.GenshinTypography
 
@@ -26,12 +28,13 @@ fun WeeklyBossItemView(
         colors = CardDefaults.outlinedCardColors(
             containerColor = MaterialTheme.colorScheme.primaryContainer
         ),
-        modifier = Modifier.fillMaxWidth()
+        modifier = Modifier
+            .fillMaxWidth()
             .clickable { onItemClicked.invoke(name) },
         border = BorderStroke(2.dp, SolidColor(MaterialTheme.colorScheme.primary))
     ) {
         Text(
-            text = "Weekly Boss Item",
+            text = stringResource(id = R.string.weekly_boss),
             style = GenshinTypography.bodyLarge,
             modifier = Modifier
                 .align(Alignment.CenterHorizontally)

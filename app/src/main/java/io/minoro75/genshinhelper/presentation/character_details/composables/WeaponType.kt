@@ -11,6 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import io.minoro75.genshinhelper.R
@@ -36,7 +37,7 @@ fun WeaponType(
                 )
                 Spacer(modifier = Modifier.width(4.dp))
                 Text(
-                    text = "Catalyst",
+                    text =  stringResource(id = R.string.catalyst),
                     color = MaterialTheme.colorScheme.onPrimaryContainer,
                     style = GenshinTypography.bodyMedium
                 )
@@ -50,7 +51,7 @@ fun WeaponType(
                 )
                 Spacer(modifier = Modifier.width(4.dp))
                 Text(
-                    text = "Sword",
+                    text = stringResource(id = R.string.sword),
                     color = MaterialTheme.colorScheme.onPrimaryContainer,
                     style = GenshinTypography.bodyMedium
                 )
@@ -64,7 +65,7 @@ fun WeaponType(
                 )
                 Spacer(modifier = Modifier.width(4.dp))
                 Text(
-                    text = "Claymore",
+                    text = stringResource(id = R.string.claymore),
                     color = MaterialTheme.colorScheme.onPrimaryContainer,
                     style = GenshinTypography.bodyMedium
                 )
@@ -77,7 +78,7 @@ fun WeaponType(
                 )
                 Spacer(modifier = Modifier.width(4.dp))
                 Text(
-                    text = "Bow",
+                    text = stringResource(id = R.string.bow),
                     color = MaterialTheme.colorScheme.onPrimaryContainer,
                     style = GenshinTypography.bodyMedium
                 )
@@ -91,7 +92,7 @@ fun WeaponType(
                 )
                 Spacer(modifier = Modifier.width(4.dp))
                 Text(
-                    text = "Polearm",
+                    text = stringResource(id = R.string.polearm),
                     color = MaterialTheme.colorScheme.onPrimaryContainer,
                     style = GenshinTypography.bodyMedium
                 )

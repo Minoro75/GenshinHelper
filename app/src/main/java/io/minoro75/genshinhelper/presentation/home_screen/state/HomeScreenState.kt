@@ -9,3 +9,13 @@ data class HomeScreenState(
     val isLoading: Boolean = false,
     val errorMessage: String? = null
 )
+
+sealed interface HomeScreenBooksState {
+    data class Success(val todayBooks: List<TodayBooks>) : HomeScreenBooksState
+    object Loading : HomeScreenBooksState
+}
+
+sealed interface HomeScreenWeaponsState {
+    data class Success(val todayBooks: List<TodayWeaponResources>) : HomeScreenWeaponsState
+    object Loading : HomeScreenWeaponsState
+}

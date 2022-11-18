@@ -4,4 +4,26 @@
     <string name="home">Главная</string>
     <string name="characters">Персонажи</string>
     <string name="info">Инфо</string>
+    <string name="sword">Одноручное</string>
+    <string name="claymore">Двуручное</string>
+    <string name="bow">Стрелковое</string>
+    <string name="catalyst">Катализатор</string>
+    <string name="polearm">Древковое</string>
+    <string name="available_at">Доступно в:</string>
+    <string name="talents_priority">Приоритет прокачки</string>
+    <string name="weekly_boss">Предмет с босса</string>
+    <string name="artifacts">Артефакты</string>
+    <string name="artifacts_stats">Характеристики артефактов</string>
+    <string name="bis">БиС</string>
+    <string name="alternatives">Альтернативные</string>
+    <string name="f2p">Ф2П</string>
+    <string name="go_back">Назад</string>
+    <string name="greeting">Добро пожаловать, Путешественник, вот твой список дел на сегодня</string>
+    <string name="about">О приложении</string>
+    <string name="disclamer">Дисклеймер</string>
+    <string name="this_app">Это приложение не связано с MiHoYo или Hoyoverse или Cognosphere Pte.Ltd. \nВсе права пренадлажат их собственникам. \nЭто приложение лишь помощник в игровых активностях игры Геншин Импакт.</string>
+    <string name="support">Поддержать</string>
+    <string name="visit_github_page">Открыть страничку на Гитхабе</string>
+    <string name="i_ve">Я сделал это приложение на Компоузе и только на Котлине. Также оно опен-сорс и доступно на гитхабе \nНе стесняйтесь создавать PR\'ы / issues я буду мониторить их по возможности</string>
+    <string name="loading">Загрузка</string>
 </resources>

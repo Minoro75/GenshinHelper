@@ -21,6 +21,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.SolidColor
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import io.minoro75.genshinhelper.R
@@ -55,11 +56,12 @@ fun WeaponsView(
                 rarity = bis.weaponRarity,
                 name = bis.weaponName,
                 url = bis.weaponUrl,
-                title = "BiS"
+                title = stringResource(id = R.string.bis)
             )
             Spacer(Modifier.width(16.dp))
             Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                Text(text = "Alternatives", style = GenshinTypography.bodyLarge)
+                Text(text = stringResource(id = R.string.alternatives),
+                    style = GenshinTypography.bodyLarge)
                 Spacer(modifier = Modifier.height(8.dp))
                 Row {
                     Item(
@@ -88,7 +90,8 @@ fun WeaponsView(
             Spacer(Modifier.width(16.dp))
             WeaponWithTitle(
                 rarity = replacements[2].weaponRarity,
-                name = replacements[2].weaponName, url = replacements[2].weaponUrl, title = "F2P"
+                name = replacements[2].weaponName, url = replacements[2].weaponUrl,
+                title = stringResource(id = R.string.f2p)
             )
 
         }

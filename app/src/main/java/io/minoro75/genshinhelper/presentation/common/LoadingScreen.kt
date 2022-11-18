@@ -13,6 +13,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.res.vectorResource
 import androidx.compose.ui.text.style.TextAlign
 import io.minoro75.genshinhelper.R
@@ -34,7 +35,7 @@ fun LoadingScreen() {
             colorFilter = ColorFilter.tint(MaterialTheme.colorScheme.onPrimaryContainer)
         )
         Text(
-            text = "Loading",
+            text = stringResource(id = R.string.loading),
             style = GenshinTypography.bodyLarge,
             modifier = Modifier
                 .fillMaxWidth(),

@@ -6,7 +6,8 @@ import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-import io.minoro75.genshinhelper.data.assets.AssetsDataSource
+import io.minoro75.genshinhelper.data.assets.en.AssetsDataSource
+import io.minoro75.genshinhelper.data.assets.ru.AssetsDataSourceRu
 import io.minoro75.genshinhelper.data.repository.CharactersRepositoryImpl
 import io.minoro75.genshinhelper.domain.repository.CharactersRepository
 import javax.inject.Singleton
@@ -26,6 +27,14 @@ object AppModule {
 
     @Provides
     @Singleton
-    fun provideCharacterRepository(assetsDataSource: AssetsDataSource): CharactersRepository =
-        CharactersRepositoryImpl(assetsDataSource)
+    fun provideAssetsDataSourceRu(moshi: Moshi) =
+        AssetsDataSourceRu(moshi)
+
+    @Provides
+    @Singleton
+    fun provideCharacterRepository(
+        assetsDataSource: AssetsDataSource,
+        assetsDataSourceRu: AssetsDataSourceRu
+    ): CharactersRepository =
+        CharactersRepositoryImpl(assetsDataSource, assetsDataSourceRu)
 }

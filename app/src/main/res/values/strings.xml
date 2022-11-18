@@ -3,4 +3,27 @@
     <string name="home">Home</string>
     <string name="characters">Characters</string>
     <string name="info">Info</string>
+    <string name="sword">Sword</string>
+    <string name="claymore">Claymore</string>
+    <string name="bow">Bow</string>
+    <string name="catalyst">Catalyst</string>
+    <string name="polearm">Polearm</string>
+    <string name="available_at">Available at:</string>
+    <string name="talents_priority">Talents Priority</string>
+    <string name="weekly_boss">Weekly Boss Item</string>
+    <string name="artifacts">Artifacts</string>
+    <string name="artifacts_stats">Artifacts stats</string>
+    <string name="bis">BiS</string>
+    <string name="alternatives">Alternatives</string>
+    <string name="f2p">F2P</string>
+    <string name="go_back">Go back</string>
+    <string name="greeting">Welcome, Traveler here is your daily adventures</string>
+    <string name="about">About</string>
+    <string name="disclamer">Disclamer</string>
+    <string name="this_app">This app is not affiliated with or endorsed by MiHoYo or Hoyoverse or Cognosphere Pte.Ltd Genshin Helper is just a database daily activities helper for Genshin Impact game</string>
+    <string name="support">Support</string>
+    <string name="visit_github_page">Visit Github page</string>
+    <string name="i_ve">I\'ve created this app with Compose and purely on Kotlin. Also it\'s open-source on github \\nFeel free to create a PR\'s / issues i\'ll review them asap</string>
+    <string name="loading">Loading</string>
+
 </resources>
