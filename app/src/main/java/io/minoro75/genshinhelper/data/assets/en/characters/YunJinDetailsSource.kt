@@ -14,7 +14,7 @@ object YunJinDetailsSource {
           "talents_books": {
             "book_name": "Diligence",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c2/Item_Philosophies_of_Diligence.png",
-            "book_days": "TUE/FRI/SUN"
+            "book_days": "Tuesday/Friday/Sunday"
           },
           "weekly_boss_item": {
             "boss_item_name": "Ashen Heart",

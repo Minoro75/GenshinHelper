@@ -14,7 +14,7 @@ object ThomaDetailsSource {
           "talents_books": {
             "book_name": "Transience",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/27/Item_Philosophies_of_Transience.png",
-            "book_days": "MON/THU/SUN"
+            "book_days": "Monday/Thursday/Sunday"
           },
           "weekly_boss_item": {
             "boss_item_name": "Hellfire Butterfly",

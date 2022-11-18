@@ -14,7 +14,7 @@ object TravelerGeoDetailsSource {
           "talents_books": {
             "book_name": "Prosperity",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/bd/Item_Philosophies_of_Prosperity.png",
-            "book_days": "MON/THU/SUN"
+            "book_days": "Monday/Thursday/Sunday"
           },
           "weekly_boss_item": {
             "boss_item_name": "Tail of Boreas",

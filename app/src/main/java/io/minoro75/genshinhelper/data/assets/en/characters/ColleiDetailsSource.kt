@@ -14,7 +14,7 @@ object ColleiDetailsSource {
               "talents_books": {
                 "book_name": "Praxis",
                 "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/82/Item_Philosophies_of_Praxis.png",
-                "book_days": "WED/SAT/SUN"
+                "book_days": "Wednesday/Saturday/Sunday"
               },
               "weekly_boss_item": {
                 "boss_item_name": "Tears of the Calamitous God",

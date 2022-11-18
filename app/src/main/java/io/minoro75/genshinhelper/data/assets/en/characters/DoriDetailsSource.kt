@@ -14,7 +14,7 @@ object DoriDetailsSource {
               "talents_books": {
                 "book_name": "Ingenuity",
                 "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f7/Item_Philosophies_of_Ingenuity.png",
-                "book_days": "TUE/FRI/SUN"
+                "book_days": "Tuesday/Friday/Sunday"
               },
               "weekly_boss_item": {
                 "boss_item_name": "Bloodjade Branch",

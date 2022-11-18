@@ -10,11 +10,11 @@ object XingqiuDetailsSource {
           "rarity": 4,
           "element": "hydro",
           "weapon": "sword",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/4/4a/Character_Xingqiu_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/4/4a/Character_Xingqiu_Thursdaymb.png",
           "talents_books": {
             "book_name": "Gold",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/01/Item_Philosophies_of_Gold.png",
-            "book_days": "WED/SAT/SUN"
+            "book_days": "Wednesday/Saturday/Sunday"
           },
           "weekly_boss_item": {
             "boss_item_name": "Tail of Boreas",

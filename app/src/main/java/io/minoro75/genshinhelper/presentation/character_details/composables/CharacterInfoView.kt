@@ -79,7 +79,7 @@ fun PreviewCharacterInfo() {
             talentsBooks = TalentsBooks(
                 bookUrl = "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/Item_Philosophies_of_Freedom.png",
                 bookName = "Admonition",
-                bookDays = "MON/THU/SUN"
+                bookDays = "Monday/Thursday/Sunday"
             ),
             onBackPressed = {},
             onItemClicked = {}
