@@ -18,5 +18,10 @@
     <string name="f2p">F2P</string>
     <string name="go_back">Go back</string>
     <string name="greeting">Welcome, Traveler here is your daily adventures</string>
+    <string name="about">About</string>
+    <string name="disclamer">Disclamer</string>
+    <string name="this_app">This app is not affiliated with or endorsed by MiHoYo or Hoyoverse or Cognosphere Pte.Ltd Genshin Helper is just a database daily activities helper for Genshin Impact game</string>
+    <string name="support">Support</string>
+    <string name="visit_github_page">Visit Github page</string>
 
 </resources>

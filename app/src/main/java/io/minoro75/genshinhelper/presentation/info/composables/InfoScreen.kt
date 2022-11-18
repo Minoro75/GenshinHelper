@@ -25,9 +25,11 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import io.minoro75.genshinhelper.R
 import io.minoro75.genshinhelper.presentation.theme.GenshinHelperTheme
 import io.minoro75.genshinhelper.presentation.theme.GenshinTypography
 
@@ -64,7 +66,7 @@ fun About() {
     ) {
         Column(Modifier.padding(8.dp)) {
             Text(
-                text = "About",
+                text = stringResource(id = R.string.about),
                 style = GenshinTypography.bodyLarge,
                 modifier = Modifier.fillMaxWidth(),
                 textAlign = TextAlign.Center,
@@ -72,7 +74,7 @@ fun About() {
             )
             Spacer(modifier = Modifier.height(8.dp))
             Text(
-                text = "Disclaimer",
+                text = stringResource(id = R.string.disclamer),
                 style = GenshinTypography.headlineLarge,
                 modifier = Modifier.fillMaxWidth(),
                 textAlign = TextAlign.Center,
@@ -80,15 +82,14 @@ fun About() {
             )
             Spacer(modifier = Modifier.height(8.dp))
             Text(
-                text = "This app is not affiliated with or endorsed by MiHoYo or Hoyoverse or Cognosphere Pte.Ltd " +
-                        "Genshin Helper is just a database daily activities helper for Genshin Impact game",
+                text = stringResource(id = R.string.this_app),
                 textAlign = TextAlign.Justify,
                 color = MaterialTheme.colorScheme.onPrimaryContainer,
                 style = GenshinTypography.bodyMedium
             )
             Spacer(modifier = Modifier.height(8.dp))
             Text(
-                text = "Support",
+                text = stringResource(id = R.string.support),
                 modifier = Modifier.fillMaxWidth(),
                 textAlign = TextAlign.Center,
                 color = MaterialTheme.colorScheme.onPrimaryContainer,
