@@ -21,8 +21,9 @@
     <string name="greeting">Добро пожаловать, Путешественник, вот твой список дел на сегодня</string>
     <string name="about">О приложении</string>
     <string name="disclamer">Дисклеймер</string>
-    <string name="this_app">Это приложение не связано с MiHoYo или Hoyoverse или Cognosphere Pte.Ltd. Все права пренадлажат их собственникам. Это приложение лишь помощник в игровых активностях игры Геншин Импакт.</string>
-    <string name="this_app">Это приложение не связано с MiHoYo или Hoyoverse или Cognosphere Pte.Ltd. Все права пренадлажат их собственникам. Это приложение лишь помощник в игровых активностях игры Геншин Импакт.</string>
+    <string name="this_app">Это приложение не связано с MiHoYo или Hoyoverse или Cognosphere Pte.Ltd. \nВсе права пренадлажат их собственникам. \nЭто приложение лишь помощник в игровых активностях игры Геншин Импакт.</string>
     <string name="support">Поддержать</string>
     <string name="visit_github_page">Открыть страничку на Гитхабе</string>
+    <string name="i_ve">Я сделал это приложение на Компоузе и только на Котлине. Также оно опен-сорс и доступно на гитхабе \nНе стесняйтесь создавать PR\'ы / issues я буду мониторить их по возможности</string>
+    <string name="loading">Загрузка</string>
 </resources>

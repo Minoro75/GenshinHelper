@@ -190,7 +190,7 @@ object SundayBooksSourceRu {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/7b/Character_Bennett_Thumb.png"
               },
               {
-                "name": "Дилюка",
+                "name": "Дилюк",
                 "rarity": 5,
                 "element": "pyro",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/02/Character_Diluc_Thumb.png"

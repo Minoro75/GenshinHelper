@@ -23,5 +23,7 @@
     <string name="this_app">This app is not affiliated with or endorsed by MiHoYo or Hoyoverse or Cognosphere Pte.Ltd Genshin Helper is just a database daily activities helper for Genshin Impact game</string>
     <string name="support">Support</string>
     <string name="visit_github_page">Visit Github page</string>
+    <string name="i_ve">I\'ve created this app with Compose and purely on Kotlin. Also it\'s open-source on github \\nFeel free to create a PR\'s / issues i\'ll review them asap</string>
+    <string name="loading">Loading</string>
 
 </resources>

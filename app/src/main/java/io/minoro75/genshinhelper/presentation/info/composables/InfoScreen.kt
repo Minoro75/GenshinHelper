@@ -103,14 +103,13 @@ fun About() {
                 modifier = Modifier.fillMaxWidth()
             ) {
                 Text(
-                    text = "Visit Github Page",
+                    text = stringResource(id = R.string.visit_github_page),
                     style = GenshinTypography.bodyMedium
                 )
             }
             Spacer(modifier = Modifier.height(8.dp))
             Text(
-                text = "I've created this app with Compose and purely on Kotlin. Also it's open-source on github"
-                        + "\nFeel free to create a PR's / issues i'll review them asap ",
+                text = stringResource(id = R.string.i_ve),
                 textAlign = TextAlign.Justify,
                 color = MaterialTheme.colorScheme.onPrimaryContainer,
                 style = GenshinTypography.bodyMedium
