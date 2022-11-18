@@ -44,6 +44,7 @@ import io.minoro75.genshinhelper.data.assets.ru.characters_ru.KeqingDetailsSourc
 import io.minoro75.genshinhelper.data.assets.ru.characters_ru.KleeDetailsSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.characters_ru.KujouSaraDetailsSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.characters_ru.KukiShinobuDetailsSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.characters_ru.LaylaDetailsSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.characters_ru.LisaDetailsSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.characters_ru.MonaDetailsSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.characters_ru.NahidaDetailsSourceRu
@@ -111,6 +112,7 @@ import io.minoro75.genshinhelper.data.assets.ru.items_ru.boss_items_ru.DvalinsPl
 import io.minoro75.genshinhelper.data.assets.ru.items_ru.boss_items_ru.DvalinsSighDataSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.items_ru.boss_items_ru.GildedScaleDataSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.items_ru.boss_items_ru.HellfireButterflyDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.boss_items_ru.MirrorOfMushinDataSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.items_ru.boss_items_ru.MoltenMomentDataSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.items_ru.boss_items_ru.MudraOfTheMaleficGeneralDataSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.items_ru.boss_items_ru.PuppetStringsDataSourceRu
@@ -362,6 +364,8 @@ class AssetsDataSourceRu @Inject constructor(
 
                 "Нити марионетки" -> emit(itemLocationAdapter.fromJson(PuppetStringsDataSourceRu.sourcesList))
 
+                "Зеркало Мусин" -> emit(itemLocationAdapter.fromJson(MirrorOfMushinDataSourceRu.sourcesList))
+
                 // Books
                 "о Наставлениях" -> emit(itemLocationAdapter.fromJson(AdmonitionDataSourceRu.sourcesList))
 
@@ -481,6 +485,8 @@ class AssetsDataSourceRu @Inject constructor(
                 "Сара" -> emit(characterDetailsAdapter.fromJson(KujouSaraDetailsSourceRu.detailsRu))
 
                 "Синобу" -> emit(characterDetailsAdapter.fromJson(KukiShinobuDetailsSourceRu.detailsRu))
+
+                "Лайла" -> emit(characterDetailsAdapter.fromJson(LaylaDetailsSourceRu.details))
 
                 "Лиза" -> emit(characterDetailsAdapter.fromJson(LisaDetailsSourceRu.detailsRu))
 

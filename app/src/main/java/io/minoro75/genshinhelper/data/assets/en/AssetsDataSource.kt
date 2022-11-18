@@ -34,6 +34,7 @@ import io.minoro75.genshinhelper.data.assets.en.characters.KeqingDetailsSource
 import io.minoro75.genshinhelper.data.assets.en.characters.KleeDetailsSource
 import io.minoro75.genshinhelper.data.assets.en.characters.KujouSaraDetailsSource
 import io.minoro75.genshinhelper.data.assets.en.characters.KukiShinobuDetailsSource
+import io.minoro75.genshinhelper.data.assets.en.characters.LaylaDetailsSource
 import io.minoro75.genshinhelper.data.assets.en.characters.LisaDetailsSource
 import io.minoro75.genshinhelper.data.assets.en.characters.MonaDetailsSource
 import io.minoro75.genshinhelper.data.assets.en.characters.NahidaDetailsSource
@@ -111,6 +112,7 @@ import io.minoro75.genshinhelper.data.assets.en.items.boss_items.DvalinsPlumeDat
 import io.minoro75.genshinhelper.data.assets.en.items.boss_items.DvalinsSighDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.boss_items.GildedScaleDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.boss_items.HellfireButterflyDataSource
+import io.minoro75.genshinhelper.data.assets.en.items.boss_items.MirrorOfMushinDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.boss_items.MoltenMomentDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.boss_items.MudraOfTheMaleficGeneralDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.boss_items.PuppetStringsDataSource
@@ -360,6 +362,9 @@ class AssetsDataSource @Inject constructor(
                 )
 
                 "Puppet Strings" -> emit(itemLocationAdapter.fromJson(PuppetStringsDataSource.sourcesList))
+
+                "Mirror of Mushin" -> emit(itemLocationAdapter.fromJson(MirrorOfMushinDataSource.sourcesList))
+
                 // Books
                 "Admonition" -> emit(itemLocationAdapter.fromJson(AdmonitionDataSource.sourcesList))
 
@@ -481,6 +486,8 @@ class AssetsDataSource @Inject constructor(
                 "Kujou Sara" -> emit(characterDetailsAdapter.fromJson(KujouSaraDetailsSource.details))
 
                 "Kuki Shinobu" -> emit(characterDetailsAdapter.fromJson(KukiShinobuDetailsSource.details))
+
+                "Layla" -> emit(characterDetailsAdapter.fromJson(LaylaDetailsSource.details))
 
                 "Lisa" -> emit(characterDetailsAdapter.fromJson(LisaDetailsSource.details))
 
