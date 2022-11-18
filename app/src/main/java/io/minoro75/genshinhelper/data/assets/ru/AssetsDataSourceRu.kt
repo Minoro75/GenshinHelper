@@ -2,88 +2,18 @@ package io.minoro75.genshinhelper.data.assets.ru
 
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.adapter
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.BlizzardStrayerDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.BloodstainedChivalryDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.CrimsonWitchOfFlamesDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.DeepwoodMemoriesDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.EchoesOfTheOfferingDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.EmblemOfSeveredFateDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.GildedDreamsDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.GladiatorsFinaleDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.HeartOfDepthDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.HuskOfOpulentDreamsDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.LavawalkerDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.MaidenBelovedDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.NoblesseObligeDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.OceanHuedClamDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.PaleFlameDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.RetracingBolideDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.ShimenavasReminiscenceDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.TenacityOfTheMillelithDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.ThunderingFuryDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.ThundersootherDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.VermilionHereafterDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.ViridescentVenererDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.WanderersTroupeDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.books.AdmonitionDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.books.BalladDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.books.DiligenceDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.books.EleganceDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.books.FreedomDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.books.GoldDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.books.IngenuityDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.books.LightDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.books.PraxisDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.books.ProsperityDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.books.ResistanceDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.books.TransienceDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.AshenHeartDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.BloodjadeBranchDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.DragonLordsCrownDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.DvalinsClawDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.DvalinsPlumeDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.DvalinsSighDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.GildedScaleDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.HellfireButterflyDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.MoltenMomentDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.MudraOfTheMaleficGeneralDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.PuppetStringsDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.RingOfBoreasDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.ShadowOfTheWarriorDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.ShardOfFoulLegacyDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.SpiritLocketOfBoreasDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.TailOfBoreasDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.TearsOfTheCalamitiousGodDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.TheMeaningOfAeonsDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.TuskOfMonocerosCaeliDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.weapon_resources.AerosideriteDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.weapon_resources.BorealWolfDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.weapon_resources.DandelionGladiatorDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.weapon_resources.DecarabianDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.weapon_resources.DistantSeaDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.weapon_resources.ForestDewDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.weapon_resources.GuyunDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.weapon_resources.MaskDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.weapon_resources.MistVeiledDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.weapon_resources.NarukamiDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.weapon_resources.OasisGardenDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.weapon_resources.ScorchingMightDataSource
-import io.minoro75.genshinhelper.data.assets.en.weapons_resources.MonThuWeaponsResSource
-import io.minoro75.genshinhelper.data.assets.en.weapons_resources.SundayWeaponsResSource
-import io.minoro75.genshinhelper.data.assets.en.weapons_resources.TueFriWeaponsResSource
-import io.minoro75.genshinhelper.data.assets.en.weapons_resources.WedSatWeaponsResSource
-import io.minoro75.genshinhelper.data.assets.ru.books_ru.DiligenceDataSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.books_ru.EleganceDataSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.books_ru.FreedomDataSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.books_ru.GoldDataSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.books_ru.IngenuityDataSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.books_ru.LightDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.books_ru.DiligenceDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.books_ru.EleganceDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.books_ru.FreedomDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.books_ru.GoldDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.books_ru.IngenuityDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.books_ru.LightDataSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.books_ru.MonThuBooksSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.books_ru.PraxisDataSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.books_ru.ProsperityDataSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.books_ru.ResistanceDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.books_ru.PraxisDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.books_ru.ProsperityDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.books_ru.ResistanceDataSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.books_ru.SundayBooksSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.books_ru.TransienceDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.books_ru.TransienceDataSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.books_ru.TueFriBooksSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.books_ru.WedSatBooksSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.characters_ru.AlbedoDetailsSourceRu
@@ -173,6 +103,25 @@ import io.minoro75.genshinhelper.data.assets.ru.items_ru.artifacts_ru.Viridescen
 import io.minoro75.genshinhelper.data.assets.ru.items_ru.artifacts_ru.WanderersTroupeDataSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.items_ru.books_ru.AdmonitionDataSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.items_ru.books_ru.BalladDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.boss_items_ru.AshenHeartDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.boss_items_ru.BloodjadeBranchDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.boss_items_ru.DragonLordsCrownDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.boss_items_ru.DvalinsClawDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.boss_items_ru.DvalinsPlumeDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.boss_items_ru.DvalinsSighDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.boss_items_ru.GildedScaleDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.boss_items_ru.HellfireButterflyDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.boss_items_ru.MoltenMomentDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.boss_items_ru.MudraOfTheMaleficGeneralDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.boss_items_ru.PuppetStringsDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.boss_items_ru.RingOfBoreasDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.boss_items_ru.ShadowOfTheWarriorDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.boss_items_ru.ShardOfFoulLegacyDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.boss_items_ru.SpiritLocketOfBoreasDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.boss_items_ru.TailOfBoreasDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.boss_items_ru.TearsOfTheCalamitiousGodDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.boss_items_ru.TheMeaningOfAeonsDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.boss_items_ru.TuskOfMonocerosCaeliDataSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.items_ru.weapon_resources_ru.AerosideriteDataSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.items_ru.weapon_resources_ru.BorealWolfDataSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.items_ru.weapon_resources_ru.DandelionGladiatorDataSourceRu
@@ -339,79 +288,80 @@ class AssetsDataSourceRu @Inject constructor(
 
                 "Странствующий ансамбль" -> emit(itemLocationAdapter.fromJson(WanderersTroupeDataSourceRu.sourcesList))
                 // Boss items
-                "Ashen Heart" -> emit(itemLocationAdapter.fromJson(AshenHeartDataSource.sourcesList))
+                "Пепельное сердце" -> emit(itemLocationAdapter.fromJson(AshenHeartDataSourceRu.sourcesList))
 
-                "Bloodjade Branch" -> emit(itemLocationAdapter.fromJson(BloodjadeBranchDataSource.sourcesList))
+                "Ветвь кровавой яшмы" -> emit(itemLocationAdapter.fromJson(BloodjadeBranchDataSourceRu.sourcesList))
 
-                "Dragon Lord's Crown" -> emit(
+                "Корона лорда драконов" -> emit(
                     itemLocationAdapter.fromJson(
-                        DragonLordsCrownDataSource.sourcesList
+                        DragonLordsCrownDataSourceRu.sourcesList
                     )
                 )
 
-                "Dvalin's Claw" -> emit(itemLocationAdapter.fromJson(DvalinsClawDataSource.sourcesList))
+                "Коготь Двалина" -> emit(itemLocationAdapter.fromJson(DvalinsClawDataSourceRu.sourcesList))
 
-                "Dvalin's Plume" -> emit(itemLocationAdapter.fromJson(DvalinsPlumeDataSource.sourcesList))
+                "Перо из хвоста Двалина" -> emit(itemLocationAdapter.fromJson(DvalinsPlumeDataSourceRu.sourcesList))
 
-                "Dvalin's Sigh" -> emit(itemLocationAdapter.fromJson(DvalinsSighDataSource.sourcesList))
+                "Вздох Двалина" -> emit(itemLocationAdapter.fromJson(DvalinsSighDataSourceRu.sourcesList))
 
-                "Gilded Scale" -> emit(itemLocationAdapter.fromJson(GildedScaleDataSource.sourcesList))
+                "Позолоченная чешуя" -> emit(itemLocationAdapter.fromJson(GildedScaleDataSourceRu.sourcesList))
 
-                "Hellfire Butterfly" -> emit(
+                "Бабочка адского пламени" -> emit(
                     itemLocationAdapter.fromJson(
-                        HellfireButterflyDataSource.sourcesList
+                        HellfireButterflyDataSourceRu.sourcesList
                     )
                 )
 
-                "Molten Moment" -> emit(itemLocationAdapter.fromJson(MoltenMomentDataSource.sourcesList))
+                "Расплавленный миг" -> emit(itemLocationAdapter.fromJson(MoltenMomentDataSourceRu.sourcesList))
 
-                "Mudra of the Malefic General" -> emit(
+                "Мудра зловещего генерала" -> emit(
                     itemLocationAdapter.fromJson(
-                        MudraOfTheMaleficGeneralDataSource.sourcesList
+                        MudraOfTheMaleficGeneralDataSourceRu.sourcesList
                     )
                 )
 
-                "Ring of Boreas" -> emit(itemLocationAdapter.fromJson(RingOfBoreasDataSource.sourcesList))
+                "Кольцо Борея" -> emit(itemLocationAdapter.fromJson(RingOfBoreasDataSourceRu.sourcesList))
 
-                "Shadow of the Warrior" -> emit(
+                "Тень воина" -> emit(
                     itemLocationAdapter.fromJson(
-                        ShadowOfTheWarriorDataSource.sourcesList
+                        ShadowOfTheWarriorDataSourceRu.sourcesList
                     )
                 )
 
-                "Shard of a Foul Legacy" -> emit(
+                "Осколок дьявольского меча" -> emit(
                     itemLocationAdapter.fromJson(
-                        ShardOfFoulLegacyDataSource.sourcesList
+                        ShardOfFoulLegacyDataSourceRu.sourcesList
                     )
                 )
 
-                "Spirit Locket of Boreas" -> emit(
+                "Шкатулка с духом Борея" -> emit(
                     itemLocationAdapter.fromJson(
-                        SpiritLocketOfBoreasDataSource.sourcesList
+                        SpiritLocketOfBoreasDataSourceRu.sourcesList
                     )
                 )
 
-                "Tail of Boreas" -> emit(itemLocationAdapter.fromJson(TailOfBoreasDataSource.sourcesList))
+                "Хвост Борея" -> emit(itemLocationAdapter.fromJson(TailOfBoreasDataSourceRu.sourcesList))
 
-                "Tears of the Calamitous God" -> emit(
+                "Слёзы очищения божества бедствий" -> emit(
                     itemLocationAdapter.fromJson(
-                        TearsOfTheCalamitiousGodDataSource.sourcesList
+                        TearsOfTheCalamitiousGodDataSourceRu.sourcesList
                     )
                 )
 
-                "The Meaning of Aeons" -> emit(
+                "Смысл эонов" -> emit(
                     itemLocationAdapter.fromJson(
-                        TheMeaningOfAeonsDataSource.sourcesList
+                        TheMeaningOfAeonsDataSourceRu.sourcesList
                     )
                 )
 
-                "Tusk of Monoceros Caeli" -> emit(
+                "Рог небесного кита" -> emit(
                     itemLocationAdapter.fromJson(
-                        TuskOfMonocerosCaeliDataSource.sourcesList
+                        TuskOfMonocerosCaeliDataSourceRu.sourcesList
                     )
                 )
 
-                "Puppet Strings" -> emit(itemLocationAdapter.fromJson(PuppetStringsDataSource.sourcesList))
+                "Нити марионетки" -> emit(itemLocationAdapter.fromJson(PuppetStringsDataSourceRu.sourcesList))
+
                 // Books
                 "о Наставлениях" -> emit(itemLocationAdapter.fromJson(AdmonitionDataSourceRu.sourcesList))
 
@@ -419,7 +369,7 @@ class AssetsDataSourceRu @Inject constructor(
 
                 "об Усердии" -> emit(itemLocationAdapter.fromJson(DiligenceDataSourceRu.sourcesList))
 
-                "об Изящности" -> emit(itemLocationAdapter.fromJson(EleganceDataSourceRu.sourcesList))
+                "об Изяществе" -> emit(itemLocationAdapter.fromJson(EleganceDataSourceRu.sourcesList))
 
                 "о Свободе" -> emit(itemLocationAdapter.fromJson(FreedomDataSourceRu.sourcesList))
 
@@ -568,25 +518,25 @@ class AssetsDataSourceRu @Inject constructor(
 
                 "Тигнари" -> emit(characterDetailsAdapter.fromJson(TighnariDetailsSourceRu.detailsRu))
 
-                "Путешественник (Анемо)" -> emit(
+                "Путешественник Анемо" -> emit(
                     characterDetailsAdapter.fromJson(
                         TravelerAnemoDetailsSourceRu.detailsRu
                     )
                 )
 
-                "Путешественник (Електро)" -> emit(
+                "Путешественник Електро" -> emit(
                     characterDetailsAdapter.fromJson(
                         TravelerElectroDetailsSourceRu.detailsRu
                     )
                 )
 
-                "Путешественник (Гео)" -> emit(
+                "Путешественник Гео" -> emit(
                     characterDetailsAdapter.fromJson(
                         TravelerGeoDetailsSourceRu.detailsRu
                     )
                 )
 
-                "Путешественник (Дендро)" -> emit(
+                "Путешественник Дендро" -> emit(
                     characterDetailsAdapter.fromJson(
                         TravelerDendroDetailsSourceRu.detailsRu
                     )

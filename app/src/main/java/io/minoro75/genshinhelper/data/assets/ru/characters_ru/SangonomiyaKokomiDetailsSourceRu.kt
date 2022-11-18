@@ -15,7 +15,7 @@ object SangonomiyaKokomiDetailsSourceRu {
           "talents_books": {
             "book_name": "о Бренности",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/27/Item_Philosophies_of_Transience.png",
-            "book_days": "Полнедельник/Четверг/Воскресенье"
+            "book_days": "Понедельник/Четверг/Воскресенье"
           },
           "weekly_boss_item": {
             "boss_item_name": "Бабочка адского пламени",

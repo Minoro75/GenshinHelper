@@ -114,33 +114,33 @@ data class HowToObtainItem(
             "Реликварий: Странствующий ансамбль" -> R.drawable.as_wanderers
             "Реликварий: Сердце глубин" -> R.drawable.as_heart_of_depth
             // Boss items
-            "Narukami Island: Tenshukaku" -> R.drawable.dg_signora_domain
-            "Beneath the Dragon-Queller" -> R.drawable.dg_azhdaha_domain
-            "Confront Stormterror" -> R.drawable.dg_dvalin_domain
-            "End of the Oneiric Euthymia" -> R.drawable.dg_raiden_domain
-            "Lupus Boreas, Dominator of Wolves" -> R.drawable.dg_wolf_domain
-            "Enter the Golden House" -> R.drawable.dg_childe_domain
-            "Joururi Workshop" -> R.drawable.dg_scaramouche
+            "Остров Наруками: Тэнсюкаку" -> R.drawable.dg_signora_domain
+            "Под древом подавления" -> R.drawable.dg_azhdaha_domain
+            "Логово Ужаса Бури" -> R.drawable.dg_dvalin_domain
+            "Конец царства онейроса" -> R.drawable.dg_raiden_domain
+            "Испытание Волка Севера" -> R.drawable.dg_wolf_domain
+            "Золотая палата" -> R.drawable.dg_childe_domain
+            "Мастерская Дзёрури" -> R.drawable.dg_scaramouche
             // Boss items Alchemy
-            "Convert: Ashen Heart" -> R.drawable.ic_ashen
-            "Convert: Bloodjade Branch" -> R.drawable.ic_bloodjade
-            "Convert: Dragon Lord's Crown" -> R.drawable.ic_dragon_lord_crown
-            "Convert: Dvalin's Claw" -> R.drawable.ic_dvalin_claw
-            "Convert: Dvalin's Plume" -> R.drawable.ic_dvalin_plume
-            "Convert: Dvalin's Sigh" -> R.drawable.ic_dvalin_sigh
-            "Convert: Gilded Scale" -> R.drawable.ic_gilded
-            "Convert: Hellfire Butterfly" -> R.drawable.ic_hellfire
-            "Convert: Molten Moment" -> R.drawable.ic_molten
-            "Convert: Mudra of the Malefic General" -> R.drawable.ic_mudra
-            "Convert: Ring of Boreas" -> R.drawable.ic_ring_of_boreas
-            "Convert: Shadow of the Warrior" -> R.drawable.ic_shadow_warrior
-            "Convert: Shard of Foul Legacy" -> R.drawable.ic_shard_foul
-            "Convert: Spirit Locket of Boreas" -> R.drawable.ic_spirit_locket
-            "Convert: Tail of Boreas" -> R.drawable.ic_tail_boreas
-            "Convert: Tears of the Calamitous God" -> R.drawable.ic_tears
-            "Convert: The Meaning of Aeons" -> R.drawable.ic_meaning
-            "Convert: Tusk of Monoceros Caeli" -> R.drawable.ic_tusk
-            "Convert: Puppet Strings" -> R.drawable.ic_puppet
+            "Создать: Пепельное сердце" -> R.drawable.ic_ashen
+            "Создать: Ветвь кровавой яшмы" -> R.drawable.ic_bloodjade
+            "Создать: Корона лорда драконов" -> R.drawable.ic_dragon_lord_crown
+            "Создать: Коготь Двалина" -> R.drawable.ic_dvalin_claw
+            "Создать: Перо из хвоста Двалина" -> R.drawable.ic_dvalin_plume
+            "Создать: Вздох Двалина" -> R.drawable.ic_dvalin_sigh
+            "Создать: Позолоченная чешуя" -> R.drawable.ic_gilded
+            "Создать: Бабочка адского пламени" -> R.drawable.ic_hellfire
+            "Создать: Расплавленный миг" -> R.drawable.ic_molten
+            "Создать: Мудра зловещего генерала" -> R.drawable.ic_mudra
+            "Создать: Кольцо Борея" -> R.drawable.ic_ring_of_boreas
+            "Создать: Тень воина" -> R.drawable.ic_shadow_warrior
+            "Создать: Осколок дьявольского меча" -> R.drawable.ic_shard_foul
+            "Создать: Шкатулка с духом Борея" -> R.drawable.ic_spirit_locket
+            "Создать: Хвост Борея" -> R.drawable.ic_tail_boreas
+            "Создать: Слёзы очищения божества бедствий" -> R.drawable.ic_tears
+            "Создать: Смысл эонов" -> R.drawable.ic_meaning
+            "Создать: Рог небесного кита" -> R.drawable.ic_tusk
+            "Создать: Нити марионетки" -> R.drawable.ic_puppet
             // Books
             "Башня невежества" -> R.drawable.dg_steeple_of_ignorance
             "Забытый каньон" -> R.drawable.dg_forsaken_rift

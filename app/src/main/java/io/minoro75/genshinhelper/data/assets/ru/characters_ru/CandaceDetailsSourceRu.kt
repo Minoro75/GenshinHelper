@@ -15,7 +15,7 @@ object CandaceDetailsSourceRu {
               "talents_books": {
                 "book_name": "о Наставлениях",
                 "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9b/Item_Philosophies_of_Admonition.png",
-                "book_days": "ПОН/ЧЕТ/ВОС"
+                "book_days": "Понедельник/Четверг/Воскресенье"
               },
               "weekly_boss_item": {
                 "boss_item_name": "Слёзы очищения божества бедствий",
@@ -28,7 +28,7 @@ object CandaceDetailsSourceRu {
               ],
               "artifacts": [
                 {
-                  "artifact_name": "Церемония древеней знати",
+                  "artifact_name": "Церемония древней знати",
                   "artifact_url": "https://paimon.moe/images/artifacts/noblesse_oblige_flower.png",
                   "artifact_amount": 4,
                   "artifact_gobelet": "Здоровье",

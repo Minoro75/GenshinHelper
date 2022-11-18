@@ -18,7 +18,7 @@ object RazorDetailsSourceRu {
             "book_days": "Вторник/Пятница/Воскресенье"
           },
           "weekly_boss_item": {
-            "boss_item_name": "Коготь двалина",
+            "boss_item_name": "Коготь Двалина",
             "boss_item_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a8/Item_Dvalin%27s_Claw.png"
           },
           "talents_priority": [

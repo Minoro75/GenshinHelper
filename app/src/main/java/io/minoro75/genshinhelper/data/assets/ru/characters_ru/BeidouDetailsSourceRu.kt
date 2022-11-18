@@ -15,7 +15,7 @@ object BeidouDetailsSourceRu {
               "talents_books": {
                 "book_name": "о Золоте",
                 "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/01/Item_Philosophies_of_Gold.png",
-                "book_days": "СРЕ/СУБ/ВОС"
+                "book_days": "Среда/Суббота/Воскресенье"
               },
               "weekly_boss_item": {
                 "boss_item_name": "Вздох Двалина",

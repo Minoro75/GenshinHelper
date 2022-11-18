@@ -15,7 +15,7 @@ object KamisatoAyakaDetailsSourceRu {
           "talents_books": {
             "book_name": "об Изяществе",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/6/6f/Item_Philosophies_of_Elegance.png",
-            "book_days": "Вторник/Пятница/Воскреенье"
+            "book_days": "Вторник/Пятница/Воскресенье"
           },
           "weekly_boss_item": {
             "boss_item_name": "Ветвь кровавой яшмы",

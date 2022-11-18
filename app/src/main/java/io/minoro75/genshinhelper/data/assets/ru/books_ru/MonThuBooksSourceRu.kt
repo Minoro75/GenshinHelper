@@ -58,7 +58,7 @@ object MonThuBooksSourceRu {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/53/Character_Tartaglia_Thumb.png"
               },
               {
-                "name": "Путешественник (Анемо)",
+                "name": "Путешественник Анемо",
                 "rarity": 5,
                 "element": "anemo",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/71/Character_Traveler_Thumb.png"
@@ -94,7 +94,7 @@ object MonThuBooksSourceRu {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/58/Character_Shenhe_Thumb.png"
               },
               {
-                "name": "Путешественник (Гео)",
+                "name": "Путешественник Гео",
                 "rarity": 5,
                 "element": "geo",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/71/Character_Traveler_Thumb.png"
@@ -136,7 +136,7 @@ object MonThuBooksSourceRu {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/8a/Character_Thoma_Thumb.png"
               },
               {
-                "name": "Путешественник (Електро)",
+                "name": "Путешественник Електро",
                 "rarity": 5,
                 "element": "electro",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/71/Character_Traveler_Thumb.png"
@@ -172,7 +172,7 @@ object MonThuBooksSourceRu {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/91/Character_Tighnari_Thumb.png"
               },
               {
-                "name": "Путешественник (Дендро)",
+                "name": "Путешественник Дендро",
                 "rarity": 5,
                 "element": "dendro",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/71/Character_Traveler_Thumb.png"

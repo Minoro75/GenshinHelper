@@ -15,7 +15,7 @@ object AratakiIttoDetailsSourceRu {
               "talents_books": {
                 "book_name": "об Изяществе",
                 "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/6/6f/Item_Philosophies_of_Elegance.png",
-                "book_days": "ВТО/ПЯТ/ВОС"
+                "book_days": "Вторник/Пятница/Воскресенье"
               },
               "weekly_boss_item": {
                 "boss_item_name": "Пепельное сердце",
@@ -28,7 +28,7 @@ object AratakiIttoDetailsSourceRu {
               ],
               "artifacts": [
                 {
-                  "artifact_name": "Кокон сладких грез",
+                  "artifact_name": "Кокон сладких грёз",
                   "artifact_url": "https://paimon.moe/images/artifacts/husk_of_opulent_dreams_flower.png",
                   "artifact_amount": 4,
                   "artifact_gobelet": "Гео ДПС",

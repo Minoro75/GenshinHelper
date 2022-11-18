@@ -15,7 +15,7 @@ object AmberDetailsSourceRu {
               "talents_books": {
                 "book_name": "о Свободе",
                 "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/Item_Philosophies_of_Freedom.png",
-                "book_days": "ПОН/ЧЕТ/ВОС"
+                "book_days": "Понедельник/Четверг/Воскресенье"
               },
               "weekly_boss_item": {
                 "boss_item_name": "Вздох Двалина",

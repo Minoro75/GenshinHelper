@@ -15,7 +15,7 @@ object ChongyunDetailsSourceRu {
               "talents_books": {
                 "book_name": "об Усердии",
                 "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c2/Item_Philosophies_of_Diligence.png",
-                "book_days": "ВТО/ПЯТ/ВОС"
+                "book_days": "Вторник/Пятница/Воскресенье"
               },
               "weekly_boss_item": {
                 "boss_item_name": "Вздох Двалина",

@@ -17,7 +17,7 @@ object AlbedoDetailsSourceRu {
           "talents_books": {
             "book_name": "о Поэзии",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/7e/Item_Philosophies_of_Ballad.png",
-            "book_days": "СРЕ/СУБ/ВОС"
+            "book_days": "Среда/Суббота/Воскресенье"
           },
           "weekly_boss_item": {
             "boss_item_name": "Рог небесного кита",
@@ -30,7 +30,7 @@ object AlbedoDetailsSourceRu {
           ],
           "artifacts": [
             {
-              "artifact_name": "Кокон сладких грез",
+              "artifact_name": "Кокон сладких грёз",
               "artifact_url": "https://paimon.moe/images/artifacts/husk_of_opulent_dreams_flower.png",
               "artifact_amount": 4,
               "artifact_gobelet": "Гео ДПС",

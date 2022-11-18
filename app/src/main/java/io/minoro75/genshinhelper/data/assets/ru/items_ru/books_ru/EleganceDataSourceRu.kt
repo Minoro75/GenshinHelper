@@ -1,4 +1,4 @@
-package io.minoro75.genshinhelper.data.assets.ru.books_ru
+package io.minoro75.genshinhelper.data.assets.ru.items_ru.books_ru
 
 import org.intellij.lang.annotations.Language
 
@@ -14,7 +14,7 @@ object EleganceDataSourceRu {
           {
             "name": "об Изяществе",
             "domain_name": "Фиалковый зал",
-            "description": "Вы можете получить книги об Усердии как награду из подземелья в Инадзуме"
+            "description": "Вы можете получить книги об Изяществе как награду из подземелья в Инадзуме"
           }
         ]
     """.trimIndent()

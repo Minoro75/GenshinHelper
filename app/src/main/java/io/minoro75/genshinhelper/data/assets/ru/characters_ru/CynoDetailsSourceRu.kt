@@ -15,7 +15,7 @@ object CynoDetailsSourceRu {
               "talents_books": {
                 "book_name": "о Наставлениях",
                 "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9b/Item_Philosophies_of_Admonition.png",
-                "book_days": "ПОН/ЧЕТ/ВОС"
+                "book_days": "Понедельник/Четверг/Воскресенье"
               },
               "weekly_boss_item": {
                 "boss_item_name": "Мудра зловещего генерала",

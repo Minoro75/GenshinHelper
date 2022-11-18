@@ -1,8 +1,8 @@
-package io.minoro75.genshinhelper.data.assets.ru.books_ru
+package io.minoro75.genshinhelper.data.assets.ru.items_ru.books_ru
 
 import org.intellij.lang.annotations.Language
 
-object DiligenceDataSourceRu {
+object GoldDataSourceRu {
     /** here we define our JSON instead of reading from assets **/
 
     // for internal use only
@@ -12,9 +12,9 @@ object DiligenceDataSourceRu {
     val sourcesList = """
         [
           {
-            "name": "об Усердии",
+            "name": "о Золоте",
             "domain_name": "Тайшаньфу",
-            "description": "Вы можете получить книги об Усердии как награду из подземелья в Ли Юэ"
+            "description": "Вы можете получить книги о Золоте как награду из подземелья в Ли Юэ"
           }
         ]
     """.trimIndent()

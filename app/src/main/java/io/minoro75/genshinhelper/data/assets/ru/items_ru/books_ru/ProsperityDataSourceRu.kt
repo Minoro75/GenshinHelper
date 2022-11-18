@@ -1,4 +1,4 @@
-package io.minoro75.genshinhelper.data.assets.ru.books_ru
+package io.minoro75.genshinhelper.data.assets.ru.items_ru.books_ru
 
 import org.intellij.lang.annotations.Language
 
@@ -14,7 +14,7 @@ object ProsperityDataSourceRu {
           {
             "name": "о Процветании",
             "domain_name": "Тайшаньфу",
-            "description": "Вы можете получить книги об Усердии как награду из подземелья в Ли Юэ"
+            "description": "Вы можете получить книги о Процветании как награду из подземелья в Ли Юэ"
           }
         ]
     """.trimIndent()

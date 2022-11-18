@@ -15,10 +15,10 @@ object DilucDetailsSourceRu {
           "talents_books": {
             "book_name": "о Борьбе",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/0b/Item_Philosophies_of_Resistance.png",
-            "book_days": "ВТО/ПЯТ/ВОС"
+            "book_days": "Вторник/Пятница/Воскресенье"
           },
           "weekly_boss_item": {
-            "boss_item_name": "Перо с хвоста Двалина",
+            "boss_item_name": "Перо из хвоста Двалина",
             "boss_item_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/bf/Item_Dvalin%27s_Plume.png"
           },
           "talents_priority": [

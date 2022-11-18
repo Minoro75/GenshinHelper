@@ -1,8 +1,8 @@
-package io.minoro75.genshinhelper.data.assets.ru.books_ru
+package io.minoro75.genshinhelper.data.assets.ru.items_ru.books_ru
 
 import org.intellij.lang.annotations.Language
 
-object FreedomDataSourceRu {
+object ResistanceDataSourceRu {
     /** here we define our JSON instead of reading from assets **/
 
     // for internal use only
@@ -12,9 +12,9 @@ object FreedomDataSourceRu {
     val sourcesList = """
         [
           {
-            "name":"о Свободе",
+            "name": "о Борьбе",
             "domain_name": "Забытый каньон",
-            "description": "Вы можете получить книги о Поэзии как награду из подземелья в Мондтштаде"
+            "description": "Вы можете получить книги о Борьбе как награду из подземелья в Мондтштаде"
           }
         ]
     """.trimIndent()

@@ -15,7 +15,7 @@ object DoriDetailsSourceRu {
               "talents_books": {
                 "book_name": "об Остроумии",
                 "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f7/Item_Philosophies_of_Ingenuity.png",
-                "book_days": "ВТО/ПЯТ/ВОС"
+                "book_days": "Вторник/Пятница/Воскресенье"
               },
               "weekly_boss_item": {
                 "boss_item_name": "Ветвь кровавой яшмы",
