@@ -14,7 +14,7 @@ object CandaceDetailsSource {
               "talents_books": {
                 "book_name": "Admonition",
                 "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9b/Item_Philosophies_of_Admonition.png",
-                "book_days": "MON/THU/SUN"
+                "book_days": "Monday/Thursday/Sunday"
               },
               "weekly_boss_item": {
                 "boss_item_name": "Tears of the Calamitous God",

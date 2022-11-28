@@ -14,7 +14,7 @@ object MonaDetailsSource {
           "talents_books": {
             "book_name": "Resistance",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/0b/Item_Philosophies_of_Resistance.png",
-            "book_days": "TUE/FRI/SUN"
+            "book_days": "Tuesday/Friday/Sunday"
           },
           "weekly_boss_item": {
             "boss_item_name": "Ring of Boreas",

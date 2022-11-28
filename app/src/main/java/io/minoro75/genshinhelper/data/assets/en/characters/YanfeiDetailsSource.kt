@@ -14,7 +14,7 @@ object YanfeiDetailsSource {
           "talents_books": {
             "book_name": "Gold",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/01/Item_Philosophies_of_Gold.png",
-            "book_days": "WED/SAT/SUN"
+            "book_days": "Wednesday/Saturday/Sunday"
           },
           "weekly_boss_item": {
             "boss_item_name": "Bloodjade Branch",

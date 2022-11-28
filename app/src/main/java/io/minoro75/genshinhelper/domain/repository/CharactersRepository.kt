@@ -17,7 +17,7 @@ import java.time.DayOfWeek
 interface CharactersRepository {
     fun getCharacters(): Flow<List<CharacterModel>?>
     fun getCharacterDetails(name: String): Flow<CharacterDetails?>
-    fun getTodayBooks(dayOfWeek: DayOfWeek): Flow<List<TodayBooks>?>
-    fun getTodayWeaponResources(dayOfWeek: DayOfWeek): Flow<List<TodayWeaponResources>?>
+    fun getTodayBooks(dayOfWeek: Int): Flow<List<TodayBooks>?>
+    fun getTodayWeaponResources(dayOfWeek: Int): Flow<List<TodayWeaponResources>?>
     fun getItemLocation(itemName:String): Flow<List<HowToObtainItem>?>
 }

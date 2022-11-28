@@ -14,7 +14,7 @@ import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
-import java.time.LocalDateTime
+import java.util.Calendar
 import javax.inject.Inject
 
 @HiltViewModel
@@ -24,11 +24,10 @@ class HomeScreenViewModel @Inject constructor(
 
     var state by mutableStateOf(HomeScreenState())
         private set
-
-    private val today = LocalDateTime.now().dayOfWeek
+    private val calendar = Calendar.getInstance().get(Calendar.DAY_OF_WEEK)
 
     val uiBooksState: StateFlow<HomeScreenBooksState> =
-        repository.getTodayBooks(today).map {
+        repository.getTodayBooks(calendar).map {
             HomeScreenBooksState.Success(it!!)
         }
             .stateIn(
@@ -38,7 +37,7 @@ class HomeScreenViewModel @Inject constructor(
             )
 
     val uiWeaponsState: StateFlow<HomeScreenWeaponsState> =
-        repository.getTodayWeaponResources(today).map {
+        repository.getTodayWeaponResources(calendar).map {
             HomeScreenWeaponsState.Success(it!!)
         }
             .stateIn(

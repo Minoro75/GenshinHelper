@@ -166,6 +166,12 @@ object TueFriBooksSource {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/90/Character_Dori_Thumb.png"
               },
               {
+                "name": "Layla",
+                "rarity": 4,
+                "element": "cryo",
+                "image_url": "https://static.wikia.nocookie.net/genshin-impact/images/c/cd/%D0%9F%D0%B5%D1%80%D1%81%D0%BE%D0%BD%D0%B0%D0%B6_%D0%9B%D0%B0%D0%B9%D0%BB%D0%B0_%D0%98%D0%BA%D0%BE%D0%BD%D0%BA%D0%B0.png/revision/latest?cb=20221102060014&path-prefix=ru"
+              },
+              {
                 "name": "Nahida",
                 "rarity": 5,
                 "element": "dendro",

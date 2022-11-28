@@ -79,7 +79,7 @@ fun PreviewBooks() {
         BooksView(
             url = "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/Item_Philosophies_of_Freedom.png",
             name = "Resistance",
-            daysAvailable = "MON/THU/SUN",
+            daysAvailable = "Monday/Thursday/Sunday",
             textColor = MaterialTheme.colorScheme.onPrimaryContainer,
             onItemClicked = {}
         )

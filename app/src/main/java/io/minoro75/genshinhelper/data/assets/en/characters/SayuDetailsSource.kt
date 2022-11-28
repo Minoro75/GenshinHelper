@@ -14,7 +14,7 @@ object SayuDetailsSource {
           "talents_books": {
             "book_name": "Light",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/95/Item_Philosophies_of_Light.png",
-            "book_days": "WED/SAT/SUN"
+            "book_days": "Wednesday/Saturday/Sunday"
           },
           "weekly_boss_item": {
             "boss_item_name": "Gilded Scale",
