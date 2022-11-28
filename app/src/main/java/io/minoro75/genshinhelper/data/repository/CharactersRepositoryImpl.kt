@@ -1,5 +1,7 @@
 package io.minoro75.genshinhelper.data.repository
 
+import android.os.Build
+import androidx.annotation.RequiresApi
 import io.minoro75.genshinhelper.data.assets.en.AssetsDataSource
 import io.minoro75.genshinhelper.data.assets.ru.AssetsDataSourceRu
 import io.minoro75.genshinhelper.domain.model.CharacterDetails
@@ -10,6 +12,7 @@ import io.minoro75.genshinhelper.domain.model.TodayWeaponResources
 import io.minoro75.genshinhelper.domain.repository.CharactersRepository
 import kotlinx.coroutines.flow.Flow
 import java.time.DayOfWeek
+import java.util.Calendar
 import java.util.Locale
 import javax.inject.Inject
 import javax.inject.Singleton
@@ -34,51 +37,54 @@ class CharactersRepositoryImpl @Inject constructor(
         }
     }
 
-
-    override fun getTodayBooks(dayOfWeek: DayOfWeek): Flow<List<TodayBooks>?> {
+    override fun getTodayBooks(dayOfWeek: Int): Flow<List<TodayBooks>?> {
         return when (Locale.getDefault().displayLanguage) {
             "русский" -> when (dayOfWeek) {
-                DayOfWeek.MONDAY -> assetsDataSourceRu.getMonThuBooksRu()
-                DayOfWeek.TUESDAY -> assetsDataSourceRu.getTueFriBooksRu()
-                DayOfWeek.WEDNESDAY -> assetsDataSourceRu.getWedSatBooksRu()
-                DayOfWeek.THURSDAY -> assetsDataSourceRu.getMonThuBooksRu()
-                DayOfWeek.FRIDAY -> assetsDataSourceRu.getTueFriBooksRu()
-                DayOfWeek.SATURDAY -> assetsDataSourceRu.getWedSatBooksRu()
-                DayOfWeek.SUNDAY -> assetsDataSourceRu.getSundayBooksRu()
+                Calendar.MONDAY -> assetsDataSourceRu.getMonThuBooksRu()
+                Calendar.TUESDAY -> assetsDataSourceRu.getTueFriBooksRu()
+                Calendar.WEDNESDAY -> assetsDataSourceRu.getWedSatBooksRu()
+                Calendar.THURSDAY -> assetsDataSourceRu.getMonThuBooksRu()
+                Calendar.FRIDAY -> assetsDataSourceRu.getTueFriBooksRu()
+                Calendar.SATURDAY -> assetsDataSourceRu.getWedSatBooksRu()
+                Calendar.SUNDAY -> assetsDataSourceRu.getSundayBooksRu()
+                else -> { throw IllegalArgumentException("calendar error in <26sdk")}
             }
 
             else -> when (dayOfWeek) {
-                DayOfWeek.MONDAY -> assetsDataSource.getMonThuBooks()
-                DayOfWeek.TUESDAY -> assetsDataSource.getTueFriBooks()
-                DayOfWeek.WEDNESDAY -> assetsDataSource.getWedSatBooks()
-                DayOfWeek.THURSDAY -> assetsDataSource.getMonThuBooks()
-                DayOfWeek.FRIDAY -> assetsDataSource.getTueFriBooks()
-                DayOfWeek.SATURDAY -> assetsDataSource.getWedSatBooks()
-                DayOfWeek.SUNDAY -> assetsDataSource.getSundayBooks()
+                Calendar.MONDAY -> assetsDataSource.getMonThuBooks()
+                Calendar.TUESDAY -> assetsDataSource.getTueFriBooks()
+                Calendar.WEDNESDAY -> assetsDataSource.getWedSatBooks()
+                Calendar.THURSDAY -> assetsDataSource.getMonThuBooks()
+                Calendar.FRIDAY -> assetsDataSource.getTueFriBooks()
+                Calendar.SATURDAY -> assetsDataSource.getWedSatBooks()
+                Calendar.SUNDAY -> assetsDataSource.getSundayBooks()
+                else -> { throw IllegalArgumentException("calendar error in <26sdk")}
             }
-        }
+    }
     }
 
-    override fun getTodayWeaponResources(dayOfWeek: DayOfWeek): Flow<List<TodayWeaponResources>?> {
+    override fun getTodayWeaponResources(dayOfWeek: Int): Flow<List<TodayWeaponResources>?> {
         return when (Locale.getDefault().displayLanguage) {
             "русский" -> when (dayOfWeek) {
-                DayOfWeek.MONDAY -> assetsDataSourceRu.getMonThuWeaponResourcesRu()
-                DayOfWeek.TUESDAY -> assetsDataSourceRu.getTueFriWeaponResourcesRu()
-                DayOfWeek.WEDNESDAY -> assetsDataSourceRu.getWedSatWeaponResourcesRu()
-                DayOfWeek.THURSDAY -> assetsDataSourceRu.getMonThuWeaponResourcesRu()
-                DayOfWeek.FRIDAY -> assetsDataSourceRu.getTueFriWeaponResourcesRu()
-                DayOfWeek.SATURDAY -> assetsDataSourceRu.getWedSatWeaponResourcesRu()
-                DayOfWeek.SUNDAY -> assetsDataSourceRu.getSundayWeaponResourcesRu()
+                Calendar.MONDAY -> assetsDataSourceRu.getMonThuWeaponResourcesRu()
+                Calendar.TUESDAY -> assetsDataSourceRu.getTueFriWeaponResourcesRu()
+                Calendar.WEDNESDAY -> assetsDataSourceRu.getWedSatWeaponResourcesRu()
+                Calendar.THURSDAY -> assetsDataSourceRu.getMonThuWeaponResourcesRu()
+                Calendar.FRIDAY -> assetsDataSourceRu.getTueFriWeaponResourcesRu()
+                Calendar.SATURDAY -> assetsDataSourceRu.getWedSatWeaponResourcesRu()
+                Calendar.SUNDAY -> assetsDataSourceRu.getSundayWeaponResourcesRu()
+                else -> { throw IllegalArgumentException("calendar error in <26sdk")}
             }
 
             else -> when (dayOfWeek) {
-                DayOfWeek.MONDAY -> assetsDataSource.getMonThuWeaponResources()
-                DayOfWeek.TUESDAY -> assetsDataSource.getTueFriWeaponResources()
-                DayOfWeek.WEDNESDAY -> assetsDataSource.getWedSatWeaponResources()
-                DayOfWeek.THURSDAY -> assetsDataSource.getMonThuWeaponResources()
-                DayOfWeek.FRIDAY -> assetsDataSource.getTueFriWeaponResources()
-                DayOfWeek.SATURDAY -> assetsDataSource.getWedSatWeaponResources()
-                DayOfWeek.SUNDAY -> assetsDataSource.getSundayWeaponResources()
+                Calendar.MONDAY -> assetsDataSource.getMonThuWeaponResources()
+                Calendar.TUESDAY -> assetsDataSource.getTueFriWeaponResources()
+                Calendar.WEDNESDAY -> assetsDataSource.getWedSatWeaponResources()
+                Calendar.THURSDAY -> assetsDataSource.getMonThuWeaponResources()
+                Calendar.FRIDAY -> assetsDataSource.getTueFriWeaponResources()
+                Calendar.SATURDAY -> assetsDataSource.getWedSatWeaponResources()
+                Calendar.SUNDAY -> assetsDataSource.getSundayWeaponResources()
+                else -> { throw IllegalArgumentException("calendar error in <26sdk")}
             }
         }
     }
