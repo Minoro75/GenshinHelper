@@ -1,7 +1,12 @@
 package io.minoro75.genshinhelper.presentation.info.composables
 
 import android.content.Context
+import android.content.Intent
+import android.content.pm.PackageInfo
+import android.content.pm.PackageManager
+import android.content.pm.VersionedPackage
 import android.net.Uri
+import android.os.Build
 import androidx.browser.customtabs.CustomTabsIntent
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
@@ -118,14 +123,42 @@ fun About() {
     }
 }
 
+@Suppress("DEPRECATION")
 fun openGithubPage(context: Context) {
+
+    var isChromeInstalled = true
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU){
+        try {
+            context.packageManager.getPackageInfo("com.google.chrome", PackageManager.PackageInfoFlags.of(0))
+
+        }
+        catch (ex:PackageManager.NameNotFoundException){
+            isChromeInstalled = false
+        }
+    }
+    else{
+        try {
+            context.packageManager.getPackageInfo("com.android.chrome",0)
+        }
+        catch (ex:PackageManager.NameNotFoundException){
+            isChromeInstalled = false
+        }
+    }
+
     val builder = CustomTabsIntent.Builder().apply {
         setShowTitle(true)
         setInstantAppsEnabled(true)
     }.build()
 
     builder.intent.`package` = "com.android.chrome"
-    builder.launchUrl(context, Uri.parse("https://github.com/Minoro75/GenshinHelper"))
+    if (isChromeInstalled){
+        builder.launchUrl(context, Uri.parse("https://github.com/Minoro75/GenshinHelper"))
+    }
+    else{
+        val i = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/Minoro75/GenshinHelper"))
+        context.startActivity(i)
+    }
+
 }
 
 @Preview
