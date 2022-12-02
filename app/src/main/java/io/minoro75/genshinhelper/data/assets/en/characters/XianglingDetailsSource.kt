@@ -56,7 +56,8 @@ object XianglingDetailsSource {
               "weapon_url": "https://paimon.moe/images/weapons/the_catch.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "WY3Uq5nlOmo"
         }
     """.trimIndent()
 }

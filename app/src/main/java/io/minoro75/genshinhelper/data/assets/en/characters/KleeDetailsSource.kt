@@ -56,7 +56,8 @@ object KleeDetailsSource {
               "weapon_url": "https://paimon.moe/images/weapons/mappa_mare.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "F6haW3opTWM"
         }
     """.trimIndent()
 }

@@ -2,9 +2,7 @@ package io.minoro75.genshinhelper.presentation.info.composables
 
 import android.content.Context
 import android.content.Intent
-import android.content.pm.PackageInfo
 import android.content.pm.PackageManager
-import android.content.pm.VersionedPackage
 import android.net.Uri
 import android.os.Build
 import androidx.browser.customtabs.CustomTabsIntent
@@ -69,6 +67,7 @@ fun About() {
             .wrapContentHeight(),
         border = BorderStroke(2.dp, SolidColor(MaterialTheme.colorScheme.primary))
     ) {
+        val context = LocalContext.current
         Column(Modifier.padding(8.dp)) {
             Text(
                 text = stringResource(id = R.string.about),
@@ -101,7 +100,6 @@ fun About() {
                 style = GenshinTypography.headlineLarge
             )
             Spacer(modifier = Modifier.height(8.dp))
-            val context = LocalContext.current
             FilledTonalButton(
                 onClick = { openGithubPage(context) },
                 colors = ButtonDefaults.buttonColors(),
@@ -127,20 +125,20 @@ fun About() {
 fun openGithubPage(context: Context) {
 
     var isChromeInstalled = true
-    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU){
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
         try {
-            context.packageManager.getPackageInfo("com.google.chrome", PackageManager.PackageInfoFlags.of(0))
+            context.packageManager.getPackageInfo(
+                "com.google.chrome",
+                PackageManager.PackageInfoFlags.of(0)
+            )
 
-        }
-        catch (ex:PackageManager.NameNotFoundException){
+        } catch (ex: PackageManager.NameNotFoundException) {
             isChromeInstalled = false
         }
-    }
-    else{
+    } else {
         try {
-            context.packageManager.getPackageInfo("com.android.chrome",0)
-        }
-        catch (ex:PackageManager.NameNotFoundException){
+            context.packageManager.getPackageInfo("com.android.chrome", 0)
+        } catch (ex: PackageManager.NameNotFoundException) {
             isChromeInstalled = false
         }
     }
@@ -151,10 +149,9 @@ fun openGithubPage(context: Context) {
     }.build()
 
     builder.intent.`package` = "com.android.chrome"
-    if (isChromeInstalled){
+    if (isChromeInstalled) {
         builder.launchUrl(context, Uri.parse("https://github.com/Minoro75/GenshinHelper"))
-    }
-    else{
+    } else {
         val i = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/Minoro75/GenshinHelper"))
         context.startActivity(i)
     }

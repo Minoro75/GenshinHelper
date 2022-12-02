@@ -56,7 +56,8 @@ object KaedeharaKazuhaDetailsSource {
               "weapon_url": "https://paimon.moe/images/weapons/sacrificial_sword.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "xD6NkyBsNmQ"
         }
     """.trimIndent()
 }

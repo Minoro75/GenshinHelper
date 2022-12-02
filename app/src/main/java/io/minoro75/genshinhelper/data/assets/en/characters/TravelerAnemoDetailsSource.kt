@@ -56,7 +56,8 @@ object TravelerAnemoDetailsSource {
               "weapon_url": "https://paimon.moe/images/weapons/iron_sting.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+         "video_guide": "SLw9rFjgH0k"
         }
     """.trimIndent()
 }

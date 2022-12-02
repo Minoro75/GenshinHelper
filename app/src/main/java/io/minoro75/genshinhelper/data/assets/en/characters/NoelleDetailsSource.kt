@@ -56,7 +56,8 @@ object NoelleDetailsSource {
               "weapon_url": "https://paimon.moe/images/weapons/whiteblind.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "xa-tJ93pmDk"
         }
     """.trimIndent()
 }

@@ -56,7 +56,8 @@ object SayuDetailsSource {
               "weapon_url": "https://paimon.moe/images/weapons/katsuragikiri_nagamasa.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "UzY6CEow4e4"
         }
     """.trimIndent()
 }

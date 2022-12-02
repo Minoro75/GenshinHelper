@@ -56,7 +56,8 @@ object YoimiyaDetailsSource {
               "weapon_url": "https://paimon.moe/images/weapons/prototype_crescent.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "6CKnyJC4UWQ"
         }
     """.trimIndent()
 }

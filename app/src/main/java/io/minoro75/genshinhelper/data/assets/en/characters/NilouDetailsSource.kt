@@ -64,7 +64,8 @@ object NilouDetailsSource {
               "weapon_url": "https://paimon.moe/images/weapons/favonius_sword.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "XzQVe6zA9ug"
         }
     """.trimIndent()
 }

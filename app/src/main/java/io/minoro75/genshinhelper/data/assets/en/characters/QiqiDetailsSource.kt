@@ -56,7 +56,8 @@ object QiqiDetailsSource {
               "weapon_url": "https://paimon.moe/images/weapons/favonius_sword.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "TWi_uDwZYKs"
         }
     """.trimIndent()
 }

@@ -56,7 +56,8 @@ object GanyuDetailsSource {
               "weapon_url": "https://paimon.moe/images/weapons/hamayumi.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "dzapswkQI6U"
         }
     """.trimIndent()
 }

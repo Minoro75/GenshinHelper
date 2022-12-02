@@ -59,7 +59,8 @@ object AlbedoDetailsSource {
               "weapon_url": "https://paimon.moe/images/weapons/harbinger_of_dawn.png",
               "weapon_rarity": 3
             }
-          ]
+          ],
+           "video_guide": "2J7lCVNvqPM"
         }
     """.trimIndent()
 }

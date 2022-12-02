@@ -64,7 +64,8 @@ object YaeMikoDetailsSource {
               "weapon_url": "https://paimon.moe/images/weapons/hakushin_ring.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "UV5m1tmMU_0"
         }
     """.trimIndent()
 }

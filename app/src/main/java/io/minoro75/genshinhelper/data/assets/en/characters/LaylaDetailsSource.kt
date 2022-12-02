@@ -56,7 +56,8 @@ object LaylaDetailsSource {
               "weapon_url": "https://paimon.moe/images/weapons/favonius_sword.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "uuYIy-EkgZw"
         }
     """.trimIndent()
 }

@@ -56,7 +56,8 @@ object YelanDetailsSource {
               "weapon_url": "https://paimon.moe/images/weapons/favonius_warbow.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "AjN2yxtAVRQ"
         }
     """.trimIndent()
 }

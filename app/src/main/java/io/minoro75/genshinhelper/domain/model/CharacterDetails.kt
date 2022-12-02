@@ -21,5 +21,7 @@ data class CharacterDetails(
     @Json(name = "weapons_replacements")
     val weaponsReplacements: List<WeaponsReplacement>,
     @Json(name = "weekly_boss_item")
-    val weeklyBossItem: WeeklyBossItem
+    val weeklyBossItem: WeeklyBossItem,
+    @Json(name = "video_guide")
+    val videoGuide: String
 )

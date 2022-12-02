@@ -56,7 +56,8 @@ object BarbaraDetailsSource {
                   "weapon_url": "https://paimon.moe/images/weapons/favonius_codex.png",
                   "weapon_rarity": 4
                 }
-              ]
+              ],
+              "video_guide": "EkQCm4sorqs"
             }
         """.trimIndent()
 }

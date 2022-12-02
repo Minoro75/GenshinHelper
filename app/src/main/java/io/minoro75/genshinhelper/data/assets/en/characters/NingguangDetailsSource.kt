@@ -64,7 +64,8 @@ object NingguangDetailsSource {
               "weapon_url": "https://paimon.moe/images/weapons/mappa_mare.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "6c-y9uyqysA"
         }
     """.trimIndent()
 }

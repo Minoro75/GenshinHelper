@@ -56,7 +56,8 @@ object BeidouDetailsSource {
                   "weapon_url": "https://paimon.moe/images/weapons/katsuragikiri_nagamasa.png",
                   "weapon_rarity": 4
                 }
-              ]
+              ],
+              "video_guide": "bLZ5nmVZXtw"
             }
         """.trimIndent()
 }

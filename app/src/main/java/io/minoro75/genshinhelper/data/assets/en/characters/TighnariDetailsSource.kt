@@ -56,7 +56,8 @@ object TighnariDetailsSource {
               "weapon_url": "https://paimon.moe/images/weapons/prototype_crescent.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "iOa62xFfVx0"
         }
     """.trimIndent()
 }

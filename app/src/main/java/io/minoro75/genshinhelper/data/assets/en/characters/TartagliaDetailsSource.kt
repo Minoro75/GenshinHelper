@@ -56,7 +56,8 @@ object TartagliaDetailsSource {
               "weapon_url": "https://paimon.moe/images/weapons/hamayumi.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "esQi-FO4S7c"
         }
     """.trimIndent()
 }

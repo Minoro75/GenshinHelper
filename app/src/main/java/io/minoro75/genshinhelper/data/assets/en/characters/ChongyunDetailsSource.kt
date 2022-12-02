@@ -56,7 +56,8 @@ object ChongyunDetailsSource {
                   "weapon_url": "https://paimon.moe/images/weapons/prototype_archaic.png",
                   "weapon_rarity": 4
                 }
-              ]
+              ],
+              "video_guide": "3gjAQ_VaBi0"
             }
         """.trimIndent()
 }

@@ -77,6 +77,8 @@ fun CharacterScreen(
                         onItemClicked = onItemClicked
                     )
                     Spacer(Modifier.height(16.dp))
+                    YoutubeVideoPreviewView(videoId = details.videoGuide)
+                    Spacer(Modifier.height(16.dp))
                     ArtifactsView(
                         artifacts = details.artifacts,
                         onItemClicked = onItemClicked

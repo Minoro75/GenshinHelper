@@ -56,7 +56,8 @@ object HuTaoDetailsSource {
               "weapon_url": "https://paimon.moe/images/weapons/deathmatch.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "VS1iBoDt_90"
         }
     """.trimIndent()
 }
