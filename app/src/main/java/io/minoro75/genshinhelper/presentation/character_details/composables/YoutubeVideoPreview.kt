@@ -14,9 +14,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
+import io.minoro75.genshinhelper.R
 
 @Composable
 fun YoutubeVideoPreviewView(
@@ -38,6 +40,8 @@ fun YoutubeVideoPreviewView(
             model = "https://img.youtube.com/vi/${videoId}/maxresdefault.jpg",
             contentDescription = "Youtube video guide",
             contentScale = ContentScale.FillBounds,
+            placeholder = painterResource(id = R.drawable.video_loading),
+            error = painterResource(id = R.drawable.video_no_internet),
             modifier = modifier
                 .fillMaxWidth()
                 .clickable {
