@@ -57,7 +57,8 @@ object AratakiIttoDetailsSourceRu {
                   "weapon_url": "https://paimon.moe/images/weapons/whiteblind.png",
                   "weapon_rarity": 4
                 }
-              ]
+              ],
+              "video_guide": "OOYNSHbMO48"
             }
         """.trimIndent()
 

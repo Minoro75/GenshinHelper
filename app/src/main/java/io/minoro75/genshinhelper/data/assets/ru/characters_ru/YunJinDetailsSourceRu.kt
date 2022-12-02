@@ -57,7 +57,8 @@ object YunJinDetailsSourceRu {
               "weapon_url": "https://paimon.moe/images/weapons/prototype_starglitter.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "dqRQ2baD_e0"
         }
     """.trimIndent()
 }

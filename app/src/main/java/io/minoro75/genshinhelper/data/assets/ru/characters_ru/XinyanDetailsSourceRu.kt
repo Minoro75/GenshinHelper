@@ -65,7 +65,8 @@ object XinyanDetailsSourceRu {
               "weapon_url": "https://paimon.moe/images/weapons/prototype_archaic.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "TQeQE2-AGFc"
         }
     """.trimIndent()
 }

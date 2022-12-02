@@ -57,7 +57,8 @@ object NahidaDetailsSourceRu {
                   "weapon_url": "https://paimon.moe/images/weapons/magic_guide.png",
                   "weapon_rarity": 3
                 }
-              ]
+              ],
+              "video_guide": "6WgMwfzX2Q8"
         }
     """.trimIndent()
 }

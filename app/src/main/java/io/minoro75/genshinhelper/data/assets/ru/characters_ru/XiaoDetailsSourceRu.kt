@@ -57,7 +57,8 @@ object XiaoDetailsSourceRu {
               "weapon_url": "https://paimon.moe/images/weapons/favonius_lance.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "U_ow8r_vuzs"
         }
     """.trimIndent()
 }

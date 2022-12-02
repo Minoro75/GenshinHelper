@@ -57,7 +57,8 @@ object DionaDetailsSourceRu {
               "weapon_url": "https://paimon.moe/images/weapons/recurve_bow.png",
               "weapon_rarity": 3
             }
-          ]
+          ],
+          "video_guide": "UrC698R182Y"
         }
     """.trimIndent()
 }

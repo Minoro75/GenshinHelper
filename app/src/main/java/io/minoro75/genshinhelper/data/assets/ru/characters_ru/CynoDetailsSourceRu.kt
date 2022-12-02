@@ -57,7 +57,8 @@ object CynoDetailsSourceRu {
                   "weapon_url": "https://paimon.moe/images/weapons/white_tassel.png",
                   "weapon_rarity": 3
                 }
-              ]
+              ],
+              "video_guide": "mGXmPHM8ed0"
             }
         """.trimIndent()
 }

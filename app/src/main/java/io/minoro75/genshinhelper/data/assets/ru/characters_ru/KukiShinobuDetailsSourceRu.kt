@@ -57,7 +57,8 @@ object KukiShinobuDetailsSourceRu {
               "weapon_url": "https://paimon.moe/images/weapons/iron_sting.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "L9NTOoKIk5w"
         }
     """.trimIndent()
 }

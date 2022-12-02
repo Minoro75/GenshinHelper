@@ -57,7 +57,8 @@ object EulaDetailsSourceRu {
               "weapon_url": "https://paimon.moe/images/weapons/snow-tombed_starsilver.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "3rpWBqOZyMs"
         }
     """.trimIndent()
 }

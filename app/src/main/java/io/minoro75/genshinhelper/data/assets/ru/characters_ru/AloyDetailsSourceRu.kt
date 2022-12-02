@@ -57,7 +57,8 @@ object AloyDetailsSourceRu {
               "weapon_url": "https://paimon.moe/images/weapons/prototype_crescent.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "PmEoBO09sh8"
         }
     """.trimIndent()
 }

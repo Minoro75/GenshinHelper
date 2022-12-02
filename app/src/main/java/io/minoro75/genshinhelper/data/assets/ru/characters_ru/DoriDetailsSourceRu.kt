@@ -65,7 +65,8 @@ object DoriDetailsSourceRu {
                   "weapon_url": "https://paimon.moe/images/weapons/katsuragikiri_nagamasa.png",
                   "weapon_rarity": 4
                 }
-              ]
+              ],
+              "video_guide": "b8FItMre0S4"
             }
         """.trimIndent()
 }

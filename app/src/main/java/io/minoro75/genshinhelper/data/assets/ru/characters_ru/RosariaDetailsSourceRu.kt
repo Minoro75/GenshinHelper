@@ -57,7 +57,8 @@ object RosariaDetailsSourceRu {
               "weapon_url": "https://paimon.moe/images/weapons/favonius_lance.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "mf4eCtDv0dc"
         }
     """.trimIndent()
 }

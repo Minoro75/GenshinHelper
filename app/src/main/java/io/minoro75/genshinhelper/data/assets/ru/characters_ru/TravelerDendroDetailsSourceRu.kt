@@ -57,7 +57,8 @@ object TravelerDendroDetailsSourceRu {
               "weapon_url": "https://paimon.moe/images/weapons/iron_sting.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "xngFVO0hWzE"
         }
     """.trimIndent()
 }

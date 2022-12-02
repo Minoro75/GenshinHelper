@@ -57,7 +57,8 @@ object AmberDetailsSourceRu {
                   "weapon_url": "https://paimon.moe/images/weapons/favonius_warbow.png",
                   "weapon_rarity": 4
                 }
-              ]
+              ],
+              "video_guide": "rv-Glta3YmQ"
             }
         """.trimIndent()
 }

@@ -57,7 +57,8 @@ object BennettDetailsSourceRu {
                   "weapon_url": "https://paimon.moe/images/weapons/prototype_rancour.png",
                   "weapon_rarity": 4
                 }
-              ]
+              ],
+              "video_guide": "AvfHFcz4vUo"
             }
         """.trimIndent()
 }

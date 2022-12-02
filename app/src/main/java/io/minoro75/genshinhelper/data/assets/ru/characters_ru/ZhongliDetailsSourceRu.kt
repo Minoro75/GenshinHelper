@@ -57,7 +57,8 @@ object ZhongliDetailsSourceRu {
               "weapon_url": "https://paimon.moe/images/weapons/black_tassel.png",
               "weapon_rarity": 3
             }
-          ]
+          ],
+          "video_guide": "oXEPKa6i5lU"
         }
     """.trimIndent()
 }

@@ -57,7 +57,8 @@ object GorouDetailsSourceRu {
               "weapon_url": "https://paimon.moe/images/weapons/sacrificial_bow.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "b52L_BEXMJ0"
         }
     """.trimIndent()
 }
