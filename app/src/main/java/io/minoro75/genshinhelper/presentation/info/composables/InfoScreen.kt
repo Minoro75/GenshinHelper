@@ -5,10 +5,12 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Build
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.browser.customtabs.CustomTabsIntent
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -32,6 +34,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.core.os.LocaleListCompat
 import io.minoro75.genshinhelper.R
 import io.minoro75.genshinhelper.presentation.theme.GenshinHelperTheme
 import io.minoro75.genshinhelper.presentation.theme.GenshinTypography
@@ -117,6 +120,47 @@ fun About() {
                 color = MaterialTheme.colorScheme.onPrimaryContainer,
                 style = GenshinTypography.bodyMedium
             )
+            Spacer(modifier = Modifier.height(8.dp))
+            Column(modifier = Modifier.fillMaxWidth()) {
+                Text(
+                    text = stringResource(id = R.string.available_in_lang),
+                    style = GenshinTypography.bodyLarge,
+                    modifier = Modifier.fillMaxWidth(),
+                    textAlign = TextAlign.Center,
+                    color = MaterialTheme.colorScheme.onPrimaryContainer
+                )
+                Spacer(modifier = Modifier.height(8.dp))
+                Row(Modifier.fillMaxWidth()) {
+
+                    FilledTonalButton(
+                        onClick = {
+                            AppCompatDelegate.setApplicationLocales(
+                                LocaleListCompat.forLanguageTags("en")
+                            )
+                        },
+                        colors = ButtonDefaults.buttonColors()
+                    ) {
+                        Text(
+                            text = "English",
+                            style = GenshinTypography.bodyMedium
+                        )
+                    }
+
+                    FilledTonalButton(
+                        onClick = {
+                            AppCompatDelegate.setApplicationLocales(
+                                LocaleListCompat.forLanguageTags("ru")
+                            )
+                        },
+                        colors = ButtonDefaults.buttonColors()
+                    ) {
+                        Text(
+                            text = "Русский",
+                            style = GenshinTypography.bodyMedium
+                        )
+                    }
+                }
+            }
         }
     }
 }

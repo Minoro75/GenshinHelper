@@ -7,7 +7,11 @@ object Dependencies {
         const val material3Version = "1.1.0-alpha02"
         const val navigationVersion = "2.5.2"
         const val lifecycle_version = "2.6.0-alpha03"
+        const val app_compat_versioon = "1.7.0-alpha01"
 
+
+        const val appCompat = "androidx.appcompat:appcompat:$app_compat_versioon"
+        const val appResources ="androidx.appcompat:appcompat-resources:$app_compat_versioon"
         const val ui = "androidx.compose.ui:ui:$version"
         const val runtime = "androidx.compose.runtime:runtime:$version"
         const val material = "androidx.compose.material3:material3:$material3Version"
@@ -38,6 +42,7 @@ object Dependencies {
         const val moshiVersion = "1.13.0"
         const val coilVersion = "2.2.0"
         const val chromeTabVersion = "1.4.0"
+
 
         const val firebaseCrashlytics = "com.google.firebase:firebase-crashlytics-ktx:18.2.13"
         const val firebaseAnalytics = "com.google.firebase:firebase-analytics-ktx:20.1.2"
