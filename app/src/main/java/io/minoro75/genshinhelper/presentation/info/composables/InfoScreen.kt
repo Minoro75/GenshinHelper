@@ -159,6 +159,20 @@ fun About() {
                             style = GenshinTypography.bodyMedium
                         )
                     }
+
+                    FilledTonalButton(
+                        onClick = {
+                            AppCompatDelegate.setApplicationLocales(
+                                LocaleListCompat.forLanguageTags("uk")
+                            )
+                        },
+                        colors = ButtonDefaults.buttonColors()
+                    ) {
+                        Text(
+                            text = "Українська",
+                            style = GenshinTypography.bodyMedium
+                        )
+                    }
                 }
             }
         }
