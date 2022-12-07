@@ -500,6 +500,13 @@ object SundayBooksSource {
                 "rarity": 5,
                 "element": "dendro",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/71/Character_Traveler_Thumb.png"
+              },
+              {
+                 "name": "Wanderer",
+                 "rarity": 5,
+                 "element": "anemo",
+                 "weapon": "catalyst",
+                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f2/Character_Wanderer_Thumb.png"
               }
             ]
           }

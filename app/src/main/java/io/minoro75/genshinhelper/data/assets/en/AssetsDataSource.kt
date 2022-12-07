@@ -58,6 +58,7 @@ import io.minoro75.genshinhelper.data.assets.en.characters.TravelerDendroDetails
 import io.minoro75.genshinhelper.data.assets.en.characters.TravelerElectroDetailsSource
 import io.minoro75.genshinhelper.data.assets.en.characters.TravelerGeoDetailsSource
 import io.minoro75.genshinhelper.data.assets.en.characters.VentiDetailsSource
+import io.minoro75.genshinhelper.data.assets.en.characters.WandererDetailsSource
 import io.minoro75.genshinhelper.data.assets.en.characters.XianglingDetailsSource
 import io.minoro75.genshinhelper.data.assets.en.characters.XiaoDetailsSource
 import io.minoro75.genshinhelper.data.assets.en.characters.XingqiuDetailsSource
@@ -106,6 +107,7 @@ import io.minoro75.genshinhelper.data.assets.en.items.books.ResistanceDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.books.TransienceDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.boss_items.AshenHeartDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.boss_items.BloodjadeBranchDataSource
+import io.minoro75.genshinhelper.data.assets.en.items.boss_items.DakasBellDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.boss_items.DragonLordsCrownDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.boss_items.DvalinsClawDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.boss_items.DvalinsPlumeDataSource
@@ -361,6 +363,8 @@ class AssetsDataSource @Inject constructor(
                     )
                 )
 
+                "Daka's Bell" -> emit(itemLocationAdapter.fromJson(DakasBellDataSource.sourcesList))
+
                 "Puppet Strings" -> emit(itemLocationAdapter.fromJson(PuppetStringsDataSource.sourcesList))
 
                 "Mirror of Mushin" -> emit(itemLocationAdapter.fromJson(MirrorOfMushinDataSource.sourcesList))
@@ -533,27 +537,29 @@ class AssetsDataSource @Inject constructor(
 
                 "Tighnari" -> emit(characterDetailsAdapter.fromJson(TighnariDetailsSource.details))
 
-                "Traveler   (Anemo)" -> emit(
+                "Traveler (Anemo)" -> emit(
                     characterDetailsAdapter.fromJson(
                         TravelerAnemoDetailsSource.details
                     )
                 )
 
-                "Traveler   (Electro)" -> emit(
+                "Traveler (Electro)" -> emit(
                     characterDetailsAdapter.fromJson(
                         TravelerElectroDetailsSource.details
                     )
                 )
 
-                "Traveler   (Geo)" -> emit(characterDetailsAdapter.fromJson(TravelerGeoDetailsSource.details))
+                "Traveler (Geo)" -> emit(characterDetailsAdapter.fromJson(TravelerGeoDetailsSource.details))
 
-                "Traveler   (Denro)" -> emit(
+                "Traveler (Denro)" -> emit(
                     characterDetailsAdapter.fromJson(
                         TravelerDendroDetailsSource.details
                     )
                 )
 
                 "Venti" -> emit(characterDetailsAdapter.fromJson(VentiDetailsSource.details))
+
+                "Wanderer" -> emit(characterDetailsAdapter.fromJson(WandererDetailsSource.details))
 
                 "Xiangling" -> emit(characterDetailsAdapter.fromJson(XianglingDetailsSource.details))
 

@@ -316,6 +316,13 @@ object CharactersListSourceRu {
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9d/Character_Xinyan_Thumb.png"
     },
     {
+      "name": "Странник",
+      "rarity": 5,
+      "element": "anemo",
+      "weapon": "catalyst",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f2/Character_Wanderer_Thumb.png"
+    },
+    {
       "name": "Сян Лин",
       "rarity": 4,
       "element": "pyro",

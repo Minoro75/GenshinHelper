@@ -483,6 +483,13 @@ object SundayBooksSourceUk {
             "book_name": "про Діяння",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/82/Item_Philosophies_of_Praxis.png",
             "characters": [
+             {
+                 "name": "Блукач",
+                 "rarity": 5,
+                 "element": "anemo",
+                 "weapon": "catalyst",
+                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f2/Character_Wanderer_Thumb.png"
+              },
               {
                 "name": "Коллей",
                 "rarity": 4,

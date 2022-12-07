@@ -58,6 +58,7 @@ import io.minoro75.genshinhelper.data.assets.uk.characters.TravelerDendroDetails
 import io.minoro75.genshinhelper.data.assets.uk.characters.TravelerElectroDetailsSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.characters.TravelerGeoDetailsSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.characters.VentiDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.WandererDetailsSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.characters.XianglingDetailsSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.characters.XiaoDetailsSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.characters.XingqiuDetailsSourceUk
@@ -106,6 +107,7 @@ import io.minoro75.genshinhelper.data.assets.uk.items.books.ResistanceDataSource
 import io.minoro75.genshinhelper.data.assets.uk.items.books.TransienceDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.boss_items.AshenHeartDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.boss_items.BloodjadeBranchDataSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.items.boss_items.DakasBellDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.boss_items.DragonLordsCrownDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.boss_items.DvalinsClawDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.boss_items.DvalinsPlumeDataSourceUk
@@ -391,6 +393,8 @@ class AssetsDataSourceUk @Inject constructor(
 
                 "Дзеркало Мушіну" -> emit(itemLocationAdapter.fromJson(MirrorOfMushinDataSourceUk.sourcesList))
 
+                "Пустий дзвоник"-> emit(itemLocationAdapter.fromJson(DakasBellDataSourceUk.sourcesList))
+
                 // Books
 
                 "про Напоумлення" -> emit(itemLocationAdapter.fromJson(AdmonitionDataSourceUk.sourcesList))
@@ -615,6 +619,8 @@ class AssetsDataSourceUk @Inject constructor(
                 "Юнь Дзінь" -> emit(characterDetailsAdapter.fromJson(YunJinDetailsSourceUk.details))
 
                 "Джонлі" -> emit(characterDetailsAdapter.fromJson(ZhongliDetailsSourceUk.details))
+
+                "Блукач" -> emit(characterDetailsAdapter.fromJson(WandererDetailsSourceUk.details))
 
                 else -> throw IllegalArgumentException("There is no character with name : $characterName")
             }

@@ -341,29 +341,28 @@ object CharactersListSource {
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/91/Character_Tighnari_Thumb.png"
     },
     {
-      "name": "Traveler   (Anemo)",
+      "name": "Traveler (Anemo)",
       "rarity": 5,
       "element": "anemo",
       "weapon": "sword",
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/71/Character_Traveler_Thumb.png"
     },
     {
-      "name": "Traveler   (Electro)",
+      "name": "Traveler (Electro)",
       "rarity": 5,
       "element": "electro",
       "weapon": "sword",
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/71/Character_Traveler_Thumb.png"
     },
     {
-      "name": "Traveler   (Geo)",
+      "name": "Traveler (Geo)",
       "rarity": 5,
       "element": "geo",
       "weapon": "sword",
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/71/Character_Traveler_Thumb.png"
     },
-
    {
-      "name": "Traveler   (Denro)",
+      "name": "Traveler (Denro)",
       "rarity": 5,
       "element": "dendro",
       "weapon": "sword",
@@ -375,6 +374,13 @@ object CharactersListSource {
       "element": "anemo",
       "weapon": "bow",
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/8d/Character_Venti_Thumb.png"
+    },
+    {
+      "name": "Wanderer",
+      "rarity": 5,
+      "element": "anemo",
+      "weapon": "catalyst",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f2/Character_Wanderer_Thumb.png"
     },
     {
       "name": "Xiangling",

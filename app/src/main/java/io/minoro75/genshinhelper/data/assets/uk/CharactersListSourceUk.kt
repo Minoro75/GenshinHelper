@@ -40,6 +40,13 @@ object CharactersListSourceUk {
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/6/61/Character_Beidou_Thumb.png"
     },
     {
+      "name": "Блукач",
+      "rarity": 5,
+      "element": "anemo",
+      "weapon": "catalyst",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f2/Character_Wanderer_Thumb.png"
+    },
+    {
       "name": "Беннетт",
       "rarity": 4,
       "element": "pyro",
