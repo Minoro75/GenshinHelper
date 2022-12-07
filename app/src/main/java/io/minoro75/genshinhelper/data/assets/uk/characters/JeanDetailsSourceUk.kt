@@ -57,7 +57,7 @@ object JeanDetailsSourceUk {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": "_f8S3_BKz9k"
+          "video_guide": null
         }
     """.trimIndent()
 }

@@ -57,7 +57,7 @@ object SayuDetailsSourceUk {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": "UzY6CEow4e4"
+          "video_guide": null
         }
     """.trimIndent()
 }

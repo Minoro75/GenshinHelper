@@ -57,7 +57,7 @@ object MonaDetailsSourceUk {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": "jsySfuZQhEM"
+          "video_guide": null
         }
     """.trimIndent()
 }

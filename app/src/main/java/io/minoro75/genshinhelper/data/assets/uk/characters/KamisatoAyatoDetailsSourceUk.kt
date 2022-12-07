@@ -57,7 +57,7 @@ object KamisatoAyatoDetailsSourceUk {
           "weapon_rarity": 4
         }
       ],
-      "video_guide": "VoCdo57eB_4"
+      "video_guide": "Xva5dIA0dY8"
     }
 """.trimIndent()
 }

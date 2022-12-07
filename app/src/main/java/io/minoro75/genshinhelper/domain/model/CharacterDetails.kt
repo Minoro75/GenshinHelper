@@ -23,5 +23,5 @@ data class CharacterDetails(
     @Json(name = "weekly_boss_item")
     val weeklyBossItem: WeeklyBossItem,
     @Json(name = "video_guide")
-    val videoGuide: String
+    val videoGuide: String?
 )

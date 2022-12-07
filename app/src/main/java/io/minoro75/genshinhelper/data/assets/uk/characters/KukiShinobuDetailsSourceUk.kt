@@ -57,7 +57,7 @@ object KukiShinobuDetailsSourceUk {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": "30sXZ7e_MOc"
+          "video_guide": "MorGAA75dK4"
         }
     """.trimIndent()
 }

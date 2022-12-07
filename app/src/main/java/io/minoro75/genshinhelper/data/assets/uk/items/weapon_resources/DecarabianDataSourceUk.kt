@@ -14,7 +14,7 @@ object DecarabianDataSourceUk {
           {
             "name": "Декарабіан",
             "domain_name": "Cecilia Garden",
-            "description": "You can collect Decarabian resources as a random reward from the domain located in Mondstadt"
+            "description": "Ви можете отримати Декарабіана в нагороду за прохождення підземелля в Мондштаді"
           }
         ]
     """.trimIndent()

@@ -57,7 +57,7 @@ object YoimiyaDetailsSourceUk {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": "6CKnyJC4UWQ"
+          "video_guide": "w6aEjvblBmI"
         }
     """.trimIndent()
 }

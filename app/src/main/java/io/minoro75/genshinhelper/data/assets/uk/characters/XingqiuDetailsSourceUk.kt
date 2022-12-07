@@ -10,7 +10,7 @@ object XingqiuDetailsSourceUk {
           "rarity": 4,
           "element": "hydro",
           "weapon": "sword",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/4/4a/Character_Xingqiu_Thursdaymb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/4/4a/Character_Xingqiu_Thumb.png",
           "talents_books": {
             "book_name": "про Золото",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/01/Item_Philosophies_of_Gold.png",
@@ -57,7 +57,7 @@ object XingqiuDetailsSourceUk {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": "tHqFAZDMqSQ"
+          "video_guide": "jGt3Z4L4qac"
         }
     """.trimIndent()
 }

@@ -57,7 +57,7 @@ object SangonomiyaKokomiDetailsSourceUk {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": "Uo9NzSILyys"
+          "video_guide": "ce4DSxUZ1BM"
         }
     """.trimIndent()
 }

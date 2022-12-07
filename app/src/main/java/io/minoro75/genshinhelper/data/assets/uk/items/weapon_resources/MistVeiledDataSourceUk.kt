@@ -14,7 +14,7 @@ object MistVeiledDataSourceUk {
           {
             "name": "Обвиті туманом",
             "domain_name": "Hidden Palace of Lianshan Formula",
-            "description": "You can collect Mist Veiled resources as a random reward from the domain located in Liyue"
+            "description": "Ви можете отримати Обвиті туманом в нагороду за прохождення підземелля в Лі Юе"
           }
         ]
     """.trimIndent()

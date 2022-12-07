@@ -57,7 +57,7 @@ object TravelerAnemoDetailsSourceUk {
               "weapon_rarity": 4
             }
           ],
-         "video_guide": "SLw9rFjgH0k"
+         "video_guide": null
         }
     """.trimIndent()
 }

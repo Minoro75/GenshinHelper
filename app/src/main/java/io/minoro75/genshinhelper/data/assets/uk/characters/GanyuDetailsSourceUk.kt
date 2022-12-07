@@ -57,7 +57,7 @@ object GanyuDetailsSourceUk {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": "dzapswkQI6U"
+          "video_guide": "81WgJEcNRQ8"
         }
     """.trimIndent()
 }

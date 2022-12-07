@@ -57,7 +57,7 @@ object TravelerDendroDetailsSourceUk {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": "wPZ5_axqjj0"
+          "video_guide": "upfD3zC2W0Y"
         }
     """.trimIndent()
 }

@@ -57,7 +57,7 @@ object AmberDetailsSourceUk {
                   "weapon_rarity": 4
                 }
               ],
-              "video_guide": "oRMTPVfffUc"
+              "video_guide": null
             }
         """.trimIndent()
 }

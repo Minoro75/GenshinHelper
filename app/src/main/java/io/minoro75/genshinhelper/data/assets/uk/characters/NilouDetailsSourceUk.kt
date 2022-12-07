@@ -65,7 +65,7 @@ object NilouDetailsSourceUk {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": "XzQVe6zA9ug"
+          "video_guide": "uTmLNSTpTrg"
         }
     """.trimIndent()
 }

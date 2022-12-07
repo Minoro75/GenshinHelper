@@ -65,7 +65,7 @@ object LisaDetailsSourceUk {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": "UofcnB3X3lI"
+          "video_guide": null
         }
     """.trimIndent()
 }

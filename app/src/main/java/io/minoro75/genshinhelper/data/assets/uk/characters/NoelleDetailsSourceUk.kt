@@ -57,7 +57,7 @@ object NoelleDetailsSourceUk {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": "xa-tJ93pmDk"
+          "video_guide": null
         }
     """.trimIndent()
 }

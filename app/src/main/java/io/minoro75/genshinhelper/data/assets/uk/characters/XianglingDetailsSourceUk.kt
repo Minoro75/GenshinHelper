@@ -57,7 +57,7 @@ object XianglingDetailsSourceUk {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": "WY3Uq5nlOmo"
+          "video_guide": "AP6Sl_BBJ6M"
         }
     """.trimIndent()
 }

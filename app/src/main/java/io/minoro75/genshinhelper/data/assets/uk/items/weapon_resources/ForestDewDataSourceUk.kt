@@ -14,7 +14,7 @@ object ForestDewDataSourceUk {
           {
             "name": "Лісова роса",
             "domain_name": "Tower of Abject Pride",
-            "description": "You can collect Forest Dews resources as a random reward from the domain located in Sumeru"
+            "description": "Ви можете отримати Лісова роса в нагороду за прохождення підземелля в Сумеру"
           }
         ]
     """.trimIndent()

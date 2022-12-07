@@ -14,7 +14,7 @@ object DistantSeaDataSourceUk {
           {
             "name": "Далеке море",
             "domain_name": "Court of Flowing Sand",
-            "description": "You can collect Distant Sea resources as a random reward from the domain located in Inazuma"
+            "description": "Ви можете отримати Далеке море в нагороду за прохождення підземелля в Інадзумі"
           }
         ]
     """.trimIndent()

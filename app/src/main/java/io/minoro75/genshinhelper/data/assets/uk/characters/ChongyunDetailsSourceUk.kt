@@ -57,7 +57,7 @@ object ChongyunDetailsSourceUk {
                   "weapon_rarity": 4
                 }
               ],
-              "video_guide": "3gjAQ_VaBi0"
+              "video_guide": null
             }
         """.trimIndent()
 }

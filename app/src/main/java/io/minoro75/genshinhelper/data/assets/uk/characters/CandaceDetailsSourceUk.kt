@@ -57,7 +57,7 @@ object CandaceDetailsSourceUk {
                   "weapon_rarity": 3
                 }
               ],
-              "video_guide": "YZIU_sHauqM"
+              "video_guide": "_BpL9Lc2uIU"
             }
         """.trimIndent()
 }

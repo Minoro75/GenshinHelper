@@ -14,7 +14,7 @@ object DandelionGladiatorDataSourceUk {
           {
             "name": "Левине ікло",
             "domain_name": "Cecilia Garden",
-            "description": "You can collect Dandelion Gladiator's resources as a random reward from the domain located in Mondstadt"
+            "description": "Ви можете отримати Левине ікло в нагороду за прохождення підземелля в Мондштаді"
           }
         ]
     """.trimIndent()

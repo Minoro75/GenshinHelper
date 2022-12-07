@@ -14,7 +14,7 @@ object BorealWolfDataSourceUk {
           {
             "name": "Арктичний вовк",
             "domain_name": "Cecilia Garden",
-            "description": "You can collect Boreal Wolf's resources as a random reward from the domain located in Mondstadt"
+            "description": "Ви можете отримати Арктичного вовка в нагороду за прохождення підземелля в Мондштаді"
           }
         ]
     """.trimIndent()

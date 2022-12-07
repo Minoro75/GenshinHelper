@@ -57,7 +57,7 @@ object VentiDetailsSourceUk {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": "dx9Q87fEpF8"
+          "video_guide": "V3wBnbC3F4o"
         }
     """.trimIndent()
 }

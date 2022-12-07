@@ -57,7 +57,7 @@ object ZhongliDetailsSourceUk {
               "weapon_rarity": 3
             }
           ],
-          "video_guide": "7JQQ9BUAzYA"
+          "video_guide": "SBUS-jEmUng"
         }
     """.trimIndent()
 }

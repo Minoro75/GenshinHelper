@@ -57,7 +57,7 @@ object TighnariDetailsSourceUk {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": "iOa62xFfVx0"
+          "video_guide": "hu93xZP2Pkw"
         }
     """.trimIndent()
 }

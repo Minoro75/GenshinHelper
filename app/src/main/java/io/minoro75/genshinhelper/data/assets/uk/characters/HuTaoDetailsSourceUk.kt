@@ -57,7 +57,7 @@ object HuTaoDetailsSourceUk {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": "VS1iBoDt_90"
+          "video_guide": "BU53CphtRn4"
         }
     """.trimIndent()
 }

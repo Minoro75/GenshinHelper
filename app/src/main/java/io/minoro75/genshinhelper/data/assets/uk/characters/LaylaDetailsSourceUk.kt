@@ -57,7 +57,7 @@ object LaylaDetailsSourceUk {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": "uuYIy-EkgZw"
+          "video_guide": "XAnNMEW3vEM"
         }
     """.trimIndent()
 }

@@ -6,7 +6,7 @@ object NahidaDetailsSourceUk {
     @Language("JSON")
     val details = """
         {
-          "name": "Нагіда",
+          "name": "Нахіда",
           "rarity": 5,
           "element": "dendro",
           "weapon": "catalyst",
@@ -57,7 +57,7 @@ object NahidaDetailsSourceUk {
                   "weapon_rarity": 3
                 }
               ],
-              "video_guide": "F3Ld3hLesBo"
+              "video_guide": "-OvdYCZwNmc"
         }
     """.trimIndent()
 }

@@ -14,7 +14,7 @@ object NarukamiDataSourceUk {
           {
             "name": "Нарукамі",
             "domain_name": "Court of Flowing Sand",
-            "description": "You can collect Narukami resources as a random reward from the domain located in Inazuma"
+            "description": "Ви можете отримати Нарукамі в нагороду за прохождення підземелля в Інадзумі"
           }
         ]
     """.trimIndent()

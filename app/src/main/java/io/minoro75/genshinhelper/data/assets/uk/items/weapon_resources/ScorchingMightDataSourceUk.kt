@@ -14,7 +14,7 @@ object ScorchingMightDataSourceUk {
           {
             "name": "Палаюча міць",
             "domain_name": "Tower of Abject Pride",
-            "description": "You can collect Scorching Mights resources as a random reward from the domain located in Sumeru"
+            "description": "Ви можете отримати Палаючу міць в нагороду за прохождення підземелля в Сумеру"
           }
         ]
     """.trimIndent()

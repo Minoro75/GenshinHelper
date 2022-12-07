@@ -65,7 +65,7 @@ object FischlDetailsSourceUk {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": "P8U5S3CwWLI"
+          "video_guide": "UeN3bcgaq3Y"
         }
     """.trimIndent()
 }

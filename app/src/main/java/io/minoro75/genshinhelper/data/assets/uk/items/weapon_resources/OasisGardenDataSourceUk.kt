@@ -14,7 +14,7 @@ object OasisGardenDataSourceUk {
           {
             "name": "Квітучий оазис",
             "domain_name": "Tower of Abject Pride",
-            "description": "You can collect Oasis Gardens resources as a random reward from the domain located in Sumeru"
+            "description": "Ви можете отримати Квітучий оазис в нагороду за прохождення підземелля в Сумеру"
           }
         ]
     """.trimIndent()

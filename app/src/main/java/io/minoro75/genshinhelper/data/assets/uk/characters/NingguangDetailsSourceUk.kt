@@ -65,7 +65,7 @@ object NingguangDetailsSourceUk {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": "6c-y9uyqysA"
+          "video_guide": null
         }
     """.trimIndent()
 }

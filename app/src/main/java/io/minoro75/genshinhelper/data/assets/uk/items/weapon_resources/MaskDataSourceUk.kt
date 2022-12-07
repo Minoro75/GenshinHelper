@@ -14,7 +14,7 @@ object MaskDataSourceUk {
           {
             "name": "Маска",
             "domain_name": "Court of Flowing Sand",
-            "description": "You can collect Masks resources as a random reward from the domain located in Inazuma"
+            "description": "Ви можете отримати Маску в нагороду за прохождення підземелля в Інадзумі"
           }
         ]
     """.trimIndent()

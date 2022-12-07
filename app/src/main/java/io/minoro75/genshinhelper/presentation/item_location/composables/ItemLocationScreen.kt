@@ -17,11 +17,13 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.ExperimentalLifecycleComposeApi
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import io.minoro75.genshinhelper.R
 import io.minoro75.genshinhelper.domain.model.HowToObtainItem
 import io.minoro75.genshinhelper.presentation.common.LoadingScreen
 import io.minoro75.genshinhelper.presentation.item_location.ItemLocationViewModel
@@ -56,7 +58,7 @@ fun ItemLocationScreen(
                         )
                 ) {
                     ExtendedFloatingActionButton(
-                        text = { Text(text = "Go Back") },
+                        text = { Text(text = stringResource(id = R.string.go_back)) },
                         icon = {
                             Icon(
                                 imageVector = Icons.Filled.ArrowBack,

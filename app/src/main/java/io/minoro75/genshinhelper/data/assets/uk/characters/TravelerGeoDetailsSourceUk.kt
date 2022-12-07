@@ -57,7 +57,7 @@ object TravelerGeoDetailsSourceUk {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": "w13Gk8ITDcU"
+          "video_guide": null
         }
     """.trimIndent()
 }

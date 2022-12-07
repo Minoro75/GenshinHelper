@@ -60,7 +60,7 @@ object AlbedoDetailsSourceUk {
               "weapon_rarity": 3
             }
           ],
-           "video_guide": "2J7lCVNvqPM"
+           "video_guide": "f5i79_npsjA"
         }
     """.trimIndent()
 }

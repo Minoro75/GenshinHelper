@@ -22,7 +22,7 @@ import io.minoro75.genshinhelper.R
 
 @Composable
 fun YoutubeVideoPreviewView(
-    videoId: String,
+    videoId: String?,
     modifier: Modifier = Modifier
 ) {
     val context = LocalContext.current
@@ -37,7 +37,11 @@ fun YoutubeVideoPreviewView(
         border = BorderStroke(2.dp, SolidColor(MaterialTheme.colorScheme.primary))
     ) {
         AsyncImage(
-            model = "https://img.youtube.com/vi/${videoId}/maxresdefault.jpg",
+            model = if (videoId!= null) {
+                "https://img.youtube.com/vi/${videoId}/maxresdefault.jpg"
+            } else {
+                   R.drawable.video_not_exist_uk
+            },
             contentDescription = "Youtube video guide",
             contentScale = ContentScale.FillBounds,
             placeholder = painterResource(id = R.drawable.video_loading),
@@ -45,12 +49,14 @@ fun YoutubeVideoPreviewView(
             modifier = modifier
                 .fillMaxWidth()
                 .clickable {
-                    context.startActivity(
-                        Intent(
-                            Intent.ACTION_VIEW,
-                            Uri.parse("https://www.youtube.com/watch?v=${videoId}")
+                    if (videoId != null) {
+                        context.startActivity(
+                            Intent(
+                                Intent.ACTION_VIEW,
+                                Uri.parse("https://www.youtube.com/watch?v=${videoId}")
+                            )
                         )
-                    )
+                    }
                 }
         )
     }

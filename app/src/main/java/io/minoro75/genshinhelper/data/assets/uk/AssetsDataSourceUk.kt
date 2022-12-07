@@ -530,7 +530,7 @@ class AssetsDataSourceUk @Inject constructor(
 
                 "Мона" -> emit(characterDetailsAdapter.fromJson(MonaDetailsSourceUk.details))
 
-                "Нагіда" -> emit(characterDetailsAdapter.fromJson(NahidaDetailsSourceUk.details))
+                "Нахіда" -> emit(characterDetailsAdapter.fromJson(NahidaDetailsSourceUk.details))
 
                 "Нілу" -> emit(characterDetailsAdapter.fromJson(NilouDetailsSourceUk.details))
 

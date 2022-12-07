@@ -57,7 +57,7 @@ object AratakiIttoDetailsSourceUk {
                   "weapon_rarity": 4
                 }
               ],
-              "video_guide": "KLvivxNQJj0"
+              "video_guide": "6TQcAJ6TqgU"
             }
         """.trimIndent()
 }

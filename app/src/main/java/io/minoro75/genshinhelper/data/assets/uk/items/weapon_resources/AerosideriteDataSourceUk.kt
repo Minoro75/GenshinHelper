@@ -14,7 +14,7 @@ object AerosideriteDataSourceUk {
           {
             "name": "Чорний сидеріт",
             "domain_name": "Hidden Palace of Lianshan Formula",
-            "description": "You can collect Aerosiderite's resources as a random reward from the domain located in Liyue"
+            "description": "Ви можете отримати Чорний сидеріт в нагороду за прохождення підземелля в Лі Юе"
           }
         ]
     """.trimIndent()

@@ -65,7 +65,7 @@ object XinyanDetailsSourceUk {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": "eeqHtYi1on8"
+          "video_guide": "WccCde5SXEc"
         }
     """.trimIndent()
 }
