@@ -117,6 +117,13 @@ object CharactersListSource {
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d3/Character_Eula_Thumb.png"
     },
     {
+      "name": "Faruzan",
+      "rarity": 4,
+      "element": "anemo",
+      "weapon": "bow",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a1/Character_Faruzan_Thumb.png"
+    },
+    {
       "name": "Fischl",
       "rarity": 4,
       "element": "electro",

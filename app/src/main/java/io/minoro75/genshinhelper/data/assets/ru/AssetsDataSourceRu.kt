@@ -31,6 +31,7 @@ import io.minoro75.genshinhelper.data.assets.ru.characters_ru.DilucDetailsSource
 import io.minoro75.genshinhelper.data.assets.ru.characters_ru.DionaDetailsSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.characters_ru.DoriDetailsSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.characters_ru.EulaDetailsSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.characters_ru.FaruzanDetailsSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.characters_ru.FischlDetailsSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.characters_ru.GanyuDetailsSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.characters_ru.GorouDetailsSourceRu
@@ -575,6 +576,8 @@ class AssetsDataSourceRu @Inject constructor(
                 "Чжун Ли" -> emit(characterDetailsAdapter.fromJson(ZhongliDetailsSourceRu.detailsRu))
 
                 "Странник" -> emit(characterDetailsAdapter.fromJson(WandererDetailsSourceRu.detailsRu))
+
+                "Фарузан" -> emit(characterDetailsAdapter.fromJson(FaruzanDetailsSourceRu.details))
 
                 else -> throw IllegalArgumentException("There is no character with name : $characterName")
             }

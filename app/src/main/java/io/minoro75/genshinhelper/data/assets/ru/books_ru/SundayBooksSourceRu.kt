@@ -176,6 +176,12 @@ object SundayBooksSourceRu {
                 "rarity": 5,
                 "element": "dendro",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/71/Character_Traveler_Thumb.png"
+              },
+              {
+                "name": "Фарузан",
+                "rarity": 4,
+                "element": "anemo",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a1/Character_Faruzan_Thumb.png"
               }
             ]
           },

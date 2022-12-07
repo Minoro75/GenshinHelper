@@ -376,6 +376,13 @@ object CharactersListSourceUk {
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/91/Character_Tighnari_Thumb.png"
     },
     {
+      "name": "Фарузан",
+      "rarity": 4,
+      "element": "anemo",
+      "weapon": "bow",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a1/Character_Faruzan_Thumb.png"
+    },
+    {
       "name": "Фішль",
       "rarity": 4,
       "element": "electro",

@@ -166,6 +166,13 @@ object MonThuBooksSource {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d1/Character_Cyno_Thumb.png"
               },
               {
+                "name": "Faruzan",
+                "rarity": 4,
+                "element": "anemo",
+                "weapon": "bow",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a1/Character_Faruzan_Thumb.png"
+              },
+              {
                 "name": "Tighnari",
                 "rarity": 5,
                 "element": "dendro",

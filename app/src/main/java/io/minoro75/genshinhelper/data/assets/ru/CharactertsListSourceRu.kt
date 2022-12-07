@@ -358,6 +358,13 @@ object CharactersListSourceRu {
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/8a/Character_Thoma_Thumb.png"
     },
      {
+      "name": "Фарузан",
+      "rarity": 4,
+      "element": "anemo",
+      "weapon": "bow",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a1/Character_Faruzan_Thumb.png"
+    },
+     {
       "name": "Фишль",
       "rarity": 4,
       "element": "electro",
