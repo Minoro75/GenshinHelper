@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatDelegate
 import androidx.browser.customtabs.CustomTabsIntent
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -130,7 +131,8 @@ fun About() {
                     color = MaterialTheme.colorScheme.onPrimaryContainer
                 )
                 Spacer(modifier = Modifier.height(8.dp))
-                Row(Modifier.fillMaxWidth()) {
+                Row(Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween) {
 
                     FilledTonalButton(
                         onClick = {
@@ -149,20 +151,6 @@ fun About() {
                     FilledTonalButton(
                         onClick = {
                             AppCompatDelegate.setApplicationLocales(
-                                LocaleListCompat.forLanguageTags("ru")
-                            )
-                        },
-                        colors = ButtonDefaults.buttonColors()
-                    ) {
-                        Text(
-                            text = "Русский",
-                            style = GenshinTypography.bodyMedium
-                        )
-                    }
-
-                    FilledTonalButton(
-                        onClick = {
-                            AppCompatDelegate.setApplicationLocales(
                                 LocaleListCompat.forLanguageTags("uk")
                             )
                         },
@@ -170,6 +158,20 @@ fun About() {
                     ) {
                         Text(
                             text = "Українська",
+                            style = GenshinTypography.bodyMedium
+                        )
+                    }
+
+                    FilledTonalButton(
+                        onClick = {
+                            AppCompatDelegate.setApplicationLocales(
+                                LocaleListCompat.forLanguageTags("ru")
+                            )
+                        },
+                        colors = ButtonDefaults.buttonColors()
+                    ) {
+                        Text(
+                            text = "Русский",
                             style = GenshinTypography.bodyMedium
                         )
                     }
