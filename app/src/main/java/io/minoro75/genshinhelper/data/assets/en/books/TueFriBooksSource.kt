@@ -58,7 +58,7 @@ object TueFriBooksSource {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/1/1d/Character_Razor_Thumb.png"
               },
               {
-                "name": "Traveler   (Anemo)",
+                "name": "Traveler (Anemo)",
                 "rarity": 5,
                 "element": "anemo",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/71/Character_Traveler_Thumb.png"
@@ -94,7 +94,7 @@ object TueFriBooksSource {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f0/Character_Kaedehara_Kazuha_Thumb.png"
               },
               {
-                "name": "Traveler   (Geo)",
+                "name": "Traveler (Geo)",
                 "rarity": 5,
                 "element": "geo",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/71/Character_Traveler_Thumb.png"
@@ -148,7 +148,7 @@ object TueFriBooksSource {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/37/Character_Kuki_Shinobu_Thumb.png"
               },
               {
-                "name": "Traveler   (Electro)",
+                "name": "Traveler (Electro)",
                 "rarity": 5,
                 "element": "electro",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/71/Character_Traveler_Thumb.png"
@@ -178,7 +178,7 @@ object TueFriBooksSource {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/cf/Character_Nahida_Thumb.png"
               },
               {
-                "name": "Traveler   (Denro)",
+                "name": "Traveler (Dendro)",
                 "rarity": 5,
                 "element": "dendro",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/71/Character_Traveler_Thumb.png"
