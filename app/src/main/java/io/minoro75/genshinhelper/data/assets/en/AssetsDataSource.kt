@@ -552,7 +552,7 @@ class AssetsDataSource @Inject constructor(
 
                 "Traveler (Geo)" -> emit(characterDetailsAdapter.fromJson(TravelerGeoDetailsSource.details))
 
-                "Traveler (Denro)" -> emit(
+                "Traveler (Dendro)" -> emit(
                     characterDetailsAdapter.fromJson(
                         TravelerDendroDetailsSource.details
                     )
