@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Genshin Helper</string>
+    <string name="app_name">Терминал Акаша</string>
     <string name="home">Главная</string>
     <string name="characters">Персонажи</string>
     <string name="info">Инфо</string>

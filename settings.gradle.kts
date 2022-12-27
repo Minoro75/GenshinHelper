@@ -1,5 +1,5 @@
 include(":app")
-rootProject.name = "Genshin Helper"
+rootProject.name = "Akasha Terminal"
 
 pluginManagement {
     repositories {
