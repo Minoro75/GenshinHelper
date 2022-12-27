@@ -369,7 +369,7 @@ object CharactersListSource {
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/71/Character_Traveler_Thumb.png"
     },
    {
-      "name": "Traveler (Denro)",
+      "name": "Traveler (Dendro)",
       "rarity": 5,
       "element": "dendro",
       "weapon": "sword",

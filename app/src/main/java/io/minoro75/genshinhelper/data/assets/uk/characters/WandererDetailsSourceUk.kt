@@ -57,7 +57,7 @@ object WandererDetailsSourceUk {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": "YXte5HXPNaA"
+          "video_guide": "j9tcQpdfUCA"
         }
     """.trimIndent()
 }

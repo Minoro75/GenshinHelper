@@ -201,7 +201,7 @@ object CharactersListSourceUk {
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/96/Character_Kujou_Sara_Thumb.png"
     },
     {
-      "name": "Кукі Шинобу",
+      "name": "Кукі Шінобу",
       "rarity": 4,
       "element": "electro",
       "weapon": "sword",

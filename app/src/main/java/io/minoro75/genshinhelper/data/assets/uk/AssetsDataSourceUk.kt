@@ -527,7 +527,7 @@ class AssetsDataSourceUk @Inject constructor(
 
                 "Куджьо Сара" -> emit(characterDetailsAdapter.fromJson(KujouSaraDetailsSourceUk.details))
 
-                "Кукі Шинобу" -> emit(characterDetailsAdapter.fromJson(KukiShinobuDetailsSourceUk.details))
+                "Кукі Шінобу" -> emit(characterDetailsAdapter.fromJson(KukiShinobuDetailsSourceUk.details))
 
                 "Лайла" -> emit(characterDetailsAdapter.fromJson(LaylaDetailsSourceUk.details))
 
