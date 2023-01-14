@@ -10,7 +10,7 @@ object NoelleDetailsSourceUk {
           "rarity": 4,
           "element": "geo",
           "weapon": "claymore",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/ab/Character_Noelle_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/8e/Noelle_Icon.png/revision/latest",
           "talents_books": {
             "book_name": "про Стійкість",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/0b/Item_Philosophies_of_Resistance.png",

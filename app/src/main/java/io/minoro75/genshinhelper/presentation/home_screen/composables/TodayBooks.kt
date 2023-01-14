@@ -302,67 +302,67 @@ fun PreviewTodayBooks() {
                             element = "cryo",
                             name = "Raiden Miku",
                             rarity = 5,
-                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
+                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/e/e5/Aloy_Icon.png/revision/latest"
                         ),
                         Character(
                             element = "cryo",
                             name = "Raiden Miku",
                             rarity = 4,
-                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
+                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/e/e5/Aloy_Icon.png/revision/latest"
                         ),
                         Character(
                             element = "cryo",
                             name = "Raiden Miku",
                             rarity = 5,
-                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
+                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/e/e5/Aloy_Icon.png/revision/latest"
                         ),
                         Character(
                             element = "cryo",
                             name = "Raiden Miku",
                             rarity = 5,
-                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
+                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/e/e5/Aloy_Icon.png/revision/latest"
                         ),
                         Character(
                             element = "cryo",
                             name = "Raiden Miku",
                             rarity = 4,
-                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
+                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/e/e5/Aloy_Icon.png/revision/latest"
                         ),
                         Character(
                             element = "cryo",
                             name = "Raiden Miku",
                             rarity = 5,
-                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
+                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/e/e5/Aloy_Icon.png/revision/latest"
                         ),
                         Character(
                             element = "cryo",
                             name = "Raiden Miku",
                             rarity = 5,
-                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
+                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/e/e5/Aloy_Icon.png/revision/latest"
                         ),
                         Character(
                             element = "cryo",
                             name = "Raiden Miku",
                             rarity = 5,
-                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
+                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/e/e5/Aloy_Icon.png/revision/latest"
                         ),
                         Character(
                             element = "cryo",
                             name = "Raiden Miku",
                             rarity = 5,
-                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
+                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/e/e5/Aloy_Icon.png/revision/latest"
                         ),
                         Character(
                             element = "cryo",
                             name = "Raiden Miku",
                             rarity = 5,
-                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
+                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/e/e5/Aloy_Icon.png/revision/latest"
                         ),
                         Character(
                             element = "cryo",
                             name = "Raiden Miku",
                             rarity = 4,
-                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
+                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/e/e5/Aloy_Icon.png/revision/latest"
                         )
                     )
                 ),
@@ -374,19 +374,19 @@ fun PreviewTodayBooks() {
                             element = "cryo",
                             name = "Raiden Miku",
                             rarity = 5,
-                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
+                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/e/e5/Aloy_Icon.png/revision/latest"
                         ),
                         Character(
                             element = "cryo",
                             name = "Raiden Miku",
                             rarity = 4,
-                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
+                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/e/e5/Aloy_Icon.png/revision/latest"
                         ),
                         Character(
                             element = "cryo",
                             name = "Raiden Miku",
                             rarity = 5,
-                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
+                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/e/e5/Aloy_Icon.png/revision/latest"
                         )
                     )
                 ),
@@ -398,55 +398,55 @@ fun PreviewTodayBooks() {
                             element = "cryo",
                             name = "Raiden Miku",
                             rarity = 5,
-                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
+                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/e/e5/Aloy_Icon.png/revision/latest"
                         ),
                         Character(
                             element = "cryo",
                             name = "Raiden Miku",
                             rarity = 5,
-                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
+                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/e/e5/Aloy_Icon.png/revision/latest"
                         ),
                         Character(
                             element = "cryo",
                             name = "Raiden Miku",
                             rarity = 4,
-                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
+                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/e/e5/Aloy_Icon.png/revision/latest"
                         ),
                         Character(
                             element = "cryo",
                             name = "Raiden Miku",
                             rarity = 5,
-                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
+                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/e/e5/Aloy_Icon.png/revision/latest"
                         ),
                         Character(
                             element = "cryo",
                             name = "Raiden Miku",
                             rarity = 5,
-                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
+                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/e/e5/Aloy_Icon.png/revision/latest"
                         ),
                         Character(
                             element = "cryo",
                             name = "Raiden Miku",
                             rarity = 5,
-                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
+                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/e/e5/Aloy_Icon.png/revision/latest"
                         ),
                         Character(
                             element = "cryo",
                             name = "Raiden Miku",
                             rarity = 5,
-                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
+                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/e/e5/Aloy_Icon.png/revision/latest"
                         ),
                         Character(
                             element = "cryo",
                             name = "Raiden Miku",
                             rarity = 5,
-                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
+                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/e/e5/Aloy_Icon.png/revision/latest"
                         ),
                         Character(
                             element = "cryo",
                             name = "Raiden Miku",
                             rarity = 4,
-                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
+                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/e/e5/Aloy_Icon.png/revision/latest"
                         )
                     )
                 ),
@@ -458,67 +458,67 @@ fun PreviewTodayBooks() {
                             element = "cryo",
                             name = "Raiden Miku",
                             rarity = 5,
-                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
+                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/e/e5/Aloy_Icon.png/revision/latest"
                         ),
                         Character(
                             element = "cryo",
                             name = "Raiden Miku",
                             rarity = 4,
-                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
+                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/e/e5/Aloy_Icon.png/revision/latest"
                         ),
                         Character(
                             element = "cryo",
                             name = "Raiden Miku",
                             rarity = 5,
-                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
+                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/e/e5/Aloy_Icon.png/revision/latest"
                         ),
                         Character(
                             element = "cryo",
                             name = "Raiden Miku",
                             rarity = 5,
-                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
+                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/e/e5/Aloy_Icon.png/revision/latest"
                         ),
                         Character(
                             element = "cryo",
                             name = "Raiden Miku",
                             rarity = 4,
-                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
+                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/e/e5/Aloy_Icon.png/revision/latest"
                         ),
                         Character(
                             element = "cryo",
                             name = "Raiden Miku",
                             rarity = 5,
-                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
+                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/e/e5/Aloy_Icon.png/revision/latest"
                         ),
                         Character(
                             element = "cryo",
                             name = "Raiden Miku",
                             rarity = 5,
-                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
+                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/e/e5/Aloy_Icon.png/revision/latest"
                         ),
                         Character(
                             element = "cryo",
                             name = "Raiden Miku",
                             rarity = 5,
-                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
+                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/e/e5/Aloy_Icon.png/revision/latest"
                         ),
                         Character(
                             element = "cryo",
                             name = "Raiden Miku",
                             rarity = 5,
-                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
+                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/e/e5/Aloy_Icon.png/revision/latest"
                         ),
                         Character(
                             element = "cryo",
                             name = "Raiden Miku",
                             rarity = 5,
-                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
+                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/e/e5/Aloy_Icon.png/revision/latest"
                         ),
                         Character(
                             element = "cryo",
                             name = "Raiden Miku",
                             rarity = 4,
-                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Character_Aloy_Thumb.png"
+                            imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/e/e5/Aloy_Icon.png/revision/latest"
                         )
                     )
                 )

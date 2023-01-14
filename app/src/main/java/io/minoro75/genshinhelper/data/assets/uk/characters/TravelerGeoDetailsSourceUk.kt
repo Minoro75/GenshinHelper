@@ -10,7 +10,7 @@ object TravelerGeoDetailsSourceUk {
           "rarity": 5,
           "element": "geo",
           "weapon": "sword",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/71/Character_Traveler_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest",
           "talents_books": {
             "book_name": "про Процвітання",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/bd/Item_Philosophies_of_Prosperity.png",

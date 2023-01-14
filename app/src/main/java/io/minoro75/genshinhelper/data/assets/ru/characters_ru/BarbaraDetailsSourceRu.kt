@@ -11,7 +11,7 @@ object BarbaraDetailsSourceRu {
               "rarity": 4,
               "element": "hydro",
               "weapon": "catalyst",
-              "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/72/Character_Barbara_Thumb.png",
+              "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Barbara_Icon.png/revision/latest",
               "talents_books": {
                 "book_name": "о Свободе",
                 "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/Item_Philosophies_of_Freedom.png",

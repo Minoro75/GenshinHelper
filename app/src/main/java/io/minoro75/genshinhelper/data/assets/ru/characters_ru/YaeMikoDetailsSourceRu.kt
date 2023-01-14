@@ -11,7 +11,7 @@ object YaeMikoDetailsSourceRu {
           "rarity": 5,
           "element": "electro",
           "weapon": "catalyst",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/57/Character_Yae_Miko_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/ba/Yae_Miko_Icon.png/revision/latest",
           "talents_books": {
             "book_name": "о Свете",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/95/Item_Philosophies_of_Light.png",

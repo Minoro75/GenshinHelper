@@ -11,7 +11,7 @@ object ZhongliDetailsSourceRu {
           "rarity": 5,
           "element": "geo",
           "weapon": "polearm",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c2/Character_Zhongli_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a6/Zhongli_Icon.png/revision/latest",
           "talents_books": {
             "book_name": "о Золоте",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/01/Item_Philosophies_of_Gold.png",

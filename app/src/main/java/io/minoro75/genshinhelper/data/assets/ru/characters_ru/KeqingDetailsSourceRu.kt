@@ -11,7 +11,7 @@ object KeqingDetailsSourceRu {
           "rarity": 5,
           "element": "electro",
           "weapon": "sword",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/06/Character_Keqing_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/52/Keqing_Icon.png/revision/latest",
           "talents_books": {
             "book_name": "о Процветании",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/bd/Item_Philosophies_of_Prosperity.png",

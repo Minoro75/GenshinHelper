@@ -11,7 +11,7 @@ object RaidenShogunDetailsSourceRu {
           "rarity": 5,
           "element": "electro",
           "weapon": "polearm",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/52/Character_Raiden_Shogun_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/24/Raiden_Shogun_Icon.png/revision/latest",
           "talents_books": {
             "book_name": "о Свете",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/95/Item_Philosophies_of_Light.png",

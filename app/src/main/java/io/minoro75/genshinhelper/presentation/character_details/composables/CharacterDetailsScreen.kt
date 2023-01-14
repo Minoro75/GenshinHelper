@@ -109,7 +109,7 @@ fun CharacterPreview() {
                 )
         ) {
             CharacterInfoView(
-                imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/0/0a/Character_Ganyu_Thumb.png",
+                imageUrl = "https://static.wikia.nocookie.net/gensin-impact/images/7/79/Ganyu_Icon.png/revision/latest",
                 rarity = 5,
                 element = "cryo",
                 name = "Sangonomiya Kokomi",

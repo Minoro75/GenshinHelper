@@ -11,7 +11,7 @@ object SayuDetailsSourceRu {
           "rarity": 5,
           "element": "anemo",
           "weapon": "claymore",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/e/ec/Character_Sayu_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/22/Sayu_Icon.png/revision/latest",
           "talents_books": {
             "book_name": "о Свете",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/95/Item_Philosophies_of_Light.png",

@@ -10,7 +10,7 @@ object DoriDetailsSourceUk {
               "rarity": 4,
               "element": "electro",
               "weapon": "claymore",
-              "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/90/Character_Dori_Thumb.png",
+              "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/54/Dori_Icon.png/revision/latest",
               "talents_books": {
                 "book_name": "про Винахідливість",
                 "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f7/Item_Philosophies_of_Ingenuity.png",

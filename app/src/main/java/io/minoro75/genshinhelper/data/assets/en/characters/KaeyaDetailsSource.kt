@@ -10,7 +10,7 @@ object KaeyaDetailsSource {
           "rarity": 5,
           "element": "cryo",
           "weapon": "sword",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/33/Character_Kaeya_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b6/Kaeya_Icon.png/revision/latest",
           "talents_books": {
             "book_name": "Ballad",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/7e/Item_Philosophies_of_Ballad.png",

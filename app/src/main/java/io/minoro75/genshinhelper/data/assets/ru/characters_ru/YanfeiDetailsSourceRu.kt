@@ -11,7 +11,7 @@ object YanfeiDetailsSourceRu {
           "rarity": 4,
           "element": "pyro",
           "weapon": "catalyst",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/1/1f/Character_Yanfei_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/54/Yanfei_Icon.png/revision/latest",
           "talents_books": {
             "book_name": "о Золоте",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/01/Item_Philosophies_of_Gold.png",

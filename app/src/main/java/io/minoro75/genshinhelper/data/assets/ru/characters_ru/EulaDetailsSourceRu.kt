@@ -11,7 +11,7 @@ object EulaDetailsSourceRu {
           "rarity": 5,
           "element": "cryo",
           "weapon": "claymore",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d3/Character_Eula_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/af/Eula_Icon.png/revision/latest",
           "talents_books": {
             "book_name": "о Борьбе",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/0b/Item_Philosophies_of_Resistance.png",

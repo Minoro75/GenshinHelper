@@ -11,7 +11,7 @@ object KleeDetailsSourceRu {
           "rarity": 5,
           "element": "pyro",
           "weapon": "catalyst",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c3/Character_Klee_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9c/Klee_Icon.png/revision/latest",
           "talents_books": {
             "book_name": "о Свободе",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/Item_Philosophies_of_Freedom.png",

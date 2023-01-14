@@ -10,7 +10,7 @@ object TravelerAnemoDetailsSourceUk {
           "rarity": 5,
           "element": "anemo",
           "weapon": "sword",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/71/Character_Traveler_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest",
           "talents_books": {
             "book_name": "про Волю",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/Item_Philosophies_of_Freedom.png",

@@ -11,7 +11,7 @@ object KamisatoAyakaDetailsSourceRu {
           "rarity": 5,
           "element": "cryo",
           "weapon": "sword",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/fd/Character_Kamisato_Ayaka_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/51/Kamisato_Ayaka_Icon.png/revision/latest",
           "talents_books": {
             "book_name": "об Изяществе",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/6/6f/Item_Philosophies_of_Elegance.png",

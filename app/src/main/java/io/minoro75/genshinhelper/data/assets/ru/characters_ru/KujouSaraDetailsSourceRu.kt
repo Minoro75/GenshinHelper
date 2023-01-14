@@ -11,7 +11,7 @@ object KujouSaraDetailsSourceRu {
           "rarity": 4,
           "element": "electro",
           "weapon": "bow",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/96/Character_Kujou_Sara_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/d/df/Kujou_Sara_Icon.png/revision/latest",
           "talents_books": {
             "book_name": "об Изяществе",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/6/6f/Item_Philosophies_of_Elegance.png",

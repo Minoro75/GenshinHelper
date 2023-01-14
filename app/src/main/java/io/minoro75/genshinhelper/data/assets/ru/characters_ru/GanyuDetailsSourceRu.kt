@@ -11,7 +11,7 @@ object GanyuDetailsSourceRu {
           "rarity": 5,
           "element": "cryo",
           "weapon": "bow",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/0a/Character_Ganyu_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/79/Ganyu_Icon.png/revision/latest",
           "talents_books": {
             "book_name": "об Усердии",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c2/Item_Philosophies_of_Diligence.png",

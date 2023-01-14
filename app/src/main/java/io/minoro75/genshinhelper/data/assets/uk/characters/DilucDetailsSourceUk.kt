@@ -10,7 +10,7 @@ object DilucDetailsSourceUk {
           "rarity": 5,
           "element": "pyro",
           "weapon": "claymore",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/02/Character_Diluc_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/3d/Diluc_Icon.png/revision/latest",
           "talents_books": {
             "book_name": "про Стійкість",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/0b/Item_Philosophies_of_Resistance.png",

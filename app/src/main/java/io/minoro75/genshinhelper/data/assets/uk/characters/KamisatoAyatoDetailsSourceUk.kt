@@ -10,7 +10,7 @@ object KamisatoAyatoDetailsSourceUk {
       "rarity": 5,
       "element": "hydro",
       "weapon": "sword",
-      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a2/Character_Kamisato_Ayato_Thumb.png",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/27/Kamisato_Ayato_Icon.png/revision/latest",
       "talents_books": {
         "book_name": "про Вишуканість",
         "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/6/6f/Item_Philosophies_of_Elegance.png",

@@ -11,7 +11,7 @@ object XingqiuDetailsSourceRu {
           "rarity": 4,
           "element": "hydro",
           "weapon": "sword",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/4/4a/Character_Xingqiu_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d4/Xingqiu_Icon.png/revision/latest",
           "talents_books": {
             "book_name": "о Золоте",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/01/Item_Philosophies_of_Gold.png",

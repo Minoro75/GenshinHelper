@@ -10,7 +10,7 @@ object XiaoDetailsSourceUk {
           "rarity": 5,
           "element": "anemo",
           "weapon": "polearm",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Character_Xiao_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/fd/Xiao_Icon.png/revision/latest",
           "talents_books": {
             "book_name": "про Процвітання",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/bd/Item_Philosophies_of_Prosperity.png",

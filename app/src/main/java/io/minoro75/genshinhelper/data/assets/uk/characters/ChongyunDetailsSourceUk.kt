@@ -10,7 +10,7 @@ object ChongyunDetailsSourceUk {
               "rarity": 4,
               "element": "cryo",
               "weapon": "sword",
-              "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/6/68/Character_Chongyun_Thumb.png",
+              "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/35/Chongyun_Icon.png/revision/latest",
               "talents_books": {
                 "book_name": "про Старанність",
                 "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c2/Item_Philosophies_of_Diligence.png",

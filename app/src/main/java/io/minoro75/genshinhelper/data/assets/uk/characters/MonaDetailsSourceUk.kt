@@ -10,7 +10,7 @@ object MonaDetailsSourceUk {
           "rarity": 5,
           "element": "hydro",
           "weapon": "catalyst",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a0/Character_Mona_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/4/41/Mona_Icon.png/revision/latest",
           "talents_books": {
             "book_name": "про Стійкість",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/0b/Item_Philosophies_of_Resistance.png",

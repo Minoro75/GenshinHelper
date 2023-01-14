@@ -11,7 +11,7 @@ object AmberDetailsSourceRu {
               "rarity": 4,
               "element": "pyro",
               "weapon": "bow",
-              "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c6/Character_Amber_Thumb.png",
+              "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/75/Amber_Icon.png/revision/latest",
               "talents_books": {
                 "book_name": "о Свободе",
                 "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/Item_Philosophies_of_Freedom.png",

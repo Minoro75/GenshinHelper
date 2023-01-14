@@ -10,7 +10,7 @@ object FaruzanDetailsSourceUk {
           "rarity": 4,
           "element": "anemo",
           "weapon": "bow",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a1/Character_Faruzan_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b2/Faruzan_Icon.png/revision/latest",
           "talents_books": {
               "book_name": "про Напоумлення",
               "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9b/Item_Philosophies_of_Admonition.png",

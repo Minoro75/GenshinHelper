@@ -10,7 +10,7 @@ object RosariaDetailsSource {
           "rarity": 4,
           "element": "cryo",
           "weapon": "polearm",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f6/Character_Rosaria_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/35/Rosaria_Icon.png/revision/latest",
           "talents_books": {
             "book_name": "Ballad",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/7e/Item_Philosophies_of_Ballad.png",

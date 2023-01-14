@@ -11,7 +11,7 @@ object ColleiDetailsSourceRu {
               "rarity": 4,
               "element": "dendro",
               "weapon": "bow",
-              "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9e/Character_Collei_Thumb.png",
+              "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a2/Collei_Icon.png/revision/latest",
               "talents_books": {
                 "book_name": "о Честности",
                 "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/82/Item_Philosophies_of_Praxis.png",
