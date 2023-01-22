@@ -6,70 +6,7 @@ import io.minoro75.genshinhelper.data.assets.uk.books.MonThuBooksSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.books.SundayBooksSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.books.TueFriBooksSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.books.WedSatBooksSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.AlbedoDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.AloyDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.AmberDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.AratakiIttoDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.BarbaraDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.BeidouDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.BennettDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.CandaceDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.ChongyunDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.ColleiDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.CynoDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.DilucDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.DionaDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.DoriDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.EulaDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.FaruzanDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.FischlDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.GanyuDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.GorouDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.HuTaoDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.JeanDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.KaedeharaKazuhaDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.KaeyaDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.KamisatoAyakaDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.KamisatoAyatoDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.KeqingDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.KleeDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.KujouSaraDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.KukiShinobuDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.LaylaDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.LisaDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.MonaDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.NahidaDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.NilouDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.NingguangDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.NoelleDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.QiqiDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.RaidenShogunDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.RazorDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.RosariaDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.SangonomiyaKokomiDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.SayuDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.ShenheDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.ShikanoinHeizouDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.SucroseDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.TartagliaDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.ThomaDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.TighnariDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.TravelerAnemoDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.TravelerDendroDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.TravelerElectroDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.TravelerGeoDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.VentiDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.WandererDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.XianglingDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.XiaoDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.XingqiuDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.XinyanDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.YaeMikoDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.YanfeiDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.YelanDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.YoimiyaDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.YunJinDetailsSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.ZhongliDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.*
 import io.minoro75.genshinhelper.data.assets.uk.items.artifacts.ArchaicPetraDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.artifacts.BlizzardStrayerDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.artifacts.BloodstainedChivalryDataSourceUk
@@ -612,6 +549,8 @@ class AssetsDataSourceUk @Inject constructor(
                 "Яе Міко" -> emit(characterDetailsAdapter.fromJson(YaeMikoDetailsSourceUk.details))
 
                 "Яньфей" -> emit(characterDetailsAdapter.fromJson(YanfeiDetailsSourceUk.details))
+
+                "Яо Яо" -> emit(characterDetailsAdapter.fromJson(YaoYaoDetailsSourceUk.details))
 
                 "Єлань" -> emit(characterDetailsAdapter.fromJson(YelanDetailsSourceUk.details))
 

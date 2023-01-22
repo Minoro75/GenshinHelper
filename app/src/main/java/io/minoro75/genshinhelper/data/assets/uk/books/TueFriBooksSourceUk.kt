@@ -110,6 +110,12 @@ object TueFriBooksSourceUk {
                 "rarity": 4,
                 "element": "geo",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9c/Yun_Jin_Icon.png/revision/latest"
+              },
+              {
+                "name": "Яо Яо",
+                "rarity": 4,
+                "element": "dendro",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/83/Yaoyao_Icon.png/revision/latest"
               }
             ]
           },
