@@ -19,6 +19,13 @@ object CharactersListSourceUk {
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/30/Albedo_Icon.png/revision/latest"
     },
     {
+      "name": "Аль-Хайтам",
+      "rarity": 5,
+      "element": "dendro",
+      "weapon": "sword",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/2c/Alhaitham_Icon.png/revision/latest"
+    },
+    {
       "name": "Аратакі Ітто",
       "rarity": 5,
       "element": "geo",

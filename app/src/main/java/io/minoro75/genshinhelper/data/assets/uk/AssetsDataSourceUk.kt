@@ -400,6 +400,8 @@ class AssetsDataSourceUk @Inject constructor(
             when (characterName) {
                 "Альбедо" -> emit(characterDetailsAdapter.fromJson(AlbedoDetailsSourceUk.details))
 
+                "Аль-Хайтам" -> emit(characterDetailsAdapter.fromJson(AlhaithamDetailsSourceUk.details))
+
                 "Елой" -> emit(characterDetailsAdapter.fromJson(AloyDetailsSourceUk.details))
 
                 "Ембер" -> emit(characterDetailsAdapter.fromJson(AmberDetailsSourceUk.details))
