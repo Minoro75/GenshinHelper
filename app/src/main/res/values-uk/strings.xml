@@ -10,7 +10,7 @@
     <string name="catalyst">Каталізатор</string>
     <string name="polearm">Древкове</string>
     <string name="available_at">Доступне в:</string>
-    <string name="talents_priority">Пріорітет прокачки</string>
+    <string name="talents_priority">Пріоритет прокачки</string>
     <string name="weekly_boss">Предмет з боса</string>
     <string name="artifacts">Артефакти</string>
     <string name="artifacts_stats">Характеристики артефактів</string>
@@ -18,13 +18,13 @@
     <string name="alternatives">Альтернативні</string>
     <string name="f2p">Ф2П</string>
     <string name="go_back">Назад</string>
-    <string name="about">Про додаток</string>
-    <string name="disclamer">Дисклемер</string>
+    <string name="about">Про застосунок</string>
+    <string name="disclamer">Дисклеймер</string>
     <string name="greeting">Вітаю, Мандрівнику, ось твій список справ на сьогодні</string>
     <string name="support">Підтримати</string>
-    <string name="this_app">Цей додаток не повʼязаний з MiHoYo чи Hoyoverse, чи Cognosphere Pte.Ltd. \Усі права належать їх власникам. \nЦей додаток лише помічник у ігрових активностях гри Genshin Impact.</string>
+    <string name="this_app">Цей застосунок не повʼязаний з MiHoYo чи Hoyoverse, чи Cognosphere Pte.Ltd. \Усі права належать їх власникам. \nЦей додаток лише помічник у ігрових активностях гри Genshin Impact.</string>
     <string name="visit_github_page">Відкрити сторінку на Гітхабі</string>
     <string name="loading">Загрузка</string>
-    <string name="i_ve">Я зробив цей додаток на Компоузі та Котліні. Воно опен-сорс та доступне на Гітхабі \nНе соромтеся створювати PR\'ы / issues я буду моніторити за можливості</string>
+    <string name="i_ve">Я зробив цей додаток на Компоузі та Котліні. Воно опен-сорс та доступне на Гітхабі \nНе соромтеся створювати PR\'и / issues я буду моніторити за можливості</string>
     <string name="available_in_lang">Доступно на таких мовах:</string>
 </resources>
