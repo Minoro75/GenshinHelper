@@ -340,6 +340,12 @@ object SundayBooksSourceRu {
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f7/Item_Philosophies_of_Ingenuity.png",
             "characters": [
               {
+                "name": "Аль-Хайтам",
+                "rarity": 5,
+                "element": "dendro",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/2c/Alhaitham_Icon.png/revision/latest"
+              },
+              {
                 "name": "Дори",
                 "rarity": 4,
                 "element": "electro",
