@@ -432,6 +432,13 @@ object CharactersListSource {
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/54/Yanfei_Icon.png/revision/latest"
     },
     {
+      "name": "Yaoyao",
+      "rarity": 4,
+      "element": "dendro",
+      "weapon": "polearm",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/83/Yaoyao_Icon.png/revision/latest"
+    },
+    {
       "name": "Yelan",
       "rarity": 5,
       "element": "hydro",

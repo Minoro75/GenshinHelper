@@ -281,6 +281,12 @@ object SundayBooksSource {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/39/Xiangling_Icon.png/revision/latest"
               },
               {
+                "name": "Yaoyao",
+                "rarity": 4,
+                "element": "dendro",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/83/Yaoyao_Icon.png/revision/latest"
+              },
+              {
                 "name": "Yun Jin",
                 "rarity": 4,
                 "element": "geo",
