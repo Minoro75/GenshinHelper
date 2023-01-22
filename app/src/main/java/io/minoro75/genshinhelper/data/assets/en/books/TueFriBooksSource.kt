@@ -166,6 +166,12 @@ object TueFriBooksSource {
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f7/Item_Philosophies_of_Ingenuity.png",
             "characters": [
               {
+                "name": "Alhaitham",
+                "rarity": 5,
+                "element": "dendro",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/2c/Alhaitham_Icon.png/revision/latest"
+              },
+              {
                 "name": "Dori",
                 "rarity": 4,
                 "element": "electro",

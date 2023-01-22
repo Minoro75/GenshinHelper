@@ -371,6 +371,8 @@ class AssetsDataSource @Inject constructor(
             when (characterName) {
                 "Albedo" -> emit(characterDetailsAdapter.fromJson(AlbedoDetailsSource.details))
 
+                "Alhaitham" -> emit(characterDetailsAdapter.fromJson(AlhaithamDetailsSource.details))
+
                 "Aloy" -> emit(characterDetailsAdapter.fromJson(AloyDetailsSource.details))
 
                 "Amber" -> emit(characterDetailsAdapter.fromJson(AmberDetailsSource.details))
