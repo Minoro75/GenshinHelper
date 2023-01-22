@@ -239,7 +239,7 @@ object CharactersListSourceRu {
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
     },
      {
-      "name": "Путешественник Електро",
+      "name": "Путешественник Электро",
       "rarity": 5,
       "element": "electro",
       "weapon": "sword",
@@ -447,6 +447,13 @@ object CharactersListSourceRu {
       "element": "pyro",
       "weapon": "catalyst",
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/54/Yanfei_Icon.png/revision/latest"
+    },
+    {
+      "name": "Яо Яо",
+      "rarity": 4,
+      "element": "dendro",
+      "weapon": "polearm",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/83/Yaoyao_Icon.png/revision/latest"
     },
     {
       "name": "Яэ Мико",

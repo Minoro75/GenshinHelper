@@ -136,7 +136,7 @@ object SundayBooksSourceRu {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/5b/Thoma_Icon.png/revision/latest"
               },
               {
-                "name": "Путешественник Електро",
+                "name": "Путешественник Электро",
                 "rarity": 5,
                 "element": "electro",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
@@ -284,6 +284,12 @@ object SundayBooksSourceRu {
                 "rarity": 4,
                 "element": "geo",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9c/Yun_Jin_Icon.png/revision/latest"
+              },
+              {
+                "name": "Яо Яо",
+                "rarity": 4,
+                "element": "dendro",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/83/Yaoyao_Icon.png/revision/latest"
               }
             ]
           },
@@ -322,7 +328,7 @@ object SundayBooksSourceRu {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b3/Kuki_Shinobu_Icon.png/revision/latest"
               },
               {
-                "name": "Путешественник Електро",
+                "name": "Путешественник Электро",
                 "rarity": 5,
                 "element": "electro",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
@@ -472,7 +478,7 @@ object SundayBooksSourceRu {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/22/Sayu_Icon.png/revision/latest"
               },
               {
-                "name": "Путешественник Електро",
+                "name": "Путешественник Электро",
                 "rarity": 5,
                 "element": "electro",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"

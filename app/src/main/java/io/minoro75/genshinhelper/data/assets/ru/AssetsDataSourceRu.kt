@@ -16,70 +16,7 @@ import io.minoro75.genshinhelper.data.assets.ru.books_ru.SundayBooksSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.items_ru.books_ru.TransienceDataSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.books_ru.TueFriBooksSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.books_ru.WedSatBooksSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.AlbedoDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.AloyDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.AmberDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.AratakiIttoDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.BarbaraDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.BeidouDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.BennettDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.CandaceDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.ChongyunDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.ColleiDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.CynoDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.DilucDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.DionaDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.DoriDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.EulaDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.FaruzanDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.FischlDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.GanyuDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.GorouDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.HuTaoDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.JeanDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.KaedeharaKazuhaDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.KaeyaDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.KamisatoAyakaDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.KamisatoAyatoDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.KeqingDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.KleeDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.KujouSaraDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.KukiShinobuDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.LaylaDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.LisaDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.MonaDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.NahidaDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.NilouDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.NingguangDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.NoelleDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.QiqiDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.RaidenShogunDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.RazorDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.RosariaDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.SangonomiyaKokomiDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.SayuDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.ShenheDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.ShikanoinHeizouDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.SucroseDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.TartagliaDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.ThomaDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.TighnariDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.TravelerAnemoDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.TravelerDendroDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.TravelerElectroDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.TravelerGeoDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.VentiDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.WandererDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.XianglingDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.XiaoDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.XingqiuDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.XinyanDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.YaeMikoDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.YanfeiDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.YelanDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.YoimiyaDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.YunJinDetailsSourceRu
-import io.minoro75.genshinhelper.data.assets.ru.characters_ru.ZhongliDetailsSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.characters_ru.*
 import io.minoro75.genshinhelper.data.assets.ru.items_ru.artifacts_ru.ArchaicPetraDataSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.items_ru.artifacts_ru.BlizzardStrayerDataSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.items_ru.artifacts_ru.BloodstainedChivalryDataSourceRu
@@ -535,7 +472,7 @@ class AssetsDataSourceRu @Inject constructor(
                     )
                 )
 
-                "Путешественник Електро" -> emit(
+                "Путешественник Электро" -> emit(
                     characterDetailsAdapter.fromJson(
                         TravelerElectroDetailsSourceRu.detailsRu
                     )
@@ -566,6 +503,8 @@ class AssetsDataSourceRu @Inject constructor(
                 "Яэ Мико" -> emit(characterDetailsAdapter.fromJson(YaeMikoDetailsSourceRu.detailsRu))
 
                 "Янь Фэй" -> emit(characterDetailsAdapter.fromJson(YanfeiDetailsSourceRu.detailsRu))
+
+                "Яо Яо" -> emit(characterDetailsAdapter.fromJson(YaoYaoDetailsSourceRu.details))
 
                 "Е Лань" -> emit(characterDetailsAdapter.fromJson(YelanDetailsSourceRu.detailsRu))
 

@@ -31,7 +31,7 @@ object FischlDetailsSourceRu {
               "artifact_name": "Конец гладиатора",
               "artifact_url": "https://paimon.moe/images/artifacts/gladiators_finale_flower.png",
               "artifact_amount": 2,
-              "artifact_gobelet": "Електро ДПС",
+              "artifact_gobelet": "Электро ДПС",
               "artifact_circlet": "Крит шанс / Крит урон",
               "artifact_sands": "Сила атаки / Мастерство стихий"
             },
@@ -39,7 +39,7 @@ object FischlDetailsSourceRu {
               "artifact_name": "Громогласный рёв ярости",
               "artifact_url": "https://paimon.moe/images/artifacts/thundering_fury_flower.png",
               "artifact_amount": 2,
-              "artifact_gobelet": "Електро ДПС",
+              "artifact_gobelet": "Электро ДПС",
               "artifact_circlet": "Крит шанс / Крит урон",
               "artifact_sands": "Сила атаки / Мастерство стихий"
             }

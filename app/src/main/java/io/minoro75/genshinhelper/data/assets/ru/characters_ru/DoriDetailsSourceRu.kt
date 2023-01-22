@@ -31,7 +31,7 @@ object DoriDetailsSourceRu {
                   "artifact_name": "Эмблема рассечённой судьбы",
                   "artifact_url": "https://paimon.moe/images/artifacts/emblem_of_severed_fate_flower.png",
                   "artifact_amount": 2,
-                  "artifact_gobelet": "Електро ДПС",
+                  "artifact_gobelet": "Электро ДПС",
                   "artifact_circlet": "Здоровье / Бонус исцеления",
                   "artifact_sands": "Восстановление енергии / Здоровье"
                 },
@@ -39,7 +39,7 @@ object DoriDetailsSourceRu {
                   "artifact_name": "Стойкость Миллелита",
                   "artifact_url": "https://paimon.moe/images/artifacts/tenacity_of_the_millelith_flower.png",
                   "artifact_amount": 2,
-                  "artifact_gobelet": "Електро ДПС",
+                  "artifact_gobelet": "Электро ДПС",
                   "artifact_circlet": "Здоровье / Бонус исцеления",
                   "artifact_sands": "Восстановление енергии / Здоровье"
                 }

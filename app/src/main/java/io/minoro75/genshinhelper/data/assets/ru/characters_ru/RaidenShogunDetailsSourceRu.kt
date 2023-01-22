@@ -31,7 +31,7 @@ object RaidenShogunDetailsSourceRu {
               "artifact_name": "Эмблема рассечённой судьбы",
               "artifact_url": "https://paimon.moe/images/artifacts/emblem_of_severed_fate_flower.png",
               "artifact_amount": 4,
-              "artifact_gobelet": "Сила атаки / Електро ДПС",
+              "artifact_gobelet": "Сила атаки / Электро ДПС",
               "artifact_circlet": "Крит шанс / Крит урон",
               "artifact_sands": "Восстановление энергии / Сила атаки"
             }

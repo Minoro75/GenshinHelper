@@ -136,7 +136,7 @@ object MonThuBooksSourceRu {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/5b/Thoma_Icon.png/revision/latest"
               },
               {
-                "name": "Путешественник Електро",
+                "name": "Путешественник Электро",
                 "rarity": 5,
                 "element": "electro",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"

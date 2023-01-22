@@ -124,7 +124,7 @@ object WedSatBooksSourceRu {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/22/Sayu_Icon.png/revision/latest"
               },
               {
-                "name": "Путешественник Електро",
+                "name": "Путешественник Электро",
                 "rarity": 5,
                 "element": "electro",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"

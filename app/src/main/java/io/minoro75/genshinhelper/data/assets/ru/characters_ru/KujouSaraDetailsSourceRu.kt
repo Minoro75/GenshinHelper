@@ -31,7 +31,7 @@ object KujouSaraDetailsSourceRu {
               "artifact_name": "Церемония древней знати",
               "artifact_url": "https://paimon.moe/images/artifacts/noblesse_oblige_flower.png",
               "artifact_amount": 4,
-              "artifact_gobelet": "Електро ДПС",
+              "artifact_gobelet": "Электро ДПС",
               "artifact_circlet": "Крит шанс / Крит урон",
               "artifact_sands": "Сила атаки / Восстановление энергии"
             }

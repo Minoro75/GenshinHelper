@@ -31,7 +31,7 @@ object BeidouDetailsSourceRu {
                   "artifact_name": "Эмблема рассечённой судьбы",
                   "artifact_url": "https://paimon.moe/images/artifacts/emblem_of_severed_fate_flower.png",
                   "artifact_amount": 4,
-                  "artifact_gobelet": "Електро ДПС",
+                  "artifact_gobelet": "Электро ДПС",
                   "artifact_circlet": "Крит Шанс / Крит Урон",
                   "artifact_sands": "Сила Атаки / Восстановление Энергии"
                 }

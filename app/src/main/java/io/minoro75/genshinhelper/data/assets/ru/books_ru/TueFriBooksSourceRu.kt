@@ -110,6 +110,12 @@ object TueFriBooksSourceRu {
                 "rarity": 4,
                 "element": "geo",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9c/Yun_Jin_Icon.png/revision/latest"
+              },
+              {
+                "name": "Яо Яо",
+                "rarity": 4,
+                "element": "dendro",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/83/Yaoyao_Icon.png/revision/latest"
               }
             ]
           },
@@ -148,7 +154,7 @@ object TueFriBooksSourceRu {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b3/Kuki_Shinobu_Icon.png/revision/latest"
               },
               {
-                "name": "Путешественник Електро",
+                "name": "Путешественник Электро",
                 "rarity": 5,
                 "element": "electro",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
