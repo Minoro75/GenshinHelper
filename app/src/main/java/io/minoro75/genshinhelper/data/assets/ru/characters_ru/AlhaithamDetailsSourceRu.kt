@@ -30,9 +30,9 @@ object AlhaithamDetailsSourceRu {
               "artifact_name": "Воспоминания дремучего леса",
               "artifact_url": "https://paimon.moe/images/artifacts/deepwood_memories_flower.png",
               "artifact_amount": 4,
-              "artifact_gobelet": "Dendro DPS",
-              "artifact_circlet": "CRIT Rate / CRIT DMG",
-              "artifact_sands": "Elemental Mastery"
+              "artifact_gobelet": "Дендро ДПС",
+              "artifact_circlet": "Крит шанс / Крит урон",
+              "artifact_sands": "Мастерство стихий"
             }
           ],
           "weapon_best": {
