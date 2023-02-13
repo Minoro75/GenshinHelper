@@ -57,7 +57,7 @@ object YelanDetailsSource {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": "AjN2yxtAVRQ"
+          "video_guide": "gnm47TtjmQE"
         }
     """.trimIndent()
 }

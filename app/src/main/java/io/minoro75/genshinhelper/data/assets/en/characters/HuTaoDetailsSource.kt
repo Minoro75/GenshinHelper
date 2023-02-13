@@ -47,17 +47,17 @@ object HuTaoDetailsSource {
               "weapon_rarity": 5
             },
             {
-              "weapon_name": "Dragon's Bane",
-              "weapon_url": "https://paimon.moe/images/weapons/dragons_bane.png",
-              "weapon_rarity": 4
-            },
-            {
               "weapon_name": "Deathmatch",
               "weapon_url": "https://paimon.moe/images/weapons/deathmatch.png",
               "weapon_rarity": 4
+            },
+            {
+              "weapon_name": "Dragon's Bane",
+              "weapon_url": "https://paimon.moe/images/weapons/dragons_bane.png",
+              "weapon_rarity": 4
             }
           ],
-          "video_guide": "VS1iBoDt_90"
+          "video_guide": "5kLowTPUGCQ0"
         }
     """.trimIndent()
 }

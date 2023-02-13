@@ -8,10 +8,12 @@ object Dependencies {
         const val navigationVersion = "2.5.2"
         const val lifecycle_version = "2.6.0-alpha03"
         const val app_compat_versioon = "1.7.0-alpha01"
+        const val accompanist_version = "0.29.1-alpha"
 
 
+        const val webview = "com.google.accompanist:accompanist-webview:$accompanist_version"
         const val appCompat = "androidx.appcompat:appcompat:$app_compat_versioon"
-        const val appResources ="androidx.appcompat:appcompat-resources:$app_compat_versioon"
+        const val appResources = "androidx.appcompat:appcompat-resources:$app_compat_versioon"
         const val ui = "androidx.compose.ui:ui:$version"
         const val runtime = "androidx.compose.runtime:runtime:$version"
         const val material = "androidx.compose.material3:material3:$material3Version"
@@ -24,9 +26,10 @@ object Dependencies {
         const val uiTooling = "androidx.compose.ui:ui-tooling:$version"
         const val uiTestManifest = "androidx.compose.ui:ui-test-manifest:$version"
 
-       const val viewmodel = "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
-       const val viewmodelCompoe = "androidx.lifecycle:lifecycle-viewmodel-compose:$lifecycle_version"
-        const val runtimeCompose =  "androidx.lifecycle:lifecycle-runtime-compose:$lifecycle_version"
+        const val viewmodel = "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+        const val viewmodelCompoe =
+            "androidx.lifecycle:lifecycle-viewmodel-compose:$lifecycle_version"
+        const val runtimeCompose = "androidx.lifecycle:lifecycle-runtime-compose:$lifecycle_version"
     }
 
     object Hilt {

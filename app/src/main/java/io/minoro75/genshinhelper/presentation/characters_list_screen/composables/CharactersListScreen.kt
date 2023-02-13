@@ -14,13 +14,11 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import androidx.lifecycle.compose.ExperimentalLifecycleComposeApi
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import io.minoro75.genshinhelper.presentation.characters_list_screen.CharactersListViewModel
 import io.minoro75.genshinhelper.presentation.characters_list_screen.state.CharacterListState
 import io.minoro75.genshinhelper.presentation.common.LoadingScreen
 
-@OptIn(ExperimentalLifecycleComposeApi::class)
 @Composable
 fun CharactersListScreen(
     onCharacterClicked: (String) -> Unit,

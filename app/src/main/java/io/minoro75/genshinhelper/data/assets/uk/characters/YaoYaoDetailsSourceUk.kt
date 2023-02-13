@@ -58,7 +58,7 @@ object YaoYaoDetailsSourceUk {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": null
+          "video_guide": "c1MCAOoRxCk"
         }
     """.trimIndent()
 }

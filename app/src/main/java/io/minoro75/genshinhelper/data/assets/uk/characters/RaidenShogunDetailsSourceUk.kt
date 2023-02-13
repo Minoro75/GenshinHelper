@@ -57,7 +57,7 @@ object RaidenShogunDetailsSourceUk {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": null
+          "video_guide": "4ed0KfZy9u0"
         }
     """.trimIndent()
 }

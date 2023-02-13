@@ -48,17 +48,17 @@ object HuTaoDetailsSourceRu {
               "weapon_rarity": 5
             },
             {
-              "weapon_name": "Гроза драконов",
-              "weapon_url": "https://paimon.moe/images/weapons/dragons_bane.png",
-              "weapon_rarity": 4
-            },
-            {
               "weapon_name": "Смертельный бой",
               "weapon_url": "https://paimon.moe/images/weapons/deathmatch.png",
               "weapon_rarity": 4
+            },
+            {
+              "weapon_name": "Гроза драконов",
+              "weapon_url": "https://paimon.moe/images/weapons/dragons_bane.png",
+              "weapon_rarity": 4
             }
           ],
-          "video_guide": "X2mJItYYFEI"
+          "video_guide": "VK8H7sxa8sI"
         }
     """.trimIndent()
 }

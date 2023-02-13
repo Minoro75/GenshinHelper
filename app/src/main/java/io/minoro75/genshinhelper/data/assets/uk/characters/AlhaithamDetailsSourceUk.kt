@@ -57,7 +57,7 @@ object AlhaithamDetailsSourceUk {
               "weapon_rarity": 3
             }
           ],
-         "video_guide": null
+         "video_guide": "CT6ZLqs5qn0"
         }
     """.trimIndent()
 }

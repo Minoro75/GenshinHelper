@@ -57,7 +57,7 @@ object XiaoDetailsSource {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": "xHpeqEvAxEM"
+          "video_guide": "nWxX_vr5Ftc"
         }
     """.trimIndent()
 }

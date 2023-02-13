@@ -16,7 +16,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import androidx.lifecycle.compose.ExperimentalLifecycleComposeApi
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import io.minoro75.genshinhelper.domain.model.Artifact
 import io.minoro75.genshinhelper.domain.model.TalentsBooks
@@ -27,7 +26,6 @@ import io.minoro75.genshinhelper.presentation.character_details.state.CharacterD
 import io.minoro75.genshinhelper.presentation.common.LoadingScreen
 import io.minoro75.genshinhelper.presentation.theme.GenshinHelperTheme
 
-@OptIn(ExperimentalLifecycleComposeApi::class)
 @Composable
 fun CharacterScreen(
     onBackPressed: () -> Unit,

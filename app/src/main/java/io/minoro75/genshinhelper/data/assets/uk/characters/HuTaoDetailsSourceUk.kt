@@ -47,17 +47,17 @@ object HuTaoDetailsSourceUk {
               "weapon_rarity": 5
             },
             {
-              "weapon_name": "Вбивця драконів",
-              "weapon_url": "https://paimon.moe/images/weapons/dragons_bane.png",
-              "weapon_rarity": 4
-            },
-            {
               "weapon_name": "Смертельний бій",
               "weapon_url": "https://paimon.moe/images/weapons/deathmatch.png",
               "weapon_rarity": 4
+            },
+           {
+              "weapon_name": "Вбивця драконів",
+              "weapon_url": "https://paimon.moe/images/weapons/dragons_bane.png",
+              "weapon_rarity": 4
             }
           ],
-          "video_guide": "BU53CphtRn4"
+          "video_guide": "ZnWxCukX7hk"
         }
     """.trimIndent()
 }

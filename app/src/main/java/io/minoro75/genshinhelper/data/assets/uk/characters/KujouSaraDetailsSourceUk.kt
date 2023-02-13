@@ -57,7 +57,7 @@ object KujouSaraDetailsSourceUk {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": null
+          "video_guide": "cmWIX7VnFU8"
         }
     """.trimIndent()
 }

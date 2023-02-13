@@ -8,7 +8,6 @@ import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
 import io.minoro75.genshinhelper.domain.repository.CharactersRepository
 import io.minoro75.genshinhelper.presentation.home_screen.state.HomeScreenBooksState
-import io.minoro75.genshinhelper.presentation.home_screen.state.HomeScreenState
 import io.minoro75.genshinhelper.presentation.home_screen.state.HomeScreenWeaponsState
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
@@ -22,8 +21,6 @@ class HomeScreenViewModel @Inject constructor(
     repository: CharactersRepository
 ) : ViewModel() {
 
-    var state by mutableStateOf(HomeScreenState())
-        private set
     private val calendar = Calendar.getInstance().get(Calendar.DAY_OF_WEEK)
 
     val uiBooksState: StateFlow<HomeScreenBooksState> =

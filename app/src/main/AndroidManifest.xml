@@ -15,6 +15,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GenshinHelper"
         android:localeConfig="@xml/locale_config"
+        android:usesCleartextTraffic="true"
+        android:hardwareAccelerated="true"
         tools:targetApi="33">
         <activity
             android:name=".presentation.MainActivity"

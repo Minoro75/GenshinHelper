@@ -3,6 +3,7 @@
     <string name="app_name">Терминал Акаша</string>
     <string name="home">Главная</string>
     <string name="characters">Персонажи</string>
+    <string name="map">Карта</string>
     <string name="info">Инфо</string>
     <string name="sword">Одноручное</string>
     <string name="claymore">Двуручное</string>

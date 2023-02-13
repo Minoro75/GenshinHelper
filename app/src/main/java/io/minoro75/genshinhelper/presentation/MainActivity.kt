@@ -21,6 +21,7 @@ import io.minoro75.genshinhelper.presentation.common.NavigationItem
 import io.minoro75.genshinhelper.presentation.home_screen.composables.HomeScreen
 import io.minoro75.genshinhelper.presentation.info.composables.InfoScreen
 import io.minoro75.genshinhelper.presentation.item_location.composables.ItemLocationScreen
+import io.minoro75.genshinhelper.presentation.map.MapScreen
 import io.minoro75.genshinhelper.presentation.theme.GenshinHelperTheme
 
 @AndroidEntryPoint
@@ -70,6 +71,11 @@ fun MainScreen() {
                     }
                 })
             }
+
+            composable(NavigationItem.Map.route) {
+                MapScreen()
+            }
+
             composable(NavigationItem.Info.route) {
                 InfoScreen()
             }

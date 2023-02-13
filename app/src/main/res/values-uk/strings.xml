@@ -3,6 +3,7 @@
     <string name="app_name">Термінал Акаша</string>
     <string name="home">Головна</string>
     <string name="characters">Персонажі</string>
+    <string name="map">Мапа</string>
     <string name="info">Інфо</string>
     <string name="sword">Одноручне</string>
     <string name="claymore">Дворучне</string>
