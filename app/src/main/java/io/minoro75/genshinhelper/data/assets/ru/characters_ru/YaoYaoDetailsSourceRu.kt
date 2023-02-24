@@ -54,7 +54,7 @@ object YaoYaoDetailsSourceRu {
             },
             {
               "weapon_name": "Крест-копьё Китаин",
-              "weapon_url": "https://paimon.moe/images/weapons/kitain_cross_spear.pngÏ",
+              "weapon_url": "https://paimon.moe/images/weapons/kitain_cross_spear.png",
               "weapon_rarity": 4
             }
           ],

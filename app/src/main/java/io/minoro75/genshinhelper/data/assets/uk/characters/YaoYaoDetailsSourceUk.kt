@@ -54,7 +54,7 @@ object YaoYaoDetailsSourceUk {
             },
             {
               "weapon_name": "Хрест-спис Кітаїн",
-              "weapon_url": "https://paimon.moe/images/weapons/kitain_cross_spear.pngÏ",
+              "weapon_url": "https://paimon.moe/images/weapons/kitain_cross_spear.png",
               "weapon_rarity": 4
             }
           ],

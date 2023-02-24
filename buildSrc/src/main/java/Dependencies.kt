@@ -11,6 +11,9 @@ object Dependencies {
         const val accompanist_version = "0.29.1-alpha"
 
 
+        const val activity = "androidx.activity:activity-compose:1.6.1"
+        const val uiController = "com.google.accompanist:accompanist-systemuicontroller:$accompanist_version"
+        const val insets = "com.google.accompanist:accompanist-insets:$accompanist_version"
         const val webview = "com.google.accompanist:accompanist-webview:$accompanist_version"
         const val appCompat = "androidx.appcompat:appcompat:$app_compat_versioon"
         const val appResources = "androidx.appcompat:appcompat-resources:$app_compat_versioon"
