@@ -18,10 +18,10 @@ class CharactersListViewModel @Inject constructor(
 
     val uiState: StateFlow<CharacterListState> =
         repository.getCharacters().map {
-            CharacterListState.Success(it!!)
+            CharacterListState(it!!, false)
         }.stateIn(
             scope = viewModelScope,
-            initialValue = CharacterListState.Loading,
+            initialValue = CharacterListState(emptyList(), true),
             started = SharingStarted.WhileSubscribed(5_000)
         )
 }

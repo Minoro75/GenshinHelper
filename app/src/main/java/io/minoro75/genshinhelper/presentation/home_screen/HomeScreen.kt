@@ -4,20 +4,10 @@ package io.minoro75.genshinhelper.presentation.home_screen.composables
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.wrapContentHeight
+import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
-import androidx.compose.material3.CardDefaults
-import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.OutlinedCard
-import androidx.compose.material3.Text
+import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
@@ -34,8 +24,6 @@ import io.minoro75.genshinhelper.domain.model.Character
 import io.minoro75.genshinhelper.domain.model.TodayWeaponResources
 import io.minoro75.genshinhelper.presentation.common.LoadingScreen
 import io.minoro75.genshinhelper.presentation.home_screen.HomeScreenViewModel
-import io.minoro75.genshinhelper.presentation.home_screen.state.HomeScreenBooksState
-import io.minoro75.genshinhelper.presentation.home_screen.state.HomeScreenWeaponsState
 import io.minoro75.genshinhelper.presentation.theme.GenshinHelperTheme
 import io.minoro75.genshinhelper.presentation.theme.GenshinTypography
 
@@ -45,63 +33,56 @@ fun HomeScreen(
     onCharacterClick: (String) -> Unit,
     onItemClick: (String) -> Unit
 ) {
-    GenshinHelperTheme {
-        val booksState by viewModel.uiBooksState.collectAsStateWithLifecycle()
-        val weaponsState by viewModel.uiWeaponsState.collectAsStateWithLifecycle()
+    val state by viewModel.uiState.collectAsStateWithLifecycle()
 
-        if (booksState is HomeScreenBooksState.Loading
-            && weaponsState is HomeScreenWeaponsState.Loading
-        ) {
-            LoadingScreen()
-        } else if (booksState is HomeScreenBooksState.Success
-            && weaponsState is HomeScreenWeaponsState.Success
-        ) {
+    if (state.isLoading) {
+        LoadingScreen()
+    } else {
 
-            Column(
-                modifier =
-                Modifier
-                    .fillMaxSize()
-                    .verticalScroll(rememberScrollState())
-                    .background(MaterialTheme.colorScheme.surfaceVariant)
-                    .padding(
-                        16.dp
-                    )
-            ) {
-
-                OutlinedCard(
-                    elevation = CardDefaults.cardElevation(defaultElevation = 8.dp),
-                    colors = CardDefaults.outlinedCardColors(
-                        containerColor = MaterialTheme.colorScheme.primaryContainer
-                    ),
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .wrapContentHeight(),
-                    border = BorderStroke(2.dp, SolidColor(MaterialTheme.colorScheme.primary))
-                ) {
-                    Text(
-                        text = stringResource(id = R.string.greeting),
-                        style = GenshinTypography.bodyLarge,
-                        textAlign = TextAlign.Center,
-                        modifier = Modifier.padding(16.dp)
-                    )
-                }
-
-                Spacer(modifier = Modifier.height(16.dp))
-
-                TodayBooksView(
-                    books = (booksState as HomeScreenBooksState.Success).todayBooks,
-                    onCharacterClick = onCharacterClick, onItemClick = onItemClick
+        Column(
+            modifier =
+            Modifier
+                .fillMaxSize()
+                .verticalScroll(rememberScrollState())
+                .background(MaterialTheme.colorScheme.surfaceVariant)
+                .padding(
+                    16.dp
                 )
+        ) {
 
-                Spacer(modifier = Modifier.height(16.dp))
-
-                TodayWeapons(
-                    list = (weaponsState as HomeScreenWeaponsState.Success).todayBooks,
-                    onItemClick = onItemClick
+            OutlinedCard(
+                elevation = CardDefaults.cardElevation(defaultElevation = 8.dp),
+                colors = CardDefaults.outlinedCardColors(
+                    containerColor = MaterialTheme.colorScheme.primaryContainer
+                ),
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .wrapContentHeight(),
+                border = BorderStroke(2.dp, SolidColor(MaterialTheme.colorScheme.primary))
+            ) {
+                Text(
+                    text = stringResource(id = R.string.greeting),
+                    style = GenshinTypography.bodyLarge,
+                    textAlign = TextAlign.Center,
+                    modifier = Modifier.padding(16.dp)
                 )
             }
 
+            Spacer(modifier = Modifier.height(16.dp))
+
+            TodayBooksView(
+                books = state.todayBooks,
+                onCharacterClick = onCharacterClick, onItemClick = onItemClick
+            )
+
+            Spacer(modifier = Modifier.height(16.dp))
+
+            TodayWeapons(
+                list = state.todayWeaponResources,
+                onItemClick = onItemClick
+            )
         }
+
     }
 }
 

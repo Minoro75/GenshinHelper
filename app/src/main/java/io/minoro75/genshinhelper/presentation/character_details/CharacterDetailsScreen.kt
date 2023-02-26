@@ -2,11 +2,7 @@ package io.minoro75.genshinhelper.presentation.character_details.composables
 
 import android.content.res.Configuration.UI_MODE_NIGHT_NO
 import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.MaterialTheme
@@ -22,7 +18,6 @@ import io.minoro75.genshinhelper.domain.model.TalentsBooks
 import io.minoro75.genshinhelper.domain.model.WeaponBest
 import io.minoro75.genshinhelper.domain.model.WeaponsReplacement
 import io.minoro75.genshinhelper.presentation.character_details.CharacterDetailsScreenViewModel
-import io.minoro75.genshinhelper.presentation.character_details.state.CharacterDetailsState
 import io.minoro75.genshinhelper.presentation.common.LoadingScreen
 import io.minoro75.genshinhelper.presentation.theme.GenshinHelperTheme
 
@@ -34,60 +29,53 @@ fun CharacterScreen(
 ) {
     val state by viewModel.uiState.collectAsStateWithLifecycle()
 
-    GenshinHelperTheme {
+    if (state.isLoading) {
+        LoadingScreen()
+    } else {
 
-        when (state) {
-            CharacterDetailsState.Loading -> {
-                LoadingScreen()
-            }
-
-            is CharacterDetailsState.Success -> {
-
-                val details = (state as CharacterDetailsState.Success).charactersDetails
-                Column(
-                    modifier =
-                    Modifier
-                        .fillMaxSize()
-                        .verticalScroll(rememberScrollState())
-                        .background(MaterialTheme.colorScheme.surfaceVariant)
-                        .padding(
-                            16.dp
-                        )
-                ) {
-                    CharacterInfoView(
-                        imageUrl = details.imageUrl,
-                        rarity = details.rarity,
-                        element = details.element,
-                        name = details.name,
-                        weapon = details.weapon,
-                        talentsBooks = details.talentBooks,
-                        onBackPressed = onBackPressed,
-                        onItemClicked = onItemClicked
-                    )
-                    Spacer(modifier = Modifier.height(16.dp))
-                    TalentsPriorityView(
-                        priority = details.talentsPriority
-                    )
-                    Spacer(modifier = Modifier.height(16.dp))
-                    WeeklyBossItemView(
-                        name = details.weeklyBossItem.bossItemName,
-                        url = details.weeklyBossItem.bossItemUrl,
-                        onItemClicked = onItemClicked
-                    )
-                    Spacer(Modifier.height(16.dp))
-                    YoutubeVideoPreviewView(videoId = details.videoGuide)
-                    Spacer(Modifier.height(16.dp))
-                    ArtifactsView(
-                        artifacts = details.artifacts,
-                        onItemClicked = onItemClicked
-                    )
-                    Spacer(Modifier.height(16.dp))
-                    WeaponsView(
-                        bis = details.weaponBest,
-                        replacements = details.weaponsReplacements
-                    )
-                }
-            }
+        val details = state.charactersDetails!!
+        Column(
+            modifier =
+            Modifier
+                .fillMaxSize()
+                .verticalScroll(rememberScrollState())
+                .background(MaterialTheme.colorScheme.surfaceVariant)
+                .padding(
+                    16.dp
+                )
+        ) {
+            CharacterInfoView(
+                imageUrl = details.imageUrl,
+                rarity = details.rarity,
+                element = details.element,
+                name = details.name,
+                weapon = details.weapon,
+                talentsBooks = details.talentBooks,
+                onBackPressed = onBackPressed,
+                onItemClicked = onItemClicked
+            )
+            Spacer(modifier = Modifier.height(16.dp))
+            TalentsPriorityView(
+                priority = details.talentsPriority
+            )
+            Spacer(modifier = Modifier.height(16.dp))
+            WeeklyBossItemView(
+                name = details.weeklyBossItem.bossItemName,
+                url = details.weeklyBossItem.bossItemUrl,
+                onItemClicked = onItemClicked
+            )
+            Spacer(Modifier.height(16.dp))
+            YoutubeVideoPreviewView(videoId = details.videoGuide)
+            Spacer(Modifier.height(16.dp))
+            ArtifactsView(
+                artifacts = details.artifacts,
+                onItemClicked = onItemClicked
+            )
+            Spacer(Modifier.height(16.dp))
+            WeaponsView(
+                bis = details.weaponBest,
+                replacements = details.weaponsReplacements
+            )
         }
     }
 }

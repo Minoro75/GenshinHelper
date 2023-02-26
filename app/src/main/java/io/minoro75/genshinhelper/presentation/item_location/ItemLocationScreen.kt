@@ -1,11 +1,7 @@
 package io.minoro75.genshinhelper.presentation.item_location.composables
 
 import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
@@ -26,7 +22,6 @@ import io.minoro75.genshinhelper.R
 import io.minoro75.genshinhelper.domain.model.HowToObtainItem
 import io.minoro75.genshinhelper.presentation.common.LoadingScreen
 import io.minoro75.genshinhelper.presentation.item_location.ItemLocationViewModel
-import io.minoro75.genshinhelper.presentation.item_location.state.ItemLocationState
 import io.minoro75.genshinhelper.presentation.theme.GenshinHelperTheme
 
 @Composable
@@ -36,42 +31,34 @@ fun ItemLocationScreen(
 ) {
     val state by viewModel.uiState.collectAsStateWithLifecycle()
 
-    GenshinHelperTheme {
-
-        when (state) {
-            ItemLocationState.Loading -> {
-                LoadingScreen()
-            }
-
-            is ItemLocationState.Success -> {
-                val items = (state as ItemLocationState.Success).items
-                Column(
-                    modifier =
-                    Modifier
-                        .fillMaxSize()
-                        .verticalScroll(rememberScrollState())
-                        .background(MaterialTheme.colorScheme.surfaceVariant)
-                        .padding(
-                            16.dp
-                        )
-                ) {
-                    ExtendedFloatingActionButton(
-                        text = { Text(text = stringResource(id = R.string.go_back)) },
-                        icon = {
-                            Icon(
-                                imageVector = Icons.Filled.ArrowBack,
-                                contentDescription = "Back"
-                            )
-                        },
-                        onClick = onBackPressed
+    if (state.isLoading) {
+        LoadingScreen()
+    } else {
+        Column(
+            modifier =
+            Modifier
+                .fillMaxSize()
+                .verticalScroll(rememberScrollState())
+                .background(MaterialTheme.colorScheme.surfaceVariant)
+                .padding(
+                    16.dp
+                )
+        ) {
+            ExtendedFloatingActionButton(
+                text = { Text(text = stringResource(id = R.string.go_back)) },
+                icon = {
+                    Icon(
+                        imageVector = Icons.Filled.ArrowBack,
+                        contentDescription = "Back"
                     )
+                },
+                onClick = onBackPressed
+            )
 
-                    Spacer(modifier = Modifier.height(8.dp))
-                    for (i in items.indices) {
-                        Spacer(modifier = Modifier.height(8.dp))
-                        ItemLocation(item = items[i])
-                    }
-                }
+            Spacer(modifier = Modifier.height(8.dp))
+            for (i in state.items.indices) {
+                Spacer(modifier = Modifier.height(8.dp))
+                ItemLocation(item = state.items[i])
             }
         }
     }
