@@ -31,7 +31,7 @@ object KamisatoAyatoDetailsSourceRu {
           "artifact_name": "Сердце глубин",
           "artifact_url": "https://paimon.moe/images/artifacts/heart_of_depth_flower.png",
           "artifact_amount": 4,
-          "artifact_gobelet": "Шидро ДПС",
+          "artifact_gobelet": "Гидро ДПС",
           "artifact_circlet": "Крит шанс / Крит урон",
           "artifact_sands": "Сила атаки"
         }
