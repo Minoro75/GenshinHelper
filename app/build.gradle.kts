@@ -51,7 +51,7 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = Dependencies.Compose.version
+        kotlinCompilerExtensionVersion = Dependencies.Compose.composeCompiler
     }
     packagingOptions {
         resources {
@@ -68,7 +68,6 @@ dependencies {
     implementation(Dependencies.Compose.foundation)
     implementation(Dependencies.Compose.animation)
     implementation(Dependencies.Compose.runtime)
-    implementation(Dependencies.Compose.navigation)
     implementation(Dependencies.Compose.viewmodel)
     implementation(Dependencies.Compose.viewmodelCompoe)
     implementation(Dependencies.Compose.runtimeCompose)
@@ -90,7 +89,7 @@ dependencies {
     implementation(Dependencies.Compose.activity)
     implementation(Dependencies.Compose.appCompat)
     implementation(Dependencies.Compose.appResources)
-    implementation(Dependencies.Compose.webview)
+    implementation(Dependencies.Compose.navigation_animation)
     implementation(Dependencies.Compose.insets)
     implementation(Dependencies.Compose.uiController)
 

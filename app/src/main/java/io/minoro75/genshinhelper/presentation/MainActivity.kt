@@ -1,18 +1,27 @@
 package io.minoro75.genshinhelper.presentation
 
 import android.os.Bundle
+import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.appcompat.app.AppCompatActivity
+import androidx.compose.animation.ExperimentalAnimationApi
+import androidx.compose.foundation.layout.calculateEndPadding
+import androidx.compose.foundation.layout.calculateStartPadding
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.SideEffect
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalConfiguration
+import androidx.compose.ui.unit.LayoutDirection
+import androidx.compose.ui.unit.dp
+import androidx.core.view.WindowCompat
 import androidx.navigation.NavType
-import androidx.navigation.compose.NavHost
-import androidx.navigation.compose.composable
-import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
+import com.google.accompanist.navigation.animation.AnimatedNavHost
+import com.google.accompanist.navigation.animation.composable
+import com.google.accompanist.navigation.animation.rememberAnimatedNavController
+import com.google.accompanist.systemuicontroller.rememberSystemUiController
 import dagger.hilt.android.AndroidEntryPoint
 import io.minoro75.genshinhelper.presentation.character_details.composables.CharacterScreen
 import io.minoro75.genshinhelper.presentation.characters_list_screen.composables.CharactersListScreen
@@ -25,11 +34,17 @@ import io.minoro75.genshinhelper.presentation.map.MapScreen
 import io.minoro75.genshinhelper.presentation.theme.GenshinHelperTheme
 
 @AndroidEntryPoint
-class MainActivity : AppCompatActivity() {
+class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        WindowCompat.setDecorFitsSystemWindows(window, false)
 
         setContent {
+            val systemUiController = rememberSystemUiController()
+            val useDarkIcons = false
+            SideEffect {
+                systemUiController.setSystemBarsColor(Color.Transparent, darkIcons = useDarkIcons)
+            }
             GenshinHelperTheme {
                 MainScreen()
             }
@@ -37,14 +52,27 @@ class MainActivity : AppCompatActivity() {
     }
 }
 
-@OptIn(ExperimentalMaterial3Api::class)
+@OptIn(ExperimentalAnimationApi::class)
 @Composable
 fun MainScreen() {
-    val navController = rememberNavController()
+    val navController = rememberAnimatedNavController()
     Scaffold(
         bottomBar = { GenshinBottomNavigation(navController) }) { paddingValues ->
-        NavHost(
-            modifier = Modifier.padding(paddingValues),
+
+        val layoutDirection = LocalConfiguration.current.layoutDirection
+        AnimatedNavHost(
+            modifier = Modifier.padding(
+                start = paddingValues.calculateStartPadding(
+                    if (layoutDirection == 0) LayoutDirection.Ltr
+                    else LayoutDirection.Rtl
+                ),
+                end = paddingValues.calculateEndPadding(
+                    if (layoutDirection == 0) LayoutDirection.Ltr
+                    else LayoutDirection.Rtl
+                ),
+                bottom = paddingValues.calculateBottomPadding(),
+                top = 0.dp
+            ),
             navController = navController,
             startDestination = NavigationItem.Home.route
         ) {

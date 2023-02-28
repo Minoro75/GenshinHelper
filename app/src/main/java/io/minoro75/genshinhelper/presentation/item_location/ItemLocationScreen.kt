@@ -40,6 +40,7 @@ fun ItemLocationScreen(
                 .fillMaxSize()
                 .verticalScroll(rememberScrollState())
                 .background(MaterialTheme.colorScheme.surfaceVariant)
+                .systemBarsPadding()
                 .padding(
                     16.dp
                 )

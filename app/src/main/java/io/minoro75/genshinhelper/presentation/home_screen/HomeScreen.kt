@@ -45,6 +45,7 @@ fun HomeScreen(
                 .fillMaxSize()
                 .verticalScroll(rememberScrollState())
                 .background(MaterialTheme.colorScheme.surfaceVariant)
+                .systemBarsPadding()
                 .padding(
                     16.dp
                 )
