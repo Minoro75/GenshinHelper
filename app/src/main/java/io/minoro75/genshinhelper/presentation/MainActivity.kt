@@ -3,6 +3,7 @@ package io.minoro75.genshinhelper.presentation
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.compose.foundation.layout.calculateEndPadding
 import androidx.compose.foundation.layout.calculateStartPadding
@@ -34,17 +35,13 @@ import io.minoro75.genshinhelper.presentation.map.MapScreen
 import io.minoro75.genshinhelper.presentation.theme.GenshinHelperTheme
 
 @AndroidEntryPoint
-class MainActivity : ComponentActivity() {
+class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         WindowCompat.setDecorFitsSystemWindows(window, false)
 
         setContent {
-            val systemUiController = rememberSystemUiController()
-            val useDarkIcons = false
-            SideEffect {
-                systemUiController.setSystemBarsColor(Color.Transparent, darkIcons = useDarkIcons)
-            }
+
             GenshinHelperTheme {
                 MainScreen()
             }

@@ -8,15 +8,8 @@ import android.os.Build
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.browser.customtabs.CustomTabsIntent
 import androidx.compose.foundation.*
-import androidx.compose.foundation.gestures.scrollable
 import androidx.compose.foundation.layout.*
-import androidx.compose.material3.ButtonDefaults
-import androidx.compose.material3.CardDefaults
-import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.FilledTonalButton
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.OutlinedCard
-import androidx.compose.material3.Text
+import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.SolidColor
@@ -29,6 +22,7 @@ import androidx.core.os.LocaleListCompat
 import io.minoro75.genshinhelper.R
 import io.minoro75.genshinhelper.presentation.theme.GenshinHelperTheme
 import io.minoro75.genshinhelper.presentation.theme.GenshinTypography
+import java.util.*
 
 @Composable
 fun InfoScreen() {
@@ -49,7 +43,6 @@ fun InfoScreen() {
     }
 }
 
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun About() {
     OutlinedCard(
