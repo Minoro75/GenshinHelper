@@ -509,6 +509,12 @@ object SundayBooksSource {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a2/Collei_Icon.png/revision/latest"
               },
               {
+                "name": "Dehya",
+                "rarity": 5,
+                "element": "pyro",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/3f/Dehya_Icon.png/revision/latest"
+              },
+              {
                 "name": "Nilou",
                 "rarity": 5,
                 "element": "hydro",

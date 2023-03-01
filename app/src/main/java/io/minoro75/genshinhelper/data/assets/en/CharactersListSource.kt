@@ -96,6 +96,13 @@ object CharactersListSource {
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/31/Cyno_Icon.png/revision/latest"
     },
     {
+      "name": "Dehya",
+      "rarity": 5,
+      "element": "pyro",
+      "weapon": "claymore",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/3f/Dehya_Icon.png/revision/latest"
+    },
+    {
       "name": "Diluc",
       "rarity": 5,
       "element": "pyro",

@@ -149,6 +149,12 @@ object WedSatBooksSourceUk {
                  "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f8/Wanderer_Icon.png/revision/latest"
               },
               {
+                "name": "Дехʼя",
+                "rarity": 5,
+                "element": "pyro",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/3f/Dehya_Icon.png/revision/latest"
+              },
+              {
                 "name": "Коллей",
                 "rarity": 4,
                 "element": "dendro",

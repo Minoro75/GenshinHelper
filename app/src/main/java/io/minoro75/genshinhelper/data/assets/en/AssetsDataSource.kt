@@ -393,6 +393,8 @@ class AssetsDataSource @Inject constructor(
 
                 "Cyno" -> emit(characterDetailsAdapter.fromJson(CynoDetailsSource.details))
 
+                "Dehya" -> emit(characterDetailsAdapter.fromJson(DehyaDetailsSource.details))
+
                 "Diluc" -> emit(characterDetailsAdapter.fromJson(DilucDetailsSource.details))
 
                 "Diona" -> emit(characterDetailsAdapter.fromJson(DionaDetailsSource.details))

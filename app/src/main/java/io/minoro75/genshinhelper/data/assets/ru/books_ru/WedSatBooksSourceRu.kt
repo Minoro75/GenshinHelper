@@ -141,6 +141,12 @@ object WedSatBooksSourceRu {
             "book_name": "о Честности",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/82/Item_Philosophies_of_Praxis.png",
             "characters": [
+                {
+                "name": "Дэхья",
+                "rarity": 5,
+                "element": "pyro",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/3f/Dehya_Icon.png/revision/latest"
+                },
               {
                 "name": "Коллеи",
                 "rarity": 4,

@@ -105,6 +105,13 @@ object CharactersListSourceRu {
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/54/Dori_Icon.png/revision/latest"
     },
     {
+      "name": "Дэхья",
+      "rarity": 5,
+      "element": "pyro",
+      "weapon": "claymore",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/3f/Dehya_Icon.png/revision/latest"
+    },
+    {
       "name": "Ëимия",
       "rarity": 5,
       "element": "pyro",
