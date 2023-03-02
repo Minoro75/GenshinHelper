@@ -1,18 +1,19 @@
 package io.minoro75.genshinhelper.presentation
 
 import android.os.Bundle
-import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.animation.ExperimentalAnimationApi
+import androidx.compose.animation.core.Spring
+import androidx.compose.animation.core.spring
+import androidx.compose.animation.slideInHorizontally
+import androidx.compose.animation.slideOutHorizontally
 import androidx.compose.foundation.layout.calculateEndPadding
 import androidx.compose.foundation.layout.calculateStartPadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.SideEffect
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.unit.LayoutDirection
 import androidx.compose.ui.unit.dp
@@ -22,7 +23,6 @@ import androidx.navigation.navArgument
 import com.google.accompanist.navigation.animation.AnimatedNavHost
 import com.google.accompanist.navigation.animation.composable
 import com.google.accompanist.navigation.animation.rememberAnimatedNavController
-import com.google.accompanist.systemuicontroller.rememberSystemUiController
 import dagger.hilt.android.AndroidEntryPoint
 import io.minoro75.genshinhelper.presentation.character_details.composables.CharacterScreen
 import io.minoro75.genshinhelper.presentation.characters_list_screen.composables.CharactersListScreen
@@ -70,9 +70,29 @@ fun MainScreen() {
                 bottom = paddingValues.calculateBottomPadding(),
                 top = 0.dp
             ),
+            enterTransition = {
+                val targetRoute = targetState.destination.route
+                val initialRoute = initialState.destination.route
+                val offset = enterOffsetFor(targetRoute, initialRoute)
+                slideInHorizontally(
+                    initialOffsetX = { offset },
+                    animationSpec = spring(dampingRatio = Spring.DampingRatioNoBouncy)
+                )
+
+            },
+            exitTransition = {
+                val targetRoute = targetState.destination.route
+                val initialRoute = initialState.destination.route
+                val offset = exitOffsetFor(targetRoute, initialRoute)
+                slideOutHorizontally(
+                    targetOffsetX = { offset },
+                    animationSpec = spring(dampingRatio = Spring.DampingRatioNoBouncy)
+                )
+            },
             navController = navController,
             startDestination = NavigationItem.Home.route
         ) {
+
             composable(NavigationItem.Home.route) {
                 HomeScreen(
                     onCharacterClick = { clickedCharacterName ->
@@ -127,3 +147,44 @@ fun MainScreen() {
 
     }
 }
+
+fun enterOffsetFor(targetRoute: String?, initialRoute: String?): Int {
+    return when (initialRoute to targetRoute) {
+        NavigationItem.Home.route to NavigationItem.Characters.route,
+        NavigationItem.Home.route to NavigationItem.Map.route,
+        NavigationItem.Home.route to NavigationItem.Info.route,
+        NavigationItem.Characters.route to NavigationItem.Map.route,
+        NavigationItem.Characters.route to NavigationItem.Info.route,
+        NavigationItem.Map.route to NavigationItem.Info.route -> 1080
+
+        NavigationItem.Info.route to NavigationItem.Map.route,
+        NavigationItem.Info.route to NavigationItem.Characters.route,
+        NavigationItem.Info.route to NavigationItem.Home.route,
+        NavigationItem.Map.route to NavigationItem.Characters.route,
+        NavigationItem.Map.route to NavigationItem.Home.route,
+        NavigationItem.Characters.route to NavigationItem.Home.route -> -1080
+
+        else -> 1080 // Always from right to left
+    }
+}
+
+fun exitOffsetFor(targetRoute: String?, initialRoute: String?): Int {
+    return when (initialRoute to targetRoute) {
+        NavigationItem.Home.route to NavigationItem.Characters.route,
+        NavigationItem.Home.route to NavigationItem.Map.route,
+        NavigationItem.Home.route to NavigationItem.Info.route,
+        NavigationItem.Characters.route to NavigationItem.Map.route,
+        NavigationItem.Characters.route to NavigationItem.Info.route,
+        NavigationItem.Map.route to NavigationItem.Info.route -> -1080
+
+        NavigationItem.Info.route to NavigationItem.Map.route,
+        NavigationItem.Info.route to NavigationItem.Characters.route,
+        NavigationItem.Info.route to NavigationItem.Home.route,
+        NavigationItem.Map.route to NavigationItem.Characters.route,
+        NavigationItem.Map.route to NavigationItem.Home.route,
+        NavigationItem.Characters.route to NavigationItem.Home.route -> 1080
+
+        else -> -1080 // Always from right to left
+    }
+}
+

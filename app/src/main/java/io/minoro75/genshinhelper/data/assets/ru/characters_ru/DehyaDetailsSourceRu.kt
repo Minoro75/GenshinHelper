@@ -58,7 +58,7 @@ object DehyaDetailsSourceRu {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": "TJu9uMxOEY"
+          "video_guide": "eSG1tu46Azk"
         }
     """.trimIndent()
 }
