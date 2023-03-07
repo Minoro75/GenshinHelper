@@ -11,7 +11,7 @@ object KamisatoAyatoDetailsSourceRu {
       "rarity": 5,
       "element": "hydro",
       "weapon": "sword",
-      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a2/Character_Kamisato_Ayato_Thumb.png",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/27/Kamisato_Ayato_Icon.png/revision/latest",
       "talents_books": {
         "book_name": "об Изяществе",
         "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/6/6f/Item_Philosophies_of_Elegance.png",
@@ -31,7 +31,7 @@ object KamisatoAyatoDetailsSourceRu {
           "artifact_name": "Сердце глубин",
           "artifact_url": "https://paimon.moe/images/artifacts/heart_of_depth_flower.png",
           "artifact_amount": 4,
-          "artifact_gobelet": "Шидро ДПС",
+          "artifact_gobelet": "Гидро ДПС",
           "artifact_circlet": "Крит шанс / Крит урон",
           "artifact_sands": "Сила атаки"
         }
@@ -57,7 +57,8 @@ object KamisatoAyatoDetailsSourceRu {
           "weapon_url": "https://paimon.moe/images/weapons/amenoma_kageuchi.png",
           "weapon_rarity": 4
         }
-      ]
+      ],
+      "video_guide": "xArFdMt8G4Q"
     }
 """.trimIndent()
 }

@@ -22,10 +22,10 @@ class CharacterDetailsScreenViewModel @Inject constructor(
 
     val uiState: StateFlow<CharacterDetailsState> =
         repository.getCharacterDetails(name!!).map {
-            CharacterDetailsState.Success(it!!)
+            CharacterDetailsState(it!!, false)
         }.stateIn(
             scope = viewModelScope,
-            initialValue = CharacterDetailsState.Loading,
+            initialValue = CharacterDetailsState(null, true),
             started = SharingStarted.WhileSubscribed(5_000)
         )
 }

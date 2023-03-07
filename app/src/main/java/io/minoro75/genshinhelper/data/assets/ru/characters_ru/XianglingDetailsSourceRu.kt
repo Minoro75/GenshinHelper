@@ -11,7 +11,7 @@ object XianglingDetailsSourceRu {
           "rarity": 4,
           "element": "pyro",
           "weapon": "polearm",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a0/Character_Xiangling_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/39/Xiangling_Icon.png/revision/latest",
           "talents_books": {
             "book_name": "об Усердии",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c2/Item_Philosophies_of_Diligence.png",
@@ -57,7 +57,8 @@ object XianglingDetailsSourceRu {
               "weapon_url": "https://paimon.moe/images/weapons/the_catch.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "mgeqroCJOpg"
         }
     """.trimIndent()
 }

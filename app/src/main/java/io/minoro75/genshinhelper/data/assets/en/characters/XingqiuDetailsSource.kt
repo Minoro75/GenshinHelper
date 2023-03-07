@@ -56,7 +56,8 @@ object XingqiuDetailsSource {
               "weapon_url": "https://paimon.moe/images/weapons/amenoma_kageuchi.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "tHqFAZDMqSQ"
         }
     """.trimIndent()
 }

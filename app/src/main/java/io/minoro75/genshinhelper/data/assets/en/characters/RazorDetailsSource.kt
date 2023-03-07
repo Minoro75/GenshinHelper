@@ -10,7 +10,7 @@ object RazorDetailsSource {
           "rarity": 4,
           "element": "electro",
           "weapon": "claymore",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/1/1d/Character_Razor_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b8/Razor_Icon.png/revision/latest",
           "talents_books": {
             "book_name": "Resistance",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/0b/Item_Philosophies_of_Resistance.png",
@@ -56,7 +56,8 @@ object RazorDetailsSource {
               "weapon_url": "https://paimon.moe/images/weapons/prototype_archaic.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "6eL2TQ-Kxy0"
         }
     """.trimIndent()
 }

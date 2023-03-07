@@ -10,7 +10,7 @@ object YoimiyaDetailsSource {
           "rarity": 5,
           "element": "pyro",
           "weapon": "bow",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/05/Character_Yoimiya_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/88/Yoimiya_Icon.png/revision/latest",
           "talents_books": {
             "book_name": "Transience",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/27/Item_Philosophies_of_Transience.png",
@@ -56,7 +56,8 @@ object YoimiyaDetailsSource {
               "weapon_url": "https://paimon.moe/images/weapons/prototype_crescent.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "6CKnyJC4UWQ"
         }
     """.trimIndent()
 }

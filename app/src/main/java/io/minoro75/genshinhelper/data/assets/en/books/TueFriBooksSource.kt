@@ -19,49 +19,49 @@ object TueFriBooksSource {
                 "name": "Bennett",
                 "rarity": 4,
                 "element": "pyro",
-                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/7b/Character_Bennett_Thumb.png"
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/79/Bennett_Icon.png/revision/latest"
               },
               {
                 "name": "Diluc",
                 "rarity": 5,
                 "element": "pyro",
-                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/02/Character_Diluc_Thumb.png"
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/3d/Diluc_Icon.png/revision/latest"
               },
               {
                 "name": "Eula",
                 "rarity": 5,
                 "element": "cryo",
-                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d3/Character_Eula_Thumb.png"
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/af/Eula_Icon.png/revision/latest"
               },
               {
                 "name": "Jean",
                 "rarity": 5,
                 "element": "anemo",
-                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/89/Character_Jean_Thumb.png"
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/6/64/Jean_Icon.png/revision/latest"
               },
               {
                 "name": "Mona",
                 "rarity": 5,
                 "element": "hydro",
-                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a0/Character_Mona_Thumb.png"
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/4/41/Mona_Icon.png/revision/latest"
               },
               {
                 "name": "Noelle",
                 "rarity": 4,
                 "element": "geo",
-                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/ab/Character_Noelle_Thumb.png"
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/8e/Noelle_Icon.png/revision/latest"
               },
               {
                 "name": "Razor",
                 "rarity": 4,
                 "element": "electro",
-                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/1/1d/Character_Razor_Thumb.png"
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b8/Razor_Icon.png/revision/latest"
               },
               {
-                "name": "Traveler   (Anemo)",
+                "name": "Traveler (Anemo)",
                 "rarity": 5,
                 "element": "anemo",
-                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/71/Character_Traveler_Thumb.png"
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
               }
             ]
           },
@@ -73,43 +73,49 @@ object TueFriBooksSource {
                 "name": "Chongyun",
                 "rarity": 4,
                 "element": "cryo",
-                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/6/68/Character_Chongyun_Thumb.png"
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/35/Chongyun_Icon.png/revision/latest"
               },
               {
                 "name": "Ganyu",
                 "rarity": 5,
                 "element": "cryo",
-                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/0a/Character_Ganyu_Thumb.png"
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/79/Ganyu_Icon.png/revision/latest"
               },
               {
                 "name": "Hu Tao",
                 "rarity": 5,
                 "element": "pyro",
-                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a4/Character_Hu_Tao_Thumb.png"
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e9/Hu_Tao_Icon.png/revision/latest"
               },
               {
                 "name": "Kaedehara Kazuha",
                 "rarity": 5,
                 "element": "anemo",
-                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f0/Character_Kaedehara_Kazuha_Thumb.png"
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e3/Kaedehara_Kazuha_Icon.png/revision/latest"
               },
               {
-                "name": "Traveler   (Geo)",
+                "name": "Traveler (Geo)",
                 "rarity": 5,
                 "element": "geo",
-                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/71/Character_Traveler_Thumb.png"
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
               },
               {
                 "name": "Xiangling",
                 "rarity": 4,
                 "element": "pyro",
-                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a0/Character_Xiangling_Thumb.png"
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/39/Xiangling_Icon.png/revision/latest"
+              },
+              {
+                "name": "Yaoyao",
+                "rarity": 4,
+                "element": "dendro",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/83/Yaoyao_Icon.png/revision/latest"
               },
               {
                 "name": "Yun Jin",
                 "rarity": 4,
                 "element": "geo",
-                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/cb/Character_Yun_Jin_Thumb.png"
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9c/Yun_Jin_Icon.png/revision/latest"
               }
             ]
           },
@@ -121,37 +127,37 @@ object TueFriBooksSource {
                 "name": "Arataki Itto",
                 "rarity": 5,
                 "element": "geo",
-                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/79/Character_Arataki_Itto_Thumb.png"
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/7b/Arataki_Itto_Icon.png/revision/latest"
               },
               {
                 "name": "Kamisato Ayaka",
                 "rarity": 5,
                 "element": "cryo",
-                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/fd/Character_Kamisato_Ayaka_Thumb.png"
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/51/Kamisato_Ayaka_Icon.png/revision/latest"
               },
               {
                 "name": "Kamisato Ayato",
                 "rarity": 5,
                 "element": "hydro",
-                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a2/Character_Kamisato_Ayato_Thumb.png"
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/27/Kamisato_Ayato_Icon.png/revision/latest"
               },
               {
                 "name": "Kujou Sara",
                 "rarity": 4,
                 "element": "electro",
-                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/96/Character_Kujou_Sara_Thumb.png"
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/d/df/Kujou_Sara_Icon.png/revision/latest"
               },
               {
                 "name": "Kuki Shinobu",
                 "rarity": 4,
                 "element": "electro",
-                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/37/Character_Kuki_Shinobu_Thumb.png"
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b3/Kuki_Shinobu_Icon.png/revision/latest"
               },
               {
-                "name": "Traveler   (Electro)",
+                "name": "Traveler (Electro)",
                 "rarity": 5,
                 "element": "electro",
-                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/71/Character_Traveler_Thumb.png"
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
               }
             ]
           },
@@ -160,28 +166,34 @@ object TueFriBooksSource {
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f7/Item_Philosophies_of_Ingenuity.png",
             "characters": [
               {
+                "name": "Alhaitham",
+                "rarity": 5,
+                "element": "dendro",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/2c/Alhaitham_Icon.png/revision/latest"
+              },
+              {
                 "name": "Dori",
                 "rarity": 4,
                 "element": "electro",
-                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/90/Character_Dori_Thumb.png"
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/54/Dori_Icon.png/revision/latest"
               },
               {
                 "name": "Layla",
                 "rarity": 4,
                 "element": "cryo",
-                "image_url": "https://static.wikia.nocookie.net/genshin-impact/images/c/cd/%D0%9F%D0%B5%D1%80%D1%81%D0%BE%D0%BD%D0%B0%D0%B6_%D0%9B%D0%B0%D0%B9%D0%BB%D0%B0_%D0%98%D0%BA%D0%BE%D0%BD%D0%BA%D0%B0.png/revision/latest?cb=20221102060014&path-prefix=ru"
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/1/1a/Layla_Icon.png/revision/latest"
               },
               {
                 "name": "Nahida",
                 "rarity": 5,
                 "element": "dendro",
-                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/cf/Character_Nahida_Thumb.png"
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f9/Nahida_Icon.png/revision/latest"
               },
               {
-                "name": "Traveler   (Denro)",
+                "name": "Traveler (Dendro)",
                 "rarity": 5,
                 "element": "dendro",
-                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/71/Character_Traveler_Thumb.png"
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
               }
             ]
           }

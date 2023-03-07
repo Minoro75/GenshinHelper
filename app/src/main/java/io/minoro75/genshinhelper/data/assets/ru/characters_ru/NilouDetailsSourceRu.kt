@@ -11,7 +11,7 @@ object NilouDetailsSourceRu {
           "rarity": 5,
           "element": "hydro",
           "weapon": "sword",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a5/Character_Nilou_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/58/Nilou_Icon.png/revision/latest",
           "talents_books": {
             "book_name": "о Честности",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/82/Item_Philosophies_of_Praxis.png",
@@ -65,7 +65,8 @@ object NilouDetailsSourceRu {
               "weapon_url": "https://paimon.moe/images/weapons/favonius_sword.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "jlCZPKw6vVg"
         }
     """.trimIndent()
 }

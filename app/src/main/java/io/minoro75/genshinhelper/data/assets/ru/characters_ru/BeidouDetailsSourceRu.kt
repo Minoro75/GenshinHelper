@@ -11,7 +11,7 @@ object BeidouDetailsSourceRu {
               "rarity": 4,
               "element": "electro",
               "weapon": "claymore",
-              "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/6/61/Character_Beidou_Thumb.png",
+              "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e1/Beidou_Icon.png/revision/latest",
               "talents_books": {
                 "book_name": "о Золоте",
                 "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/01/Item_Philosophies_of_Gold.png",
@@ -31,7 +31,7 @@ object BeidouDetailsSourceRu {
                   "artifact_name": "Эмблема рассечённой судьбы",
                   "artifact_url": "https://paimon.moe/images/artifacts/emblem_of_severed_fate_flower.png",
                   "artifact_amount": 4,
-                  "artifact_gobelet": "Електро ДПС",
+                  "artifact_gobelet": "Электро ДПС",
                   "artifact_circlet": "Крит Шанс / Крит Урон",
                   "artifact_sands": "Сила Атаки / Восстановление Энергии"
                 }
@@ -57,7 +57,8 @@ object BeidouDetailsSourceRu {
                   "weapon_url": "https://paimon.moe/images/weapons/katsuragikiri_nagamasa.png",
                   "weapon_rarity": 4
                 }
-              ]
+              ],
+              "video_guide": "yt5KLzFzres"
             }
         """.trimIndent()
 }

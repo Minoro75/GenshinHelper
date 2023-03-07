@@ -10,7 +10,7 @@ object ThomaDetailsSource {
           "rarity": 4,
           "element": "pyro",
           "weapon": "polearm",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/8a/Character_Thoma_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/5b/Thoma_Icon.png/revision/latest",
           "talents_books": {
             "book_name": "Transience",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/27/Item_Philosophies_of_Transience.png",
@@ -56,7 +56,8 @@ object ThomaDetailsSource {
               "weapon_url": "https://paimon.moe/images/weapons/the_catch.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "r-Icv60BxlU"
         }
     """.trimIndent()
 }

@@ -10,7 +10,7 @@ object SangonomiyaKokomiDetailsSource {
           "rarity": 5,
           "element": "hydro",
           "weapon": "catalyst",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/cc/Character_Sangonomiya_Kokomi_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/ff/Sangonomiya_Kokomi_Icon.png/revision/latest",
           "talents_books": {
             "book_name": "Transience",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/27/Item_Philosophies_of_Transience.png",
@@ -56,7 +56,8 @@ object SangonomiyaKokomiDetailsSource {
               "weapon_url": "https://paimon.moe/images/weapons/hakushin_ring.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "Uo9NzSILyys"
         }
     """.trimIndent()
 }

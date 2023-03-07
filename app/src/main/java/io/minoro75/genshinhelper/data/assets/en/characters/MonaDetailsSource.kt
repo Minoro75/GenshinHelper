@@ -10,7 +10,7 @@ object MonaDetailsSource {
           "rarity": 5,
           "element": "hydro",
           "weapon": "catalyst",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a0/Character_Mona_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/4/41/Mona_Icon.png/revision/latest",
           "talents_books": {
             "book_name": "Resistance",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/0b/Item_Philosophies_of_Resistance.png",
@@ -56,7 +56,8 @@ object MonaDetailsSource {
               "weapon_url": "https://paimon.moe/images/weapons/mappa_mare.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "jsySfuZQhEM"
         }
     """.trimIndent()
 }

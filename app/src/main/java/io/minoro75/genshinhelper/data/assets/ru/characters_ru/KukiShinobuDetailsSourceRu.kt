@@ -11,7 +11,7 @@ object KukiShinobuDetailsSourceRu {
           "rarity": 4,
           "element": "electro",
           "weapon": "sword",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/37/Character_Kuki_Shinobu_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b3/Kuki_Shinobu_Icon.png/revision/latest",
           "talents_books": {
             "book_name": "об Изяществе",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/6/6f/Item_Philosophies_of_Elegance.png",
@@ -57,7 +57,8 @@ object KukiShinobuDetailsSourceRu {
               "weapon_url": "https://paimon.moe/images/weapons/iron_sting.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "L9NTOoKIk5w"
         }
     """.trimIndent()
 }

@@ -10,7 +10,7 @@ object GorouDetailsSource {
           "rarity": 4,
           "element": "geo",
           "weapon": "bow",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/56/Character_Gorou_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/fe/Gorou_Icon.png/revision/latest",
           "talents_books": {
             "book_name": "Light",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/95/Item_Philosophies_of_Light.png",
@@ -56,7 +56,8 @@ object GorouDetailsSource {
               "weapon_url": "https://paimon.moe/images/weapons/sacrificial_bow.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "-2omwRYqwq4"
         }
     """.trimIndent()
 }

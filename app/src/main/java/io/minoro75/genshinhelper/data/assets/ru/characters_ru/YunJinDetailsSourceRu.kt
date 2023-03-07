@@ -11,7 +11,7 @@ object YunJinDetailsSourceRu {
           "rarity": 4,
           "element": "geo",
           "weapon": "polearm",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/cb/Character_Yun_Jin_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9c/Yun_Jin_Icon.png/revision/latest",
           "talents_books": {
             "book_name": "об Усердии",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c2/Item_Philosophies_of_Diligence.png",
@@ -57,7 +57,8 @@ object YunJinDetailsSourceRu {
               "weapon_url": "https://paimon.moe/images/weapons/prototype_starglitter.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "dqRQ2baD_e0"
         }
     """.trimIndent()
 }

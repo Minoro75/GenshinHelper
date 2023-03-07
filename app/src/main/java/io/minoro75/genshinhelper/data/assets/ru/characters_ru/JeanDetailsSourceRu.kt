@@ -11,7 +11,7 @@ object JeanDetailsSourceRu {
           "rarity": 5,
           "element": "anemo",
           "weapon": "sword",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/89/Character_Jean_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/6/64/Jean_Icon.png/revision/latest",
           "talents_books": {
             "book_name": "о Борьбе",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/0b/Item_Philosophies_of_Resistance.png",
@@ -57,7 +57,8 @@ object JeanDetailsSourceRu {
               "weapon_url": "https://paimon.moe/images/weapons/amenoma_kageuchi.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "OdqDMhCiYfA"
         }
     """.trimIndent()
 }

@@ -16,7 +16,6 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import io.minoro75.genshinhelper.presentation.theme.GenshinHelperTheme
 
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun TalentsPriorityView(
     priority: List<String>,

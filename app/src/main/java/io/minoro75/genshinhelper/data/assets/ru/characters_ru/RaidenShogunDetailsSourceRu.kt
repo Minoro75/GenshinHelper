@@ -11,7 +11,7 @@ object RaidenShogunDetailsSourceRu {
           "rarity": 5,
           "element": "electro",
           "weapon": "polearm",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/52/Character_Raiden_Shogun_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/24/Raiden_Shogun_Icon.png/revision/latest",
           "talents_books": {
             "book_name": "о Свете",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/95/Item_Philosophies_of_Light.png",
@@ -31,7 +31,7 @@ object RaidenShogunDetailsSourceRu {
               "artifact_name": "Эмблема рассечённой судьбы",
               "artifact_url": "https://paimon.moe/images/artifacts/emblem_of_severed_fate_flower.png",
               "artifact_amount": 4,
-              "artifact_gobelet": "Сила атаки / Електро ДПС",
+              "artifact_gobelet": "Сила атаки / Электро ДПС",
               "artifact_circlet": "Крит шанс / Крит урон",
               "artifact_sands": "Восстановление энергии / Сила атаки"
             }
@@ -57,7 +57,8 @@ object RaidenShogunDetailsSourceRu {
               "weapon_url": "https://paimon.moe/images/weapons/the_catch.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "LF0LiiNBcWk"
         }
     """.trimIndent()
 }

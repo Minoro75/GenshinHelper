@@ -10,7 +10,7 @@ object YelanDetailsSource {
           "rarity": 5,
           "element": "hydro",
           "weapon": "bow",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a8/Character_Yelan_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d3/Yelan_Icon.png/revision/latest",
           "talents_books": {
             "book_name": "Prosperity",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/bd/Item_Philosophies_of_Prosperity.png",
@@ -56,7 +56,8 @@ object YelanDetailsSource {
               "weapon_url": "https://paimon.moe/images/weapons/favonius_warbow.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "gnm47TtjmQE"
         }
     """.trimIndent()
 }

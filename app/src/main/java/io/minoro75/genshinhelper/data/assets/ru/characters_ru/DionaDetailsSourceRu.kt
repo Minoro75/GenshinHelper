@@ -11,7 +11,7 @@ object DionaDetailsSourceRu {
           "rarity": 4,
           "element": "cryo",
           "weapon": "bow",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Character_Diona_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/4/40/Diona_Icon.png/revision/latest",
           "talents_books": {
             "book_name": "о Свободе",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/Item_Philosophies_of_Freedom.png",
@@ -57,7 +57,8 @@ object DionaDetailsSourceRu {
               "weapon_url": "https://paimon.moe/images/weapons/recurve_bow.png",
               "weapon_rarity": 3
             }
-          ]
+          ],
+          "video_guide": "UrC698R182Y"
         }
     """.trimIndent()
 }

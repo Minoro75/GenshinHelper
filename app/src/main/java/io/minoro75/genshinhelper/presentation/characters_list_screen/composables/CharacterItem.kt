@@ -94,7 +94,7 @@ fun CharaterItemPreview() {
         CharacterItem(
             CharacterModel(
                 "Animeshka", 4, "anemo",
-                "bow", "https://static.wikia.nocookie.net/gensin-impact/images/5/51/Character_Lisa_Thumb.png"
+                "bow", "https://static.wikia.nocookie.net/gensin-impact/images/6/65/Lisa_Icon.png/revision/latest"
             )
         )
     }

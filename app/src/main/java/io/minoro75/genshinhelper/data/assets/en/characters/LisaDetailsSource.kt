@@ -10,7 +10,7 @@ object LisaDetailsSource {
           "rarity": 4,
           "element": "electro",
           "weapon": "catalyst",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/51/Character_Lisa_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/6/65/Lisa_Icon.png/revision/latest",
           "talents_books": {
             "book_name": "Ballad",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/7e/Item_Philosophies_of_Ballad.png",
@@ -64,7 +64,8 @@ object LisaDetailsSource {
               "weapon_url": "https://paimon.moe/images/weapons/hakushin_ring.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "UofcnB3X3lI"
         }
     """.trimIndent()
 }

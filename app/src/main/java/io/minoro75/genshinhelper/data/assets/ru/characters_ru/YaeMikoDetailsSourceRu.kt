@@ -11,7 +11,7 @@ object YaeMikoDetailsSourceRu {
           "rarity": 5,
           "element": "electro",
           "weapon": "catalyst",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/57/Character_Yae_Miko_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/ba/Yae_Miko_Icon.png/revision/latest",
           "talents_books": {
             "book_name": "о Свете",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/95/Item_Philosophies_of_Light.png",
@@ -31,7 +31,7 @@ object YaeMikoDetailsSourceRu {
               "artifact_name": "Громогласный рёв ярости",
               "artifact_url": "https://paimon.moe/images/artifacts/thundering_fury_flower.png",
               "artifact_amount": 2,
-              "artifact_gobelet": "Електро ДПС",
+              "artifact_gobelet": "Электро ДПС",
               "artifact_circlet": "Крит шанс / Крит урон",
               "artifact_sands": "Сила атаки / Восстановление энергии"
             },
@@ -39,7 +39,7 @@ object YaeMikoDetailsSourceRu {
               "artifact_name": "Конец гладиатора",
               "artifact_url": "https://paimon.moe/images/artifacts/gladiators_finale_flower.png",
               "artifact_amount": 2,
-              "artifact_gobelet": "Електро ДПС",
+              "artifact_gobelet": "Электро ДПС",
               "artifact_circlet": "Крит шанс / Крит урон",
               "artifact_sands": "Сила атаки / Восстановление энергии"
             }
@@ -65,7 +65,8 @@ object YaeMikoDetailsSourceRu {
               "weapon_url": "https://paimon.moe/images/weapons/hakushin_ring.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "pusT3ioWFww"
         }
     """.trimIndent()
 }

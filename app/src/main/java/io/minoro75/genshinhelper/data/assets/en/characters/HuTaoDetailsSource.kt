@@ -10,7 +10,7 @@ object HuTaoDetailsSource {
           "rarity": 5,
           "element": "pyro",
           "weapon": "polearm",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a4/Character_Hu_Tao_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e9/Hu_Tao_Icon.png/revision/latest",
           "talents_books": {
             "book_name": "Diligence",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c2/Item_Philosophies_of_Diligence.png",
@@ -47,16 +47,17 @@ object HuTaoDetailsSource {
               "weapon_rarity": 5
             },
             {
-              "weapon_name": "Dragon's Bane",
-              "weapon_url": "https://paimon.moe/images/weapons/dragons_bane.png",
-              "weapon_rarity": 4
-            },
-            {
               "weapon_name": "Deathmatch",
               "weapon_url": "https://paimon.moe/images/weapons/deathmatch.png",
               "weapon_rarity": 4
+            },
+            {
+              "weapon_name": "Dragon's Bane",
+              "weapon_url": "https://paimon.moe/images/weapons/dragons_bane.png",
+              "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "kRng9LFKRwI"
         }
     """.trimIndent()
 }

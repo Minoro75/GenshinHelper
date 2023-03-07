@@ -10,7 +10,7 @@ object ShenheDetailsSource {
           "rarity": 5,
           "element": "cryo",
           "weapon": "polearm",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/58/Character_Shenhe_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/af/Shenhe_Icon.png/revision/latest",
           "talents_books": {
             "book_name": "Prosperity",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/bd/Item_Philosophies_of_Prosperity.png",
@@ -64,7 +64,8 @@ object ShenheDetailsSource {
               "weapon_url": "https://paimon.moe/images/weapons/the_catch.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "DquTtz-XkZo"
         }
     """.trimIndent()
 }

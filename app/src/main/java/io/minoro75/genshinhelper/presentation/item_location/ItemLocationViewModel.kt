@@ -14,15 +14,15 @@ import javax.inject.Inject
 @HiltViewModel
 class ItemLocationViewModel @Inject constructor(
     savedStateHandle: SavedStateHandle,
-    private val repository: CharactersRepository
+    repository: CharactersRepository
 ) : ViewModel() {
 
     val name = savedStateHandle.get<String>("itemName")
     val uiState = repository.getItemLocation(name!!).map {
-        ItemLocationState.Success(it!!)
+        ItemLocationState(it!!, false)
     }.stateIn(
         scope = viewModelScope,
-        initialValue = ItemLocationState.Loading,
+        initialValue = ItemLocationState(emptyList(), false),
         started = SharingStarted.WhileSubscribed(5_000)
     )
 }

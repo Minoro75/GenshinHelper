@@ -10,7 +10,7 @@ object TravelerGeoDetailsSource {
           "rarity": 5,
           "element": "geo",
           "weapon": "sword",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/71/Character_Traveler_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest",
           "talents_books": {
             "book_name": "Prosperity",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/bd/Item_Philosophies_of_Prosperity.png",
@@ -56,7 +56,8 @@ object TravelerGeoDetailsSource {
               "weapon_url": "https://paimon.moe/images/weapons/amenoma_kageuchi.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "w13Gk8ITDcU"
         }
     """.trimIndent()
 }

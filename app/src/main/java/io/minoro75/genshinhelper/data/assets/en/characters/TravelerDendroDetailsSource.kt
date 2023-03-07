@@ -10,7 +10,7 @@ object TravelerDendroDetailsSource {
           "rarity": 5,
           "element": "dendro",
           "weapon": "sword",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/71/Character_Traveler_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest",
           "talents_books": {
             "book_name": "Admonition",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9b/Item_Philosophies_of_Admonition.png",
@@ -56,7 +56,8 @@ object TravelerDendroDetailsSource {
               "weapon_url": "https://paimon.moe/images/weapons/iron_sting.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "wPZ5_axqjj0"
         }
     """.trimIndent()
 }

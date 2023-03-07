@@ -6,68 +6,7 @@ import io.minoro75.genshinhelper.data.assets.en.books.MonThuBooksSource
 import io.minoro75.genshinhelper.data.assets.en.books.SundayBooksSource
 import io.minoro75.genshinhelper.data.assets.en.books.TueFriBooksSource
 import io.minoro75.genshinhelper.data.assets.en.books.WedSatBooksSource
-import io.minoro75.genshinhelper.data.assets.en.characters.AlbedoDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.AloyDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.AmberDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.AratakiIttoDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.BarbaraDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.BeidouDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.BennettDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.CandaceDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.ChongyunDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.ColleiDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.CynoDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.DilucDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.DionaDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.DoriDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.EulaDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.FischlDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.GanyuDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.GorouDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.HuTaoDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.JeanDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.KaedeharaKazuhaDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.KaeyaDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.KamisatoAyakaDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.KamisatoAyatoDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.KeqingDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.KleeDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.KujouSaraDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.KukiShinobuDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.LaylaDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.LisaDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.MonaDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.NahidaDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.NilouDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.NingguangDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.NoelleDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.QiqiDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.RaidenShogunDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.RazorDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.RosariaDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.SangonomiyaKokomiDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.SayuDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.ShenheDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.ShikanoinHeizouDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.SucroseDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.TartagliaDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.ThomaDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.TighnariDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.TravelerAnemoDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.TravelerDendroDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.TravelerElectroDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.TravelerGeoDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.VentiDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.XianglingDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.XiaoDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.XingqiuDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.XinyanDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.YaeMikoDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.YanfeiDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.YelanDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.YoimiyaDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.YunJinDetailsSource
-import io.minoro75.genshinhelper.data.assets.en.characters.ZhongliDetailsSource
+import io.minoro75.genshinhelper.data.assets.en.characters.*
 import io.minoro75.genshinhelper.data.assets.en.items.artifacts.ArchaicPetraDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.artifacts.BlizzardStrayerDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.artifacts.BloodstainedChivalryDataSource
@@ -106,6 +45,7 @@ import io.minoro75.genshinhelper.data.assets.en.items.books.ResistanceDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.books.TransienceDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.boss_items.AshenHeartDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.boss_items.BloodjadeBranchDataSource
+import io.minoro75.genshinhelper.data.assets.en.items.boss_items.DakasBellDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.boss_items.DragonLordsCrownDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.boss_items.DvalinsClawDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.boss_items.DvalinsPlumeDataSource
@@ -361,6 +301,8 @@ class AssetsDataSource @Inject constructor(
                     )
                 )
 
+                "Daka's Bell" -> emit(itemLocationAdapter.fromJson(DakasBellDataSource.sourcesList))
+
                 "Puppet Strings" -> emit(itemLocationAdapter.fromJson(PuppetStringsDataSource.sourcesList))
 
                 "Mirror of Mushin" -> emit(itemLocationAdapter.fromJson(MirrorOfMushinDataSource.sourcesList))
@@ -429,6 +371,8 @@ class AssetsDataSource @Inject constructor(
             when (characterName) {
                 "Albedo" -> emit(characterDetailsAdapter.fromJson(AlbedoDetailsSource.details))
 
+                "Alhaitham" -> emit(characterDetailsAdapter.fromJson(AlhaithamDetailsSource.details))
+
                 "Aloy" -> emit(characterDetailsAdapter.fromJson(AloyDetailsSource.details))
 
                 "Amber" -> emit(characterDetailsAdapter.fromJson(AmberDetailsSource.details))
@@ -448,6 +392,8 @@ class AssetsDataSource @Inject constructor(
                 "Collei" -> emit(characterDetailsAdapter.fromJson(ColleiDetailsSource.details))
 
                 "Cyno" -> emit(characterDetailsAdapter.fromJson(CynoDetailsSource.details))
+
+                "Dehya" -> emit(characterDetailsAdapter.fromJson(DehyaDetailsSource.details))
 
                 "Diluc" -> emit(characterDetailsAdapter.fromJson(DilucDetailsSource.details))
 
@@ -533,27 +479,29 @@ class AssetsDataSource @Inject constructor(
 
                 "Tighnari" -> emit(characterDetailsAdapter.fromJson(TighnariDetailsSource.details))
 
-                "Traveler   (Anemo)" -> emit(
+                "Traveler (Anemo)" -> emit(
                     characterDetailsAdapter.fromJson(
                         TravelerAnemoDetailsSource.details
                     )
                 )
 
-                "Traveler   (Electro)" -> emit(
+                "Traveler (Electro)" -> emit(
                     characterDetailsAdapter.fromJson(
                         TravelerElectroDetailsSource.details
                     )
                 )
 
-                "Traveler   (Geo)" -> emit(characterDetailsAdapter.fromJson(TravelerGeoDetailsSource.details))
+                "Traveler (Geo)" -> emit(characterDetailsAdapter.fromJson(TravelerGeoDetailsSource.details))
 
-                "Traveler   (Denro)" -> emit(
+                "Traveler (Dendro)" -> emit(
                     characterDetailsAdapter.fromJson(
                         TravelerDendroDetailsSource.details
                     )
                 )
 
                 "Venti" -> emit(characterDetailsAdapter.fromJson(VentiDetailsSource.details))
+
+                "Wanderer" -> emit(characterDetailsAdapter.fromJson(WandererDetailsSource.details))
 
                 "Xiangling" -> emit(characterDetailsAdapter.fromJson(XianglingDetailsSource.details))
 
@@ -567,6 +515,8 @@ class AssetsDataSource @Inject constructor(
 
                 "Yanfei" -> emit(characterDetailsAdapter.fromJson(YanfeiDetailsSource.details))
 
+                "Yaoyao" -> emit(characterDetailsAdapter.fromJson(YaoYaoDetailsSource.details))
+
                 "Yelan" -> emit(characterDetailsAdapter.fromJson(YelanDetailsSource.details))
 
                 "Yoimiya" -> emit(characterDetailsAdapter.fromJson(YoimiyaDetailsSource.details))
@@ -574,6 +524,8 @@ class AssetsDataSource @Inject constructor(
                 "Yun Jin" -> emit(characterDetailsAdapter.fromJson(YunJinDetailsSource.details))
 
                 "Zhongli" -> emit(characterDetailsAdapter.fromJson(ZhongliDetailsSource.details))
+
+                "Faruzan" -> emit(characterDetailsAdapter.fromJson(FaruzanDetailsSource.details))
 
                 else -> throw IllegalArgumentException("There is no character with name : $characterName")
             }

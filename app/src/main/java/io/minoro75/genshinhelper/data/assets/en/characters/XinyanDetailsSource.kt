@@ -10,7 +10,7 @@ object XinyanDetailsSource {
           "rarity": 4,
           "element": "pyro",
           "weapon": "claymore",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9d/Character_Xinyan_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/24/Xinyan_Icon.png/revision/latest",
           "talents_books": {
             "book_name": "Gold",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/01/Item_Philosophies_of_Gold.png",
@@ -64,7 +64,8 @@ object XinyanDetailsSource {
               "weapon_url": "https://paimon.moe/images/weapons/prototype_archaic.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "eeqHtYi1on8"
         }
     """.trimIndent()
 }

@@ -10,7 +10,7 @@ object FischlDetailsSource {
           "rarity": 4,
           "element": "electro",
           "weapon": "bow",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/1/14/Character_Fischl_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9a/Fischl_Icon.png/revision/latest",
           "talents_books": {
             "book_name": "Ballad",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/7e/Item_Philosophies_of_Ballad.png",
@@ -64,7 +64,8 @@ object FischlDetailsSource {
               "weapon_url": "https://paimon.moe/images/weapons/hamayumi.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "P8U5S3CwWLI"
         }
     """.trimIndent()
 }

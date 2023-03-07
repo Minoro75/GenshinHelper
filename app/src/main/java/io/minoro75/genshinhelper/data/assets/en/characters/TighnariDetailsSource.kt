@@ -10,7 +10,7 @@ object TighnariDetailsSource {
           "rarity": 5,
           "element": "dendro",
           "weapon": "bow",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/91/Character_Tighnari_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/87/Tighnari_Icon.png/revision/latest",
           "talents_books": {
             "book_name": "Admonition",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9b/Item_Philosophies_of_Admonition.png",
@@ -56,7 +56,8 @@ object TighnariDetailsSource {
               "weapon_url": "https://paimon.moe/images/weapons/prototype_crescent.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "iOa62xFfVx0"
         }
     """.trimIndent()
 }

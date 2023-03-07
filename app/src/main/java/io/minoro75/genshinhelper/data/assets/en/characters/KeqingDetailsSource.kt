@@ -10,7 +10,7 @@ object KeqingDetailsSource {
           "rarity": 5,
           "element": "electro",
           "weapon": "sword",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/06/Character_Keqing_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/52/Keqing_Icon.png/revision/latest",
           "talents_books": {
             "book_name": "Prosperity",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/bd/Item_Philosophies_of_Prosperity.png",
@@ -64,7 +64,8 @@ object KeqingDetailsSource {
               "weapon_url": "https://paimon.moe/images/weapons/amenoma_kageuchi.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+         "video_guide": "58j-JzAIqAg"
         }
     """.trimIndent()
 }

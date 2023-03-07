@@ -11,7 +11,7 @@ object LisaDetailsSourceRu {
           "rarity": 4,
           "element": "electro",
           "weapon": "catalyst",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/51/Character_Lisa_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/6/65/Lisa_Icon.png/revision/latest",
           "talents_books": {
             "book_name": "о Поэзии",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/7e/Item_Philosophies_of_Ballad.png",
@@ -31,7 +31,7 @@ object LisaDetailsSourceRu {
               "artifact_name": "Громогласный рёв ярости",
               "artifact_url": "https://paimon.moe/images/artifacts/thundering_fury_flower.png",
               "artifact_amount": 2,
-              "artifact_gobelet": "Електро ДПС",
+              "artifact_gobelet": "Электро ДПС",
               "artifact_circlet": "Крит шанс / Крит урон",
               "artifact_sands": "Сила атаки"
             },
@@ -39,7 +39,7 @@ object LisaDetailsSourceRu {
               "artifact_name": "Церемония древней знати",
               "artifact_url": "https://paimon.moe/images/artifacts/noblesse_oblige_flower.png",
               "artifact_amount": 2,
-              "artifact_gobelet": "Електро ДПС",
+              "artifact_gobelet": "Электро ДПС",
               "artifact_circlet": "Крит шанс / Крит урон",
               "artifact_sands": "Сила атаки"
             }
@@ -65,7 +65,8 @@ object LisaDetailsSourceRu {
               "weapon_url": "https://paimon.moe/images/weapons/hakushin_ring.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "gpsgQ9w5nZg"
         }
     """.trimIndent()
 }

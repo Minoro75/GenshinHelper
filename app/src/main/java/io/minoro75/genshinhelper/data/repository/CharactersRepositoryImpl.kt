@@ -4,6 +4,7 @@ import android.os.Build
 import androidx.annotation.RequiresApi
 import io.minoro75.genshinhelper.data.assets.en.AssetsDataSource
 import io.minoro75.genshinhelper.data.assets.ru.AssetsDataSourceRu
+import io.minoro75.genshinhelper.data.assets.uk.AssetsDataSourceUk
 import io.minoro75.genshinhelper.domain.model.CharacterDetails
 import io.minoro75.genshinhelper.domain.model.CharacterModel
 import io.minoro75.genshinhelper.domain.model.HowToObtainItem
@@ -20,11 +21,13 @@ import javax.inject.Singleton
 @Singleton
 class CharactersRepositoryImpl @Inject constructor(
     private val assetsDataSource: AssetsDataSource,
-    private val assetsDataSourceRu: AssetsDataSourceRu
+    private val assetsDataSourceRu: AssetsDataSourceRu,
+    private val assetsDataSourceUk: AssetsDataSourceUk
 ) : CharactersRepository {
     override fun getCharacters(): Flow<List<CharacterModel>?> {
         return when (Locale.getDefault().displayLanguage) {
             "русский" -> assetsDataSourceRu.getCharactersListRu()
+            "українська" -> assetsDataSourceUk.getCharactersListUk()
             else -> assetsDataSource.getCharactersList()
         }
     }
@@ -33,6 +36,7 @@ class CharactersRepositoryImpl @Inject constructor(
     override fun getCharacterDetails(name: String): Flow<CharacterDetails?> {
         return when (Locale.getDefault().displayLanguage) {
             "русский" -> assetsDataSourceRu.getCharacterDetails(name)
+            "українська" -> assetsDataSourceUk.getCharacterDetailsUk(name)
             else -> assetsDataSource.getCharacterDetailsEn(name)
         }
     }
@@ -50,6 +54,16 @@ class CharactersRepositoryImpl @Inject constructor(
                 else -> { throw IllegalArgumentException("calendar error in <26sdk")}
             }
 
+            "українська" -> when (dayOfWeek) {
+                Calendar.MONDAY -> assetsDataSourceUk.getMonThuBooksUk()
+                Calendar.TUESDAY -> assetsDataSourceUk.getTueFriBooksUk()
+                Calendar.WEDNESDAY -> assetsDataSourceUk.getWedSatBooksUk()
+                Calendar.THURSDAY -> assetsDataSourceUk.getMonThuBooksUk()
+                Calendar.FRIDAY -> assetsDataSourceUk.getTueFriBooksUk()
+                Calendar.SATURDAY -> assetsDataSourceUk.getWedSatBooksUk()
+                Calendar.SUNDAY -> assetsDataSourceUk.getSundayBooksUk()
+                else -> { throw IllegalArgumentException("calendar error in <26sdk")}
+            }
             else -> when (dayOfWeek) {
                 Calendar.MONDAY -> assetsDataSource.getMonThuBooks()
                 Calendar.TUESDAY -> assetsDataSource.getTueFriBooks()
@@ -76,6 +90,17 @@ class CharactersRepositoryImpl @Inject constructor(
                 else -> { throw IllegalArgumentException("calendar error in <26sdk")}
             }
 
+            "українська" -> when (dayOfWeek) {
+                Calendar.MONDAY -> assetsDataSourceUk.getMonThuWeaponResourcesUk()
+                Calendar.TUESDAY -> assetsDataSourceUk.getTueFriWeaponResourcesUk()
+                Calendar.WEDNESDAY -> assetsDataSourceUk.getWedSatWeaponResourcesUk()
+                Calendar.THURSDAY -> assetsDataSourceUk.getMonThuWeaponResourcesUk()
+                Calendar.FRIDAY -> assetsDataSourceUk.getTueFriWeaponResourcesUk()
+                Calendar.SATURDAY -> assetsDataSourceUk.getWedSatWeaponResourcesUk()
+                Calendar.SUNDAY -> assetsDataSourceUk.getSundayWeaponResourcesUk()
+                else -> { throw IllegalArgumentException("calendar error in <26sdk")}
+            }
+
             else -> when (dayOfWeek) {
                 Calendar.MONDAY -> assetsDataSource.getMonThuWeaponResources()
                 Calendar.TUESDAY -> assetsDataSource.getTueFriWeaponResources()
@@ -92,6 +117,7 @@ class CharactersRepositoryImpl @Inject constructor(
     override fun getItemLocation(itemName: String): Flow<List<HowToObtainItem>?> {
         return when (Locale.getDefault().displayLanguage) {
             "русский" -> assetsDataSourceRu.getItemLocationRu(itemName)
+            "українська" -> assetsDataSourceUk.getItemLocationUk(itemName)
             else -> assetsDataSource.getItemLocation(itemName)
         }
     }

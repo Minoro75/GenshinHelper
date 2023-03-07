@@ -70,6 +70,7 @@ data class HowToObtainItem(
             "Convert: Tusk of Monoceros Caeli" -> R.drawable.ic_tusk
             "Convert: Puppet Strings" -> R.drawable.ic_puppet
             "Convert: Mirror of Mushin" -> R.drawable.ic_mirror_of_mushin
+            "Convert: Daka's Bell" -> R.drawable.ic_takas_bell
             // Books
             "Steeple of Ignorance" -> R.drawable.dg_steeple_of_ignorance
             "Forsaken Rift" -> R.drawable.dg_forsaken_rift
@@ -143,6 +144,7 @@ data class HowToObtainItem(
             "Создать: Рог небесного кита" -> R.drawable.ic_tusk
             "Создать: Нити марионетки" -> R.drawable.ic_puppet
             "Создать: Зеркало Мусин" -> R.drawable.ic_mirror_of_mushin
+            "Создать: Пустой колокольчик" -> R.drawable.ic_takas_bell
             // Books
             "Башня невежества" -> R.drawable.dg_steeple_of_ignorance
             "Забытый каньон" -> R.drawable.dg_forsaken_rift

@@ -11,7 +11,7 @@ object DoriDetailsSourceRu {
               "rarity": 4,
               "element": "electro",
               "weapon": "claymore",
-              "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/90/Character_Dori_Thumb.png",
+              "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/54/Dori_Icon.png/revision/latest",
               "talents_books": {
                 "book_name": "об Остроумии",
                 "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f7/Item_Philosophies_of_Ingenuity.png",
@@ -31,7 +31,7 @@ object DoriDetailsSourceRu {
                   "artifact_name": "Эмблема рассечённой судьбы",
                   "artifact_url": "https://paimon.moe/images/artifacts/emblem_of_severed_fate_flower.png",
                   "artifact_amount": 2,
-                  "artifact_gobelet": "Електро ДПС",
+                  "artifact_gobelet": "Электро ДПС",
                   "artifact_circlet": "Здоровье / Бонус исцеления",
                   "artifact_sands": "Восстановление енергии / Здоровье"
                 },
@@ -39,7 +39,7 @@ object DoriDetailsSourceRu {
                   "artifact_name": "Стойкость Миллелита",
                   "artifact_url": "https://paimon.moe/images/artifacts/tenacity_of_the_millelith_flower.png",
                   "artifact_amount": 2,
-                  "artifact_gobelet": "Електро ДПС",
+                  "artifact_gobelet": "Электро ДПС",
                   "artifact_circlet": "Здоровье / Бонус исцеления",
                   "artifact_sands": "Восстановление енергии / Здоровье"
                 }
@@ -65,7 +65,8 @@ object DoriDetailsSourceRu {
                   "weapon_url": "https://paimon.moe/images/weapons/katsuragikiri_nagamasa.png",
                   "weapon_rarity": 4
                 }
-              ]
+              ],
+              "video_guide": "b8FItMre0S4"
             }
         """.trimIndent()
 }

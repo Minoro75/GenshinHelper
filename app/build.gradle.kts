@@ -19,6 +19,8 @@ android {
         versionCode = Version.versionCode
         versionName = Version.versionName
 
+        // will remove all 3rd-party translations in libs, except listed
+        resourceConfigurations.addAll(listOf("en", "ru-rRU", "uk"))
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
             useSupportLibrary = true
@@ -49,7 +51,7 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = Dependencies.Compose.version
+        kotlinCompilerExtensionVersion = Dependencies.Compose.composeCompiler
     }
     packagingOptions {
         resources {
@@ -66,7 +68,6 @@ dependencies {
     implementation(Dependencies.Compose.foundation)
     implementation(Dependencies.Compose.animation)
     implementation(Dependencies.Compose.runtime)
-    implementation(Dependencies.Compose.navigation)
     implementation(Dependencies.Compose.viewmodel)
     implementation(Dependencies.Compose.viewmodelCompoe)
     implementation(Dependencies.Compose.runtimeCompose)
@@ -82,10 +83,15 @@ dependencies {
     implementation(Dependencies.Other.firebaseCrashlytics)
     implementation(Dependencies.Other.firebaseAnalytics)
 
-    implementation("androidx.core:core-ktx:1.8.0")
-    implementation("androidx.compose.ui:ui-tooling-preview:1.2.1")
+    implementation("androidx.core:core-ktx:1.9.0")
+    implementation("androidx.compose.ui:ui-tooling-preview:1.3.3")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.5.1")
-    implementation("androidx.activity:activity-compose:1.5.1")
+    implementation(Dependencies.Compose.activity)
+    implementation(Dependencies.Compose.appCompat)
+    implementation(Dependencies.Compose.appResources)
+    implementation(Dependencies.Compose.navigation_animation)
+    implementation(Dependencies.Compose.insets)
+    implementation(Dependencies.Compose.uiController)
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.3")

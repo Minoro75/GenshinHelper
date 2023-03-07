@@ -10,7 +10,7 @@ object BennettDetailsSource {
               "rarity": 4,
               "element": "pyro",
               "weapon": "sword",
-              "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/7b/Character_Bennett_Thumb.png",
+              "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/79/Bennett_Icon.png/revision/latest",
               "talents_books": {
                 "book_name": "Resistance",
                 "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/0b/Item_Philosophies_of_Resistance.png",
@@ -56,7 +56,8 @@ object BennettDetailsSource {
                   "weapon_url": "https://paimon.moe/images/weapons/prototype_rancour.png",
                   "weapon_rarity": 4
                 }
-              ]
+              ],
+              "video_guide": "H0tUlWYGYX8"
             }
         """.trimIndent()
 }

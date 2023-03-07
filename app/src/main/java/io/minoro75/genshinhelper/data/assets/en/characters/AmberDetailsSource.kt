@@ -10,7 +10,7 @@ object AmberDetailsSource {
               "rarity": 4,
               "element": "pyro",
               "weapon": "bow",
-              "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c6/Character_Amber_Thumb.png",
+              "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/75/Amber_Icon.png/revision/latest",
               "talents_books": {
                 "book_name": "Freedom",
                 "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/Item_Philosophies_of_Freedom.png",
@@ -56,7 +56,8 @@ object AmberDetailsSource {
                   "weapon_url": "https://paimon.moe/images/weapons/favonius_warbow.png",
                   "weapon_rarity": 4
                 }
-              ]
+              ],
+              "video_guide": "oRMTPVfffUc"
             }
         """.trimIndent()
 }

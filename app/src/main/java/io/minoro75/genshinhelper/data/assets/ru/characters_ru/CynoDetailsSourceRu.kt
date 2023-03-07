@@ -11,7 +11,7 @@ object CynoDetailsSourceRu {
               "rarity": 5,
               "element": "electro",
               "weapon": "polearm",
-              "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d1/Character_Cyno_Thumb.png",
+              "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/31/Cyno_Icon.png/revision/latest",
               "talents_books": {
                 "book_name": "о Наставлениях",
                 "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9b/Item_Philosophies_of_Admonition.png",
@@ -31,7 +31,7 @@ object CynoDetailsSourceRu {
                   "artifact_name": "Громогласный рёв ярости",
                   "artifact_url": "https://paimon.moe/images/artifacts/thundering_fury_flower.png",
                   "artifact_amount": 4,
-                  "artifact_gobelet": "Електро ДПС",
+                  "artifact_gobelet": "Электро ДПС",
                   "artifact_circlet": "Крит шанс / Крит урон",
                   "artifact_sands": "Елементалье мастерство / Сила атаки"
                 }
@@ -57,7 +57,8 @@ object CynoDetailsSourceRu {
                   "weapon_url": "https://paimon.moe/images/weapons/white_tassel.png",
                   "weapon_rarity": 3
                 }
-              ]
+              ],
+              "video_guide": "mGXmPHM8ed0"
             }
         """.trimIndent()
 }

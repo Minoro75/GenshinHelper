@@ -11,7 +11,7 @@ object KujouSaraDetailsSourceRu {
           "rarity": 4,
           "element": "electro",
           "weapon": "bow",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/96/Character_Kujou_Sara_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/d/df/Kujou_Sara_Icon.png/revision/latest",
           "talents_books": {
             "book_name": "об Изяществе",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/6/6f/Item_Philosophies_of_Elegance.png",
@@ -31,7 +31,7 @@ object KujouSaraDetailsSourceRu {
               "artifact_name": "Церемония древней знати",
               "artifact_url": "https://paimon.moe/images/artifacts/noblesse_oblige_flower.png",
               "artifact_amount": 4,
-              "artifact_gobelet": "Електро ДПС",
+              "artifact_gobelet": "Электро ДПС",
               "artifact_circlet": "Крит шанс / Крит урон",
               "artifact_sands": "Сила атаки / Восстановление энергии"
             }
@@ -57,7 +57,8 @@ object KujouSaraDetailsSourceRu {
               "weapon_url": "https://paimon.moe/images/weapons/favonius_warbow.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "-csXEopAhDk"
         }
     """.trimIndent()
 }

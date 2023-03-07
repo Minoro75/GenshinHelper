@@ -11,7 +11,7 @@ object KeqingDetailsSourceRu {
           "rarity": 5,
           "element": "electro",
           "weapon": "sword",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/06/Character_Keqing_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/52/Keqing_Icon.png/revision/latest",
           "talents_books": {
             "book_name": "о Процветании",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/bd/Item_Philosophies_of_Prosperity.png",
@@ -31,7 +31,7 @@ object KeqingDetailsSourceRu {
               "artifact_name": "Громогласный рёв ярости",
               "artifact_url": "https://paimon.moe/images/artifacts/thundering_fury_flower.png",
               "artifact_amount": 2,
-              "artifact_gobelet": "Електро ДПС",
+              "artifact_gobelet": "Электро ДПС",
               "artifact_circlet": "Крит шанс / Крит урон",
               "artifact_sands": "Сила атаки"
             },
@@ -39,7 +39,7 @@ object KeqingDetailsSourceRu {
               "artifact_name": "Конец гладиатора",
               "artifact_url": "https://paimon.moe/images/artifacts/gladiators_finale_flower.png",
               "artifact_amount": 2,
-              "artifact_gobelet": "Електро ДПС",
+              "artifact_gobelet": "Электро ДПС",
               "artifact_circlet": "Крит шанс / Крит урон",
               "artifact_sands": "Сила атаки"
             }
@@ -65,7 +65,8 @@ object KeqingDetailsSourceRu {
               "weapon_url": "https://paimon.moe/images/weapons/amenoma_kageuchi.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "yQh1u3DD8t0"
         }
     """.trimIndent()
 }

@@ -11,7 +11,7 @@ object XiaoDetailsSourceRu {
           "rarity": 5,
           "element": "anemo",
           "weapon": "polearm",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Character_Xiao_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/fd/Xiao_Icon.png/revision/latest",
           "talents_books": {
             "book_name": "о Процветании",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/bd/Item_Philosophies_of_Prosperity.png",
@@ -57,7 +57,8 @@ object XiaoDetailsSourceRu {
               "weapon_url": "https://paimon.moe/images/weapons/favonius_lance.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "OpUcCkzRDkw"
         }
     """.trimIndent()
 }

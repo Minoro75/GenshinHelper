@@ -10,7 +10,7 @@ object KleeDetailsSource {
           "rarity": 5,
           "element": "pyro",
           "weapon": "catalyst",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c3/Character_Klee_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9c/Klee_Icon.png/revision/latest",
           "talents_books": {
             "book_name": "Freedom",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/Item_Philosophies_of_Freedom.png",
@@ -56,7 +56,8 @@ object KleeDetailsSource {
               "weapon_url": "https://paimon.moe/images/weapons/mappa_mare.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "F6haW3opTWM"
         }
     """.trimIndent()
 }

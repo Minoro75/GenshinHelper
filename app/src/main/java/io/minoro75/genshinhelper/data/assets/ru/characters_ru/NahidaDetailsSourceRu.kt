@@ -11,7 +11,7 @@ object NahidaDetailsSourceRu {
           "rarity": 5,
           "element": "dendro",
           "weapon": "catalyst",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/cf/Character_Nahida_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f9/Nahida_Icon.png/revision/latest",
           "talents_books": {
             "book_name": "об Остроумии",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f7/Item_Philosophies_of_Ingenuity.png",
@@ -57,7 +57,8 @@ object NahidaDetailsSourceRu {
                   "weapon_url": "https://paimon.moe/images/weapons/magic_guide.png",
                   "weapon_rarity": 3
                 }
-              ]
+              ],
+              "video_guide": "6WgMwfzX2Q8"
         }
     """.trimIndent()
 }

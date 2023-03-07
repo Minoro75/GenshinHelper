@@ -7,11 +7,11 @@ object TravelerElectroDetailsSourceRu {
     @Language("JSON")
     val detailsRu = """
         {
-          "name": "Путешественник (Електро)",
+          "name": "Путешественник (Электро)",
           "rarity": 5,
           "element": "electro",
           "weapon": "sword",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/71/Character_Traveler_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest",
           "talents_books": {
             "book_name": "о Бренности",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/bd/Item_Philosophies_of_Prosperity.png",
@@ -31,7 +31,7 @@ object TravelerElectroDetailsSourceRu {
               "artifact_name": "Церемония древней знати",
               "artifact_url": "https://paimon.moe/images/artifacts/noblesse_oblige_flower.png",
               "artifact_amount": 4,
-              "artifact_gobelet": "Електро ДПС",
+              "artifact_gobelet": "Электро ДПС",
               "artifact_circlet": "Крит шанс / Крит урон ",
               "artifact_sands": "Сила атаки / Восстановление энергии"
             }
@@ -57,7 +57,8 @@ object TravelerElectroDetailsSourceRu {
               "weapon_url": "https://paimon.moe/images/weapons/amenoma_kageuchi.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "MUF-qtz6DFs"
         }
     """.trimIndent()
 }

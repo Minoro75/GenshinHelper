@@ -10,7 +10,7 @@ object AratakiIttoDetailsSource {
               "rarity": 5,
               "element": "geo",
               "weapon": "claymore",
-              "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/79/Character_Arataki_Itto_Thumb.png",
+              "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/7b/Arataki_Itto_Icon.png/revision/latest",
               "talents_books": {
                 "book_name": "Elegance",
                 "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/6/6f/Item_Philosophies_of_Elegance.png",
@@ -56,7 +56,8 @@ object AratakiIttoDetailsSource {
                   "weapon_url": "https://paimon.moe/images/weapons/whiteblind.png",
                   "weapon_rarity": 4
                 }
-              ]
+              ],
+              "video_guide": "KLvivxNQJj0"
             }
         """.trimIndent()
 }

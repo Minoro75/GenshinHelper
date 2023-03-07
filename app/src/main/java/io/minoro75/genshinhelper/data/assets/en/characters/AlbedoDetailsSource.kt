@@ -13,7 +13,7 @@ object AlbedoDetailsSource {
           "rarity": 5,
           "element": "geo",
           "weapon": "sword",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/00/Character_Albedo_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/30/Albedo_Icon.png/revision/latest",
           "talents_books": {
             "book_name": "Ballad",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/7e/Item_Philosophies_of_Ballad.png",
@@ -59,7 +59,8 @@ object AlbedoDetailsSource {
               "weapon_url": "https://paimon.moe/images/weapons/harbinger_of_dawn.png",
               "weapon_rarity": 3
             }
-          ]
+          ],
+           "video_guide": "2J7lCVNvqPM"
         }
     """.trimIndent()
 }

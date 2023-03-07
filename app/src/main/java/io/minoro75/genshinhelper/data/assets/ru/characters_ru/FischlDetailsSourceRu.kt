@@ -11,7 +11,7 @@ object FischlDetailsSourceRu {
           "rarity": 4,
           "element": "electro",
           "weapon": "bow",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/1/14/Character_Fischl_Thumb.png",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9a/Fischl_Icon.png/revision/latest",
           "talents_books": {
             "book_name": "о Поэзии",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/7e/Item_Philosophies_of_Ballad.png",
@@ -31,7 +31,7 @@ object FischlDetailsSourceRu {
               "artifact_name": "Конец гладиатора",
               "artifact_url": "https://paimon.moe/images/artifacts/gladiators_finale_flower.png",
               "artifact_amount": 2,
-              "artifact_gobelet": "Електро ДПС",
+              "artifact_gobelet": "Электро ДПС",
               "artifact_circlet": "Крит шанс / Крит урон",
               "artifact_sands": "Сила атаки / Мастерство стихий"
             },
@@ -39,7 +39,7 @@ object FischlDetailsSourceRu {
               "artifact_name": "Громогласный рёв ярости",
               "artifact_url": "https://paimon.moe/images/artifacts/thundering_fury_flower.png",
               "artifact_amount": 2,
-              "artifact_gobelet": "Електро ДПС",
+              "artifact_gobelet": "Электро ДПС",
               "artifact_circlet": "Крит шанс / Крит урон",
               "artifact_sands": "Сила атаки / Мастерство стихий"
             }
@@ -65,7 +65,8 @@ object FischlDetailsSourceRu {
               "weapon_url": "https://paimon.moe/images/weapons/hamayumi.png",
               "weapon_rarity": 4
             }
-          ]
+          ],
+          "video_guide": "tGKUp-f3Yjg"
         }
     """.trimIndent()
 }
