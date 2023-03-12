@@ -66,7 +66,7 @@ fun About() {
             )
             Spacer(modifier = Modifier.height(8.dp))
             Text(
-                text = stringResource(id = R.string.disclamer),
+                text = stringResource(id = R.string.disclaimer),
                 style = GenshinTypography.headlineLarge,
                 modifier = Modifier.fillMaxWidth(),
                 textAlign = TextAlign.Center,
@@ -146,6 +146,20 @@ fun About() {
                     ) {
                         Text(
                             text = "Українська",
+                            style = GenshinTypography.bodyMedium
+                        )
+                    }
+
+                    FilledTonalButton(
+                        onClick = {
+                            AppCompatDelegate.setApplicationLocales(
+                                LocaleListCompat.forLanguageTags("pt")
+                            )
+                        },
+                        colors = ButtonDefaults.buttonColors()
+                    ) {
+                        Text(
+                            text = "Português do Brasil",
                             style = GenshinTypography.bodyMedium
                         )
                     }

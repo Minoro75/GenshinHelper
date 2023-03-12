@@ -3,6 +3,7 @@ package io.minoro75.genshinhelper.data.repository
 import android.os.Build
 import androidx.annotation.RequiresApi
 import io.minoro75.genshinhelper.data.assets.en.AssetsDataSource
+import io.minoro75.genshinhelper.data.assets.pt.AssetsDataSourcePt
 import io.minoro75.genshinhelper.data.assets.ru.AssetsDataSourceRu
 import io.minoro75.genshinhelper.data.assets.uk.AssetsDataSourceUk
 import io.minoro75.genshinhelper.domain.model.CharacterDetails
@@ -22,12 +23,14 @@ import javax.inject.Singleton
 class CharactersRepositoryImpl @Inject constructor(
     private val assetsDataSource: AssetsDataSource,
     private val assetsDataSourceRu: AssetsDataSourceRu,
-    private val assetsDataSourceUk: AssetsDataSourceUk
+    private val assetsDataSourceUk: AssetsDataSourceUk,
+    private val assetsDataSourcePt: AssetsDataSourcePt
 ) : CharactersRepository {
     override fun getCharacters(): Flow<List<CharacterModel>?> {
         return when (Locale.getDefault().displayLanguage) {
             "русский" -> assetsDataSourceRu.getCharactersListRu()
             "українська" -> assetsDataSourceUk.getCharactersListUk()
+            "português" -> assetsDataSourcePt.getCharactersListPt()
             else -> assetsDataSource.getCharactersList()
         }
     }

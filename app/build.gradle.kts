@@ -20,7 +20,7 @@ android {
         versionName = Version.versionName
 
         // will remove all 3rd-party translations in libs, except listed
-        resourceConfigurations.addAll(listOf("en", "ru-rRU", "uk"))
+        resourceConfigurations.addAll(listOf("en", "ru-rRU", "uk", "pt-rBR"))
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
             useSupportLibrary = true
