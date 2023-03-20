@@ -12,9 +12,9 @@ object IngenuityDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Ingenuity",
+            "name": "Engenhosidade",
             "domain_name": "Steeple of Ignorance",
-            "description": "You can collect Ingenuity books as a random reward from the domain located in Sumeru"
+            "description": "Você pode coletar os livros do conjunto Engenhosidade como recompensas aleatórias do domínio localizado em Sumeru"
           }
         ]
     """.trimIndent()

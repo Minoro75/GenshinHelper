@@ -12,14 +12,14 @@ object WanderersTroupeDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Wanderer's Troupe",
+            "name": "Trupe Itinerante",
             "domain_name": "Bosses",
-            "description": "Any boss drops"
+            "description": "Recompensa de Qualquer Chefe"
           },
           {
-            "name": "Wanderer's Troupe",
+            "name": "Trupe Itinerante",
             "domain_name": "Artifact Strongbox: Wanderer's Troupe",
-            "description": "Go to a Crafting table and use the Artifact Strongbox: Wanderer's Troupe to convert at least 3 Artifacts into one brand new artifact."
+            "description": "Vá para um Balcão de Síntese e use o Relicário: Trupe Itinerante para converter pelo menos 3 artefatos em um novo artefato."
           }
         ]
     """.trimIndent()

@@ -1,4 +1,4 @@
-package io.minoro75.genshinhelper.data.assets.en.books
+package io.minoro75.genshinhelper.data.assets.pt.books_pt
 
 import org.intellij.lang.annotations.Language
 
@@ -12,7 +12,7 @@ object SundayBooksSourcePt {
     val booksList = """
         [
         {
-            "book_name": "Freedom",
+            "book_name": "Liberdade",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/Item_Philosophies_of_Freedom.png",
             "characters": [
               {
@@ -58,7 +58,7 @@ object SundayBooksSourcePt {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/85/Tartaglia_Icon.png/revision/latest"
               },
               {
-                "name": "Traveler (Anemo)",
+                "name": "Viajante (Anemo)",
                 "rarity": 5,
                 "element": "anemo",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
@@ -66,7 +66,7 @@ object SundayBooksSourcePt {
             ]
           },
           {
-            "book_name": "Prosperity",
+            "book_name": "Prosperidade",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/bd/Item_Philosophies_of_Prosperity.png",
             "characters": [
               {
@@ -94,7 +94,7 @@ object SundayBooksSourcePt {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/af/Shenhe_Icon.png/revision/latest"
               },
               {
-                "name": "Traveler (Geo)",
+                "name": "Viajante (Geo)",
                 "rarity": 5,
                 "element": "geo",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
@@ -114,7 +114,7 @@ object SundayBooksSourcePt {
             ]
           },
           {
-            "book_name": "Transience",
+            "book_name": "Mundo Mortal",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/27/Item_Philosophies_of_Transience.png",
             "characters": [
               {
@@ -136,7 +136,7 @@ object SundayBooksSourcePt {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/5b/Thoma_Icon.png/revision/latest"
               },
               {
-                "name": "Traveler (Electro)",
+                "name": "Viajante (Electro)",
                 "rarity": 5,
                 "element": "electro",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
@@ -150,7 +150,7 @@ object SundayBooksSourcePt {
             ]
           },
           {
-            "book_name": "Admonition",
+            "book_name": "Admoestação",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9b/Item_Philosophies_of_Admonition.png",
             "characters": [
             {
@@ -179,7 +179,7 @@ object SundayBooksSourcePt {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/87/Tighnari_Icon.png/revision/latest"
               },
               {
-                "name": "Traveler (Dendro)",
+                "name": "Viajante (Dendro)",
                 "rarity": 5,
                 "element": "dendro",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
@@ -187,7 +187,7 @@ object SundayBooksSourcePt {
             ]
           },
           {
-            "book_name": "Resistance",
+            "book_name": "Resistência",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/0b/Item_Philosophies_of_Resistance.png",
             "characters": [
               {
@@ -233,7 +233,7 @@ object SundayBooksSourcePt {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b8/Razor_Icon.png/revision/latest"
               },
               {
-                "name": "Traveler (Anemo)",
+                "name": "Viajante (Anemo)",
                 "rarity": 5,
                 "element": "anemo",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
@@ -241,7 +241,7 @@ object SundayBooksSourcePt {
             ]
           },
           {
-            "book_name": "Diligence",
+            "book_name": "Esforço",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c2/Item_Philosophies_of_Diligence.png",
             "characters": [
               {
@@ -269,7 +269,7 @@ object SundayBooksSourcePt {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e3/Kaedehara_Kazuha_Icon.png/revision/latest"
               },
               {
-                "name": "Traveler (Geo)",
+                "name": "Viajante (Geo)",
                 "rarity": 5,
                 "element": "geo",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
@@ -295,7 +295,7 @@ object SundayBooksSourcePt {
             ]
           },
           {
-            "book_name": "Elegance",
+            "book_name": "Cultura",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/6/6f/Item_Philosophies_of_Elegance.png",
             "characters": [
               {
@@ -329,7 +329,7 @@ object SundayBooksSourcePt {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b3/Kuki_Shinobu_Icon.png/revision/latest"
               },
               {
-                "name": "Traveler (Electro)",
+                "name": "Viajante (Electro)",
                 "rarity": 5,
                 "element": "electro",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
@@ -337,7 +337,7 @@ object SundayBooksSourcePt {
             ]
           },
           {
-            "book_name": "Ingenuity",
+            "book_name": "Engenhosidade",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f7/Item_Philosophies_of_Ingenuity.png",
             "characters": [
                 {
@@ -365,7 +365,7 @@ object SundayBooksSourcePt {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f9/Nahida_Icon.png/revision/latest"
               },
               {
-                "name": "Traveler (Dendro)",
+                "name": "Viajante (Dendro)",
                 "rarity": 5,
                 "element": "dendro",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
@@ -373,7 +373,7 @@ object SundayBooksSourcePt {
             ]
           },
           {
-            "book_name": "Ballad",
+            "book_name": "Poemas",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/7e/Item_Philosophies_of_Ballad.png",
             "characters": [
               {
@@ -407,7 +407,7 @@ object SundayBooksSourcePt {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/35/Rosaria_Icon.png/revision/latest"
               },
               {
-                "name": "Traveler (Anemo)",
+                "name": "Viajante (Anemo)",
                 "rarity": 5,
                 "element": "anemo",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
@@ -421,7 +421,7 @@ object SundayBooksSourcePt {
             ]
           },
           {
-            "book_name": "Gold",
+            "book_name": "Ouro",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/01/Item_Philosophies_of_Gold.png",
             "characters": [
               {
@@ -431,7 +431,7 @@ object SundayBooksSourcePt {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e1/Beidou_Icon.png/revision/latest"
               },
               {
-                "name": "Traveler (Geo)",
+                "name": "Viajante (Geo)",
                 "rarity": 5,
                 "element": "geo",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
@@ -463,7 +463,7 @@ object SundayBooksSourcePt {
             ]
           },
           {
-            "book_name": "Light",
+            "book_name": "Luz Celeste",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/95/Item_Philosophies_of_Light.png",
             "characters": [
               {
@@ -485,7 +485,7 @@ object SundayBooksSourcePt {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/22/Sayu_Icon.png/revision/latest"
               },
               {
-                "name": "Traveler (Electro)",
+                "name": "Viajante (Electro)",
                 "rarity": 5,
                 "element": "electro",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
@@ -499,7 +499,7 @@ object SundayBooksSourcePt {
             ]
           },
           {
-            "book_name": "Praxis",
+            "book_name": "Práxis",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/82/Item_Philosophies_of_Praxis.png",
             "characters": [
               {
@@ -521,7 +521,7 @@ object SundayBooksSourcePt {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/58/Nilou_Icon.png/revision/latest"
               },
               {
-                "name": "Traveler (Dendro)",
+                "name": "Viajante (Dendro)",
                 "rarity": 5,
                 "element": "dendro",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"

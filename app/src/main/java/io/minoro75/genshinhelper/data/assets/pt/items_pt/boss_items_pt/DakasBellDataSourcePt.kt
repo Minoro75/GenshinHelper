@@ -13,14 +13,14 @@ object DakasBellDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Daka's Bell",
+            "name": "Sino do Vazio",
             "domain_name": "Joururi Workshop",
-            "description": "You can collect the Daka's Bell as a random reward from the Scaramouche Domain located near Sumeru City."
+            "description": "Você pode coletar o Sino do Vazio como uma recompensa aleatória do domínio do Scaramouche, localizado na Cidade de Sumeru."
           },
           {
-            "name": "Daka's Bell",
+            "name": "Sino do Vazio",
             "domain_name": "Convert: Daka's Bell",
-            "description": "Go to a Crafting table and use the Convert section to convert one item to another."
+            "description": "Vá para um Balcão de Síntese e use a seção Converter para converter um item em outro."
           }
         ]
     """.trimIndent()

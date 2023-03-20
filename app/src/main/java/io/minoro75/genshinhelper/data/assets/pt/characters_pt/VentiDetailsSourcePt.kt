@@ -12,27 +12,27 @@ object VentiDetailsSourcePt {
           "weapon": "bow",
           "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f1/Venti_Icon.png/revision/latest",
           "talents_books": {
-            "book_name": "Ballad",
+            "book_name": "Poemas",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/7e/Item_Philosophies_of_Ballad.png",
-            "book_days": "Wednesday/Saturday/Sunday"
+            "book_days": "Quarta-feira/Sábado/Domingo"
           },
           "weekly_boss_item": {
-            "boss_item_name": "Tail of Boreas",
+            "boss_item_name": "Cauda do Vento do Norte",
             "boss_item_url": "https://static.wikia.nocookie.net/gensin-impact/images/6/66/Item_Tail_of_Boreas.png"
           },
           "talents_priority": [
-            "Burst",
-            "Skill",
-            "Attack"
+            "Supremo",
+            "Habilidade",
+            "Ataque"
           ],
           "artifacts": [
             {
-              "artifact_name": "Viridescent Venerer",
+              "artifact_name": "Sombra Verde",
               "artifact_url": "https://paimon.moe/images/artifacts/viridescent_venerer_flower.png",
               "artifact_amount": 4,
-              "artifact_gobelet": "Anemo DPS",
-              "artifact_circlet": "CRIT Rate / CRIT DMG ",
-              "artifact_sands": "ATK%"
+              "artifact_gobelet": "Dano Anemo",
+              "artifact_circlet": "Taxa Crítica / Dano Crítico",
+              "artifact_sands": "ATQ%"
             }
           ],
           "weapon_best": {
@@ -42,17 +42,17 @@ object VentiDetailsSourcePt {
           },
           "weapons_replacements": [
             {
-              "weapon_name": "Elegy for the End",
+              "weapon_name": "Elegia do Suspiro Final",
               "weapon_url": "https://paimon.moe/images/weapons/elegy_for_the_end.png",
               "weapon_rarity": 5
             },
             {
-              "weapon_name": "The Stringless",
+              "weapon_name": "Último Acorde",
               "weapon_url": "https://paimon.moe/images/weapons/the_stringless.png",
               "weapon_rarity": 4
             },
             {
-              "weapon_name": "Favonius Warbow",
+              "weapon_name": "Arco de Favonius",
               "weapon_url": "https://paimon.moe/images/weapons/favonius_warbow.png",
               "weapon_rarity": 4
             }

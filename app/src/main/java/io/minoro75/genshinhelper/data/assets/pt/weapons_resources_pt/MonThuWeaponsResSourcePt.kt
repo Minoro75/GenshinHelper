@@ -20,11 +20,11 @@ object MonThuWeaponsResSourcePt {
             "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/94/Item_Relic_from_Guyun.png"
           },
           {
-            "name": "Distant Sea",
+            "name": "Mar Distante",
             "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/29/Item_Jade_Branch_of_a_Distant_Sea.png"
           },
           {
-            "name": "Forest Dew",
+            "name": "Orvalho Florestal",
             "url": "https://static.wikia.nocookie.net/gensin-impact/images/6/61/Item_Silver_Talisman_of_the_Forest_Dew.png"
           }
         ]

@@ -12,9 +12,9 @@ object FreedomDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Freedom",
+            "name": "Liberdade",
             "domain_name": "Forsaken Rift",
-            "description": "You can collect Freedom books as a random reward from the domain located in Mondstadt"
+            "description": "Você pode coletar os livros do conjunto Liberdade como recompensas aleatórias do domínio localizado em Mondstadt."
           }
         ]
     """.trimIndent()

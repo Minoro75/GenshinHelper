@@ -7,14 +7,14 @@ object MirrorOfMushinDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Mirror of Mushin",
+            "name": "Lentes Desalmadas",
             "domain_name": "Joururi Workshop",
-            "description": "You can collect the Mirror of Mushin as a random reward from the Scaramouche Domain located near Sumeru City."
+            "description": "Você pode coletar as Lentes Desalmadas como uma recompensa aleatória do domínio do Scaramouche, localizado na Cidade de Sumeru."
           },
           {
-            "name": "Mirror of Mushin",
+            "name": "Lentes Desalmadas",
             "domain_name": "Convert: Mirror of Mushin",
-            "description": "Go to a Crafting table and use the Convert section to convert one item to another."
+            "description": "Vá para um Balcão de Síntese e use a seção Converter para converter um item em outro."
           }
         ]
     """.trimIndent()

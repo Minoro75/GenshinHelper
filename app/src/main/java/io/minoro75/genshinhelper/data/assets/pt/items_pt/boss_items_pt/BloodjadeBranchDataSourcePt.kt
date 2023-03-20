@@ -12,14 +12,14 @@ object BloodjadeBranchDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Bloodjade Branch",
+            "name": "Galho de Jade de Sangue",
             "domain_name": "Beneath the Dragon-Queller",
-            "description": "You can collect Bloodjade Branch as a random reward from the Azhdaha domain located near Mt. Hulao."
+            "description": "Você pode coletar o Galho de Jade de Sangue como uma recompensa aleatória do domínio do Azhdaha, localizado na Montanha Hulao."
           },
           {
-            "name": "Bloodjade Branch",
+            "name": "Galho de Jade de Sangue",
             "domain_name": "Convert: Bloodjade Branch",
-            "description": "Go to a Crafting table and use the Convert section to convert one item to another."
+            "description": "Vá para um Balcão de Síntese e use a seção Converter para converter um item em outro."
           }
         ]
     """.trimIndent()

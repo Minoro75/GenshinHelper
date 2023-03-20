@@ -12,9 +12,9 @@ object ScorchingMightDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Scorching Might",
+            "name": "Poder Escaldante",
             "domain_name": "Tower of Abject Pride",
-            "description": "You can collect Scorching Mights resources as a random reward from the domain located in Sumeru"
+            "description": "Você pode coletar recursos do conjunto Poder Escaldante como recompensas aleatórias do domínio localizado em Sumeru."
           }
         ]
     """.trimIndent()

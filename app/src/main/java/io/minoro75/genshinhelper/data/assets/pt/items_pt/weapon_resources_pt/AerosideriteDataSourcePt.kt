@@ -14,7 +14,7 @@ object AerosideriteDataSourcePt {
           {
             "name": "Aerosiderite",
             "domain_name": "Hidden Palace of Lianshan Formula",
-            "description": "You can collect Aerosiderite's resources as a random reward from the domain located in Liyue"
+            "description": "Você pode coletar recursos do conjunto Aerosiderite como recompensas aleatórias do domínio localizado em Liyue."
           }
         ]
     """.trimIndent()

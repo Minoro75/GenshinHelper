@@ -12,14 +12,14 @@ object BloodstainedChivalryDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Bloodstained Chivalry",
+            "name": "Cavaleiro Manchado de Sangue",
             "domain_name": "Clear Pool and Mountain Cavern",
-            "description": "Domain reward"
+            "description": "Recompensa do Domínio"
           },
           {
-            "name": "Bloodstained Chivalry",
+            "name": "Cavaleiro Manchado de Sangue",
             "domain_name": "Artifact Strongbox: Bloodstained Chivalry",
-            "description": "Go to a Crafting table and use the Artifact Strongbox: Bloodstained Chivalry to convert at least 3 Artifacts into one brand new artifact."
+            "description": "Vá para um Balcão de Síntese e use o Relicário: Cavaleiro Manchado de Sangue para converter pelo menos 3 artefatos em um novo artefato."
           }
         ]
     """.trimIndent()

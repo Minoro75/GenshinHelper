@@ -12,9 +12,9 @@ object MistVeiledDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Mist Veiled",
+            "name": "Elixir",
             "domain_name": "Hidden Palace of Lianshan Formula",
-            "description": "You can collect Mist Veiled resources as a random reward from the domain located in Liyue"
+            "description": "Você pode coletar recursos do conjunto Elixir como recompensas aleatórias do domínio localizado em Liyue."
           }
         ]
     """.trimIndent()

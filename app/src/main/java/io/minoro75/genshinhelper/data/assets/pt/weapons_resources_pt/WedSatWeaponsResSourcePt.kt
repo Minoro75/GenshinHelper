@@ -12,7 +12,7 @@ object WedSatWeaponsResSourcePt {
     val resourcesList = """
         [
           {
-            "name": "Dandelion Gladiator",
+            "name": "Gladiador de Dandelion",
             "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/40/Item_Shackles_of_the_Dandelion_Gladiator.png"
           },
           {
@@ -20,11 +20,11 @@ object WedSatWeaponsResSourcePt {
             "url": "https://static.wikia.nocookie.net/gensin-impact/images/1/17/Item_Bit_of_Aerosiderite.png"
           },
           {
-            "name": "Mask",
+            "name": "Máscara",
             "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a9/Item_Mask_of_the_One-Horned.png"
           },
           {
-            "name": "Scorching Might",
+            "name": "Poder Escaldante",
             "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/af/Item_Dream_of_Scorching_Might.png"
           }
         ]

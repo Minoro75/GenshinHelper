@@ -20,19 +20,19 @@ object SundayWeaponsResSourcePt {
             "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/94/Item_Relic_from_Guyun.png"
           },
           {
-            "name": "Distant Sea",
+            "name": "Mar Distante",
             "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/29/Item_Jade_Branch_of_a_Distant_Sea.png"
           },
           {
-            "name": "Forest Dew",
+            "name": "Orvalho Florestal",
             "url": "https://static.wikia.nocookie.net/gensin-impact/images/6/61/Item_Silver_Talisman_of_the_Forest_Dew.png"
           },
           {
-            "name": "Boreal Wolf",
+            "name": "Lobo Boreal",
             "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/98/Item_Boreal_Wolf%27s_Broken_Fang.png"
           },
           {
-            "name": "Mist Veiled Elixir",
+            "name": "Elixir",
             "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9b/Item_Mist_Veiled_Gold_Elixir.png"
           },
           {
@@ -40,11 +40,11 @@ object SundayWeaponsResSourcePt {
             "url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f5/Item_Narukami%27s_Affection.png"
           },
           {
-            "name": "Oasis Garden",
+            "name": "Jardim Oásis",
             "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/23/Item_Oasis_Garden%27s_Mourning.png"
           },
           {
-            "name": "Dandelion Gladiator",
+            "name": "Gladiador de Dandelion",
             "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/40/Item_Shackles_of_the_Dandelion_Gladiator.png"
           },
           {
@@ -52,11 +52,11 @@ object SundayWeaponsResSourcePt {
             "url": "https://static.wikia.nocookie.net/gensin-impact/images/1/17/Item_Bit_of_Aerosiderite.png"
           },
           {
-            "name": "Mask",
+            "name": "Máscara",
             "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a9/Item_Mask_of_the_One-Horned.png"
           },
           {
-            "name": "Scorching Might",
+            "name": "Poder Escaldante",
             "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/af/Item_Dream_of_Scorching_Might.png"
           }
         ]

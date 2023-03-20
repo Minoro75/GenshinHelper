@@ -12,42 +12,42 @@ object SucroseDetailsSourcePt {
           "weapon": "catalyst",
           "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/0e/Sucrose_Icon.png/revision/latest",
           "talents_books": {
-            "book_name": "Freedom",
+            "book_name": "Liberdade",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/Item_Philosophies_of_Freedom.png",
-            "book_days": "Monday/Thursday/Sunday"
+            "book_days": "Segunda-feira/Quinta-feira/Domingo"
           },
           "weekly_boss_item": {
-            "boss_item_name": "Spirit Locket of Boreas",
+            "boss_item_name": "Alma do Vento do Norte",
             "boss_item_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/81/Item_Spirit_Locket_of_Boreas.png"
           },
           "talents_priority": [
-            "Skill",
-            "Burst",
-            "Attack"
+            "Habilidade",
+            "Supremo",
+            "Ataque"
           ],
           "artifacts": [
             {
-              "artifact_name": "Viridescent Venerer",
+              "artifact_name": "Sombra Verde",
               "artifact_url": "https://paimon.moe/images/artifacts/viridescent_venerer_flower.png",
               "artifact_amount": 4,
-              "artifact_gobelet": "Anemo DPS / Elemental Mastery",
-              "artifact_circlet": "CRIT Rate / Elemental Mastery",
-              "artifact_sands": "ATK% / Elemental Mastery"
+              "artifact_gobelet": "Dano Anemo / Proficiência Elemental",
+              "artifact_circlet": "Taxa Crítica / Proficiência Elemental",
+              "artifact_sands": "ATQ% / Proficiência Elemental"
             }
           ],
           "weapon_best": {
-            "weapon_name": "Sacrificial Fragments",
+            "weapon_name": "Memórias de Sacrifício",
             "weapon_url": "https://paimon.moe/images/weapons/sacrificial_fragments.png",
             "weapon_rarity": 4
           },
           "weapons_replacements": [
             {
-              "weapon_name": "Thrilling Tales of Dragon Slayers",
+              "weapon_name": "Histórias Extraordinárias de Caçadores de Dragões",
               "weapon_url": "https://paimon.moe/images/weapons/thrilling_tales_of_dragon_slayers.png",
               "weapon_rarity": 3
             },
             {
-              "weapon_name": "Hakushin Ring",
+              "weapon_name": "Anel de Hakushin",
               "weapon_url": "https://paimon.moe/images/weapons/hakushin_ring.png",
               "weapon_rarity": 4
             },

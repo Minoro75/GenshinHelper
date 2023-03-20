@@ -12,43 +12,43 @@ object ShikanoinHeizouDetailsSourcePt {
           "weapon": "catalyst",
           "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/20/Shikanoin_Heizou_Icon.png/revision/latest",
           "talents_books": {
-            "book_name": "Transience",
+            "book_name": "Mundo Mortal",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/27/Item_Philosophies_of_Transience.png",
-            "book_days": "Monday/Thursday/Sunday"
+            "book_days": "Segunda-feira/Quinta-feira/Domingo"
           },
           "weekly_boss_item": {
-            "boss_item_name": "The Meaning of Aeons",
+            "boss_item_name": "Significado de Éons",
             "boss_item_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c9/Item_The_Meaning_of_Aeons.png"
           },
           "talents_priority": [
-            "Skill",
-            "Attack",
-            "Burst"
+            "Habilidade",
+            "Ataque",
+            "Supremo"
             
           ],
           "artifacts": [
             {
-              "artifact_name": "Viridescent Venerer",
+              "artifact_name": "Sombra Verde",
               "artifact_url": "https://paimon.moe/images/artifacts/viridescent_venerer_flower.png",
               "artifact_amount": 4,
-              "artifact_gobelet": "Anemo DPS",
-              "artifact_circlet": "CRIT Rate / CRIT DMG / Elemental Mastery",
-              "artifact_sands": "ATK% / Elemental Mastery"
+              "artifact_gobelet": "Dano Anemo",
+              "artifact_circlet": "Taxa Crítica / Dano Crítico / Proficiência Elemental",
+              "artifact_sands": "ATQ% / Proficiência Elemental"
             }
           ],
           "weapon_best": {
-            "weapon_name": "Skyward Atlas",
+            "weapon_name": "Atlas Celestial",
             "weapon_url": "https://paimon.moe/images/weapons/skyward_atlas.png",
             "weapon_rarity": 5
           },
           "weapons_replacements": [
             {
-              "weapon_name": "Kagura's Verity",
+              "weapon_name": "Prova de Kagura",
               "weapon_url": "https://paimon.moe/images/weapons/kaguras_verity.png",
               "weapon_rarity": 5
             },
             {
-              "weapon_name": "The Widsith",
+              "weapon_name": "Sinfonia dos Indolentes",
               "weapon_url": "https://paimon.moe/images/weapons/the_widsith.png",
               "weapon_rarity": 4
             },

@@ -12,9 +12,9 @@ object MaskDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Mask",
+            "name": "Máscara",
             "domain_name": "Court of Flowing Sand",
-            "description": "You can collect Masks resources as a random reward from the domain located in Inazuma"
+            "description": "Você pode coletar recursos do conjunto Máscara como recompensas aleatórias do domínio localizado em Inazuma."
           }
         ]
     """.trimIndent()

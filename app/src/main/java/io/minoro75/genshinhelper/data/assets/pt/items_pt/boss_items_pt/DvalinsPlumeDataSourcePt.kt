@@ -12,14 +12,14 @@ object DvalinsPlumeDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Dvalin's Plume",
+            "name": "Plumas do Vento Oriental",
             "domain_name": "Confront Stormterror",
-            "description": "You can collect Dvalin's Plume as a random reward from the Stormterror domain located in Stormterror's Lair."
+            "description": "Você pode coletar as Plumas do Vento Oriental como uma recompensa aleatória do domínio do Stormterror, localizado na Toca do Stormterror."
           },
           {
-            "name": "Dvalin's Plume",
+            "name": "Plumas do Vento Oriental",
             "domain_name": "Convert: Dvalin's Plume",
-            "description": "Go to a Crafting table and use the Convert section to convert one item to another."
+            "description": "Vá para um Balcão de Síntese e use a seção Converter para converter um item em outro."
           }
         ]
     """.trimIndent()

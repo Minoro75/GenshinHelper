@@ -12,9 +12,9 @@ object OasisGardenDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Oasis Garden",
+            "name": "Jardim Oásis",
             "domain_name": "Tower of Abject Pride",
-            "description": "You can collect Oasis Gardens resources as a random reward from the domain located in Sumeru"
+            "description": "Você pode coletar recursos do conjunto Jardim Oásis como recompensas aleatórias do domínio localizado em Sumeru."
           }
         ]
     """.trimIndent()

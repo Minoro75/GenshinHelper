@@ -12,47 +12,47 @@ object AloyDetailsSourcePt {
           "weapon": "bow",
           "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e5/Aloy_Icon.png/revision/latest",
           "talents_books": {
-            "book_name": "Freedom",
+            "book_name": "Liberdade",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/Item_Philosophies_of_Freedom.png",
-            "book_days": "Monday/Thursday/Sunday"
+            "book_days": "Segunda-feira/Quinta-feira/Domingo"
           },
           "weekly_boss_item": {
-            "boss_item_name": "Molten Moment",
+            "boss_item_name": "Momento Derretido",
             "boss_item_url": "https://paimon.moe/images/items/molten_moment.png"
           },
           "talents_priority": [
-            "Burst",
-            "Skill",
-            "Attack"
+            "Supremo",
+            "Habilidade",
+            "Ataque"
           ],
           "artifacts": [
             {
-              "artifact_name": "Blizzard Strayer",
+              "artifact_name": "Herói Invernal",
               "artifact_url": "https://paimon.moe/images/artifacts/blizzard_strayer_flower.png",
               "artifact_amount": 4,
-              "artifact_gobelet": "Cryo DPS",
-              "artifact_circlet": "Crit Rate / Crit DMG",
-              "artifact_sands": "ATK%"
+              "artifact_gobelet": "Dano Cryo",
+              "artifact_circlet": "Taxa Crítica / Dano Crítico",
+              "artifact_sands": "ATQ%"
             }
           ],
           "weapon_best": {
-            "weapon_name": "Thundering Pulse",
+            "weapon_name": "Agitação Trovejante",
             "weapon_url": "https://paimon.moe/images/weapons/thundering_pulse.png",
             "weapon_rarity": 5
           },
           "weapons_replacements": [
             {
-              "weapon_name": "Skyward Harp",
+              "weapon_name": "Harpa Celestial",
               "weapon_url": "https://paimon.moe/images/weapons/skyward_harp.png",
               "weapon_rarity": 5
             },
             {
-              "weapon_name": "The Stringless",
+              "weapon_name": "Último Acorde",
               "weapon_url": "https://paimon.moe/images/weapons/the_stringless.png",
               "weapon_rarity": 4
             },
             {
-              "weapon_name": "Prototype Crescent",
+              "weapon_name": "Protótipo",
               "weapon_url": "https://paimon.moe/images/weapons/prototype_crescent.png",
               "weapon_rarity": 4
             }

@@ -12,14 +12,14 @@ object MoltenMomentDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Molten Moment",
+            "name": "Momento Derretido",
             "domain_name": "Narukami Island: Tenshukaku",
-            "description": "You can collect Molten Moment as a random reward from the Signora domain located in Inazuma City"
+            "description": "Você pode coletar o Momento Derretido como uma recompensa aleatória do domínio da Signora, localizado na Cidade de Inazuma."
           },
           {
-            "name": "Molten Moment",
+            "name": "Momento Derretido",
             "domain_name": "Convert: Molten Moment",
-            "description": "Go to a Crafting table and use the Convert section to convert one item to another."
+            "description": "Vá para um Balcão de Síntese e use a seção Converter para converter um item em outro."
           }
         ]
     """.trimIndent()

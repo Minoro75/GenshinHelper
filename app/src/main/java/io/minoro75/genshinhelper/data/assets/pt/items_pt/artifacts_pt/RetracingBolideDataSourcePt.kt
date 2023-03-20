@@ -12,14 +12,14 @@ object RetracingBolideDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Retracing Bolide",
+            "name": "Meteoro Invertido",
             "domain_name": "Domain of Guyun",
-            "description": "Domain reward"
+            "description": "Recompensa do Domínio"
           },
           {
-            "name": "Retracing Bolide",
+            "name": "Meteoro Invertido",
             "domain_name": "Artifact Strongbox: Retracing Bolide",
-            "description": "Go to a Crafting table and use the Artifact Strongbox: Retracing Bolide to convert at least 3 Artifacts into one brand new artifact."
+            "description": "Vá para um Balcão de Síntese e use o Relicário: Meteoro Invertido para converter pelo menos 3 artefatos em um novo artefato."
           }
         ]
     """.trimIndent()

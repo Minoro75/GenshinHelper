@@ -12,14 +12,14 @@ object AshenHeartDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Ashen Heart",
+            "name": "Coração das Cinzas",
             "domain_name": "Narukami Island: Tenshukaku",
-            "description": "You can collect Ashen Heart as a random reward from the Signora domain located in Inazuma City"
+            "description": "Você pode coletar o Coração das Cinzas como uma recompensa aleatória do domínio da Signora, localizado na Cidade de Inazuma."
           },
           {
-            "name": "Ashen Heart",
+            "name": "Coração das Cinzas",
             "domain_name": "Convert: Ashen Heart",
-            "description": "Go to a Crafting table and use the Convert section to convert one item to another."
+            "description": "Vá para um Balcão de Síntese e use a seção Converter para converter um item em outro."
           }
         ]
     """.trimIndent()

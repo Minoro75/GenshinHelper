@@ -12,9 +12,9 @@ object TenacityOfTheMillelithDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Tenacity of the Millelith",
+            "name": "Millelith Firmes",
             "domain_name": "Ridge Watch",
-            "description": "Domain reward"
+            "description": "Recompensa do Domínio"
           }
         ]
     """.trimIndent()

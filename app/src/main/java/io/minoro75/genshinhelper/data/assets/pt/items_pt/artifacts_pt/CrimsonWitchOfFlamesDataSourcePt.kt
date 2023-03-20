@@ -12,14 +12,14 @@ object CrimsonWitchOfFlamesDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Crimson Witch of Flames",
+            "name": "A Bruxa das Chamas Carmesim",
             "domain_name": "Hidden Palace of Zhou Formula",
-            "description": "Domain reward"
+            "description": "Recompensa do Domínio"
           },
           {
-            "name": "Crimson Witch of Flames",
+            "name": "A Bruxa das Chamas Carmesim",
             "domain_name": "Artifact Strongbox: Crimson Witch of Flames",
-            "description": "Go to a Crafting table and use the Artifact Strongbox: Crimson Witch of Flames to convert at least 3 Artifacts into one brand new artifact."
+            "description": "Vá para um Balcão de Síntese e use o Relicário: A Bruxa das Chamas Carmesim para converter pelo menos 3 artefatos em um novo artefato."
           }
         ]
     """.trimIndent()

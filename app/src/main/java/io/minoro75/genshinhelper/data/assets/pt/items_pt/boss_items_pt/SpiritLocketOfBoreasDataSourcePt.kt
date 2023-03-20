@@ -12,14 +12,14 @@ object SpiritLocketOfBoreasDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Spirit Locket of Boreas",
+            "name": "Alma do Vento do Norte",
             "domain_name": "Lupus Boreas, Dominator of Wolves",
-            "description": "You can collect Spirit Locket of Boreas as a random reward from the Lupus Boreas located in Wolvendom."
+            "description": "Você pode coletar a Alma do Vento do Norte como uma recompensa aleatória do Lupus Boreas, localizado no Reino dos Lobos."
           },
           {
-            "name": "Spirit Locket of Boreas",
+            "name": "Alma do Vento do Norte",
             "domain_name": "Convert: Spirit Locket of Boreas",
-            "description": "Go to a Crafting table and use the Convert section to convert one item to another."
+            "description": "Vá para um Balcão de Síntese e use a seção Converter para converter um item em outro."
           }
         ]
     """.trimIndent()

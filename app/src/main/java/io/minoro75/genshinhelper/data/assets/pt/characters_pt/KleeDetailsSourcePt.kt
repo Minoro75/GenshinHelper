@@ -12,42 +12,42 @@ object KleeDetailsSourcePt {
           "weapon": "catalyst",
           "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9c/Klee_Icon.png/revision/latest",
           "talents_books": {
-            "book_name": "Freedom",
+            "book_name": "Liberdade",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/Item_Philosophies_of_Freedom.png",
-            "book_days": "Monday/Thursday/Sunday"
+            "book_days": "Segunda-feira/Quinta-feira/Domingo"
           },
           "weekly_boss_item": {
-            "boss_item_name": "Ring of Boreas",
+            "boss_item_name": "Cálice do Vento Norte",
             "boss_item_url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d6/Item_Ring_of_Boreas.png"
           },
           "talents_priority": [
-            "Attack",
-            "Skill",
-            "Burst"
+            "Ataque",
+            "Habilidade",
+            "Supremo"
           ],
           "artifacts": [
             {
-              "artifact_name": "Crimson Witch of Flames",
+              "artifact_name": "A Bruxa das Chamas Carmesim",
               "artifact_url": "https://paimon.moe/images/artifacts/crimson_witch_of_flames_flower.png",
               "artifact_amount": 4,
-              "artifact_gobelet": "Pyro DPS",
-              "artifact_circlet": "CRIT Rate / CRIT DMG",
-              "artifact_sands": "ATK%"
+              "artifact_gobelet": "Dano Pyro",
+              "artifact_circlet": "Taxa Crítica / Dano Crítico",
+              "artifact_sands": "ATQ%"
             }
           ],
           "weapon_best": {
-             "weapon_name": "Lost Prayer to the Sacred Winds",
+             "weapon_name": "Oração Perdida aos Ventos Sagrados",
               "weapon_url": "https://paimon.moe/images/weapons/lost_prayer_to_the_sacred_winds.png",
               "weapon_rarity": 5
           },
           "weapons_replacements": [
             {
-            "weapon_name": "Skyward Atlas",
+            "weapon_name": "Atlas Celestial",
             "weapon_url": "https://paimon.moe/images/weapons/skyward_atlas.png",
             "weapon_rarity": 5
             },
             {
-              "weapon_name": "The Widsith",
+              "weapon_name": "Sinfonia dos Indolentes",
               "weapon_url": "https://paimon.moe/images/weapons/the_widsith.png",
               "weapon_rarity": 4
             },

@@ -12,14 +12,14 @@ object BlizzardStrayerDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Blizzard Strayer",
+            "name": "Herói Invernal",
             "domain_name": "Peak of Vindagnyr",
-            "description": "Domain reward"
+            "description": "Recompensa do Domínio"
           },
           {
-            "name": "Blizzard Strayer",
+            "name": "Herói Invernal",
             "domain_name": "Artifact Strongbox: Blizzard Strayer",
-            "description": "Go to a Crafting table and use the Artifact Strongbox: Blizzard Strayer to convert at least 3 Artifacts into one brand new artifact."
+            "description": "Vá para um Balcão de Síntese e use o Relicário: Herói Invernal para converter pelo menos 3 artefatos em um novo artefato."
           }
         ]
     """.trimIndent()

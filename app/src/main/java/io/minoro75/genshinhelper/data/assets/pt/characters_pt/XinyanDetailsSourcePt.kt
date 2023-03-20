@@ -12,55 +12,55 @@ object XinyanDetailsSourcePt {
           "weapon": "claymore",
           "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/24/Xinyan_Icon.png/revision/latest",
           "talents_books": {
-            "book_name": "Gold",
+            "book_name": "Ouro",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/01/Item_Philosophies_of_Gold.png",
-            "book_days": "Wednesday/Saturday/Sunday"
+            "book_days": "Quarta-feira/Sábado/Domingo"
           },
           "weekly_boss_item": {
-            "boss_item_name": "Tusk of Monoceros Caeli",
+            "boss_item_name": "Chifre de Baleia Come-Céu",
             "boss_item_url": "https://static.wikia.nocookie.net/gensin-impact/images/1/1c/Item_Tusk_of_Monoceros_Caeli.png"
           },
           "talents_priority": [
-            "Attack",
-            "Burst",
-            "Skill"
+            "Ataque",
+            "Supremo",
+            "Habilidade"
           ],
           "artifacts": [
             {
-              "artifact_name": "Pale Flame",
+              "artifact_name": "Chama Pálida",
               "artifact_url": "https://paimon.moe/images/artifacts/pale_flame_flower.png",
               "artifact_amount": 2,
-              "artifact_gobelet": "Physical DPS",
-              "artifact_circlet": "CRIT Rate / CRIT DMG ",
-              "artifact_sands": "ATK% / Energy Recharge"
+              "artifact_gobelet": "Dano Físico",
+              "artifact_circlet": "Taxa Crítica / Dano Crítico",
+              "artifact_sands": "ATQ% / Recarga de Energia"
             },
              {
-              "artifact_name": "Bloodstained Chivalry",
+              "artifact_name": "Cavaleiro Manchado de Sangue",
               "artifact_url": "https://paimon.moe/images/artifacts/bloodstained_chivalry_flower.png",
               "artifact_amount": 2,
-              "artifact_gobelet": "Physical DPS",
-              "artifact_circlet": "CRIT Rate / CRIT DMG ",
-              "artifact_sands": "ATK% / Energy Recharge"
+              "artifact_gobelet": "Dano Físico",
+              "artifact_circlet": "Taxa  Crítica / Dano Crítico",
+              "artifact_sands": "ATQ% / Recarga de Energia"
             }
           ],
           "weapon_best": {
-            "weapon_name": "Redhorn Stonethresher",
+            "weapon_name": "Chifres Vermelhos Destruidores de Pedras",
             "weapon_url": "https://paimon.moe/images/weapons/redhorn_stonethresher.png",
             "weapon_rarity": 5
           },
           "weapons_replacements": [
             {
-              "weapon_name": "Skyward Pride",
+              "weapon_name": "Orgulho Celestial",
               "weapon_url": "https://paimon.moe/images/weapons/skyward_pride.png",
               "weapon_rarity": 5
             },
             {
-              "weapon_name": "Snow-Tombed Starsilver",
+              "weapon_name": "Estrela de Prata Enterrada na Neve",
               "weapon_url": "https://paimon.moe/images/weapons/snow-tombed_starsilver.png",
               "weapon_rarity": 4
             },
             {
-             "weapon_name": "Prototype Archaic",
+             "weapon_name": "Protótipo Arcaico",
               "weapon_url": "https://paimon.moe/images/weapons/prototype_archaic.png",
               "weapon_rarity": 4
             }

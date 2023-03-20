@@ -12,47 +12,47 @@ object ZhongliDetailsSourcePt {
           "weapon": "polearm",
           "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a6/Zhongli_Icon.png/revision/latest",
           "talents_books": {
-            "book_name": "Gold",
+            "book_name": "Ouro",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/01/Item_Philosophies_of_Gold.png",
-            "book_days": "Wednesday/Saturday/Sunday"
+            "book_days": "Quarta-feira/Sábado/Domingo"
           },
           "weekly_boss_item": {
-            "boss_item_name": "Tusk of Monoceros Caeli",
+            "boss_item_name": "Chifre de Baleia Come-Céu",
             "boss_item_url": "https://static.wikia.nocookie.net/gensin-impact/images/1/1c/Item_Tusk_of_Monoceros_Caeli.png"
           },
           "talents_priority": [
-            "Skill",
-            "Burst",
-            "Attack"
+            "Habilidade",
+            "Supremo",
+            "Ataque"
           ],
           "artifacts": [
             {
-              "artifact_name": "Tenacity of the Millelith",
+              "artifact_name": "Millelith Firmes",
               "artifact_url": "https://paimon.moe/images/artifacts/tenacity_of_the_millelith_flower.png",
               "artifact_amount": 4,
-              "artifact_gobelet": "HP%",
-              "artifact_circlet": "HP%",
-              "artifact_sands": "HP%"
+              "artifact_gobelet": "Vida%",
+              "artifact_circlet": "Vida%",
+              "artifact_sands": "Vida%"
             }
           ],
           "weapon_best": {
-            "weapon_name": "Black Tassel",
+            "weapon_name": "Borla Preta",
             "weapon_url": "https://paimon.moe/images/weapons/black_tassel.png",
             "weapon_rarity": 3
           },
           "weapons_replacements": [
             {
-              "weapon_name": "Staff of Homa",
+              "weapon_name": "Báculo de Homa",
               "weapon_url": "https://paimon.moe/images/weapons/staff_of_homa.png",
               "weapon_rarity": 5
             },
             {
-              "weapon_name": "Favonius Lance",
+              "weapon_name": "Lança de Favonius",
               "weapon_url": "https://paimon.moe/images/weapons/favonius_lance.png",
               "weapon_rarity": 4
             },
             {
-              "weapon_name": "Black Tassel",
+              "weapon_name": "Borla Preta",
               "weapon_url": "https://paimon.moe/images/weapons/black_tassel.png",
               "weapon_rarity": 3
             }

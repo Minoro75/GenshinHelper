@@ -12,9 +12,9 @@ object BorealWolfDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Boreal Wolf",
+            "name": "Lobo Boreal",
             "domain_name": "Cecilia Garden",
-            "description": "You can collect Boreal Wolf's resources as a random reward from the domain located in Mondstadt"
+            "description": "Você pode coletar recursos do conjunto Lobo Boreal como recompensas aleatórias do domínio localizado em Mondstadt."
           }
         ]
     """.trimIndent()

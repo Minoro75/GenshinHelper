@@ -12,9 +12,9 @@ object GildedDreamsDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Gilded Dreams",
+            "name": "Sonhos Dourados",
             "domain_name": "Spire of Solitary Enlightenment",
-            "description": "Domain reward"
+            "description": "Recompensa do Domínio"
           }
         ]
     """.trimIndent()

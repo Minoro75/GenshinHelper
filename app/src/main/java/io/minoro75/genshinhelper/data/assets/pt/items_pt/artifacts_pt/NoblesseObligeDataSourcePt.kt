@@ -12,14 +12,14 @@ object NoblesseObligeDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Noblesse Oblige",
+            "name": "Antigo Ritual Real",
             "domain_name": "Clear Pool and Mountain Cavern",
-            "description": "Domain reward"
+            "description": "Recompensa do Domínio"
           },
           {
-            "name": "Noblesse Oblige",
+            "name": "Antigo Ritual Real",
             "domain_name": "Artifact Strongbox: Noblesse Oblige",
-            "description": "Go to a Crafting table and use the Artifact Strongbox: Noblesse Oblige to convert at least 3 Artifacts into one brand new artifact."
+            "description": "Vá para um Balcão de Síntese e use o Relicário: Antigo Ritual Real para converter pelo menos 3 artefatos em um novo artefato."
           }
         ]
     """.trimIndent()

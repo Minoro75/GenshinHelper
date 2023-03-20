@@ -12,47 +12,47 @@ object SangonomiyaKokomiDetailsSourcePt {
           "weapon": "catalyst",
           "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/ff/Sangonomiya_Kokomi_Icon.png/revision/latest",
           "talents_books": {
-            "book_name": "Transience",
+            "book_name": "Mundo Mortal",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/27/Item_Philosophies_of_Transience.png",
-            "book_days": "Monday/Thursday/Sunday"
+            "book_days": "Segunda-feira/Quinta-feira/Domingo"
           },
           "weekly_boss_item": {
-            "boss_item_name": "Hellfire Butterfly",
+            "boss_item_name": "Borboleta das Chamas Infernais",
             "boss_item_url": "https://static.wikia.nocookie.net/gensin-impact/images/1/16/Item_Hellfire_Butterfly.png"
           },
           "talents_priority": [
-            "Skill",
-            "Burst",
-            "Attack"
+            "Habilidade",
+            "Supremo",
+            "Ataque"
           ],
           "artifacts": [
             {
-              "artifact_name": "Tenacity of the Millelith",
+              "artifact_name": "Millelith Firmes",
               "artifact_url": "https://paimon.moe/images/artifacts/tenacity_of_the_millelith_flower.png",
               "artifact_amount": 4,
-              "artifact_gobelet": "HP%",
-              "artifact_circlet": "Healing Bonus",
-              "artifact_sands": "Energy Recharge / HP%"
+              "artifact_gobelet": "Vida%",
+              "artifact_circlet": "Bônus de Cura",
+              "artifact_sands": "Recarga  de Energia / Vida%"
             }
           ],
           "weapon_best": {
-            "weapon_name": "Thrilling Tales of Dragon Slayers",
+            "weapon_name": "Histórias Extraordinárias de Caçadores de Dragões",
             "weapon_url": "https://paimon.moe/images/weapons/thrilling_tales_of_dragon_slayers.png",
             "weapon_rarity": 3
           },
           "weapons_replacements": [
             {
-              "weapon_name": "Prototype Amber",
+              "weapon_name": "Protótipo Âmbar",
               "weapon_url": "https://paimon.moe/images/weapons/prototype_amber.png",
               "weapon_rarity": 4
             },
             {
-              "weapon_name": "Everlasting Moonglow",
+              "weapon_name": "Fumetsu Gekka",
               "weapon_url": "https://paimon.moe/images/weapons/everlasting_moonglow.png",
               "weapon_rarity": 5
             },
             {
-              "weapon_name": "Hakushin Ring",
+              "weapon_name": "Anel de Hakushin",
               "weapon_url": "https://paimon.moe/images/weapons/hakushin_ring.png",
               "weapon_rarity": 4
             }

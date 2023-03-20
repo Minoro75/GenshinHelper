@@ -12,14 +12,14 @@ object TheMeaningOfAeonsDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "The Meaning of Aeons",
+            "name": "Significado de Éons",
             "domain_name": "End of the Oneiric Euthymia",
-            "description": "You can collect The Meaning of Aeons as a random reward from the Raiden Shogun Trounce Domain located under the Grand Narukami Shrine."
+            "description": "Você pode coletar o Significado de Éons como uma recompensa aleatória do domínio da Raiden Shogun, localizado no Grande Santuário Narukami."
           },
           {
-            "name": "The Meaning of Aeons",
+            "name": "Significado de Éons",
             "domain_name": "Convert: The Meaning of Aeons",
-            "description": "Go to a Crafting table and use the Convert section to convert one item to another."
+            "description": "Vá para um Balcão de Síntese e use a seção Converter para converter um item em outro."
           }
         ]
     """.trimIndent()

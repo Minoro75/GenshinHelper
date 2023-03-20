@@ -12,14 +12,14 @@ object LavawalkerDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Lavawalker",
+            "name": "Atravessador do Fogo",
             "domain_name": "Hidden Palace of Zhou Formula",
-            "description": "Domain reward"
+            "description": "Recompensa do Domínio"
           },
           {
-            "name": "Lavawalker",
+            "name": "Atravessador do Fogo",
             "domain_name": "Artifact Strongbox: Lavawalker",
-            "description": "Go to a Crafting table and use the Artifact Strongbox: Lavawalker to convert at least 3 Artifacts into one brand new artifact."
+            "description": "Vá para um Balcão de Síntese e use o Relicário: Atravessador do Fogo para converter pelo menos 3 artefatos em um novo artefato."
           }
         ]
     """.trimIndent()

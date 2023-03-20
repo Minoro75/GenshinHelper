@@ -12,9 +12,9 @@ object AdmonitionDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Admonition",
+            "name": "Admoestação",
             "domain_name": "Steeple of Ignorance",
-            "description": "You can collect Admonition books as a random reward from the domain located in Sumeru"
+            "description": "Você pode coletar os livros do conjunto Admoestação como recompensas aleatórias do domínio localizado em Sumeru."
           }
         ]
     """.trimIndent()

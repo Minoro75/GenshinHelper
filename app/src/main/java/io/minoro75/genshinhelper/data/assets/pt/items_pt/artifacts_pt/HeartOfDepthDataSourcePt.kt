@@ -12,14 +12,14 @@ object HeartOfDepthDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Heart of Depth",
+            "name": "Profundezas do Coração",
             "domain_name": "Peak of Vindagnyr",
-            "description": "Domain reward"
+            "description": "Recompensa do Domínio"
           },
           {
-            "name": "Heart of Depth",
+            "name": "Profundezas do Coração",
             "domain_name": "Artifact Strongbox: Heart of Depth",
-            "description": "Go to a Crafting table and use the Artifact Strongbox: Heart of Depth to convert at least 3 Artifacts into one brand new artifact."
+            "description": "Vá para um Balcão de Síntese e use o Relicário: Profundezas do Coração para converter pelo menos 3 artefatos em um novo artefato."
           }
         ]
     """.trimIndent()

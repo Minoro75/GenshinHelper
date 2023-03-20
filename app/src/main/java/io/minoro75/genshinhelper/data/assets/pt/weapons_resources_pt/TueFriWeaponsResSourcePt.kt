@@ -12,11 +12,11 @@ object TueFriWeaponsResSourcePt {
     val resourcesList = """
         [
           {
-            "name": "Boreal Wolf",
+            "name": "Lobo Boreal",
             "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/98/Item_Boreal_Wolf%27s_Broken_Fang.png"
           },
           {
-            "name": "Mist Veiled Elixir",
+            "name": "Elixir",
             "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9b/Item_Mist_Veiled_Gold_Elixir.png"
           },
           {
@@ -24,7 +24,7 @@ object TueFriWeaponsResSourcePt {
             "url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f5/Item_Narukami%27s_Affection.png"
           },
           {
-            "name": "Oasis Garden",
+            "name": "Jardim Oásis",
             "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/23/Item_Oasis_Garden%27s_Mourning.png"
           }
         ]

@@ -12,9 +12,9 @@ object BalladDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Ballad",
+            "name": "Poemas",
             "domain_name": "Forsaken Rift",
-            "description": "You can collect Ballad books as a random reward from the domain located in Mondstadt"
+            "description": "Você pode coletar os livros do conjunto Poemas como recompensas aleatórias do domínio localizado em Mondstadt."
           }
         ]
     """.trimIndent()

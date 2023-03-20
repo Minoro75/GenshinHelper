@@ -18,7 +18,7 @@ object FaruzanDetailsSource {
           },
           "weekly_boss_item": {
             "boss_item_name": "Puppet Strings",
-            "boss_item_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a2/Item_Daka%27s_Bell.png"
+            "boss_item_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f2/Item_Puppet_Strings.png"
           },
           "talents_priority": [
             "Burst",

@@ -12,31 +12,31 @@ object KaedeharaKazuhaDetailsSourcePt {
           "weapon": "sword",
           "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e3/Kaedehara_Kazuha_Icon.png/revision/latest",
           "talents_books": {
-            "book_name": "Diligence",
+            "book_name": "Esforço",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c2/Item_Philosophies_of_Diligence.png",
-            "book_days": "Tuesday/Friday/Sunday"
+            "book_days": "Terça-feira/Sexta-feira/Domingo"
           },
           "weekly_boss_item": {
-            "boss_item_name": "Gilded Scale",
+            "boss_item_name": "Escama Dourada",
             "boss_item_url": "https://paimon.moe/images/items/gilded_scale.png"
           },
           "talents_priority": [
-            "Burst",
-            "Skill",
-            "Attack"
+            "Supremo",
+            "Habilidade",
+            "Ataque"
           ],
           "artifacts": [
             {
-              "artifact_name": "Viridescent Venerer",
+              "artifact_name": "Sombra Verde",
               "artifact_url": "https://paimon.moe/images/artifacts/viridescent_venerer_flower.png",
               "artifact_amount": 4,
-              "artifact_gobelet": "Elemental Mastery / Anemo DPS",
-              "artifact_circlet": "Elemental Mastery / CRIT Rate / CRIT DMG",
-              "artifact_sands": "Elemental Mastery / ATK%"
+              "artifact_gobelet": "Proficiência  Elemental / Dano Anemo",
+              "artifact_circlet": "Proficiência  Elemental / Taxa Crítica / Dano Crítico",
+              "artifact_sands": "Proficiência Elemental / ATQ%"
             }
           ],
           "weapon_best": {
-            "weapon_name": "Freedom-Sworn",
+            "weapon_name": "Juramento pela Liberdade",
             "weapon_url": "https://paimon.moe/images/weapons/freedom-sworn.png",
             "weapon_rarity": 5
           },
@@ -47,12 +47,12 @@ object KaedeharaKazuhaDetailsSourcePt {
               "weapon_rarity": 5
             },
             {
-              "weapon_name": "Favonius Sword",
+              "weapon_name": "Espada de Favonius",
               "weapon_url": "https://paimon.moe/images/weapons/favonius_sword.png",
               "weapon_rarity": 4
             },
             {
-              "weapon_name": "Sacrificial Sword",
+              "weapon_name": "Espada do Sacrifício",
               "weapon_url": "https://paimon.moe/images/weapons/sacrificial_sword.png",
               "weapon_rarity": 4
             }

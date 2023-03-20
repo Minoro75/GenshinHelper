@@ -12,14 +12,14 @@ object ThundersootherDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Thundersoother",
+            "name": "Lançador de Trovões",
             "domain_name": "Midsummer Courtyard",
-            "description": "Domain reward"
+            "description": "Jardim do Verão"
           },
           {
-            "name": "Thundersoother",
+            "name": "Lançador de Trovões",
             "domain_name": "Artifact Strongbox: Thundersoother",
-            "description": "Go to a Crafting table and use the Artifact Strongbox: Thundersoother to convert at least 3 Artifacts into one brand new artifact."
+            "description": "Vá para um Balcão de Síntese e use o Relicário: Lançador de Trovões para converter pelo menos 3 artefatos em um novo artefato."
           }
         ]
     """.trimIndent()

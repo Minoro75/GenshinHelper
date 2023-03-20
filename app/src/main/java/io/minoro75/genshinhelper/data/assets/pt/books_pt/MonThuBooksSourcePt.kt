@@ -1,4 +1,4 @@
-package io.minoro75.genshinhelper.data.assets.en.books
+package io.minoro75.genshinhelper.data.assets.pt.books_pt
 
 import org.intellij.lang.annotations.Language
 
@@ -12,7 +12,7 @@ object MonThuBooksSourcePt {
     val booksList = """
         [
           {
-            "book_name": "Freedom",
+            "book_name": "Liberdade",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/Item_Philosophies_of_Freedom.png",
             "characters": [
               {
@@ -58,7 +58,7 @@ object MonThuBooksSourcePt {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/85/Tartaglia_Icon.png/revision/latest"
               },
               {
-                "name": "Traveler (Anemo)",
+                "name": "Viajante (Anemo)",
                 "rarity": 5,
                 "element": "anemo",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
@@ -66,7 +66,7 @@ object MonThuBooksSourcePt {
             ]
           },
           {
-            "book_name": "Prosperity",
+            "book_name": "Prosperidade",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/bd/Item_Philosophies_of_Prosperity.png",
             "characters": [
               {
@@ -94,7 +94,7 @@ object MonThuBooksSourcePt {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/af/Shenhe_Icon.png/revision/latest"
               },
               {
-                "name": "Traveler (Geo)",
+                "name": "Viajante (Geo)",
                 "rarity": 5,
                 "element": "geo",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
@@ -114,7 +114,7 @@ object MonThuBooksSourcePt {
             ]
           },
           {
-            "book_name": "Transience",
+            "book_name": "Mundo Mortal",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/27/Item_Philosophies_of_Transience.png",
             "characters": [
               {
@@ -136,7 +136,7 @@ object MonThuBooksSourcePt {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/5b/Thoma_Icon.png/revision/latest"
               },
               {
-                "name": "Traveler (Electro)",
+                "name": "Viajante (Electro)",
                 "rarity": 5,
                 "element": "electro",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
@@ -150,7 +150,7 @@ object MonThuBooksSourcePt {
             ]
           },
           {
-            "book_name": "Admonition",
+            "book_name": "Admoestação",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9b/Item_Philosophies_of_Admonition.png",
             "characters": [
             {
@@ -179,7 +179,7 @@ object MonThuBooksSourcePt {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/87/Tighnari_Icon.png/revision/latest"
               },
               {
-                "name": "Traveler (Dendro)",
+                "name": "Viajante (Dendro)",
                 "rarity": 5,
                 "element": "dendro",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"

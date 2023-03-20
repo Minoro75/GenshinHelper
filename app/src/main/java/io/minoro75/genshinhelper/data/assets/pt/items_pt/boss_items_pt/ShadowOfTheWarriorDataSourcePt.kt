@@ -12,14 +12,14 @@ object ShadowOfTheWarriorDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Shadow of the Warrior",
+            "name": "Sombra do Guerreiro",
             "domain_name": "Enter the Golden House",
-            "description": "You can collect Shadow of the Warrior as a random reward from the Childe domain located in Liyue Harbour."
+            "description": "Você pode coletar a Sombra do Guerreiro como uma recompensa aleatória do domínio do Childe, localizado no Porto de Liyue."
           },
           {
-            "name": "Shadow of the Warrior",
+            "name": "Sombra do Guerreiro",
             "domain_name": "Convert: Shadow of the Warrior",
-            "description": "Go to a Crafting table and use the Convert section to convert one item to another."
+            "description": "Vá para um Balcão de Síntese e use a seção Converter para converter um item em outro."
           }
         ]
     """.trimIndent()

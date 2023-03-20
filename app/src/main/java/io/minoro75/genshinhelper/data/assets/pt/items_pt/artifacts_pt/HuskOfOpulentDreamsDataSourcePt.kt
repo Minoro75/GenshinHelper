@@ -12,9 +12,9 @@ object HuskOfOpulentDreamsDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Husk of Opulent Dreams",
+            "name": "Casca de Sonhos Opulentos",
             "domain_name": "Slumbering Court",
-            "description": "Domain reward"
+            "description": "Recompensa do Domínio"
           }
         ]
     """.trimIndent()

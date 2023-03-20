@@ -12,14 +12,14 @@ object HellfireButterflyDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Hellfire Butterfly",
+            "name": "Borboleta das Chamas Infernais",
             "domain_name": "Narukami Island: Tenshukaku",
-            "description": "You can collect Hellfire Butterfly as a random reward from the Signora domain located in Inazuma City"
+            "description": "Você pode coletar a Borboleta das Chamas Infernais como uma recompensa aleatória do domínio da Signora, localizado na Cidade de Inazuma."
           },
           {
-            "name": "Hellfire Butterfly",
+            "name": "Borboleta das Chamas Infernais",
             "domain_name": "Convert: Hellfire Butterfly",
-            "description": "Go to a Crafting table and use the Convert section to convert one item to another."
+            "description": "Vá para um Balcão de Síntese e use a seção Converter para converter um item em outro."
           }
         ]
     """.trimIndent()

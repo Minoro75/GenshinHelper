@@ -12,9 +12,9 @@ object EmblemOfSeveredFateDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Emblem of Severed Fate",
+            "name": "Selo da Insulação",
             "domain_name": "Momiji-Dyed Court",
-            "description": "Domain reward"
+            "description": "Recompensa do Domínio"
           }
         ]
     """.trimIndent()

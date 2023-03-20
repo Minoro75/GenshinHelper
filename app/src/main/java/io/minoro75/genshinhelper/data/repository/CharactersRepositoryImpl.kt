@@ -40,6 +40,7 @@ class CharactersRepositoryImpl @Inject constructor(
         return when (Locale.getDefault().displayLanguage) {
             "русский" -> assetsDataSourceRu.getCharacterDetails(name)
             "українська" -> assetsDataSourceUk.getCharacterDetailsUk(name)
+            "português" -> assetsDataSourcePt.getCharacterDetailsPt(name)
             else -> assetsDataSource.getCharacterDetailsEn(name)
         }
     }
@@ -67,6 +68,18 @@ class CharactersRepositoryImpl @Inject constructor(
                 Calendar.SUNDAY -> assetsDataSourceUk.getSundayBooksUk()
                 else -> { throw IllegalArgumentException("calendar error in <26sdk")}
             }
+
+            "português" -> when (dayOfWeek) {
+                Calendar.MONDAY -> assetsDataSourcePt.getMonThuBooksPt()
+                Calendar.TUESDAY -> assetsDataSourcePt.getTueFriBooksPt()
+                Calendar.WEDNESDAY -> assetsDataSourcePt.getWedSatBooksPt()
+                Calendar.THURSDAY -> assetsDataSourcePt.getMonThuBooksPt()
+                Calendar.FRIDAY -> assetsDataSourcePt.getTueFriBooksPt()
+                Calendar.SATURDAY -> assetsDataSourcePt.getWedSatBooksPt()
+                Calendar.SUNDAY -> assetsDataSourcePt.getSundayBooksPt()
+                else -> { throw IllegalArgumentException("calendar error in <26sdk")}
+            }
+
             else -> when (dayOfWeek) {
                 Calendar.MONDAY -> assetsDataSource.getMonThuBooks()
                 Calendar.TUESDAY -> assetsDataSource.getTueFriBooks()
@@ -104,6 +117,17 @@ class CharactersRepositoryImpl @Inject constructor(
                 else -> { throw IllegalArgumentException("calendar error in <26sdk")}
             }
 
+            "português" -> when (dayOfWeek) {
+                Calendar.MONDAY -> assetsDataSourcePt.getMonThuWeaponResourcesPt()
+                Calendar.TUESDAY -> assetsDataSourcePt.getTueFriWeaponResourcesPt()
+                Calendar.WEDNESDAY -> assetsDataSourcePt.getWedSatWeaponResourcesPt()
+                Calendar.THURSDAY -> assetsDataSourcePt.getMonThuWeaponResourcesPt()
+                Calendar.FRIDAY -> assetsDataSourcePt.getTueFriWeaponResourcesPt()
+                Calendar.SATURDAY -> assetsDataSourcePt.getWedSatWeaponResourcesPt()
+                Calendar.SUNDAY -> assetsDataSourcePt.getSundayWeaponResourcesPt()
+                else -> { throw IllegalArgumentException("calendar error in <26sdk")}
+            }
+
             else -> when (dayOfWeek) {
                 Calendar.MONDAY -> assetsDataSource.getMonThuWeaponResources()
                 Calendar.TUESDAY -> assetsDataSource.getTueFriWeaponResources()
@@ -121,6 +145,7 @@ class CharactersRepositoryImpl @Inject constructor(
         return when (Locale.getDefault().displayLanguage) {
             "русский" -> assetsDataSourceRu.getItemLocationRu(itemName)
             "українська" -> assetsDataSourceUk.getItemLocationUk(itemName)
+            "português" -> assetsDataSourcePt.getItemLocationPt(itemName)
             else -> assetsDataSource.getItemLocation(itemName)
         }
     }

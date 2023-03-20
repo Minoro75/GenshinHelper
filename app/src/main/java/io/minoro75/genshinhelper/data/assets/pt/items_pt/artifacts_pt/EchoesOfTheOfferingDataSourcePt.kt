@@ -12,9 +12,9 @@ object EchoesOfTheOfferingDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Echoes of An Offering",
+            "name": "Eco do Sacrifício",
             "domain_name": "The Lost Valley",
-            "description": "Domain reward"
+            "description": "Recompensa do Domínio"
           }
         ]
     """.trimIndent()

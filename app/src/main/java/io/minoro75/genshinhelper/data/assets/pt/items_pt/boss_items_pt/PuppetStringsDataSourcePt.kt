@@ -13,14 +13,14 @@ object PuppetStringsDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Puppet Strings",
+            "name": "Fios da Marionete",
             "domain_name": "Joururi Workshop",
-            "description": "You can collect the Puppet Strings as a random reward from the Scaramouche Domain located near Sumeru City."
+            "description": "Você pode coletar os Fios da Marionete como uma recompensa aleatória do domínio do Scaramouche, localizado na Cidade de Sumeru."
           },
           {
-            "name": "Puppet Strings",
+            "name": "Fios da Marionete",
             "domain_name": "Convert: Puppet Strings",
-            "description": "Go to a Crafting table and use the Convert section to convert one item to another."
+            "description": "Vá para um Balcão de Síntese e use a seção Converter para converter um item em outro."
           }
         ]
     """.trimIndent()

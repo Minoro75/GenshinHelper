@@ -2,89 +2,20 @@ package io.minoro75.genshinhelper.data.assets.pt
 
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.adapter
-import io.minoro75.genshinhelper.data.assets.en.books.MonThuBooksSourcePt
-import io.minoro75.genshinhelper.data.assets.en.books.SundayBooksSourcePt
-import io.minoro75.genshinhelper.data.assets.en.books.TueFriBooksSourcePt
-import io.minoro75.genshinhelper.data.assets.en.books.WedSatBooksSourcePt
-import io.minoro75.genshinhelper.data.assets.en.characters.*
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.ArchaicPetraDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.BlizzardStrayerDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.BloodstainedChivalryDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.CrimsonWitchOfFlamesDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.DeepwoodMemoriesDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.EchoesOfTheOfferingDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.EmblemOfSeveredFateDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.GildedDreamsDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.GladiatorsFinaleDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.HeartOfDepthDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.HuskOfOpulentDreamsDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.LavawalkerDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.MaidenBelovedDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.NoblesseObligeDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.OceanHuedClamDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.PaleFlameDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.RetracingBolideDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.ShimenavasReminiscenceDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.TenacityOfTheMillelithDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.ThunderingFuryDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.ThundersootherDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.VermilionHereafterDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.ViridescentVenererDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.WanderersTroupeDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.books.AdmonitionDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.books.BalladDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.books.DiligenceDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.books.EleganceDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.books.FreedomDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.books.GoldDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.books.IngenuityDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.books.LightDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.books.PraxisDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.books.ProsperityDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.books.ResistanceDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.books.TransienceDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.AshenHeartDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.BloodjadeBranchDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.DakasBellDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.DragonLordsCrownDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.DvalinsClawDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.DvalinsPlumeDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.DvalinsSighDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.GildedScaleDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.HellfireButterflyDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.MirrorOfMushinDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.MoltenMomentDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.MudraOfTheMaleficGeneralDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.PuppetStringsDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.RingOfBoreasDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.ShadowOfTheWarriorDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.ShardOfFoulLegacyDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.SpiritLocketOfBoreasDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.TailOfBoreasDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.TearsOfTheCalamitiousGodDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.TheMeaningOfAeonsDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.TuskOfMonocerosCaeliDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.weapon_resources.AerosideriteDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.weapon_resources.BorealWolfDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.weapon_resources.DandelionGladiatorDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.weapon_resources.DecarabianDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.weapon_resources.DistantSeaDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.weapon_resources.ForestDewDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.weapon_resources.GuyunDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.weapon_resources.MaskDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.weapon_resources.MistVeiledDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.weapon_resources.NarukamiDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.weapon_resources.OasisGardenDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.weapon_resources.ScorchingMightDataSource
-import io.minoro75.genshinhelper.data.assets.en.weapons_resources.MonThuWeaponsResSource
-import io.minoro75.genshinhelper.data.assets.en.weapons_resources.SundayWeaponsResSource
-import io.minoro75.genshinhelper.data.assets.en.weapons_resources.TueFriWeaponsResSource
-import io.minoro75.genshinhelper.data.assets.en.weapons_resources.WedSatWeaponsResSource
-import io.minoro75.genshinhelper.domain.model.CharacterDetails
-import io.minoro75.genshinhelper.domain.model.CharacterModel
-import io.minoro75.genshinhelper.domain.model.HowToObtainItem
-import io.minoro75.genshinhelper.domain.model.TodayBooks
-import io.minoro75.genshinhelper.domain.model.TodayWeaponResources
+import io.minoro75.genshinhelper.data.assets.pt.books_pt.MonThuBooksSourcePt
+import io.minoro75.genshinhelper.data.assets.pt.books_pt.SundayBooksSourcePt
+import io.minoro75.genshinhelper.data.assets.pt.books_pt.TueFriBooksSourcePt
+import io.minoro75.genshinhelper.data.assets.pt.books_pt.WedSatBooksSourcePt
+import io.minoro75.genshinhelper.data.assets.pt.characters_pt.*
+import io.minoro75.genshinhelper.data.assets.pt.items_pt.artifacts_pt.*
+import io.minoro75.genshinhelper.data.assets.pt.items_pt.books_pt.*
+import io.minoro75.genshinhelper.data.assets.pt.items_pt.boss_items_pt.*
+import io.minoro75.genshinhelper.data.assets.pt.items_pt.weapon_resources_pt.*
+import io.minoro75.genshinhelper.data.assets.pt.weapons_resources_pt.MonThuWeaponsResSourcePt
+import io.minoro75.genshinhelper.data.assets.pt.weapons_resources_pt.SundayWeaponsResSourcePt
+import io.minoro75.genshinhelper.data.assets.pt.weapons_resources_pt.TueFriWeaponsResSourcePt
+import io.minoro75.genshinhelper.data.assets.pt.weapons_resources_pt.WedSatWeaponsResSourcePt
+import io.minoro75.genshinhelper.domain.model.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
@@ -110,19 +41,19 @@ class AssetsDataSourcePt @Inject constructor(
     }.flowOn(Dispatchers.IO)
 
     fun getMonThuWeaponResourcesPt() = flow {
-        emit(weaponsAdapter.fromJson(MonThuWeaponsResSource.resourcesList))
+        emit(weaponsAdapter.fromJson(MonThuWeaponsResSourcePt.resourcesList))
     }.flowOn(Dispatchers.IO)
 
     fun getTueFriWeaponResourcesPt() = flow {
-        emit(weaponsAdapter.fromJson(TueFriWeaponsResSource.resourcesList))
+        emit(weaponsAdapter.fromJson(TueFriWeaponsResSourcePt.resourcesList))
     }.flowOn(Dispatchers.IO)
 
     fun getWedSatWeaponResourcesPt() = flow {
-        emit(weaponsAdapter.fromJson(WedSatWeaponsResSource.resourcesList))
+        emit(weaponsAdapter.fromJson(WedSatWeaponsResSourcePt.resourcesList))
     }.flowOn(Dispatchers.IO)
 
     fun getSundayWeaponResourcesPt() = flow {
-        emit(weaponsAdapter.fromJson(SundayWeaponsResSource.resourcesList))
+        emit(weaponsAdapter.fromJson(SundayWeaponsResSourcePt.resourcesList))
     }.flowOn(Dispatchers.IO)
 
     fun getMonThuBooksPt() = flow {
@@ -145,220 +76,220 @@ class AssetsDataSourcePt @Inject constructor(
         return flow {
             when (itemName) {
                 // Artifacts
-                "Archaic Petra" -> emit(itemLocationAdapter.fromJson(ArchaicPetraDataSource.sourcesList))
+                "Pedra Arcaica" -> emit(itemLocationAdapter.fromJson(ArchaicPetraDataSourcePt.sourcesList))
 
-                "Blizzard Strayer" -> emit(itemLocationAdapter.fromJson(BlizzardStrayerDataSource.sourcesList))
+                "Herói Invernal" -> emit(itemLocationAdapter.fromJson(BlizzardStrayerDataSourcePt.sourcesList))
 
-                "Bloodstained Chivalry" -> emit(
+                "Cavaleiro Manchado de Sangue" -> emit(
                     itemLocationAdapter.fromJson(
-                        BloodstainedChivalryDataSource.sourcesList
+                        BloodstainedChivalryDataSourcePt.sourcesList
                     )
                 )
 
-                "Crimson Witch of Flames" -> emit(
+                "A Bruxa das Chamas Carmesim" -> emit(
                     itemLocationAdapter.fromJson(
-                        CrimsonWitchOfFlamesDataSource.sourcesList
+                        CrimsonWitchOfFlamesDataSourcePt.sourcesList
                     )
                 )
 
-                "Deepwood Memories" -> emit(itemLocationAdapter.fromJson(DeepwoodMemoriesDataSource.sourcesList))
+                "Memórias da Floresta" -> emit(itemLocationAdapter.fromJson(DeepwoodMemoriesDataSourcePt.sourcesList))
 
-                "Echoes of An Offering" -> emit(
+                "Eco do Sacrifício" -> emit(
                     itemLocationAdapter.fromJson(
-                        EchoesOfTheOfferingDataSource.sourcesList
+                        EchoesOfTheOfferingDataSourcePt.sourcesList
                     )
                 )
 
-                "Emblem of Severed Fate" -> emit(
+                "Selo da Insulação" -> emit(
                     itemLocationAdapter.fromJson(
-                        EmblemOfSeveredFateDataSource.sourcesList
+                        EmblemOfSeveredFateDataSourcePt.sourcesList
                     )
                 )
 
-                "Gilded Dreams" -> emit(itemLocationAdapter.fromJson(GildedDreamsDataSource.sourcesList))
+                "Sonhos Dourados" -> emit(itemLocationAdapter.fromJson(GildedDreamsDataSourcePt.sourcesList))
 
-                "Gladiator's Finale" -> emit(itemLocationAdapter.fromJson(GladiatorsFinaleDataSource.sourcesList))
+                "Último Juramento do Gladiador" -> emit(itemLocationAdapter.fromJson(GladiatorsFinaleDataSourcePt.sourcesList))
 
-                "Heart of Depth" -> emit(itemLocationAdapter.fromJson(HeartOfDepthDataSource.sourcesList))
+                "Profundezas do Coração" -> emit(itemLocationAdapter.fromJson(HeartOfDepthDataSourcePt.sourcesList))
 
-                "Husk of Opulent Dreams" -> emit(
+                "Casca de Sonhos Opulentos" -> emit(
                     itemLocationAdapter.fromJson(
-                        HuskOfOpulentDreamsDataSource.sourcesList
+                        HuskOfOpulentDreamsDataSourcePt.sourcesList
                     )
                 )
 
-                "Lavawalker" -> emit(itemLocationAdapter.fromJson(LavawalkerDataSource.sourcesList))
+                "Atravessador do Fogo" -> emit(itemLocationAdapter.fromJson(LavawalkerDataSourcePt.sourcesList))
 
-                "Maiden Beloved" -> emit(itemLocationAdapter.fromJson(MaidenBelovedDataSource.sourcesList))
+                "Donzela Amada" -> emit(itemLocationAdapter.fromJson(MaidenBelovedDataSourcePt.sourcesList))
 
-                "Noblesse Oblige" -> emit(itemLocationAdapter.fromJson(NoblesseObligeDataSource.sourcesList))
+                "Antigo Ritual Real" -> emit(itemLocationAdapter.fromJson(NoblesseObligeDataSourcePt.sourcesList))
 
-                "Ocean-Hued Clam" -> emit(itemLocationAdapter.fromJson(OceanHuedClamDataSource.sourcesList))
+                "Concha Tingida Pelo Mar" -> emit(itemLocationAdapter.fromJson(OceanHuedClamDataSourcePt.sourcesList))
 
-                "Pale Flame" -> emit(itemLocationAdapter.fromJson(PaleFlameDataSource.sourcesList))
+                "Chama Pálida" -> emit(itemLocationAdapter.fromJson(PaleFlameDataSourcePt.sourcesList))
 
-                "Retracing Bolide" -> emit(itemLocationAdapter.fromJson(RetracingBolideDataSource.sourcesList))
+                "Meteoro Invertido" -> emit(itemLocationAdapter.fromJson(RetracingBolideDataSourcePt.sourcesList))
 
-                "Shimenawa's Reminiscence" -> emit(
+                "Reminescência Nostálgica" -> emit(
                     itemLocationAdapter.fromJson(
-                        ShimenavasReminiscenceDataSource.sourcesList
+                        ShimenavasReminiscenceDataSourcePt.sourcesList
                     )
                 )
 
-                "Tenacity of the Millelith" -> emit(
+                "Millelith Firmes" -> emit(
                     itemLocationAdapter.fromJson(
-                        TenacityOfTheMillelithDataSource.sourcesList
+                        TenacityOfTheMillelithDataSourcePt.sourcesList
                     )
                 )
 
-                "Thundering Fury" -> emit(itemLocationAdapter.fromJson(ThunderingFuryDataSource.sourcesList))
+                "Trovão Furioso" -> emit(itemLocationAdapter.fromJson(ThunderingFuryDataSourcePt.sourcesList))
 
-                "Thundersoother" -> emit(itemLocationAdapter.fromJson(ThundersootherDataSource.sourcesList))
+                "Lançador de Trovões" -> emit(itemLocationAdapter.fromJson(ThundersootherDataSourcePt.sourcesList))
 
-                "Vermillion Hereafter" -> emit(
+                "Além-Vida Cinábrio" -> emit(
                     itemLocationAdapter.fromJson(
-                        VermilionHereafterDataSource.sourcesList
+                        VermilionHereafterDataSourcePt.sourcesList
                     )
                 )
 
-                "Viridescent Venerer" -> emit(
+                "Sombra Verde" -> emit(
                     itemLocationAdapter.fromJson(
-                        ViridescentVenererDataSource.sourcesList
+                        ViridescentVenererDataSourcePt.sourcesList
                     )
                 )
 
-                "Wanderer's Troupe" -> emit(itemLocationAdapter.fromJson(WanderersTroupeDataSource.sourcesList))
+                "Trupe Itinerante" -> emit(itemLocationAdapter.fromJson(WanderersTroupeDataSourcePt.sourcesList))
                 // Boss items
-                "Ashen Heart" -> emit(itemLocationAdapter.fromJson(AshenHeartDataSource.sourcesList))
+                "Coração das Cinzas" -> emit(itemLocationAdapter.fromJson(AshenHeartDataSourcePt.sourcesList))
 
-                "Bloodjade Branch" -> emit(itemLocationAdapter.fromJson(BloodjadeBranchDataSource.sourcesList))
+                "Galho de Jade de Sangue" -> emit(itemLocationAdapter.fromJson(BloodjadeBranchDataSourcePt.sourcesList))
 
-                "Dragon Lord's Crown" -> emit(
+                "Coroa do Senhor dos Dragões" -> emit(
                     itemLocationAdapter.fromJson(
-                        DragonLordsCrownDataSource.sourcesList
+                        DragonLordsCrownDataSourcePt.sourcesList
                     )
                 )
 
-                "Dvalin's Claw" -> emit(itemLocationAdapter.fromJson(DvalinsClawDataSource.sourcesList))
+                "Garra do Vento Oriental" -> emit(itemLocationAdapter.fromJson(DvalinsClawDataSourcePt.sourcesList))
 
-                "Dvalin's Plume" -> emit(itemLocationAdapter.fromJson(DvalinsPlumeDataSource.sourcesList))
+                "Plumas do Vento Oriental" -> emit(itemLocationAdapter.fromJson(DvalinsPlumeDataSourcePt.sourcesList))
 
-                "Dvalin's Sigh" -> emit(itemLocationAdapter.fromJson(DvalinsSighDataSource.sourcesList))
+                "Suspiro do Vento Oriental" -> emit(itemLocationAdapter.fromJson(DvalinsSighDataSourcePt.sourcesList))
 
-                "Gilded Scale" -> emit(itemLocationAdapter.fromJson(GildedScaleDataSource.sourcesList))
+                "Escama Dourada" -> emit(itemLocationAdapter.fromJson(GildedScaleDataSourcePt.sourcesList))
 
-                "Hellfire Butterfly" -> emit(
+                "Borboleta das Chamas Infernais" -> emit(
                     itemLocationAdapter.fromJson(
-                        HellfireButterflyDataSource.sourcesList
+                        HellfireButterflyDataSourcePt.sourcesList
                     )
                 )
 
-                "Molten Moment" -> emit(itemLocationAdapter.fromJson(MoltenMomentDataSource.sourcesList))
+                "Momento Derretido" -> emit(itemLocationAdapter.fromJson(MoltenMomentDataSourcePt.sourcesList))
 
-                "Mudra of the Malefic General" -> emit(
+                "Mudra da Shogun Maléfica" -> emit(
                     itemLocationAdapter.fromJson(
-                        MudraOfTheMaleficGeneralDataSource.sourcesList
+                        MudraOfTheMaleficGeneralDataSourcePt.sourcesList
                     )
                 )
 
-                "Ring of Boreas" -> emit(itemLocationAdapter.fromJson(RingOfBoreasDataSource.sourcesList))
+                "Cálice do Vento Norte" -> emit(itemLocationAdapter.fromJson(RingOfBoreasDataSourcePt.sourcesList))
 
-                "Shadow of the Warrior" -> emit(
+                "Sombra do Guerreiro" -> emit(
                     itemLocationAdapter.fromJson(
-                        ShadowOfTheWarriorDataSource.sourcesList
+                        ShadowOfTheWarriorDataSourcePt.sourcesList
                     )
                 )
 
-                "Shard of a Foul Legacy" -> emit(
+                "Fragmento de Espada do Rei Demônio" -> emit(
                     itemLocationAdapter.fromJson(
-                        ShardOfFoulLegacyDataSource.sourcesList
+                        ShardOfFoulLegacyDataSourcePt.sourcesList
                     )
                 )
 
-                "Spirit Locket of Boreas" -> emit(
+                "Alma do Vento do Norte" -> emit(
                     itemLocationAdapter.fromJson(
-                        SpiritLocketOfBoreasDataSource.sourcesList
+                        SpiritLocketOfBoreasDataSourcePt.sourcesList
                     )
                 )
 
-                "Tail of Boreas" -> emit(itemLocationAdapter.fromJson(TailOfBoreasDataSource.sourcesList))
+                "Cauda do Vento do Norte" -> emit(itemLocationAdapter.fromJson(TailOfBoreasDataSourcePt.sourcesList))
 
-                "Tears of the Calamitous God" -> emit(
+                "Lágrima da Deusa do Desastre" -> emit(
                     itemLocationAdapter.fromJson(
-                        TearsOfTheCalamitiousGodDataSource.sourcesList
+                        TearsOfTheCalamitiousGodDataSourcePt.sourcesList
                     )
                 )
 
-                "The Meaning of Aeons" -> emit(
+                "Significado de Éons" -> emit(
                     itemLocationAdapter.fromJson(
-                        TheMeaningOfAeonsDataSource.sourcesList
+                        TheMeaningOfAeonsDataSourcePt.sourcesList
                     )
                 )
 
-                "Tusk of Monoceros Caeli" -> emit(
+                "Chifre de Baleia Come-Céu" -> emit(
                     itemLocationAdapter.fromJson(
-                        TuskOfMonocerosCaeliDataSource.sourcesList
+                        TuskOfMonocerosCaeliDataSourcePt.sourcesList
                     )
                 )
 
-                "Daka's Bell" -> emit(itemLocationAdapter.fromJson(DakasBellDataSource.sourcesList))
+                "Sino do Vazio" -> emit(itemLocationAdapter.fromJson(DakasBellDataSourcePt.sourcesList))
 
-                "Puppet Strings" -> emit(itemLocationAdapter.fromJson(PuppetStringsDataSource.sourcesList))
+                "Fios da Marionete" -> emit(itemLocationAdapter.fromJson(PuppetStringsDataSourcePt.sourcesList))
 
-                "Mirror of Mushin" -> emit(itemLocationAdapter.fromJson(MirrorOfMushinDataSource.sourcesList))
+                "Lentes Desalmadas" -> emit(itemLocationAdapter.fromJson(MirrorOfMushinDataSourcePt.sourcesList))
 
                 // Books
-                "Admonition" -> emit(itemLocationAdapter.fromJson(AdmonitionDataSource.sourcesList))
+                "Admoestação" -> emit(itemLocationAdapter.fromJson(AdmonitionDataSourcePt.sourcesList))
 
-                "Ballad" -> emit(itemLocationAdapter.fromJson(BalladDataSource.sourcesList))
+                "Poemas" -> emit(itemLocationAdapter.fromJson(BalladDataSourcePt.sourcesList))
 
-                "Diligence" -> emit(itemLocationAdapter.fromJson(DiligenceDataSource.sourcesList))
+                "Esforço" -> emit(itemLocationAdapter.fromJson(DiligenceDataSourcePt.sourcesList))
 
-                "Elegance" -> emit(itemLocationAdapter.fromJson(EleganceDataSource.sourcesList))
+                "Cultura" -> emit(itemLocationAdapter.fromJson(EleganceDataSourcePt.sourcesList))
 
-                "Freedom" -> emit(itemLocationAdapter.fromJson(FreedomDataSource.sourcesList))
+                "Liberdade" -> emit(itemLocationAdapter.fromJson(FreedomDataSourcePt.sourcesList))
 
-                "Gold" -> emit(itemLocationAdapter.fromJson(GoldDataSource.sourcesList))
+                "Ouro" -> emit(itemLocationAdapter.fromJson(GoldDataSourcePt.sourcesList))
 
-                "Ingenuity" -> emit(itemLocationAdapter.fromJson(IngenuityDataSource.sourcesList))
+                "Engenhosidade" -> emit(itemLocationAdapter.fromJson(IngenuityDataSourcePt.sourcesList))
 
-                "Light" -> emit(itemLocationAdapter.fromJson(LightDataSource.sourcesList))
+                "Luz Celeste" -> emit(itemLocationAdapter.fromJson(LightDataSourcePt.sourcesList))
 
-                "Praxis" -> emit(itemLocationAdapter.fromJson(PraxisDataSource.sourcesList))
+                "Práxis" -> emit(itemLocationAdapter.fromJson(PraxisDataSourcePt.sourcesList))
 
-                "Prosperity" -> emit(itemLocationAdapter.fromJson(ProsperityDataSource.sourcesList))
+                "Prosperidade" -> emit(itemLocationAdapter.fromJson(ProsperityDataSourcePt.sourcesList))
 
-                "Resistance" -> emit(itemLocationAdapter.fromJson(ResistanceDataSource.sourcesList))
+                "Resistência" -> emit(itemLocationAdapter.fromJson(ResistanceDataSourcePt.sourcesList))
 
-                "Transience" -> emit(itemLocationAdapter.fromJson(TransienceDataSource.sourcesList))
+                "Mundo Mortal" -> emit(itemLocationAdapter.fromJson(TransienceDataSourcePt.sourcesList))
                 // Weapon resources
-                "Aerosiderite" -> emit(itemLocationAdapter.fromJson(AerosideriteDataSource.sourcesList))
+                "Aerosiderite" -> emit(itemLocationAdapter.fromJson(AerosideriteDataSourcePt.sourcesList))
 
-                "Boreal Wolf" -> emit(itemLocationAdapter.fromJson(BorealWolfDataSource.sourcesList))
+                "Lobo Boreal" -> emit(itemLocationAdapter.fromJson(BorealWolfDataSourcePt.sourcesList))
 
-                "Dandelion Gladiator" -> emit(
+                "Gladiador de Dandelion" -> emit(
                     itemLocationAdapter.fromJson(
-                        DandelionGladiatorDataSource.sourcesList
+                        DandelionGladiatorDataSourcePt.sourcesList
                     )
                 )
 
-                "Decarabian" -> emit(itemLocationAdapter.fromJson(DecarabianDataSource.sourcesList))
+                "Decarabian" -> emit(itemLocationAdapter.fromJson(DecarabianDataSourcePt.sourcesList))
 
-                "Distant Sea" -> emit(itemLocationAdapter.fromJson(DistantSeaDataSource.sourcesList))
+                "Mar Distante" -> emit(itemLocationAdapter.fromJson(DistantSeaDataSourcePt.sourcesList))
 
-                "Forest Dew" -> emit(itemLocationAdapter.fromJson(ForestDewDataSource.sourcesList))
+                "Orvalho Florestal" -> emit(itemLocationAdapter.fromJson(ForestDewDataSourcePt.sourcesList))
 
-                "Guyun" -> emit(itemLocationAdapter.fromJson(GuyunDataSource.sourcesList))
+                "Guyun" -> emit(itemLocationAdapter.fromJson(GuyunDataSourcePt.sourcesList))
 
-                "Mask" -> emit(itemLocationAdapter.fromJson(MaskDataSource.sourcesList))
+                "Máscara" -> emit(itemLocationAdapter.fromJson(MaskDataSourcePt.sourcesList))
 
-                "Mist Veiled Elixir" -> emit(itemLocationAdapter.fromJson(MistVeiledDataSource.sourcesList))
+                "Elixir" -> emit(itemLocationAdapter.fromJson(MistVeiledDataSourcePt.sourcesList))
 
-                "Narukami" -> emit(itemLocationAdapter.fromJson(NarukamiDataSource.sourcesList))
+                "Narukami" -> emit(itemLocationAdapter.fromJson(NarukamiDataSourcePt.sourcesList))
 
-                "Oasis Garden" -> emit(itemLocationAdapter.fromJson(OasisGardenDataSource.sourcesList))
+                "Jardim Oásis" -> emit(itemLocationAdapter.fromJson(OasisGardenDataSourcePt.sourcesList))
 
-                "Scorching Might" -> emit(itemLocationAdapter.fromJson(ScorchingMightDataSource.sourcesList))
+                "Poder Escaldante" -> emit(itemLocationAdapter.fromJson(ScorchingMightDataSourcePt.sourcesList))
 
                 else -> throw IllegalArgumentException("there is no artifact with name $itemName")
             }
@@ -369,163 +300,171 @@ class AssetsDataSourcePt @Inject constructor(
         // for testing purposes we may inject context as param, but maybe later
         return flow {
             when (characterName) {
-                "Albedo" -> emit(characterDetailsAdapter.fromJson(AlbedoDetailsSource.details))
+                "Albedo" -> emit(characterDetailsAdapter.fromJson(AlbedoDetailsSourcePt.details))
 
-                "Alhaitham" -> emit(characterDetailsAdapter.fromJson(AlhaithamDetailsSource.details))
+                "Alhaitham" -> emit(characterDetailsAdapter.fromJson(AlhaithamDetailsSourcePt.details))
 
-                "Aloy" -> emit(characterDetailsAdapter.fromJson(AloyDetailsSource.details))
+                "Aloy" -> emit(characterDetailsAdapter.fromJson(AloyDetailsSourcePt.details))
 
-                "Amber" -> emit(characterDetailsAdapter.fromJson(AmberDetailsSource.details))
+                "Amber" -> emit(characterDetailsAdapter.fromJson(AmberDetailsSourcePt.details))
 
-                "Arataki Itto" -> emit(characterDetailsAdapter.fromJson(AratakiIttoDetailsSource.details))
+                "Andarilho" -> emit(characterDetailsAdapter.fromJson(WandererDetailsSourcePt.details))
 
-                "Barbara" -> emit(characterDetailsAdapter.fromJson(BarbaraDetailsSource.details))
+                "Arataki Itto" -> emit(characterDetailsAdapter.fromJson(AratakiIttoDetailsSourcePt.details))
 
-                "Beidou" -> emit(characterDetailsAdapter.fromJson(BeidouDetailsSource.details))
+                "Barbara" -> emit(characterDetailsAdapter.fromJson(BarbaraDetailsSourcePt.details))
 
-                "Bennett" -> emit(characterDetailsAdapter.fromJson(BennettDetailsSource.details))
+                "Beidou" -> emit(characterDetailsAdapter.fromJson(BeidouDetailsSourcePt.details))
 
-                "Candace" -> emit(characterDetailsAdapter.fromJson(CandaceDetailsSource.details))
+                "Bennett" -> emit(characterDetailsAdapter.fromJson(BennettDetailsSourcePt.details))
 
-                "Chongyun" -> emit(characterDetailsAdapter.fromJson(ChongyunDetailsSource.details))
+                "Candace" -> emit(characterDetailsAdapter.fromJson(CandaceDetailsSourcePt.details))
 
-                "Collei" -> emit(characterDetailsAdapter.fromJson(ColleiDetailsSource.details))
+                "Chongyun" -> emit(characterDetailsAdapter.fromJson(ChongyunDetailsSourcePt.details))
 
-                "Cyno" -> emit(characterDetailsAdapter.fromJson(CynoDetailsSource.details))
+                "Collei" -> emit(characterDetailsAdapter.fromJson(ColleiDetailsSourcePt.details))
 
-                "Dehya" -> emit(characterDetailsAdapter.fromJson(DehyaDetailsSource.details))
+                "Cyno" -> emit(characterDetailsAdapter.fromJson(CynoDetailsSourcePt.details))
 
-                "Diluc" -> emit(characterDetailsAdapter.fromJson(DilucDetailsSource.details))
+                "Dehya" -> emit(characterDetailsAdapter.fromJson(DehyaDetailsSourcePt.details))
 
-                "Diona" -> emit(characterDetailsAdapter.fromJson(DionaDetailsSource.details))
+                "Diluc" -> emit(characterDetailsAdapter.fromJson(DilucDetailsSourcePt.details))
 
-                "Dori" -> emit(characterDetailsAdapter.fromJson(DoriDetailsSource.details))
+                "Diona" -> emit(characterDetailsAdapter.fromJson(DionaDetailsSourcePt.details))
 
-                "Eula" -> emit(characterDetailsAdapter.fromJson(EulaDetailsSource.details))
+                "Dori" -> emit(characterDetailsAdapter.fromJson(DoriDetailsSourcePt.details))
 
-                "Fischl" -> emit(characterDetailsAdapter.fromJson(FischlDetailsSource.details))
+                "Eula" -> emit(characterDetailsAdapter.fromJson(EulaDetailsSourcePt.details))
 
-                "Ganyu" -> emit(characterDetailsAdapter.fromJson(GanyuDetailsSource.details))
+                "Fischl" -> emit(characterDetailsAdapter.fromJson(FischlDetailsSourcePt.details))
 
-                "Gorou" -> emit(characterDetailsAdapter.fromJson(GorouDetailsSource.details))
+                "Ganyu" -> emit(characterDetailsAdapter.fromJson(GanyuDetailsSourcePt.details))
 
-                "Hu Tao" -> emit(characterDetailsAdapter.fromJson(HuTaoDetailsSource.details))
+                "Gorou" -> emit(characterDetailsAdapter.fromJson(GorouDetailsSourcePt.details))
 
-                "Jean" -> emit(characterDetailsAdapter.fromJson(JeanDetailsSource.details))
+                "Hu Tao" -> emit(characterDetailsAdapter.fromJson(HuTaoDetailsSourcePt.details))
+
+                "Jean" -> emit(characterDetailsAdapter.fromJson(JeanDetailsSourcePt.details))
 
                 "Kaedehara Kazuha" -> emit(
                     characterDetailsAdapter.fromJson(
-                        KaedeharaKazuhaDetailsSource.details
+                        KaedeharaKazuhaDetailsSourcePt.details
                     )
                 )
 
-                "Kaeya" -> emit(characterDetailsAdapter.fromJson(KaeyaDetailsSource.details))
+                "Kaeya" -> emit(characterDetailsAdapter.fromJson(KaeyaDetailsSourcePt.details))
 
-                "Kamisato Ayaka" -> emit(characterDetailsAdapter.fromJson(KamisatoAyakaDetailsSource.details))
+                "Kamisato Ayaka" -> emit(
+                    characterDetailsAdapter.fromJson(
+                        KamisatoAyakaDetailsSourcePt.details
+                    )
+                )
 
-                "Kamisato Ayato" -> emit(characterDetailsAdapter.fromJson(KamisatoAyatoDetailsSource.details))
+                "Kamisato Ayato" -> emit(
+                    characterDetailsAdapter.fromJson(
+                        KamisatoAyatoDetailsSourcePt.details
+                    )
+                )
 
-                "Keqing" -> emit(characterDetailsAdapter.fromJson(KeqingDetailsSource.details))
+                "Keqing" -> emit(characterDetailsAdapter.fromJson(KeqingDetailsSourcePt.details))
 
-                "Klee" -> emit(characterDetailsAdapter.fromJson(KleeDetailsSource.details))
+                "Klee" -> emit(characterDetailsAdapter.fromJson(KleeDetailsSourcePt.details))
 
-                "Kujou Sara" -> emit(characterDetailsAdapter.fromJson(KujouSaraDetailsSource.details))
+                "Kujou Sara" -> emit(characterDetailsAdapter.fromJson(KujouSaraDetailsSourcePt.details))
 
-                "Kuki Shinobu" -> emit(characterDetailsAdapter.fromJson(KukiShinobuDetailsSource.details))
+                "Kuki Shinobu" -> emit(characterDetailsAdapter.fromJson(KukiShinobuDetailsSourcePt.details))
 
-                "Layla" -> emit(characterDetailsAdapter.fromJson(LaylaDetailsSource.details))
+                "Layla" -> emit(characterDetailsAdapter.fromJson(LaylaDetailsSourcePt.details))
 
-                "Lisa" -> emit(characterDetailsAdapter.fromJson(LisaDetailsSource.details))
+                "Lisa" -> emit(characterDetailsAdapter.fromJson(LisaDetailsSourcePt.details))
 
-                "Mona" -> emit(characterDetailsAdapter.fromJson(MonaDetailsSource.details))
+                "Mona" -> emit(characterDetailsAdapter.fromJson(MonaDetailsSourcePt.details))
 
-                "Nahida" -> emit(characterDetailsAdapter.fromJson(NahidaDetailsSource.details))
+                "Nahida" -> emit(characterDetailsAdapter.fromJson(NahidaDetailsSourcePt.details))
 
-                "Nilou" -> emit(characterDetailsAdapter.fromJson(NilouDetailsSource.details))
+                "Nilou" -> emit(characterDetailsAdapter.fromJson(NilouDetailsSourcePt.details))
 
-                "Ningguang" -> emit(characterDetailsAdapter.fromJson(NingguangDetailsSource.details))
+                "Ningguang" -> emit(characterDetailsAdapter.fromJson(NingguangDetailsSourcePt.details))
 
-                "Noelle" -> emit(characterDetailsAdapter.fromJson(NoelleDetailsSource.details))
+                "Noelle" -> emit(characterDetailsAdapter.fromJson(NoelleDetailsSourcePt.details))
 
-                "Qiqi" -> emit(characterDetailsAdapter.fromJson(QiqiDetailsSource.details))
+                "Qiqi" -> emit(characterDetailsAdapter.fromJson(QiqiDetailsSourcePt.details))
 
-                "Raiden Shogun" -> emit(characterDetailsAdapter.fromJson(RaidenShogunDetailsSource.details))
+                "Raiden Shogun" -> emit(characterDetailsAdapter.fromJson(RaidenShogunDetailsSourcePt.details))
 
-                "Razor" -> emit(characterDetailsAdapter.fromJson(RazorDetailsSource.details))
+                "Razor" -> emit(characterDetailsAdapter.fromJson(RazorDetailsSourcePt.details))
 
-                "Rosaria" -> emit(characterDetailsAdapter.fromJson(RosariaDetailsSource.details))
+                "Rosaria" -> emit(characterDetailsAdapter.fromJson(RosariaDetailsSourcePt.details))
 
                 "Sangonomiya Kokomi" -> emit(
                     characterDetailsAdapter.fromJson(
-                        SangonomiyaKokomiDetailsSource.details
+                        SangonomiyaKokomiDetailsSourcePt.details
                     )
                 )
 
-                "Sayu" -> emit(characterDetailsAdapter.fromJson(SayuDetailsSource.details))
+                "Sayu" -> emit(characterDetailsAdapter.fromJson(SayuDetailsSourcePt.details))
 
-                "Shenhe" -> emit(characterDetailsAdapter.fromJson(ShenheDetailsSource.details))
+                "Shenhe" -> emit(characterDetailsAdapter.fromJson(ShenheDetailsSourcePt.details))
 
                 "Shikanoin Heizou" -> emit(
                     characterDetailsAdapter.fromJson(
-                        ShikanoinHeizouDetailsSource.details
+                        ShikanoinHeizouDetailsSourcePt.details
                     )
                 )
 
-                "Sucrose" -> emit(characterDetailsAdapter.fromJson(SucroseDetailsSource.details))
+                "Sucrose" -> emit(characterDetailsAdapter.fromJson(SucroseDetailsSourcePt.details))
 
-                "Tartaglia" -> emit(characterDetailsAdapter.fromJson(TartagliaDetailsSource.details))
+                "Tartaglia" -> emit(characterDetailsAdapter.fromJson(TartagliaDetailsSourcePt.details))
 
-                "Thoma" -> emit(characterDetailsAdapter.fromJson(ThomaDetailsSource.details))
+                "Thoma" -> emit(characterDetailsAdapter.fromJson(ThomaDetailsSourcePt.details))
 
-                "Tighnari" -> emit(characterDetailsAdapter.fromJson(TighnariDetailsSource.details))
+                "Tighnari" -> emit(characterDetailsAdapter.fromJson(TighnariDetailsSourcePt.details))
 
-                "Traveler (Anemo)" -> emit(
+                "Viajante (Anemo)" -> emit(
                     characterDetailsAdapter.fromJson(
-                        TravelerAnemoDetailsSource.details
+                        TravelerAnemoDetailsSourcePt.details
                     )
                 )
 
-                "Traveler (Electro)" -> emit(
+                "Viajante (Electro)" -> emit(
                     characterDetailsAdapter.fromJson(
-                        TravelerElectroDetailsSource.details
+                        TravelerElectroDetailsSourcePt.details
                     )
                 )
 
-                "Traveler (Geo)" -> emit(characterDetailsAdapter.fromJson(TravelerGeoDetailsSource.details))
+                "Viajante (Geo)" -> emit(characterDetailsAdapter.fromJson(TravelerGeoDetailsSourcePt.details))
 
-                "Traveler (Dendro)" -> emit(
+                "Viajante (Dendro)" -> emit(
                     characterDetailsAdapter.fromJson(
-                        TravelerDendroDetailsSource.details
+                        TravelerDendroDetailsSourcePt.details
                     )
                 )
 
-                "Venti" -> emit(characterDetailsAdapter.fromJson(VentiDetailsSource.details))
+                "Venti" -> emit(characterDetailsAdapter.fromJson(VentiDetailsSourcePt.details))
 
-                "Wanderer" -> emit(characterDetailsAdapter.fromJson(WandererDetailsSource.details))
+                "Xiangling" -> emit(characterDetailsAdapter.fromJson(XianglingDetailsSourcePt.details))
 
-                "Xiangling" -> emit(characterDetailsAdapter.fromJson(XianglingDetailsSource.details))
+                "Xiao" -> emit(characterDetailsAdapter.fromJson(XiaoDetailsSourcePt.details))
 
-                "Xiao" -> emit(characterDetailsAdapter.fromJson(XiaoDetailsSource.details))
+                "Xingqiu" -> emit(characterDetailsAdapter.fromJson(XingqiuDetailsSourcePt.details))
 
-                "Xingqiu" -> emit(characterDetailsAdapter.fromJson(XingqiuDetailsSource.details))
+                "Xinyan" -> emit(characterDetailsAdapter.fromJson(XinyanDetailsSourcePt.details))
 
-                "Xinyan" -> emit(characterDetailsAdapter.fromJson(XinyanDetailsSource.details))
+                "Yae Miko" -> emit(characterDetailsAdapter.fromJson(YaeMikoDetailsSourcePt.details))
 
-                "Yae Miko" -> emit(characterDetailsAdapter.fromJson(YaeMikoDetailsSource.details))
+                "Yanfei" -> emit(characterDetailsAdapter.fromJson(YanfeiDetailsSourcePt.details))
 
-                "Yanfei" -> emit(characterDetailsAdapter.fromJson(YanfeiDetailsSource.details))
+                "Yaoyao" -> emit(characterDetailsAdapter.fromJson(YaoYaoDetailsSourcePt.details))
 
-                "Yaoyao" -> emit(characterDetailsAdapter.fromJson(YaoYaoDetailsSource.details))
+                "Yelan" -> emit(characterDetailsAdapter.fromJson(YelanDetailsSourcePt.details))
 
-                "Yelan" -> emit(characterDetailsAdapter.fromJson(YelanDetailsSource.details))
+                "Yoimiya" -> emit(characterDetailsAdapter.fromJson(YoimiyaDetailsSourcePt.details))
 
-                "Yoimiya" -> emit(characterDetailsAdapter.fromJson(YoimiyaDetailsSource.details))
+                "Yun Jin" -> emit(characterDetailsAdapter.fromJson(YunJinDetailsSourcePt.details))
 
-                "Yun Jin" -> emit(characterDetailsAdapter.fromJson(YunJinDetailsSource.details))
+                "Zhongli" -> emit(characterDetailsAdapter.fromJson(ZhongliDetailsSourcePt.details))
 
-                "Zhongli" -> emit(characterDetailsAdapter.fromJson(ZhongliDetailsSource.details))
-
-                "Faruzan" -> emit(characterDetailsAdapter.fromJson(FaruzanDetailsSource.details))
+                "Faruzan" -> emit(characterDetailsAdapter.fromJson(FaruzanDetailsSourcePt.details))
 
                 else -> throw IllegalArgumentException("There is no character with name : $characterName")
             }

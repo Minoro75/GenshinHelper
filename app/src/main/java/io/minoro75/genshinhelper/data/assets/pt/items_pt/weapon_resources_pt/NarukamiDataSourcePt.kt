@@ -14,7 +14,7 @@ object NarukamiDataSourcePt {
           {
             "name": "Narukami",
             "domain_name": "Court of Flowing Sand",
-            "description": "You can collect Narukami resources as a random reward from the domain located in Inazuma"
+            "description": "Você pode coletar recursos do conjunto Narukami como recompensas aleatórias do domínio localizado em Inazuma."
           }
         ]
     """.trimIndent()

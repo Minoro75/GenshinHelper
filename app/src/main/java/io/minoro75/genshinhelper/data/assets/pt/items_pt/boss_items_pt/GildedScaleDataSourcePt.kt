@@ -12,14 +12,14 @@ object GildedScaleDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Gilded Scale",
+            "name": "Escama Dourada",
             "domain_name": "Beneath the Dragon-Queller",
-            "description": "You can collect Gilded Scale as a random reward from the Azhdaha domain located near Mt. Hulao."
+            "description": "Você pode coletar a Escama Dourada como uma recompensa aleatória do domínio do Azhdaha, localizado na Montanha Hulao."
           },
           {
-            "name": "Gilded Scale",
+            "name": "Escama Dourada",
             "domain_name": "Convert: Gilded Scale",
-            "description": "Go to a Crafting table and use the Convert section to convert one item to another."
+            "description": "Vá para um Balcão de Síntese e use a seção Converter para converter um item em outro."
           }
         ]
     """.trimIndent()

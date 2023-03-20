@@ -1,4 +1,4 @@
-package io.minoro75.genshinhelper.data.assets.en.books
+package io.minoro75.genshinhelper.data.assets.pt.books_pt
 
 import org.intellij.lang.annotations.Language
 
@@ -12,7 +12,7 @@ object WedSatBooksSourcePt {
     val booksList = """
         [
           {
-            "book_name": "Ballad",
+            "book_name": "Poemas",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/7e/Item_Philosophies_of_Ballad.png",
             "characters": [
               {
@@ -46,7 +46,7 @@ object WedSatBooksSourcePt {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/35/Rosaria_Icon.png/revision/latest"
               },
               {
-                "name": "Traveler (Anemo)",
+                "name": "Viajante (Anemo)",
                 "rarity": 5,
                 "element": "anemo",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
@@ -60,7 +60,7 @@ object WedSatBooksSourcePt {
             ]
           },
           {
-            "book_name": "Gold",
+            "book_name": "Ouro",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/01/Item_Philosophies_of_Gold.png",
             "characters": [
               {
@@ -70,7 +70,7 @@ object WedSatBooksSourcePt {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e1/Beidou_Icon.png/revision/latest"
               },
               {
-                "name": "Traveler (Geo)",
+                "name": "Viajante (Geo)",
                 "rarity": 5,
                 "element": "geo",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
@@ -102,7 +102,7 @@ object WedSatBooksSourcePt {
             ]
           },
           {
-            "book_name": "Light",
+            "book_name": "Luz Celeste",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/95/Item_Philosophies_of_Light.png",
             "characters": [
               {
@@ -124,7 +124,7 @@ object WedSatBooksSourcePt {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/22/Sayu_Icon.png/revision/latest"
               },
               {
-                "name": "Traveler (Electro)",
+                "name": "Viajante (Electro)",
                 "rarity": 5,
                 "element": "electro",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
@@ -138,7 +138,7 @@ object WedSatBooksSourcePt {
             ]
           },
           {
-            "book_name": "Praxis",
+            "book_name": "Práxis",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/82/Item_Philosophies_of_Praxis.png",
             "characters": [
               {
@@ -160,7 +160,7 @@ object WedSatBooksSourcePt {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/58/Nilou_Icon.png/revision/latest"
               },
               {
-                "name": "Traveler (Dendro)",
+                "name": "Viajante (Dendro)",
                 "rarity": 5,
                 "element": "dendro",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"

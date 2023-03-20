@@ -12,9 +12,9 @@ object DeepwoodMemoriesDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Deepwood Memories",
+            "name": "Memórias da Floresta",
             "domain_name": "Spire of Solitary Enlightenment",
-            "description": "Domain reward"
+            "description": "Recompensa do Domínio"
           }
         ]
     """.trimIndent()

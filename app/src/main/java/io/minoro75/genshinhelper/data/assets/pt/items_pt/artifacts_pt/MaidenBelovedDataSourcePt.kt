@@ -12,14 +12,14 @@ object MaidenBelovedDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Maiden Beloved",
+            "name": "Donzela Amada",
             "domain_name": "Valley of Remembrance",
-            "description": "Domain reward"
+            "description": "Recompensa do Domínio"
           },
           {
-            "name": "Maiden Beloved",
+            "name": "Donzela Amada",
             "domain_name": "Artifact Strongbox: Maiden Beloved",
-            "description": "Go to a Crafting table and use the Artifact Strongbox: Maiden Beloved to convert at least 3 Artifacts into one brand new artifact."
+            "description": "Vá para um Balcão de Síntese e use o Relicário: Donzela Amada para converter pelo menos 3 artefatos em um novo artefato."
           }
         ]
     """.trimIndent()

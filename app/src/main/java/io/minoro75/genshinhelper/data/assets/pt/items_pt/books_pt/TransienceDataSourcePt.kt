@@ -12,9 +12,9 @@ object TransienceDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Transience",
+            "name": "Mundo Mortal",
             "domain_name": "Violet Court",
-            "description": "You can collect Transience books as a random reward from the domain located in Inazuma"
+            "description": "Você pode coletar os livros do conjunto Mundo Mortal como recompensas aleatórias do domínio localizado em Inazuma."
           }
         ]
     """.trimIndent()

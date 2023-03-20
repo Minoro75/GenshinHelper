@@ -12,14 +12,14 @@ object ShardOfFoulLegacyDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Shard of a Foul Legacy",
+            "name": "Fragmento de Espada do Rei Demônio",
             "domain_name": "Enter the Golden House",
-            "description": "You can collect Shard of Foul Legacy as a random reward from the Childe domain located in Liyue Harbour."
+            "description": "Você pode coletar o Fragmento de Espada do Rei Demônio como uma recompensa aleatória do domínio do Childe, localizado no Porto de Liyue."
           },
           {
-            "name": "Shard of a Foul Legacy",
+            "name": "Fragmento de Espada do Rei Demônio",
             "domain_name": "Convert: Shard of Foul Legacy",
-            "description": "Go to a Crafting table and use the Convert section to convert one item to another."
+            "description": "Vá para um Balcão de Síntese e use a seção Converter para converter um item em outro."
           }
         ]
     """.trimIndent()

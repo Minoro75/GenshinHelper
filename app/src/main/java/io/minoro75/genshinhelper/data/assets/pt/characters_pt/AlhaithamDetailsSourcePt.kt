@@ -12,31 +12,31 @@ object AlhaithamDetailsSourcePt {
           "weapon": "sword",
           "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/2c/Alhaitham_Icon.png/revision/latest",
           "talents_books": {
-            "book_name": "Ingenuity",
+            "book_name": "Engenhosidade",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f7/Item_Philosophies_of_Ingenuity.png",
-            "book_days": "Tuesday/Friday/Sunday"
+            "book_days": "Terça-feira/Sexta-feira/Domingo"
           },
           "weekly_boss_item": {
-            "boss_item_name": "Mirror of Mushin",
+            "boss_item_name": "Lentes Desalmadas",
             "boss_item_url": "https://static.wikia.nocookie.net/gensin-impact/images/e/ee/Item_Mirror_of_Mushin.png"
           },
           "talents_priority": [
-            "Skill",
-            "Burst",
-            "Attack"
+            "Habilidade",
+            "Supremo",
+            "Ataque"
           ],
           "artifacts": [
             {
-              "artifact_name": "Deepwood Memories",
+              "artifact_name": "Memórias da Floresta",
               "artifact_url": "https://paimon.moe/images/artifacts/deepwood_memories_flower.png",
               "artifact_amount": 4,
-              "artifact_gobelet": "Dendro DPS",
-              "artifact_circlet": "CRIT Rate / CRIT DMG",
-              "artifact_sands": "Elemental Mastery"
+              "artifact_gobelet": "Dano Dendro",
+              "artifact_circlet": "Taxa Crítica / Dano Crítico",
+              "artifact_sands": "Proficiência Elemental"
             }
           ],
           "weapon_best": {
-             "weapon_name": "Light of Foliar Incision",
+             "weapon_name": "Luz das Folhas Cortadas",
               "weapon_url": "https://paimon.moe/images/weapons/light_of_foliar_incision.png",
               "weapon_rarity": 5
           },
@@ -47,12 +47,12 @@ object AlhaithamDetailsSourcePt {
             "weapon_rarity": 5
             },
             {
-              "weapon_name": "Mistsplitter Reforged",
+              "weapon_name": "Cortadora da Neblina Reforjada",
               "weapon_url": "https://paimon.moe/images/weapons/mistsplitter_reforged.png",
               "weapon_rarity": 5
             },
             {
-              "weapon_name": "Harbinger of Dawn",
+              "weapon_name": "Prenúncio do Alvorecer",
               "weapon_url": "https://paimon.moe/images/weapons/harbinger_of_dawn.png",
               "weapon_rarity": 3
             }

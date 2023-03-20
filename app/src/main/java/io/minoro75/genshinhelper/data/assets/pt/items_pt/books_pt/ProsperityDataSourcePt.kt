@@ -12,9 +12,9 @@ object ProsperityDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Prosperity",
+            "name": "Prosperidade",
             "domain_name": "Taishan Mansion",
-            "description": "You can collect Prosperity books as a random reward from the domain located in Liyue"
+            "description": "Você pode coletar os livros do conjunto Prosperidade como recompensas aleatórias do domínio localizado em Liyue."
           }
         ]
     """.trimIndent()

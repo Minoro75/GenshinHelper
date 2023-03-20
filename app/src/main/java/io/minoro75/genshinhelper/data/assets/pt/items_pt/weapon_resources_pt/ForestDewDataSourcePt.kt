@@ -12,9 +12,9 @@ object ForestDewDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Forest Dew",
+            "name": "Orvalho Florestal",
             "domain_name": "Tower of Abject Pride",
-            "description": "You can collect Forest Dews resources as a random reward from the domain located in Sumeru"
+            "description": "Você pode coletar recursos do conjunto Orvalho Florestal como recompensas aleatórias do domínio localizado em Sumeru."
           }
         ]
     """.trimIndent()

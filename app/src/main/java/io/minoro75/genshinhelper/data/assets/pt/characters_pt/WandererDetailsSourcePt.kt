@@ -6,48 +6,48 @@ object WandererDetailsSourcePt {
     @Language("JSON")
     val details = """
         {
-          "name": "Wanderer",
+          "name": "Andarilho",
           "rarity": 5,
           "element": "anemo",
           "weapon": "catalyst",
           "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f8/Wanderer_Icon.png/revision/latest",
           "talents_books": {
-            "book_name": "Praxis",
+            "book_name": "Práxis",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/82/Item_Philosophies_of_Praxis.png",
-            "book_days": "Wednesday/Saturday/Sunday"
+            "book_days": "Quarta-feira/Sábado/Domingo"
           },
           "weekly_boss_item": {
-            "boss_item_name": "Daka's Bell",
+            "boss_item_name": "Sino do Vazio",
             "boss_item_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a2/Item_Daka%27s_Bell.png"
           },
           "talents_priority": [
-            "Attack",
-            "Skill",
-            "Burst"
+            "Ataque",
+            "Habilidade",
+            "Supremo"
           ],
           "artifacts": [
             {
-              "artifact_name": "Viridescent Venerer",
+              "artifact_name": "Sombra Verde",
               "artifact_url": "https://paimon.moe/images/artifacts/viridescent_venerer_flower.png",
               "artifact_amount": 4,
-              "artifact_gobelet": "Anemo DPS",
-              "artifact_circlet": "CRIT Rate / CRIT DMG ",
-              "artifact_sands": "ATK%"
+              "artifact_gobelet": "Dano Anemo",
+              "artifact_circlet": "Taxa Crítica / Dano Crítico",
+              "artifact_sands": "ATQ%"
             }
           ],
           "weapon_best": {
-            "weapon_name": "Tulaytullah's Remembrance",
+            "weapon_name": "Reminescências de Tulaytullah",
             "weapon_url": "https://paimon.moe/images/weapons/tulaytullahs_remembrance.png",
             "weapon_rarity": 5
           },
           "weapons_replacements": [
             {
-              "weapon_name": "Skyward Atlas",
+              "weapon_name": "Atlas Celestial",
               "weapon_url": "https://paimon.moe/images/weapons/skyward_atlas.png",
               "weapon_rarity": 5
             },
             {
-              "weapon_name": "The Widsith",
+              "weapon_name": "Sinfonia dos Indolentes",
               "weapon_url": "https://paimon.moe/images/weapons/the_widsith.png",
               "weapon_rarity": 4
             },

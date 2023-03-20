@@ -6,53 +6,53 @@ object TravelerGeoDetailsSourcePt {
     @Language("JSON")
     val details = """
         {
-          "name": "Traveler (Geo)",
+          "name": "Viajante (Geo)",
           "rarity": 5,
           "element": "geo",
           "weapon": "sword",
           "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest",
           "talents_books": {
-            "book_name": "Prosperity",
+            "book_name": "Prosperidade",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/bd/Item_Philosophies_of_Prosperity.png",
-            "book_days": "Monday/Thursday/Sunday"
+            "book_days": "Segunda-feira/Quinta-feira/Domingo"
           },
           "weekly_boss_item": {
-            "boss_item_name": "Tail of Boreas",
+            "boss_item_name": "Cauda do Vento do Norte",
             "boss_item_url": "https://static.wikia.nocookie.net/gensin-impact/images/6/66/Item_Tail_of_Boreas.png"
           },
           "talents_priority": [
-            "Skill",
-            "Burst",
-            "Attack"
+            "Habilidade",
+            "Supremo",
+            "Ataque"
           ],
           "artifacts": [
             {
-              "artifact_name": "Emblem of Severed Fate",
+              "artifact_name": "Selo da Insulação",
               "artifact_url": "https://paimon.moe/images/artifacts/emblem_of_severed_fate_flower.png",
               "artifact_amount": 4,
-              "artifact_gobelet": "Geo DPS",
-              "artifact_circlet": "CRIT Rate / CRIT DMG ",
-              "artifact_sands": "ATK% / Energy Recharge"
+              "artifact_gobelet": "Dano Geo",
+              "artifact_circlet": "Taxa  Crítica / Dano Crítico",
+              "artifact_sands": "ATQ% / Recarga de Energia"
             }
           ],
           "weapon_best": {
-            "weapon_name": "Primordial Jade Cutter",
+            "weapon_name": "Cortador de Jade Primordial",
             "weapon_url": "https://paimon.moe/images/weapons/primordial_jade_cutter.png",
             "weapon_rarity": 5
           },
           "weapons_replacements": [
             {
-              "weapon_name": "Summit Shaper",
+              "weapon_name": "Cortador de Montanhas",
               "weapon_url": "https://paimon.moe/images/weapons/summit_shaper.png",
               "weapon_rarity": 5
             },
             {
-              "weapon_name": "Festering Desire",
+              "weapon_name": "Espada Pútrida",
               "weapon_url": "https://paimon.moe/images/weapons/festering_desire.png",
               "weapon_rarity": 4
             },
             {
-              "weapon_name": "Amenoma Kageuchi",
+              "weapon_name": "Lâmina Amenoma Kageuta",
               "weapon_url": "https://paimon.moe/images/weapons/amenoma_kageuchi.png",
               "weapon_rarity": 4
             }

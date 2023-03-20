@@ -1,4 +1,4 @@
-package io.minoro75.genshinhelper.data.assets.en.books
+package io.minoro75.genshinhelper.data.assets.pt.books_pt
 
 import org.intellij.lang.annotations.Language
 
@@ -12,7 +12,7 @@ object TueFriBooksSourcePt {
     val booksList = """
         [
           {
-            "book_name": "Resistance",
+            "book_name": "Resistência",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/0b/Item_Philosophies_of_Resistance.png",
             "characters": [
               {
@@ -58,7 +58,7 @@ object TueFriBooksSourcePt {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b8/Razor_Icon.png/revision/latest"
               },
               {
-                "name": "Traveler (Anemo)",
+                "name": "Viajante (Anemo)",
                 "rarity": 5,
                 "element": "anemo",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
@@ -66,7 +66,7 @@ object TueFriBooksSourcePt {
             ]
           },
           {
-            "book_name": "Diligence",
+            "book_name": "Esforço",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c2/Item_Philosophies_of_Diligence.png",
             "characters": [
               {
@@ -94,7 +94,7 @@ object TueFriBooksSourcePt {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e3/Kaedehara_Kazuha_Icon.png/revision/latest"
               },
               {
-                "name": "Traveler (Geo)",
+                "name": "Viajante (Geo)",
                 "rarity": 5,
                 "element": "geo",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
@@ -120,7 +120,7 @@ object TueFriBooksSourcePt {
             ]
           },
           {
-            "book_name": "Elegance",
+            "book_name": "Cultura",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/6/6f/Item_Philosophies_of_Elegance.png",
             "characters": [
               {
@@ -154,7 +154,7 @@ object TueFriBooksSourcePt {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b3/Kuki_Shinobu_Icon.png/revision/latest"
               },
               {
-                "name": "Traveler (Electro)",
+                "name": "Viajante (Electro)",
                 "rarity": 5,
                 "element": "electro",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
@@ -162,7 +162,7 @@ object TueFriBooksSourcePt {
             ]
           },
           {
-            "book_name": "Ingenuity",
+            "book_name": "Engenhosidade",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f7/Item_Philosophies_of_Ingenuity.png",
             "characters": [
               {
@@ -190,7 +190,7 @@ object TueFriBooksSourcePt {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f9/Nahida_Icon.png/revision/latest"
               },
               {
-                "name": "Traveler (Dendro)",
+                "name": "Viajante (Dendro)",
                 "rarity": 5,
                 "element": "dendro",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"

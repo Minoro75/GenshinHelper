@@ -14,7 +14,7 @@ object DecarabianDataSourcePt {
           {
             "name": "Decarabian",
             "domain_name": "Cecilia Garden",
-            "description": "You can collect Decarabian resources as a random reward from the domain located in Mondstadt"
+            "description": "Você pode coletar recursos do conjunto Decarabian como recompensas aleatórias do domínio localizado em Mondstadt."
           }
         ]
     """.trimIndent()

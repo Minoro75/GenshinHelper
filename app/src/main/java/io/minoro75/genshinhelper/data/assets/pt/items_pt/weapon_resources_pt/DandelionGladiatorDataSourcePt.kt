@@ -12,9 +12,9 @@ object DandelionGladiatorDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Dandelion Gladiator",
+            "name": "Gladiador de Dandelion",
             "domain_name": "Cecilia Garden",
-            "description": "You can collect Dandelion Gladiator's resources as a random reward from the domain located in Mondstadt"
+            "description": "Você pode coletar recursos do conjunto Gladiador  de Dandelion como recompensas aleatórias do domínio localizado em Mondstadt."
           }
         ]
     """.trimIndent()

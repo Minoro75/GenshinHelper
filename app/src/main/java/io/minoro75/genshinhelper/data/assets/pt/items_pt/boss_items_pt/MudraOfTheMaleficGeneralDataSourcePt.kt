@@ -12,14 +12,14 @@ object MudraOfTheMaleficGeneralDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Mudra of the Malefic General",
+            "name": "Mudra da Shogun Maléfica",
             "domain_name": "End of the Oneiric Euthymia",
-            "description": "You can collect the Mudra of the Malefic General as a random reward from the Raiden Shogun Trounce Domain located under the Grand Narukami Shrine."
+            "description": "Você pode coletar a Mudra da Shogun Maléfica como uma recompensa aleatória do domínio da Raiden Shogun, localizado no Grande Santuário Narukami."
           },
           {
-            "name": "Mudra of the Malefic General",
+            "name": "Mudra da Shogun Maléfica",
             "domain_name": "Convert: Mudra of the Malefic General",
-            "description": "Go to a Crafting table and use the Convert section to convert one item to another."
+            "description": "Vá para um Balcão de Síntese e use a seção Converter para converter um item em outro."
           }
         ]
     """.trimIndent()

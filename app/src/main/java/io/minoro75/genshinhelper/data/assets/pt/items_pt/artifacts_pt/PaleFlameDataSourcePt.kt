@@ -12,9 +12,9 @@ object PaleFlameDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Pale Flame",
+            "name": "Chama Pálida",
             "domain_name": "Ridge Watch",
-            "description": "Domain reward"
+            "description": "Recompensa do Domínio"
           }
         ]
     """.trimIndent()

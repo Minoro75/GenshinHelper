@@ -12,9 +12,9 @@ object EleganceDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Elegance",
+            "name": "Cultura",
             "domain_name": "Violet Court",
-            "description": "You can collect Elegance books as a random reward from the domain located in Inazuma"
+            "description": "Você pode coletar os livros do conjunto Cultura como recompensas aleatórias do domínio localizado em Inazuma."
           }
         ]
     """.trimIndent()

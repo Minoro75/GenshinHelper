@@ -12,31 +12,31 @@ object YoimiyaDetailsSourcePt {
           "weapon": "bow",
           "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/88/Yoimiya_Icon.png/revision/latest",
           "talents_books": {
-            "book_name": "Transience",
+            "book_name": "Mundo Mortal",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/27/Item_Philosophies_of_Transience.png",
-            "book_days": "Monday/Thursday/Sunday"
+            "book_days": "Segunda-feira/Quinta-feira/Domingo"
           },
           "weekly_boss_item": {
-            "boss_item_name": "Dragon Lord's Crown",
+            "boss_item_name": "Coroa do Senhor dos Dragões",
             "boss_item_url": "https://paimon.moe/images/items/dragon_lords_crown.png"
           },
           "talents_priority": [
-            "Attack",
-            "Skill",
-            "Burst"
+            "Ataque",
+            "Habilidade",
+            "Supremo"
           ],
           "artifacts": [
             {
-              "artifact_name": "Shimenawa's Reminiscence",
+              "artifact_name": "Reminescência Nostálgica",
               "artifact_url": "https://paimon.moe/images/artifacts/shimenawas_reminiscence_flower.png",
               "artifact_amount": 4,
-              "artifact_gobelet": "Pyro DPS",
-              "artifact_circlet": "CRIT Rate / CRIT DMG ",
-              "artifact_sands": "ATK%"
+              "artifact_gobelet": "Dano Pyro",
+              "artifact_circlet": "Taxa Crítica / Dano Crítico",
+              "artifact_sands": "ATQ%"
             }
           ],
           "weapon_best": {
-            "weapon_name": "Thundering Pulse",
+            "weapon_name": "Agitação Trovejante",
             "weapon_url": "https://paimon.moe/images/weapons/thundering_pulse.png",
             "weapon_rarity": 5
           },
@@ -47,12 +47,12 @@ object YoimiyaDetailsSourcePt {
             "weapon_rarity": 5
             },
             {
-              "weapon_name": "Rust",
+              "weapon_name": "Arco Enferrujado",
               "weapon_url": "https://paimon.moe/images/weapons/rust.png",
               "weapon_rarity": 4
             },
             {
-              "weapon_name": "Prototype Crescent",
+              "weapon_name": "Protótipo",
               "weapon_url": "https://paimon.moe/images/weapons/prototype_crescent.png",
               "weapon_rarity": 4
             }

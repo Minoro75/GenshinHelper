@@ -12,14 +12,14 @@ object GladiatorsFinaleDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Gladiator's Finale",
+            "name": "Último Juramento do Gladiador",
             "domain_name": "Bosses",
-            "description": "Any boss drops"
+            "description": "Recompensa de Qualquer Chefe"
           },
           {
-            "name": "Gladiator's Finale",
+            "name": "Último Juramento do Gladiador",
             "domain_name": "Artifact Strongbox: Gladiator's Finale",
-            "description": "Go to a Crafting table and use the Artifact Strongbox: Gladiator's Finale to convert at least 3 Artifacts into one brand new artifact."
+            "description": "Vá para um Balcão de Síntese e use o Relicário: Último Juramento do Gladiador para converter pelo menos 3 artefatos em um novo artefato."
           }
         ]
     """.trimIndent()

@@ -12,9 +12,9 @@ object OceanHuedClamDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Ocean-Hued Clam",
+            "name": "Concha Tingida Pelo Mar",
             "domain_name": "Slumbering Court",
-            "description": "Domain reward"
+            "description": "Recompensa do Domínio"
           }
         ]
     """.trimIndent()

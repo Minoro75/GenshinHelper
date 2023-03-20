@@ -12,14 +12,14 @@ object RingOfBoreasDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Ring of Boreas",
+            "name": "Cálice do Vento Norte",
             "domain_name": "Lupus Boreas, Dominator of Wolves",
-            "description": "You can collect Ring of Boreas as a random reward from the Lupus Boreas located in Wolvendom."
+            "description": "Você pode coletar o Cálice do Vento Norte como uma recompensa aleatória do Lupus Boreas, localizado no Reino dos Lobos."
           },
           {
-            "name": "Ring of Boreas",
+            "name": "Cálice do Vento Norte",
             "domain_name": "Convert: Ring of Boreas",
-            "description": "Go to a Crafting table and use the Convert section to convert one item to another."
+            "description": "Vá para um Balcão de Síntese e use a seção Converter para converter um item em outro."
           }
         ]
     """.trimIndent()

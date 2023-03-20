@@ -12,9 +12,9 @@ object ResistanceDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Resistance",
+            "name": "Resistência",
             "domain_name": "Forsaken Rift",
-            "description": "You can collect Resistance books as a random reward from the domain located in Mondstadt"
+            "description": "Você pode coletar os livros do conjunto Resistência como recompensas aleatórias do domínio localizado em Mondstadt."
           }
         ]
     """.trimIndent()

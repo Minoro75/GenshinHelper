@@ -12,9 +12,9 @@ object DistantSeaDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Distant Sea",
+            "name": "Mar Distante",
             "domain_name": "Court of Flowing Sand",
-            "description": "You can collect Distant Sea resources as a random reward from the domain located in Inazuma"
+            "description": "Você pode coletar recursos do conjunto Mar Distante como recompensas aleatórias do domínio localizado em Inazuma."
           }
         ]
     """.trimIndent()

@@ -12,9 +12,9 @@ object ShimenavasReminiscenceDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Shimenawa's Reminiscence",
+            "name": "Reminescência Nostálgica",
             "domain_name": "Momiji-Dyed Court",
-            "description": "Domain reward"
+            "description": "Recompensa do Domínio"
           }
         ]
     """.trimIndent()

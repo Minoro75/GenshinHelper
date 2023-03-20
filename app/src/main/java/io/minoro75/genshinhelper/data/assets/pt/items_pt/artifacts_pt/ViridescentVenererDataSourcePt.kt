@@ -12,14 +12,14 @@ object ViridescentVenererDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Viridescent Venerer",
+            "name": "Sombra Verde",
             "domain_name": "Valley of Remembrance",
-            "description": "Domain reward"
+            "description": "Recompensa do Domínio"
           },
           {
-            "name": "Viridescent Venerer",
+            "name": "Sombra Verde",
             "domain_name": "Artifact Strongbox: Viridescent Venerer",
-            "description": "Go to a Crafting table and use the Artifact Strongbox: Viridescent Venerer to convert at least 3 Artifacts into one brand new artifact."
+            "description": "Vá para um Balcão de Síntese e use o Relicário: Sombra Verde para converter pelo menos 3 artefatos em um novo artefato."
           }
         ]
     """.trimIndent()

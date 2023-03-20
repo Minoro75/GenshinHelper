@@ -12,9 +12,9 @@ object VermilionHereafterDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Vermillion Hereafter",
+            "name": "Além-Vida Cinábrio",
             "domain_name": "The Lost Valley",
-            "description": "Domain reward"
+            "description": "Recompensa do Domínio"
           }
         ]
     """.trimIndent()

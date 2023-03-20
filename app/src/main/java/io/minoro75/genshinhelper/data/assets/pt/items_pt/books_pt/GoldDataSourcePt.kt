@@ -12,9 +12,9 @@ object GoldDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Gold",
+            "name": "Ouro",
             "domain_name": "Taishan Mansion",
-            "description": "You can collect Gold books as a random reward from the domain located in Liyue"
+            "description": "Você pode coletar os livros do conjunto Ouro como recompensas aleatórias do domínio localizado em Liyue."
           }
         ]
     """.trimIndent()

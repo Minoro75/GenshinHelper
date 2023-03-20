@@ -12,31 +12,31 @@ object KamisatoAyakaDetailsSourcePt {
           "weapon": "sword",
           "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/51/Kamisato_Ayaka_Icon.png/revision/latest",
           "talents_books": {
-            "book_name": "Elegance",
+            "book_name": "Cultura",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/6/6f/Item_Philosophies_of_Elegance.png",
-            "book_days": "Tuesday/Friday/Sunday"
+            "book_days": "Terça-feira/Sexta-feira/Domingo"
           },
           "weekly_boss_item": {
-            "boss_item_name": "Bloodjade Branch",
+            "boss_item_name": "Galho de Jade de Sangue",
             "boss_item_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b1/Item_Bloodjade_Branch.png"
           },
           "talents_priority": [
-            "Burst",
-            "Attack",
-            "Skill"
+            "Supremo",
+            "Ataque",
+            "Habilidade"
           ],
           "artifacts": [
             {
-              "artifact_name": "Blizzard Strayer",
+              "artifact_name": "Herói Invernal",
               "artifact_url": "https://paimon.moe/images/artifacts/blizzard_strayer_flower.png",
               "artifact_amount": 4,
-              "artifact_gobelet": "Cryo DPS",
-              "artifact_circlet": "CRIT Rate / CRIT DMG",
-              "artifact_sands": "ATK%"
+              "artifact_gobelet": "Dano Cryo",
+              "artifact_circlet": "Taxa Crítica / Dano Crítico",
+              "artifact_sands": "ATQ%"
             }
           ],
           "weapon_best": {
-            "weapon_name": "Mistsplitter Reforged",
+            "weapon_name": "Cortadora da Neblina Reforjada",
             "weapon_url": "https://paimon.moe/images/weapons/mistsplitter_reforged.png",
             "weapon_rarity": 5
           },
@@ -47,12 +47,12 @@ object KamisatoAyakaDetailsSourcePt {
               "weapon_rarity": 5
             },
             {
-              "weapon_name": "The Black Sword",
+              "weapon_name": "Espada Negra",
               "weapon_url": "https://paimon.moe/images/weapons/the_black_sword.png",
               "weapon_rarity": 4
             },
             {
-              "weapon_name": "Amenoma Kageuchi",
+              "weapon_name": "Lâmina Amenoma Kageuta",
               "weapon_url": "https://paimon.moe/images/weapons/amenoma_kageuchi.png",
               "weapon_rarity": 4
             }

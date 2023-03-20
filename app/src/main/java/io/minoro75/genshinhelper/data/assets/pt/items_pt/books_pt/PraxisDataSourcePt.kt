@@ -2,7 +2,7 @@ package io.minoro75.genshinhelper.data.assets.pt.items_pt.books_pt
 
 import org.intellij.lang.annotations.Language
 
-object PraxisDataSource {
+object PraxisDataSourcePt {
     /** here we define our JSON instead of reading from assets **/
 
     // for internal use only
@@ -12,9 +12,9 @@ object PraxisDataSource {
     val sourcesList = """
         [
           {
-            "name": "Praxis",
+            "name": "Práxis",
             "domain_name": "Steeple of Ignorance",
-            "description": "You can collect Praxis books as a random reward from the domain located in Sumeru"
+            "description": "Você pode coletar os livros do conjunto Práxis como recompensas aleatórias do domínio localizado em Sumeru."
           }
         ]
     """.trimIndent()

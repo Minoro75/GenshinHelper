@@ -9,7 +9,7 @@ object ChongyunDetailsSourceUk {
               "name": "Чонʼюнь",
               "rarity": 4,
               "element": "cryo",
-              "weapon": "sword",
+              "weapon": "claymore",
               "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/35/Chongyun_Icon.png/revision/latest",
               "talents_books": {
                 "book_name": "про Старанність",

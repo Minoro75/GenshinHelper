@@ -12,9 +12,9 @@ object LightDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Light",
+            "name": "Luz Celeste",
             "domain_name": "Violet Court",
-            "description": "You can collect Light books as a random reward from the domain located in Inazuma"
+            "description": "Você pode coletar os livros do conjunto Luz Celeste como recompensas aleatórias do domínio localizado em Inazuma."
           }
         ]
     """.trimIndent()

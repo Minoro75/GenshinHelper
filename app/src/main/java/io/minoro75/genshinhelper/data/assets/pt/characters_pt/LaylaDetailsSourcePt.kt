@@ -12,47 +12,47 @@ object LaylaDetailsSourcePt {
           "weapon": "sword",
           "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/1/1a/Layla_Icon.png/revision/latest",
           "talents_books": {
-            "book_name": "Ingenuity",
+            "book_name": "Engenhosidade",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f7/Item_Philosophies_of_Ingenuity.png",
-            "book_days": "Tuesday/Friday/Sunday"
+            "book_days": "Terça-feira/Sexta-feira/Domingo"
           },
           "weekly_boss_item": {
-            "boss_item_name": "Mirror of Mushin",
+            "boss_item_name": "Lentes Desalmadas",
             "boss_item_url": "https://static.wikia.nocookie.net/gensin-impact/images/e/ee/Item_Mirror_of_Mushin.png"
           },
           "talents_priority": [
-            "Skill",
-            "Burst",
-            "Attack"
+            "Habilidade",
+            "Supremo",
+            "Ataque"
           ],
           "artifacts": [
             {
-              "artifact_name": "Tenacity of the Millelith",
+              "artifact_name": "Millelith Firmes",
               "artifact_url": "https://paimon.moe/images/artifacts/tenacity_of_the_millelith_flower.png",
               "artifact_amount": 4,
-              "artifact_gobelet": "Cryo DPS / HP%",
-              "artifact_circlet": "Crit Rate /Crit DMG / HP%",
-              "artifact_sands": "HP%"
+              "artifact_gobelet": "Dano Cryo / Vida%",
+              "artifact_circlet": "Taxa Crítica / Dano  Crítico / Vida%",
+              "artifact_sands": "Vida%"
             }
           ],
           "weapon_best": {
-             "weapon_name": "Key of Khaj-Nisut",
+             "weapon_name": "Chave Hierofania",
               "weapon_url": "https://paimon.moe/images/weapons/key_of_khaj-nisut.png",
               "weapon_rarity": 5
           },
           "weapons_replacements": [
             {
-              "weapon_name": "Favonius Sword",
+              "weapon_name": "Espada de Favonius",
               "weapon_url": "https://paimon.moe/images/weapons/favonius_sword.png",
               "weapon_rarity": 4
             },
             {
-              "weapon_name": "Skyward Blade",
+              "weapon_name": "Espada Celestial",
               "weapon_url": "https://paimon.moe/images/weapons/skyward_blade.png",
               "weapon_rarity": 5
             },
             {
-              "weapon_name": "Favonius Sword",
+              "weapon_name": "Espada de Favonius",
               "weapon_url": "https://paimon.moe/images/weapons/favonius_sword.png",
               "weapon_rarity": 4
             }

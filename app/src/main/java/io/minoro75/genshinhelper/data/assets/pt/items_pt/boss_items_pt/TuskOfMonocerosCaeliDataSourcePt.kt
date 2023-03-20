@@ -12,14 +12,14 @@ object TuskOfMonocerosCaeliDataSourcePt {
     val sourcesList = """
         [
           {
-            "name": "Tusk of Monoceros Caeli",
+            "name": "Chifre de Baleia Come-Céu",
             "domain_name": "Enter the Golden House",
-            "description": "You can collect Tusk of Monoceros Caeli as a random reward from the Childe domain located in Liyue Harbour."
+            "description": "Você pode coletar o Chifre de Baleia Come-Céu como uma recompensa aleatória do domínio do Childe, localizado no Porto de Liyue."
           },
            {
-            "name": "Tusk of Monoceros Caeli",
+            "name": "Chifre de Baleia Come-Céu",
             "domain_name": "Convert: Tusk of Monoceros Caeli",
-            "description": "Go to a Crafting table and use the Convert section to convert one item to another."
+            "description": "Vá para um Balcão de Síntese e use a seção Converter para converter um item em outro."
           }
         ]
     """.trimIndent()

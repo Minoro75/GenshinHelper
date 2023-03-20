@@ -31,7 +31,7 @@ object BeidouDetailsSourceUk {
                   "artifact_url": "https://paimon.moe/images/artifacts/emblem_of_severed_fate_flower.png",
                   "artifact_amount": 4,
                   "artifact_gobelet": "Електро ДПС",
-                  "artifact_circlet": "Кріт. Шанс or Кріт. Дамаг",
+                  "artifact_circlet": "Кріт. Шанс / Кріт. Дамаг",
                   "artifact_sands": "Сила Атаки% / Відновлення енергії"
                 }
               ],
