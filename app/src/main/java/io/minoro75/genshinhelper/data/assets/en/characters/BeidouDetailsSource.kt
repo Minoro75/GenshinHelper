@@ -31,7 +31,7 @@ object BeidouDetailsSource {
                   "artifact_url": "https://paimon.moe/images/artifacts/emblem_of_severed_fate_flower.png",
                   "artifact_amount": 4,
                   "artifact_gobelet": "Electro DPS",
-                  "artifact_circlet": "CRIT Rate or CRIT DMG",
+                  "artifact_circlet": "CRIT Rate / CRIT DMG",
                   "artifact_sands": "ATK% / Energy Recharge"
                 }
               ],

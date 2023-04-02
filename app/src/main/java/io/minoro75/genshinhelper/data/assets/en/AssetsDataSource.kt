@@ -7,84 +7,15 @@ import io.minoro75.genshinhelper.data.assets.en.books.SundayBooksSource
 import io.minoro75.genshinhelper.data.assets.en.books.TueFriBooksSource
 import io.minoro75.genshinhelper.data.assets.en.books.WedSatBooksSource
 import io.minoro75.genshinhelper.data.assets.en.characters.*
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.ArchaicPetraDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.BlizzardStrayerDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.BloodstainedChivalryDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.CrimsonWitchOfFlamesDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.DeepwoodMemoriesDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.EchoesOfTheOfferingDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.EmblemOfSeveredFateDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.GildedDreamsDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.GladiatorsFinaleDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.HeartOfDepthDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.HuskOfOpulentDreamsDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.LavawalkerDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.MaidenBelovedDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.NoblesseObligeDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.OceanHuedClamDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.PaleFlameDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.RetracingBolideDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.ShimenavasReminiscenceDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.TenacityOfTheMillelithDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.ThunderingFuryDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.ThundersootherDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.VermilionHereafterDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.ViridescentVenererDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.artifacts.WanderersTroupeDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.books.AdmonitionDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.books.BalladDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.books.DiligenceDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.books.EleganceDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.books.FreedomDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.books.GoldDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.books.IngenuityDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.books.LightDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.books.PraxisDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.books.ProsperityDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.books.ResistanceDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.books.TransienceDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.AshenHeartDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.BloodjadeBranchDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.DakasBellDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.DragonLordsCrownDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.DvalinsClawDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.DvalinsPlumeDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.DvalinsSighDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.GildedScaleDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.HellfireButterflyDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.MirrorOfMushinDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.MoltenMomentDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.MudraOfTheMaleficGeneralDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.PuppetStringsDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.RingOfBoreasDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.ShadowOfTheWarriorDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.ShardOfFoulLegacyDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.SpiritLocketOfBoreasDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.TailOfBoreasDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.TearsOfTheCalamitiousGodDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.TheMeaningOfAeonsDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.boss_items.TuskOfMonocerosCaeliDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.weapon_resources.AerosideriteDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.weapon_resources.BorealWolfDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.weapon_resources.DandelionGladiatorDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.weapon_resources.DecarabianDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.weapon_resources.DistantSeaDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.weapon_resources.ForestDewDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.weapon_resources.GuyunDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.weapon_resources.MaskDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.weapon_resources.MistVeiledDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.weapon_resources.NarukamiDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.weapon_resources.OasisGardenDataSource
-import io.minoro75.genshinhelper.data.assets.en.items.weapon_resources.ScorchingMightDataSource
+import io.minoro75.genshinhelper.data.assets.en.items.artifacts.*
+import io.minoro75.genshinhelper.data.assets.en.items.books.*
+import io.minoro75.genshinhelper.data.assets.en.items.boss_items.*
+import io.minoro75.genshinhelper.data.assets.en.items.weapon_resources.*
 import io.minoro75.genshinhelper.data.assets.en.weapons_resources.MonThuWeaponsResSource
 import io.minoro75.genshinhelper.data.assets.en.weapons_resources.SundayWeaponsResSource
 import io.minoro75.genshinhelper.data.assets.en.weapons_resources.TueFriWeaponsResSource
 import io.minoro75.genshinhelper.data.assets.en.weapons_resources.WedSatWeaponsResSource
-import io.minoro75.genshinhelper.domain.model.CharacterDetails
-import io.minoro75.genshinhelper.domain.model.CharacterModel
-import io.minoro75.genshinhelper.domain.model.HowToObtainItem
-import io.minoro75.genshinhelper.domain.model.TodayBooks
-import io.minoro75.genshinhelper.domain.model.TodayWeaponResources
+import io.minoro75.genshinhelper.domain.model.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
@@ -436,6 +367,8 @@ class AssetsDataSource @Inject constructor(
                 "Layla" -> emit(characterDetailsAdapter.fromJson(LaylaDetailsSource.details))
 
                 "Lisa" -> emit(characterDetailsAdapter.fromJson(LisaDetailsSource.details))
+
+                "Mika" -> emit(characterDetailsAdapter.fromJson(MikaDetailsSource.details))
 
                 "Mona" -> emit(characterDetailsAdapter.fromJson(MonaDetailsSource.details))
 

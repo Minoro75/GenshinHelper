@@ -401,6 +401,13 @@ object SundayBooksSource {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/6/65/Lisa_Icon.png/revision/latest"
               },
               {
+                "name": "Mika",
+                "rarity": 4,
+                "element": "cryo",
+                "weapon": "polearm",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/d/dd/Mika_Icon.png/revision/latest"
+              },
+              {
                 "name": "Rosaria",
                 "rarity": 4,
                 "element": "cryo",

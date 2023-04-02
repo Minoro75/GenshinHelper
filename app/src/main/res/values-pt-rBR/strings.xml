@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Terminal Akasha</string>
+    <string name="home">Início</string>
+    <string name="characters">Personagens</string>
+    <string name="map">Mapa</string>
+    <string name="info">Info</string>
+    <string name="sword">Espada</string>
+    <string name="claymore">Espadão</string>
+    <string name="bow">Arco</string>
+    <string name="catalyst">Catalisador</string>
+    <string name="polearm">Lança</string>
+    <string name="available_at">Disponível em:</string>
+    <string name="talents_priority">Talentos Prioritários</string>
+    <string name="weekly_boss">Item de Chefe Semanal</string>
+    <string name="artifacts">Artefatos</string>
+    <string name="artifacts_stats">Status dos Artefatos</string>
+    <string name="bis">Recomendado</string>
+    <string name="alternatives">Alternativas</string>
+    <string name="f2p">F2P</string>
+    <string name="go_back">Voltar</string>
+    <string name="greeting">Bem-vindo, Viajante aqui estão suas aventuras diárias</string>
+    <string name="about">Sobre</string>
+    <string name="disclaimer">Isenção de Responsabilidade</string>
+    <string name="this_app">Este aplicativo não é afiliado ou endossado por MiHoYo, Hoyoverse ou Cognosphere Pte.Ltd Ajudante de Genshin é apenas um auxiliar de atividades diárias e banco de dados para o jogo Genshin Impact.</string>
+    <string name="support">Suporte</string>
+    <string name="visit_github_page">Visitar página no Github</string>
+    <string name="i_ve">Eu criei este app com Compose e puramente no Kotlin. E também é de código aberto no Github \nSinta-se livre para contribuir / relatar erros, e então irei revisar o mais rápido o possível.</string>
+    <string name="loading">Carregando</string>
+    <string name="available_in_lang">Disponível nesses idiomas:</string>
+    <string name="special_thanks">Agradecimentos especiais</string>
+    <string name="makoto">Makoto Colors - PT_BR tradução</string>
+    <string name="if_you_wish">Se você deseja me ajudar com a tradução para o seu idioma, entre em contato comigo através do Telegram.</string>
+</resources>
