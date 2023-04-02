@@ -27,4 +27,7 @@
     <string name="i_ve">Eu criei este app com Compose e puramente no Kotlin. E também é de código aberto no Github \nSinta-se livre para contribuir / relatar erros, e então irei revisar o mais rápido o possível.</string>
     <string name="loading">Carregando</string>
     <string name="available_in_lang">Disponível nesses idiomas:</string>
+    <string name="special_thanks">Agradecimentos especiais</string>
+    <string name="makoto">Makoto Colors - PT_BR tradução</string>
+    <string name="if_you_wish">Se você deseja me ajudar com a tradução para o seu idioma, entre em contato comigo através do Telegram.</string>
 </resources>

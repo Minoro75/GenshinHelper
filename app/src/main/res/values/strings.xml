@@ -29,7 +29,11 @@
     <string name="available_in_lang">Available in these languages:</string>
     <string name="en" translatable="false">🇺🇸 English</string>
     <string name="ua" translatable="false">🇺🇦 Українська</string>
-    <string name="pt_br" translatable="false">🇧🇷 Português do Brasil</string>
+    <string name="pt_br" translatable="false">🇧🇷 Português</string>
     <string name="ru" translatable="false">Русский</string>
+    <string name="special_thanks">Special thanks</string>
+    <string name="makoto">Makoto Colors - PT_BR translation</string>
+    <string name="if_you_wish">If you wish to help me with translation to your language tou can contact me via Telegram.</string>
+    <string name="telegram" translatable="false">Telegram</string>
 
 </resources>
