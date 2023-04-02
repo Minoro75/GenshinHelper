@@ -356,6 +356,8 @@ class AssetsDataSourceRu @Inject constructor(
 
                 "Кандакия" -> emit(characterDetailsAdapter.fromJson(CandaceDetailsSourceRu.detailsRu))
 
+                "Мика" -> emit(characterDetailsAdapter.fromJson(MikaDetailsSourceRu.details))
+
                 "Чун Юнь" -> emit(characterDetailsAdapter.fromJson(ChongyunDetailsSourceRu.detailsRu))
 
                 "Коллеи" -> emit(characterDetailsAdapter.fromJson(ColleiDetailsSourceRu.detailsRu))
