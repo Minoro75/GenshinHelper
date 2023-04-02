@@ -27,4 +27,9 @@
     <string name="i_ve">I\'ve created this app with Compose and purely on Kotlin. Also it\'s open-source on github \nFeel free to create a PR\'s / issues i\'ll review them asap</string>
     <string name="loading">Loading</string>
     <string name="available_in_lang">Available in these languages:</string>
+    <string name="en" translatable="false">🇺🇸 English</string>
+    <string name="ua" translatable="false">🇺🇦 Українська</string>
+    <string name="pt_br" translatable="false">🇧🇷 Português do Brasil</string>
+    <string name="ru" translatable="false">Русский</string>
+
 </resources>

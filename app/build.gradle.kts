@@ -84,7 +84,7 @@ dependencies {
     implementation(Dependencies.Other.firebaseAnalytics)
 
     implementation("androidx.core:core-ktx:1.9.0")
-    implementation("androidx.compose.ui:ui-tooling-preview:1.3.3")
+    implementation("androidx.compose.ui:ui-tooling-preview:1.4.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.5.1")
     implementation(Dependencies.Compose.activity)
     implementation(Dependencies.Compose.appCompat)

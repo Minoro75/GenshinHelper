@@ -5,7 +5,7 @@ object Dependencies {
     object Compose {
         const val version = "1.4.0-beta02"
         const val composeCompiler = "1.4.3"
-        const val material3Version = "1.1.0-alpha07"
+        const val material3Version = "1.1.0-beta01"
         const val navigationVersion = "2.6.0-alpha05"
         const val lifecycle_version = "2.6.0-alpha03"
         const val app_compat_versioon = "1.7.0-alpha01"

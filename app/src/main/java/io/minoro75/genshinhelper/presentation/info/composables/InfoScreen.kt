@@ -11,6 +11,10 @@ import androidx.compose.foundation.*
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.platform.LocalContext
@@ -22,6 +26,7 @@ import androidx.core.os.LocaleListCompat
 import io.minoro75.genshinhelper.R
 import io.minoro75.genshinhelper.presentation.theme.GenshinHelperTheme
 import io.minoro75.genshinhelper.presentation.theme.GenshinTypography
+import kotlinx.coroutines.launch
 import java.util.*
 
 @Composable
@@ -43,6 +48,7 @@ fun InfoScreen() {
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun About() {
     OutlinedCard(
@@ -56,6 +62,16 @@ fun About() {
         border = BorderStroke(2.dp, SolidColor(MaterialTheme.colorScheme.primary))
     ) {
         val context = LocalContext.current
+        val openSheet = rememberSaveable { mutableStateOf(false) }
+        val modalSheetState = rememberModalBottomSheetState(skipPartiallyExpanded = true)
+
+
+        if (openSheet.value) {
+            LanguagesBottomSheet(
+                onDismissRequest = { openSheet.value = false },
+                sheetState = modalSheetState
+            )
+        }
         Column(Modifier.padding(8.dp)) {
             Text(
                 text = stringResource(id = R.string.about),
@@ -106,81 +122,29 @@ fun About() {
                 style = GenshinTypography.bodyMedium
             )
             Spacer(modifier = Modifier.height(8.dp))
-            Column(modifier = Modifier.fillMaxWidth()) {
+
+            FilledTonalButton(
+                onClick = {  openSheet.value = true },
+                colors = ButtonDefaults.buttonColors(),
+                modifier = Modifier.fillMaxWidth()
+            ) {
                 Text(
-                    text = stringResource(id = R.string.available_in_lang),
-                    style = GenshinTypography.bodyLarge,
-                    modifier = Modifier.fillMaxWidth(),
-                    textAlign = TextAlign.Center,
-                    color = MaterialTheme.colorScheme.onPrimaryContainer
+                    text = getCurrentCountryEmoji() + stringResource(id = R.string.available_in_lang),
+                    style = GenshinTypography.bodyMedium,
+                    modifier = Modifier
+                        .fillMaxWidth(),
+                    textAlign = TextAlign.Center
                 )
-                Spacer(modifier = Modifier.height(8.dp))
-                Row(
-                    Modifier
-                        .fillMaxWidth()
-                        .horizontalScroll(rememberScrollState()),
-                    horizontalArrangement = Arrangement.SpaceBetween
-                ) {
-
-                    FilledTonalButton(
-                        onClick = {
-                            AppCompatDelegate.setApplicationLocales(
-                                LocaleListCompat.forLanguageTags("en")
-                            )
-                        },
-                        colors = ButtonDefaults.buttonColors()
-                    ) {
-                        Text(
-                            text = "English",
-                            style = GenshinTypography.bodyMedium
-                        )
-                    }
-
-                    FilledTonalButton(
-                        onClick = {
-                            AppCompatDelegate.setApplicationLocales(
-                                LocaleListCompat.forLanguageTags("uk")
-                            )
-                        },
-                        colors = ButtonDefaults.buttonColors()
-                    ) {
-                        Text(
-                            text = "Українська",
-                            style = GenshinTypography.bodyMedium
-                        )
-                    }
-
-                    FilledTonalButton(
-                        onClick = {
-                            AppCompatDelegate.setApplicationLocales(
-                                LocaleListCompat.forLanguageTags("pt")
-                            )
-                        },
-                        colors = ButtonDefaults.buttonColors()
-                    ) {
-                        Text(
-                            text = "Português do Brasil",
-                            style = GenshinTypography.bodyMedium
-                        )
-                    }
-
-                    FilledTonalButton(
-                        onClick = {
-                            AppCompatDelegate.setApplicationLocales(
-                                LocaleListCompat.forLanguageTags("ru")
-                            )
-                        },
-                        colors = ButtonDefaults.buttonColors()
-                    ) {
-                        Text(
-                            text = "Русский",
-                            style = GenshinTypography.bodyMedium
-                        )
-                    }
-                }
             }
         }
     }
+}
+
+fun getCurrentCountryEmoji(): String = when (Locale.getDefault().displayLanguage) {
+    "русский" -> ""
+    "українська" -> "\uD83C\uDDFA\uD83C\uDDE6 | "
+    "português" -> "\uD83C\uDDE7\uD83C\uDDF7 | "
+    else -> "\uD83C\uDDFA\uD83C\uDDF8 | "
 }
 
 @Suppress("DEPRECATION")
