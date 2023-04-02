@@ -65,7 +65,7 @@ object DoriDetailsSourcePt {
                   "weapon_rarity": 4
                 }
               ],
-              "video_guide": "z5wiq1nMvKw"
+              "video_guide": "2rPs5-bX7qU"
             }
         """.trimIndent()
 }

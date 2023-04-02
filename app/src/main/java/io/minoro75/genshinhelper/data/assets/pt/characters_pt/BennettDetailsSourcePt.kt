@@ -57,7 +57,7 @@ object BennettDetailsSourcePt {
                   "weapon_rarity": 4
                 }
               ],
-              "video_guide": "H0tUlWYGYX8"
+              "video_guide": "x8kvSRGDqIQ"
             }
         """.trimIndent()
 }

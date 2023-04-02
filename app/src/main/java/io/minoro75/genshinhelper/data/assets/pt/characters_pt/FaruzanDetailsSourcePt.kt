@@ -57,7 +57,7 @@ object FaruzanDetailsSourcePt {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": "-hLHi70wbGE"
+          "video_guide": "vGsLLGo45O8"
         }
     """.trimIndent()
 }

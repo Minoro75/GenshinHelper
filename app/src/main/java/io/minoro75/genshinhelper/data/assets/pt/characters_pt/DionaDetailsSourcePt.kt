@@ -57,7 +57,7 @@ object DionaDetailsSourcePt {
               "weapon_rarity": 3
             }
           ],
-          "video_guide": "l9353PeY69I"
+          "video_guide": "Mr5IsyBiAw0"
         }
     """.trimIndent()
 }

@@ -65,7 +65,7 @@ object KeqingDetailsSourcePt {
               "weapon_rarity": 4
             }
           ],
-         "video_guide": "58j-JzAIqAg"
+         "video_guide": "Hz20NV0T070"
         }
     """.trimIndent()
 }

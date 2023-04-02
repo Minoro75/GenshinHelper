@@ -57,7 +57,7 @@ object GorouDetailsSourcePt {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": "-2omwRYqwq4"
+          "video_guide": "jwlDV1ktFIo"
         }
     """.trimIndent()
 }

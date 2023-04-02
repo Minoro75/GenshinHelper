@@ -57,7 +57,7 @@ object EulaDetailsSourcePt {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": "ej0IxVkrHGI"
+          "video_guide": "mZc21a0UbIY"
         }
     """.trimIndent()
 }

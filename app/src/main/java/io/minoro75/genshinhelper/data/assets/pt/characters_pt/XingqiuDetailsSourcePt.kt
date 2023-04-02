@@ -57,7 +57,7 @@ object XingqiuDetailsSourcePt {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": "tHqFAZDMqSQ"
+          "video_guide": "q9lL-BQ1Rss"
         }
     """.trimIndent()
 }

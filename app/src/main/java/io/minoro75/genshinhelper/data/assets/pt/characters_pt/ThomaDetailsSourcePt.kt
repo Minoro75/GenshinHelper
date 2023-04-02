@@ -57,7 +57,7 @@ object ThomaDetailsSourcePt {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": "r-Icv60BxlU"
+          "video_guide": "yJEewYuhppc"
         }
     """.trimIndent()
 }

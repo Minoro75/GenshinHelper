@@ -57,7 +57,7 @@ object BarbaraDetailsSourcePt {
                   "weapon_rarity": 4
                 }
               ],
-              "video_guide": "EkQCm4sorqs"
+              "video_guide": "jHt6rtqSl_c"
             }
         """.trimIndent()
 }

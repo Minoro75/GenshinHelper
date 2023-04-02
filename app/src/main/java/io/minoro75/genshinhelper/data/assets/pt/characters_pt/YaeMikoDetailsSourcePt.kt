@@ -65,7 +65,7 @@ object YaeMikoDetailsSourcePt {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": "UV5m1tmMU_0"
+          "video_guide": "llsCvvHwfu0"
         }
     """.trimIndent()
 }

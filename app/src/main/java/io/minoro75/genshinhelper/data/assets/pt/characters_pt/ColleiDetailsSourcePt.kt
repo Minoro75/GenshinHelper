@@ -57,7 +57,7 @@ object ColleiDetailsSourcePt {
                   "weapon_rarity": 4
                 }
               ],
-              "video_guide": "jz6fxALdydE"
+              "video_guide": "LtTP_ggf1QY"
             }
         """.trimIndent()
 }

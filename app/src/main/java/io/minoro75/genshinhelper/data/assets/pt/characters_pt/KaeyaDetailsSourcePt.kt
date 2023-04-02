@@ -57,7 +57,7 @@ object KaeyaDetailsSourcePt {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": "OgWZfPOf8Zg"
+          "video_guide": "6Z-FahR1sA0"
         }
     """.trimIndent()
 }

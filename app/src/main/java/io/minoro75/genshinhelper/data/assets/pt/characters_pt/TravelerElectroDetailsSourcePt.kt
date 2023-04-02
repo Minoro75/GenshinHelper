@@ -57,7 +57,7 @@ object TravelerElectroDetailsSourcePt {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": "Ng0ObuAE_lM"
+          "video_guide": "YyLNkM28V60"
         }
     """.trimIndent()
 }

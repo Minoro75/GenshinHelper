@@ -57,7 +57,7 @@ object NoelleDetailsSourcePt {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": "xa-tJ93pmDk"
+          "video_guide": "1grF-dj4Dcs"
         }
     """.trimIndent()
 }

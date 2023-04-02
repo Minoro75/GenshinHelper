@@ -57,7 +57,7 @@ object DilucDetailsSourcePt {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": "vwjJqhaXKoc"
+          "video_guide": "HgiZw2_wpus"
         }
     """.trimIndent()
 }

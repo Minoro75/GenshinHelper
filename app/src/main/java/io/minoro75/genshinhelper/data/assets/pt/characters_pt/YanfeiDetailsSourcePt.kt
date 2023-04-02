@@ -57,7 +57,7 @@ object YanfeiDetailsSourcePt {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": "Yez1jO-QzAU"
+          "video_guide": "QqU01CkApFo"
         }
     """.trimIndent()
 }

@@ -57,7 +57,7 @@ object AloyDetailsSourcePt {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": "s_cAQF-Tq30"
+          "video_guide": "BE_Vp__fKPY"
         }
     """.trimIndent()
 }

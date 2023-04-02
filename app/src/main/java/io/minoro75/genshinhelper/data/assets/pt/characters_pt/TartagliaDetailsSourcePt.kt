@@ -57,7 +57,7 @@ object TartagliaDetailsSourcePt {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": "esQi-FO4S7c"
+          "video_guide": "XGqIUtxIAgg"
         }
     """.trimIndent()
 }

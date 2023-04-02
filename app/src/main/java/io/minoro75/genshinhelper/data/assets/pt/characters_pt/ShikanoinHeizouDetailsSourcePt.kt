@@ -58,7 +58,7 @@ object ShikanoinHeizouDetailsSourcePt {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": "og9tMCXAob8"
+          "video_guide": "-6YsDf1krpY"
         }
     """.trimIndent()
 }

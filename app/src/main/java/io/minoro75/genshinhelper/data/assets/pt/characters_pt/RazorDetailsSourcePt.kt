@@ -57,7 +57,7 @@ object RazorDetailsSourcePt {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": "6eL2TQ-Kxy0"
+          "video_guide": "R5gbDTqrZO4"
         }
     """.trimIndent()
 }

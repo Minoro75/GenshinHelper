@@ -57,7 +57,7 @@ object LaylaDetailsSourcePt {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": "uuYIy-EkgZw"
+          "video_guide": "O7KDgyKeCdc"
         }
     """.trimIndent()
 }

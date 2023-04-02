@@ -57,7 +57,7 @@ object VentiDetailsSourcePt {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": "dx9Q87fEpF8"
+          "video_guide": "S9OgMtn01OE"
         }
     """.trimIndent()
 }

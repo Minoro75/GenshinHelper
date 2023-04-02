@@ -65,7 +65,7 @@ object ShenheDetailsSourcePt {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": "DquTtz-XkZo"
+          "video_guide": "3nTJv9Z1Q-Q"
         }
     """.trimIndent()
 }

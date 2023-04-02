@@ -57,7 +57,7 @@ object YunJinDetailsSourcePt {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": "SCxNTYac1RU"
+          "video_guide": "iVgOGFtv3YI"
         }
     """.trimIndent()
 }

@@ -57,7 +57,7 @@ object NahidaDetailsSourcePt {
                   "weapon_rarity": 3
                 }
               ],
-              "video_guide": "F3Ld3hLesBo"
+              "video_guide": "EOsPBRqWldc"
         }
     """.trimIndent()
 }

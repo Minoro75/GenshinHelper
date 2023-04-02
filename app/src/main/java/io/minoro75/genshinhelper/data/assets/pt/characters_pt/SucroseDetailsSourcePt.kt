@@ -57,7 +57,7 @@ object SucroseDetailsSourcePt {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": "1_3DOEw_Xno"
+          "video_guide": "7Eg3ojsSklo"
         }
     """.trimIndent()
 }

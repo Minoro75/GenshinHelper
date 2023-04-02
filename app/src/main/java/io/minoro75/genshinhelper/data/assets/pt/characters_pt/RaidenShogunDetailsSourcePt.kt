@@ -57,7 +57,7 @@ object RaidenShogunDetailsSourcePt {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": "BYBKAZ-VjDI"
+          "video_guide": "rc6L-RMbnwM"
         }
     """.trimIndent()
 }

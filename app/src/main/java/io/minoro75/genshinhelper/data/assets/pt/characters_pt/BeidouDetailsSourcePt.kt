@@ -57,7 +57,7 @@ object BeidouDetailsSourcePt {
                   "weapon_rarity": 4
                 }
               ],
-              "video_guide": "bLZ5nmVZXtw"
+              "video_guide": "zSkqP4ooN-g"
             }
         """.trimIndent()
 }

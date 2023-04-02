@@ -57,7 +57,7 @@ object CandaceDetailsSourcePt {
                   "weapon_rarity": 3
                 }
               ],
-              "video_guide": "YZIU_sHauqM"
+              "video_guide": "Ig4Daj10O1Y"
             }
         """.trimIndent()
 }

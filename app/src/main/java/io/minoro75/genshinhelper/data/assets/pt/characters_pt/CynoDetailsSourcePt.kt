@@ -57,7 +57,7 @@ object CynoDetailsSourcePt {
                   "weapon_rarity": 3
                 }
               ],
-             "video_guide": "7jhkJD3qDQ8"
+             "video_guide": "mxY0Vm7zuCM"
             }
         """.trimIndent()
 }

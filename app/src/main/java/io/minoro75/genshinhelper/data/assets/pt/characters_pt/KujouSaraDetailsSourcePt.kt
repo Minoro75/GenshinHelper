@@ -57,7 +57,7 @@ object KujouSaraDetailsSourcePt {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": "3jurkPtkbOE"
+          "video_guide": "mhgyD1WFR74"
         }
     """.trimIndent()
 }

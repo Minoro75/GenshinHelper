@@ -57,7 +57,7 @@ object RosariaDetailsSourcePt {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": "piArNdgUuV4"
+          "video_guide": "_kNs8INtHRM"
         }
     """.trimIndent()
 }

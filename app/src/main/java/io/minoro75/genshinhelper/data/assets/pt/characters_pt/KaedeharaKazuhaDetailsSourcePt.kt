@@ -57,7 +57,7 @@ object KaedeharaKazuhaDetailsSourcePt {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": "xD6NkyBsNmQ"
+          "video_guide": "uuxp3Mv1RB0"
         }
     """.trimIndent()
 }
