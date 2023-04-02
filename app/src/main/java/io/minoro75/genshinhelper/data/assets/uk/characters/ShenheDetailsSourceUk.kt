@@ -65,7 +65,7 @@ object ShenheDetailsSourceUk {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": null
+          "video_guide": "80cCIockFRU"
         }
     """.trimIndent()
 }
