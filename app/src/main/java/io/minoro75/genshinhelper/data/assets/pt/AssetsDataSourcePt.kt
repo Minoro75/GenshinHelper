@@ -92,7 +92,11 @@ class AssetsDataSourcePt @Inject constructor(
                     )
                 )
 
-                "Memórias da Floresta" -> emit(itemLocationAdapter.fromJson(DeepwoodMemoriesDataSourcePt.sourcesList))
+                "Memórias da Floresta" -> emit(
+                    itemLocationAdapter.fromJson(
+                        DeepwoodMemoriesDataSourcePt.sourcesList
+                    )
+                )
 
                 "Eco do Sacrifício" -> emit(
                     itemLocationAdapter.fromJson(
@@ -108,9 +112,17 @@ class AssetsDataSourcePt @Inject constructor(
 
                 "Sonhos Dourados" -> emit(itemLocationAdapter.fromJson(GildedDreamsDataSourcePt.sourcesList))
 
-                "Último Juramento do Gladiador" -> emit(itemLocationAdapter.fromJson(GladiatorsFinaleDataSourcePt.sourcesList))
+                "Último Juramento do Gladiador" -> emit(
+                    itemLocationAdapter.fromJson(
+                        GladiatorsFinaleDataSourcePt.sourcesList
+                    )
+                )
 
-                "Profundezas do Coração" -> emit(itemLocationAdapter.fromJson(HeartOfDepthDataSourcePt.sourcesList))
+                "Profundezas do Coração" -> emit(
+                    itemLocationAdapter.fromJson(
+                        HeartOfDepthDataSourcePt.sourcesList
+                    )
+                )
 
                 "Casca de Sonhos Opulentos" -> emit(
                     itemLocationAdapter.fromJson(
@@ -124,7 +136,11 @@ class AssetsDataSourcePt @Inject constructor(
 
                 "Antigo Ritual Real" -> emit(itemLocationAdapter.fromJson(NoblesseObligeDataSourcePt.sourcesList))
 
-                "Concha Tingida Pelo Mar" -> emit(itemLocationAdapter.fromJson(OceanHuedClamDataSourcePt.sourcesList))
+                "Concha Tingida Pelo Mar" -> emit(
+                    itemLocationAdapter.fromJson(
+                        OceanHuedClamDataSourcePt.sourcesList
+                    )
+                )
 
                 "Chama Pálida" -> emit(itemLocationAdapter.fromJson(PaleFlameDataSourcePt.sourcesList))
 
@@ -144,7 +160,11 @@ class AssetsDataSourcePt @Inject constructor(
 
                 "Trovão Furioso" -> emit(itemLocationAdapter.fromJson(ThunderingFuryDataSourcePt.sourcesList))
 
-                "Lançador de Trovões" -> emit(itemLocationAdapter.fromJson(ThundersootherDataSourcePt.sourcesList))
+                "Lançador de Trovões" -> emit(
+                    itemLocationAdapter.fromJson(
+                        ThundersootherDataSourcePt.sourcesList
+                    )
+                )
 
                 "Além-Vida Cinábrio" -> emit(
                     itemLocationAdapter.fromJson(
@@ -162,7 +182,11 @@ class AssetsDataSourcePt @Inject constructor(
                 // Boss items
                 "Coração das Cinzas" -> emit(itemLocationAdapter.fromJson(AshenHeartDataSourcePt.sourcesList))
 
-                "Galho de Jade de Sangue" -> emit(itemLocationAdapter.fromJson(BloodjadeBranchDataSourcePt.sourcesList))
+                "Galho de Jade de Sangue" -> emit(
+                    itemLocationAdapter.fromJson(
+                        BloodjadeBranchDataSourcePt.sourcesList
+                    )
+                )
 
                 "Coroa do Senhor dos Dragões" -> emit(
                     itemLocationAdapter.fromJson(
@@ -170,11 +194,23 @@ class AssetsDataSourcePt @Inject constructor(
                     )
                 )
 
-                "Garra do Vento Oriental" -> emit(itemLocationAdapter.fromJson(DvalinsClawDataSourcePt.sourcesList))
+                "Garra do Vento Oriental" -> emit(
+                    itemLocationAdapter.fromJson(
+                        DvalinsClawDataSourcePt.sourcesList
+                    )
+                )
 
-                "Plumas do Vento Oriental" -> emit(itemLocationAdapter.fromJson(DvalinsPlumeDataSourcePt.sourcesList))
+                "Plumas do Vento Oriental" -> emit(
+                    itemLocationAdapter.fromJson(
+                        DvalinsPlumeDataSourcePt.sourcesList
+                    )
+                )
 
-                "Suspiro do Vento Oriental" -> emit(itemLocationAdapter.fromJson(DvalinsSighDataSourcePt.sourcesList))
+                "Suspiro do Vento Oriental" -> emit(
+                    itemLocationAdapter.fromJson(
+                        DvalinsSighDataSourcePt.sourcesList
+                    )
+                )
 
                 "Escama Dourada" -> emit(itemLocationAdapter.fromJson(GildedScaleDataSourcePt.sourcesList))
 
@@ -192,7 +228,11 @@ class AssetsDataSourcePt @Inject constructor(
                     )
                 )
 
-                "Cálice do Vento Norte" -> emit(itemLocationAdapter.fromJson(RingOfBoreasDataSourcePt.sourcesList))
+                "Cálice do Vento Norte" -> emit(
+                    itemLocationAdapter.fromJson(
+                        RingOfBoreasDataSourcePt.sourcesList
+                    )
+                )
 
                 "Sombra do Guerreiro" -> emit(
                     itemLocationAdapter.fromJson(
@@ -212,7 +252,11 @@ class AssetsDataSourcePt @Inject constructor(
                     )
                 )
 
-                "Cauda do Vento do Norte" -> emit(itemLocationAdapter.fromJson(TailOfBoreasDataSourcePt.sourcesList))
+                "Cauda do Vento do Norte" -> emit(
+                    itemLocationAdapter.fromJson(
+                        TailOfBoreasDataSourcePt.sourcesList
+                    )
+                )
 
                 "Lágrima da Deusa do Desastre" -> emit(
                     itemLocationAdapter.fromJson(
@@ -377,6 +421,8 @@ class AssetsDataSourcePt @Inject constructor(
                 "Layla" -> emit(characterDetailsAdapter.fromJson(LaylaDetailsSourcePt.details))
 
                 "Lisa" -> emit(characterDetailsAdapter.fromJson(LisaDetailsSourcePt.details))
+
+                "Mika" -> emit(characterDetailsAdapter.fromJson(MikaDetailsSourcePt.details))
 
                 "Mona" -> emit(characterDetailsAdapter.fromJson(MonaDetailsSourcePt.details))
 
