@@ -568,6 +568,8 @@ class AssetsDataSourceUk @Inject constructor(
 
                 "Фарузан" -> emit(characterDetailsAdapter.fromJson(FaruzanDetailsSourceUk.details))
 
+                "Міка" -> emit(characterDetailsAdapter.fromJson(MikaDetailsSourceUk.details))
+
                 else -> throw IllegalArgumentException("There is no character with name : $characterName")
             }
         }
