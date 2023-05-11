@@ -49,6 +49,7 @@ data class HowToObtainItem(
             "Lupus Boreas, Dominator of Wolves" -> R.drawable.dg_wolf_domain
             "Enter the Golden House" -> R.drawable.dg_childe_domain
             "Joururi Workshop" -> R.drawable.dg_scaramouche
+            "Realm of Beginnings" -> R.drawable.dg_realm_of_beginnings
             // Boss items Alchemy
             "Convert: Ashen Heart" -> R.drawable.ic_ashen
             "Convert: Bloodjade Branch" -> R.drawable.ic_bloodjade
@@ -71,6 +72,7 @@ data class HowToObtainItem(
             "Convert: Puppet Strings" -> R.drawable.ic_puppet
             "Convert: Mirror of Mushin" -> R.drawable.ic_mirror_of_mushin
             "Convert: Daka's Bell" -> R.drawable.ic_takas_bell
+            "Convert: Worldspan Fern" -> R.drawable.ic_worldspan_fern
             // Books
             "Steeple of Ignorance" -> R.drawable.dg_steeple_of_ignorance
             "Forsaken Rift" -> R.drawable.dg_forsaken_rift

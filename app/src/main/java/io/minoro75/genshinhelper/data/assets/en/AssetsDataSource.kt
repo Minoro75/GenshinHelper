@@ -238,6 +238,8 @@ class AssetsDataSource @Inject constructor(
 
                 "Mirror of Mushin" -> emit(itemLocationAdapter.fromJson(MirrorOfMushinDataSource.sourcesList))
 
+                "Worldspan Fern" -> emit(itemLocationAdapter.fromJson(WorldspanFernDataSource.sourcesList))
+
                 // Books
                 "Admonition" -> emit(itemLocationAdapter.fromJson(AdmonitionDataSource.sourcesList))
 
@@ -309,6 +311,8 @@ class AssetsDataSource @Inject constructor(
                 "Amber" -> emit(characterDetailsAdapter.fromJson(AmberDetailsSource.details))
 
                 "Arataki Itto" -> emit(characterDetailsAdapter.fromJson(AratakiIttoDetailsSource.details))
+
+                "Baizhu" -> emit(characterDetailsAdapter.fromJson(BaizhuDetailsSource.details))
 
                 "Barbara" -> emit(characterDetailsAdapter.fromJson(BarbaraDetailsSource.details))
 
