@@ -71,6 +71,12 @@ object WedSatBooksSourceUk {
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/01/Item_Philosophies_of_Gold.png",
             "characters": [
               {
+                "name": "Бай Чжу",
+                "rarity": 5,
+                "element": "electro",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/cb/Baizhu_Icon.png/revision/latest"
+              },
+              {
                 "name": "Бейдоу",
                 "rarity": 4,
                 "element": "electro",

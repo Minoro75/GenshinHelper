@@ -64,6 +64,7 @@ import io.minoro75.genshinhelper.data.assets.uk.items.boss_items.TailOfBoreasDat
 import io.minoro75.genshinhelper.data.assets.uk.items.boss_items.TearsOfTheCalamitiousGodDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.boss_items.TheMeaningOfAeonsDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.boss_items.TuskOfMonocerosCaeliDataSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.items.boss_items.WorldspanFernDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.weapon_resources.AerosideriteDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.weapon_resources.BorealWolfDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.weapon_resources.DandelionGladiatorDataSourceUk
@@ -331,7 +332,9 @@ class AssetsDataSourceUk @Inject constructor(
 
                 "Дзеркало Мушіну" -> emit(itemLocationAdapter.fromJson(MirrorOfMushinDataSourceUk.sourcesList))
 
-                "Пустий дзвоник"-> emit(itemLocationAdapter.fromJson(DakasBellDataSourceUk.sourcesList))
+                "Пустий дзвоник" -> emit(itemLocationAdapter.fromJson(DakasBellDataSourceUk.sourcesList))
+
+                "Світоросла папороть" -> emit(itemLocationAdapter.fromJson(WorldspanFernDataSourceUk.sourcesList))
 
                 // Books
 
@@ -407,6 +410,8 @@ class AssetsDataSourceUk @Inject constructor(
                 "Ембер" -> emit(characterDetailsAdapter.fromJson(AmberDetailsSourceUk.details))
 
                 "Аратакі Ітто" -> emit(characterDetailsAdapter.fromJson(AratakiIttoDetailsSourceUk.details))
+
+                "Бай Чжу" -> emit(characterDetailsAdapter.fromJson(BaizhuDetailsSourceUk.details))
 
                 "Барбара" -> emit(characterDetailsAdapter.fromJson(BarbaraDetailsSourceUk.details))
 

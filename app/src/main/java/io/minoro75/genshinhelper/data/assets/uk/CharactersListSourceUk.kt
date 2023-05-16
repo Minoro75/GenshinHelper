@@ -33,6 +33,13 @@ object CharactersListSourceUk {
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/7b/Arataki_Itto_Icon.png/revision/latest"
     },
     {
+      "name": "Бай Чжу",
+      "rarity": 5,
+      "element": "dendro",
+      "weapon": "catalyst",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/cb/Baizhu_Icon.png/revision/latest"
+    },
+    {
       "name": "Барбара",
       "rarity": 4,
       "element": "hydro",
