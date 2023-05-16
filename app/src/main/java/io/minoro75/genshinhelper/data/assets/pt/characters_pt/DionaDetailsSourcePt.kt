@@ -31,7 +31,7 @@ object DionaDetailsSourcePt {
               "artifact_url": "https://paimon.moe/images/artifacts/noblesse_oblige_flower.png",
               "artifact_amount": 4,
               "artifact_gobelet": "Vida%",
-              "artifact_circlet": "Bônus  de Cura / Vida%",
+              "artifact_circlet": "Bônus de Cura / Vida%",
               "artifact_sands": "Recarga de Energia / Vida%"
             }
           ],

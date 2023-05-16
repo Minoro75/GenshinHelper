@@ -14,7 +14,7 @@ object BarbaraDetailsSourcePt {
               "talents_books": {
                 "book_name": "Liberdade",
                 "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/Item_Philosophies_of_Freedom.png",
-                "book_days": "Monday/Thursday/Sunday"
+                "book_days": "Segunda-feira/Quinta-feira/Domingo"
               },
               "weekly_boss_item": {
                 "boss_item_name": "Cálice do Vento Norte",

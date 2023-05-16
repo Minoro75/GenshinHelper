@@ -228,6 +228,12 @@ class AssetsDataSourcePt @Inject constructor(
                     )
                 )
 
+                "Samambaia do Paraíso Exuberante" -> emit(
+                    itemLocationAdapter.fromJson(
+                        WorldspanFernDataSourcePt.sourcesList
+                    )
+                )
+
                 "Cálice do Vento Norte" -> emit(
                     itemLocationAdapter.fromJson(
                         RingOfBoreasDataSourcePt.sourcesList
@@ -355,6 +361,8 @@ class AssetsDataSourcePt @Inject constructor(
                 "Andarilho" -> emit(characterDetailsAdapter.fromJson(WandererDetailsSourcePt.details))
 
                 "Arataki Itto" -> emit(characterDetailsAdapter.fromJson(AratakiIttoDetailsSourcePt.details))
+
+                "Baizhu" -> emit(characterDetailsAdapter.fromJson(BaizhuDetailsSourcePt.details))
 
                 "Barbara" -> emit(characterDetailsAdapter.fromJson(BarbaraDetailsSourcePt.details))
 

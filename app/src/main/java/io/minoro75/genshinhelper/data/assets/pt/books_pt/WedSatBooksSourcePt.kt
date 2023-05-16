@@ -71,6 +71,12 @@ object WedSatBooksSourcePt {
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/01/Item_Philosophies_of_Gold.png",
             "characters": [
               {
+                "name": "Baizhu",
+                "rarity": 5,
+                "element": "dendro",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/cb/Baizhu_Icon.png/revision/latest"
+              },
+              {
                 "name": "Beidou",
                 "rarity": 4,
                 "element": "electro",
