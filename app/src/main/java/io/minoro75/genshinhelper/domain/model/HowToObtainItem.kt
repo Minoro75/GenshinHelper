@@ -73,6 +73,8 @@ data class HowToObtainItem(
             "Convert: Mirror of Mushin" -> R.drawable.ic_mirror_of_mushin
             "Convert: Daka's Bell" -> R.drawable.ic_takas_bell
             "Convert: Worldspan Fern" -> R.drawable.ic_worldspan_fern
+            "Convert: Primordial Greenbloom" -> R.drawable.ic_primordial_greenbloom
+            "Convert: Everamber" -> R.drawable.ic_everambler
             // Books
             "Steeple of Ignorance" -> R.drawable.dg_steeple_of_ignorance
             "Forsaken Rift" -> R.drawable.dg_forsaken_rift

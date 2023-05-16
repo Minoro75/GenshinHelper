@@ -172,6 +172,12 @@ object TueFriBooksSource {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/2c/Alhaitham_Icon.png/revision/latest"
               },
               {
+                "name": "Kaveh",
+                "rarity": 4,
+                "element": "dendro",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/1/1f/Kaveh_Icon.png/revision/latest"
+              },
+              {
                 "name": "Dori",
                 "rarity": 4,
                 "element": "electro",

@@ -240,6 +240,10 @@ class AssetsDataSource @Inject constructor(
 
                 "Worldspan Fern" -> emit(itemLocationAdapter.fromJson(WorldspanFernDataSource.sourcesList))
 
+                "Primordial Greenbloom" -> emit(itemLocationAdapter.fromJson(PrimordialGreenbloomDataSource.sourcesList))
+
+                "Everamber" -> emit(itemLocationAdapter.fromJson(EveramberDataSource.sourcesList))
+
                 // Books
                 "Admonition" -> emit(itemLocationAdapter.fromJson(AdmonitionDataSource.sourcesList))
 
@@ -359,6 +363,8 @@ class AssetsDataSource @Inject constructor(
                 "Kamisato Ayaka" -> emit(characterDetailsAdapter.fromJson(KamisatoAyakaDetailsSource.details))
 
                 "Kamisato Ayato" -> emit(characterDetailsAdapter.fromJson(KamisatoAyatoDetailsSource.details))
+
+                "Kaveh" -> emit(characterDetailsAdapter.fromJson(KavehDetailsSource.details))
 
                 "Keqing" -> emit(characterDetailsAdapter.fromJson(KeqingDetailsSource.details))
 
