@@ -34,6 +34,13 @@ object CharactersListSourceRu {
       "weapon": "sword",
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/27/Kamisato_Ayato_Icon.png/revision/latest"
     },
+     {
+      "name": "Бай Чжу",
+      "rarity": 5,
+      "element": "dendro",
+      "weapon": "catalyst",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/cb/Baizhu_Icon.png/revision/latest"
+    },
     {
       "name": "Барбара",
       "rarity": 4,

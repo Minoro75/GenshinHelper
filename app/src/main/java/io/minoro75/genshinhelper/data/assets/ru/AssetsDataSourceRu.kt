@@ -274,6 +274,8 @@ class AssetsDataSourceRu @Inject constructor(
 
                 "Пустой колокольчик" -> emit(itemLocationAdapter.fromJson(DakasBellDataSourceRu.sourcesList))
 
+                "Объявший небосвод папоротник" -> emit(itemLocationAdapter.fromJson(WorldspanFernDataSourceRu.sourcesList))
+
                 // Books
                 "о Наставлениях" -> emit(itemLocationAdapter.fromJson(AdmonitionDataSourceRu.sourcesList))
 
@@ -349,6 +351,8 @@ class AssetsDataSourceRu @Inject constructor(
                 "Итто" -> emit(characterDetailsAdapter.fromJson(AratakiIttoDetailsSourceRu.detailsRu))
 
                 "Барбара" -> emit(characterDetailsAdapter.fromJson(BarbaraDetailsSourceRu.detailsRu))
+
+                "Бай Чжу" -> emit(characterDetailsAdapter.fromJson(BaizhuDetailsSourceRu.details))
 
                 "Бэй Доу" -> emit(characterDetailsAdapter.fromJson(BeidouDetailsSourceRu.detailsRu))
 
