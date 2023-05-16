@@ -353,6 +353,12 @@ object SundayBooksSourcePt {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/54/Dori_Icon.png/revision/latest"
               },
               {
+                "name": "Kaveh",
+                "rarity": 4,
+                "element": "dendro",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/1/1f/Kaveh_Icon.png/revision/latest"
+              },
+              {
                 "name": "Layla",
                 "rarity": 4,
                 "element": "cryo",

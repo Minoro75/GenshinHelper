@@ -288,6 +288,14 @@ class AssetsDataSourcePt @Inject constructor(
 
                 "Lentes Desalmadas" -> emit(itemLocationAdapter.fromJson(MirrorOfMushinDataSourcePt.sourcesList))
 
+                "Florescência Primogênita do Oásis" -> emit(
+                    itemLocationAdapter.fromJson(
+                        PrimordialGreenbloomDataSourcePt.sourcesList
+                    )
+                )
+
+                "Âmbar Eterno" -> emit(itemLocationAdapter.fromJson(EveramberDataSourcePt.sourcesList))
+
                 // Books
                 "Admoestação" -> emit(itemLocationAdapter.fromJson(AdmonitionDataSourcePt.sourcesList))
 
@@ -417,6 +425,8 @@ class AssetsDataSourcePt @Inject constructor(
                         KamisatoAyatoDetailsSourcePt.details
                     )
                 )
+
+                "Kaveh" -> emit(characterDetailsAdapter.fromJson(KavehDetailsSourcePt.details))
 
                 "Keqing" -> emit(characterDetailsAdapter.fromJson(KeqingDetailsSourcePt.details))
 

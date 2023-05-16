@@ -215,6 +215,13 @@ object CharactersListSourcePt {
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/27/Kamisato_Ayato_Icon.png/revision/latest"
     },
     {
+      "name": "Kaveh",
+      "rarity": 4,
+      "element": "dendro",
+      "weapon": "claymore",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/1/1f/Kaveh_Icon.png/revision/latest"
+    },
+    {
       "name": "Keqing",
       "rarity": 5,
       "element": "electro",
