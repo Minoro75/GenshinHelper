@@ -13,7 +13,7 @@ object EleganceDataSourceRu {
         [
           {
             "name": "об Изяществе",
-            "domain_name": "Фиалковый зал",
+            "domain_name": "Violet Court",
             "description": "Вы можете получить книги об Изяществе как награду из подземелья в Инадзуме"
           }
         ]

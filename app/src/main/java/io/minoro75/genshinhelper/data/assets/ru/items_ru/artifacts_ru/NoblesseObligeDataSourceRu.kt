@@ -13,12 +13,12 @@ object NoblesseObligeDataSourceRu {
         [
           {
             "name": "Церемония древней знати",
-            "domain_name": "Чистая вода и горная пещера",
+            "domain_name": "Clear Pool and Mountain Cavern",
             "description": "Награда подземелья"
           },
           {
             "name": "Церемония древней знати",
-            "domain_name": "Реликварий: Церемония древней знати",
+            "domain_name": "Artifact Strongbox: Noblesse Oblige",
             "description": "Воспользуйтесь Алхимией и создайте Реликварий: Церемония древней знати что бы превратить 3 Артефакта в один из нужного комплекта."
           }
         ]

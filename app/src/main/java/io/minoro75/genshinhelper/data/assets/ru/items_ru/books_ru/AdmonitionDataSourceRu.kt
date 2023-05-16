@@ -13,7 +13,7 @@ object AdmonitionDataSourceRu {
         [
           {
             "name": "о Наставлениях",
-            "domain_name": "Башня невежества",
+            "domain_name": "Steeple of Ignorance",
             "description": "Вы можете получить книги о Наставлениях как награду из подземелья в Сумеру"
           }
         ]

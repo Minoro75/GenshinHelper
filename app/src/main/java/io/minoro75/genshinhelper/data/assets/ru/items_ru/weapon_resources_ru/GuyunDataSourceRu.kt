@@ -13,7 +13,7 @@ object GuyunDataSourceRu {
         [
           {
             "name": "Гуюнь",
-            "domain_name": "Лабиринт Ляншань",
+            "domain_name": "Hidden Palace of Lianshan Formula",
             "description": "Вы можете получить Гуюнь в награду за прохождение подземелья в Ли Юэ"
           }
         ]

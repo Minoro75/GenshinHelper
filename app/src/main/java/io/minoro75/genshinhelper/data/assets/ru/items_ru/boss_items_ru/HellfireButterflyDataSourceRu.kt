@@ -13,12 +13,12 @@ object HellfireButterflyDataSourceRu {
         [
           {
             "name": "Бабочка адского пламени",
-            "domain_name": "Остров Наруками: Тэнсюкаку",
+            "domain_name": "Narukami Island: Tenshukaku",
             "description": "Вы можете получить Бабочка адского пламени как награду за подземелье с Синьорой в Инадзуме."
           },
           {
             "name": "Бабочка адского пламени",
-            "domain_name": "Создать: Бабочка адского пламени",
+            "domain_name": "Convert: Hellfire Butterfly",
             "description": "Используйте вкладку Создать в Алхимии что бы превратить один предмет в другой."
           }
         ]

@@ -13,7 +13,7 @@ object TenacityOfTheMillelithDataSourceRu {
         [
           {
             "name": "Стойкость Миллелита",
-            "domain_name": "Горный дозор",
+            "domain_name": "Ridge Watch",
             "description": "Награда подземелья"
           }
         ]

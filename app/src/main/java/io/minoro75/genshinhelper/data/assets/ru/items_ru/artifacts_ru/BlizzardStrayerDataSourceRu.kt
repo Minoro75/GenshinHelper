@@ -13,12 +13,12 @@ object BlizzardStrayerDataSourceRu {
         [
           {
             "name": "Заблудший в метели",
-            "domain_name": "Пик Виндагнира",
+            "domain_name": "Peak of Vindagnyr",
             "description": "Награда подземелья"
           },
           {
             "name": "Заблудший в метели",
-            "domain_name": "Реликварий: Заблудший в метели",
+            "domain_name": "Artifact Strongbox: Blizzard Strayer",
             "description": "Воспользуйтесь Алхимией и создайте Реликварий: Заблудший в метели что бы превратить 3 Артефакта в один из нужного комплекта."
           }
         ]

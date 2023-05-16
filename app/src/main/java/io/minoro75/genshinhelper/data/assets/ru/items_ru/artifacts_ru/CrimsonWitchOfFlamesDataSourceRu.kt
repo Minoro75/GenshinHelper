@@ -13,12 +13,12 @@ object CrimsonWitchOfFlamesDataSourceRu {
         [
           {
             "name": "Горящая алая ведьма",
-            "domain_name": "Скрытый дворец Уван",
+            "domain_name": "Hidden Palace of Zhou Formula",
             "description": "Награда подземелья"
           },
           {
             "name": "Горящая алая ведьма",
-            "domain_name": "Реликварий: Горящая алая ведьма",
+            "domain_name": "Artifact Strongbox: Crimson Witch of Flames",
             "description": "Воспользуйтесь Алхимией и создайте Реликварий: Горящая алая ведьма что бы превратить 3 Артефакта в один из нужного комплекта."
           }
         ]

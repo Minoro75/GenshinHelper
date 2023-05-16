@@ -13,7 +13,7 @@ object MistVeiledDataSourceRu {
         [
           {
             "name": "Заоблачное море",
-            "domain_name": "Лабиринт Ляншань",
+            "domain_name": "Hidden Palace of Lianshan Formula",
             "description": "Вы можете получить Заоблачное море в награду за прохождение подземелья в Ли Юэ"
           }
         ]

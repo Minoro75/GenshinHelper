@@ -13,12 +13,12 @@ object MudraOfTheMaleficGeneralDataSourceRu {
         [
           {
             "name": "Мудра зловещего генерала",
-            "domain_name": "Конец царства онейроса",
+            "domain_name": "End of the Oneiric Euthymia",
             "description": "Вы можете получить Мудру зловещего генерала как награду за подземелье с Райдэн, которое находится рядом с Великим храмом Наруками."
           },
           {
             "name": "Мудра зловещего генерала",
-            "domain_name": "Создать: Мудра зловещего генерала",
+            "domain_name": "Convert: Mudra of the Malefic General",
             "description": "Используйте вкладку Создать в Алхимии что бы превратить один предмет в другой."
           }
         ]

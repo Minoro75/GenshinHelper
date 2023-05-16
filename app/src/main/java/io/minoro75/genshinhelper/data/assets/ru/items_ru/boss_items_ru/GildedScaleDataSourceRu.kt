@@ -13,12 +13,12 @@ object GildedScaleDataSourceRu {
           [
           {
             "name": "Позолоченная чешуя",
-            "domain_name": "Под древом подавления",
+            "domain_name": "Beneath the Dragon-Queller",
             "description": "Вы можете получить Позолоченную чешую как награду за подземелье с Аждахой возле горы Хулао."
           },
           {
             "name": "Позолоченная чешуя",
-            "domain_name": "Создать: Позолоченная чешуя",
+            "domain_name": "Convert: Gilded Scale",
             "description": "Используйте вкладку Создать в Алхимии что бы превратить один предмет в другой.."
           }
         ]

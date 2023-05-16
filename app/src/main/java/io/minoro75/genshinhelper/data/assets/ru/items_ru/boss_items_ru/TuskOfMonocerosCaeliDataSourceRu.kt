@@ -13,12 +13,12 @@ object TuskOfMonocerosCaeliDataSourceRu {
         [
           {
             "name": "Рог небесного кита",
-            "domain_name": "Золотая палата",
+            "domain_name": "Enter the Golden House",
             "description": "Вы можете получить Рог небесного кита за победу над Чайлдом возле Гавани Ли Юэ."
           },
           {
             "name": "Рог небесного кита",
-            "domain_name": "Создать: Рог небесного кита",
+            "domain_name": "Convert: Tusk of Monoceros Caeli",
             "description": "Используйте вкладку Создать в Алхимии что бы превратить один предмет в другой."
           }
         ]

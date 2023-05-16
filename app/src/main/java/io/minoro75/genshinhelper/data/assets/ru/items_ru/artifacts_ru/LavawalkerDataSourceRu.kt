@@ -13,12 +13,12 @@ object LavawalkerDataSourceRu {
         [
           {
             "name": "Ступающий по лаве",
-            "domain_name": "Скрытый дворец Уван",
+            "domain_name": "Hidden Palace of Zhou Formula",
             "description": "Награда подземелья"
           },
           {
             "name": "Ступающий по лаве",
-            "domain_name": "Реликварий: Ступающий по лаве",
+            "domain_name": "Artifact Strongbox: Lavawalker",
             "description": "Воспользуйтесь Алхимией и создайте Реликварий: Ступающий по лаве что бы превратить 3 Артефакта в один из нужного комплекта."
           }
         ]

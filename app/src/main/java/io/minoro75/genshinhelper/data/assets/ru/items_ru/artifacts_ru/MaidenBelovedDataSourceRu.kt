@@ -13,12 +13,12 @@ object MaidenBelovedDataSourceRu {
         [
           {
             "name": "Возлюбленная юная дева",
-            "domain_name": "Долина воспоминаний",
+            "domain_name": "Valley of Remembrance",
             "description": "Награда подземелья"
           },
           {
             "name": "Возлюбленная юная дева",
-            "domain_name": "Реликварий: Возлюбленная юная дева",
+            "domain_name": "Artifact Strongbox: Maiden Beloved",
             "description": "Воспользуйтесь Алхимией и создайте Реликварий: Возлюбленная юная дева что бы превратить 3 Артефакта в один из нужного комплекта."
           }
         ]

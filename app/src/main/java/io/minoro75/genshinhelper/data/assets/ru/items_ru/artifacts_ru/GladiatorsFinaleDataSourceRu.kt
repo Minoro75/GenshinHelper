@@ -13,12 +13,12 @@ object GladiatorsFinaleDataSourceRu {
         [
           {
             "name": "Конец гладиатора",
-            "domain_name": "Боссы",
+            "domain_name": "Bosses",
             "description": "Может выпасть с любого босса"
           },
           {
             "name": "Конец гладиатора",
-            "domain_name": "Реликварий: Конец гладиатора",
+            "domain_name": "Artifact Strongbox: Gladiator's Finale",
             "description": "Воспользуйтесь Алхимией и создайте Реликварий: Конец гладиатора что бы превратить 3 Артефакта в один из нужного комплекта."
           }
         ]

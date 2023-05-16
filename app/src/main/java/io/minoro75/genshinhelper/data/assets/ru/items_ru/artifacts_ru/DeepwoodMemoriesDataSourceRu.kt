@@ -13,7 +13,7 @@ object DeepwoodMemoriesDataSourceRu {
         [
           {
             "name": "Воспоминаня дремучего леса",
-            "domain_name": "Шпиль одинокого просветления",
+            "domain_name": "Spire of Solitary Enlightenment",
             "description": "Награда подземелья"
           }
         ]

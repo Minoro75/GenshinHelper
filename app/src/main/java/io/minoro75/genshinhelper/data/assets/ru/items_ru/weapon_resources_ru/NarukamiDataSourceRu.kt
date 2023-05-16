@@ -13,7 +13,7 @@ object NarukamiDataSourceRu {
         [
           {
             "name": "Наруками",
-            "domain_name": "Зал текущего песка",
+            "domain_name": "Court of Flowing Sand",
             "description": "Вы можете получить Наруками в награду за прохождение подземелья в Инадзуме"
           }
         ]

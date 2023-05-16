@@ -13,7 +13,7 @@ object EchoesOfTheOfferingDataSourceRu {
         [
           {
             "name": "Отголоски подношения",
-            "domain_name": "Затерянная долина",
+            "domain_name": "The Lost Valley",
             "description": "Награда подземелья"
           }
         ]

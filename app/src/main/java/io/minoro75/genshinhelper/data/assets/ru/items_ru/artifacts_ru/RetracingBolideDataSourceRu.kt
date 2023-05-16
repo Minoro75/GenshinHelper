@@ -13,12 +13,12 @@ object RetracingBolideDataSourceRu {
         [
           {
             "name": "Встречная комета",
-            "domain_name": "Владения Гуюнь",
+            "domain_name": "Domain of Guyun",
             "description": "Награда подземелья"
           },
           {
             "name": "Встречная комета",
-            "domain_name": "Реликварий: Встречная комета",
+            "domain_name": "Artifact Strongbox: Retracing Bolide",
             "description": "Воспользуйтесь Алхимией и создайте Реликварий: Встречная комета что бы превратить 3 Артефакта в один из нужного комплекта."
           }
         ]

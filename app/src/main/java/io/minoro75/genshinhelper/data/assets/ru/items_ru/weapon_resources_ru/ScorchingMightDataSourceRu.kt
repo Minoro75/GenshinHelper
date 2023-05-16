@@ -13,7 +13,7 @@ object ScorchingMightDataSourceRu {
         [
           {
             "name": "Пылающая мощь",
-            "domain_name": "Башня презренной гордости",
+            "domain_name": "Tower of Abject Pride",
             "description": "Вы можете получить Пылающую мощь в награду за прохождение подземелья в Сумеру"
           }
         ]

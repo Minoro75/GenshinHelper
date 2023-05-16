@@ -13,7 +13,7 @@ object GoldDataSourceRu {
         [
           {
             "name": "о Золоте",
-            "domain_name": "Тайшаньфу",
+            "domain_name": "Taishan Mansion",
             "description": "Вы можете получить книги о Золоте как награду из подземелья в Ли Юэ"
           }
         ]

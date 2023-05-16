@@ -13,12 +13,12 @@ object DragonLordsCrownDataSourceRu {
         [
           {
             "name": "Корона лорда драконов",
-            "domain_name": "Под древом подавления",
+            "domain_name": "Beneath the Dragon-Queller",
             "description": "Вы можете получить Ветвь кровавой яшмы как награду за подземелье с Аждахой возле горы Хулао."
           },
           {
             "name": "Корона лорда драконов",
-            "domain_name": "Создать: Корона лорда драконов",
+            "domain_name": "Convert: Dragon Lord's Crown",
             "description": "Используйте вкладку Создать в Алхимии что бы превратить один предмет в другой.."
           }
         ]

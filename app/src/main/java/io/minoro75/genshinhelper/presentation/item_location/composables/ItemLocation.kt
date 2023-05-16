@@ -52,10 +52,7 @@ fun ItemLocation(
 
                 Spacer(modifier = Modifier.height(8.dp))
 
-                Image(painter = painterResource(id = when (Locale.getDefault().displayLanguage) {
-                    "русский" -> item.getImageResourceRu()
-                    else -> item.getImageResource()
-                })
+                Image(painter = painterResource(id =  item.getImageResource())
                     , contentDescription = item.domainName,
                     alignment = Alignment.Center,
                 modifier = modifier

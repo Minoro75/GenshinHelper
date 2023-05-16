@@ -13,7 +13,7 @@ object HuskOfOpulentDreamsDataSourceRu {
         [
           {
             "name": "Кокон сладких грёз",
-            "domain_name": "Дремлющий сад",
+            "domain_name": "Slumbering Court",
             "description": "Награда подземелья"
           }
         ]

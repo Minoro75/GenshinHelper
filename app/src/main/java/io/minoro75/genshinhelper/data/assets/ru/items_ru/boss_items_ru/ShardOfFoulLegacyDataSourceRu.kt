@@ -13,12 +13,12 @@ object ShardOfFoulLegacyDataSourceRu {
        [
           {
             "name": "Осколок дьявольского меча",
-            "domain_name": "Золотая палата",
+            "domain_name": "Enter the Golden House",
             "description": "Вы можете получить Осколок дьявольского меча за победу над Чайлдом возле Гавани Ли Юэ."
           },
           {
             "name": "Осколок дьявольского меча",
-            "domain_name": "Создать: Осколок дьявольского меча",
+            "domain_name": "Convert: Shard of Foul Legacy",
             "description": "Используйте вкладку Создать в Алхимии что бы превратить один предмет в другой."
           }
         ]

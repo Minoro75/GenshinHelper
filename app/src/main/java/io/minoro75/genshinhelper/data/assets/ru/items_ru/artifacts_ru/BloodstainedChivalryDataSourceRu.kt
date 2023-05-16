@@ -13,12 +13,12 @@ object BloodstainedChivalryDataSourceRu {
         [
           {
             "name": "Рыцарь крови",
-            "domain_name": "Чистая вода и горная пещера",
+            "domain_name": "Clear Pool and Mountain Cavern",
             "description": "Награда подземелья"
           },
           {
             "name": "Рыцарь крови",
-            "domain_name": "Реликварий: Рыцарь крови",
+            "domain_name": "Artifact Strongbox: Bloodstained Chivalry",
             "description": "Воспользуйтесь Алхимией и создайте Реликварий: Рыцарь крови что бы превратить 3 Артефакта в один из нужного комплекта."
           }
         ]

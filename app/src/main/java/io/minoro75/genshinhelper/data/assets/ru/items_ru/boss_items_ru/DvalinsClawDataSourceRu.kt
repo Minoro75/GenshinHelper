@@ -13,12 +13,12 @@ object DvalinsClawDataSourceRu {
         [
           {
             "name": "Коготь Двалина",
-            "domain_name": "Логово Ужаса Бури",
+            "domain_name": "Confront Stormterror",
             "description": "Вы можете получить Коготь Двалина как награду за подземелье с Ужасом Бури возле его логова."
           },
           {
             "name": "Коготь Двалина",
-            "domain_name": "Создать: Коготь Двалина",
+            "domain_name": "Convert: Dvalin's Claw",
             "description": "Используйте вкладку Создать в Алхимии что бы превратить один предмет в другой.."
           }
         ]

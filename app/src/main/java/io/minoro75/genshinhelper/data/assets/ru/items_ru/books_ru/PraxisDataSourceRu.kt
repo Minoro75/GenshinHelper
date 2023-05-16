@@ -13,7 +13,7 @@ object PraxisDataSourceRu {
         [
           {
             "name": "о Честности",
-            "domain_name": "Башня невежества",
+            "domain_name": "Steeple of Ignorance",
             "description": "Вы можете получить книги о Честности как награду из подземелья в Сумеру"
           }
         ]

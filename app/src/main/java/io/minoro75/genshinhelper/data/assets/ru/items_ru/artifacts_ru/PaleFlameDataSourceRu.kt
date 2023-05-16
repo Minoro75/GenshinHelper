@@ -13,7 +13,7 @@ object PaleFlameDataSourceRu {
         [
           {
             "name": "Бледный огонь",
-            "domain_name": "Горный дозор",
+            "domain_name": "Ridge Watch",
             "description": "Награда подземелья"
           }
         ]

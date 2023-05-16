@@ -13,12 +13,12 @@ object MoltenMomentDataSourceRu {
         [
           {
             "name": "Расплавленный миг",
-            "domain_name": "Остров Наруками: Тэнсюкаку",
+            "domain_name": "Narukami Island: Tenshukaku",
             "description": "Вы можете получить Расплавленный миг как награду за подземелье с Синьорой в Инадзуме."
           },
           {
             "name": "Расплавленный миг",
-            "domain_name": "Создать: Расплавленный миг",
+            "domain_name": "Convert: Molten Moment",
             "description": "Используйте вкладку Создать в Алхимии что бы превратить один предмет в другой."
           }
         ]

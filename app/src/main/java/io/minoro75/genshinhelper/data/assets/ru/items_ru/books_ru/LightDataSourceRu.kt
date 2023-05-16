@@ -13,7 +13,7 @@ object LightDataSourceRu {
         [
           {
             "name": "о Свете",
-            "domain_name": "Фиалковый зал",
+            "domain_name": "Violet Court",
             "description": "Вы можете получить книги о Свете как награду из подземелья в Инадзуме"
           }
         ]

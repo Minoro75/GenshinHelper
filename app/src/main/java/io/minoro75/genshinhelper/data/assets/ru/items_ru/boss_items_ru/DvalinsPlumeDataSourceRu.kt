@@ -13,12 +13,12 @@ object DvalinsPlumeDataSourceRu {
         [
           {
             "name": "Перо из хвоста Двалина",
-            "domain_name": "Логово Ужаса Бури",
+            "domain_name": "Confront Stormterror",
             "description": "Вы можете получить Перо из хвоста Двалина как награду за подземелье с Ужасом Бури возле его логова."
           },
           {
             "name": "Перо из хвоста Двалина",
-            "domain_name": "Создать: Перо из хвоста Двалина",
+            "domain_name": "Convert: Dvalin's Plume",
             "description": "Используйте вкладку Создать в Алхимии что бы превратить один предмет в другой.."
           }
         ]

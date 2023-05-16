@@ -13,7 +13,7 @@ object ForestDewDataSourceRu {
         [
           {
             "name": "Лесная роса",
-            "domain_name": "Башня презренной гордости",
+            "domain_name": "Tower of Abject Pride",
             "description": "Вы можете получить Лесную росу в награду за прохождение подземелья в Сумеру"
           }
         ]

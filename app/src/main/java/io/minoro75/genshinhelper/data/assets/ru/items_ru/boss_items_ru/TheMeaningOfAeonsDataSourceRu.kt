@@ -13,12 +13,12 @@ object TheMeaningOfAeonsDataSourceRu {
        [
           {
             "name": "Смысл эонов",
-            "domain_name": "Конец царства онейроса",
+            "domain_name": "End of the Oneiric Euthymia",
             "description": "Вы можете получить Смысл эонов как награду за подземелье с Райдэн, которое находится рядом с Великим храмом Наруками."
           },
           {
             "name": "Смысл эонов",
-            "domain_name": "Создать: Смысл эонов",
+            "domain_name": "Convert: The Meaning of Aeons",
             "description": "Используйте вкладку Создать в Алхимии что бы превратить один предмет в другой."
           }
         ]

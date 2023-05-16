@@ -13,7 +13,7 @@ object ProsperityDataSourceRu {
         [
           {
             "name": "о Процветании",
-            "domain_name": "Тайшаньфу",
+            "domain_name": "Taishan Mansion",
             "description": "Вы можете получить книги о Процветании как награду из подземелья в Ли Юэ"
           }
         ]

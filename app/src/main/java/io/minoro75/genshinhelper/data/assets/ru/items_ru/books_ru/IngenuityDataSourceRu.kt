@@ -13,7 +13,7 @@ object IngenuityDataSourceRu {
         [
           {
             "name": "об Остроумии",
-            "domain_name": "Башня невежества",
+            "domain_name": "Steeple of Ignorance",
             "description": "Вы можете получить книги об Остроумии как награду из подземелья в Сумеру"
           }
         ]

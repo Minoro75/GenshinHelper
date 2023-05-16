@@ -13,7 +13,7 @@ object MaskDataSourceRu {
         [
           {
             "name": "Маска",
-            "domain_name": "Зал текущего песка",
+            "domain_name": "Court of Flowing Sand",
             "description": "Вы можете получить Маску в награду за прохождение подземелья в Инадзуме"
           }
         ]

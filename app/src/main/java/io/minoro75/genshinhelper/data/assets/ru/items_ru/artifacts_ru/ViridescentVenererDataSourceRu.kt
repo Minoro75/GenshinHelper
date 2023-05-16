@@ -13,12 +13,12 @@ object ViridescentVenererDataSourceRu {
         [
           {
             "name": "Изумрудная тень",
-            "domain_name": "Долина воспоминаний",
+            "domain_name": "Valley of Remembrance",
             "description": "Награда подземелья"
           },
           {
             "name": "Изумрудная тень",
-            "domain_name": "Реликварий: Изумрудная тень",
+            "domain_name": "Artifact Strongbox: Viridescent Venerer",
             "description": "Воспользуйтесь Алхимией и создайте Реликварий: Изумрудная тень что бы превратить 3 Артефакта в один из нужного комплекта."
           }
         ]

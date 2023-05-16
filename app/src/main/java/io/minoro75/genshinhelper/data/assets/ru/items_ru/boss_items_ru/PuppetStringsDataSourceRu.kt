@@ -14,12 +14,12 @@ object PuppetStringsDataSourceRu {
         [
           {
             "name": "Нити марионетки",
-            "domain_name": "Мастерская Дзёрури",
+            "domain_name": "Joururi Workshop",
             "description": "Вы можете получить Нити марионетки как награду за подземелье со Скарамучей, которое находится рядом с городом Сумеру."
           },
           {
             "name": "Нити марионетки",
-            "domain_name": "Создать: Нити марионетки",
+            "domain_name": "Convert: Puppet Strings",
             "description": "Используйте вкладку Создать в Алхимии что бы превратить один предмет в другой."
           }
         ]

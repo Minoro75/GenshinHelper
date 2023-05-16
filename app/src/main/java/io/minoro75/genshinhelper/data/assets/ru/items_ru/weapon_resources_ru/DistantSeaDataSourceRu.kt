@@ -13,7 +13,7 @@ object DistantSeaDataSourceRu {
         [
           {
             "name": "Внешние моря",
-            "domain_name": "Зал текущего песка",
+            "domain_name": "Court of Flowing Sand",
             "description": "Вы можете получить Внешние моря в награду за прохождение подземелья в Инадзуме"
           }
         ]

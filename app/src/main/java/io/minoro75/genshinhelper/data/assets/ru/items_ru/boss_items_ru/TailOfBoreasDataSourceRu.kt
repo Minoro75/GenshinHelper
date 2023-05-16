@@ -13,12 +13,12 @@ object TailOfBoreasDataSourceRu {
        [
           {
             "name": "Хвост Борея",
-            "domain_name": "Испытание Волка Севера",
+            "domain_name": "Lupus Boreas, Dominator of Wolves",
             "description": "Вы можете получить Хвост Борея как награду за победу над Андриусом в Вольфендоме."
           },
           {
             "name": "Хвост Борея",
-            "domain_name": "Создать: Хвост Борея",
+            "domain_name": "Convert: Tail of Boreas",
             "description": "Используйте вкладку Создать в Алхимии что бы превратить один предмет в другой."
           }
         ]

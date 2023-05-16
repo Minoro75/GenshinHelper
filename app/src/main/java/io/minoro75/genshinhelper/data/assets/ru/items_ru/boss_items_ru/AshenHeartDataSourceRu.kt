@@ -13,12 +13,12 @@ object AshenHeartDataSourceRu {
         [
           {
             "name": "Пепельное сердце",
-            "domain_name": "Остров Наруками: Тэнсюкаку",
+            "domain_name": "Narukami Island: Tenshukaku",
             "description": "Вы можете получить Пепельное сердце как награду за подземелье с Синьорой в Инадзуме."
           },
           {
             "name": "Пепельное сердце",
-            "domain_name": "Создать: Пепельное сердце",
+            "domain_name": "Convert: Ashen Heart",
             "description": "Используйте вкладку Создать в Алхимии что бы превратить один предмет в другой."
           }
         ]

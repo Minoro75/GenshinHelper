@@ -13,7 +13,7 @@ object BorealWolfDataSourceRu {
         [
           {
             "name": "Арктический волк",
-            "domain_name": "Сад Сесилии",
+            "domain_name": "Cecilia Garden",
             "description": "Вы можете получить Арктический волк в награду за прохождение подземелья в Мондштаде"
           }
         ]

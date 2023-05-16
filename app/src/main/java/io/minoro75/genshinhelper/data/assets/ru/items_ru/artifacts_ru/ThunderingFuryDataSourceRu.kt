@@ -13,12 +13,12 @@ object ThunderingFuryDataSourceRu {
         [
           {
             "name": "Громогласный рёв ярости",
-            "domain_name": "Июльские сады",
+            "domain_name": "Midsummer Courtyard",
             "description": "Награда подземелья"
           },
           {
             "name": "Громогласный рёв ярости",
-            "domain_name": "Реликварий: Громогласный рёв ярости",
+            "domain_name": "Artifact Strongbox: Thundering Fury",
             "description": "Воспользуйтесь Алхимией и создайте Реликварий: Громогласный рёв ярости что бы превратить 3 Артефакта в один из нужного комплекта."
           }
         ]

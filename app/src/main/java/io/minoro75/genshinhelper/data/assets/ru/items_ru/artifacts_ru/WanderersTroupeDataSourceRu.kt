@@ -13,12 +13,12 @@ object WanderersTroupeDataSourceRu {
         [
           {
             "name": "Странствующий ансамбль",
-            "domain_name": "Боссы",
+            "domain_name": "Bosses",
             "description": "Может выпасть с любого босса"
           },
           {
             "name": "Странствующий ансамбль",
-            "domain_name": "Реликварий: Странствующий ансамбль",
+            "domain_name": "Artifact Strongbox: Wanderer's Troupe",
             "description": "Воспользуйтесь Алхимией и создайте Реликварий: Странствующий ансамбль что бы превратить 3 Артефакта в один из нужного комплекта."
           }
         ]

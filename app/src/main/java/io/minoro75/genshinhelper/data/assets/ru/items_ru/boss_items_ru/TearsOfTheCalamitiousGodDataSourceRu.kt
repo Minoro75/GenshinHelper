@@ -13,12 +13,12 @@ object TearsOfTheCalamitiousGodDataSourceRu {
       [
           {
             "name": "Слёзы очищения божества бедствий",
-            "domain_name": "Конец царства онейроса",
+            "domain_name": "End of the Oneiric Euthymia",
             "description": "Вы можете получить Слёзы очищения божества бедствий как награду за подземелье с Райдэн, которое находится рядом с Великим храмом Наруками."
           },
           {
             "name": "Слёзы очищения божества бедствий",
-            "domain_name": "Создать: Слёзы очищения божества бедствий",
+            "domain_name": "Convert: Tears of the Calamitous God",
             "description": "Используйте вкладку Создать в Алхимии что бы превратить один предмет в другой."
           }
         ]

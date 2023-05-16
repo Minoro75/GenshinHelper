@@ -13,7 +13,7 @@ object OceanHuedClamDataSourceRu {
         [
           {
             "name": "Моллюск морских красок",
-            "domain_name": "Дремлющий сад",
+            "domain_name": "Slumbering Court",
             "description": "Награда подземелья"
           }
         ]

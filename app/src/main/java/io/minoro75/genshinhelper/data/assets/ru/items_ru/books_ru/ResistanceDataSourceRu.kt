@@ -13,7 +13,7 @@ object ResistanceDataSourceRu {
         [
           {
             "name": "о Борьбе",
-            "domain_name": "Забытый каньон",
+            "domain_name": "Forsaken Rift",
             "description": "Вы можете получить книги о Борьбе как награду из подземелья в Мондтштаде"
           }
         ]

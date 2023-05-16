@@ -13,7 +13,7 @@ object EmblemOfSeveredFateDataSourceRu {
         [
           {
             "name": "Эмблема рассечённой судьбы",
-            "domain_name": "Кленовый зал",
+            "domain_name": "Momiji-Dyed Court",
             "description": "Награда подземелья"
           }
         ]

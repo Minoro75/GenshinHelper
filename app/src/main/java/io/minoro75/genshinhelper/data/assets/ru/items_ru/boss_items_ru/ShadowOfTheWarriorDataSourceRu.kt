@@ -13,12 +13,12 @@ object ShadowOfTheWarriorDataSourceRu {
         [
           {
             "name": "Тень воина",
-            "domain_name": "Золотая палата",
+            "domain_name": "Enter the Golden House",
             "description": "Вы можете получить Тень воина за победу над Чайлдом возле Гавани Ли Юэ."
           },
           {
             "name": "Тень воина",
-            "domain_name": "Создать: Тень воина",
+            "domain_name": "Convert: Shadow of the Warrior",
             "description": "Используйте вкладку Создать в Алхимии что бы превратить один предмет в другой."
           }
         ]

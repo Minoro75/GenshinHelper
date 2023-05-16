@@ -13,7 +13,7 @@ object AerosideriteDataSourceRu {
         [
           {
             "name": "Чёрный сидерит",
-            "domain_name": "Лабиринт Ляншань",
+            "domain_name": "Hidden Palace of Lianshan Formula",
             "description": "Вы можете получить Чёрный сидерит в награду за прохождение подземелья в Ли Юэ"
           }
         ]

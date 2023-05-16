@@ -13,7 +13,7 @@ object OasisGardenDataSourceRu {
         [
           {
             "name": "Цветущий оазис",
-            "domain_name": "Башня презренной гордости",
+            "domain_name": "Tower of Abject Pride",
             "description": "Вы можете получить Цветущий оазис в награду за прохождение подземелья в Сумеру"
           }
         ]

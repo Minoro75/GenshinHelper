@@ -13,7 +13,7 @@ object DecarabianDataSourceRu {
         [
           {
             "name": "Декарабиан",
-            "domain_name": "Сад Сесилии",
+            "domain_name": "Cecilia Garden",
             "description": "Вы можете получить Декарабиана в награду за прохождение подземелья в Мондштаде"
           }
         ]

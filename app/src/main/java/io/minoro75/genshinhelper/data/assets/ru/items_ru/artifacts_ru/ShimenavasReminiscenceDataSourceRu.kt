@@ -13,7 +13,7 @@ object ShimenavasReminiscenceDataSourceRu {
         [
           {
             "name": "Воспоминания Симэнавы",
-            "domain_name": "Кленовый зал",
+            "domain_name": "Momiji-Dyed Court",
             "description": "Награда подземелья"
           }
         ]

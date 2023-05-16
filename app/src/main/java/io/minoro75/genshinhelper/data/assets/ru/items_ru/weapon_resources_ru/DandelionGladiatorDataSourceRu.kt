@@ -13,7 +13,7 @@ object DandelionGladiatorDataSourceRu {
         [
           {
             "name": "Львиный клык",
-            "domain_name": "Сад Сесилии",
+            "domain_name": "Cecilia Garden",
             "description": "Вы можете получить Львиный клык в награду за прохождение подземелья в Мондштаде"
           }
         ]

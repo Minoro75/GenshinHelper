@@ -13,12 +13,12 @@ object DvalinsSighDataSourceRu {
        [
           {
             "name": "Вздох Двалина",
-            "domain_name": "Логово Ужаса Бури",
+            "domain_name": "Confront Stormterror",
             "description": "Вы можете получить Вздох Двалина как награду за подземелье с Ужасом Бури возле его логова."
           },
           {
             "name": "Вздох Двалина",
-            "domain_name": "Создать: Вздох Двалина",
+            "domain_name": "Convert: Dvalin's Sigh",
             "description": "Используйте вкладку Создать в Алхимии что бы превратить один предмет в другой.."
           }
         ]

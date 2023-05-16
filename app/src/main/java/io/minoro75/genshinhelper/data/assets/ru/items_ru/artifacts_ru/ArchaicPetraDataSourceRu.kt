@@ -13,12 +13,12 @@ object ArchaicPetraDataSourceRu {
         [
           {
             "name": "Архаичный камень",
-            "domain_name": "Владения Гуюнь",
+            "domain_name": "Domain of Guyun",
             "description": "Награда подземелья"
           },
           {
             "name": "Архаичный камень",
-            "domain_name": "Реликварий: Архаичный камень",
+            "domain_name": "Artifact Strongbox: Archaic Petra",
             "description": "Воспользуйтесь Алхимией и создайте Реликварий: Архаичный камень что бы превратить 3 Артефакта в один из нужного комплекта."
           }
         ]

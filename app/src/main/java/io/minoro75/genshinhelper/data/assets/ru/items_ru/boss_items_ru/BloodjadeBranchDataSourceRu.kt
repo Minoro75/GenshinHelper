@@ -13,12 +13,12 @@ object BloodjadeBranchDataSourceRu {
         [
           {
             "name": "Ветвь кровавой яшмы",
-            "domain_name": "Под древом подавления",
+            "domain_name": "Beneath the Dragon-Queller",
             "description": "Вы можете получить Ветвь кровавой яшмы как награду за подземелье с Аждахой возле горы Хулао."
           },
           {
             "name": "Ветвь кровавой яшмы",
-            "domain_name": "Создать: Ветвь кровавой яшмы",
+            "domain_name": "Convert: Bloodjade Branch",
             "description": "Используйте вкладку Создать в Алхимии что бы превратить один предмет в другой."
           }
         ]

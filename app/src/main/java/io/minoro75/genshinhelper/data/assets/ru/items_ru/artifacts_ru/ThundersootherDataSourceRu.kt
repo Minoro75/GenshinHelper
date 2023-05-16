@@ -13,12 +13,12 @@ object ThundersootherDataSourceRu {
         [
           {
             "name": "Усмиряющий гром",
-            "domain_name": "Июльские сады",
+            "domain_name": "Midsummer Courtyard",
             "description": "Награда подземелья"
           },
           {
             "name": "Усмиряющий гром",
-            "domain_name": "Реликварий: Усмиряющий гром",
+            "domain_name": "Artifact Strongbox: Thundersoother",
             "description": "Воспользуйтесь Алхимией и создайте Реликварий: Усмиряющий гром что бы превратить 3 Артефакта в один из нужного комплекта."
           }
         ]

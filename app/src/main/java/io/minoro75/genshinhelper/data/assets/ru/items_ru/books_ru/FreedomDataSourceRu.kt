@@ -13,7 +13,7 @@ object FreedomDataSourceRu {
         [
           {
             "name":"о Свободе",
-            "domain_name": "Забытый каньон",
+            "domain_name": "Forsaken Rift",
             "description": "Вы можете получить книги о Свободе как награду из подземелья в Мондтштаде"
           }
         ]

@@ -13,12 +13,12 @@ object SpiritLocketOfBoreasDataSourceRu {
         [
           {
             "name": "Шкатулка с духом Борея",
-            "domain_name": "Испытание Волка Севера",
+            "domain_name": "Lupus Boreas, Dominator of Wolves",
             "description": "Вы можете получить Шкатулка с духом Борея как награду за победу над Андриусом в Вольфендоме."
           },
           {
             "name": "Шкатулка с духом Борея",
-            "domain_name": "Создать: Шкатулка с духом Борея",
+            "domain_name": "Convert: Spirit Locket of Boreas",
             "description": "Используйте вкладку Создать в Алхимии что бы превратить один предмет в другой."
           }
         ]

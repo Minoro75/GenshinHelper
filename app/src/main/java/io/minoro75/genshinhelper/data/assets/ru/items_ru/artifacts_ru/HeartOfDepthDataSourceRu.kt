@@ -13,12 +13,12 @@ object HeartOfDepthDataSourceRu {
         [
           {
             "name": "Сердце глубин",
-            "domain_name": "Пик Виндагнира",
+            "domain_name": "Peak of Vindagnyr",
             "description": "Награда подземелья"
           },
           {
             "name": "Сердце глубин",
-            "domain_name": "Реликварий: Сердце глубин",
+            "domain_name": "Artifact Strongbox: Heart of Depth",
             "description": "Воспользуйтесь Алхимией и создайте Реликварий: Сердце глубин что бы превратить 3 Артефакта в один из нужного комплекта."
           }
         ]

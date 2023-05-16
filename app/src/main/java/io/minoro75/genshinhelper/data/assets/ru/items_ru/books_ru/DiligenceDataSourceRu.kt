@@ -13,7 +13,7 @@ object DiligenceDataSourceRu {
         [
           {
             "name": "об Усердии",
-            "domain_name": "Тайшаньфу",
+            "domain_name": "Taishan Mansion",
             "description": "Вы можете получить книги об Усердии как награду из подземелья в Ли Юэ"
           }
         ]

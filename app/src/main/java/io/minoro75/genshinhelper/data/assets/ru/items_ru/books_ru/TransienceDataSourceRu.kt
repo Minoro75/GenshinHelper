@@ -13,7 +13,7 @@ object TransienceDataSourceRu {
         [
           {
             "name": "о Бренности",
-            "domain_name": "Фиалковый зал",
+            "domain_name": "Violet Court",
             "description": "Вы можете получить книги о Бренности как награду из подземелья в Инадзуме"
           }
         ]

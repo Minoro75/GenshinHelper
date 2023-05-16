@@ -13,7 +13,7 @@ object BalladDataSourceRu {
         [
           {
             "name": "о Поэзии",
-            "domain_name": "Забытый каньон",
+            "domain_name": "Forsaken Rift",
             "description": "Вы можете получить книги о Поэзии как награду из подземелья в Мондтштаде"
           }
         ]

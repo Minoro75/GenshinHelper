@@ -13,7 +13,7 @@ object GildedDreamsDataSourceRu {
         [
           {
             "name": "Позолоченные сны",
-            "domain_name": "Шпиль одинокого просветления",
+            "domain_name": "Spire of Solitary Enlightenment",
             "description": "Награда подземелья"
           }
         ]
