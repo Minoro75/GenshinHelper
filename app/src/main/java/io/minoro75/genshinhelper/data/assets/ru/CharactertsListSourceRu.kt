@@ -140,6 +140,13 @@ object CharactersListSourceRu {
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/7b/Arataki_Itto_Icon.png/revision/latest"
     },
     {
+      "name": "Кавех",
+      "rarity": 4,
+      "element": "dendro",
+      "weapon": "claymore",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/1/1f/Kaveh_Icon.png/revision/latest"
+    },
+    {
       "name": "Кадзуха",
       "rarity": 5,
       "element": "anemo",
