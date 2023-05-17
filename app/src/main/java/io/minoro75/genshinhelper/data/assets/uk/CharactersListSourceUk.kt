@@ -180,6 +180,13 @@ object CharactersListSourceUk {
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/27/Kamisato_Ayato_Icon.png/revision/latest"
     },
     {
+      "name": "Кавех",
+      "rarity": 4,
+      "element": "dendro",
+      "weapon": "claymore",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/1/1f/Kaveh_Icon.png/revision/latest"
+    },
+    {
       "name": "Кандаке",
       "rarity": 4,
       "element": "hydro",

@@ -55,6 +55,7 @@ import io.minoro75.genshinhelper.data.assets.uk.items.boss_items.HellfireButterf
 import io.minoro75.genshinhelper.data.assets.uk.items.boss_items.MirrorOfMushinDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.boss_items.MoltenMomentDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.boss_items.MudraOfTheMaleficGeneralDataSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.items.boss_items.PrimordialGreenbloomDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.boss_items.PuppetStringsDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.boss_items.RingOfBoreasDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.boss_items.ShadowOfTheWarriorDataSourceUk
@@ -336,6 +337,8 @@ class AssetsDataSourceUk @Inject constructor(
 
                 "Світоросла папороть" -> emit(itemLocationAdapter.fromJson(WorldspanFernDataSourceUk.sourcesList))
 
+                "Зелений первоцвіт" -> emit(itemLocationAdapter.fromJson(PrimordialGreenbloomDataSourceUk.sourcesList))
+
                 // Books
 
                 "про Напоумлення" -> emit(itemLocationAdapter.fromJson(AdmonitionDataSourceUk.sourcesList))
@@ -418,6 +421,8 @@ class AssetsDataSourceUk @Inject constructor(
                 "Бейдоу" -> emit(characterDetailsAdapter.fromJson(BeidouDetailsSourceUk.details))
 
                 "Беннетт" -> emit(characterDetailsAdapter.fromJson(BennettDetailsSourceUk.details))
+
+                "Кавех" -> emit(characterDetailsAdapter.fromJson(KavehDetailsSourceUk.details))
 
                 "Кандаке" -> emit(characterDetailsAdapter.fromJson(CandaceDetailsSourceUk.details))
 
