@@ -82,14 +82,18 @@ import io.minoro75.genshinhelper.data.assets.pt.items_pt.artifacts_pt.BlizzardSt
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.artifacts_pt.BloodstainedChivalryDataSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.artifacts_pt.CrimsonWitchOfFlamesDataSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.artifacts_pt.DeepwoodMemoriesDataSourcePt
+import io.minoro75.genshinhelper.data.assets.pt.items_pt.artifacts_pt.DesertPavilionChronicleDataSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.artifacts_pt.EchoesOfTheOfferingDataSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.artifacts_pt.EmblemOfSeveredFateDataSourcePt
+import io.minoro75.genshinhelper.data.assets.pt.items_pt.artifacts_pt.FlowerOfParadiseLostDataSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.artifacts_pt.GildedDreamsDataSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.artifacts_pt.GladiatorsFinaleDataSourcePt
+import io.minoro75.genshinhelper.data.assets.pt.items_pt.artifacts_pt.GoldenTroupeDataSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.artifacts_pt.HeartOfDepthDataSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.artifacts_pt.HuskOfOpulentDreamsDataSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.artifacts_pt.LavawalkerDataSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.artifacts_pt.MaidenBelovedDataSourcePt
+import io.minoro75.genshinhelper.data.assets.pt.items_pt.artifacts_pt.MarechausseeHunterDataSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.artifacts_pt.NoblesseObligeDataSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.artifacts_pt.OceanHuedClamDataSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.artifacts_pt.PaleFlameDataSourcePt
@@ -105,10 +109,13 @@ import io.minoro75.genshinhelper.data.assets.pt.items_pt.books_pt.AdmonitionData
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.books_pt.BalladDataSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.books_pt.DiligenceDataSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.books_pt.EleganceDataSourcePt
+import io.minoro75.genshinhelper.data.assets.pt.items_pt.books_pt.EquityDataSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.books_pt.FreedomDataSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.books_pt.GoldDataSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.books_pt.IngenuityDataSourcePt
+import io.minoro75.genshinhelper.data.assets.pt.items_pt.books_pt.JusticeDataSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.books_pt.LightDataSourcePt
+import io.minoro75.genshinhelper.data.assets.pt.items_pt.books_pt.OrderDataSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.books_pt.PraxisDataSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.books_pt.ProsperityDataSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.books_pt.ResistanceDataSourcePt
@@ -138,16 +145,19 @@ import io.minoro75.genshinhelper.data.assets.pt.items_pt.boss_items_pt.TheMeanin
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.boss_items_pt.TuskOfMonocerosCaeliDataSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.boss_items_pt.WorldspanFernDataSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.weapon_resources_pt.AerosideriteDataSourcePt
+import io.minoro75.genshinhelper.data.assets.pt.items_pt.weapon_resources_pt.AncientChordDataSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.weapon_resources_pt.BorealWolfDataSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.weapon_resources_pt.DandelionGladiatorDataSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.weapon_resources_pt.DecarabianDataSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.weapon_resources_pt.DistantSeaDataSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.weapon_resources_pt.ForestDewDataSourcePt
+import io.minoro75.genshinhelper.data.assets.pt.items_pt.weapon_resources_pt.GobletOfPristineSeaDataSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.weapon_resources_pt.GuyunDataSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.weapon_resources_pt.MaskDataSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.weapon_resources_pt.MistVeiledDataSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.weapon_resources_pt.NarukamiDataSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.weapon_resources_pt.OasisGardenDataSourcePt
+import io.minoro75.genshinhelper.data.assets.pt.items_pt.weapon_resources_pt.SacredDewdropDataSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.weapon_resources_pt.ScorchingMightDataSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.weapons_resources_pt.MonThuWeaponsResSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.weapons_resources_pt.SundayWeaponsResSourcePt
@@ -321,6 +331,15 @@ class AssetsDataSourcePt @Inject constructor(
                 )
 
                 "Trupe Itinerante" -> emit(itemLocationAdapter.fromJson(WanderersTroupeDataSourcePt.sourcesList))
+
+                "Crônicas do Pavilhão do Deserto" -> emit(itemLocationAdapter.fromJson(DesertPavilionChronicleDataSourcePt.sourcesList))
+
+                "Flor do Paraíso Perdido" -> emit(itemLocationAdapter.fromJson(FlowerOfParadiseLostDataSourcePt.sourcesList))
+
+                "Trupe Dourada" -> emit(itemLocationAdapter.fromJson(GoldenTroupeDataSourcePt.sourcesList))
+
+                "Caçador das Sombras" -> emit(itemLocationAdapter.fromJson(MarechausseeHunterDataSourcePt.sourcesList))
+
                 // Boss items
                 "Coração das Cinzas" -> emit(itemLocationAdapter.fromJson(AshenHeartDataSourcePt.sourcesList))
 
@@ -462,6 +481,12 @@ class AssetsDataSourcePt @Inject constructor(
                 "Resistência" -> emit(itemLocationAdapter.fromJson(ResistanceDataSourcePt.sourcesList))
 
                 "Mundo Mortal" -> emit(itemLocationAdapter.fromJson(TransienceDataSourcePt.sourcesList))
+
+                "Ordem" -> emit(itemLocationAdapter.fromJson(OrderDataSourcePt.sourcesList))
+
+                "Igualdade" -> emit(itemLocationAdapter.fromJson(EquityDataSourcePt.sourcesList))
+
+                "Justiça" -> emit(itemLocationAdapter.fromJson(JusticeDataSourcePt.sourcesList))
                 // Weapon resources
                 "Aerosiderite" -> emit(itemLocationAdapter.fromJson(AerosideriteDataSourcePt.sourcesList))
 
@@ -490,6 +515,20 @@ class AssetsDataSourcePt @Inject constructor(
                 "Jardim Oásis" -> emit(itemLocationAdapter.fromJson(OasisGardenDataSourcePt.sourcesList))
 
                 "Poder Escaldante" -> emit(itemLocationAdapter.fromJson(ScorchingMightDataSourcePt.sourcesList))
+
+                "Corda Antiga" -> emit(itemLocationAdapter.fromJson(AncientChordDataSourcePt.sourcesList))
+
+                "Orvalho Pura Sagrada" -> emit(
+                    itemLocationAdapter.fromJson(
+                        SacredDewdropDataSourcePt.sourcesList
+                    )
+                )
+
+                "Prata do Mar Pristino" -> emit(
+                    itemLocationAdapter.fromJson(
+                        GobletOfPristineSeaDataSourcePt.sourcesList
+                    )
+                )
 
                 else -> throw IllegalArgumentException("there is no artifact with name $itemName")
             }

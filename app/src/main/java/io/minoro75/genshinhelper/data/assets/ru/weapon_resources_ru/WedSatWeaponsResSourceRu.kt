@@ -26,6 +26,10 @@ object WedSatWeaponsResSourceRu {
           {
             "name": "Пылающая мощь",
             "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/af/Item_Dream_of_Scorching_Might.png"
+          },
+          {
+            "name": "Кубок непорочного моря",
+            "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/54/Item_Silver_Goblet_of_the_Pristine_Sea.png"
           }
         ]
     """.trimIndent()

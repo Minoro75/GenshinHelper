@@ -187,6 +187,15 @@ class AssetsDataSourceRu @Inject constructor(
                         WanderersTroupeDataSourceRu.sourcesList
                     )
                 )
+
+                "Хроники Чертогов в пустыне" -> emit(itemLocationAdapter.fromJson(DesertPavilionChronicleDataSourceRu.sourcesList))
+
+                "Цветок потерянного рая" -> emit(itemLocationAdapter.fromJson(FlowerOfParadiseLostDataSourceRu.sourcesList))
+
+                "Золотая труппа" -> emit(itemLocationAdapter.fromJson(GoldenTroupeDataSourceRu.sourcesList))
+
+                "Охотник Сумеречного двора" -> emit(itemLocationAdapter.fromJson(MarechausseeHunterDataSourceRu.sourcesList))
+
                 // Boss items
                 "Пепельное сердце" -> emit(itemLocationAdapter.fromJson(AshenHeartDataSourceRu.sourcesList))
 
@@ -304,6 +313,13 @@ class AssetsDataSourceRu @Inject constructor(
                 "о Борьбе" -> emit(itemLocationAdapter.fromJson(ResistanceDataSourceRu.sourcesList))
 
                 "о Бренности" -> emit(itemLocationAdapter.fromJson(TransienceDataSourceRu.sourcesList))
+
+                "о Беспристрастии" -> emit(itemLocationAdapter.fromJson(EquityDataSourceRu.sourcesList))
+
+                "о Справедливости" -> emit(itemLocationAdapter.fromJson(JusticeDataSourceRu.sourcesList))
+
+                "о Порядке" -> emit(itemLocationAdapter.fromJson(OrderDataSourceRu.sourcesList))
+
                 // Weapon resources
                 "Чёрный сидерит" -> emit(itemLocationAdapter.fromJson(AerosideriteDataSourceRu.sourcesList))
 
@@ -332,6 +348,12 @@ class AssetsDataSourceRu @Inject constructor(
                 "Цветущий оазис" -> emit(itemLocationAdapter.fromJson(OasisGardenDataSourceRu.sourcesList))
 
                 "Пылающая мощь" -> emit(itemLocationAdapter.fromJson(ScorchingMightDataSourceRu.sourcesList))
+
+                "Древняя струна" -> emit(itemLocationAdapter.fromJson(AncientChordDataSourceRu.sourcesList))
+
+                "Кубок непорочного моря" -> emit(itemLocationAdapter.fromJson(GobletOfPristineSeaDataSourceRu.sourcesList))
+
+                "Чистая капля росы" -> emit(itemLocationAdapter.fromJson(SacredDewdropChordDataSourceRu.sourcesList))
 
                 else -> throw IllegalArgumentException("there is no artifact with name $itemName")
             }

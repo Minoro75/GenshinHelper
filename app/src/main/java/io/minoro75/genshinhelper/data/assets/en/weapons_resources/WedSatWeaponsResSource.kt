@@ -26,6 +26,10 @@ object WedSatWeaponsResSource {
           {
             "name": "Scorching Might",
             "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/af/Item_Dream_of_Scorching_Might.png"
+          },
+          {
+            "name": "Goblet of the Pristine Sea",
+            "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/54/Item_Silver_Goblet_of_the_Pristine_Sea.png"
           }
         ]
     """.trimIndent()

@@ -27,6 +27,10 @@ object SundayWeaponsResSourcePt {
             "name": "Orvalho Florestal",
             "url": "https://static.wikia.nocookie.net/gensin-impact/images/6/61/Item_Silver_Talisman_of_the_Forest_Dew.png"
           },
+           {
+            "name": "Corda Antiga",
+            "url": "https://static.wikia.nocookie.net/gensin-impact/images/3/32/Item_Movement_of_an_Ancient_Chord.png"
+          },
           {
             "name": "Lobo Boreal",
             "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/98/Item_Boreal_Wolf%27s_Broken_Fang.png"
@@ -43,6 +47,10 @@ object SundayWeaponsResSourcePt {
             "name": "Jardim Oásis",
             "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/23/Item_Oasis_Garden%27s_Mourning.png"
           },
+           {
+            "name": "Orvalho Pura Sagrada",
+            "url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c6/Item_Spring_of_Pure_Sacred_Dewdrop.png"
+          },
           {
             "name": "Gladiador de Dandelion",
             "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/40/Item_Shackles_of_the_Dandelion_Gladiator.png"
@@ -58,6 +66,10 @@ object SundayWeaponsResSourcePt {
           {
             "name": "Poder Escaldante",
             "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/af/Item_Dream_of_Scorching_Might.png"
+          },
+          {
+            "name": "Prata do Mar Pristino",
+            "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/54/Item_Silver_Goblet_of_the_Pristine_Sea.png"
           }
         ]
     """.trimIndent()

@@ -202,6 +202,18 @@ object TueFriBooksSourceRu {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
               }
             ]
+          },
+           {
+            "book_name": "о Справедливости",
+            "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/37/Item_Philosophies_of_Justice.png",
+            "characters": [
+              {
+                "name": "Путешественник Гидро",
+                "rarity": 5,
+                "element": "hydro",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
+              }
+            ]
           }
         ]
     """.trimIndent()

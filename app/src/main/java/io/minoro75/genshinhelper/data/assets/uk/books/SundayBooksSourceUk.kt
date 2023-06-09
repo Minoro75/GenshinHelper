@@ -186,6 +186,24 @@ object SundayBooksSourceUk {
             ]
           },
           {
+            "book_name": "про Неупередженість",
+            "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a0/Item_Philosophies_of_Equity.png",
+            "characters": [
+            {
+                "name": "Ліні",
+                "rarity": 5,
+                "element": "pyro",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b2/Lyney_Icon.png"
+              },
+              {
+                "name": "Мандрівник (Гідро)",
+                "rarity": 5,
+                "element": "hydro",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
+              }
+            ]
+          },
+          {
             "book_name": "про Стійкість",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/0b/Item_Philosophies_of_Resistance.png",
             "characters": [
@@ -378,6 +396,18 @@ object SundayBooksSourceUk {
             ]
           },
           {
+            "book_name": "про Справедливість",
+            "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/37/Item_Philosophies_of_Justice.png",
+            "characters": [
+              {
+                "name": "Мандрівник (Гідро)",
+                "rarity": 5,
+                "element": "hydro",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
+              }
+            ]
+          },
+          {
             "book_name": "про Поезію",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/7e/Item_Philosophies_of_Ballad.png",
             "characters": [
@@ -549,6 +579,24 @@ object SundayBooksSourceUk {
                 "name": "Мандрівник (Дендро)",
                 "rarity": 5,
                 "element": "dendro",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
+              }
+            ]
+          },
+          {
+            "book_name": "про Порядок",
+            "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/32/Item_Philosophies_of_Order.png",
+            "characters": [
+            {
+                "name": "Лінетт",
+                "rarity": 4,
+                "element": "anemo",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/ad/Lynette_Icon.png/revision/latest"
+              },
+              {
+                "name": "Мандрівник (Гідро)",
+                "rarity": 5,
+                "element": "hydro",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
               }
             ]

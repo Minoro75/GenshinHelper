@@ -27,8 +27,8 @@ object WandererDetailsSourcePt {
           ],
           "artifacts": [
             {
-              "artifact_name": "Sombra Verde",
-              "artifact_url": "https://paimon.moe/images/artifacts/viridescent_venerer_flower.png",
+              "artifact_name": "Crônicas do Pavilhão do Deserto",
+              "artifact_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/01/Item_The_First_Days_of_the_City_of_Kings.png",
               "artifact_amount": 4,
               "artifact_gobelet": "Dano Anemo",
               "artifact_circlet": "Taxa Crítica / Dano Crítico",

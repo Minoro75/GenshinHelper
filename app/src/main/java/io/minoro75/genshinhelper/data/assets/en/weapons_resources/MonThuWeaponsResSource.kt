@@ -26,6 +26,10 @@ object MonThuWeaponsResSource {
           {
             "name": "Forest Dew",
             "url": "https://static.wikia.nocookie.net/gensin-impact/images/6/61/Item_Silver_Talisman_of_the_Forest_Dew.png"
+          },
+          {
+            "name": "Ancient Chord",
+            "url": "https://static.wikia.nocookie.net/gensin-impact/images/3/32/Item_Movement_of_an_Ancient_Chord.png"
           }
         ]
     """.trimIndent()

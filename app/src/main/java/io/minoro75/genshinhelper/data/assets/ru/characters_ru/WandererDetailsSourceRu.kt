@@ -27,8 +27,8 @@ object WandererDetailsSourceRu {
           ],
           "artifacts": [
             {
-              "artifact_name": "Изумрудная тень",
-              "artifact_url": "https://paimon.moe/images/artifacts/viridescent_venerer_flower.png",
+              "artifact_name": "Хроники Чертогов в пустыне",
+              "artifact_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/01/Item_The_First_Days_of_the_City_of_Kings.png",
               "artifact_amount": 4,
               "artifact_gobelet": "Анемо ДПС",
               "artifact_circlet": "Крит Шанс / Крит урон ",

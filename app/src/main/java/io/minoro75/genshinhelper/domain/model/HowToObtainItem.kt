@@ -25,6 +25,8 @@ data class HowToObtainItem(
             "Valley of Remembrance" -> R.drawable.dg_valley_of_remembrance
             "Ridge Watch" -> R.drawable.dg_ridge_watch
             "Midsummer Courtyard" -> R.drawable.dg_midsummer_courtyard
+            "Denouement of Sin" -> R.drawable.dg_denouement
+            "City of Gold" -> R.drawable.dg_city_of_gold
             "Bosses" -> R.drawable.bosses
             // Artifacts Alchemy
             "Artifact Strongbox: Archaic Petra" -> R.drawable.as_archaic
@@ -80,11 +82,13 @@ data class HowToObtainItem(
             "Forsaken Rift" -> R.drawable.dg_forsaken_rift
             "Violet Court" -> R.drawable.dg_violet_court
             "Taishan Mansion" -> R.drawable.dg_taishan_mansion
+            "Pale Forgotten Glory" -> R.drawable.dg_pale_forgotten
             // Weapon Resources
             "Hidden Palace of Lianshan Formula" -> R.drawable.dg_hidden_palace_of_lianshan_formula
             "Cecilia Garden" -> R.drawable.dg_cecilia_garden
             "Court of Flowing Sand" -> R.drawable.dg_court_of_flowing_sand
             "Tower of Abject Pride" -> R.drawable.dg_tower_of_abject_pride
+            "Echoes of the Deep Tides" -> R.drawable.dg_echoes_of_deep_tides
             else -> throw IllegalArgumentException("No such dungeon")
         }
     }

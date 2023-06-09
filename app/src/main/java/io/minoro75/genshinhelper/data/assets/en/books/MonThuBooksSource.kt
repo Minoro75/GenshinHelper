@@ -191,6 +191,24 @@ object MonThuBooksSource {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
               }
             ]
+          },
+          {
+            "book_name": "Equity",
+            "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a0/Item_Philosophies_of_Equity.png",
+            "characters": [
+            {
+                "name": "Lyney",
+                "rarity": 5,
+                "element": "pyro",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b2/Lyney_Icon.png"
+              },
+              {
+                "name": "Traveler (Hydro)",
+                "rarity": 5,
+                "element": "hydro",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
+              }
+            ]
           }
         ]
     """.trimIndent()

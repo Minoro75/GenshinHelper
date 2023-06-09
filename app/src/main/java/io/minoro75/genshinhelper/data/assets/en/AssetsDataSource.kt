@@ -159,6 +159,15 @@ class AssetsDataSource @Inject constructor(
                 )
 
                 "Wanderer's Troupe" -> emit(itemLocationAdapter.fromJson(WanderersTroupeDataSource.sourcesList))
+
+                "Golden Troupe" -> emit(itemLocationAdapter.fromJson(GoldenTroupeDataSource.sourcesList))
+
+                "Marechaussee Hunter" -> emit(itemLocationAdapter.fromJson(MarechausseeHunterDataSource.sourcesList))
+
+                "Desert Pavilion Chronicle" -> emit(itemLocationAdapter.fromJson(DesertPavilionChronicleDataSource.sourcesList))
+
+                "Flower of Paradise Lost" -> emit(itemLocationAdapter.fromJson(FlowerOfParadoiseLostDataSource.sourcesList))
+
                 // Boss items
                 "Ashen Heart" -> emit(itemLocationAdapter.fromJson(AshenHeartDataSource.sourcesList))
 
@@ -268,6 +277,12 @@ class AssetsDataSource @Inject constructor(
                 "Resistance" -> emit(itemLocationAdapter.fromJson(ResistanceDataSource.sourcesList))
 
                 "Transience" -> emit(itemLocationAdapter.fromJson(TransienceDataSource.sourcesList))
+
+                "Equity" -> emit(itemLocationAdapter.fromJson(EquityDataSource.sourcesList))
+
+                "Justice" -> emit(itemLocationAdapter.fromJson(JusticeDataSource.sourcesList))
+
+                "Order" -> emit(itemLocationAdapter.fromJson(OrderDataSource.sourcesList))
                 // Weapon resources
                 "Aerosiderite" -> emit(itemLocationAdapter.fromJson(AerosideriteDataSource.sourcesList))
 
@@ -296,6 +311,12 @@ class AssetsDataSource @Inject constructor(
                 "Oasis Garden" -> emit(itemLocationAdapter.fromJson(OasisGardenDataSource.sourcesList))
 
                 "Scorching Might" -> emit(itemLocationAdapter.fromJson(ScorchingMightDataSource.sourcesList))
+
+                "Ancient Chord" -> emit(itemLocationAdapter.fromJson(AncientChordDataSource.sourcesList))
+
+                "Goblet of the Pristine Sea" -> emit(itemLocationAdapter.fromJson(GobletOfPristineSeaDataSource.sourcesList))
+
+                "Sacred Dewdrop" -> emit(itemLocationAdapter.fromJson(SacredDewdropChordDataSource.sourcesList))
 
                 else -> throw IllegalArgumentException("there is no artifact with name $itemName")
             }

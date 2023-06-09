@@ -26,6 +26,10 @@ object TueFriWeaponsResSourceUk {
           {
             "name": "Квітучий оазис",
             "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/23/Item_Oasis_Garden%27s_Mourning.png"
+          },
+          {
+            "name": "Непорочна росинка",
+            "url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c6/Item_Spring_of_Pure_Sacred_Dewdrop.png"
           }
         ]
     """.trimIndent()

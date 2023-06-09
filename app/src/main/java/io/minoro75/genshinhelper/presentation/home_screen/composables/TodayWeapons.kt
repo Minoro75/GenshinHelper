@@ -57,6 +57,7 @@ fun TodayWeapons(
             val firstColumn = 0..3
             val secondColumn = 4..7
             val thirdColumn = 8..11
+            val fourthColumn = 12..15
 
             BoxWithConstraints(Modifier.fillMaxWidth()) {
                 val width = (maxWidth / 4) - 12.dp
@@ -140,6 +141,42 @@ fun TodayWeapons(
                             for (i in thirdColumn) {
                                 if (list.elementAtOrNull(i) != null) {
                                     if (i != thirdColumn.first) {
+                                        Spacer(Modifier.width(6.dp))
+                                    }
+                                    OutlinedCard(
+                                        elevation = CardDefaults.cardElevation(defaultElevation = 8.dp),
+                                        colors = CardDefaults.outlinedCardColors(
+                                            containerColor = MaterialTheme.colorScheme.primaryContainer
+                                        ),
+                                        border = BorderStroke(
+                                            2.dp,
+                                            SolidColor(MaterialTheme.colorScheme.primary)
+                                        )
+                                    ) {
+                                        Item(
+                                            url = list[i].url,
+                                            loadingPlaceholder = R.drawable.boss_loading,
+                                            errorPlaceholder = R.drawable.boss_no_internet,
+                                            name = list[i].name,
+                                            rarity = 4,
+                                            textWidth = width,
+                                            textStyle = GenshinTypography.bodySmall,
+                                            modifier = Modifier.size(width)
+                                                .clickable { onItemClick.invoke(list[i].name) }
+                                        )
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+
+                    if (list.elementAtOrNull(12) != null) {
+                        Spacer(modifier = Modifier.height(8.dp))
+                        Row {
+                            for (i in fourthColumn) {
+                                if (list.elementAtOrNull(i) != null) {
+                                    if (i != fourthColumn.first) {
                                         Spacer(Modifier.width(6.dp))
                                     }
                                     OutlinedCard(

@@ -6,20 +6,94 @@ import io.minoro75.genshinhelper.data.assets.uk.books.MonThuBooksSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.books.SundayBooksSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.books.TueFriBooksSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.books.WedSatBooksSourceUk
-import io.minoro75.genshinhelper.data.assets.uk.characters.*
+import io.minoro75.genshinhelper.data.assets.uk.characters.AlbedoDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.AlhaithamDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.AloyDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.AmberDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.AratakiIttoDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.BaizhuDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.BarbaraDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.BeidouDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.BennettDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.CandaceDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.ChongyunDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.ColleiDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.CynoDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.DehyaDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.DilucDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.DionaDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.DoriDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.EulaDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.FaruzanDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.FischlDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.GanyuDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.GorouDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.HuTaoDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.JeanDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.KaedeharaKazuhaDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.KaeyaDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.KamisatoAyakaDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.KamisatoAyatoDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.KavehDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.KeqingDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.KiraraDetailSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.KleeDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.KujouSaraDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.KukiShinobuDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.LaylaDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.LisaDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.MikaDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.MonaDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.NahidaDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.NilouDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.NingguangDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.NoelleDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.QiqiDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.RaidenShogunDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.RazorDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.RosariaDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.SangonomiyaKokomiDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.SayuDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.ShenheDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.ShikanoinHeizouDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.SucroseDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.TartagliaDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.ThomaDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.TighnariDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.TravelerAnemoDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.TravelerDendroDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.TravelerElectroDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.TravelerGeoDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.VentiDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.WandererDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.XianglingDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.XiaoDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.XingqiuDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.XinyanDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.YaeMikoDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.YanfeiDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.YaoYaoDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.YelanDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.YoimiyaDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.YunJinDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.ZhongliDetailsSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.artifacts.ArchaicPetraDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.artifacts.BlizzardStrayerDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.artifacts.BloodstainedChivalryDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.artifacts.CrimsonWitchOfFlamesDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.artifacts.DeepwoodMemoriesDataSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.items.artifacts.DesertPavilionChronicleDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.artifacts.EchoesOfTheOfferingDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.artifacts.EmblemOfSeveredFateDataSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.items.artifacts.FlowerOfParadiseLostDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.artifacts.GildedDreamsDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.artifacts.GladiatorsFinaleDataSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.items.artifacts.GoldenTroupeDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.artifacts.HeartOfDepthDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.artifacts.HuskOfOpulentDreamsDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.artifacts.LavawalkerDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.artifacts.MaidenBelovedDataSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.items.artifacts.MarechausseeHunterDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.artifacts.NoblesseObligeDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.artifacts.OceanHuedClamDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.artifacts.PaleFlameDataSourceUk
@@ -35,10 +109,13 @@ import io.minoro75.genshinhelper.data.assets.uk.items.books.AdmonitionDataSource
 import io.minoro75.genshinhelper.data.assets.uk.items.books.BalladDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.books.DiligenceDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.books.EleganceDataSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.items.books.EquityDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.books.FreedomDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.books.GoldDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.books.IngenuityDataSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.items.books.JusticeDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.books.LightDataSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.items.books.OrderDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.books.PraxisDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.books.ProsperityDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.books.ResistanceDataSourceUk
@@ -68,16 +145,19 @@ import io.minoro75.genshinhelper.data.assets.uk.items.boss_items.TheMeaningOfAeo
 import io.minoro75.genshinhelper.data.assets.uk.items.boss_items.TuskOfMonocerosCaeliDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.boss_items.WorldspanFernDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.weapon_resources.AerosideriteDataSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.items.weapon_resources.AncientChordDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.weapon_resources.BorealWolfDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.weapon_resources.DandelionGladiatorDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.weapon_resources.DecarabianDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.weapon_resources.DistantSeaDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.weapon_resources.ForestDewDataSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.items.weapon_resources.GobletOfPristineSeaDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.weapon_resources.GuyunDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.weapon_resources.MaskDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.weapon_resources.MistVeiledDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.weapon_resources.NarukamiDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.weapon_resources.OasisGardenDataSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.items.weapon_resources.SacredDewdropChordDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.weapon_resources.ScorchingMightDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.weapons_resources.MonThuWeaponsResSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.weapons_resources.SundayWeaponsResSourceUk
@@ -252,6 +332,26 @@ class AssetsDataSourceUk @Inject constructor(
 
                 "Мандрівна трупа" -> emit(itemLocationAdapter.fromJson(WanderersTroupeDataSourceUk.sourcesList))
 
+                "Хроніки пустельного павільйону" -> emit(
+                    itemLocationAdapter.fromJson(
+                        DesertPavilionChronicleDataSourceUk.sourcesList
+                    )
+                )
+
+                "Квітка втраченого раю" -> emit(
+                    itemLocationAdapter.fromJson(
+                        FlowerOfParadiseLostDataSourceUk.sourcesList
+                    )
+                )
+
+                "Золота трупа" -> emit(itemLocationAdapter.fromJson(GoldenTroupeDataSourceUk.sourcesList))
+
+                "Фантомний мисливець" -> emit(
+                    itemLocationAdapter.fromJson(
+                        MarechausseeHunterDataSourceUk.sourcesList
+                    )
+                )
+
                 // Boss items
 
                 "Серце попелу" -> emit(itemLocationAdapter.fromJson(AshenHeartDataSourceUk.sourcesList))
@@ -338,42 +438,36 @@ class AssetsDataSourceUk @Inject constructor(
 
                 "Світоросла папороть" -> emit(itemLocationAdapter.fromJson(WorldspanFernDataSourceUk.sourcesList))
 
-                "Зелений первоцвіт" -> emit(itemLocationAdapter.fromJson(PrimordialGreenbloomDataSourceUk.sourcesList))
+                "Зелений первоцвіт" -> emit(
+                    itemLocationAdapter.fromJson(
+                        PrimordialGreenbloomDataSourceUk.sourcesList
+                    )
+                )
 
                 "Вічний бурштин" -> emit(itemLocationAdapter.fromJson(EveramberDataSourceUk.sourcesList))
 
                 // Books
 
                 "про Напоумлення" -> emit(itemLocationAdapter.fromJson(AdmonitionDataSourceUk.sourcesList))
-
                 "про Поезію" -> emit(itemLocationAdapter.fromJson(BalladDataSourceUk.sourcesList))
-
                 "про Старанність" -> emit(itemLocationAdapter.fromJson(DiligenceDataSourceUk.sourcesList))
-
                 "про Вишуканість" -> emit(itemLocationAdapter.fromJson(EleganceDataSourceUk.sourcesList))
-
                 "про Волю" -> emit(itemLocationAdapter.fromJson(FreedomDataSourceUk.sourcesList))
-
                 "про Золото" -> emit(itemLocationAdapter.fromJson(GoldDataSourceUk.sourcesList))
-
                 "про Винахідливість" -> emit(itemLocationAdapter.fromJson(IngenuityDataSourceUk.sourcesList))
-
                 "про Світло" -> emit(itemLocationAdapter.fromJson(LightDataSourceUk.sourcesList))
-
                 "про Діяння" -> emit(itemLocationAdapter.fromJson(PraxisDataSourceUk.sourcesList))
-
                 "про Процвітання" -> emit(itemLocationAdapter.fromJson(ProsperityDataSourceUk.sourcesList))
-
                 "про Стійкість" -> emit(itemLocationAdapter.fromJson(ResistanceDataSourceUk.sourcesList))
-
                 "про Швидкоплинність" -> emit(itemLocationAdapter.fromJson(TransienceDataSourceUk.sourcesList))
+                "про Порядок" -> emit(itemLocationAdapter.fromJson(OrderDataSourceUk.sourcesList))
+                "про Справедливість" -> emit(itemLocationAdapter.fromJson(JusticeDataSourceUk.sourcesList))
+                "про Неупередженість" -> emit(itemLocationAdapter.fromJson(EquityDataSourceUk.sourcesList))
 
                 // Weapon resources
 
                 "Чорний сидеріт" -> emit(itemLocationAdapter.fromJson(AerosideriteDataSourceUk.sourcesList))
-
                 "Арктичний вовк" -> emit(itemLocationAdapter.fromJson(BorealWolfDataSourceUk.sourcesList))
-
                 "Левине ікло" -> emit(
                     itemLocationAdapter.fromJson(
                         DandelionGladiatorDataSourceUk.sourcesList
@@ -381,22 +475,26 @@ class AssetsDataSourceUk @Inject constructor(
                 )
 
                 "Декарабіан" -> emit(itemLocationAdapter.fromJson(DecarabianDataSourceUk.sourcesList))
-
                 "Далеке море" -> emit(itemLocationAdapter.fromJson(DistantSeaDataSourceUk.sourcesList))
-
                 "Лісова роса" -> emit(itemLocationAdapter.fromJson(ForestDewDataSourceUk.sourcesList))
-
                 "Гуюнь" -> emit(itemLocationAdapter.fromJson(GuyunDataSourceUk.sourcesList))
-
                 "Маска" -> emit(itemLocationAdapter.fromJson(MaskDataSourceUk.sourcesList))
-
                 "Обвиті туманом" -> emit(itemLocationAdapter.fromJson(MistVeiledDataSourceUk.sourcesList))
-
                 "Нарукамі" -> emit(itemLocationAdapter.fromJson(NarukamiDataSourceUk.sourcesList))
-
                 "Квітучий оазис" -> emit(itemLocationAdapter.fromJson(OasisGardenDataSourceUk.sourcesList))
-
                 "Палаюча міць" -> emit(itemLocationAdapter.fromJson(ScorchingMightDataSourceUk.sourcesList))
+                "Прадавній акорд" -> emit(itemLocationAdapter.fromJson(AncientChordDataSourceUk.sourcesList))
+                "Келих первозданного моря" -> emit(
+                    itemLocationAdapter.fromJson(
+                        GobletOfPristineSeaDataSourceUk.sourcesList
+                    )
+                )
+
+                "Непорочна росинка" -> emit(
+                    itemLocationAdapter.fromJson(
+                        SacredDewdropChordDataSourceUk.sourcesList
+                    )
+                )
 
                 else -> throw IllegalArgumentException("there is no artifact with name $itemName")
             }
@@ -584,7 +682,6 @@ class AssetsDataSourceUk @Inject constructor(
                 "Фарузан" -> emit(characterDetailsAdapter.fromJson(FaruzanDetailsSourceUk.details))
 
                 "Міка" -> emit(characterDetailsAdapter.fromJson(MikaDetailsSourceUk.details))
-
 
 
                 else -> throw IllegalArgumentException("There is no character with name : $characterName")

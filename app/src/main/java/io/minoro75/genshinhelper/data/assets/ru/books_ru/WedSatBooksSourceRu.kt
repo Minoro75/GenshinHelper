@@ -186,6 +186,24 @@ object WedSatBooksSourceRu {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f8/Wanderer_Icon.png/revision/latest"
               }
             ]
+          },
+          {
+            "book_name": "о Порядке",
+            "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/32/Item_Philosophies_of_Order.png",
+            "characters": [
+            {
+                "name": "Линетт",
+                "rarity": 4,
+                "element": "anemo",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/ad/Lynette_Icon.png/revision/latest"
+              },
+              {
+                "name": "Путешественник Гидро",
+                "rarity": 5,
+                "element": "hydro",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
+              }
+            ]
           }
         ]
     """.trimIndent()

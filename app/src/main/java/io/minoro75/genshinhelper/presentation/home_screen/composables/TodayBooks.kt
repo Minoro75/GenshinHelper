@@ -100,7 +100,7 @@ fun TodayBooksView(
                     onCharacterClick = onCharacterClick,
                     onItemClick = onItemClick
                 )
-                for (i in 4..11) {
+                for (i in 4..19) {
                     if (books.elementAtOrNull(i) != null) {
                         Divider(
                             Modifier.padding(vertical = 8.dp),

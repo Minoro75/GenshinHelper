@@ -26,6 +26,10 @@ object TueFriWeaponsResSourcePt {
           {
             "name": "Jardim Oásis",
             "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/23/Item_Oasis_Garden%27s_Mourning.png"
+          },
+          {
+            "name": "Orvalho Pura Sagrada",
+            "url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c6/Item_Spring_of_Pure_Sacred_Dewdrop.png"
           }
         ]
     """.trimIndent()
