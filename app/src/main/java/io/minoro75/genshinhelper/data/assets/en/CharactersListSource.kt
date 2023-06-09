@@ -222,6 +222,13 @@ object CharactersListSource {
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/52/Keqing_Icon.png/revision/latest"
     },
     {
+      "name": "Kirara",
+      "rarity": 4,
+      "element": "dendro",
+      "weapon": "sword",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b6/Kirara_Icon.png/revision/latest?cb=20230524073946"
+    },
+    {
       "name": "Klee",
       "rarity": 5,
       "element": "pyro",

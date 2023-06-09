@@ -161,6 +161,13 @@ object CharactersListSourceRu {
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/d/dd/Candace_Icon.png/revision/latest"
     },
     {
+      "name": "Кирара",
+      "rarity": 4,
+      "element": "dendro",
+      "weapon": "sword",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b6/Kirara_Icon.png/revision/latest?cb=20230524073946"
+    },
+    {
       "name": "Кли",
       "rarity": 5,
       "element": "pyro",

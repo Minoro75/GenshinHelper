@@ -50,6 +50,7 @@ import io.minoro75.genshinhelper.data.assets.uk.items.boss_items.DragonLordsCrow
 import io.minoro75.genshinhelper.data.assets.uk.items.boss_items.DvalinsClawDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.boss_items.DvalinsPlumeDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.boss_items.DvalinsSighDataSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.items.boss_items.EveramberDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.boss_items.GildedScaleDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.boss_items.HellfireButterflyDataSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.items.boss_items.MirrorOfMushinDataSourceUk
@@ -339,6 +340,8 @@ class AssetsDataSourceUk @Inject constructor(
 
                 "Зелений первоцвіт" -> emit(itemLocationAdapter.fromJson(PrimordialGreenbloomDataSourceUk.sourcesList))
 
+                "Вічний бурштин" -> emit(itemLocationAdapter.fromJson(EveramberDataSourceUk.sourcesList))
+
                 // Books
 
                 "про Напоумлення" -> emit(itemLocationAdapter.fromJson(AdmonitionDataSourceUk.sourcesList))
@@ -472,6 +475,8 @@ class AssetsDataSourceUk @Inject constructor(
                     )
                 )
 
+                "Кірара" -> emit(characterDetailsAdapter.fromJson(KiraraDetailSourceUk.details))
+
                 "Кецін" -> emit(characterDetailsAdapter.fromJson(KeqingDetailsSourceUk.details))
 
                 "Клі" -> emit(characterDetailsAdapter.fromJson(KleeDetailsSourceUk.details))
@@ -579,6 +584,8 @@ class AssetsDataSourceUk @Inject constructor(
                 "Фарузан" -> emit(characterDetailsAdapter.fromJson(FaruzanDetailsSourceUk.details))
 
                 "Міка" -> emit(characterDetailsAdapter.fromJson(MikaDetailsSourceUk.details))
+
+
 
                 else -> throw IllegalArgumentException("There is no character with name : $characterName")
             }

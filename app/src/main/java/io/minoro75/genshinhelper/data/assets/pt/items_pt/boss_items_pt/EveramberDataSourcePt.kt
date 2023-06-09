@@ -18,7 +18,7 @@ object EveramberDataSourcePt {
           },
           {
             "name": "Âmbar Eterno",
-            "domain_name": "Convert: Worldspan Fern",
+            "domain_name": "Convert: Everamber",
             "description": "Vá para um Balcão de Síntese e use a seção Converter para converter um item em outro."
           }
         ]

@@ -117,6 +117,12 @@ object SundayBooksSourcePt {
             "book_name": "Mundo Mortal",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/27/Item_Philosophies_of_Transience.png",
             "characters": [
+                {
+                "name": "Kirara",
+                "rarity": 4,
+                "element": "dendro",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/26/Item_Everamber.png/revision/latest"
+              },
               {
                 "name": "Sangonomiya Kokomi",
                 "rarity": 5,

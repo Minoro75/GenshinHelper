@@ -2,7 +2,7 @@ package io.minoro75.genshinhelper.data.assets.uk.items.boss_items
 
 import org.intellij.lang.annotations.Language
 
-object WorldspanFernDataSourceUk {
+object EveramberDataSourceUk {
     /** here we define our JSON instead of reading from assets **/
 
     // for internal use only
@@ -12,13 +12,13 @@ object WorldspanFernDataSourceUk {
     val sourcesList = """
         [
           {
-            "name": "Світоросла папороть",
+            "name": "Вічний бурштин",
             "domain_name": "Realm of Beginnings",
-            "description": "Ви можете отримати Світорослу папороть в нагороду за перемогу над босом у пустелі Сумеру."
+            "description": "Ви можете отримати Вічний бурштин в нагороду за перемогу над босом у пустелі Сумеру."
           },
           {
-            "name": "Світоросла папороть",
-            "domain_name": "Convert: Worldspan Fern",
+            "name": "Вічний бурштин",
+            "domain_name": "Convert: Everamber",
             "description": "Йдіть до алхімічного столу та відкрите вкладку Перетворити щоб перетворити один предмент на інший."
           }
         ]

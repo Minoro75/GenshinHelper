@@ -118,6 +118,12 @@ object SundayBooksSource {
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/27/Item_Philosophies_of_Transience.png",
             "characters": [
               {
+                "name": "Kirara",
+                "rarity": 4,
+                "element": "dendro",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b6/Kirara_Icon.png/revision/latest?cb=20230524073946"
+              },
+              {
                 "name": "Sangonomiya Kokomi",
                 "rarity": 5,
                 "element": "hydro",

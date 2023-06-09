@@ -278,6 +278,8 @@ class AssetsDataSourceRu @Inject constructor(
 
                 "Первозданный цветок оазиса" -> emit(itemLocationAdapter.fromJson(PrimordialGreenbloomDataSourceRu.sourcesList))
 
+                "Вечный янтарь" -> emit(itemLocationAdapter.fromJson(EveramberDataSourceRu.sourcesList))
+
                 // Books
                 "о Наставлениях" -> emit(itemLocationAdapter.fromJson(AdmonitionDataSourceRu.sourcesList))
 
@@ -391,6 +393,8 @@ class AssetsDataSourceRu @Inject constructor(
                 "Джинн" -> emit(characterDetailsAdapter.fromJson(JeanDetailsSourceRu.detailsRu))
 
                 "Кадзуха" -> emit(characterDetailsAdapter.fromJson(KaedeharaKazuhaDetailsSourceRu.detailsRu))
+
+                "Кирара"-> emit(characterDetailsAdapter.fromJson(KiraraDetailSourceRu.details))
 
                 "Кэйа" -> emit(characterDetailsAdapter.fromJson(KaeyaDetailsSourceRu.detailsRu))
 
