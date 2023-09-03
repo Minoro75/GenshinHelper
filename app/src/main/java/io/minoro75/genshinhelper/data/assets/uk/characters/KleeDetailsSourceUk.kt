@@ -57,7 +57,7 @@ object KleeDetailsSourceUk {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": "IKM-NsPqH1g"
+          "video_guide": "ZP8LtLeiLus"
         }
     """.trimIndent()
 }

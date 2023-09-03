@@ -57,7 +57,7 @@ object KiraraDetailSourceUk {
               "weapon_rarity": 4
             }
           ],
-         "video_guide": "Xj63uBhiQhY"
+         "video_guide": "SeEnmHdQ1Xs"
         }
     """.trimIndent()
 }

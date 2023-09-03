@@ -57,7 +57,7 @@ object QiqiDetailsSourceUk {
               "weapon_rarity": 4
             }
           ],
-          "video_guide": null
+          "video_guide": "e3oSznBjrjQ"
         }
     """.trimIndent()
 }
