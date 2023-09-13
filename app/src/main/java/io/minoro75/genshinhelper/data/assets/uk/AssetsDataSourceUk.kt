@@ -629,25 +629,25 @@ class AssetsDataSourceUk @Inject constructor(
 
                 "Тігнарі" -> emit(characterDetailsAdapter.fromJson(TighnariDetailsSourceUk.details))
 
-                "Мандрівник (Анемо)" -> emit(
+                "Мандрівник Анемо" -> emit(
                     characterDetailsAdapter.fromJson(
                         TravelerAnemoDetailsSourceUk.details
                     )
                 )
 
-                "Мандрівник (Електро)" -> emit(
+                "Мандрівник Електро" -> emit(
                     characterDetailsAdapter.fromJson(
                         TravelerElectroDetailsSourceUk.details
                     )
                 )
 
-                "Мандрівник (Гео)" -> emit(
+                "Мандрівник Гео" -> emit(
                     characterDetailsAdapter.fromJson(
                         TravelerGeoDetailsSourceUk.details
                     )
                 )
 
-                "Мандрівник (Дендро)" -> emit(
+                "Мандрівник Дендро" -> emit(
                     characterDetailsAdapter.fromJson(
                         TravelerDendroDetailsSourceUk.details
                     )

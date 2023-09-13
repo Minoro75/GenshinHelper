@@ -58,7 +58,7 @@ object MonThuBooksSourceUk {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/85/Tartaglia_Icon.png/revision/latest"
               },
               {
-                "name": "Мандрівник (Анемо)",
+                "name": "Мандрівник Анемо",
                 "rarity": 5,
                 "element": "anemo",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
@@ -94,7 +94,7 @@ object MonThuBooksSourceUk {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/af/Shenhe_Icon.png/revision/latest"
               },
               {
-                "name": "Мандрівник (Гео)",
+                "name": "Мандрівник Гео",
                 "rarity": 5,
                 "element": "geo",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
@@ -136,7 +136,7 @@ object MonThuBooksSourceUk {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/5b/Thoma_Icon.png/revision/latest"
               },
               {
-                "name": "Мандрівник (Електро)",
+                "name": "Мандрівник Електро",
                 "rarity": 5,
                 "element": "electro",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
@@ -172,7 +172,7 @@ object MonThuBooksSourceUk {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/87/Tighnari_Icon.png/revision/latest"
               },
               {
-                "name": "Мандрівник (Дендро)",
+                "name": "Мандрівник Дендро",
                 "rarity": 5,
                 "element": "dendro",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"

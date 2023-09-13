@@ -2,23 +2,23 @@ package io.minoro75.genshinhelper.data.assets.uk.characters
 
 import org.intellij.lang.annotations.Language
 
-object JeanDetailsSourceUk {
+object LynetteDetailsSourceUk {
     @Language("JSON")
     val details = """
         {
-          "name": "Джин",
-          "rarity": 5,
+          "name": "Лінетт",
+          "rarity": 4,
           "element": "anemo",
           "weapon": "sword",
-          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/6/64/Jean_Icon.png/revision/latest",
+          "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/ad/Lynette_Icon.png/revision/latest",
           "talents_books": {
-            "book_name": "про Стійкість",
-            "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/0/0b/Item_Philosophies_of_Resistance.png",
-            "book_days": "Вівторок/Пʼятниця/Неділя"
+            "book_name": "про Порядок",
+            "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/32/Item_Philosophies_of_Order.png",
+            "book_days": "Середа/Субота/Неділя"
           },
           "weekly_boss_item": {
-            "boss_item_name": "Перо Дваліна",
-            "boss_item_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/bf/Item_Dvalin%27s_Plume.png"
+            "boss_item_name": "Вічний бурштин",
+            "boss_item_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/26/Item_Everamber.png/revision/latest"
           },
           "talents_priority": [
             "Ульта",
@@ -27,12 +27,12 @@ object JeanDetailsSourceUk {
           ],
           "artifacts": [
             {
-              "artifact_name": "Смарагдова тінь",
+             "artifact_name": "Смарагдова тінь",
               "artifact_url": "https://paimon.moe/images/artifacts/viridescent_venerer_flower.png",
               "artifact_amount": 4,
               "artifact_gobelet": "Анемо ДПС",
-              "artifact_circlet": "Кріт. Дамаг / Кріт. Шанс / Бонус хілінгу",
-              "artifact_sands": "Сила Атаки% / Відновлення енергії"
+              "artifact_circlet": "Кріт. Шанс / Кріт. Дамаг ",
+              "artifact_sands": "Сила Атаки%"
             }
           ],
           "weapon_best": {
@@ -41,6 +41,12 @@ object JeanDetailsSourceUk {
             "weapon_rarity": 5
           },
           "weapons_replacements": [
+          
+          {
+              "weapon_name": "Меч жертовного ритуалу",
+              "weapon_url": "https://paimon.moe/images/weapons/sacrificial_sword.png",
+              "weapon_rarity": 4
+            },
             {
               "weapon_name": "Небесний клинок",
               "weapon_url": "https://paimon.moe/images/weapons/skyward_blade.png",
@@ -50,14 +56,9 @@ object JeanDetailsSourceUk {
               "weapon_name": "Меч Фавонія",
               "weapon_url": "https://paimon.moe/images/weapons/favonius_sword.png",
               "weapon_rarity": 4
-            },
-            {
-              "weapon_name": "Аменома Кагеучі",
-              "weapon_url": "https://paimon.moe/images/weapons/amenoma_kageuchi.png",
-              "weapon_rarity": 4
             }
           ],
-          "video_guide": "De1ybIlvn-w"
+          "video_guide": "9gJ7-ZZHXSA"
         }
     """.trimIndent()
 }

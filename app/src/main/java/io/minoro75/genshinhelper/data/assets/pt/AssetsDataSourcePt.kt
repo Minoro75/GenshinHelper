@@ -42,6 +42,8 @@ import io.minoro75.genshinhelper.data.assets.pt.characters_pt.KujouSaraDetailsSo
 import io.minoro75.genshinhelper.data.assets.pt.characters_pt.KukiShinobuDetailsSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.characters_pt.LaylaDetailsSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.characters_pt.LisaDetailsSourcePt
+import io.minoro75.genshinhelper.data.assets.pt.characters_pt.LynetteDetailsSourcePt
+import io.minoro75.genshinhelper.data.assets.pt.characters_pt.LyneyDetailsSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.characters_pt.MikaDetailsSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.characters_pt.MonaDetailsSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.characters_pt.NahidaDetailsSourcePt
@@ -64,6 +66,7 @@ import io.minoro75.genshinhelper.data.assets.pt.characters_pt.TravelerAnemoDetai
 import io.minoro75.genshinhelper.data.assets.pt.characters_pt.TravelerDendroDetailsSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.characters_pt.TravelerElectroDetailsSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.characters_pt.TravelerGeoDetailsSourcePt
+import io.minoro75.genshinhelper.data.assets.pt.characters_pt.TravelerHydroDetailsSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.characters_pt.VentiDetailsSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.characters_pt.WandererDetailsSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.characters_pt.XianglingDetailsSourcePt
@@ -712,6 +715,12 @@ class AssetsDataSourcePt @Inject constructor(
                 "Zhongli" -> emit(characterDetailsAdapter.fromJson(ZhongliDetailsSourcePt.details))
 
                 "Faruzan" -> emit(characterDetailsAdapter.fromJson(FaruzanDetailsSourcePt.details))
+
+                "Viajante (Hydro)" -> emit(characterDetailsAdapter.fromJson(TravelerHydroDetailsSourcePt.details))
+
+                "Lyney" -> emit(characterDetailsAdapter.fromJson(LyneyDetailsSourcePt.details))
+
+                "Lynette" -> emit(characterDetailsAdapter.fromJson(LynetteDetailsSourcePt.details))
 
                 else -> throw IllegalArgumentException("There is no character with name : $characterName")
             }

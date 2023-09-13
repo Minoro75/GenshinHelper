@@ -121,7 +121,7 @@ object MonThuBooksSourcePt {
                 "name": "Kirara",
                 "rarity": 4,
                 "element": "dendro",
-                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/26/Item_Everamber.png/revision/latest"
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b6/Kirara_Icon.png/revision/latest"
               },
               {
                 "name": "Sangonomiya Kokomi",

@@ -58,7 +58,7 @@ object TueFriBooksSourceUk {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b8/Razor_Icon.png/revision/latest"
               },
               {
-                "name": "Мандрівник (Анемо)",
+                "name": "Мандрівник Анемо",
                 "rarity": 5,
                 "element": "anemo",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
@@ -94,7 +94,7 @@ object TueFriBooksSourceUk {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e3/Kaedehara_Kazuha_Icon.png/revision/latest"
               },
               {
-                "name": "Мандрівник (Гео)",
+                "name": "Мандрівник Гео",
                 "rarity": 5,
                 "element": "geo",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
@@ -154,7 +154,7 @@ object TueFriBooksSourceUk {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b3/Kuki_Shinobu_Icon.png/revision/latest"
               },
               {
-                "name": "Мандрівник (Електро)",
+                "name": "Мандрівник Електро",
                 "rarity": 5,
                 "element": "electro",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
@@ -196,7 +196,7 @@ object TueFriBooksSourceUk {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f9/Nahida_Icon.png/revision/latest"
               },
               {
-                "name": "Мандрівник (Дендро)",
+                "name": "Мандрівник Дендро",
                 "rarity": 5,
                 "element": "dendro",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
@@ -208,7 +208,7 @@ object TueFriBooksSourceUk {
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/37/Item_Philosophies_of_Justice.png",
             "characters": [
               {
-                "name": "Мандрівник (Гідро)",
+                "name": "Мандрівник Гідро",
                 "rarity": 5,
                 "element": "hydro",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"

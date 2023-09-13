@@ -271,6 +271,20 @@ object CharactersListSourcePt {
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/6/65/Lisa_Icon.png/revision/latest"
     },
     {
+      "name": "Lynette",
+      "rarity": 4,
+      "element": "anemo",
+      "weapon": "sword",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/ad/Lynette_Icon.png/revision/latest"
+    },
+    {
+      "name": "Lyney",
+      "rarity": 5,
+      "element": "pyro",
+      "weapon": "bow",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b2/Lyney_Icon.png/revision/latest"
+    },
+    {
       "name": "Mika",
       "rarity": 4,
       "element": "cryo",
@@ -411,6 +425,13 @@ object CharactersListSourcePt {
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
     },
     {
+      "name": "Viajante (Dendro)",
+      "rarity": 5,
+      "element": "dendro",
+      "weapon": "sword",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
+    },
+    {
       "name": "Viajante (Electro)",
       "rarity": 5,
       "element": "electro",
@@ -424,10 +445,10 @@ object CharactersListSourcePt {
       "weapon": "sword",
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
     },
-   {
-      "name": "Viajante (Dendro)",
+    {
+      "name": "Traveler (Hydro)",
       "rarity": 5,
-      "element": "dendro",
+      "element": "hydro",
       "weapon": "sword",
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
     },

@@ -36,7 +36,7 @@ object KukiShinobuDetailsSourceUk {
             }
           ],
           "weapon_best": {
-             "weapon_name": "Клятва вічнох свободи",
+             "weapon_name": "Клятва вічної свободи",
               "weapon_url": "https://paimon.moe/images/weapons/freedom-sworn.png",
               "weapon_rarity": 5
           },

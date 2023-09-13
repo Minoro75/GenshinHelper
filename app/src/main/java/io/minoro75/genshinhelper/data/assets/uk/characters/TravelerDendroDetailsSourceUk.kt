@@ -6,7 +6,7 @@ object TravelerDendroDetailsSourceUk {
     @Language("JSON")
     val details = """
         {
-          "name": "Мандрівник (Дендро)",
+          "name": "Мандрівник Дендро",
           "rarity": 5,
           "element": "dendro",
           "weapon": "sword",
@@ -36,7 +36,7 @@ object TravelerDendroDetailsSourceUk {
             }
           ],
           "weapon_best": {
-            "weapon_name": "Клятва вічнох свободи",
+            "weapon_name": "Клятва вічної свободи",
             "weapon_url": "https://paimon.moe/images/weapons/freedom-sworn.png",
             "weapon_rarity": 5
           },

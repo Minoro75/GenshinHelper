@@ -207,6 +207,12 @@ object TueFriBooksSource {
             "book_name": "Justice",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/37/Item_Philosophies_of_Justice.png",
             "characters": [
+            {
+                "name": "Freminet",
+                "rarity": 4,
+                "element": "cryo",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/e/ee/Freminet_Icon.png/revision/latest"
+              },
               {
                 "name": "Traveler (Hydro)",
                 "rarity": 5,

@@ -53,7 +53,7 @@ object WedSatBooksSourceUk {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/35/Rosaria_Icon.png/revision/latest"
               },
               {
-                "name": "Мандрівник (Анемо)",
+                "name": "Мандрівник Анемо",
                 "rarity": 5,
                 "element": "anemo",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
@@ -83,7 +83,7 @@ object WedSatBooksSourceUk {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e1/Beidou_Icon.png/revision/latest"
               },
               {
-                "name": "Мандрівник (Гео)",
+                "name": "Мандрівник Гео",
                 "rarity": 5,
                 "element": "geo",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
@@ -137,7 +137,7 @@ object WedSatBooksSourceUk {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/22/Sayu_Icon.png/revision/latest"
               },
               {
-                "name": "Мандрівник (Електро)",
+                "name": "Мандрівник Електро",
                 "rarity": 5,
                 "element": "electro",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
@@ -180,7 +180,7 @@ object WedSatBooksSourceUk {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/58/Nilou_Icon.png/revision/latest"
               },
               {
-                "name": "Мандрівник (Дендро)",
+                "name": "Мандрівник Дендро",
                 "rarity": 5,
                 "element": "dendro",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
@@ -198,7 +198,7 @@ object WedSatBooksSourceUk {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/ad/Lynette_Icon.png/revision/latest"
               },
               {
-                "name": "Мандрівник (Гідро)",
+                "name": "Мандрівник Гідро",
                 "rarity": 5,
                 "element": "hydro",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"

@@ -493,6 +493,14 @@ class AssetsDataSource @Inject constructor(
 
                 "Faruzan" -> emit(characterDetailsAdapter.fromJson(FaruzanDetailsSource.details))
 
+                "Lyney" -> emit(characterDetailsAdapter.fromJson(LyneyDetailsSource.details))
+
+                "Lynette" -> emit(characterDetailsAdapter.fromJson(LynetteDetailsSource.details))
+
+                "Traveler (Hydro)" -> emit(characterDetailsAdapter.fromJson(TravelerHydroDetailsSource.details))
+
+                "Freminet" -> emit(characterDetailsAdapter.fromJson(FreminetDetailsSource.details))
+
                 else -> throw IllegalArgumentException("There is no character with name : $characterName")
             }
         }

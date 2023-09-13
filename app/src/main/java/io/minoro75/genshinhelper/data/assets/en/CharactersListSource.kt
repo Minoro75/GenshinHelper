@@ -152,6 +152,13 @@ object CharactersListSource {
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9a/Fischl_Icon.png/revision/latest"
     },
     {
+     "name": "Freminet",
+      "rarity": 4,
+      "element": "cryo",
+      "weapon": "claymore",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/e/ee/Freminet_Icon.png/revision/latest"
+    },
+    {
       "name": "Ganyu",
       "rarity": 5,
       "element": "cryo",
@@ -262,6 +269,20 @@ object CharactersListSource {
       "element": "electro",
       "weapon": "catalyst",
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/6/65/Lisa_Icon.png/revision/latest"
+    },
+    {
+      "name": "Lynette",
+      "rarity": 4,
+      "element": "anemo",
+      "weapon": "sword",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/ad/Lynette_Icon.png/revision/latest"
+    },
+    {
+      "name": "Lyney",
+      "rarity": 5,
+      "element": "pyro",
+      "weapon": "bow",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b2/Lyney_Icon.png/revision/latest"
     },
     {
       "name": "Mika",
@@ -397,6 +418,13 @@ object CharactersListSource {
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
     },
     {
+      "name": "Traveler (Dendro)",
+      "rarity": 5,
+      "element": "dendro",
+      "weapon": "sword",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
+    },
+    {
       "name": "Traveler (Electro)",
       "rarity": 5,
       "element": "electro",
@@ -411,9 +439,9 @@ object CharactersListSource {
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
     },
    {
-      "name": "Traveler (Dendro)",
+      "name": "Traveler (Hydro)",
       "rarity": 5,
-      "element": "dendro",
+      "element": "hydro",
       "weapon": "sword",
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
     },

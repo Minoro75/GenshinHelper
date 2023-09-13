@@ -257,28 +257,28 @@ object CharactersListSourceUk {
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/6/65/Lisa_Icon.png/revision/latest"
     },
     {
-      "name": "Мандрівник (Анемо)",
+      "name": "Мандрівник Анемо",
       "rarity": 5,
       "element": "anemo",
       "weapon": "sword",
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
     },
     {
-      "name": "Мандрівник (Гео)",
+      "name": "Мандрівник Гео",
       "rarity": 5,
       "element": "geo",
       "weapon": "sword",
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
     },
    {
-      "name": "Мандрівник (Дендро)",
+      "name": "Мандрівник Дендро",
       "rarity": 5,
       "element": "dendro",
       "weapon": "sword",
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
     },
     {
-      "name": "Мандрівник (Електро)",
+      "name": "Мандрівник Електро",
       "rarity": 5,
       "element": "electro",
       "weapon": "sword",

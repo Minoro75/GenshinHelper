@@ -6,7 +6,7 @@ object TravelerElectroDetailsSourceUk {
     @Language("JSON")
     val details = """
         {
-          "name": "Мандрівник (Електро)",
+          "name": "Мандрівник Електро",
           "rarity": 5,
           "element": "electro",
           "weapon": "sword",
