@@ -434,6 +434,13 @@ object CharactersListSourceRu {
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9a/Fischl_Icon.png/revision/latest"
     },
     {
+      "name": "Фремине",
+      "rarity": 4,
+      "element": "cryo",
+      "weapon": "claymore",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/e/ee/Freminet_Icon.png/revision/latest"
+    },
+    {
       "name": "Ху Тао",
       "rarity": 5,
       "element": "pyro",

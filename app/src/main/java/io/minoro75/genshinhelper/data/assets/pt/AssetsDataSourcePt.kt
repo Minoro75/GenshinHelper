@@ -26,6 +26,7 @@ import io.minoro75.genshinhelper.data.assets.pt.characters_pt.DoriDetailsSourceP
 import io.minoro75.genshinhelper.data.assets.pt.characters_pt.EulaDetailsSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.characters_pt.FaruzanDetailsSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.characters_pt.FischlDetailsSourcePt
+import io.minoro75.genshinhelper.data.assets.pt.characters_pt.FreminetDetailsSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.characters_pt.GanyuDetailsSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.characters_pt.GorouDetailsSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.characters_pt.HuTaoDetailsSourcePt
@@ -721,6 +722,8 @@ class AssetsDataSourcePt @Inject constructor(
                 "Lyney" -> emit(characterDetailsAdapter.fromJson(LyneyDetailsSourcePt.details))
 
                 "Lynette" -> emit(characterDetailsAdapter.fromJson(LynetteDetailsSourcePt.details))
+
+                "Freminet" -> emit(characterDetailsAdapter.fromJson(FreminetDetailsSourcePt.details))
 
                 else -> throw IllegalArgumentException("There is no character with name : $characterName")
             }

@@ -406,6 +406,12 @@ object SundayBooksSourcePt {
             "book_name": "Justiça",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/37/Item_Philosophies_of_Justice.png",
             "characters": [
+             {
+                "name": "Freminet",
+                "rarity": 4,
+                "element": "cryo",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/e/ee/Freminet_Icon.png/revision/latest"
+              },
               {
                 "name": "Viajante (Hydro)",
                 "rarity": 5,
@@ -557,6 +563,13 @@ object SundayBooksSourcePt {
             "book_name": "Práxis",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/82/Item_Philosophies_of_Praxis.png",
             "characters": [
+            {
+                 "name": "Andarilho",
+                 "rarity": 5,
+                 "element": "anemo",
+                 "weapon": "catalyst",
+                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f8/Wanderer_Icon.png/revision/latest"
+              },
               {
                 "name": "Collei",
                 "rarity": 4,
@@ -580,13 +593,6 @@ object SundayBooksSourcePt {
                 "rarity": 5,
                 "element": "dendro",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
-              },
-              {
-                 "name": "Wanderer",
-                 "rarity": 5,
-                 "element": "anemo",
-                 "weapon": "catalyst",
-                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f8/Wanderer_Icon.png/revision/latest"
               }
             ]
           },

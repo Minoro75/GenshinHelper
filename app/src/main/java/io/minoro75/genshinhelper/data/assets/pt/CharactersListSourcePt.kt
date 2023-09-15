@@ -159,6 +159,13 @@ object CharactersListSourcePt {
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9a/Fischl_Icon.png/revision/latest"
     },
     {
+      "name": "Freminet",
+      "rarity": 4,
+      "element": "cryo",
+      "weapon": "claymore",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/e/ee/Freminet_Icon.png/revision/latest"
+    },
+    {
       "name": "Ganyu",
       "rarity": 5,
       "element": "cryo",
