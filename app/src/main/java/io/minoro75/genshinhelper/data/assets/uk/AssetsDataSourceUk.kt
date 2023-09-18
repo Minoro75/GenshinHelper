@@ -43,6 +43,8 @@ import io.minoro75.genshinhelper.data.assets.uk.characters.KujouSaraDetailsSourc
 import io.minoro75.genshinhelper.data.assets.uk.characters.KukiShinobuDetailsSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.characters.LaylaDetailsSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.characters.LisaDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.LynetteDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.LyneyDetailsSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.characters.MikaDetailsSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.characters.MonaDetailsSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.characters.NahidaDetailsSourceUk
@@ -65,6 +67,7 @@ import io.minoro75.genshinhelper.data.assets.uk.characters.TravelerAnemoDetailsS
 import io.minoro75.genshinhelper.data.assets.uk.characters.TravelerDendroDetailsSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.characters.TravelerElectroDetailsSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.characters.TravelerGeoDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.TravelerHydroDetailsSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.characters.VentiDetailsSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.characters.WandererDetailsSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.characters.XianglingDetailsSourceUk
@@ -683,6 +686,12 @@ class AssetsDataSourceUk @Inject constructor(
                 "Фарузан" -> emit(characterDetailsAdapter.fromJson(FaruzanDetailsSourceUk.details))
 
                 "Міка" -> emit(characterDetailsAdapter.fromJson(MikaDetailsSourceUk.details))
+
+                "Ліні" -> emit(characterDetailsAdapter.fromJson(LyneyDetailsSourceUk.details))
+
+                "Лінетт" -> emit(characterDetailsAdapter.fromJson(LynetteDetailsSourceUk.details))
+
+                "Мандрівник Гідро" -> emit(characterDetailsAdapter.fromJson(TravelerHydroDetailsSourceUk.details))
 
                 "Фреміне" -> emit(characterDetailsAdapter.fromJson(FreminetDetailsSourceUk.details))
 

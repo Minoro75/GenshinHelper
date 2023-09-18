@@ -257,6 +257,20 @@ object CharactersListSourceUk {
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/6/65/Lisa_Icon.png/revision/latest"
     },
     {
+      "name": "Лінетт",
+      "rarity": 4,
+      "element": "anemo",
+      "weapon": "sword",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/a/ad/Lynette_Icon.png/revision/latest"
+    },
+    {
+      "name": "Ліні",
+      "rarity": 5,
+      "element": "pyro",
+      "weapon": "bow",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b2/Lyney_Icon.png/revision/latest"
+    },
+    {
       "name": "Мандрівник Анемо",
       "rarity": 5,
       "element": "anemo",
@@ -267,6 +281,13 @@ object CharactersListSourceUk {
       "name": "Мандрівник Гео",
       "rarity": 5,
       "element": "geo",
+      "weapon": "sword",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
+    },
+    {
+      "name": "Мандрівник Гідро",
+      "rarity": 5,
+      "element": "hydro",
       "weapon": "sword",
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
     },

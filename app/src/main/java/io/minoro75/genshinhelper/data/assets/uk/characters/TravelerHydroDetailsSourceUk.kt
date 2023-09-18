@@ -29,7 +29,7 @@ object TravelerHydroDetailsSourceUk {
             {
             "artifact_name": "Серце глибин",
               "artifact_url": "https://paimon.moe/images/artifacts/heart_of_depth_flower.png",
-              "artifact_amount": 4,
+              "artifact_amount": 2,
               "artifact_gobelet": "Гідро ДПС",
               "artifact_circlet": "Кріт. Шанс / Кріт. Дамаг",
               "artifact_sands": "Сила Атаки%"
