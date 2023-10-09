@@ -1,14 +1,14 @@
 package io.minoro75.genshinhelper.domain.model
 
-import com.squareup.moshi.Json
-import com.squareup.moshi.JsonClass
+import kotlinx.serialization.SerialName
+import kotlinx.serialization.Serializable
 
-@JsonClass(generateAdapter = true)
+@Serializable
 data class WeaponsReplacement(
-    @Json(name = "weapon_rarity")
+    @SerialName("weapon_rarity")
     val weaponRarity: Int,
-    @Json(name = "weapon_name")
+    @SerialName("weapon_name")
     val weaponName: String,
-    @Json(name = "weapon_url")
+    @SerialName("weapon_url")
     val weaponUrl: String
 )

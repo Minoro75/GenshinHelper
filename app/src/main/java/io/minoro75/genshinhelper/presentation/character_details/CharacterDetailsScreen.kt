@@ -20,6 +20,8 @@ import io.minoro75.genshinhelper.domain.model.WeaponsReplacement
 import io.minoro75.genshinhelper.presentation.character_details.CharacterDetailsScreenViewModel
 import io.minoro75.genshinhelper.presentation.common.LoadingScreen
 import io.minoro75.genshinhelper.presentation.theme.GenshinHelperTheme
+import kotlinx.collections.immutable.persistentListOf
+import kotlinx.collections.immutable.toPersistentList
 
 @Composable
 fun CharacterScreen(
@@ -57,7 +59,7 @@ fun CharacterScreen(
             )
             Spacer(modifier = Modifier.height(16.dp))
             TalentsPriorityView(
-                priority = details.talentsPriority
+                priority = details.talentsPriority.toPersistentList()
             )
             Spacer(modifier = Modifier.height(16.dp))
             WeeklyBossItemView(
@@ -69,13 +71,13 @@ fun CharacterScreen(
             YoutubeVideoPreviewView(videoId = details.videoGuide)
             Spacer(Modifier.height(16.dp))
             ArtifactsView(
-                artifacts = details.artifacts,
+                artifacts = details.artifacts.toPersistentList(),
                 onItemClicked = onItemClicked
             )
             Spacer(Modifier.height(16.dp))
             WeaponsView(
                 bis = details.weaponBest,
-                replacements = details.weaponsReplacements
+                replacements = details.weaponsReplacements.toPersistentList()
             )
         }
     }
@@ -111,7 +113,7 @@ fun CharacterPreview() {
             )
             Spacer(modifier = Modifier.height(8.dp))
             TalentsPriorityView(
-                priority = listOf(
+                priority = persistentListOf(
                     "Burst",
                     "Skill",
                     "Attack"
@@ -125,7 +127,7 @@ fun CharacterPreview() {
             )
             Spacer(Modifier.height(16.dp))
             ArtifactsView(
-                artifacts = listOf(
+                artifacts = persistentListOf(
                     Artifact(
                         artifactAmount = 4,
                         artifactCirclet = "HP%",
@@ -144,7 +146,7 @@ fun CharacterPreview() {
                     weaponName = "Lost Prayer to the Sacred Winds",
                     weaponUrl = "https://paimon.moe/images/weapons/amos_bow.png"
                 ),
-                replacements = listOf(
+                replacements = persistentListOf(
                     WeaponsReplacement(
                         weaponRarity = 5,
                         weaponName = "Aqua Simulacra",

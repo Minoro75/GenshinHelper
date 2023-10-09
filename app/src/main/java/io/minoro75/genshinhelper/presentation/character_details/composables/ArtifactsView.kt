@@ -36,11 +36,13 @@ import io.minoro75.genshinhelper.presentation.theme.GenshinHelperTheme
 import io.minoro75.genshinhelper.presentation.theme.GenshinTypography
 import io.minoro75.genshinhelper.presentation.theme.ItemBackground
 import io.minoro75.genshinhelper.presentation.theme.TextColor
+import kotlinx.collections.immutable.PersistentList
+import kotlinx.collections.immutable.persistentListOf
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun ArtifactsView(
-    artifacts: List<Artifact>,
+    artifacts: PersistentList<Artifact>,
     onItemClicked: (String) -> Unit
 ) {
     OutlinedCard(
@@ -93,7 +95,7 @@ fun ArtifactsStats(artifact: Artifact) {
 
 @Composable
 fun Artifacts(
-    artifacts: List<Artifact>,
+    artifacts: PersistentList<Artifact>,
     onItemClicked: (String) -> Unit,
     modifier: Modifier = Modifier
 ) {
@@ -199,7 +201,7 @@ fun ArtifactStatsItem(
 fun Preview4Artifacts() {
     GenshinHelperTheme {
         ArtifactsView(
-            listOf(
+            persistentListOf(
                 Artifact(
                     artifactAmount = 4,
                     artifactCirclet = "HP%",
@@ -218,7 +220,7 @@ fun Preview4Artifacts() {
 fun Preview2Artifacts() {
     GenshinHelperTheme {
         ArtifactsView(
-            listOf(
+            persistentListOf(
                 Artifact(
                     artifactAmount = 2,
                     artifactCirclet = "ATK%",

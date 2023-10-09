@@ -326,6 +326,13 @@ object CharactersListSourceUk {
       "weapon": "catalyst",
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f9/Nahida_Icon.png/revision/latest"
     },
+    {
+      "name": "Невілет",
+      "rarity": 5,
+      "element": "hydro",
+      "weapon": "catalyst",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/21/Neuvillette_Icon.png/revision/latest"
+    },
      {
       "name": "Ноель",
       "rarity": 4,

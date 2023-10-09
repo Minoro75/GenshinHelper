@@ -15,10 +15,12 @@ import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import io.minoro75.genshinhelper.presentation.theme.GenshinHelperTheme
+import kotlinx.collections.immutable.PersistentList
+import kotlinx.collections.immutable.persistentListOf
 
 @Composable
 fun TalentsPriorityView(
-    priority: List<String>,
+    priority: PersistentList<String>,
     modifier: Modifier = Modifier
 ) {
     OutlinedCard(
@@ -45,7 +47,7 @@ fun TalentsPriorityView(
 fun PreviewTalentsPriorityView() {
     GenshinHelperTheme {
         TalentsPriorityView(
-            priority = listOf(
+            priority = persistentListOf(
                 "Burst",
                 "Skill",
                 "Attack"

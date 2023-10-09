@@ -1,8 +1,8 @@
 package io.minoro75.genshinhelper.domain.model
 
-import com.squareup.moshi.JsonClass
+import kotlinx.serialization.Serializable
 
-@JsonClass(generateAdapter = true)
+@Serializable
 data class TodayWeaponResources(
     val name: String,
     val url: String

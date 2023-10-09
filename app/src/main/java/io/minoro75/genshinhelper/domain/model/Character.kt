@@ -1,12 +1,12 @@
 package io.minoro75.genshinhelper.domain.model
 
-import com.squareup.moshi.Json
-import com.squareup.moshi.JsonClass
+import kotlinx.serialization.SerialName
+import kotlinx.serialization.Serializable
 
-@JsonClass(generateAdapter = true)
+@Serializable
 data class Character(
     val element: String,
-    @Json(name = "image_url")
+    @SerialName("image_url")
     val imageUrl: String,
     val name: String,
     val rarity: Int

@@ -1,14 +1,14 @@
 package io.minoro75.genshinhelper.domain.model
 
-import com.squareup.moshi.Json
-import com.squareup.moshi.JsonClass
+import kotlinx.serialization.SerialName
+import kotlinx.serialization.Serializable
 
-@JsonClass(generateAdapter = true)
+@Serializable
 data class TalentsBooks(
-    @Json(name = "book_days")
+    @SerialName("book_days")
     val bookDays: String,
-    @Json(name = "book_name")
+    @SerialName("book_name")
     val bookName: String,
-    @Json(name = "book_url")
+    @SerialName("book_url")
     val bookUrl: String
 )

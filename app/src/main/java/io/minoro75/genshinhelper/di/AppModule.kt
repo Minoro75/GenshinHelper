@@ -1,7 +1,6 @@
 package io.minoro75.genshinhelper.di
 
 
-import com.squareup.moshi.Moshi
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -19,24 +18,20 @@ import javax.inject.Singleton
 object AppModule {
 
     @Provides
-    fun provideMoshi(): Moshi =
-        Moshi.Builder().build()
+    fun provideAssetsDataSource() =
+        AssetsDataSource()
 
     @Provides
-    fun provideAssetsDataSource(moshi: Moshi) =
-        AssetsDataSource(moshi)
+    fun provideAssetsDataSourceRu() =
+        AssetsDataSourceRu()
 
     @Provides
-    fun provideAssetsDataSourceRu(moshi: Moshi) =
-        AssetsDataSourceRu(moshi)
+    fun provideAssetsDataSourceUk() =
+        AssetsDataSourceUk()
 
     @Provides
-    fun provideAssetsDataSourceUk(moshi: Moshi) =
-        AssetsDataSourceUk(moshi)
-
-    @Provides
-    fun provideAssetsDataSourcePt(moshi: Moshi) =
-        AssetsDataSourcePt(moshi)
+    fun provideAssetsDataSourcePt() =
+        AssetsDataSourcePt()
 
     @Provides
     @Singleton
@@ -46,5 +41,10 @@ object AppModule {
         assetsDataSourceUk: AssetsDataSourceUk,
         assetsDataSourcePt: AssetsDataSourcePt
     ): CharactersRepository =
-        CharactersRepositoryImpl(assetsDataSource, assetsDataSourceRu, assetsDataSourceUk,assetsDataSourcePt)
+        CharactersRepositoryImpl(
+            assetsDataSource,
+            assetsDataSourceRu,
+            assetsDataSourceUk,
+            assetsDataSourcePt
+        )
 }

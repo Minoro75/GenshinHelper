@@ -1,18 +1,18 @@
 package io.minoro75.genshinhelper.domain.model
 
-import com.squareup.moshi.Json
-import com.squareup.moshi.JsonClass
 import io.minoro75.genshinhelper.R
+import kotlinx.serialization.SerialName
+import kotlinx.serialization.Serializable
 
-@JsonClass(generateAdapter = true)
+@Serializable
 data class HowToObtainItem(
     val description: String,
-    @Json(name = "domain_name")
+    @SerialName("domain_name")
     val domainName: String,
     val name: String
-){
-    fun getImageResource():Int{
-        return when(domainName){
+) {
+    fun getImageResource(): Int {
+        return when (domainName) {
             // Artifacts
             "Domain of Guyun" -> R.drawable.dg_domain_of_guyun
             "Peak of Vindagnyr" -> R.drawable.dg_peak_of_vyndagnyr

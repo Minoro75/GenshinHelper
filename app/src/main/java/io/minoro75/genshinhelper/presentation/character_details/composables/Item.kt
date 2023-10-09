@@ -53,13 +53,10 @@ fun Item(
         border = BorderStroke(2.dp, SolidColor(MaterialTheme.colorScheme.primary))
     ) {
         AsyncImageWithBackground(
-            model = ImageRequest.Builder(LocalContext.current)
-                .data(url)
-                .crossfade(true)
-                .build(),
+            url = url,
             contentDescription = name,
-            placeholder = painterResource(id = loadingPlaceholder),
-            error = painterResource(id = errorPlaceholder),
+            placeholder = loadingPlaceholder,
+            error =errorPlaceholder,
             contentScale = ContentScale.FillBounds,
             background = when (rarity) {
                 3 -> R.drawable.background_rarity_3_star

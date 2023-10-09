@@ -30,6 +30,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedCard
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
+import androidx.compose.runtime.Stable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.SolidColor
@@ -45,11 +46,15 @@ import io.minoro75.genshinhelper.presentation.character_details.composables.Item
 import io.minoro75.genshinhelper.presentation.common.AsyncImageWithBackground
 import io.minoro75.genshinhelper.presentation.theme.GenshinHelperTheme
 import io.minoro75.genshinhelper.presentation.theme.GenshinTypography
+import kotlinx.collections.immutable.PersistentList
+import kotlinx.collections.immutable.persistentListOf
+import kotlinx.collections.immutable.toPersistentList
 
 @OptIn(ExperimentalMaterial3Api::class)
+@Stable
 @Composable
 fun TodayBooksView(
-    books: List<TodayBooks>,
+    books: PersistentList<TodayBooks>,
     onCharacterClick: (String) -> Unit,
     onItemClick: (String) -> Unit
 ) {
@@ -121,6 +126,7 @@ fun TodayBooksView(
 }
 
 @Composable
+@Stable
 fun BookItem(
     item: TodayBooks,
     onCharacterClick: (String) -> Unit,
@@ -142,7 +148,7 @@ fun BookItem(
         Spacer(Modifier.width(16.dp))
 
         GridCharacters(
-            list = item.characters,
+            list = item.characters.toPersistentList(),
             onClick = onCharacterClick
         )
 
@@ -152,7 +158,7 @@ fun BookItem(
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun GridCharacters(
-    list: List<Character>,
+    list: PersistentList<Character>,
     onClick: (String) -> Unit
 ) {
     val firstColumn = 0..3
@@ -178,10 +184,10 @@ fun GridCharacters(
                             border = BorderStroke(2.dp, SolidColor(MaterialTheme.colorScheme.primary))
                         ) {
                             AsyncImageWithBackground(
-                                model = list[i].imageUrl,
+                                url = list[i].imageUrl,
                                 contentDescription = list[i].name,
-                                placeholder = painterResource(id = R.drawable.placeholder_loading),
-                                error = painterResource(id = R.drawable.placeholder_no_internet),
+                                placeholder = R.drawable.placeholder_loading,
+                                error = R.drawable.placeholder_no_internet,
                                 contentScale = ContentScale.FillBounds,
                                 background = when (list[i].rarity) {
                                     4 -> R.drawable.background_rarity_4_star
@@ -219,10 +225,10 @@ fun GridCharacters(
                                 )
                             ) {
                                 AsyncImageWithBackground(
-                                    model = list[i].imageUrl,
+                                    url = list[i].imageUrl,
                                     contentDescription = list[i].name,
-                                    placeholder = painterResource(id = R.drawable.placeholder_loading),
-                                    error = painterResource(id = R.drawable.placeholder_no_internet),
+                                    placeholder = R.drawable.placeholder_loading,
+                                    error = R.drawable.placeholder_no_internet,
                                     contentScale = ContentScale.FillBounds,
                                     background = when (list[i].rarity) {
                                         4 -> R.drawable.background_rarity_4_star
@@ -261,10 +267,10 @@ fun GridCharacters(
                                 )
                             ) {
                                 AsyncImageWithBackground(
-                                    model = list[i].imageUrl,
+                                    url = list[i].imageUrl,
                                     contentDescription = list[i].name,
-                                    placeholder = painterResource(id = R.drawable.placeholder_loading),
-                                    error = painterResource(id = R.drawable.placeholder_no_internet),
+                                    placeholder = R.drawable.placeholder_loading,
+                                    error = R.drawable.placeholder_no_internet,
                                     contentScale = ContentScale.FillBounds,
                                     background = when (list[i].rarity) {
                                         4 -> R.drawable.background_rarity_4_star
@@ -293,11 +299,11 @@ fun GridCharacters(
 fun PreviewTodayBooks() {
     GenshinHelperTheme {
         TodayBooksView(
-            books = listOf(
+            books = persistentListOf(
                 TodayBooks(
                     "Prosperity",
                     "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/Item_Philosophies_of_Freedom.png",
-                    listOf(
+                    persistentListOf(
                         Character(
                             element = "cryo",
                             name = "Raiden Miku",
@@ -369,7 +375,7 @@ fun PreviewTodayBooks() {
                 TodayBooks(
                     "Prosperity",
                     "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/Item_Philosophies_of_Freedom.png",
-                    listOf(
+                    persistentListOf(
                         Character(
                             element = "cryo",
                             name = "Raiden Miku",
@@ -393,7 +399,7 @@ fun PreviewTodayBooks() {
                 TodayBooks(
                     "Prosperity",
                     "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/Item_Philosophies_of_Freedom.png",
-                    listOf(
+                    persistentListOf(
                         Character(
                             element = "cryo",
                             name = "Raiden Miku",
@@ -453,7 +459,7 @@ fun PreviewTodayBooks() {
                 TodayBooks(
                     "Prosperity",
                     "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/Item_Philosophies_of_Freedom.png",
-                    listOf(
+                    persistentListOf(
                         Character(
                             element = "cryo",
                             name = "Raiden Miku",

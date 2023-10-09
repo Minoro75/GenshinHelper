@@ -1,7 +1,5 @@
 package io.minoro75.genshinhelper.data.assets.uk
 
-import com.squareup.moshi.Moshi
-import com.squareup.moshi.adapter
 import io.minoro75.genshinhelper.data.assets.uk.books.MonThuBooksSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.books.SundayBooksSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.books.TueFriBooksSourceUk
@@ -48,6 +46,7 @@ import io.minoro75.genshinhelper.data.assets.uk.characters.LyneyDetailsSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.characters.MikaDetailsSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.characters.MonaDetailsSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.characters.NahidaDetailsSourceUk
+import io.minoro75.genshinhelper.data.assets.uk.characters.NeuviletteDetailsSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.characters.NilouDetailsSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.characters.NingguangDetailsSourceUk
 import io.minoro75.genshinhelper.data.assets.uk.characters.NoelleDetailsSourceUk
@@ -176,6 +175,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
+import kotlinx.serialization.json.Json
 import javax.inject.Inject
 
 /**
@@ -184,318 +184,501 @@ import javax.inject.Inject
 
 @OptIn(ExperimentalStdlibApi::class)
 class AssetsDataSourceUk @Inject constructor(
-    moshi: Moshi
 ) {
-    private val characterAdapter = moshi.adapter<List<CharacterModel>>()
-    private val characterDetailsAdapter = moshi.adapter(CharacterDetails::class.java)
-    private val booksAdapter = moshi.adapter<List<TodayBooks>>()
-    private val itemLocationAdapter = moshi.adapter<List<HowToObtainItem>>()
-    private val weaponsAdapter = moshi.adapter<List<TodayWeaponResources>>()
+    val jsonDecoder = Json {
+        isLenient = true
+        ignoreUnknownKeys = true
+    }
 
     fun getCharactersListUk() = flow {
-        emit(characterAdapter.fromJson(CharactersListSourceUk.charactersList))
+        emit(jsonDecoder.decodeFromString<List<CharacterModel>>(CharactersListSourceUk.charactersList))
     }.flowOn(Dispatchers.IO)
 
     fun getMonThuWeaponResourcesUk() = flow {
-        emit(weaponsAdapter.fromJson(MonThuWeaponsResSourceUk.resourcesList))
+        emit(jsonDecoder.decodeFromString<List<TodayWeaponResources>>(MonThuWeaponsResSourceUk.resourcesList))
     }.flowOn(Dispatchers.IO)
 
     fun getTueFriWeaponResourcesUk() = flow {
-        emit(weaponsAdapter.fromJson(TueFriWeaponsResSourceUk.resourcesList))
+        emit(jsonDecoder.decodeFromString<List<TodayWeaponResources>>(TueFriWeaponsResSourceUk.resourcesList))
     }.flowOn(Dispatchers.IO)
 
     fun getWedSatWeaponResourcesUk() = flow {
-        emit(weaponsAdapter.fromJson(WedSatWeaponsResSourceUk.resourcesList))
+        emit(jsonDecoder.decodeFromString<List<TodayWeaponResources>>(WedSatWeaponsResSourceUk.resourcesList))
     }.flowOn(Dispatchers.IO)
 
     fun getSundayWeaponResourcesUk() = flow {
-        emit(weaponsAdapter.fromJson(SundayWeaponsResSourceUk.resourcesList))
+        emit(jsonDecoder.decodeFromString<List<TodayWeaponResources>>(SundayWeaponsResSourceUk.resourcesList))
     }.flowOn(Dispatchers.IO)
 
     fun getMonThuBooksUk() = flow {
-        emit(booksAdapter.fromJson(MonThuBooksSourceUk.booksList))
+        emit(jsonDecoder.decodeFromString<List<TodayBooks>>(MonThuBooksSourceUk.booksList))
     }.flowOn(Dispatchers.IO)
 
     fun getTueFriBooksUk() = flow {
-        emit(booksAdapter.fromJson(TueFriBooksSourceUk.booksList))
+        emit(jsonDecoder.decodeFromString<List<TodayBooks>>(TueFriBooksSourceUk.booksList))
     }.flowOn(Dispatchers.IO)
 
     fun getWedSatBooksUk() = flow {
-        emit(booksAdapter.fromJson(WedSatBooksSourceUk.booksList))
+        emit(jsonDecoder.decodeFromString<List<TodayBooks>>(WedSatBooksSourceUk.booksList))
     }.flowOn(Dispatchers.IO)
 
     fun getSundayBooksUk() = flow {
-        emit(booksAdapter.fromJson(SundayBooksSourceUk.booksList))
+        emit(jsonDecoder.decodeFromString<List<TodayBooks>>(SundayBooksSourceUk.booksList))
     }.flowOn(Dispatchers.IO)
 
     fun getItemLocationUk(itemName: String): Flow<List<HowToObtainItem>?> {
         return flow {
             when (itemName) {
                 // Artifacts
-                "Архаїчний камінь" -> emit(itemLocationAdapter.fromJson(ArchaicPetraDataSourceUk.sourcesList))
+                "Архаїчний камінь" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        ArchaicPetraDataSourceUk.sourcesList
+                    )
+                )
 
                 "Загублений у хуртовині" -> emit(
-                    itemLocationAdapter.fromJson(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
                         BlizzardStrayerDataSourceUk.sourcesList
                     )
                 )
 
                 "Криваве лицарство" -> emit(
-                    itemLocationAdapter.fromJson(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
                         BloodstainedChivalryDataSourceUk.sourcesList
                     )
                 )
 
                 "Вогняна відьма" -> emit(
-                    itemLocationAdapter.fromJson(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
                         CrimsonWitchOfFlamesDataSourceUk.sourcesList
                     )
                 )
 
-                "Спогади хащі" -> emit(itemLocationAdapter.fromJson(DeepwoodMemoriesDataSourceUk.sourcesList))
+                "Спогади хащі" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        DeepwoodMemoriesDataSourceUk.sourcesList
+                    )
+                )
 
                 "Відлуння благодаті" -> emit(
-                    itemLocationAdapter.fromJson(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
                         EchoesOfTheOfferingDataSourceUk.sourcesList
                     )
                 )
 
                 "Емблема відрізаної долі" -> emit(
-                    itemLocationAdapter.fromJson(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
                         EmblemOfSeveredFateDataSourceUk.sourcesList
                     )
                 )
 
                 "Оздоблені золотом мрії" -> emit(
-                    itemLocationAdapter.fromJson(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
                         GildedDreamsDataSourceUk.sourcesList
                     )
                 )
 
                 "Церемонія поховання гладіатора" -> emit(
-                    itemLocationAdapter.fromJson(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
                         GladiatorsFinaleDataSourceUk.sourcesList
                     )
                 )
 
-                "Серце глибин" -> emit(itemLocationAdapter.fromJson(HeartOfDepthDataSourceUk.sourcesList))
+                "Серце глибин" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        HeartOfDepthDataSourceUk.sourcesList
+                    )
+                )
 
                 "Пробудження від сну" -> emit(
-                    itemLocationAdapter.fromJson(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
                         HuskOfOpulentDreamsDataSourceUk.sourcesList
                     )
                 )
 
-                "Крокуючий полумʼям" -> emit(itemLocationAdapter.fromJson(LavawalkerDataSourceUk.sourcesList))
+                "Крокуючий полумʼям" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        LavawalkerDataSourceUk.sourcesList
+                    )
+                )
 
-                "Maiden Beloved" -> emit(itemLocationAdapter.fromJson(MaidenBelovedDataSourceUk.sourcesList))
+                "Maiden Beloved" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        MaidenBelovedDataSourceUk.sourcesList
+                    )
+                )
 
                 "Церемонія давньої династії" -> emit(
-                    itemLocationAdapter.fromJson(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
                         NoblesseObligeDataSourceUk.sourcesList
                     )
                 )
 
                 "Молюск лазурового відтінку" -> emit(
-                    itemLocationAdapter.fromJson(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
                         OceanHuedClamDataSourceUk.sourcesList
                     )
                 )
 
-                "Блідий вогонь" -> emit(itemLocationAdapter.fromJson(PaleFlameDataSourceUk.sourcesList))
+                "Блідий вогонь" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        PaleFlameDataSourceUk.sourcesList
+                    )
+                )
 
-                "Зворотня комета" -> emit(itemLocationAdapter.fromJson(RetracingBolideDataSourceUk.sourcesList))
+                "Зворотня комета" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        RetracingBolideDataSourceUk.sourcesList
+                    )
+                )
 
                 "Спогади Шіменави" -> emit(
-                    itemLocationAdapter.fromJson(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
                         ShimenavasReminiscenceDataSourceUk.sourcesList
                     )
                 )
 
                 "Непохитність Міллелітів" -> emit(
-                    itemLocationAdapter.fromJson(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
                         TenacityOfTheMillelithDataSourceUk.sourcesList
                     )
                 )
 
-                "Лють грому" -> emit(itemLocationAdapter.fromJson(ThunderingFuryDataSourceUk.sourcesList))
+                "Лють грому" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        ThunderingFuryDataSourceUk.sourcesList
+                    )
+                )
 
-                "Громовержець" -> emit(itemLocationAdapter.fromJson(ThundersootherDataSourceUk.sourcesList))
+                "Громовержець" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        ThundersootherDataSourceUk.sourcesList
+                    )
+                )
 
                 "Відродження кіноварні" -> emit(
-                    itemLocationAdapter.fromJson(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
                         VermilionHereafterDataSourceUk.sourcesList
                     )
                 )
 
                 "Смарагдова тінь" -> emit(
-                    itemLocationAdapter.fromJson(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
                         ViridescentVenererDataSourceUk.sourcesList
                     )
                 )
 
-                "Мандрівна трупа" -> emit(itemLocationAdapter.fromJson(WanderersTroupeDataSourceUk.sourcesList))
+                "Мандрівна трупа" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        WanderersTroupeDataSourceUk.sourcesList
+                    )
+                )
 
                 "Хроніки пустельного павільйону" -> emit(
-                    itemLocationAdapter.fromJson(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
                         DesertPavilionChronicleDataSourceUk.sourcesList
                     )
                 )
 
                 "Квітка втраченого раю" -> emit(
-                    itemLocationAdapter.fromJson(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
                         FlowerOfParadiseLostDataSourceUk.sourcesList
                     )
                 )
 
-                "Золота трупа" -> emit(itemLocationAdapter.fromJson(GoldenTroupeDataSourceUk.sourcesList))
+                "Золота трупа" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        GoldenTroupeDataSourceUk.sourcesList
+                    )
+                )
 
                 "Фантомний мисливець" -> emit(
-                    itemLocationAdapter.fromJson(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
                         MarechausseeHunterDataSourceUk.sourcesList
                     )
                 )
 
                 // Boss items
 
-                "Серце попелу" -> emit(itemLocationAdapter.fromJson(AshenHeartDataSourceUk.sourcesList))
+                "Серце попелу" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        AshenHeartDataSourceUk.sourcesList
+                    )
+                )
 
                 "Віть кривавого нефриту" -> emit(
-                    itemLocationAdapter.fromJson(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
                         BloodjadeBranchDataSourceUk.sourcesList
                     )
                 )
 
                 "Корона володаря драконів" -> emit(
-                    itemLocationAdapter.fromJson(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
                         DragonLordsCrownDataSourceUk.sourcesList
                     )
                 )
 
-                "Кіготь Дваліна" -> emit(itemLocationAdapter.fromJson(DvalinsClawDataSourceUk.sourcesList))
+                "Кіготь Дваліна" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        DvalinsClawDataSourceUk.sourcesList
+                    )
+                )
 
-                "Перо Дваліна" -> emit(itemLocationAdapter.fromJson(DvalinsPlumeDataSourceUk.sourcesList))
+                "Перо Дваліна" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        DvalinsPlumeDataSourceUk.sourcesList
+                    )
+                )
 
-                "Подих Дваліна" -> emit(itemLocationAdapter.fromJson(DvalinsSighDataSourceUk.sourcesList))
+                "Подих Дваліна" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        DvalinsSighDataSourceUk.sourcesList
+                    )
+                )
 
-                "Позолочена луска" -> emit(itemLocationAdapter.fromJson(GildedScaleDataSourceUk.sourcesList))
+                "Позолочена луска" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        GildedScaleDataSourceUk.sourcesList
+                    )
+                )
 
                 "Метелик пекельного вогню" -> emit(
-                    itemLocationAdapter.fromJson(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
                         HellfireButterflyDataSourceUk.sourcesList
                     )
                 )
 
-                "Розплавлений момент" -> emit(itemLocationAdapter.fromJson(MoltenMomentDataSourceUk.sourcesList))
+                "Розплавлений момент" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        MoltenMomentDataSourceUk.sourcesList
+                    )
+                )
 
                 "Всевидяча рука зловісного генералу" -> emit(
-                    itemLocationAdapter.fromJson(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
                         MudraOfTheMaleficGeneralDataSourceUk.sourcesList
                     )
                 )
 
-                "Каблучка Борея" -> emit(itemLocationAdapter.fromJson(RingOfBoreasDataSourceUk.sourcesList))
+                "Каблучка Борея" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        RingOfBoreasDataSourceUk.sourcesList
+                    )
+                )
 
                 "Тінь воїна" -> emit(
-                    itemLocationAdapter.fromJson(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
                         ShadowOfTheWarriorDataSourceUk.sourcesList
                     )
                 )
 
                 "Фрагмент леза диявола" -> emit(
-                    itemLocationAdapter.fromJson(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
                         ShardOfFoulLegacyDataSourceUk.sourcesList
                     )
                 )
 
                 "Душа Борея" -> emit(
-                    itemLocationAdapter.fromJson(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
                         SpiritLocketOfBoreasDataSourceUk.sourcesList
                     )
                 )
 
-                "Хвіст Борея" -> emit(itemLocationAdapter.fromJson(TailOfBoreasDataSourceUk.sourcesList))
+                "Хвіст Борея" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        TailOfBoreasDataSourceUk.sourcesList
+                    )
+                )
 
                 "Сльози згубного бога" -> emit(
-                    itemLocationAdapter.fromJson(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
                         TearsOfTheCalamitiousGodDataSourceUk.sourcesList
                     )
                 )
 
                 "Сенс вічності" -> emit(
-                    itemLocationAdapter.fromJson(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
                         TheMeaningOfAeonsDataSourceUk.sourcesList
                     )
                 )
 
                 "Ріг небесного кита" -> emit(
-                    itemLocationAdapter.fromJson(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
                         TuskOfMonocerosCaeliDataSourceUk.sourcesList
                     )
                 )
 
-                "Нитки маріонетки" -> emit(itemLocationAdapter.fromJson(PuppetStringsDataSourceUk.sourcesList))
+                "Нитки маріонетки" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        PuppetStringsDataSourceUk.sourcesList
+                    )
+                )
 
-                "Дзеркало Мушіну" -> emit(itemLocationAdapter.fromJson(MirrorOfMushinDataSourceUk.sourcesList))
+                "Дзеркало Мушіну" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        MirrorOfMushinDataSourceUk.sourcesList
+                    )
+                )
 
-                "Пустий дзвоник" -> emit(itemLocationAdapter.fromJson(DakasBellDataSourceUk.sourcesList))
+                "Пустий дзвоник" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        DakasBellDataSourceUk.sourcesList
+                    )
+                )
 
-                "Світоросла папороть" -> emit(itemLocationAdapter.fromJson(WorldspanFernDataSourceUk.sourcesList))
+                "Світоросла папороть" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        WorldspanFernDataSourceUk.sourcesList
+                    )
+                )
 
                 "Зелений первоцвіт" -> emit(
-                    itemLocationAdapter.fromJson(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
                         PrimordialGreenbloomDataSourceUk.sourcesList
                     )
                 )
 
-                "Вічний бурштин" -> emit(itemLocationAdapter.fromJson(EveramberDataSourceUk.sourcesList))
+                "Вічний бурштин" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        EveramberDataSourceUk.sourcesList
+                    )
+                )
 
                 // Books
 
-                "про Напоумлення" -> emit(itemLocationAdapter.fromJson(AdmonitionDataSourceUk.sourcesList))
-                "про Поезію" -> emit(itemLocationAdapter.fromJson(BalladDataSourceUk.sourcesList))
-                "про Старанність" -> emit(itemLocationAdapter.fromJson(DiligenceDataSourceUk.sourcesList))
-                "про Вишуканість" -> emit(itemLocationAdapter.fromJson(EleganceDataSourceUk.sourcesList))
-                "про Волю" -> emit(itemLocationAdapter.fromJson(FreedomDataSourceUk.sourcesList))
-                "про Золото" -> emit(itemLocationAdapter.fromJson(GoldDataSourceUk.sourcesList))
-                "про Винахідливість" -> emit(itemLocationAdapter.fromJson(IngenuityDataSourceUk.sourcesList))
-                "про Світло" -> emit(itemLocationAdapter.fromJson(LightDataSourceUk.sourcesList))
-                "про Діяння" -> emit(itemLocationAdapter.fromJson(PraxisDataSourceUk.sourcesList))
-                "про Процвітання" -> emit(itemLocationAdapter.fromJson(ProsperityDataSourceUk.sourcesList))
-                "про Стійкість" -> emit(itemLocationAdapter.fromJson(ResistanceDataSourceUk.sourcesList))
-                "про Швидкоплинність" -> emit(itemLocationAdapter.fromJson(TransienceDataSourceUk.sourcesList))
-                "про Порядок" -> emit(itemLocationAdapter.fromJson(OrderDataSourceUk.sourcesList))
-                "про Справедливість" -> emit(itemLocationAdapter.fromJson(JusticeDataSourceUk.sourcesList))
-                "про Неупередженість" -> emit(itemLocationAdapter.fromJson(EquityDataSourceUk.sourcesList))
+                "про Напоумлення" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        AdmonitionDataSourceUk.sourcesList
+                    )
+                )
+
+                "про Поезію" -> emit(jsonDecoder.decodeFromString<List<HowToObtainItem>>(BalladDataSourceUk.sourcesList))
+                "про Старанність" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        DiligenceDataSourceUk.sourcesList
+                    )
+                )
+
+                "про Вишуканість" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        EleganceDataSourceUk.sourcesList
+                    )
+                )
+
+                "про Волю" -> emit(jsonDecoder.decodeFromString<List<HowToObtainItem>>(FreedomDataSourceUk.sourcesList))
+                "про Золото" -> emit(jsonDecoder.decodeFromString<List<HowToObtainItem>>(GoldDataSourceUk.sourcesList))
+                "про Винахідливість" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        IngenuityDataSourceUk.sourcesList
+                    )
+                )
+
+                "про Світло" -> emit(jsonDecoder.decodeFromString<List<HowToObtainItem>>(LightDataSourceUk.sourcesList))
+                "про Діяння" -> emit(jsonDecoder.decodeFromString<List<HowToObtainItem>>(PraxisDataSourceUk.sourcesList))
+                "про Процвітання" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        ProsperityDataSourceUk.sourcesList
+                    )
+                )
+
+                "про Стійкість" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        ResistanceDataSourceUk.sourcesList
+                    )
+                )
+
+                "про Швидкоплинність" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        TransienceDataSourceUk.sourcesList
+                    )
+                )
+
+                "про Порядок" -> emit(jsonDecoder.decodeFromString<List<HowToObtainItem>>(OrderDataSourceUk.sourcesList))
+                "про Справедливість" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        JusticeDataSourceUk.sourcesList
+                    )
+                )
+
+                "про Неупередженість" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        EquityDataSourceUk.sourcesList
+                    )
+                )
 
                 // Weapon resources
 
-                "Чорний сидеріт" -> emit(itemLocationAdapter.fromJson(AerosideriteDataSourceUk.sourcesList))
-                "Арктичний вовк" -> emit(itemLocationAdapter.fromJson(BorealWolfDataSourceUk.sourcesList))
+                "Чорний сидеріт" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        AerosideriteDataSourceUk.sourcesList
+                    )
+                )
+
+                "Арктичний вовк" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        BorealWolfDataSourceUk.sourcesList
+                    )
+                )
+
                 "Левине ікло" -> emit(
-                    itemLocationAdapter.fromJson(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
                         DandelionGladiatorDataSourceUk.sourcesList
                     )
                 )
 
-                "Декарабіан" -> emit(itemLocationAdapter.fromJson(DecarabianDataSourceUk.sourcesList))
-                "Далеке море" -> emit(itemLocationAdapter.fromJson(DistantSeaDataSourceUk.sourcesList))
-                "Лісова роса" -> emit(itemLocationAdapter.fromJson(ForestDewDataSourceUk.sourcesList))
-                "Гуюнь" -> emit(itemLocationAdapter.fromJson(GuyunDataSourceUk.sourcesList))
-                "Маска" -> emit(itemLocationAdapter.fromJson(MaskDataSourceUk.sourcesList))
-                "Обвиті туманом" -> emit(itemLocationAdapter.fromJson(MistVeiledDataSourceUk.sourcesList))
-                "Нарукамі" -> emit(itemLocationAdapter.fromJson(NarukamiDataSourceUk.sourcesList))
-                "Квітучий оазис" -> emit(itemLocationAdapter.fromJson(OasisGardenDataSourceUk.sourcesList))
-                "Палаюча міць" -> emit(itemLocationAdapter.fromJson(ScorchingMightDataSourceUk.sourcesList))
-                "Прадавній акорд" -> emit(itemLocationAdapter.fromJson(AncientChordDataSourceUk.sourcesList))
+                "Декарабіан" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        DecarabianDataSourceUk.sourcesList
+                    )
+                )
+
+                "Далеке море" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        DistantSeaDataSourceUk.sourcesList
+                    )
+                )
+
+                "Лісова роса" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        ForestDewDataSourceUk.sourcesList
+                    )
+                )
+
+                "Гуюнь" -> emit(jsonDecoder.decodeFromString<List<HowToObtainItem>>(GuyunDataSourceUk.sourcesList))
+                "Маска" -> emit(jsonDecoder.decodeFromString<List<HowToObtainItem>>(MaskDataSourceUk.sourcesList))
+                "Обвиті туманом" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        MistVeiledDataSourceUk.sourcesList
+                    )
+                )
+
+                "Нарукамі" -> emit(jsonDecoder.decodeFromString<List<HowToObtainItem>>(NarukamiDataSourceUk.sourcesList))
+                "Квітучий оазис" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        OasisGardenDataSourceUk.sourcesList
+                    )
+                )
+
+                "Палаюча міць" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        ScorchingMightDataSourceUk.sourcesList
+                    )
+                )
+
+                "Прадавній акорд" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        AncientChordDataSourceUk.sourcesList
+                    )
+                )
+
                 "Келих первозданного моря" -> emit(
-                    itemLocationAdapter.fromJson(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
                         GobletOfPristineSeaDataSourceUk.sourcesList
                     )
                 )
 
                 "Непорочна росинка" -> emit(
-                    itemLocationAdapter.fromJson(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
                         SacredDewdropChordDataSourceUk.sourcesList
                     )
                 )
@@ -509,191 +692,217 @@ class AssetsDataSourceUk @Inject constructor(
         // for testing purposes we may inject context as param, but maybe later
         return flow {
             when (characterName) {
-                "Альбедо" -> emit(characterDetailsAdapter.fromJson(AlbedoDetailsSourceUk.details))
+                "Альбедо" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(AlbedoDetailsSourceUk.details))
 
-                "Аль-Хайтам" -> emit(characterDetailsAdapter.fromJson(AlhaithamDetailsSourceUk.details))
+                "Аль-Хайтам" -> emit(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
+                        AlhaithamDetailsSourceUk.details
+                    )
+                )
 
-                "Елой" -> emit(characterDetailsAdapter.fromJson(AloyDetailsSourceUk.details))
+                "Елой" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(AloyDetailsSourceUk.details))
 
-                "Ембер" -> emit(characterDetailsAdapter.fromJson(AmberDetailsSourceUk.details))
+                "Ембер" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(AmberDetailsSourceUk.details))
 
-                "Аратакі Ітто" -> emit(characterDetailsAdapter.fromJson(AratakiIttoDetailsSourceUk.details))
+                "Аратакі Ітто" -> emit(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
+                        AratakiIttoDetailsSourceUk.details
+                    )
+                )
 
-                "Бай Чжу" -> emit(characterDetailsAdapter.fromJson(BaizhuDetailsSourceUk.details))
+                "Бай Чжу" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(BaizhuDetailsSourceUk.details))
 
-                "Барбара" -> emit(characterDetailsAdapter.fromJson(BarbaraDetailsSourceUk.details))
+                "Барбара" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(BarbaraDetailsSourceUk.details))
 
-                "Бейдоу" -> emit(characterDetailsAdapter.fromJson(BeidouDetailsSourceUk.details))
+                "Бейдоу" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(BeidouDetailsSourceUk.details))
 
-                "Беннетт" -> emit(characterDetailsAdapter.fromJson(BennettDetailsSourceUk.details))
+                "Беннетт" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(BennettDetailsSourceUk.details))
 
-                "Кавех" -> emit(characterDetailsAdapter.fromJson(KavehDetailsSourceUk.details))
+                "Кавех" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(KavehDetailsSourceUk.details))
 
-                "Кандаке" -> emit(characterDetailsAdapter.fromJson(CandaceDetailsSourceUk.details))
+                "Кандаке" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(CandaceDetailsSourceUk.details))
 
-                "Чонʼюнь" -> emit(characterDetailsAdapter.fromJson(ChongyunDetailsSourceUk.details))
+                "Чонʼюнь" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(ChongyunDetailsSourceUk.details))
 
-                "Коллей" -> emit(characterDetailsAdapter.fromJson(ColleiDetailsSourceUk.details))
+                "Коллей" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(ColleiDetailsSourceUk.details))
 
-                "Сайно" -> emit(characterDetailsAdapter.fromJson(CynoDetailsSourceUk.details))
+                "Сайно" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(CynoDetailsSourceUk.details))
 
-                "Ділюк" -> emit(characterDetailsAdapter.fromJson(DilucDetailsSourceUk.details))
+                "Ділюк" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(DilucDetailsSourceUk.details))
 
-                "Дехʼя" -> emit(characterDetailsAdapter.fromJson(DehyaDetailsSourceUk.details))
+                "Дехʼя" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(DehyaDetailsSourceUk.details))
 
-                "Діона" -> emit(characterDetailsAdapter.fromJson(DionaDetailsSourceUk.details))
+                "Діона" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(DionaDetailsSourceUk.details))
 
-                "Дорі" -> emit(characterDetailsAdapter.fromJson(DoriDetailsSourceUk.details))
+                "Дорі" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(DoriDetailsSourceUk.details))
 
-                "Еола" -> emit(characterDetailsAdapter.fromJson(EulaDetailsSourceUk.details))
+                "Еола" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(EulaDetailsSourceUk.details))
 
-                "Фішль" -> emit(characterDetailsAdapter.fromJson(FischlDetailsSourceUk.details))
+                "Фішль" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(FischlDetailsSourceUk.details))
 
-                "Ганью" -> emit(characterDetailsAdapter.fromJson(GanyuDetailsSourceUk.details))
+                "Ганью" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(GanyuDetailsSourceUk.details))
 
-                "Горо" -> emit(characterDetailsAdapter.fromJson(GorouDetailsSourceUk.details))
+                "Горо" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(GorouDetailsSourceUk.details))
 
-                "Ху Тао" -> emit(characterDetailsAdapter.fromJson(HuTaoDetailsSourceUk.details))
+                "Ху Тао" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(HuTaoDetailsSourceUk.details))
 
-                "Джин" -> emit(characterDetailsAdapter.fromJson(JeanDetailsSourceUk.details))
+                "Джин" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(JeanDetailsSourceUk.details))
 
                 "Каедехара Кадзуха" -> emit(
-                    characterDetailsAdapter.fromJson(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
                         KaedeharaKazuhaDetailsSourceUk.details
                     )
                 )
 
-                "Кая" -> emit(characterDetailsAdapter.fromJson(KaeyaDetailsSourceUk.details))
+                "Кая" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(KaeyaDetailsSourceUk.details))
 
                 "Камісато Аяка" -> emit(
-                    characterDetailsAdapter.fromJson(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
                         KamisatoAyakaDetailsSourceUk.details
                     )
                 )
 
                 "Камісато Аято" -> emit(
-                    characterDetailsAdapter.fromJson(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
                         KamisatoAyatoDetailsSourceUk.details
                     )
                 )
 
-                "Кірара" -> emit(characterDetailsAdapter.fromJson(KiraraDetailSourceUk.details))
+                "Кірара" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(KiraraDetailSourceUk.details))
 
-                "Кецін" -> emit(characterDetailsAdapter.fromJson(KeqingDetailsSourceUk.details))
+                "Кецін" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(KeqingDetailsSourceUk.details))
 
-                "Клі" -> emit(characterDetailsAdapter.fromJson(KleeDetailsSourceUk.details))
+                "Клі" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(KleeDetailsSourceUk.details))
 
-                "Куджьо Сара" -> emit(characterDetailsAdapter.fromJson(KujouSaraDetailsSourceUk.details))
+                "Куджьо Сара" -> emit(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
+                        KujouSaraDetailsSourceUk.details
+                    )
+                )
 
-                "Кукі Шінобу" -> emit(characterDetailsAdapter.fromJson(KukiShinobuDetailsSourceUk.details))
+                "Кукі Шінобу" -> emit(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
+                        KukiShinobuDetailsSourceUk.details
+                    )
+                )
 
-                "Лайла" -> emit(characterDetailsAdapter.fromJson(LaylaDetailsSourceUk.details))
+                "Лайла" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(LaylaDetailsSourceUk.details))
 
-                "Ліза" -> emit(characterDetailsAdapter.fromJson(LisaDetailsSourceUk.details))
+                "Ліза" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(LisaDetailsSourceUk.details))
 
-                "Мона" -> emit(characterDetailsAdapter.fromJson(MonaDetailsSourceUk.details))
+                "Мона" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(MonaDetailsSourceUk.details))
 
-                "Нахіда" -> emit(characterDetailsAdapter.fromJson(NahidaDetailsSourceUk.details))
+                "Нахіда" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(NahidaDetailsSourceUk.details))
 
-                "Нілу" -> emit(characterDetailsAdapter.fromJson(NilouDetailsSourceUk.details))
+                "Нілу" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(NilouDetailsSourceUk.details))
 
-                "Нінгуан" -> emit(characterDetailsAdapter.fromJson(NingguangDetailsSourceUk.details))
+                "Нінгуан" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(NingguangDetailsSourceUk.details))
 
-                "Ноель" -> emit(characterDetailsAdapter.fromJson(NoelleDetailsSourceUk.details))
+                "Ноель" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(NoelleDetailsSourceUk.details))
 
-                "Ці Ці" -> emit(characterDetailsAdapter.fromJson(QiqiDetailsSourceUk.details))
+                "Ці Ці" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(QiqiDetailsSourceUk.details))
 
-                "Райден Шьогун" -> emit(characterDetailsAdapter.fromJson(RaidenShogunDetailsSourceUk.details))
+                "Райден Шьогун" -> emit(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
+                        RaidenShogunDetailsSourceUk.details
+                    )
+                )
 
-                "Рейзор" -> emit(characterDetailsAdapter.fromJson(RazorDetailsSourceUk.details))
+                "Рейзор" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(RazorDetailsSourceUk.details))
 
-                "Розарія" -> emit(characterDetailsAdapter.fromJson(RosariaDetailsSourceUk.details))
+                "Розарія" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(RosariaDetailsSourceUk.details))
 
                 "Сангономія Кокомі" -> emit(
-                    characterDetailsAdapter.fromJson(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
                         SangonomiyaKokomiDetailsSourceUk.details
                     )
                 )
 
-                "Саю" -> emit(characterDetailsAdapter.fromJson(SayuDetailsSourceUk.details))
+                "Саю" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(SayuDetailsSourceUk.details))
 
-                "Шеньхе" -> emit(characterDetailsAdapter.fromJson(ShenheDetailsSourceUk.details))
+                "Шеньхе" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(ShenheDetailsSourceUk.details))
 
                 "Шиканоін Хейдзо" -> emit(
-                    characterDetailsAdapter.fromJson(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
                         ShikanoinHeizouDetailsSourceUk.details
                     )
                 )
 
-                "Цукроза" -> emit(characterDetailsAdapter.fromJson(SucroseDetailsSourceUk.details))
+                "Цукроза" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(SucroseDetailsSourceUk.details))
 
-                "Тарталья" -> emit(characterDetailsAdapter.fromJson(TartagliaDetailsSourceUk.details))
+                "Тарталья" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(TartagliaDetailsSourceUk.details))
 
-                "Тома" -> emit(characterDetailsAdapter.fromJson(ThomaDetailsSourceUk.details))
+                "Тома" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(ThomaDetailsSourceUk.details))
 
-                "Тігнарі" -> emit(characterDetailsAdapter.fromJson(TighnariDetailsSourceUk.details))
+                "Тігнарі" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(TighnariDetailsSourceUk.details))
 
                 "Мандрівник Анемо" -> emit(
-                    characterDetailsAdapter.fromJson(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
                         TravelerAnemoDetailsSourceUk.details
                     )
                 )
 
                 "Мандрівник Електро" -> emit(
-                    characterDetailsAdapter.fromJson(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
                         TravelerElectroDetailsSourceUk.details
                     )
                 )
 
                 "Мандрівник Гео" -> emit(
-                    characterDetailsAdapter.fromJson(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
                         TravelerGeoDetailsSourceUk.details
                     )
                 )
 
                 "Мандрівник Дендро" -> emit(
-                    characterDetailsAdapter.fromJson(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
                         TravelerDendroDetailsSourceUk.details
                     )
                 )
 
-                "Венті" -> emit(characterDetailsAdapter.fromJson(VentiDetailsSourceUk.details))
+                "Венті" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(VentiDetailsSourceUk.details))
 
-                "Сянлін" -> emit(characterDetailsAdapter.fromJson(XianglingDetailsSourceUk.details))
+                "Сянлін" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(XianglingDetailsSourceUk.details))
 
-                "Сяо" -> emit(characterDetailsAdapter.fromJson(XiaoDetailsSourceUk.details))
+                "Сяо" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(XiaoDetailsSourceUk.details))
 
-                "Сінцю" -> emit(characterDetailsAdapter.fromJson(XingqiuDetailsSourceUk.details))
+                "Сінцю" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(XingqiuDetailsSourceUk.details))
 
-                "Сіньянь" -> emit(characterDetailsAdapter.fromJson(XinyanDetailsSourceUk.details))
+                "Сіньянь" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(XinyanDetailsSourceUk.details))
 
-                "Яе Міко" -> emit(characterDetailsAdapter.fromJson(YaeMikoDetailsSourceUk.details))
+                "Яе Міко" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(YaeMikoDetailsSourceUk.details))
 
-                "Яньфей" -> emit(characterDetailsAdapter.fromJson(YanfeiDetailsSourceUk.details))
+                "Яньфей" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(YanfeiDetailsSourceUk.details))
 
-                "Яо Яо" -> emit(characterDetailsAdapter.fromJson(YaoYaoDetailsSourceUk.details))
+                "Яо Яо" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(YaoYaoDetailsSourceUk.details))
 
-                "Єлань" -> emit(characterDetailsAdapter.fromJson(YelanDetailsSourceUk.details))
+                "Єлань" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(YelanDetailsSourceUk.details))
 
-                "Йоімія" -> emit(characterDetailsAdapter.fromJson(YoimiyaDetailsSourceUk.details))
+                "Йоімія" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(YoimiyaDetailsSourceUk.details))
 
-                "Юнь Дзінь" -> emit(characterDetailsAdapter.fromJson(YunJinDetailsSourceUk.details))
+                "Юнь Дзінь" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(YunJinDetailsSourceUk.details))
 
-                "Джонлі" -> emit(characterDetailsAdapter.fromJson(ZhongliDetailsSourceUk.details))
+                "Джонлі" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(ZhongliDetailsSourceUk.details))
 
-                "Блукач" -> emit(characterDetailsAdapter.fromJson(WandererDetailsSourceUk.details))
+                "Блукач" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(WandererDetailsSourceUk.details))
 
-                "Фарузан" -> emit(characterDetailsAdapter.fromJson(FaruzanDetailsSourceUk.details))
+                "Фарузан" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(FaruzanDetailsSourceUk.details))
 
-                "Міка" -> emit(characterDetailsAdapter.fromJson(MikaDetailsSourceUk.details))
+                "Міка" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(MikaDetailsSourceUk.details))
 
-                "Ліні" -> emit(characterDetailsAdapter.fromJson(LyneyDetailsSourceUk.details))
+                "Ліні" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(LyneyDetailsSourceUk.details))
 
-                "Лінетт" -> emit(characterDetailsAdapter.fromJson(LynetteDetailsSourceUk.details))
+                "Лінетт" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(LynetteDetailsSourceUk.details))
 
-                "Мандрівник Гідро" -> emit(characterDetailsAdapter.fromJson(TravelerHydroDetailsSourceUk.details))
+                "Мандрівник Гідро" -> emit(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
+                        TravelerHydroDetailsSourceUk.details
+                    )
+                )
 
-                "Фреміне" -> emit(characterDetailsAdapter.fromJson(FreminetDetailsSourceUk.details))
+                "Фреміне" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(FreminetDetailsSourceUk.details))
+
+                "Невілет" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(NeuviletteDetailsSourceUk.details))
 
                 else -> throw IllegalArgumentException("There is no character with name : $characterName")
             }

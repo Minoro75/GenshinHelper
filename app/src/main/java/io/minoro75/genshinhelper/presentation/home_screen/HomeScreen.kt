@@ -26,6 +26,7 @@ import io.minoro75.genshinhelper.presentation.common.LoadingScreen
 import io.minoro75.genshinhelper.presentation.home_screen.HomeScreenViewModel
 import io.minoro75.genshinhelper.presentation.theme.GenshinHelperTheme
 import io.minoro75.genshinhelper.presentation.theme.GenshinTypography
+import kotlinx.collections.immutable.persistentListOf
 
 @Composable
 fun HomeScreen(
@@ -124,11 +125,11 @@ fun PreviewHomeScreen() {
             Spacer(modifier = Modifier.height(16.dp))
 
             TodayBooksView(
-                books = listOf(
+                books = persistentListOf(
                     io.minoro75.genshinhelper.domain.model.TodayBooks(
                         "Prosperity",
                         "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/Item_Philosophies_of_Freedom.png",
-                        listOf(
+                        persistentListOf(
                             Character(
                                 element = "cryo",
                                 name = "Raiden Miku",
@@ -146,7 +147,7 @@ fun PreviewHomeScreen() {
                     io.minoro75.genshinhelper.domain.model.TodayBooks(
                         "Prosperity",
                         "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/Item_Philosophies_of_Freedom.png",
-                        listOf(
+                        persistentListOf(
                             Character(
                                 element = "cryo",
                                 name = "Raiden Miku",
@@ -164,7 +165,7 @@ fun PreviewHomeScreen() {
                     io.minoro75.genshinhelper.domain.model.TodayBooks(
                         "Prosperity",
                         "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/Item_Philosophies_of_Freedom.png",
-                        listOf(
+                        persistentListOf(
                             Character(
                                 element = "cryo",
                                 name = "Raiden Miku",
@@ -188,7 +189,7 @@ fun PreviewHomeScreen() {
                     io.minoro75.genshinhelper.domain.model.TodayBooks(
                         "Prosperity",
                         "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/Item_Philosophies_of_Freedom.png",
-                        listOf(
+                        persistentListOf(
                             Character(
                                 element = "cryo",
                                 name = "Raiden Miku",
@@ -223,7 +224,7 @@ fun PreviewHomeScreen() {
             Spacer(modifier = Modifier.height(16.dp))
 
             TodayWeapons(
-                list = listOf(
+                list = persistentListOf(
                     TodayWeaponResources(
                         "Dandelion Gladiator",
                         "https://paimon.moe/images/items/dream_of_the_dandelion_gladiator.png"

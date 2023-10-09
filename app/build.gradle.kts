@@ -1,11 +1,15 @@
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("org.jetbrains.kotlin.plugin.serialization")
     id("com.google.firebase.crashlytics") version "2.9.2"
     id("com.google.gms.google-services") version "4.3.14"
     id("com.google.dagger.hilt.android") version Dependencies.Hilt.daggerHiltVersion
     id("org.jetbrains.kotlin.kapt") version Dependencies.kotlinVersion
 }
+
 
 @Suppress("UnstableApiUsage")
 android {
@@ -42,6 +46,15 @@ android {
     }
     kotlinOptions {
         jvmTarget = "1.8"
+
+        //compose metrics generation
+
+        freeCompilerArgs += listOf(
+            "-P",
+            "plugin:androidx.compose.compiler.plugins.kotlin:metricsDestination=" + project.buildDir.absolutePath + "/compose_metrics")
+        freeCompilerArgs += listOf(
+            "-P",
+            "plugin:androidx.compose.compiler.plugins.kotlin:reportsDestination="  + project.buildDir.absolutePath + "/compose_metrics")
     }
     kapt {
         correctErrorTypes = true
@@ -76,8 +89,6 @@ dependencies {
     kapt(Dependencies.Hilt.kaptHilt)
     implementation(Dependencies.Hilt.hiltNavCompose)
 
-    implementation(Dependencies.Other.moshi)
-    kapt(Dependencies.Other.moshiCodegen)
     implementation(Dependencies.Other.coil)
     implementation(Dependencies.Other.chromeTabs)
     implementation(Dependencies.Other.firebaseCrashlytics)
@@ -92,6 +103,8 @@ dependencies {
     implementation(Dependencies.Compose.navigation_animation)
     implementation(Dependencies.Compose.insets)
     implementation(Dependencies.Compose.uiController)
+    implementation(Dependencies.Compose.immutableLists)
+    implementation(Dependencies.Compose.kotlinXSerialization)
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.3")

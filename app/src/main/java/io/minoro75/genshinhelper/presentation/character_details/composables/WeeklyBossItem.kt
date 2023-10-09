@@ -48,10 +48,10 @@ fun WeeklyBossItem(
                 )
             ) {
                 AsyncImageWithBackground(
-                    model = url,
+                    url = url,
                     contentDescription = "",
-                    placeholder = painterResource(id = R.drawable.boss_loading),
-                    error = painterResource(id = R.drawable.boss_no_internet),
+                    placeholder =  R.drawable.boss_loading,
+                    error =  R.drawable.boss_no_internet,
                     contentScale = ContentScale.FillBounds,
                     background = R.drawable.background_rarity_5_star,
                     elementImage = null,

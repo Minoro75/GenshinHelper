@@ -29,12 +29,14 @@ import io.minoro75.genshinhelper.domain.model.WeaponBest
 import io.minoro75.genshinhelper.domain.model.WeaponsReplacement
 import io.minoro75.genshinhelper.presentation.theme.GenshinHelperTheme
 import io.minoro75.genshinhelper.presentation.theme.GenshinTypography
+import kotlinx.collections.immutable.PersistentList
+import kotlinx.collections.immutable.persistentListOf
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun WeaponsView(
     bis: WeaponBest,
-    replacements: List<WeaponsReplacement>
+    replacements: PersistentList<WeaponsReplacement>
 ) {
     OutlinedCard(
         elevation = CardDefaults.cardElevation(defaultElevation = 8.dp),
@@ -126,7 +128,7 @@ fun PreviewWeapons() {
                 weaponName = "Amos Bow",
                 weaponUrl = "https://paimon.moe/images/weapons/amos_bow.png"
             ),
-            replacements = listOf(
+            replacements = persistentListOf(
                 WeaponsReplacement(
                     weaponRarity = 5,
                     weaponName = "Aqua Simulacra",

@@ -6,20 +6,24 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.Immutable
+import androidx.compose.runtime.Stable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
+import coil.request.ImageRequest
 
 @Composable
 fun AsyncImageWithBackground(
-    model: Any?,
+    url: String,
     contentDescription: String?,
-    placeholder: Painter?,
-    error: Painter?,
+    @DrawableRes placeholder: Int,
+    @DrawableRes error: Int,
     contentScale: ContentScale,
     @DrawableRes background: Int,
     @DrawableRes elementImage: Int?,
@@ -34,10 +38,13 @@ fun AsyncImageWithBackground(
 
         )
         AsyncImage(
-            model = model,
+            model = ImageRequest.Builder(LocalContext.current)
+                .data(url)
+                .crossfade(true)
+                .build(),
             contentDescription = contentDescription,
-            placeholder = placeholder,
-            error = error,
+            placeholder = painterResource(id = placeholder),
+            error = painterResource(id = error),
             contentScale = contentScale,
             modifier = modifier.matchParentSize()
         )

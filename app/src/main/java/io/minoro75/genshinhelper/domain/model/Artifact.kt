@@ -1,20 +1,20 @@
 package io.minoro75.genshinhelper.domain.model
 
-import com.squareup.moshi.Json
-import com.squareup.moshi.JsonClass
+import kotlinx.serialization.SerialName
+import kotlinx.serialization.Serializable
 
-@JsonClass(generateAdapter = true)
+@Serializable
 data class Artifact(
-    @Json(name = "artifact_amount")
+    @SerialName("artifact_amount")
     val artifactAmount: Int,
-    @Json(name = "artifact_circlet")
+    @SerialName("artifact_circlet")
     val artifactCirclet: String,
-    @Json(name = "artifact_gobelet")
+    @SerialName("artifact_gobelet")
     val artifactGobelet: String,
-    @Json(name = "artifact_name")
+    @SerialName("artifact_name")
     val artifactName: String,
-    @Json(name = "artifact_sands")
+    @SerialName("artifact_sands")
     val artifactSands: String,
-    @Json(name = "artifact_url")
+    @SerialName("artifact_url")
     val artifactUrl: String
 )

@@ -1,15 +1,16 @@
 object Dependencies {
 
-    const val kotlinVersion = "1.8.10"
+    const val kotlinVersion = "1.9.0"
 
     object Compose {
         const val version = "1.4.0-beta02"
-        const val composeCompiler = "1.4.3"
+        const val composeCompiler = "1.5.2"
         const val material3Version = "1.1.0-beta01"
         const val navigationVersion = "2.6.0-alpha05"
         const val lifecycle_version = "2.6.0-alpha03"
         const val app_compat_versioon = "1.7.0-alpha01"
         const val accompanist_version = "0.29.1-alpha"
+        const val immutable = "0.3.6"
 
 
         const val activity = "androidx.activity:activity-compose:1.6.1"
@@ -34,10 +35,12 @@ object Dependencies {
         const val viewmodelCompoe =
             "androidx.lifecycle:lifecycle-viewmodel-compose:$lifecycle_version"
         const val runtimeCompose = "androidx.lifecycle:lifecycle-runtime-compose:$lifecycle_version"
+        const val immutableLists = "org.jetbrains.kotlinx:kotlinx-collections-immutable:$immutable"
+        const val kotlinXSerialization = "org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0"
     }
 
     object Hilt {
-        const val daggerHiltVersion = "2.44"
+        const val daggerHiltVersion = "2.48.1"
 
         const val hilt = "com.google.dagger:hilt-android:$daggerHiltVersion"
         const val kaptHilt = "com.google.dagger:hilt-compiler:$daggerHiltVersion"
@@ -46,7 +49,6 @@ object Dependencies {
     }
 
     object Other {
-        const val moshiVersion = "1.14.0"
         const val coilVersion = "2.2.0"
         const val chromeTabVersion = "1.4.0"
 
@@ -56,7 +58,5 @@ object Dependencies {
 
         const val coil = "io.coil-kt:coil-compose:$coilVersion"
         const val chromeTabs = "androidx.browser:browser:$chromeTabVersion"
-        const val moshi = "com.squareup.moshi:moshi-kotlin:$moshiVersion"
-        const val moshiCodegen = "com.squareup.moshi:moshi-kotlin-codegen:$moshiVersion"
     }
 }

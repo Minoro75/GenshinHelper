@@ -201,6 +201,12 @@ object MonThuBooksSourceRu {
                 "element": "pyro",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b2/Lyney_Icon.png"
               },
+               {
+                "name": "Нёвилетт",
+                "rarity": 5,
+                "element": "hydro",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/21/Neuvillette_Icon.png/revision/latest"
+              },
               {
                 "name": "Путешественник Гидро",
                 "rarity": 5,

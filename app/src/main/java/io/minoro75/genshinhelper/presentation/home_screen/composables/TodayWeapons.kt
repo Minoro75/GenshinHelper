@@ -36,11 +36,13 @@ import io.minoro75.genshinhelper.domain.model.TodayWeaponResources
 import io.minoro75.genshinhelper.presentation.character_details.composables.Item
 import io.minoro75.genshinhelper.presentation.theme.GenshinHelperTheme
 import io.minoro75.genshinhelper.presentation.theme.GenshinTypography
+import kotlinx.collections.immutable.PersistentList
+import kotlinx.collections.immutable.persistentListOf
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun TodayWeapons(
-    list: List<TodayWeaponResources>,
+    list: PersistentList<TodayWeaponResources>,
     onItemClick: (String) -> Unit
 ) {
     GenshinHelperTheme {
@@ -219,7 +221,7 @@ fun PreviewTodayWeapons(
 ) {
     GenshinHelperTheme {
         TodayWeapons(
-            list = listOf(
+            list = persistentListOf(
                 TodayWeaponResources(
                     "Dandelion Gladiator",
                     "https://paimon.moe/images/items/dream_of_the_dandelion_gladiator.png"

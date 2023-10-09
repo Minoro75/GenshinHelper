@@ -13,9 +13,11 @@ import androidx.compose.ui.unit.dp
 import io.minoro75.genshinhelper.R
 import io.minoro75.genshinhelper.presentation.theme.GenshinHelperTheme
 import io.minoro75.genshinhelper.presentation.theme.GenshinTypography
+import kotlinx.collections.immutable.PersistentList
+import kotlinx.collections.immutable.persistentListOf
 
 @Composable
-fun TalentsPriority(priority: List<String>, textColor: Color, modifier: Modifier = Modifier) {
+fun TalentsPriority(priority: PersistentList<String>, textColor: Color, modifier: Modifier = Modifier) {
     Column(
         modifier = Modifier
             .fillMaxWidth(),
@@ -73,7 +75,7 @@ fun TalentsPriority(priority: List<String>, textColor: Color, modifier: Modifier
 fun PreviewTalentsPriority() {
     GenshinHelperTheme {
         TalentsPriority(
-            listOf(
+            persistentListOf(
                 "Burst",
                 "Skill",
                 "Attack"

@@ -43,13 +43,10 @@ fun CharacterItem(
         )
     ) {
         AsyncImageWithBackground(
-            model = ImageRequest.Builder(LocalContext.current)
-                .data(character.imageUrl)
-                .crossfade(true)
-                .build(),
+            url = character.imageUrl,
             contentDescription = character.name,
-            placeholder = painterResource(id = R.drawable.placeholder_loading),
-            error = painterResource(id = R.drawable.placeholder_no_internet),
+            placeholder = R.drawable.placeholder_loading,
+            error = R.drawable.placeholder_no_internet,
             contentScale = ContentScale.FillBounds,
             background = when (character.rarity) {
                 4 -> R.drawable.background_rarity_4_star
