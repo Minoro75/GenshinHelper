@@ -19,16 +19,16 @@ import androidx.compose.ui.unit.LayoutDirection
 import androidx.compose.ui.unit.dp
 import androidx.core.view.WindowCompat
 import androidx.navigation.NavType
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
-import com.google.accompanist.navigation.animation.AnimatedNavHost
-import com.google.accompanist.navigation.animation.composable
-import com.google.accompanist.navigation.animation.rememberAnimatedNavController
 import dagger.hilt.android.AndroidEntryPoint
 import io.minoro75.genshinhelper.presentation.character_details.composables.CharacterScreen
 import io.minoro75.genshinhelper.presentation.characters_list_screen.composables.CharactersListScreen
 import io.minoro75.genshinhelper.presentation.common.GenshinBottomNavigation
 import io.minoro75.genshinhelper.presentation.common.NavigationItem
-import io.minoro75.genshinhelper.presentation.home_screen.composables.HomeScreen
+import io.minoro75.genshinhelper.presentation.home_screen.HomeScreen
 import io.minoro75.genshinhelper.presentation.info.composables.InfoScreen
 import io.minoro75.genshinhelper.presentation.item_location.composables.ItemLocationScreen
 import io.minoro75.genshinhelper.presentation.map.MapScreen
@@ -52,12 +52,12 @@ class MainActivity : AppCompatActivity() {
 @OptIn(ExperimentalAnimationApi::class)
 @Composable
 fun MainScreen() {
-    val navController = rememberAnimatedNavController()
+    val navController = rememberNavController()
     Scaffold(
         bottomBar = { GenshinBottomNavigation(navController) }) { paddingValues ->
 
         val layoutDirection = LocalConfiguration.current.layoutDirection
-        AnimatedNavHost(
+        NavHost(
             modifier = Modifier.padding(
                 start = paddingValues.calculateStartPadding(
                     if (layoutDirection == 0) LayoutDirection.Ltr

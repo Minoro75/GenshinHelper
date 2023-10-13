@@ -29,7 +29,7 @@ fun CharacterScreen(
     onItemClicked: (String) -> Unit,
     viewModel: CharacterDetailsScreenViewModel = hiltViewModel()
 ) {
-    val state by viewModel.uiState.collectAsStateWithLifecycle()
+    val state by viewModel.state.collectAsStateWithLifecycle()
 
     if (state.isLoading) {
         LoadingScreen()

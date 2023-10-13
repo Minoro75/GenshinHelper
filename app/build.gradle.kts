@@ -1,17 +1,14 @@
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
-
 plugins {
-    id("com.android.application")
-    id("org.jetbrains.kotlin.android")
-    id("org.jetbrains.kotlin.plugin.serialization")
-    id("com.google.firebase.crashlytics") version "2.9.2"
-    id("com.google.gms.google-services") version "4.3.14"
-    id("com.google.dagger.hilt.android") version Dependencies.Hilt.daggerHiltVersion
-    id("org.jetbrains.kotlin.kapt") version Dependencies.kotlinVersion
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.kotlin.serialization)
+    alias(libs.plugins.kotlin.kapt)
+    alias(libs.plugins.hilt.gradle)
+    alias(libs.plugins.ksp)
+    alias(libs.plugins.android.gms)
+    alias(libs.plugins.firebase.crashlytics)
 }
 
-
-@Suppress("UnstableApiUsage")
 android {
     namespace = "io.minoro75.genshinhelper"
     compileSdk = Config.compileSdk
@@ -41,14 +38,12 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
     }
     kotlinOptions {
-        jvmTarget = "1.8"
-
+        jvmTarget = "11"
         //compose metrics generation
-
         freeCompilerArgs += listOf(
             "-P",
             "plugin:androidx.compose.compiler.plugins.kotlin:metricsDestination=" + project.buildDir.absolutePath + "/compose_metrics")
@@ -64,10 +59,10 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = Dependencies.Compose.composeCompiler
+        kotlinCompilerExtensionVersion = libs.versions.composeCompiler.get()
     }
-    packagingOptions {
-        resources {
+    packaging{
+        resources{
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
@@ -75,42 +70,43 @@ android {
 
 dependencies {
 
-    implementation(Dependencies.Compose.ui)
-    implementation(Dependencies.Compose.material)
-    implementation(Dependencies.Compose.materialWindowSize)
-    implementation(Dependencies.Compose.foundation)
-    implementation(Dependencies.Compose.animation)
-    implementation(Dependencies.Compose.runtime)
-    implementation(Dependencies.Compose.viewmodel)
-    implementation(Dependencies.Compose.viewmodelCompoe)
-    implementation(Dependencies.Compose.runtimeCompose)
+    implementation(platform(libs.compose.bom))
+    implementation(libs.compose.ui)
+    implementation(libs.compose.material3)
+    implementation(libs.compose.foundation)
+    implementation(libs.compose.animation)
+    implementation(libs.compose.runtime)
+    debugImplementation(libs.compose.tooling)
+    debugImplementation(libs.compose.test.manifest)
+    implementation(libs.compose.tooling.preview)
 
-    implementation(Dependencies.Hilt.hilt)
-    kapt(Dependencies.Hilt.kaptHilt)
-    implementation(Dependencies.Hilt.hiltNavCompose)
+    kapt(libs.hilt.compiler)
+    implementation(libs.hilt.android)
+    implementation(libs.hilt.composenav)
 
-    implementation(Dependencies.Other.coil)
-    implementation(Dependencies.Other.chromeTabs)
-    implementation(Dependencies.Other.firebaseCrashlytics)
-    implementation(Dependencies.Other.firebaseAnalytics)
+    implementation(platform(libs.firebase.bom))
+    implementation(libs.firebase.crashlytics)
+    implementation(libs.firebase.analytics)
 
-    implementation("androidx.core:core-ktx:1.9.0")
-    implementation("androidx.compose.ui:ui-tooling-preview:1.4.0")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.5.1")
-    implementation(Dependencies.Compose.activity)
-    implementation(Dependencies.Compose.appCompat)
-    implementation(Dependencies.Compose.appResources)
-    implementation(Dependencies.Compose.navigation_animation)
-    implementation(Dependencies.Compose.insets)
-    implementation(Dependencies.Compose.uiController)
-    implementation(Dependencies.Compose.immutableLists)
-    implementation(Dependencies.Compose.kotlinXSerialization)
+    implementation(libs.coil.compose)
 
-    testImplementation("junit:junit:4.13.2")
-    androidTestImplementation("androidx.test.ext:junit:1.1.3")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
-    androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.2.1")
+    implementation(libs.core.chrometabs)
+    implementation(libs.core.lifecycle.compose)
+    implementation(libs.core.lifecycle.viewmodel.ktx)
+    implementation(libs.core.lifecycle.viewmodel.compose)
+    implementation(libs.core.lifecycle.runtime.ktx)
+    implementation(libs.core.lifecycle.runtime.compose)
 
-    debugImplementation(Dependencies.Compose.uiTooling)
-    debugImplementation(Dependencies.Compose.uiTestManifest)
+    implementation(libs.core.ktx)
+    implementation(libs.core.activity)
+    implementation(libs.core.appcompat)
+    implementation(libs.core.navigationCompose)
+    implementation(libs.core.splashscreen)
+    implementation(libs.core.immutableLists)
+    implementation(libs.core.serialization)
+    implementation(libs.accompanist.insets)
+    implementation(libs.accompanist.systemuicontroller)
+    implementation(libs.accompanist.placeholder)
+
+    testImplementation(libs.compose.test.junit4)
 }

@@ -5,24 +5,43 @@ import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
 import io.minoro75.genshinhelper.domain.repository.CharactersRepository
 import io.minoro75.genshinhelper.presentation.characters_list_screen.state.CharacterListState
+import kotlinx.collections.immutable.persistentListOf
+import kotlinx.collections.immutable.toPersistentList
+import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.map
+import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.flow.stateIn
+import kotlinx.coroutines.flow.update
 import javax.inject.Inject
 
 @HiltViewModel
 class CharactersListViewModel @Inject constructor(
-    repository: CharactersRepository
+    private val repository: CharactersRepository
 ) : ViewModel() {
 
-    val uiState: StateFlow<CharacterListState> =
-        repository.getCharacters().map {
-            CharacterListState(it!!, false)
-        }.stateIn(
-            scope = viewModelScope,
-            initialValue = CharacterListState(emptyList(), true),
-            started = SharingStarted.WhileSubscribed(5_000)
-        )
+    private val _state = MutableStateFlow(CharacterListState())
+    val state = _state.asStateFlow()
+
+    init {
+        fetchList()
+    }
+
+    private fun fetchList() {
+        repository.getCharacters()
+            .onEach { characters ->
+                _state.update {
+                    it.copy(
+                        charactersList = characters?.toPersistentList() ?: persistentListOf(),
+                        isLoading = false
+                    )
+                }
+            }
+            .launchIn(viewModelScope)
+    }
+
 }
 

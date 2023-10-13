@@ -9,6 +9,7 @@ import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
@@ -28,14 +29,14 @@ fun CharactersListScreen(
     viewModel: CharactersListViewModel = hiltViewModel()
 
 ) {
-    val uiState by viewModel.uiState.collectAsStateWithLifecycle()
+    val uiState by viewModel.state.collectAsStateWithLifecycle()
 
     if (uiState.isLoading) {
         LoadingScreen()
     } else {
 
         val size = remember {
-            mutableStateOf(0)
+            mutableIntStateOf(0)
         }
 
         val density = LocalDensity.current.density
@@ -49,13 +50,13 @@ fun CharactersListScreen(
                 .background(MaterialTheme.colorScheme.surfaceVariant)
                 .fillMaxSize()
                 .onGloballyPositioned {
-                    size.value = it.size.width
+                    size.intValue = it.size.width
                 }
 
         ) {
-            val sizeDp = (size.value / density).toInt()
+            val sizeDp = (size.intValue / density).toInt()
             val rowsCount: Int = (sizeDp / 116)
-            if (size.value != 0) {
+            if (size.intValue != 0) {
                 repeat(rowsCount) {
                     item {
                         Spacer(modifier = Modifier.height(padding.calculateTopPadding()))

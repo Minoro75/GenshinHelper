@@ -1,6 +1,6 @@
 @file:OptIn(ExperimentalMaterial3Api::class)
 
-package io.minoro75.genshinhelper.presentation.home_screen.composables
+package io.minoro75.genshinhelper.presentation.home_screen
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
@@ -21,9 +21,11 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import io.minoro75.genshinhelper.R
 import io.minoro75.genshinhelper.domain.model.Character
+import io.minoro75.genshinhelper.domain.model.TodayBooks
 import io.minoro75.genshinhelper.domain.model.TodayWeaponResources
 import io.minoro75.genshinhelper.presentation.common.LoadingScreen
-import io.minoro75.genshinhelper.presentation.home_screen.HomeScreenViewModel
+import io.minoro75.genshinhelper.presentation.home_screen.composables.TodayBooksView
+import io.minoro75.genshinhelper.presentation.home_screen.composables.TodayWeapons
 import io.minoro75.genshinhelper.presentation.theme.GenshinHelperTheme
 import io.minoro75.genshinhelper.presentation.theme.GenshinTypography
 import kotlinx.collections.immutable.persistentListOf
@@ -34,7 +36,7 @@ fun HomeScreen(
     onCharacterClick: (String) -> Unit,
     onItemClick: (String) -> Unit
 ) {
-    val state by viewModel.uiState.collectAsStateWithLifecycle()
+    val state by viewModel.state.collectAsStateWithLifecycle()
 
     if (state.isLoading) {
         LoadingScreen()
@@ -126,7 +128,7 @@ fun PreviewHomeScreen() {
 
             TodayBooksView(
                 books = persistentListOf(
-                    io.minoro75.genshinhelper.domain.model.TodayBooks(
+                    TodayBooks(
                         "Prosperity",
                         "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/Item_Philosophies_of_Freedom.png",
                         persistentListOf(
@@ -144,7 +146,7 @@ fun PreviewHomeScreen() {
                             )
                         )
                     ),
-                    io.minoro75.genshinhelper.domain.model.TodayBooks(
+                    TodayBooks(
                         "Prosperity",
                         "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/Item_Philosophies_of_Freedom.png",
                         persistentListOf(
@@ -162,7 +164,7 @@ fun PreviewHomeScreen() {
                             )
                         )
                     ),
-                    io.minoro75.genshinhelper.domain.model.TodayBooks(
+                    TodayBooks(
                         "Prosperity",
                         "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/Item_Philosophies_of_Freedom.png",
                         persistentListOf(
@@ -186,7 +188,7 @@ fun PreviewHomeScreen() {
                             )
                         )
                     ),
-                    io.minoro75.genshinhelper.domain.model.TodayBooks(
+                    TodayBooks(
                         "Prosperity",
                         "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/Item_Philosophies_of_Freedom.png",
                         persistentListOf(
