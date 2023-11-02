@@ -31,10 +31,6 @@ fun CharacterScreen(
 ) {
     val state by viewModel.state.collectAsStateWithLifecycle()
 
-    if (state.isLoading) {
-        LoadingScreen()
-    } else {
-
         val details = state.charactersDetails!!
         Column(
             modifier =
@@ -81,7 +77,6 @@ fun CharacterScreen(
             )
         }
     }
-}
 
 @Preview(uiMode = UI_MODE_NIGHT_NO)
 @Composable

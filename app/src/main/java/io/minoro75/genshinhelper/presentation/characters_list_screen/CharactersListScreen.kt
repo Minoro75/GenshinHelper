@@ -1,5 +1,11 @@
 package io.minoro75.genshinhelper.presentation.characters_list_screen.composables
 
+import androidx.compose.animation.core.DurationBasedAnimationSpec
+import androidx.compose.animation.core.FloatSpringSpec
+import androidx.compose.animation.core.InfiniteRepeatableSpec
+import androidx.compose.animation.core.KeyframesSpec
+import androidx.compose.animation.core.SnapSpec
+import androidx.compose.animation.core.TweenSpec
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
@@ -20,6 +26,11 @@ import androidx.compose.ui.unit.IntSize
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.google.accompanist.placeholder.PlaceholderHighlight
+import com.google.accompanist.placeholder.material.fade
+import com.google.accompanist.placeholder.material.placeholder
+import com.google.accompanist.placeholder.material.shimmer
+import com.google.accompanist.placeholder.shimmer
 import io.minoro75.genshinhelper.presentation.characters_list_screen.CharactersListViewModel
 import io.minoro75.genshinhelper.presentation.common.LoadingScreen
 
@@ -31,49 +42,49 @@ fun CharactersListScreen(
 ) {
     val uiState by viewModel.state.collectAsStateWithLifecycle()
 
-    if (uiState.isLoading) {
-        LoadingScreen()
-    } else {
+    val size = remember {
+        mutableIntStateOf(0)
+    }
 
-        val size = remember {
-            mutableIntStateOf(0)
+    val density = LocalDensity.current.density
+    val padding = WindowInsets.statusBars.asPaddingValues()
+    LazyVerticalGrid(
+        columns = GridCells.Adaptive(100.dp),
+        contentPadding = PaddingValues(8.dp),
+        horizontalArrangement = Arrangement.spacedBy(8.dp),
+        verticalArrangement = Arrangement.spacedBy(8.dp),
+        modifier = Modifier
+            .background(MaterialTheme.colorScheme.surfaceVariant)
+            .fillMaxSize()
+            .onGloballyPositioned {
+                size.intValue = it.size.width
+            }
+
+    ) {
+        val sizeDp = (size.intValue / density).toInt()
+        val rowsCount: Int = (sizeDp / 116)
+        if (size.intValue != 0) {
+            repeat(rowsCount) {
+                item {
+                    Spacer(modifier = Modifier.height(padding.calculateTopPadding()))
+                }
+            }
         }
-
-        val density = LocalDensity.current.density
-        val padding = WindowInsets.statusBars.asPaddingValues()
-        LazyVerticalGrid(
-            columns = GridCells.Adaptive(100.dp),
-            contentPadding = PaddingValues(8.dp),
-            horizontalArrangement = Arrangement.spacedBy(8.dp),
-            verticalArrangement = Arrangement.spacedBy(8.dp),
-            modifier = Modifier
-                .background(MaterialTheme.colorScheme.surfaceVariant)
-                .fillMaxSize()
-                .onGloballyPositioned {
-                    size.intValue = it.size.width
-                }
-
-        ) {
-            val sizeDp = (size.intValue / density).toInt()
-            val rowsCount: Int = (sizeDp / 116)
-            if (size.intValue != 0) {
-                repeat(rowsCount) {
-                    item {
-                        Spacer(modifier = Modifier.height(padding.calculateTopPadding()))
+        items(uiState.charactersList) { character ->
+            CharacterItem(character,
+                modifier = Modifier
+                    .clickable {
+                        onCharacterClicked.invoke(character.name)
                     }
-                }
-            }
-            items(uiState.charactersList) { character ->
-                CharacterItem(character,
-                    modifier = Modifier
-                        .clickable {
-                            onCharacterClicked.invoke(character.name)
-                        }
-                )
-            }
+                    .placeholder(
+                        visible = uiState.isLoading,
+                        highlight = PlaceholderHighlight.shimmer(highlightColor = MaterialTheme.colorScheme.secondary)
+                    )
+            )
         }
     }
 }
+
 
 @Composable
 fun Int.pxToDp() = with(LocalDensity.current) { this@pxToDp.toDp() }

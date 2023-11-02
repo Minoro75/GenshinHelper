@@ -1,27 +1,17 @@
 package io.minoro75.genshinhelper.presentation.home_screen.composables
 
 import androidx.compose.foundation.BorderStroke
-import androidx.compose.foundation.ExperimentalFoundationApi
-import androidx.compose.foundation.LocalOverscrollConfiguration
-import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.BoxWithConstraints
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.IntrinsicSize
-import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.wrapContentHeight
-import androidx.compose.foundation.lazy.grid.GridCells
-import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
-import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Divider
@@ -29,13 +19,11 @@ import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedCard
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.Stable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.layout.ContentScale
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Devices
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -50,7 +38,7 @@ import kotlinx.collections.immutable.PersistentList
 import kotlinx.collections.immutable.persistentListOf
 import kotlinx.collections.immutable.toPersistentList
 
-@OptIn(ExperimentalMaterial3Api::class)
+
 @Stable
 @Composable
 fun TodayBooksView(
@@ -69,6 +57,11 @@ fun TodayBooksView(
                 .wrapContentHeight(),
             border = BorderStroke(2.dp, SolidColor(MaterialTheme.colorScheme.primary))
         ) {
+
+            if (books.size == 0) {
+                return@OutlinedCard
+            }
+
             Column(Modifier.padding(16.dp)) {
                 BookItem(
                     item = books[0],
@@ -181,7 +174,10 @@ fun GridCharacters(
                             colors = CardDefaults.outlinedCardColors(
                                 containerColor = MaterialTheme.colorScheme.primaryContainer
                             ),
-                            border = BorderStroke(2.dp, SolidColor(MaterialTheme.colorScheme.primary))
+                            border = BorderStroke(
+                                2.dp,
+                                SolidColor(MaterialTheme.colorScheme.primary)
+                            )
                         ) {
                             AsyncImageWithBackground(
                                 url = list[i].imageUrl,

@@ -40,7 +40,8 @@ fun CharacterItem(
         border = BorderStroke(
             2.dp,
             SolidColor(MaterialTheme.colorScheme.primary)
-        )
+        ),
+        modifier = modifier
     ) {
         AsyncImageWithBackground(
             url = character.imageUrl,
@@ -64,7 +65,7 @@ fun CharacterItem(
                 else -> throw IllegalArgumentException("No such element")
 
             },
-            modifier = modifier
+            modifier = Modifier
                 .fillMaxWidth()
                 .height(120.dp)
                 .clip(RightCornerShape)
