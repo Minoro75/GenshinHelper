@@ -369,6 +369,13 @@ object CharactersListSourceUk {
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b8/Razor_Icon.png/revision/latest"
     },
     {
+      "name": "Різлі",
+      "rarity": 5,
+      "element": "cryo",
+      "weapon": "catalyst",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/bb/Wriothesley_Icon.png/revision/latest"
+    },
+    {
       "name": "Розарія",
       "rarity": 4,
       "element": "cryo",

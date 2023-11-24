@@ -69,6 +69,7 @@ import io.minoro75.genshinhelper.data.assets.en.characters.TravelerGeoDetailsSou
 import io.minoro75.genshinhelper.data.assets.en.characters.TravelerHydroDetailsSource
 import io.minoro75.genshinhelper.data.assets.en.characters.VentiDetailsSource
 import io.minoro75.genshinhelper.data.assets.en.characters.WandererDetailsSource
+import io.minoro75.genshinhelper.data.assets.en.characters.WriothesleyDetailSource
 import io.minoro75.genshinhelper.data.assets.en.characters.XianglingDetailsSource
 import io.minoro75.genshinhelper.data.assets.en.characters.XiaoDetailsSource
 import io.minoro75.genshinhelper.data.assets.en.characters.XingqiuDetailsSource
@@ -879,6 +880,8 @@ class AssetsDataSource @Inject constructor(
                 "Freminet" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(FreminetDetailsSource.details))
 
                 "Neuvilette" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(NeuviletteDetailsSource.details))
+
+                "Wriothesley" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(WriothesleyDetailSource.details))
 
                 else -> throw IllegalArgumentException("There is no character with name : $characterName")
             }

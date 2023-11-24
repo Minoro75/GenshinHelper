@@ -617,6 +617,12 @@ object SundayBooksSourcePt {
                 "rarity": 5,
                 "element": "hydro",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
+              },
+              {
+                "name": "Wriothesley",
+                "rarity": 5,
+                "element": "cryo",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/bb/Wriothesley_Icon.png/revision/latest"
               }
             ]
           }

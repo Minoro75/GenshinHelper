@@ -31,6 +31,21 @@ fun CharacterScreen(
 ) {
     val state by viewModel.state.collectAsStateWithLifecycle()
 
+    if (state.isLoading) {
+        Column(
+            modifier =
+            Modifier
+                .fillMaxSize()
+                .verticalScroll(rememberScrollState())
+                .background(MaterialTheme.colorScheme.surfaceVariant)
+                .systemBarsPadding()
+                .padding(
+                    16.dp
+                )
+        ) {}
+    } else {
+
+        // replace with shimmer
         val details = state.charactersDetails!!
         Column(
             modifier =
@@ -77,6 +92,7 @@ fun CharacterScreen(
             )
         }
     }
+}
 
 @Preview(uiMode = UI_MODE_NIGHT_NO)
 @Composable

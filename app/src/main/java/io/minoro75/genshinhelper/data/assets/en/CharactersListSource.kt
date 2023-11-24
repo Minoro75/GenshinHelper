@@ -467,6 +467,13 @@ object CharactersListSource {
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f8/Wanderer_Icon.png/revision/latest"
     },
     {
+      "name": "Wriothesley",
+      "rarity": 5,
+      "element": "cryo",
+      "weapon": "catalyst",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/bb/Wriothesley_Icon.png/revision/latest"
+    },
+    {
       "name": "Xiangling",
       "rarity": 4,
       "element": "pyro",

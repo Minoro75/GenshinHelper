@@ -321,6 +321,13 @@ object CharactersListSourceRu {
       "weapon": "polearm",
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/24/Raiden_Shogun_Icon.png/revision/latest"
     },
+    {
+      "name": "Ризли",
+      "rarity": 5,
+      "element": "cryo",
+      "weapon": "catalyst",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/bb/Wriothesley_Icon.png/revision/latest"
+    },
      {
       "name": "Розария",
       "rarity": 4,
