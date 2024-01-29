@@ -1,12 +1,12 @@
 [versions]
 androidGradlePlugin = "8.3.0-alpha01"
-kotlin = "1.9.10"
+kotlin = "1.9.22"
 accompanist = "0.31.5-beta" # accompanist navigation not working on 0.30.0
-composeBom = "2023.10.01"
-composeCompiler = "1.5.3" # used in gradle directly
+composeBom = "2024.01.00"
+composeCompiler = "1.5.8" # used in gradle directly
 coil = "2.2.2"
 ksp = "1.9.10-1.0.13"
-datastore = "1.1.0-alpha06"
+datastore = "1.1.0-beta01"
 gms = "4.4.0"
 crashlytics = "2.9.9"
 hilt = "2.48.1"
@@ -14,11 +14,11 @@ hiltNavigationCompose = "1.1.0"
 chromeTabs = "1.7.0"
 androidxCore = "1.12.0"
 androidxSplashScreen = "1.0.1"
-androidxLifecycle = "2.6.2"
-androidxActivity = "1.8.1"
+androidxLifecycle = "2.7.0"
+androidxActivity = "1.8.2"
 androidxAppUpdate = "2.1.0"
-androidxNavigation = "2.7.5"
-androidxRoom = "2.6.0"
+androidxNavigation = "2.7.6"
+androidxRoom = "2.6.1"
 androidxTestExt = "1.1.5"
 appCompat = "1.7.0-alpha03"
 immutableLists = "0.3.6"
@@ -75,7 +75,7 @@ room-compiler = { module = "androidx.room:room-compiler", version.ref = "android
 
 
 # Firebase
-firebase-bom = "com.google.firebase:firebase-bom:32.5.0"
+firebase-bom = "com.google.firebase:firebase-bom:32.7.1"
 firebase-crashlytics = { module = "com.google.firebase:firebase-crashlytics-ktx" }
 firebase-fcm = { module = "com.google.firebase:firebase-messaging-ktx" }
 firebase-analytics = { module = "com.google.firebase:firebase-analytics-ktx" }

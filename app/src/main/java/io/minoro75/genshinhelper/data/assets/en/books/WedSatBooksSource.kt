@@ -191,7 +191,13 @@ object WedSatBooksSource {
             "book_name": "Order",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/32/Item_Philosophies_of_Order.png",
             "characters": [
-            {
+              {
+                "name": "Chevreuse",
+                "rarity": 4,
+                "element": "pyro",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/8a/Chevreuse_Icon.png/revision/latest"
+              },
+              {
                 "name": "Lynette",
                 "rarity": 4,
                 "element": "anemo",

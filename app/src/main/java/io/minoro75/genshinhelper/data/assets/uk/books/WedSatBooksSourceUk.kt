@@ -208,6 +208,12 @@ object WedSatBooksSourceUk {
                 "rarity": 5,
                 "element": "cryo",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/bb/Wriothesley_Icon.png/revision/latest"
+              },
+              {
+                "name": "Шеврез",
+                "rarity": 4,
+                "element": "pyro",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/8a/Chevreuse_Icon.png/revision/latest"
               }
             ]
           }

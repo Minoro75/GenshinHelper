@@ -320,6 +320,13 @@ object CharactersListSourceUk {
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/4/41/Mona_Icon.png/revision/latest"
     },
     {
+      "name": "Навія",
+      "rarity": 5,
+      "element": "geo",
+      "weapon": "claymore",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c0/Navia_Icon.png/revision/latest"
+    },
+    {
       "name": "Нахіда",
       "rarity": 5,
       "element": "dendro",
@@ -473,6 +480,13 @@ object CharactersListSourceUk {
       "weapon": "claymore",
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/e/ee/Freminet_Icon.png/revision/latest"
      },
+      {
+      "name": "Фуріна",
+      "rarity": 5,
+      "element": "hydro",
+      "weapon": "sword",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e6/Furina_Icon.png/revision/latest"
+     },
     {
       "name": "Ху Тао",
       "rarity": 5,
@@ -500,6 +514,20 @@ object CharactersListSourceUk {
       "element": "cryo",
       "weapon": "claymore",
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/35/Chongyun_Icon.png/revision/latest"
+    },
+     {
+      "name": "Шарлотта",
+      "rarity": 4,
+      "element": "cryo",
+      "weapon": "catalyst",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d2/Charlotte_Icon.png/revision/latest"
+    },
+    {
+      "name": "Шеврез",
+      "rarity": 4,
+      "element": "pyro",
+      "weapon": "polearm",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/8a/Chevreuse_Icon.png/revision/latest"
     },
     {
       "name": "Шеньхе",

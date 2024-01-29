@@ -14,6 +14,8 @@ import io.minoro75.genshinhelper.data.assets.ru.characters_ru.BarbaraDetailsSour
 import io.minoro75.genshinhelper.data.assets.ru.characters_ru.BeidouDetailsSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.characters_ru.BennettDetailsSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.characters_ru.CandaceDetailsSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.characters_ru.CharlotteDetailsSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.characters_ru.ChevreuseDetailsSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.characters_ru.ChongyunDetailsSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.characters_ru.ColleiDetailsSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.characters_ru.CynoDetailsSourceRu
@@ -25,6 +27,7 @@ import io.minoro75.genshinhelper.data.assets.ru.characters_ru.EulaDetailsSourceR
 import io.minoro75.genshinhelper.data.assets.ru.characters_ru.FaruzanDetailsSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.characters_ru.FischlDetailsSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.characters_ru.FreminetDetailsSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.characters_ru.FurinaDetailsSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.characters_ru.GanyuDetailsSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.characters_ru.GorouDetailsSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.characters_ru.HuTaoDetailsSourceRu
@@ -46,6 +49,7 @@ import io.minoro75.genshinhelper.data.assets.ru.characters_ru.LyneyDetailsSource
 import io.minoro75.genshinhelper.data.assets.ru.characters_ru.MikaDetailsSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.characters_ru.MonaDetailsSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.characters_ru.NahidaDetailsSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.characters_ru.NaviaDetailsSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.characters_ru.NeuviletteDetailsSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.characters_ru.NilouDetailsSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.characters_ru.NingguangDetailsSourceRu
@@ -98,11 +102,13 @@ import io.minoro75.genshinhelper.data.assets.ru.items_ru.artifacts_ru.HuskOfOpul
 import io.minoro75.genshinhelper.data.assets.ru.items_ru.artifacts_ru.LavawalkerDataSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.items_ru.artifacts_ru.MaidenBelovedDataSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.items_ru.artifacts_ru.MarechausseeHunterDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.artifacts_ru.NighttimeWhispersDataSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.items_ru.artifacts_ru.NoblesseObligeDataSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.items_ru.artifacts_ru.OceanHuedClamDataSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.items_ru.artifacts_ru.PaleFlameDataSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.items_ru.artifacts_ru.RetracingBolideDataSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.items_ru.artifacts_ru.ShimenavasReminiscenceDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.artifacts_ru.SongOfDaysPastDataSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.items_ru.artifacts_ru.TenacityOfTheMillelithDataSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.items_ru.artifacts_ru.ThunderingFuryDataSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.items_ru.artifacts_ru.ThundersootherDataSourceRu
@@ -134,6 +140,9 @@ import io.minoro75.genshinhelper.data.assets.ru.items_ru.boss_items_ru.DvalinsSi
 import io.minoro75.genshinhelper.data.assets.ru.items_ru.boss_items_ru.EveramberDataSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.items_ru.boss_items_ru.GildedScaleDataSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.items_ru.boss_items_ru.HellfireButterflyDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.boss_items_ru.LightlessEyeOfTheMaelstormDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.boss_items_ru.LightlessMassDataSourceRu
+import io.minoro75.genshinhelper.data.assets.ru.items_ru.boss_items_ru.LightlessSilkStringDataSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.items_ru.boss_items_ru.MirrorOfMushinDataSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.items_ru.boss_items_ru.MoltenMomentDataSourceRu
 import io.minoro75.genshinhelper.data.assets.ru.items_ru.boss_items_ru.MudraOfTheMaleficGeneralDataSourceRu
@@ -400,6 +409,18 @@ class AssetsDataSourceRu @Inject constructor(
                     )
                 )
 
+                "Ночной шёпот" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        NighttimeWhispersDataSourceRu.sourcesList
+                    )
+                )
+
+                "Песнь былых времён" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        SongOfDaysPastDataSourceRu.sourcesList
+                    )
+                )
+
                 // Boss items
                 "Пепельное сердце" -> emit(
                     jsonDecoder.decodeFromString<List<HowToObtainItem>>(
@@ -542,6 +563,23 @@ class AssetsDataSourceRu @Inject constructor(
                 "Вечный янтарь" -> emit(
                     jsonDecoder.decodeFromString<List<HowToObtainItem>>(
                         EveramberDataSourceRu.sourcesList
+                    )
+                )
+
+                "Тёмная шёлковая нить" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        LightlessSilkStringDataSourceRu.sourcesList
+                    )
+                )
+
+                "Тёмная масса" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        LightlessMassDataSourceRu.sourcesList
+                    )
+                )
+                "Тёмный глаз вихря" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        LightlessEyeOfTheMaelstormDataSourceRu.sourcesList
                     )
                 )
 
@@ -694,6 +732,8 @@ class AssetsDataSourceRu @Inject constructor(
                         SacredDewdropChordDataSourceRu.sourcesList
                     )
                 )
+
+
 
                 else -> throw IllegalArgumentException("there is no artifact with name $itemName")
             }
@@ -895,6 +935,14 @@ class AssetsDataSourceRu @Inject constructor(
                 "Нёвилетт" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(NeuviletteDetailsSourceRu.details))
 
                 "Ризли" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(WriothesleyDetailSourceRu.details))
+
+                "Шарлотта" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(CharlotteDetailsSourceRu.details))
+
+                "Фурина" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(FurinaDetailsSourceRu.details))
+
+                "Навия" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(NaviaDetailsSourceRu.details))
+
+                "Шеврёз" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(ChevreuseDetailsSourceRu.details))
 
                 else -> throw IllegalArgumentException("There is no character with name : $characterName")
             }

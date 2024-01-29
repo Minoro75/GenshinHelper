@@ -207,11 +207,23 @@ object TueFriBooksSourcePt {
             "book_name": "Justiça",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/37/Item_Philosophies_of_Justice.png",
             "characters": [
+              {
+                "name": "Charlotte",
+                "rarity": 4,
+                "element": "cryo",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d2/Charlotte_Icon.png/revision/latest"
+              },
              {
                 "name": "Freminet",
                 "rarity": 4,
                 "element": "cryo",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/e/ee/Freminet_Icon.png/revision/latest"
+              },
+              {
+                "name": "Furina",
+                "rarity": 5,
+                "element": "hydro",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e6/Furina_Icon.png/revision/latest"
               },
               {
                 "name": "Viajante (Hydro)",

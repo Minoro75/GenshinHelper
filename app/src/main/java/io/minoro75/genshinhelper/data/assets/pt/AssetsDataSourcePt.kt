@@ -1,5 +1,6 @@
 package io.minoro75.genshinhelper.data.assets.pt
 
+import io.minoro75.genshinhelper.data.assets.en.characters.ChevreuseDetailsSource
 import io.minoro75.genshinhelper.data.assets.pt.books_pt.MonThuBooksSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.books_pt.SundayBooksSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.books_pt.TueFriBooksSourcePt
@@ -14,6 +15,8 @@ import io.minoro75.genshinhelper.data.assets.pt.characters_pt.BarbaraDetailsSour
 import io.minoro75.genshinhelper.data.assets.pt.characters_pt.BeidouDetailsSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.characters_pt.BennettDetailsSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.characters_pt.CandaceDetailsSourcePt
+import io.minoro75.genshinhelper.data.assets.pt.characters_pt.CharlotteDetailsSourcePt
+import io.minoro75.genshinhelper.data.assets.pt.characters_pt.ChevreuseDetailsSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.characters_pt.ChongyunDetailsSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.characters_pt.ColleiDetailsSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.characters_pt.CynoDetailsSourcePt
@@ -25,6 +28,7 @@ import io.minoro75.genshinhelper.data.assets.pt.characters_pt.EulaDetailsSourceP
 import io.minoro75.genshinhelper.data.assets.pt.characters_pt.FaruzanDetailsSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.characters_pt.FischlDetailsSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.characters_pt.FreminetDetailsSourcePt
+import io.minoro75.genshinhelper.data.assets.pt.characters_pt.FurinaDetailsSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.characters_pt.GanyuDetailsSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.characters_pt.GorouDetailsSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.characters_pt.HuTaoDetailsSourcePt
@@ -46,6 +50,7 @@ import io.minoro75.genshinhelper.data.assets.pt.characters_pt.LyneyDetailsSource
 import io.minoro75.genshinhelper.data.assets.pt.characters_pt.MikaDetailsSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.characters_pt.MonaDetailsSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.characters_pt.NahidaDetailsSourcePt
+import io.minoro75.genshinhelper.data.assets.pt.characters_pt.NaviaDetailsSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.characters_pt.NeuviletteDetailsSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.characters_pt.NilouDetailsSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.characters_pt.NingguangDetailsSourcePt
@@ -98,11 +103,13 @@ import io.minoro75.genshinhelper.data.assets.pt.items_pt.artifacts_pt.HuskOfOpul
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.artifacts_pt.LavawalkerDataSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.artifacts_pt.MaidenBelovedDataSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.artifacts_pt.MarechausseeHunterDataSourcePt
+import io.minoro75.genshinhelper.data.assets.pt.items_pt.artifacts_pt.NighttimeWhispersDataSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.artifacts_pt.NoblesseObligeDataSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.artifacts_pt.OceanHuedClamDataSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.artifacts_pt.PaleFlameDataSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.artifacts_pt.RetracingBolideDataSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.artifacts_pt.ShimenavasReminiscenceDataSourcePt
+import io.minoro75.genshinhelper.data.assets.pt.items_pt.artifacts_pt.SongOfDaysPastDataSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.artifacts_pt.TenacityOfTheMillelithDataSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.artifacts_pt.ThunderingFuryDataSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.artifacts_pt.ThundersootherDataSourcePt
@@ -134,6 +141,9 @@ import io.minoro75.genshinhelper.data.assets.pt.items_pt.boss_items_pt.DvalinsSi
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.boss_items_pt.EveramberDataSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.boss_items_pt.GildedScaleDataSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.boss_items_pt.HellfireButterflyDataSourcePt
+import io.minoro75.genshinhelper.data.assets.pt.items_pt.boss_items_pt.LightlessEyeOfTheMaelstormDataSourcePt
+import io.minoro75.genshinhelper.data.assets.pt.items_pt.boss_items_pt.LightlessMassDataSourcePt
+import io.minoro75.genshinhelper.data.assets.pt.items_pt.boss_items_pt.LightlessSilkStringDataSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.boss_items_pt.MirrorOfMushinDataSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.boss_items_pt.MoltenMomentDataSourcePt
 import io.minoro75.genshinhelper.data.assets.pt.items_pt.boss_items_pt.MudraOfTheMaleficGeneralDataSourcePt
@@ -399,6 +409,18 @@ class AssetsDataSourcePt @Inject constructor(
                     )
                 )
 
+                "Canção do Passado" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        SongOfDaysPastDataSourcePt.sourcesList
+                    )
+                )
+
+                "Ecos da Floresta Noturna" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        NighttimeWhispersDataSourcePt.sourcesList
+                    )
+                )
+
                 // Boss items
                 "Coração das Cinzas" -> emit(
                     jsonDecoder.decodeFromString<List<HowToObtainItem>>(
@@ -544,6 +566,24 @@ class AssetsDataSourcePt @Inject constructor(
                     )
                 )
 
+                "Olho do Vórtice Sem Luz" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        LightlessEyeOfTheMaelstormDataSourcePt.sourcesList
+                    )
+                )
+
+                "Massa Sem Luz" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        LightlessMassDataSourcePt.sourcesList
+                    )
+                )
+
+                "Fio de Seda Sem Luz" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        LightlessSilkStringDataSourcePt.sourcesList
+                    )
+                )
+
                 // Books
                 "Admoestação" -> emit(
                     jsonDecoder.decodeFromString<List<HowToObtainItem>>(
@@ -551,13 +591,29 @@ class AssetsDataSourcePt @Inject constructor(
                     )
                 )
 
-                "Poemas" -> emit(jsonDecoder.decodeFromString<List<HowToObtainItem>>(BalladDataSourcePt.sourcesList))
+                "Poemas" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        BalladDataSourcePt.sourcesList
+                    )
+                )
 
-                "Esforço" -> emit(jsonDecoder.decodeFromString<List<HowToObtainItem>>(DiligenceDataSourcePt.sourcesList))
+                "Esforço" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        DiligenceDataSourcePt.sourcesList
+                    )
+                )
 
-                "Cultura" -> emit(jsonDecoder.decodeFromString<List<HowToObtainItem>>(EleganceDataSourcePt.sourcesList))
+                "Cultura" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        EleganceDataSourcePt.sourcesList
+                    )
+                )
 
-                "Liberdade" -> emit(jsonDecoder.decodeFromString<List<HowToObtainItem>>(FreedomDataSourcePt.sourcesList))
+                "Liberdade" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        FreedomDataSourcePt.sourcesList
+                    )
+                )
 
                 "Ouro" -> emit(jsonDecoder.decodeFromString<List<HowToObtainItem>>(GoldDataSourcePt.sourcesList))
 
@@ -567,9 +623,17 @@ class AssetsDataSourcePt @Inject constructor(
                     )
                 )
 
-                "Luz Celeste" -> emit(jsonDecoder.decodeFromString<List<HowToObtainItem>>(LightDataSourcePt.sourcesList))
+                "Luz Celeste" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        LightDataSourcePt.sourcesList
+                    )
+                )
 
-                "Práxis" -> emit(jsonDecoder.decodeFromString<List<HowToObtainItem>>(PraxisDataSourcePt.sourcesList))
+                "Práxis" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        PraxisDataSourcePt.sourcesList
+                    )
+                )
 
                 "Prosperidade" -> emit(
                     jsonDecoder.decodeFromString<List<HowToObtainItem>>(
@@ -589,11 +653,23 @@ class AssetsDataSourcePt @Inject constructor(
                     )
                 )
 
-                "Ordem" -> emit(jsonDecoder.decodeFromString<List<HowToObtainItem>>(OrderDataSourcePt.sourcesList))
+                "Ordem" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        OrderDataSourcePt.sourcesList
+                    )
+                )
 
-                "Igualdade" -> emit(jsonDecoder.decodeFromString<List<HowToObtainItem>>(EquityDataSourcePt.sourcesList))
+                "Igualdade" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        EquityDataSourcePt.sourcesList
+                    )
+                )
 
-                "Justiça" -> emit(jsonDecoder.decodeFromString<List<HowToObtainItem>>(JusticeDataSourcePt.sourcesList))
+                "Justiça" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        JusticeDataSourcePt.sourcesList
+                    )
+                )
                 // Weapon resources
                 "Aerosiderite" -> emit(
                     jsonDecoder.decodeFromString<List<HowToObtainItem>>(
@@ -631,13 +707,29 @@ class AssetsDataSourcePt @Inject constructor(
                     )
                 )
 
-                "Guyun" -> emit(jsonDecoder.decodeFromString<List<HowToObtainItem>>(GuyunDataSourcePt.sourcesList))
+                "Guyun" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        GuyunDataSourcePt.sourcesList
+                    )
+                )
 
-                "Máscara" -> emit(jsonDecoder.decodeFromString<List<HowToObtainItem>>(MaskDataSourcePt.sourcesList))
+                "Máscara" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        MaskDataSourcePt.sourcesList
+                    )
+                )
 
-                "Elixir" -> emit(jsonDecoder.decodeFromString<List<HowToObtainItem>>(MistVeiledDataSourcePt.sourcesList))
+                "Elixir" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        MistVeiledDataSourcePt.sourcesList
+                    )
+                )
 
-                "Narukami" -> emit(jsonDecoder.decodeFromString<List<HowToObtainItem>>(NarukamiDataSourcePt.sourcesList))
+                "Narukami" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        NarukamiDataSourcePt.sourcesList
+                    )
+                )
 
                 "Jardim Oásis" -> emit(
                     jsonDecoder.decodeFromString<List<HowToObtainItem>>(
@@ -678,15 +770,27 @@ class AssetsDataSourcePt @Inject constructor(
         // for testing purposes we may inject context as param, but maybe later
         return flow {
             when (characterName) {
-                "Albedo" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(AlbedoDetailsSourcePt.details))
+                "Albedo" -> emit(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
+                        AlbedoDetailsSourcePt.details
+                    )
+                )
 
-                "Alhaitham" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(AlhaithamDetailsSourcePt.details))
+                "Alhaitham" -> emit(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
+                        AlhaithamDetailsSourcePt.details
+                    )
+                )
 
                 "Aloy" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(AloyDetailsSourcePt.details))
 
                 "Amber" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(AmberDetailsSourcePt.details))
 
-                "Andarilho" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(WandererDetailsSourcePt.details))
+                "Andarilho" -> emit(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
+                        WandererDetailsSourcePt.details
+                    )
+                )
 
                 "Arataki Itto" -> emit(
                     jsonDecoder.decodeFromString<CharacterDetails>(
@@ -694,19 +798,47 @@ class AssetsDataSourcePt @Inject constructor(
                     )
                 )
 
-                "Baizhu" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(BaizhuDetailsSourcePt.details))
+                "Baizhu" -> emit(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
+                        BaizhuDetailsSourcePt.details
+                    )
+                )
 
-                "Barbara" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(BarbaraDetailsSourcePt.details))
+                "Barbara" -> emit(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
+                        BarbaraDetailsSourcePt.details
+                    )
+                )
 
-                "Beidou" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(BeidouDetailsSourcePt.details))
+                "Beidou" -> emit(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
+                        BeidouDetailsSourcePt.details
+                    )
+                )
 
-                "Bennett" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(BennettDetailsSourcePt.details))
+                "Bennett" -> emit(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
+                        BennettDetailsSourcePt.details
+                    )
+                )
 
-                "Candace" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(CandaceDetailsSourcePt.details))
+                "Candace" -> emit(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
+                        CandaceDetailsSourcePt.details
+                    )
+                )
 
-                "Chongyun" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(ChongyunDetailsSourcePt.details))
+                "Chongyun" -> emit(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
+                        ChongyunDetailsSourcePt.details
+                    )
+                )
 
-                "Collei" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(ColleiDetailsSourcePt.details))
+                "Collei" -> emit(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
+                        ColleiDetailsSourcePt.details
+                    )
+                )
 
                 "Cyno" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(CynoDetailsSourcePt.details))
 
@@ -720,7 +852,11 @@ class AssetsDataSourcePt @Inject constructor(
 
                 "Eula" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(EulaDetailsSourcePt.details))
 
-                "Fischl" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(FischlDetailsSourcePt.details))
+                "Fischl" -> emit(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
+                        FischlDetailsSourcePt.details
+                    )
+                )
 
                 "Ganyu" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(GanyuDetailsSourcePt.details))
 
@@ -752,9 +888,17 @@ class AssetsDataSourcePt @Inject constructor(
 
                 "Kaveh" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(KavehDetailsSourcePt.details))
 
-                "Keqing" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(KeqingDetailsSourcePt.details))
+                "Keqing" -> emit(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
+                        KeqingDetailsSourcePt.details
+                    )
+                )
 
-                "Kirara" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(KiraraDetailsSourcePt.details))
+                "Kirara" -> emit(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
+                        KiraraDetailsSourcePt.details
+                    )
+                )
 
                 "Klee" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(KleeDetailsSourcePt.details))
 
@@ -778,13 +922,25 @@ class AssetsDataSourcePt @Inject constructor(
 
                 "Mona" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(MonaDetailsSourcePt.details))
 
-                "Nahida" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(NahidaDetailsSourcePt.details))
+                "Nahida" -> emit(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
+                        NahidaDetailsSourcePt.details
+                    )
+                )
 
                 "Nilou" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(NilouDetailsSourcePt.details))
 
-                "Ningguang" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(NingguangDetailsSourcePt.details))
+                "Ningguang" -> emit(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
+                        NingguangDetailsSourcePt.details
+                    )
+                )
 
-                "Noelle" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(NoelleDetailsSourcePt.details))
+                "Noelle" -> emit(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
+                        NoelleDetailsSourcePt.details
+                    )
+                )
 
                 "Qiqi" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(QiqiDetailsSourcePt.details))
 
@@ -796,7 +952,11 @@ class AssetsDataSourcePt @Inject constructor(
 
                 "Razor" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(RazorDetailsSourcePt.details))
 
-                "Rosaria" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(RosariaDetailsSourcePt.details))
+                "Rosaria" -> emit(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
+                        RosariaDetailsSourcePt.details
+                    )
+                )
 
                 "Sangonomiya Kokomi" -> emit(
                     jsonDecoder.decodeFromString<CharacterDetails>(
@@ -806,7 +966,11 @@ class AssetsDataSourcePt @Inject constructor(
 
                 "Sayu" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(SayuDetailsSourcePt.details))
 
-                "Shenhe" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(ShenheDetailsSourcePt.details))
+                "Shenhe" -> emit(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
+                        ShenheDetailsSourcePt.details
+                    )
+                )
 
                 "Shikanoin Heizou" -> emit(
                     jsonDecoder.decodeFromString<CharacterDetails>(
@@ -814,13 +978,25 @@ class AssetsDataSourcePt @Inject constructor(
                     )
                 )
 
-                "Sucrose" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(SucroseDetailsSourcePt.details))
+                "Sucrose" -> emit(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
+                        SucroseDetailsSourcePt.details
+                    )
+                )
 
-                "Tartaglia" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(TartagliaDetailsSourcePt.details))
+                "Tartaglia" -> emit(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
+                        TartagliaDetailsSourcePt.details
+                    )
+                )
 
                 "Thoma" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(ThomaDetailsSourcePt.details))
 
-                "Tighnari" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(TighnariDetailsSourcePt.details))
+                "Tighnari" -> emit(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
+                        TighnariDetailsSourcePt.details
+                    )
+                )
 
                 "Viajante (Anemo)" -> emit(
                     jsonDecoder.decodeFromString<CharacterDetails>(
@@ -846,31 +1022,83 @@ class AssetsDataSourcePt @Inject constructor(
                     )
                 )
 
-                "Venti" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(VentiDetailsSourcePt.details))
+                "Venti" -> emit(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
+                        VentiDetailsSourcePt.details
+                    )
+                )
 
-                "Xiangling" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(XianglingDetailsSourcePt.details))
+                "Xiangling" -> emit(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
+                        XianglingDetailsSourcePt.details
+                    )
+                )
 
-                "Xiao" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(XiaoDetailsSourcePt.details))
+                "Xiao" -> emit(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
+                        XiaoDetailsSourcePt.details
+                    )
+                )
 
-                "Xingqiu" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(XingqiuDetailsSourcePt.details))
+                "Xingqiu" -> emit(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
+                        XingqiuDetailsSourcePt.details
+                    )
+                )
 
-                "Xinyan" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(XinyanDetailsSourcePt.details))
+                "Xinyan" -> emit(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
+                        XinyanDetailsSourcePt.details
+                    )
+                )
 
-                "Yae Miko" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(YaeMikoDetailsSourcePt.details))
+                "Yae Miko" -> emit(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
+                        YaeMikoDetailsSourcePt.details
+                    )
+                )
 
-                "Yanfei" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(YanfeiDetailsSourcePt.details))
+                "Yanfei" -> emit(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
+                        YanfeiDetailsSourcePt.details
+                    )
+                )
 
-                "Yaoyao" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(YaoYaoDetailsSourcePt.details))
+                "Yaoyao" -> emit(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
+                        YaoYaoDetailsSourcePt.details
+                    )
+                )
 
-                "Yelan" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(YelanDetailsSourcePt.details))
+                "Yelan" -> emit(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
+                        YelanDetailsSourcePt.details
+                    )
+                )
 
-                "Yoimiya" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(YoimiyaDetailsSourcePt.details))
+                "Yoimiya" -> emit(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
+                        YoimiyaDetailsSourcePt.details
+                    )
+                )
 
-                "Yun Jin" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(YunJinDetailsSourcePt.details))
+                "Yun Jin" -> emit(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
+                        YunJinDetailsSourcePt.details
+                    )
+                )
 
-                "Zhongli" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(ZhongliDetailsSourcePt.details))
+                "Zhongli" -> emit(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
+                        ZhongliDetailsSourcePt.details
+                    )
+                )
 
-                "Faruzan" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(FaruzanDetailsSourcePt.details))
+                "Faruzan" -> emit(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
+                        FaruzanDetailsSourcePt.details
+                    )
+                )
 
                 "Viajante (Hydro)" -> emit(
                     jsonDecoder.decodeFromString<CharacterDetails>(
@@ -878,15 +1106,59 @@ class AssetsDataSourcePt @Inject constructor(
                     )
                 )
 
-                "Lyney" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(LyneyDetailsSourcePt.details))
+                "Lyney" -> emit(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
+                        LyneyDetailsSourcePt.details
+                    )
+                )
 
-                "Lynette" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(LynetteDetailsSourcePt.details))
+                "Lynette" -> emit(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
+                        LynetteDetailsSourcePt.details
+                    )
+                )
 
-                "Freminet" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(FreminetDetailsSourcePt.details))
+                "Freminet" -> emit(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
+                        FreminetDetailsSourcePt.details
+                    )
+                )
 
-                "Neuvilette" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(NeuviletteDetailsSourcePt.details))
+                "Neuvilette" -> emit(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
+                        NeuviletteDetailsSourcePt.details
+                    )
+                )
 
-                "Wriothesley" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(WriothesleyDetailSourcePt.details))
+                "Wriothesley" -> emit(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
+                        WriothesleyDetailSourcePt.details
+                    )
+                )
+
+                "Charlotte" -> emit(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
+                        CharlotteDetailsSourcePt.details
+                    )
+                )
+
+                "Furina" -> emit(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
+                        FurinaDetailsSourcePt.details
+                    )
+                )
+
+                "Navia" -> emit(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
+                        NaviaDetailsSourcePt.details
+                    )
+                )
+
+                "Chevreuse" -> emit(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
+                        ChevreuseDetailsSourcePt.details
+                    )
+                )
 
                 else -> throw IllegalArgumentException("There is no character with name : $characterName")
             }

@@ -213,11 +213,23 @@ object TueFriBooksSourceUk {
                 "element": "hydro",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
               },
+               {
+                "name": "Фуріна",
+                "rarity": 5,
+                "element": "hydro",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e6/Furina_Icon.png/revision/latest"
+              },
               {
                 "name": "Фреміне",
                 "rarity": 4,
                 "element": "cryo",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/e/ee/Freminet_Icon.png/revision/latest"
+              },
+               {
+                "name": "Шарлотта",
+                "rarity": 4,
+                "element": "cryo",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d2/Charlotte_Icon.png/revision/latest"
               }
             ]
           }

@@ -203,6 +203,12 @@ object SundayBooksSourcePt {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b2/Lyney_Icon.png"
               },
               {
+                "name": "Navia",
+                "rarity": 5,
+                "element": "geo",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c0/Navia_Icon.png/revision/latest"
+              },
+              {
                 "name": "Neuvilette",
                 "rarity": 5,
                 "element": "hydro",
@@ -412,11 +418,23 @@ object SundayBooksSourcePt {
             "book_name": "Justiça",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/37/Item_Philosophies_of_Justice.png",
             "characters": [
+              {
+                "name": "Charlotte",
+                "rarity": 4,
+                "element": "cryo",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d2/Charlotte_Icon.png/revision/latest"
+              },
              {
                 "name": "Freminet",
                 "rarity": 4,
                 "element": "cryo",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/e/ee/Freminet_Icon.png/revision/latest"
+              },
+              {
+                "name": "Furina",
+                "rarity": 5,
+                "element": "hydro",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e6/Furina_Icon.png/revision/latest"
               },
               {
                 "name": "Viajante (Hydro)",
@@ -606,6 +624,12 @@ object SundayBooksSourcePt {
             "book_name": "Ordem",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/32/Item_Philosophies_of_Order.png",
             "characters": [
+            {
+                "name": "Chevreuse",
+                "rarity": 4,
+                "element": "pyro",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/8a/Chevreuse_Icon.png/revision/latest"
+              },
             {
                 "name": "Lynette",
                 "rarity": 4,

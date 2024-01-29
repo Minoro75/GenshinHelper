@@ -202,6 +202,12 @@ object MonThuBooksSource {
                 "element": "pyro",
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b2/Lyney_Icon.png"
               },
+               {
+                "name": "Navia",
+                "rarity": 5,
+                "element": "geo",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c0/Navia_Icon.png/revision/latest"
+              },
               {
                 "name": "Neuvilette",
                 "rarity": 5,

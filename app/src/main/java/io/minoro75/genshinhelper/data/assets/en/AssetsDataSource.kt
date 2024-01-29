@@ -14,6 +14,8 @@ import io.minoro75.genshinhelper.data.assets.en.characters.BarbaraDetailsSource
 import io.minoro75.genshinhelper.data.assets.en.characters.BeidouDetailsSource
 import io.minoro75.genshinhelper.data.assets.en.characters.BennettDetailsSource
 import io.minoro75.genshinhelper.data.assets.en.characters.CandaceDetailsSource
+import io.minoro75.genshinhelper.data.assets.en.characters.CharlotteDetailsSource
+import io.minoro75.genshinhelper.data.assets.en.characters.ChevreuseDetailsSource
 import io.minoro75.genshinhelper.data.assets.en.characters.ChongyunDetailsSource
 import io.minoro75.genshinhelper.data.assets.en.characters.ColleiDetailsSource
 import io.minoro75.genshinhelper.data.assets.en.characters.CynoDetailsSource
@@ -25,6 +27,7 @@ import io.minoro75.genshinhelper.data.assets.en.characters.EulaDetailsSource
 import io.minoro75.genshinhelper.data.assets.en.characters.FaruzanDetailsSource
 import io.minoro75.genshinhelper.data.assets.en.characters.FischlDetailsSource
 import io.minoro75.genshinhelper.data.assets.en.characters.FreminetDetailsSource
+import io.minoro75.genshinhelper.data.assets.en.characters.FurinaDetailsSource
 import io.minoro75.genshinhelper.data.assets.en.characters.GanyuDetailsSource
 import io.minoro75.genshinhelper.data.assets.en.characters.GorouDetailsSource
 import io.minoro75.genshinhelper.data.assets.en.characters.HuTaoDetailsSource
@@ -46,6 +49,7 @@ import io.minoro75.genshinhelper.data.assets.en.characters.LyneyDetailsSource
 import io.minoro75.genshinhelper.data.assets.en.characters.MikaDetailsSource
 import io.minoro75.genshinhelper.data.assets.en.characters.MonaDetailsSource
 import io.minoro75.genshinhelper.data.assets.en.characters.NahidaDetailsSource
+import io.minoro75.genshinhelper.data.assets.en.characters.NaviaDetailsSource
 import io.minoro75.genshinhelper.data.assets.en.characters.NeuviletteDetailsSource
 import io.minoro75.genshinhelper.data.assets.en.characters.NilouDetailsSource
 import io.minoro75.genshinhelper.data.assets.en.characters.NingguangDetailsSource
@@ -98,11 +102,13 @@ import io.minoro75.genshinhelper.data.assets.en.items.artifacts.HuskOfOpulentDre
 import io.minoro75.genshinhelper.data.assets.en.items.artifacts.LavawalkerDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.artifacts.MaidenBelovedDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.artifacts.MarechausseeHunterDataSource
+import io.minoro75.genshinhelper.data.assets.en.items.artifacts.NighttimeWhispersDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.artifacts.NoblesseObligeDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.artifacts.OceanHuedClamDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.artifacts.PaleFlameDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.artifacts.RetracingBolideDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.artifacts.ShimenavasReminiscenceDataSource
+import io.minoro75.genshinhelper.data.assets.en.items.artifacts.SongOfDaysPastDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.artifacts.TenacityOfTheMillelithDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.artifacts.ThunderingFuryDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.artifacts.ThundersootherDataSource
@@ -134,6 +140,9 @@ import io.minoro75.genshinhelper.data.assets.en.items.boss_items.DvalinsSighData
 import io.minoro75.genshinhelper.data.assets.en.items.boss_items.EveramberDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.boss_items.GildedScaleDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.boss_items.HellfireButterflyDataSource
+import io.minoro75.genshinhelper.data.assets.en.items.boss_items.LightlessEyeOfTheMaelstormDataSource
+import io.minoro75.genshinhelper.data.assets.en.items.boss_items.LightlessMassDataSource
+import io.minoro75.genshinhelper.data.assets.en.items.boss_items.LightlessSilkStringDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.boss_items.MirrorOfMushinDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.boss_items.MoltenMomentDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.boss_items.MudraOfTheMaleficGeneralDataSource
@@ -402,6 +411,18 @@ class AssetsDataSource @Inject constructor(
                     )
                 )
 
+                "Song of Days Past" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        SongOfDaysPastDataSource.sourcesList
+                    )
+                )
+
+                "Nighttime Whispers" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        NighttimeWhispersDataSource.sourcesList
+                    )
+                )
+
                 // Boss items
                 "Ashen Heart" -> emit(
                     jsonDecoder.decodeFromString<List<HowToObtainItem>>(
@@ -542,6 +563,12 @@ class AssetsDataSource @Inject constructor(
                 )
 
                 "Everamber" -> emit(jsonDecoder.decodeFromString<List<HowToObtainItem>>(EveramberDataSource.sourcesList))
+
+                "Lightless Eye of the Maelstrom" -> emit(jsonDecoder.decodeFromString<List<HowToObtainItem>>(LightlessEyeOfTheMaelstormDataSource.sourcesList))
+
+                "Lightless Mass" -> emit(jsonDecoder.decodeFromString<List<HowToObtainItem>>(LightlessMassDataSource.sourcesList))
+
+                "Lightless Silk String" -> emit(jsonDecoder.decodeFromString<List<HowToObtainItem>>(LightlessSilkStringDataSource.sourcesList))
 
                 // Books
                 "Admonition" -> emit(
@@ -882,6 +909,18 @@ class AssetsDataSource @Inject constructor(
                 "Neuvilette" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(NeuviletteDetailsSource.details))
 
                 "Wriothesley" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(WriothesleyDetailSource.details))
+
+                "Furina" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(FurinaDetailsSource.details))
+
+                "Charlotte" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(CharlotteDetailsSource.details))
+
+                "Navia" -> emit(jsonDecoder.decodeFromString<CharacterDetails>(NaviaDetailsSource.details))
+
+                "Chevreuse" -> emit(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
+                        ChevreuseDetailsSource.details
+                    )
+                )
 
                 else -> throw IllegalArgumentException("There is no character with name : $characterName")
             }

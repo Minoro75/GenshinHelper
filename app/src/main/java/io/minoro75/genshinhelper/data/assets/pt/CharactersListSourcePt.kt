@@ -89,6 +89,20 @@ object CharactersListSourcePt {
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/d/dd/Candace_Icon.png/revision/latest"
     },
     {
+      "name": "Charlotte",
+      "rarity": 4,
+      "element": "cryo",
+      "weapon": "catalyst",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d2/Charlotte_Icon.png/revision/latest"
+    },
+    {
+      "name": "Chevreuse",
+      "rarity": 4,
+      "element": "pyro",
+      "weapon": "polearm",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/8a/Chevreuse_Icon.png/revision/latest"
+    },
+    {
       "name": "Chongyun",
       "rarity": 4,
       "element": "cryo",
@@ -164,6 +178,13 @@ object CharactersListSourcePt {
       "element": "cryo",
       "weapon": "claymore",
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/e/ee/Freminet_Icon.png/revision/latest"
+    },
+    {
+      "name": "Furina",
+      "rarity": 5,
+      "element": "hydro",
+      "weapon": "sword",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e6/Furina_Icon.png/revision/latest"
     },
     {
       "name": "Ganyu",
@@ -311,6 +332,13 @@ object CharactersListSourcePt {
       "element": "dendro",
       "weapon": "catalyst",
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f9/Nahida_Icon.png/revision/latest"
+    },
+    {
+      "name": "Navia",
+      "rarity": 5,
+      "element": "geo",
+      "weapon": "claymore",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c0/Navia_Icon.png/revision/latest"
     },
     {
       "name": "Neuvilette",
