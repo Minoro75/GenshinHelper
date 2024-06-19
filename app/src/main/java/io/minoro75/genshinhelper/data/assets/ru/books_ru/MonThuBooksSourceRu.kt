@@ -70,6 +70,12 @@ object MonThuBooksSourceRu {
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/bd/Item_Philosophies_of_Prosperity.png",
             "characters": [
               {
+                "name": "Ка Мин",
+                "rarity": 4,
+                "element": "pyro",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/77/Gaming_Icon.png/revision/latest"
+              },
+              {
                 "name": "Кэ Цин",
                 "rarity": 5,
                 "element": "electro",

@@ -70,6 +70,12 @@ object SundayBooksSource {
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/bd/Item_Philosophies_of_Prosperity.png",
             "characters": [
               {
+                "name": "Gaming",
+                "rarity": 4,
+                "element": "pyro",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/77/Gaming_Icon.png/revision/latest"
+              },
+              {
                 "name": "Keqing",
                 "rarity": 5,
                 "element": "electro",

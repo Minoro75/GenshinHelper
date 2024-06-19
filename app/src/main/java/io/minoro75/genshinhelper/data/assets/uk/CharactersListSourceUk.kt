@@ -75,6 +75,13 @@ object CharactersListSourceUk {
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f1/Venti_Icon.png/revision/latest"
     },
     {
+      "name": "Га Мін",
+      "rarity": 4,
+      "element": "pyro",
+      "weapon": "claymore",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/77/Gaming_Icon.png/revision/latest"
+    },
+    {
       "name": "Ганью",
       "rarity": 5,
       "element": "cryo",

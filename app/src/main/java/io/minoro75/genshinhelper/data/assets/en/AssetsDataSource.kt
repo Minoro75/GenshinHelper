@@ -28,6 +28,7 @@ import io.minoro75.genshinhelper.data.assets.en.characters.FaruzanDetailsSource
 import io.minoro75.genshinhelper.data.assets.en.characters.FischlDetailsSource
 import io.minoro75.genshinhelper.data.assets.en.characters.FreminetDetailsSource
 import io.minoro75.genshinhelper.data.assets.en.characters.FurinaDetailsSource
+import io.minoro75.genshinhelper.data.assets.en.characters.GamingDetailsSource
 import io.minoro75.genshinhelper.data.assets.en.characters.GanyuDetailsSource
 import io.minoro75.genshinhelper.data.assets.en.characters.GorouDetailsSource
 import io.minoro75.genshinhelper.data.assets.en.characters.HuTaoDetailsSource
@@ -198,7 +199,7 @@ import javax.inject.Inject
 class AssetsDataSource @Inject constructor(
 ) {
 
-    val jsonDecoder = Json {
+    private val jsonDecoder = Json {
         isLenient = true
         ignoreUnknownKeys = true
     }
@@ -919,6 +920,12 @@ class AssetsDataSource @Inject constructor(
                 "Chevreuse" -> emit(
                     jsonDecoder.decodeFromString<CharacterDetails>(
                         ChevreuseDetailsSource.details
+                    )
+                )
+
+                "Gaming" -> emit(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
+                        GamingDetailsSource.details
                     )
                 )
 

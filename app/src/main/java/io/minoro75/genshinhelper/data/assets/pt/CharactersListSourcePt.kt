@@ -193,6 +193,13 @@ object CharactersListSourcePt {
       "weapon": "bow",
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/79/Ganyu_Icon.png/revision/latest"
     },
+     {
+      "name": "Gaming",
+      "rarity": 4,
+      "element": "pyro",
+      "weapon": "claymore",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/77/Gaming_Icon.png/revision/latest"
+    },
     {
       "name": "Gorou",
       "rarity": 4,

@@ -154,6 +154,13 @@ object CharactersListSourceRu {
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e3/Kaedehara_Kazuha_Icon.png/revision/latest"
     },
      {
+      "name": "Ка Мин",
+      "rarity": 4,
+      "element": "pyro",
+      "weapon": "claymore",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/7/77/Gaming_Icon.png/revision/latest"
+    },
+     {
       "name": "Кандакия",
       "rarity": 4,
       "element": "hydro",
