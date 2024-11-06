@@ -516,6 +516,13 @@ object CharactersListSourcePt {
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/39/Xiangling_Icon.png/revision/latest"
     },
     {
+      "name": "Xianyun",
+      "rarity": 5,
+      "element": "anemo",
+      "weapon": "catalyst",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d3/Xianyun_Icon.png/revision/latest"
+    },
+    {
       "name": "Xiao",
       "rarity": 5,
       "element": "anemo",

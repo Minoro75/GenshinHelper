@@ -95,6 +95,12 @@ object WedSatBooksSource {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d4/Xingqiu_Icon.png/revision/latest"
               },
               {
+                "name": "Xianyun",
+                "rarity": 5,
+                "element": "anemo",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d3/Xianyun_Icon.png/revision/latest"
+              },
+              {
                 "name": "Xinyan",
                 "rarity": 4,
                 "element": "pyro",

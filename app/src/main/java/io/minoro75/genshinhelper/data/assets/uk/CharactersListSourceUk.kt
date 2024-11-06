@@ -425,6 +425,13 @@ object CharactersListSourceUk {
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/3/39/Xiangling_Icon.png/revision/latest"
     },
     {
+      "name": "Сянь Юнь",
+      "rarity": 5,
+      "element": "anemo",
+      "weapon": "catalyst",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d3/Xianyun_Icon.png/revision/latest"
+    },
+    {
       "name": "Сяо",
       "rarity": 5,
       "element": "anemo",

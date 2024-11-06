@@ -101,6 +101,12 @@ object WedSatBooksSourceRu {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/24/Xinyan_Icon.png/revision/latest"
               },
               {
+                "name": "Сянь Юнь",
+                "rarity": 5,
+                "element": "anemo",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d3/Xianyun_Icon.png/revision/latest"
+              },
+              {
                 "name": "Янь Фэй",
                 "rarity": 4,
                 "element": "pyro",

@@ -76,6 +76,7 @@ import io.minoro75.genshinhelper.data.assets.en.characters.VentiDetailsSource
 import io.minoro75.genshinhelper.data.assets.en.characters.WandererDetailsSource
 import io.minoro75.genshinhelper.data.assets.en.characters.WriothesleyDetailSource
 import io.minoro75.genshinhelper.data.assets.en.characters.XianglingDetailsSource
+import io.minoro75.genshinhelper.data.assets.en.characters.XianyunDetailsSource
 import io.minoro75.genshinhelper.data.assets.en.characters.XiaoDetailsSource
 import io.minoro75.genshinhelper.data.assets.en.characters.XingqiuDetailsSource
 import io.minoro75.genshinhelper.data.assets.en.characters.XinyanDetailsSource
@@ -926,6 +927,12 @@ class AssetsDataSource @Inject constructor(
                 "Gaming" -> emit(
                     jsonDecoder.decodeFromString<CharacterDetails>(
                         GamingDetailsSource.details
+                    )
+                )
+
+                "Xianyun" -> emit(
+                    jsonDecoder.decodeFromString<CharacterDetails>(
+                        XianyunDetailsSource.details
                     )
                 )
 
