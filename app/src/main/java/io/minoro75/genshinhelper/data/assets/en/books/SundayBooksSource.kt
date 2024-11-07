@@ -563,6 +563,12 @@ object SundayBooksSource {
             "book_name": "Light",
             "book_url": "https://static.wikia.nocookie.net/gensin-impact/images/9/95/Item_Philosophies_of_Light.png",
             "characters": [
+           {
+                "name": "Chiori",
+                "rarity": 5,
+                "element": "geo",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/88/Chiori_Icon.png/revision/latest"
+              },
               {
                 "name": "Gorou",
                 "rarity": 4,

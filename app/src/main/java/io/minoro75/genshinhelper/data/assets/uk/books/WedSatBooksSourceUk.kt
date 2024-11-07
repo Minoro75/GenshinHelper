@@ -150,6 +150,12 @@ object WedSatBooksSourceUk {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Traveler_Icon.png/revision/latest"
               },
               {
+                "name": "Чіорі",
+                "rarity": 5,
+                "element": "geo",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/88/Chiori_Icon.png/revision/latest"
+              },
+              {
                 "name": "Яе Міко",
                 "rarity": 5,
                 "element": "electro",

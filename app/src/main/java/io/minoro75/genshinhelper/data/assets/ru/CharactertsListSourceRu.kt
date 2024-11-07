@@ -440,6 +440,13 @@ object CharactersListSourceRu {
       "weapon": "bow",
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/85/Tartaglia_Icon.png/revision/latest"
     },
+     {
+     "name": "Тиори",
+      "rarity": 5,
+      "element": "geo",
+      "weapon": "sword",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/88/Chiori_Icon.png/revision/latest"
+    },
     {
       "name": "Тигнари",
       "rarity": 5,

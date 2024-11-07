@@ -581,6 +581,12 @@ object SundayBooksSourceRu {
                 "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/2/22/Sayu_Icon.png/revision/latest"
               },
               {
+                "name": "Тиори",
+                "rarity": 5,
+                "element": "geo",
+                "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/88/Chiori_Icon.png/revision/latest"
+              },
+              {
                 "name": "Путешественник Электро",
                 "rarity": 5,
                 "element": "electro",

@@ -522,6 +522,13 @@ object CharactersListSourceUk {
       "weapon": "sword",
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b3/Qiqi_Icon.png/revision/latest"
     },
+     {
+     "name": "Чіорі",
+      "rarity": 5,
+      "element": "geo",
+      "weapon": "sword",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/88/Chiori_Icon.png/revision/latest"
+    },
     {
       "name": "Чонʼюнь",
       "rarity": 4,

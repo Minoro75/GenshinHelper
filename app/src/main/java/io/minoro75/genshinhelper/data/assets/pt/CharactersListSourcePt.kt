@@ -102,6 +102,13 @@ object CharactersListSourcePt {
       "weapon": "polearm",
       "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/8a/Chevreuse_Icon.png/revision/latest"
     },
+     {
+     "name": "Chiori",
+      "rarity": 5,
+      "element": "geo",
+      "weapon": "sword",
+      "image_url": "https://static.wikia.nocookie.net/gensin-impact/images/8/88/Chiori_Icon.png/revision/latest"
+    },
     {
       "name": "Chongyun",
       "rarity": 4,
