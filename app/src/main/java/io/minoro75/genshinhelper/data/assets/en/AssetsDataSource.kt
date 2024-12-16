@@ -97,6 +97,7 @@ import io.minoro75.genshinhelper.data.assets.en.items.artifacts.DesertPavilionCh
 import io.minoro75.genshinhelper.data.assets.en.items.artifacts.EchoesOfTheOfferingDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.artifacts.EmblemOfSeveredFateDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.artifacts.FlowerOfParadoiseLostDataSource
+import io.minoro75.genshinhelper.data.assets.en.items.artifacts.FragmentOfHarmonicWhimsyDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.artifacts.GildedDreamsDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.artifacts.GladiatorsFinaleDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.artifacts.GoldenTroupeDataSource
@@ -136,11 +137,13 @@ import io.minoro75.genshinhelper.data.assets.en.items.books.TransienceDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.boss_items.AshenHeartDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.boss_items.BloodjadeBranchDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.boss_items.DakasBellDataSource
+import io.minoro75.genshinhelper.data.assets.en.items.boss_items.DenialAndJudgmentDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.boss_items.DragonLordsCrownDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.boss_items.DvalinsClawDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.boss_items.DvalinsPlumeDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.boss_items.DvalinsSighDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.boss_items.EveramberDataSource
+import io.minoro75.genshinhelper.data.assets.en.items.boss_items.FadingCandleDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.boss_items.GildedScaleDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.boss_items.HellfireButterflyDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.boss_items.LightlessEyeOfTheMaelstormDataSource
@@ -154,6 +157,7 @@ import io.minoro75.genshinhelper.data.assets.en.items.boss_items.PuppetStringsDa
 import io.minoro75.genshinhelper.data.assets.en.items.boss_items.RingOfBoreasDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.boss_items.ShadowOfTheWarriorDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.boss_items.ShardOfFoulLegacyDataSource
+import io.minoro75.genshinhelper.data.assets.en.items.boss_items.SilkenFeatherDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.boss_items.SpiritLocketOfBoreasDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.boss_items.TailOfBoreasDataSource
 import io.minoro75.genshinhelper.data.assets.en.items.boss_items.TearsOfTheCalamitiousGodDataSource
@@ -426,6 +430,12 @@ class AssetsDataSource @Inject constructor(
                     )
                 )
 
+                "Fragment of Harmonic Whimsy" -> emit(
+                    jsonDecoder.decodeFromString<List<HowToObtainItem>>(
+                        FragmentOfHarmonicWhimsyDataSource.sourcesList
+                    )
+                )
+
                 // Boss items
                 "Ashen Heart" -> emit(
                     jsonDecoder.decodeFromString<List<HowToObtainItem>>(
@@ -572,6 +582,12 @@ class AssetsDataSource @Inject constructor(
                 "Lightless Mass" -> emit(jsonDecoder.decodeFromString<List<HowToObtainItem>>(LightlessMassDataSource.sourcesList))
 
                 "Lightless Silk String" -> emit(jsonDecoder.decodeFromString<List<HowToObtainItem>>(LightlessSilkStringDataSource.sourcesList))
+
+                "Silken Feather" -> emit(jsonDecoder.decodeFromString<List<HowToObtainItem>>(SilkenFeatherDataSource.sourcesList))
+
+                "Fading Candle" -> emit(jsonDecoder.decodeFromString<List<HowToObtainItem>>(FadingCandleDataSource.sourcesList))
+
+                "Denial and Judgment" -> emit(jsonDecoder.decodeFromString<List<HowToObtainItem>>(DenialAndJudgmentDataSource.sourcesList))
 
                 // Books
                 "Admonition" -> emit(

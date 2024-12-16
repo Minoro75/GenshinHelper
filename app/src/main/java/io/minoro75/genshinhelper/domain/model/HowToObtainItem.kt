@@ -29,6 +29,7 @@ data class HowToObtainItem(
             "City of Gold" -> R.drawable.dg_city_of_gold
             "Bosses" -> R.drawable.bosses
             "Waterfall Wen" -> R.drawable.dg_waterfall_wen
+            "Faded Theater" -> R.drawable.dg_faded_theater
             // Artifacts Alchemy
             "Artifact Strongbox: Archaic Petra" -> R.drawable.as_archaic
             "Artifact Strongbox: Blizzard Strayer" -> R.drawable.as_blizzard
@@ -54,6 +55,7 @@ data class HowToObtainItem(
             "Joururi Workshop" -> R.drawable.dg_scaramouche
             "Realm of Beginnings" -> R.drawable.dg_realm_of_beginnings
             "Shadow of Another World" -> R.drawable.dg_shadow_of_another_world
+            "Scattered Ruins" -> R.drawable.dg_scattered_ruins
             // Boss items Alchemy
             "Convert: Lightless Eye of the Maelstrom" -> R.drawable.ic_eye
             "Convert: Lightless Silk String" -> R.drawable.ic_silk
