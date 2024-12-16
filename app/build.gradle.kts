@@ -89,6 +89,7 @@ dependencies {
     implementation(libs.firebase.analytics)
 
     implementation(libs.coil.compose)
+    implementation(libs.coil.gif)
 
     implementation(libs.core.chrometabs)
     implementation(libs.core.lifecycle.compose)
@@ -107,6 +108,7 @@ dependencies {
     implementation(libs.accompanist.insets)
     implementation(libs.accompanist.systemuicontroller)
     implementation(libs.accompanist.placeholder)
+    implementation(libs.accompanist.permissions)
 
     testImplementation(libs.compose.test.junit4)
 }

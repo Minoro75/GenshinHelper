@@ -37,7 +37,8 @@ import kotlinx.collections.immutable.persistentListOf
 fun HomeScreen(
     viewModel: HomeScreenViewModel = hiltViewModel(),
     onCharacterClick: (String) -> Unit,
-    onItemClick: (String) -> Unit
+    onItemClick: (String) -> Unit,
+    onVoiceScreenClick: () -> Unit
 ) {
     val state by viewModel.state.collectAsStateWithLifecycle()
 
@@ -69,9 +70,20 @@ fun HomeScreen(
                 textAlign = TextAlign.Center,
                 modifier = Modifier.padding(16.dp)
             )
+
+            Spacer(Modifier.height(16.dp))
+
+            Button(onClick = onVoiceScreenClick,
+                modifier = Modifier.fillMaxWidth().wrapContentHeight().padding(horizontal = 16.dp)) {
+                Text("Voice Helper")
+            }
+
+            Spacer(Modifier.height(16.dp))
         }
 
         Spacer(modifier = Modifier.height(16.dp))
+
+
 
         TodayBooksView(
             books = state.todayBooks,
@@ -120,6 +132,12 @@ fun PreviewHomeScreen() {
                     textAlign = TextAlign.Center,
                     modifier = Modifier.padding(16.dp)
                 )
+
+                Button(onClick = {},
+                    modifier = Modifier.fillMaxWidth().wrapContentHeight()
+                        .padding(horizontal = 16.dp)) {
+                    Text("Voice Helper")
+                }
             }
 
             Spacer(modifier = Modifier.height(16.dp))

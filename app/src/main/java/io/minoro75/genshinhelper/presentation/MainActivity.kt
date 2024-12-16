@@ -1,19 +1,23 @@
 package io.minoro75.genshinhelper.presentation
 
+import android.os.Build
 import android.os.Bundle
 import androidx.activity.compose.setContent
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.compose.animation.core.Spring
 import androidx.compose.animation.core.spring
 import androidx.compose.animation.slideInHorizontally
 import androidx.compose.animation.slideOutHorizontally
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.calculateEndPadding
 import androidx.compose.foundation.layout.calculateStartPadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.unit.LayoutDirection
 import androidx.compose.ui.unit.dp
@@ -33,6 +37,7 @@ import io.minoro75.genshinhelper.presentation.info.composables.InfoScreen
 import io.minoro75.genshinhelper.presentation.item_location.composables.ItemLocationScreen
 import io.minoro75.genshinhelper.presentation.map.MapScreen
 import io.minoro75.genshinhelper.presentation.theme.GenshinHelperTheme
+import io.minoro75.genshinhelper.presentation.voice_screen.VoiceScreen
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
@@ -49,6 +54,7 @@ class MainActivity : AppCompatActivity() {
     }
 }
 
+@RequiresApi(Build.VERSION_CODES.P)
 @OptIn(ExperimentalAnimationApi::class)
 @Composable
 fun MainScreen() {
@@ -106,6 +112,12 @@ fun MainScreen() {
                             launchSingleTop = true
                             popUpTo(NavigationItem.Home.route)
                         }
+                    },
+                    onVoiceScreenClick = {
+                        navController.navigate("voice_screen"){
+                            launchSingleTop = true
+                            popUpTo(NavigationItem.Home.route)
+                        }
                     })
             }
             composable(NavigationItem.Characters.route) {
@@ -142,6 +154,17 @@ fun MainScreen() {
                 arguments = listOf(navArgument("itemName") { type = NavType.StringType })
             ) {
                 ItemLocationScreen(onBackPressed = { navController.popBackStack() })
+            }
+
+            composable(
+                route = "voice_screen"
+            ) {
+                VoiceScreen(onNavigateClick = {name ->
+                    navController.navigate("profile/$name") {
+                        popUpTo(NavigationItem.Characters.route)
+                        launchSingleTop = true
+                    }
+                })
             }
         }
 
